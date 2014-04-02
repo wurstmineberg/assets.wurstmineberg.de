@@ -1,0 +1,44 @@
+Fields in item.json:
+The fields for the data values implicitely inherit the values of the parent
+
+* name: Interface name of the item
+* type: block or item, defaults to item
+* subtype: specific subtype like "sapling" or something if needed
+	* slab: will take the top half of the block and render it at the bottom
+	* slab-top: will only render the top half
+	* stairs: renders stairs
+	* stairs@[rotation]: renders stairs rotated by
+* solid: true if the block is solid and nontransparent
+* image: a link to a prerendered image of the item or block
+* texture: The default texture for all sides.
+		* The value can be appended with @[0-10] (like "dirt@3") which specifies the flip and rotation that should be applied to the block prior to rendering it.
+			* 0: no rotation (default)
+			* 1: rotate 90° right
+			* 2: rotate 180° right
+			* 3: rotate 270° right
+			* 4: flip horizontally
+			* 5: flip horizontally and rotate 90° right
+			* 6: flip horizontally and rotate 180° right (vertical flip)
+			* 7: flip horizontally and rotate 270° right
+		* The texture files are applied top = top for the sides and north for top and bottom
+	* texture_snow: the default texture if the top is covered by snow (currently only used by grass)
+	* texture_top: the texture for the top
+	* texture_bottom: the texture for the bottom
+	* texture_side: the texture used for the sides (nswe) of the block
+		* texture_north: the texture for the north
+		* texture_south: the texture for the south
+		* texture_west: the texture for the west
+		* texture_east: the texture for the east
+	* texture_needs_colorisation: true if at least part of the textures need colorisation
+	* texture_*uncolored: uncolored textures have the _uncolored suffix
+* color_map: the color map for colorisation
+* render_type: Can be either of:
+	* solid: (default). Will render the block with the textures to the side of the block
+	* cross: Will render the block with the texture forming a cross meeting in the middle
+	* square: Will render the block as a square crossing at the four corners, like wheat
+* cloud: The id of the Cloud chest with the item in it
+	* x: The corridor. 0 is the central corridor, 1 is the corridor to the left, -2 is the second corridor to the right.
+	* y: The floor. 1 is the first underground floor.
+	* z: The chest number. 0 is the first chest to the left, 1 the first to the right, 2 the second to the left, etc.
+* id: The new id of the item, including the "minecraft:" prefix
+* damageValues: damage values of the item, with the fields that differ from the default

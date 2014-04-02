@@ -1,0 +1,247 @@
+body {
+    padding-top: 70px;
+}
+
+h2 {
+    margin-top: 40;
+}
+
+.tooltip-inner {
+    white-space:pre-wrap;
+}
+
+.people-avatar > img {
+    margin-right: 5px;
+    min-width: 32px;
+}
+
+.funding-progress-container {
+    height: 50px;
+}
+
+.funding-progress-container-about {
+    height: 30px;
+    display: inline-block;
+}
+
+.funding-progress-container-about .funding-text-container {
+    margin-right: 15px;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.funding-progressbar {
+    margin-top: 15px;
+    width: 200px;
+}
+
+.funding-progress-container-about .funding-progressbar {
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.funding-month-small {
+    display: none;
+}
+
+.people-table td {
+    vertical-align: middle;
+}
+
+.stats-table td {
+    vertical-align: middle;
+    line-height: 35px !important;
+}
+
+.stats-table td.image {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.people-table td.username {
+    width: 120px;
+}
+
+.people-table td.text-info {
+    white-space: nowrap;
+}
+
+#stats-achievements-table td.name {
+    min-width: 160px;
+}
+
+.loading > td {
+    text-align: center;
+    font-style: italic;
+}
+
+.player-avatar-name a.player {
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+a.text-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a.tag:hover {
+    text-decoration: none;
+}
+
+.item-image {
+    width: 32px;
+    height: 32px;
+}
+
+.tag {
+    display: none;
+}
+
+a {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    position: relative;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.small {
+    font-size: small;
+}
+
+.panel-heading {
+    overflow: auto;
+}
+
+.muted {
+    color: gray;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+#username {
+    vertical-align: middle;
+    line-height: 32px;
+}
+
+#people-list {
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+.player-avatar-name > img.avatar {
+    margin-right: 0.5em;
+}
+
+#head {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+#user-description {
+    font-size: normal;
+}
+
+.panel-heading {
+    display: block;
+}
+
+.panel-heading .avatar {
+    float: left;
+    margin-right: 1em;
+    display: inline-block;
+}
+
+.inventory-opt-out {
+    display: none;
+}
+
+.inventory-opt-in {
+    display: inline-block;
+    margin-right: 29px;
+}
+
+.inv-cell {
+    background-color: #8b8b8b;
+    padding: 0;
+}
+
+.inv-cell > div.inv-cell-style > span.count {
+    bottom: 0;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+}
+
+.inv-cell > div.inv-cell-style {
+    border-color: #373737;
+    border-style: solid none none solid;
+    border-width: 2px;
+    height: 34px;
+    margin: 0 2px 2px 0;
+    position: relative;
+}
+
+.inv-cell > div.inv-cell-style > div {
+    border-color: white;
+    border-style: none solid solid none;
+    border-width: 2px;
+    box-sizing: content-box;
+    height: 32px;
+    margin: 0 -2px -2px 0;
+    min-width: 32px;
+}
+
+.inv-cell > div.inv-cell-style > div > img {
+    bottom: 1px;
+    position: relative;
+}
+
+.achievement-list {
+    display: inline;
+    margin-right: 1em;
+    white-space: normal;
+}
+
+abbr.nounderline {
+    border-bottom-width: 0 !important;
+    border-bottom: none !important;
+}
+
+.achievement-value {
+    display: inline;
+    white-space: nowrap;
+    margin-right: 0.5em;
+    height: 14px;
+}
+
+.achievement-name {
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.achievement-image {
+    background: url('/assets/img/achievement-plain.png');
+    box-sizing: border-box;
+    height: 52px;
+    padding: 10px;
+    width: 52px;
+}
+
+.achievement-image.fancy {
+    background: url('/assets/img/achievement-fancy.png');
+}
