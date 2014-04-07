@@ -195,7 +195,7 @@ function displayProfileData(person, items, people) {
         } else if (lastSeen) {
             $('#profile-stat-row-last-seen').children('.value').html(lastSeen.getFullYear() + '-' + zeroFill(lastSeen.getMonth() + 1, 2) + '-' + zeroFill(lastSeen.getDate(), 2) + ' ' + zeroFill(lastSeen.getHours(), 2) + ':' + zeroFill(lastSeen.getMinutes(), 2) + ':' + zeroFill(lastSeen.getSeconds(), 2));
         } else {
-            $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'muted'}).text('not yet'));
+            $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
         }
     }).fail(function() {
         $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'text-danger'}).text('error, try refreshing'));
