@@ -201,9 +201,10 @@ function displayProfileData(person, items, people) {
         $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'text-danger'}).text('error, try refreshing'));
     });
     // People Invited
-    $('#profile-stat-row-people-invited').children('.value').html(html_player_list(people.list.filter(function(otherPerson) {
+    var peopleInvited = people.list.filter(function(otherPerson) {
         return (otherPerson.invitedBy == person.id);
-    })));
+    });
+    $('#profile-stat-row-people-invited').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {'class': 'muted'}).text('no one'));
     // Status
     function statusDisplay(status) {
         if (status == 'postfreeze') {
@@ -218,7 +219,7 @@ function displayProfileData(person, items, people) {
             'invited': 'invited but not whitelisted yet',
             'later': 'later member (pre-<a href="http://wiki.wurstmineberg.de/Server_invitations#History">freeze</a>)',
             'vetoed': 'former member (unwhitelisted by <a href="http://wiki.wurstmineberg.de/Server_invitations#Hard_requirements">veto</a>)'
-        }
+        };
         return status in statuses ? statuses[status] : status;
     }
     $('#profile-stat-row-status').children('.value').html(statusDisplay(person.status || 'later'));
