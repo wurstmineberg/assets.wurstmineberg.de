@@ -156,26 +156,24 @@ function displayProfileData(person, items) {
     if (person.joinDate) {
         $('#profile-stat-row-dow').children('.value').html(person.joinDate.getFullYear() + '-' + zeroFill(person.joinDate.getMonth() + 1, 2) + '-' + zeroFill(person.joinDate.getDate(), 2));
     } else {
-        $('#profile-stat-row-dow').children('.value').html($('<span>', {'class': 'muted'}).html('not yet'));
+        $('#profile-stat-row-dow').children('.value').html($('<span>', {'class': 'muted'}).text('not yet'));
     }
     // Favorite Color
-    var favColorCSS = 'rgba(0, 0, 0, 0.0)';
-    var favColorName = 'loading';
     if (person.favColor) {
-        favColorCSS = 'rgb(' + person.favColor.red + ', ' + person.favColor.green + ', ' + person.favColor.blue + ')';
-        favColorName = person.favColor.red + ' ' + person.favColor.green + ' ' + person.favColor.blue;
+        var favColorCSS = 'rgb(' + person.favColor.red + ', ' + person.favColor.green + ', ' + person.favColor.blue + ')';
+        var favColorName = person.favColor.red + ' ' + person.favColor.green + ' ' + person.favColor.blue;
+        var $colorDisplay = $('<span>', {'class': 'color-display'}).html($('<span>', {'class': 'color-field'}).css('background-color', favColorCSS));
+        $colorDisplay.append(favColorName);
+        $('#profile-stat-row-fav-color').children('.value').html($colorDisplay);
     } else {
-        favColorName = 'none';
+        $('#profile-stat-row-fav-color').children('.value').html($('<span>', {'class': 'muted'}).text('none'));
     }
-    $colorDisplay = $('<span>', {'class': 'color-display'}).html($('<span>', {'class': 'color-field'}).css('background-color', favColorCSS));
-    $colorDisplay.append(favColorName);
-    $('#profile-stat-row-fav-color').children('.value').html($colorDisplay);
     // Favorite Item
     var fav_item = items.favItem(person);
     if (fav_item) {
         $('#profile-stat-row-fav-item').children('.value').html(fav_item.htmlImage() + fav_item.name);
     } else {
-        $('#profile-stat-row-fav-item').children('.value').html($('<span>', {'class': 'muted'}).html('none'));
+        $('#profile-stat-row-fav-item').children('.value').html($('<span>', {'class': 'muted'}).text('none'));
     }
     // Invited By
     if (person.invitedBy) {
@@ -186,21 +184,21 @@ function displayProfileData(person, items) {
             //
         });
     } else if (person.status == 'founding') {
-        $('#profile-stat-row-invited-by').children('.value').html($('<span>', {'class': 'muted'}).html('no one (founding member)'));
+        $('#profile-stat-row-invited-by').children('.value').html($('<span>', {'class': 'muted'}).text('no one (founding member)'));
     } else {
-        $('#profile-stat-row-invited-by').children('.value').html($('<span>', {'class': 'text-danger'}).html('unknown'));
+        $('#profile-stat-row-invited-by').children('.value').html($('<span>', {'class': 'text-danger'}).text('unknown'));
     }
     // Last Seen
     $.when(API.lastSeen(person)).done(function(lastSeen) {
         if (lastSeen == 'currentlyOnline') {
-            $('#profile-stat-row-last-seen').children('.value').html('currently online');
+            $('#profile-stat-row-last-seen').children('.value').text('currently online');
         } else if (lastSeen) {
             $('#profile-stat-row-last-seen').children('.value').html(lastSeen.getFullYear() + '-' + zeroFill(lastSeen.getMonth() + 1, 2) + '-' + zeroFill(lastSeen.getDate(), 2) + ' ' + zeroFill(lastSeen.getHours(), 2) + ':' + zeroFill(lastSeen.getMinutes(), 2) + ':' + zeroFill(lastSeen.getSeconds(), 2));
         } else {
-            $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'muted'}).html('not yet'));
+            $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'muted'}).text('not yet'));
         }
     }).fail(function() {
-        $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'text-danger'}).html('error, try refreshing'));
+        $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'text-danger'}).text('error, try refreshing'));
     });
     // Status
     function statusDisplay(status) {

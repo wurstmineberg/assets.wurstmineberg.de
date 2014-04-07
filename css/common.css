@@ -147,10 +147,12 @@ a {
 }
 
 .color-display > .color-field {
+    display: inline-block;
     box-sizing: border-box;
     border: 1px solid black;
     height: 16px;
     width: 16px;
+    vertical-align: middle;
 }
 
 #head {
