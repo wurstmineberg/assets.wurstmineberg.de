@@ -26,7 +26,8 @@ function imageStack(images, attributes) {
 }
 
 function zeroFill(n, l, r) { //FROM http://stackoverflow.com/a/21541030/667338
-    return (a = String(n).match(/(^-?)(\d*)\.?(\d*)/)) ? a[1] + (Array(l).join(0) + a[2]).slice(-Math.max(l, a[2].length)) + ('undefined' !== typeof r ? (0 < r ? '.' : '') + (a[3] + Array(r + 1).join(0)).slice(0, r) : a[3] ? '.' + a[3] : '') : 0;
+    a = String(n).match(/(^-?)([0-9A-Za-z]*)\.?([0-9A-Za-z]*)/);
+    return a ? a[1] + (Array(l).join(0) + a[2]).slice(-Math.max(l, a[2].length)) + ('undefined' !== typeof r ? (0 < r ? '.' : '') + (a[3] + Array(r + 1).join(0)).slice(0, r) : a[3] ? '.' + a[3] : '') : 0;
 }
 
 function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/11892228/667338
