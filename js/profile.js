@@ -532,8 +532,9 @@ function load_stat_data(person, string_data, achievement_data, biomes, items) {
 
 function load_user_data() {
     var username = get_user_name();
-    
+    document.title = username + ' on Wurstmineberg';
     $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items()).done(function(person, string_data, achievement_data, biomes, items) {
+        document.title = person.interfaceName() + ' on Wurstmineberg';
         load_stat_data(person, string_data, achievement_data, biomes, items);
         display_user_data(person);
         displayProfileData(person, items);
