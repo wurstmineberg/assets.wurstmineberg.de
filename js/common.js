@@ -141,6 +141,7 @@ function People (people_data) {
     };
     
     this.sorted = function(peopleList) {
+        peopleList = typeof peopleList === 'undefined' ? this.list : peopleList;
         var ret = [];
         this.list.forEach(function(person) {
             if (_.contains(peopleList, person.id)) {

@@ -151,7 +151,7 @@ function display_inventory(player_data, items, string_data) {
     });
 }
 
-function displayProfileData(person, items) {
+function displayProfileData(person, items, people) {
     // Date of Whitelisting
     if (person.joinDate) {
         $('#profile-stat-row-dow').children('.value').html(person.joinDate.getFullYear() + '-' + zeroFill(person.joinDate.getMonth() + 1, 2) + '-' + zeroFill(person.joinDate.getDate(), 2));
@@ -200,6 +200,10 @@ function displayProfileData(person, items) {
     }).fail(function() {
         $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'text-danger'}).text('error, try refreshing'));
     });
+    // People Invited
+    $('#profile-stat-row-people-invited').children('.value').html(html_player_list(people.list.filter(function(otherPerson) {
+        return (otherPerson.invitedBy == person.id);
+    })));
     // Status
     function statusDisplay(status) {
         if (status == 'postfreeze') {
@@ -543,11 +547,11 @@ function load_stat_data(person, string_data, achievement_data, biomes, items) {
 function load_user_data() {
     var username = get_user_name();
     document.title = username + ' on Wurstmineberg';
-    $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items()).done(function(person, string_data, achievement_data, biomes, items) {
+    $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people()).done(function(person, string_data, achievement_data, biomes, items, people) {
         document.title = person.interfaceName + ' on Wurstmineberg';
         load_stat_data(person, string_data, achievement_data, biomes, items);
         display_user_data(person);
-        displayProfileData(person, items);
+        displayProfileData(person, items, people);
     }).fail(function() {
         $('.loading').html('Error: User with this name not found');
     });
