@@ -200,9 +200,14 @@ function displayProfileData(person, items, people) {
     }).fail(function() {
         $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'text-danger'}).text('error, try refreshing'));
     });
-    // People Invited
+    // People “Invited” (pre-freeze)
     var peopleInvited = people.list.filter(function(otherPerson) {
-        return (otherPerson.invitedBy == person.id);
+        return (otherPerson.invitedBy == person.id && otherPerson.joinDate < new Date('2013-11-02T17:33:45+0000'));
+    });
+    $('#profile-stat-row-people-invited-prefreeze').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {'class': 'muted'}).text('no one'));
+    // People Invited (post-freeze)
+    var peopleInvited = people.list.filter(function(otherPerson) {
+        return (otherPerson.invitedBy == person.id && otherPerson.joinDate >= new Date('2013-11-02T17:33:45+0000'));
     });
     $('#profile-stat-row-people-invited').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {'class': 'muted'}).text('no one'));
     // Status
