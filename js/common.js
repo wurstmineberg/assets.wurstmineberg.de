@@ -60,9 +60,10 @@ function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/1189
 }
 
 function Person (person_data) {
-    // Propertys set themselves when instantiated
     this.id = person_data['id'];
     this.description = person_data['description'];
+    this.favColor = person_data['favColor'];
+    this.fav_item = person_data['fav_item'];
     this.invitedBy = person_data['invitedBy'];
     this.irc = person_data['irc'];
     this.joinDate = dateObjectFromUTC(person_data['join_date']);
@@ -72,7 +73,6 @@ function Person (person_data) {
     this.twitter = person_data['twitter'];
     this.website = person_data['website'];
     this.wiki = person_data['wiki'];
-    this.fav_item = person_data['fav_item'];
     this.ava = '/assets/img/ava/' + this.minecraft + '.png';
     this.option = function(opt) {
         var default_true_options = ['chatsync_highlight']; // These options are on by default. All other options are off by default.

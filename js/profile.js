@@ -158,6 +158,18 @@ function displayProfileData(person, items) {
     } else {
         $('#profile-stat-row-dow').children('.value').html($('<span>', {'class': 'muted'}).html('not yet'));
     }
+    // Favorite Color
+    var favColorCSS = 'rgba(0, 0, 0, 0.0)';
+    var favColorName = 'loading';
+    if (person.favColor) {
+        favColorCSS = 'rgb(' + person.favColor.red + ', ' + person.favColor.green + ', ' + person.favColor.blue + ')';
+        favColorName = person.favColor.red + ' ' + person.favColor.green + ' ' + person.favColor.blue;
+    } else {
+        favColorName = 'none';
+    }
+    $colorDisplay = $('<span>', {'class': 'color-display'}).html('<span>', {'class': 'color-field'}).css('background-color', favColorCSS);
+    $colorDisplay.append(favColorName);
+    $('#profile-stat-row-fav-color').children('.value').html($colorDisplay);
     // Favorite Item
     var fav_item = items.favItem(person);
     if (fav_item) {

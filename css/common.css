@@ -141,8 +141,16 @@ a {
     line-height: 16px;
 }
 
-.player-avatar-name > img.avatar {
+.player-avatar-name > img.avatar,
+.color-display > .color-field {
     margin-right: 0.5em;
+}
+
+.color-display > .color-field {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 16px;
+    width: 16px;
 }
 
 #head {
