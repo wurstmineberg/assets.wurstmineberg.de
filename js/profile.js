@@ -167,7 +167,7 @@ function displayProfileData(person, items) {
     } else {
         favColorName = 'none';
     }
-    $colorDisplay = $('<span>', {'class': 'color-display'}).html('<span>', {'class': 'color-field'}).css('background-color', favColorCSS);
+    $colorDisplay = $('<span>', {'class': 'color-display'}).html($('<span>', {'class': 'color-field'}).css('background-color', favColorCSS));
     $colorDisplay.append(favColorName);
     $('#profile-stat-row-fav-color').children('.value').html($colorDisplay);
     // Favorite Item
