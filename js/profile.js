@@ -161,7 +161,7 @@ function displayProfileData(person, items, people) {
     // Favorite Color
     if (person.favColor) {
         var favColorCSS = 'rgb(' + person.favColor.red + ', ' + person.favColor.green + ', ' + person.favColor.blue + ')';
-        var favColorName = person.favColor.red + ' ' + person.favColor.green + ' ' + person.favColor.blue;
+        var favColorName = '#' + zeroFill(person.favColor.red.toString(16), 2) + zeroFill(person.favColor.green.toString(16), 2) + zeroFill(person.favColor.blue.toString(16), 2) + ' (' + person.favColor.red + ' ' + person.favColor.green + ' ' + person.favColor.blue + ')';
         var $colorDisplay = $('<span>', {'class': 'color-display'}).html($('<span>', {'class': 'color-field'}).css('background-color', favColorCSS));
         $colorDisplay.append(favColorName);
         $('#profile-stat-row-fav-color').children('.value').html($colorDisplay);
