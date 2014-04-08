@@ -193,7 +193,7 @@ function displayProfileData(person, items, people) {
         if (lastDeath) {
             $('#profile-stat-row-last-death').children('.value').text(formatDate(lastDeath.timestamp, true) + ', ' + lastDeath.cause);
         } else {
-            $('#profile-stat-row-last-death').children('.value').html($('<span>', {'class', 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
+            $('#profile-stat-row-last-death').children('.value').html($('<span>', {'class': 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
         }
     });
     // Last Seen
