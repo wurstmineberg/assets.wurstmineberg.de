@@ -77,10 +77,10 @@ function Person (person_data) {
     this.irc = person_data['irc'];
     this.joinDate = dateObjectFromUTC(person_data['join_date']);
     this.latestDeath = API.ajaxJSONDeferred('//api.wurstmineberg.de/server/deaths/latest.json').then(function(latestDeaths) {
-        if (person.id in latestDeaths.deaths) {
+        if (this.id in latestDeaths.deaths) {
             return {
-                'cause': latestDeaths.deaths[person.id].cause,
-                'timestamp': dateObjectFromUTC(latestDeaths.deaths[person.id].timestamp)
+                'cause': latestDeaths.deaths[this.id].cause,
+                'timestamp': dateObjectFromUTC(latestDeaths.deaths[this.id].timestamp)
             };
         } else {
             return null;
