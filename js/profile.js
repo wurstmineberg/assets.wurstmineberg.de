@@ -45,9 +45,10 @@ function display_user_data(person) {
         }
     }
     
-    var description = sanitized(person.description, ['A', 'EM', 'S', 'SPAN']);
-    if (!description) {
-        description = 'You can update your description using the command <code>!<a href="//wiki.wurstmineberg.de/Commands#People">People</a> ' + person.id + ' description &lt;value&gt;...</code>.';
+    if (person.description) {
+        var description = sanitized(person.description, ['A', 'EM', 'S', 'SPAN']);
+    } else {
+        var description = 'You can update your description using the command <code>!<a href="//wiki.wurstmineberg.de/Commands#People">People</a> ' + person.id + ' description &lt;value&gt;...</code>.';
         $('#user-description').addClass('muted');
     }
     
