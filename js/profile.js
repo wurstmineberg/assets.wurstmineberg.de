@@ -154,7 +154,7 @@ function display_inventory(player_data, items, string_data) {
 function displayProfileData(person, items, people) {
     // Date of Whitelisting
     if (person.joinDate) {
-        $('#profile-stat-row-dow').children('.value').html(person.joinDate.getFullYear() + '-' + zeroFill(person.joinDate.getMonth() + 1, 2) + '-' + zeroFill(person.joinDate.getDate(), 2));
+        $('#profile-stat-row-dow').children('.value').text(formatDate(person.joinDate));
     } else {
         $('#profile-stat-row-dow').children('.value').html($('<span>', {'class': 'muted'}).text('not yet'));
     }
@@ -177,7 +177,7 @@ function displayProfileData(person, items, people) {
     }
     // Invited By
     if (person.invitedBy) {
-        $('#profile-stat-row-invited-by').children('.value').html($('<a>', {'href': '/people/' + person.invitedBy}).html(person.invitedBy));
+        $('#profile-stat-row-invited-by').children('.value').html($('<a>', {'href': '/people/' + person.invitedBy}).text(person.invitedBy));
         $.when(API.personById(person.invitedBy)).done(function(invitedBy) {
             $('#profile-stat-row-invited-by').children('.value').html(html_player_list([invitedBy]));
         }).fail(function() {
@@ -188,12 +188,20 @@ function displayProfileData(person, items, people) {
     } else {
         $('#profile-stat-row-invited-by').children('.value').html($('<span>', {'class': 'text-danger'}).text('unknown'));
     }
+    // Last Death
+    $.when(person.latestDeath).done(function(lastDeath) {
+        if (lastDeath) {
+            $('#profile-stat-row-last-death').children('.value').text(formatDate(lastDeath.timestamp, true) + ', ' + lastDeath.cause);
+        } else {
+            $('#profile-stat-row-last-death').children('.value').html($('<span>', {'class', 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
+        }
+    });
     // Last Seen
     $.when(API.lastSeen(person)).done(function(lastSeen) {
         if (lastSeen == 'currentlyOnline') {
             $('#profile-stat-row-last-seen').children('.value').text('currently online');
         } else if (lastSeen) {
-            $('#profile-stat-row-last-seen').children('.value').html(lastSeen.getFullYear() + '-' + zeroFill(lastSeen.getMonth() + 1, 2) + '-' + zeroFill(lastSeen.getDate(), 2) + ' ' + zeroFill(lastSeen.getHours(), 2) + ':' + zeroFill(lastSeen.getMinutes(), 2) + ':' + zeroFill(lastSeen.getSeconds(), 2));
+            $('#profile-stat-row-last-seen').children('.value').text(formatDate(lastSeen, true));
         } else {
             $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
         }

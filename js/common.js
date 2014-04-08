@@ -30,6 +30,14 @@ function zeroFill(n, l, r) { //FROM http://stackoverflow.com/a/21541030/667338
     return a ? a[1] + (Array(l).join(0) + a[2]).slice(-Math.max(l, a[2].length)) + ('undefined' !== typeof r ? (0 < r ? '.' : '') + (a[3] + Array(r + 1).join(0)).slice(0, r) : a[3] ? '.' + a[3] : '') : 0;
 }
 
+function formatDate(d, includeTime) {
+    var ret = d.getFullYear() + '-' + zeroFill(d.getMonth() + 1, 2) + '-' + zeroFill(d.getDate(), 2);
+    if (includeTime) {
+        ret += ' ' + zeroFill(d.getHours(), 2) + ':' + zeroFill(d.getMinutes(), 2) + ':' + zeroFill(d.getSeconds(), 2);
+    }
+    return ret;
+}
+
 function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/11892228/667338
     allowedTags = typeof allowedTags === 'undefined' ? [] : allowedTags;
     
@@ -68,6 +76,16 @@ function Person (person_data) {
     this.invitedBy = person_data['invitedBy'];
     this.irc = person_data['irc'];
     this.joinDate = dateObjectFromUTC(person_data['join_date']);
+    this.latestDeath = API.ajaxJSONDeferred('//api.wurstmineberg.de/server/deaths/latest.json').then(function(latestDeaths) {
+        if (person.id in latestDeaths.deaths) {
+            return {
+                'cause': latestDeaths.deaths[person.id].cause,
+                'timestamp': dateObjectFromUTC(latestDeaths.deaths[person.id].timestamp)
+            };
+        } else {
+            return null;
+        }
+    });
     this.minecraft = person_data['minecraft'];
     this.reddit = person_data['reddit'];
     this.status = 'status' in person_data ? person_data['status'] : 'later';
@@ -76,7 +94,7 @@ function Person (person_data) {
     this.wiki = person_data['wiki'];
     this.ava = '/assets/img/ava/' + this.minecraft + '.png';
     this.option = function(opt) {
-        var default_true_options = ['chatsync_highlight']; // These options are on by default. All other options are off by default.
+        var default_true_options = ['activity_tweets', 'chatsync_highlight', 'inactivity_tweets']; // These options are on by default. All other options are off by default.
         if ('options' in person_data && opt in person_data['options']) {
             return person_data['options'][opt];
         } else {
