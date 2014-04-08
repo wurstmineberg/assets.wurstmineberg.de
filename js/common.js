@@ -76,16 +76,17 @@ function Person (person_data) {
     this.invitedBy = person_data['invitedBy'];
     this.irc = person_data['irc'];
     this.joinDate = dateObjectFromUTC(person_data['join_date']);
+    var _this = this;
     this.latestDeath = API.ajaxJSONDeferred('//api.wurstmineberg.de/server/deaths/latest.json').then(function(latestDeaths) {
-        if (this.id in latestDeaths.deaths) {
+        if (_this.id in latestDeaths.deaths) {
             return {
-                'cause': latestDeaths.deaths[this.id].cause,
-                'timestamp': dateObjectFromUTC(latestDeaths.deaths[this.id].timestamp)
+                'cause': latestDeaths.deaths[_this.id].cause,
+                'timestamp': dateObjectFromUTC(latestDeaths.deaths[_this.id].timestamp)
             };
         } else {
             return null;
         }
-    });
+    }); // use with when/done/fail
     this.minecraft = person_data['minecraft'];
     this.reddit = person_data['reddit'];
     this.status = 'status' in person_data ? person_data['status'] : 'later';
