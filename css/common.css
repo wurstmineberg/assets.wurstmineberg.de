@@ -145,7 +145,7 @@ a {
     line-height: 16px;
 }
 
-.player-avatar-name > img.avatar,
+.player-avatar-name img,
 .color-display > .color-field {
     margin-right: 0.5em;
 }
