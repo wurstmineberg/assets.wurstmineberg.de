@@ -621,11 +621,9 @@ function html_player_list(people) {
         if (index >= 1) {
             $list.append(', ');
         };
-        $list.append($('<span>', {'class': 'player-avatar-name'}).html(person.html_ava(16)));
-        $list.append($('<a>', {
-            'class': 'player',
-            'href': '/people/' + person.id
-        }).text(person.interfaceName));
+        var $a = $('<a>', {'href': '/people/' + person.id}).text(person.interfaceName);
+        $a.prepend(person.html_ava(16));
+        $list.append($('<span>', {'class': 'player-avatar-name'}).html($a));
     });
     return $list;
 };

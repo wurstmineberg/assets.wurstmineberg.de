@@ -77,7 +77,11 @@ h2 {
     font-style: italic;
 }
 
-.player-avatar-name a.player {
+.player-avatar-name {
+    display: inline-block;
+}
+
+.player-avatar-name a {
     line-height: 16px;
     vertical-align: middle;
 }
