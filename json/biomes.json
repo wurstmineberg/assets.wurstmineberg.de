@@ -1,11 +1,13 @@
 {
     "biomes": {
         "0": {
+            "adventuringTime": true,
             "description": "Oceans are huge things filled with\u2026 water",
             "id": "Ocean",
             "type": "neutral"
         },
         "1": {
+            "adventuringTime": true,
             "description": "Flat biome with hills and grass. Horses spawn here!",
             "id": "Plains",
             "type": "medium"
@@ -17,163 +19,194 @@
             "type": "frozen"
         },
         "11": {
+            "adventuringTime": true,
             "description": "Variant of the river. The surface layer of water is frozen.",
             "id": "FrozenRiver",
             "name": "Frozen River",
             "type": "frozen"
         },
         "12": {
+            "adventuringTime": true,
             "description": "Very flat biome with tons of snow",
             "id": "Ice Plains",
             "type": "frozen"
         },
         "129": {
+            "adventuringTime": false,
             "description": "Variation of the Plains biome with Sunflowers!",
             "id": "Sunflower Plains",
             "type": "medium"
         },
         "13": {
+            "adventuringTime": true,
             "description": "Icy Mountains",
             "id": "Ice Mountains",
             "type": "frozen"
         },
         "130": {
+            "adventuringTime": false,
             "description": "Desert with some water patches",
             "id": "Desert M",
             "type": "warm"
         },
         "131": {
+            "adventuringTime": false,
             "description": "Like Extreme Hills but higher mountains composed of gravel!",
             "id": "Extreme Hills M",
             "type": "cold"
         },
         "132": {
+            "adventuringTime": false,
             "description": "Less trees but tons of flowers!",
             "id": "Flower Forest",
             "type": "medium"
         },
         "133": {
+            "adventuringTime": false,
             "description": "Mountainous version of the Taiga biome",
             "id": "Taiga M",
             "type": "cold"
         },
         "134": {
+            "adventuringTime": false,
             "description": "Slightly hillier swampland.",
             "id": "Swampland M",
             "type": "medium"
         },
         "14": {
+            "adventuringTime": true,
             "description": "Very strange biome with Mooshrooms and huge mushrooms.",
             "id": "MushroomIsland",
             "name": "Mushroom Island",
             "type": "neutral"
         },
         "140": {
+            "adventuringTime": false,
             "description": "Much snow and spikes made of ice",
             "id": "Ice Plains Spikes",
             "type": "frozen"
         },
         "149": {
+            "adventuringTime": false,
             "description": "Jungle with more mountains!",
             "id": "Jungle M",
             "type": "medium"
         },
         "15": {
+            "adventuringTime": true,
             "description": "The flat areas of the Mushroom island",
             "id": "MushroomIslandShore",
             "name": "Mushroom Island Shore",
             "type": "neutral"
         },
         "151": {
+            "adventuringTime": false,
             "description": "Border of the Mountain Jungle",
             "id": "Jungle Edge M",
             "type": "medium"
         },
         "155": {
+            "adventuringTime": false,
             "description": "Taller birch trees than in the original Birch Forest biome",
             "id": "Birch Forest M",
             "type": "medium"
         },
         "156": {
+            "adventuringTime": false,
             "description": "Birch Forest Hills with very large mountains and tall birch trees",
             "id": "Birch Forest Hills M",
             "type": "medium"
         },
         "157": {
+            "adventuringTime": false,
             "description": "Mounain version of Roofed Forest with steep cliffs.",
             "id": "Roofed Forest M",
             "type": "medium"
         },
         "158": {
+            "adventuringTime": false,
             "description": "Like Taiga, only with snow",
             "id": "Cold Taiga M",
             "type": "frozen"
         },
         "16": {
+            "adventuringTime": true,
             "description": "Very flat, much sand, can often be found next to oceans",
             "id": "Beach",
             "type": "medium"
         },
         "160": {
+            "adventuringTime": false,
             "description": "Mega Taiga with even more trees!",
             "id": "Mega Spruce Taiga",
             "type": "cold"
         },
         "161": {
+            "adventuringTime": false,
             "description": "The hill variant of the Mega Spruce Taiga",
             "id": "Mega Spruce Taiga Hills",
             "type": "cold"
         },
         "162": {
+            "adventuringTime": false,
             "description": "Huge Gravel Mountains!",
             "id": "Extreme Hills+ M",
             "name": "Extreme Hills + M",
             "type": "cold"
         },
         "163": {
+            "adventuringTime": false,
             "description": "Savanna with dirt paths and giant mountains",
             "id": "Savanna M",
             "type": "warm"
         },
         "164": {
+            "adventuringTime": false,
             "description": "A slightly flatter version of the Savanna Plateau",
             "id": "Savanna Plateau M",
             "type": "warm"
         },
         "165": {
+            "adventuringTime": false,
             "description": "Like mesa but with a low desert-like ground area and tall columns of stained clay",
             "id": "Mesa (Bryce)",
             "type": "warm"
         },
         "166": {
+            "adventuringTime": false,
             "description": "A slightly flatter version of the Mesa Plateau F",
             "id": "Mesa Plateau F M",
             "type": "warm"
         },
         "167": {
+            "adventuringTime": false,
             "description": "A slightly flatter version of the Mesa Plateau",
             "id": "Mesa Plateau M",
             "type": "warm"
         },
         "17": {
+            "adventuringTime": true,
             "description": "The hill variant of the desert",
             "id": "DesertHills",
             "name": "Desert Hills",
             "type": "warm"
         },
         "18": {
+            "adventuringTime": true,
             "description": "The hill variant of the Forest",
             "id": "ForestHills",
             "name": "Forest Hills",
             "type": "medium"
         },
         "19": {
+            "adventuringTime": true,
             "description": "The hill variant of the Taiga",
             "id": "TaigaHills",
             "name": "Taiga Hills",
             "type": "cold"
         },
         "2": {
+            "adventuringTime": true,
             "description": "Sand everywhere!",
             "id": "Desert",
             "type": "warm"
@@ -184,133 +217,159 @@
             "type": "cold"
         },
         "21": {
+            "adventuringTime": true,
             "description": "Very dense tropical biome with huge trees! You can find ocelots here!",
             "id": "Jungle",
             "type": "medium"
         },
         "22": {
+            "adventuringTime": true,
             "description": "The hill variant of the Jungle",
             "id": "JungleHills",
             "type": "medium"
         },
         "23": {
+            "adventuringTime": true,
             "description": "The border of the Jungle",
             "id": "Jungle Edge",
             "type": "medium"
         },
         "24": {
+            "adventuringTime": true,
             "description": "An ocean that is very deep. The ground is mostly made of gravel.",
             "id": "Deep Ocean",
             "type": "neutral"
         },
         "25": {
+            "adventuringTime": true,
             "description": "Stone cliffs!",
             "id": "Stone Beach",
             "type": "cold"
         },
         "26": {
+            "adventuringTime": true,
             "description": "A beach with snow everywhere",
             "id": "Cold Beach",
             "type": "frozen"
         },
         "27": {
+            "adventuringTime": true,
             "description": "A forest made solely out of birch trees",
             "id": "Birch Forest",
             "type": "medium"
         },
         "28": {
+            "adventuringTime": true,
             "description": "The hill variant of the Birch Forest",
             "id": "Birch Forest Hills",
             "type": "medium"
         },
         "29": {
+            "adventuringTime": true,
             "description": "Dark Oak Trees that form a closed roof of leaves",
             "id": "Roofed Forest",
             "type": "medium"
         },
         "3": {
+            "adventuringTime": true,
             "description": "Biome with tons of mountains.",
             "id": "Extreme Hills",
             "type": "cold"
         },
         "30": {
+            "adventuringTime": true,
             "description": "Like taiga, only with tons of snow!",
             "id": "Cold Taiga",
             "type": "frozen"
         },
         "31": {
+            "adventuringTime": true,
             "description": "The hill variant of the Cold Taiga",
             "id": "Cold Taiga Hills",
             "type": "frozen"
         },
         "32": {
+            "adventuringTime": true,
             "description": "Big taiga with lots of big spruce trees. You can find Podzol here.",
             "id": "Mega Taiga",
             "type": "cold"
         },
         "33": {
+            "adventuringTime": true,
             "description": "The hill variant of the Mega Taiga",
             "id": "Mega Taiga Hills",
             "type": "cold"
         },
         "34": {
+            "adventuringTime": true,
             "description": "Extreme Hills with some spruce and oak trees",
             "id": "Extreme Hills+",
             "name": "Extreme Hills +",
             "type": "cold"
         },
         "35": {
+            "adventuringTime": true,
             "description": "Flat and dry biome with yellow grass and acacia trees",
             "id": "Savanna",
             "type": "warm"
         },
         "36": {
+            "adventuringTime": true,
             "description": "A Savanna Plateau",
             "id": "Savanna Plateau",
             "type": "warm"
         },
         "37": {
+            "adventuringTime": true,
             "description": "Biome made of stained clay and Red Sand",
             "id": "Mesa",
             "type": "warm"
         },
         "38": {
+            "adventuringTime": true,
             "description": "A Mesa Plateau",
             "id": "Mesa Plateau F",
             "type": "warm"
         },
         "39": {
+            "adventuringTime": true,
             "description": "A Mesa Plateau",
             "id": "Mesa Plateau",
             "type": "warm"
         },
         "4": {
+            "adventuringTime": true,
             "description": "Oak and birch wood forest.",
             "id": "Forest",
             "type": "medium"
         },
         "5": {
+            "adventuringTime": true,
             "description": "You can find spruce trees everywhere here. Wolves are common here!",
             "id": "Taiga",
             "type": "cold"
         },
         "6": {
+            "adventuringTime": true,
             "description": "Legend has is that you can occasionally find witches here!",
             "id": "Swampland",
             "type": "medium"
         },
         "7": {
+            "adventuringTime": true,
             "description": "Floating Water",
             "id": "River",
             "type": "medium"
         },
         "8": {
+            "adventuringTime": false,
             "description": "Very danger! Many Ghast! Be careful!",
             "id": "Hell",
             "name": "Nether",
             "type": "warm"
         },
         "9": {
+            "adventuringTime": false,
             "description": "Many endermen. Floating island in the Sky. If you fall down, you die!",
             "id": "Sky",
             "name": "The End",
