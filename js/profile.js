@@ -338,28 +338,26 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
 
                 general.push({'name': final_key, 'value': final_value});
             }
-        } else {
-            if (stat[0] === 'achievement') {
-                var id = stat[1];
-                var name = id;
-                var description = "";
-                if (id in achievement_data) {
-                    name = achievement_data[id]['displayname'];
-                    description = achievement_data[id]['description'];
-                };
-                
-                var final_value = value;
-                if (stat[1] === 'exploreAllBiomes' && 'value' in value) {
+        } else if (stat[0] === 'achievement') {
+            var id = stat[1];
+            var name = id;
+            var description = "";
+            if (id in achievement_data) {
+                name = achievement_data[id]['displayname'];
+                description = achievement_data[id]['description'];
+            };
+            var final_value = value;
+            if (stat[1] === 'exploreAllBiomes' && 'value' in value) {
+                if (value['value'] > 0) {
+                    final_value = 'Yes';
+                } else {
                     var visitedBiomes = value['progress'].slice(0);
                     final_value = '<span class="achievement-list">';
-
                     adventuring_biomes = _.filter(biomes.biomes, function(biome) {
                         return biome.adventuringTime;
                     });
-
                     _.map(adventuring_biomes, function(biome) {
                         final_value += '<span class="glyphicon-text-aligned achievement-value">';
-
                         if (_.find(visitedBiomes, function(biome_name) {
                             return biome_name === biome.id;
                         })) {
@@ -367,28 +365,25 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
                         } else {
                             final_value += '<span class="glyphicon glyphicon-remove text-danger"></span> ';
                         };
-
                         final_value += '<abbr class="nounderline achievement-name" title="' + biome.description + '">' + biome.name + '</abbr></span> ';
                     });
-
                     final_value += '</span>';
-                } else {
-                    if (parseInt(value) >= 1) {
-                        final_value = 'Yes';
-                    } else {
-                        final_value = 'No';
-                    }
                 }
-                
-                achievements.push({
-                    'description': description,
-                    'fancy' : 'fancy' in achievement_data[id] ? achievement_data[id]['fancy'] : false,
-                    'id': id,
-                    'image': '/assets/img/grid/' + item_data.itemById(achievement_data[id]['icon'].toString()).image,
-                    'name': name,
-                    'value': final_value
-                });
-            };
+            } else {
+                if (parseInt(value) >= 1) {
+                    final_value = 'Yes';
+                } else {
+                    final_value = 'No';
+                }
+            }
+            achievements.push({
+                'description': description,
+                'fancy' : 'fancy' in achievement_data[id] ? achievement_data[id]['fancy'] : false,
+                'id': id,
+                'image': '/assets/img/grid/' + item_data.itemById(achievement_data[id]['icon'].toString()).image,
+                'name': name,
+                'value': final_value
+            });
         }
     });
 

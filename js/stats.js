@@ -204,7 +204,7 @@ function display_biomes_stat_data(achievement_stat_data, biome_data, people) {
         var numBiomes = 0;
         if ('achievement.exploreAllBiomes' in achievement_stats) {
             if ('value' in achievement_stats['achievement.exploreAllBiomes'] && achievement_stats['achievement.exploreAllBiomes']['value'] > 0) {
-                numBiomes = adventuringTimeBiomes.length;
+                numBiomes = achievement_stats['achievement.exploreAllBiomes']['progress'].length;
             } else if ('progress' in achievement_stats['achievement.exploreAllBiomes']) {
                 achievement_stats['achievement.exploreAllBiomes']['progress'].forEach(function(biome_id) {
                     if ($.inArray(biome_id, adventuringTimeBiomes) != -1) {
