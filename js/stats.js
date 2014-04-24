@@ -200,6 +200,7 @@ function display_biomes_stat_data(achievement_stat_data, biome_data, people) {
         adventuringTimeBiomes.push(biomeInfo['id']);
     });
     var biomeStats = {};
+    biomeStats[adventuringTimeBiomes.length.toString()] = [];
     $.each(achievement_stat_data, function(minecraft_nick, achievement_stats) {
         var numBiomes = 0;
         if ('achievement.exploreAllBiomes' in achievement_stats) {
@@ -224,7 +225,7 @@ function display_biomes_stat_data(achievement_stat_data, biome_data, people) {
     });
     //TODO sort by number of biomes
     $.each(biomeStats, function(numBiomes, people_list) {
-        $tr = $('<tr>').html($('<td>').html(numBiomes));
+        $tr = $('<tr>').html($('<td>').html(people_list.length ? numBiomes : $('<span>', {'class': 'muted'}).text((numBiomes == adventuringTimeBiomes.length) ? 'this many biomes required for Adventuring Time' : '(no one)')));
         $tr.append($('<td>').html(html_player_list(people.sorted(people_list))));
         $('#stats-achievements-table-biome-track tbody tr:last').after($tr);
     });
