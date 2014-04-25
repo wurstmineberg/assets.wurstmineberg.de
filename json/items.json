@@ -1763,21 +1763,41 @@
         "type": "block"
     },
     "256": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 7
+        },
         "id": "minecraft:iron_shovel",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/01/Grid_Iron_Shovel.png",
         "name": "Iron Shovel"
     },
     "257": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 6
+        },
         "id": "minecraft:iron_pickaxe",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1d/Grid_Iron_Pickaxe.png",
         "name": "Iron Pickaxe"
     },
     "258": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 8
+        },
         "id": "minecraft:iron_axe",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1d/Grid_Iron_Axe.png",
         "name": "Iron Axe"
     },
     "259": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 9
+        },
         "id": "minecraft:flint_and_steel",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fb/Grid_Flint_and_Steel.png",
         "name": "Flint and Steel"
@@ -1882,6 +1902,11 @@
         "name": "Wooden Sword"
     },
     "269": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 14
+        },
         "id": "minecraft:wooden_shovel",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/21/Grid_Wooden_Shovel.png",
         "name": "Wooden Shovel"
@@ -1905,11 +1930,21 @@
         "type": "block"
     },
     "270": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 13
+        },
         "id": "minecraft:wooden_pickaxe",
         "image": "woodpickaxe.png",
         "name": "Wooden Pickaxe"
     },
     "271": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 15
+        },
         "id": "minecraft:wooden_axe",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2a/Grid_Wooden_Axe.png",
         "name": "Wooden Axe"
@@ -1920,16 +1955,31 @@
         "name": "Stone Sword"
     },
     "273": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 11
+        },
         "id": "minecraft:stone_shovel",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/ff/Grid_Stone_Shovel.png",
         "name": "Stone Shovel"
     },
     "274": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 10
+        },
         "id": "minecraft:stone_pickaxe",
         "image": "stonepickaxe.png",
         "name": "Stone Pickaxe"
     },
     "275": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 12
+        },
         "id": "minecraft:stone_axe",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/55/Grid_Stone_Axe.png",
         "name": "Stone Axe"
@@ -1940,16 +1990,31 @@
         "name": "Diamond Sword"
     },
     "277": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 4
+        },
         "id": "minecraft:diamond_shovel",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8e/Grid_Diamond_Shovel.png",
         "name": "Diamond Shovel"
     },
     "278": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 3
+        },
         "id": "minecraft:diamond_pickaxe",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/ce/Grid_Diamond_Pickaxe.png",
         "name": "Diamond Pickaxe"
     },
     "279": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 5
+        },
         "id": "minecraft:diamond_axe",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8d/Grid_Diamond_Axe.png",
         "name": "Diamond Axe"
@@ -2008,16 +2073,31 @@
         "name": "Golden Sword"
     },
     "284": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 17
+        },
         "id": "minecraft:golden_shovel",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/85/Grid_Gold_Shovel.png",
         "name": "Golden Shovel"
     },
     "285": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 16
+        },
         "id": "minecraft:golden_pickaxe",
         "image": "goldpickaxe.png",
         "name": "Golden Pickaxe"
     },
     "286": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 18
+        },
         "id": "minecraft:golden_axe",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/99/Grid_Gold_Axe.png",
         "name": "Golden Axe"
@@ -2629,16 +2709,31 @@
         "name": "Egg"
     },
     "345": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 0
+        },
         "id": "minecraft:compass",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f2/Grid_Compass.png",
         "name": "Compass"
     },
     "346": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 2
+        },
         "id": "minecraft:fishing_rod",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c7/Grid_Fishing_Rod.png",
         "name": "Fishing Rod"
     },
     "347": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 1
+        },
         "id": "minecraft:clock",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/32/Grid_Clock.png",
         "name": "Clock"
@@ -3097,6 +3192,11 @@
         "name": "Map"
     },
     "359": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 2
+        },
         "id": "minecraft:shears",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/13/Grid_Shears.png",
         "name": "Shears"
@@ -4402,6 +4502,11 @@
         "name": "Mob Head"
     },
     "398": {
+        "cloud": {
+            "x": 0,
+            "y": 5,
+            "z": 19
+        },
         "id": "minecraft:carrot_on_a_stick",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e4/Grid_Carrot_on_a_Stick.png",
         "name": "Carrot on a Stick"
