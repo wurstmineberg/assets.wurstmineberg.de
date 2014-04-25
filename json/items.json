@@ -607,7 +607,7 @@
             "z": 10
         },
         "id": "minecraft:wooden_button",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c6/Grid_Wooden_Button.png",
+        "image": "woodbutton.png",
         "name": "Wooden Button"
     },
     "144": {
@@ -5018,7 +5018,7 @@
             "z": 3
         },
         "id": "minecraft:torch",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/32/Grid_Torch.png",
+        "image": "torch.png",
         "name": "Torch",
         "solid": false,
         "subtype": "torch",
@@ -5412,7 +5412,7 @@
             "z": 11
         },
         "id": "minecraft:stone_button",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/81/Grid_Stone_Button.png",
+        "image": "stonebutton.png",
         "name": "Stone Button"
     },
     "78": {
