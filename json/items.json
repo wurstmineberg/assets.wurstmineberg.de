@@ -1831,11 +1831,21 @@
         "name": "Apple"
     },
     "261": {
+        "cloud": {
+            "x": 1,
+            "y": 5,
+            "z": 0
+        },
         "id": "minecraft:bow",
         "image": "bow.png",
         "name": "Bow"
     },
     "262": {
+        "cloud": {
+            "x": 1,
+            "y": 5,
+            "z": 1
+        },
         "id": "minecraft:arrow",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/cc/Grid_Arrow.png",
         "name": "Arrow"
@@ -1892,11 +1902,21 @@
         "name": "Gold Ingot"
     },
     "267": {
+        "cloud": {
+            "x": 1,
+            "y": 5,
+            "z": 3
+        },
         "id": "minecraft:iron_sword",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/d5/Grid_Iron_Sword.png",
         "name": "Iron Sword"
     },
     "268": {
+        "cloud": {
+            "x": 1,
+            "y": 5,
+            "z": 5
+        },
         "id": "minecraft:wooden_sword",
         "image": "woodsword.png",
         "name": "Wooden Sword"
@@ -1950,6 +1970,11 @@
         "name": "Wooden Axe"
     },
     "272": {
+        "cloud": {
+            "x": 1,
+            "y": 5,
+            "z": 4
+        },
         "id": "minecraft:stone_sword",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e1/Grid_Stone_Sword.png",
         "name": "Stone Sword"
@@ -1985,6 +2010,11 @@
         "name": "Stone Axe"
     },
     "276": {
+        "cloud": {
+            "x": 1,
+            "y": 5,
+            "z": 2
+        },
         "id": "minecraft:diamond_sword",
         "image": "diamondsword.png",
         "name": "Diamond Sword"
@@ -2068,6 +2098,11 @@
         "name": "Mushroom Stew"
     },
     "283": {
+        "cloud": {
+            "x": 1,
+            "y": 5,
+            "z": 6
+        },
         "id": "minecraft:golden_sword",
         "image": "goldsword.png",
         "name": "Golden Sword"
@@ -2595,6 +2630,11 @@
         "name": "Redstone Dust"
     },
     "332": {
+        "cloud": {
+            "x": 1,
+            "y": 5,
+            "z": 8
+        },
         "id": "minecraft:snowball",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/67/Grid_Snowball.png",
         "name": "Snowball"
@@ -4352,6 +4392,11 @@
         "name": "Bottle o'Enchanting"
     },
     "385": {
+        "cloud": {
+            "x": 1,
+            "y": 5,
+            "z": 7
+        },
         "id": "minecraft:fire_charge",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e1/Grid_Fire_Charge.png",
         "name": "Fire Charge"
