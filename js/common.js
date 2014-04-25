@@ -68,7 +68,7 @@ function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/1189
     return div.innerHTML;
 }
 
-function Person (person_data) {
+function Person(person_data) {
     this.id = person_data['id'];
     this.description = person_data['description'];
     this.favColor = person_data['favColor'];
@@ -133,7 +133,7 @@ function Person (person_data) {
     };
 }
 
-function People (people_data) {
+function People(people_data) {
     this.list = function() {
         return _.map(people_data, function(value) {
             return new Person(value);
@@ -178,7 +178,7 @@ function People (people_data) {
     };
 }
 
-function Biome (biome_data) {
+function Biome(biome_data) {
     this.id = biome_data['id'];
     this.description = function() {
         if ('description' in biome_data) {
@@ -205,7 +205,7 @@ function Biome (biome_data) {
     }();
 }
 
-function BiomeInfo (biome_info) {
+function BiomeInfo(biome_info) {
     this.biomes = function() {
         var biomes_list = _.map(biome_info['biomes'], function(biome_data) {
             return new Biome(biome_data);
@@ -266,7 +266,7 @@ function Item(numericID, itemInfo) {
     }
 }
 
-function ItemData (itemData) {
+function ItemData(itemData) {
     this.itemByDamage = function(id, damage) {
         if (_.isString(id) && /^[0-9]+$/.test(id)) {
             id = parseInt(id);
@@ -320,6 +320,47 @@ function ItemData (itemData) {
     };
 }
 
+function Achievement(achievementData, achievementID) {
+    this.description = achievementData[achievementID].description;
+    this.displayName = achievementData[achievementID].displayname;
+    this.fancy = 'fancy' in achievementData[achievementID] ? achievementData[achievementID].fancy : false;
+    this.id = achievementID;
+    this.item = function(itemData) {
+        return itemData.itemById(achievementData[achievementID].icon);
+    };
+    this.requires = achievementData[achievementID].requires ? Achievement(achievementData, achievementData[achievementID].requires) : null;
+    this.sortOrder = function(otherAchievement) {
+        if (this.id === other.id) {
+            return 0;
+        }
+        var required = this;
+        while (true) {
+            required = required.requires;
+            if (required === null) {
+                break;
+            }
+            if (required.id === other.id) {
+                return -1;
+            }
+        }
+        required = other;
+        while (true) {
+            required = required.requires;
+            if (required === null) {
+                break;
+            }
+            if (required.id === other.id) {
+                return 1;
+            }
+        }
+        if (this.id > other.id) {
+            return 1;
+        }
+        return -1;
+    };
+    this.track = achievementData[achievementID].track;
+}
+
 var API = {
     ajaxJSONDeferred: function(url) {
         return $.ajax(url, {
@@ -329,88 +370,75 @@ var API = {
             return ajaxData;
         });
     },
-
     serverStatus: function() {
         return API.ajaxJSONDeferred('assets/serverstatus/status.json');
     },
-
     stringData: function() {
         return API.ajaxJSONDeferred('/static/json/strings.json');
     },
-
     itemData: function() {
         return API.ajaxJSONDeferred('/static/json/items.json');
     },
-    
     items: function() {
         return API.itemData().then(function(itemData) {
             return new ItemData(itemData);
         });
     },
-    
     achievementData: function() {
         return API.ajaxJSONDeferred('/static/json/achievements.json');
     },
-
+    achievement: function(achievementID) {
+        return API.achievementData().then(function(achievementData) {
+            return new Achievement(achievementData, achievementID);
+        });
+    },
     peopleData: function() {
         return API.ajaxJSONDeferred('/assets/serverstatus/people.json');
     },
-
     people: function() {
         return API.peopleData().then(function(people_data) {
             return new People('people' in people_data ? people_data['people'] : people_data);
         });
     },
-
     personById: function(player_id) {
         return API.ajaxJSONDeferred('//api.wurstmineberg.de/player/' + player_id + '/info.json')
             .then(function(person_data) {
                 return new Person(person_data);
             });
     },
-
     statData: function() {
         return API.ajaxJSONDeferred('//api.wurstmineberg.de/server/playerstats/general.json');
     },
-    
     achievementStatData: function() {
         return API.ajaxJSONDeferred('//api.wurstmineberg.de/server/playerstats/achievement.json');
     },
-    
     person: function(player) {
         return API.personById(player.id)
     },
-    
     playerData: function(person) {
         if (person.minecraft) {
             return API.ajaxJSONDeferred('//api.wurstmineberg.de/player/' + person.minecraft + '/playerdata.json');
         }
     },
-    
     personStatData: function(person) {
         if (person.minecraft) {
             return API.ajaxJSONDeferred('//api.wurstmineberg.de/player/' + person.minecraft + '/stats.json');
         };
     },
-
     moneys: function() {
         return API.ajaxJSONDeferred('/assets/serverstatus/moneys.json');
     },
-
     biomeData: function() {
         return API.ajaxJSONDeferred('/static/json/biomes.json');
     },
-
     biomes: function() {
         return API.biomeData().then(function(biome_data) {
             return new BiomeInfo(biome_data);
         });
     },
-    
     deathGamesLog: function() {
         return API.ajaxJSONDeferred('//api.wurstmineberg.de/deathgames/log.json');
     },
-    
     lastSeen: function(person) {
         return API.ajaxJSONDeferred('//api.wurstmineberg.de/server/sessions/lastseen.json').then(function(lastSeenData) {
             if (person.id in lastSeenData) {

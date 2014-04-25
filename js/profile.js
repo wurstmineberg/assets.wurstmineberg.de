@@ -340,14 +340,8 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
             }
         } else if (stat[0] === 'achievement') {
             var id = stat[1];
-            var name = id;
-            var description = "";
-            if (id in achievement_data) {
-                name = achievement_data[id]['displayname'];
-                description = achievement_data[id]['description'];
-            };
             var final_value = value;
-            if (stat[1] === 'exploreAllBiomes' && 'value' in value) {
+            if (id === 'exploreAllBiomes' && 'value' in value) {
                 if (value['value'] > 0) {
                     final_value = 'Yes';
                 } else {
@@ -377,43 +371,31 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
                 }
             }
             achievements.push({
-                'description': description,
-                'fancy' : 'fancy' in achievement_data[id] ? achievement_data[id]['fancy'] : false,
-                'id': id,
-                'image': '/assets/img/grid/' + item_data.itemById(achievement_data[id]['icon'].toString()).image,
-                'name': name,
+                'achievement': Achievement(achievement_data, id),
                 'value': final_value
             });
         }
     });
-
+    
     // Add the missing achievements
     $.each(achievement_data, function(id, achievement_dict) {
-        var alreadyExisting = false;
-        $.each(achievements, function(index, dict) {
-            if (id === dict['id']) {
-                alreadyExisting = true;
-                return;
-            };
+        var alreadyExisting = _.some(_.values(achievements), function(achievement) {
+            return (id === achievement.id);
         });
-        
         if (!alreadyExisting) {
             achievements.push({
-                'description': achievement_dict['description'],
-                'fancy': 'fancy' in achievement_dict ? achievement_dict['fancy'] : false,
-                'image': '/assets/img/grid/' + item_data.itemById(achievement_dict['icon'].toString()).image,
-                'name': achievement_dict['displayname'],
+                'achievement': Achievement(achievement_data, id),
                 'value': 'No'
             });
         };
     });
-
+    
     general.sort(function(a, b) {
         nameA = a['name'];
         nameB = b['name'];
         return nameA.localeCompare(nameB);
     });
-
+    
     mobs.sort(function(a, b) {
         nameA = a['name'];
         nameB = b['name'];
@@ -429,37 +411,33 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
     });
     
     achievements.sort(function(a, b) {
-        nameA = a['name'];
-        nameB = b['name'];
-        return nameA.localeCompare(nameB);
+        return a.achievement.sortOrder(b.achievement);
     });
     
     $.each(general, function(index, dict) {
         name = dict['name'];
         value = dict['value'];
-
         var row = '<tr id="general-row-' + name + '" class="general-row"><td class="name">' + name + '</td><td class="info">' + value + '</td></tr>'
         loading_stat_general.before(row);
     });
-
+    
     $.each(mobs, function(index, dict) {
         name = dict['name'];
         id = dict['id']
-
+        
         row = '<tr id="mob-row-' + id + '" class="mob-row"><td class="name"></td><td class="killed">0</td><td class="killed-by">0</td></tr>';
         loading_stat_mobs.before(row);
         row = $('#mob-row-' + id);
         row.children('.name').text(name);
-
+        
         if ('killEntity' in dict) {
             row.children('.killed').text(dict['killEntity']);
         }
-
+        
         if ('entityKilledBy' in dict) {
             row.children('.killed-by').text(dict['entityKilledBy']);
         }
     });
-
     $.each(items, function(index, dict) {
         var name = dict['name'];
         var id = dict['numericID'];
@@ -468,26 +446,25 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
             var info = dict['info'];
             image = info.htmlImage('item-image');
         }
-        
         var row = '<tr id="item-row-' + id + '" class="item-row"><td class="image"></td><td class="name"></td><td class="depleted">0</td><td class="crafted">0</td><td class="used">0</td></tr>';
         loading_stat_item.before(row);
         row = $('#item-row-' + id);
         row.children('.name').text(name);
         row.children('.image').html(image);
-
+        
         if ('craftItem' in dict) {
             row.children('.crafted').text(dict['craftItem']);
         }
-
+        
         if ('useItem' in dict) {
             row.children('.used').text(dict['useItem']);
         }
-
+        
         if ('breakItem' in dict) {
             row.children('.depleted').text(dict['breakItem']);
         }
     });
-
+    
     $.each(blocks, function(index, dict) {
         var name = dict['name'];
         var id = dict['numericID'];
@@ -502,38 +479,37 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
         row = $('#block-row-' + id);
         row.children('.name').text(name);
         row.children('.image').html(image);
-
+        
         if ('craftItem' in dict) {
             row.children('.crafted').text(dict['craftItem']);
         }
-
+        
         if ('useItem' in dict) {
             row.children('.used').text(dict['useItem']);
         }
-
+        
         if ('mineBlock' in dict) {
             row.children('.mined').text(dict['mineBlock']);
         }
     });
-
+    
     $.each(achievements, function(index, dict) {
-        name = dict['name'];
-        description = dict['description'];
-        value = dict['value']
-
+        name = dict.achievement.displayName;
+        description = dict.achievement.description;
+        value = dict['value'];
+        
         if (value === "Yes") {
             value = '<span class="glyphicon glyphicon-ok text-success"></span>'
         } else if (value === "No") {
             value = '<span class="glyphicon glyphicon-remove text-danger"></span>'
         }
-
-        row = '<tr id="achievement-row-' + name + '" class="achievement-row"><td><img class="achievement-image' + (dict['fancy'] ? ' fancy' : '') + '" src="' + dict['image'] + '" /></td><td class="name"><a href="#" data-toggle="tooltip" data-placement="right" rel="tooltip" class="text-link" title="' + description + '">' + name + '</a></td><td class="value">' + value + '</td></tr>';
+        
+        row = '<tr id="achievement-row-' + name + '" class="achievement-row"><td><img class="achievement-image' + (dict.achievement.fancy ? ' fancy' : '') + '" src="' + dict.achievement.item(item_data) + '" /></td><td class="name"><a href="#" data-toggle="tooltip" data-placement="right" rel="tooltip" class="text-link" title="' + dict.achievement.description + '">' + dict.achievement.displayName + '</a></td><td class="value">' + value + '</td></tr>';
         loading_stat_achievements.before(row);
     });
-
+    
     $('.loading-stat').remove();
     initialize_tooltips();
-
     //initialize_datatables();
 }
 
