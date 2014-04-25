@@ -371,7 +371,7 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
                 }
             }
             achievements.push({
-                'achievement': Achievement(achievement_data, id),
+                'achievement': new Achievement(achievement_data, id),
                 'value': final_value
             });
         }
@@ -384,7 +384,7 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
         });
         if (!alreadyExisting) {
             achievements.push({
-                'achievement': Achievement(achievement_data, id),
+                'achievement': new Achievement(achievement_data, id),
                 'value': 'No'
             });
         };
