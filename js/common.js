@@ -328,7 +328,7 @@ function Achievement(achievementData, achievementID) {
     this.item = function(itemData) {
         return itemData.itemById(achievementData[achievementID].icon);
     };
-    this.requires = achievementData[achievementID].requires ? Achievement(achievementData, achievementData[achievementID].requires) : null;
+    this.requires = achievementData[achievementID].requires ? new Achievement(achievementData, achievementData[achievementID].requires) : null;
     this.sortOrder = function(other) {
         if (this.id === other.id) {
             return 0;
