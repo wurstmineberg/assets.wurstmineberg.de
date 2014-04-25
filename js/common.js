@@ -329,7 +329,7 @@ function Achievement(achievementData, achievementID) {
         return itemData.itemById(achievementData[achievementID].icon);
     };
     this.requires = achievementData[achievementID].requires ? Achievement(achievementData, achievementData[achievementID].requires) : null;
-    this.sortOrder = function(otherAchievement) {
+    this.sortOrder = function(other) {
         if (this.id === other.id) {
             return 0;
         }
