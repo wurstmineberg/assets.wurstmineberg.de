@@ -494,17 +494,13 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
     });
     
     $.each(achievements, function(index, dict) {
-        name = dict.achievement.displayName;
-        description = dict.achievement.description;
         value = dict['value'];
-        
         if (value === "Yes") {
             value = '<span class="glyphicon glyphicon-ok text-success"></span>'
         } else if (value === "No") {
             value = '<span class="glyphicon glyphicon-remove text-danger"></span>'
         }
-        
-        row = '<tr id="achievement-row-' + name + '" class="achievement-row"><td><img class="achievement-image' + (dict.achievement.fancy ? ' fancy' : '') + '" src="' + dict.achievement.item(item_data) + '" /></td><td class="name"><a href="#" data-toggle="tooltip" data-placement="right" rel="tooltip" class="text-link" title="' + dict.achievement.description + '">' + dict.achievement.displayName + '</a></td><td class="value">' + value + '</td></tr>';
+        row = '<tr id="achievement-row-' + dict.achievement.id + '" class="achievement-row"><td>' + dict.achievement.item(item_data).htmlImage(dict.achievement.fancy ? 'achievement-image fancy' : 'achievement-image') + '</td><td class="name"><a href="#" data-toggle="tooltip" data-placement="right" rel="tooltip" class="text-link" title="' + dict.achievement.description + '">' + dict.achievement.displayName + '</a></td><td class="value">' + value + '</td></tr>';
         loading_stat_achievements.before(row);
     });
     
