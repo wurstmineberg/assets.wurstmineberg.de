@@ -247,7 +247,7 @@ function Item(numericID, itemInfo) {
             if (itemInfo['image'].startsWith('http://') || itemInfo['image'].startsWith('https://')) {
                 return '<img src="' + itemInfo['image'] + '" class="' + (classes || '') + '" />';
             } else {
-                return '<img src="/assets/img/grid/' + itemInfo['image'] + '" class="' + (classes || '') + '" />';
+                return '<img src="/static/img/grid/' + itemInfo['image'] + '" class="' + (classes || '') + '" />';
             }
         } else {
             return '';
