@@ -152,7 +152,7 @@ function display_inventory(player_data, items, string_data) {
     });
 }
 
-function displayProfileData(person, items, people) {
+function displayProfileData(person, items, people, statData) {
     // Date of Whitelisting
     if (person.joinDate) {
         $('#profile-stat-row-dow').children('.value').text(formatDate(person.joinDate));
@@ -193,6 +193,8 @@ function displayProfileData(person, items, people) {
     $.when(person.latestDeath).done(function(lastDeath) {
         if (lastDeath) {
             $('#profile-stat-row-last-death').children('.value').text(formatDate(lastDeath.timestamp, true) + ', ' + lastDeath.cause);
+        } else if ('stat.deaths' in statData && statData['stat.deaths'] > 0) {
+            $('#profile-stat-row-last-death').children('.value').html($('<span>', {'class': 'muted'}).text('not recorded'));
         } else {
             $('#profile-stat-row-last-death').children('.value').html($('<span>', {'class': 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
         }
@@ -514,7 +516,7 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
     //initialize_datatables();
 }
 
-function load_stat_data(person, string_data, achievement_data, biomes, items) {
+function load_stat_data(person, string_data, achievement_data, biomes, items, people) {
     if (person.option('show_inventory')) {
         $.when(API.playerData(person)).done(function(player_data) {
             display_inventory(player_data, items, string_data);
@@ -525,6 +527,7 @@ function load_stat_data(person, string_data, achievement_data, biomes, items) {
         $('.panel').before('<div class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>Want to show you inventory?</strong> Since you have not set a preference for this, your inventory and Ender chest will be displayed on this page once we get everything working. You can activate this feature now using the command <code>!<a href="//wiki.wurstmineberg.de/Commands#Option">Option</a> show_inventory on</code>, or permanently deactivate it with <code>!<a href="//wiki.wurstmineberg.de/Commands#Option">Option</a> show_inventory off</code>.</div>');
     }
     $.when(API.personStatData(person)).done(function(stat_data) {
+        displayProfileData(person, items, people, stat_data);
         display_stat_data(stat_data, string_data, items, achievement_data, biomes);
     }).fail(function() {
         $('.loading-stat').html('<td colspan="7">Error: Could not load ' + person.minecraft + '.json</td>');
@@ -536,9 +539,8 @@ function load_user_data() {
     document.title = username + ' on Wurstmineberg';
     $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people()).done(function(person, string_data, achievement_data, biomes, items, people) {
         document.title = person.interfaceName + ' on Wurstmineberg';
-        load_stat_data(person, string_data, achievement_data, biomes, items);
+        load_stat_data(person, string_data, achievement_data, biomes, items, people);
         display_user_data(person);
-        displayProfileData(person, items, people);
     }).fail(function() {
         $('.loading').html('Error: User with this name not found');
     });
