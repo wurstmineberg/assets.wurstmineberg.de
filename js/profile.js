@@ -410,7 +410,7 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
     });
     
     achievements.sort(function(a, b) {
-        return a.achievement.sortOrder(b.achievement);
+        return a.achievement.sortIndex() - b.achievement.sortIndex();
     });
     
     $.each(general, function(index, dict) {

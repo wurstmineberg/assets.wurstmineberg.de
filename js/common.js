@@ -350,42 +350,21 @@ function Achievement(achievementData, achievementID) {
     };
     this.requires = achievementData[achievementID].requires ? new Achievement(achievementData, achievementData[achievementID].requires) : null;
     this.root = (this.requires === null) ? this : this.requires.root;
-    this.sortOrder = function(other) {
-        if (this.id === other.id) {
+    this.sortIndex = function() { // the index within the achievement tree, breaks when comparing achievements from different trees
+        if (this.requires === null) {
             return 0;
         }
-        if (this.hasChild(other.id)) {
-            return 1;
+        var index = _.map(this.requires.children(), function(achievement) {
+            return achievement.id;
+        }).indexOf(this.id);
+        if (index == 0) {
+            return this.requires.sortIndex() + 1;
         }
-        if (other.hasChild(this.id)) {
-            return -1;
+        var previous = this.requires.children()[index - 1];
+        while (previous.children().length) {
+            previous = _.last(previous.children());
         }
-        var required = this;
-        var previousRequired = null;
-        var returnValue = null;
-        var seenPrevious = false
-        while (true) {
-            previousRequired = required;
-            required = required.requires;
-            seenPrevious = false;
-            if (required === null) {
-                break;
-            }
-            required.children().forEach(function(child) {
-                if (child == previousRequired) {
-                    seenPrevious = true;
-                } else if (child.id === other.id || child.hasChild(other.id)) {
-                    returnValue = seenPrevious ? 1 : -1;
-                }
-            });
-            if (returnValue !== null) {
-                return returnValue;
-            }
-        }
-        if (this.root.id > other.root.id) {
-            return 1;
-        }
-        return -1;
+        return previous.sortIndex() + 1;
     };
     this.track = achievementData[achievementID].track;
 }
