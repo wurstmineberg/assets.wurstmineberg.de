@@ -379,7 +379,7 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
     // Add the missing achievements
     _.keys(achievement_data).forEach(function(id) {
         var alreadyExisting = _.some(_.values(achievements), function(achievement) {
-            return (id === achievement.id);
+            return (id === achievement.achievement.id);
         });
         if (!alreadyExisting) {
             achievements.push({
