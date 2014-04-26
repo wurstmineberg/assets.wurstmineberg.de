@@ -321,24 +321,26 @@ function ItemData(itemData) {
 }
 
 function Achievement(achievementData, achievementID) {
-    this.children = _.map(_.filter(_.pairs(achievementData), function(keyValuePair) {
-        return keyValuePair[1].requires === achievementID;
-    }, this), function(keyValuePair) {
-        return new Achievement(achievementData, keyValuePair[0]);
-    }).sort(function(a, b) {
-        if (a.id < b.id) {
-            return 1;
-        } else if (a.id > b.id) {
-            return -1;
-        } else {
-            return 0;
-        }
-    });
+    this.children = function() {
+        return _.map(_.filter(_.pairs(achievementData), function(keyValuePair) {
+            return keyValuePair[1].requires === achievementID;
+        }, this), function(keyValuePair) {
+            return new Achievement(achievementData, keyValuePair[0]);
+        }).sort(function(a, b) {
+            if (a.id < b.id) {
+                return 1;
+            } else if (a.id > b.id) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
+    };
     this.description = achievementData[achievementID].description;
     this.displayName = achievementData[achievementID].displayname;
     this.fancy = 'fancy' in achievementData[achievementID] ? achievementData[achievementID].fancy : false;
     this.hasChild = function(childID) { // recursive check if childID requires this, directly or indirectly
-        return _.some(this.children, function(achievement) {
+        return _.some(this.children(), function(achievement) {
             return achievement.id == childID || achievement.hasChild(childID);
         });
     };
@@ -368,7 +370,7 @@ function Achievement(achievementData, achievementID) {
             if (required === null) {
                 break;
             }
-            required.children.forEach(function(child) {
+            required.children().forEach(function(child) {
                 if (child == previousRequired) {
                     seenPrevious = true;
                 } else if (child.id === other.id || child.hasChild(other.id)) {
