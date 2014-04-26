@@ -362,6 +362,7 @@ function Achievement(achievementData, achievementID) {
         }
         var required = this;
         var previousRequired = null;
+        var returnValue = null;
         var seenPrevious = false
         while (true) {
             previousRequired = required;
@@ -374,9 +375,12 @@ function Achievement(achievementData, achievementID) {
                 if (child == previousRequired) {
                     seenPrevious = true;
                 } else if (child.id === other.id || child.hasChild(other.id)) {
-                    return seenPrevious ? 1 : -1;
+                    returnValue = seenPrevious ? 1 : -1;
                 }
             });
+            if (returnValue !== null) {
+                return returnValue;
+            }
         }
         if (this.root.id > other.root.id) {
             return 1;
