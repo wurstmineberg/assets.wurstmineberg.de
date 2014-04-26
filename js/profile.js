@@ -410,7 +410,13 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
     });
     
     achievements.sort(function(a, b) {
-        return a.achievement.sortIndex() - b.achievement.sortIndex();
+        if (a.achievement.root.id < b.achievement.root.id) {
+            return 1;
+        } else if (a.achievement.root.id > b.achievement.root.id) {
+            return -1;
+        } else {
+            return a.achievement.sortIndex() - b.achievement.sortIndex();
+        }
     });
     
     $.each(general, function(index, dict) {
