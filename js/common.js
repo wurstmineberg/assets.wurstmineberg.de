@@ -321,39 +321,62 @@ function ItemData(itemData) {
 }
 
 function Achievement(achievementData, achievementID) {
+    this.children = _.map(_.filter(_.pairs(achievementData), function(keyValuePair) {
+        return keyValuePair[1].requires === achievementID;
+    }, this), function(keyValuePair) {
+        return new Achievement(achievementData, keyValuePair[0]);
+    }).sort(function(a, b) {
+        if (a.id < b.id) {
+            return 1;
+        } else if (a.id > b.id) {
+            return -1;
+        } else {
+            return 0;
+        }
+    });
     this.description = achievementData[achievementID].description;
     this.displayName = achievementData[achievementID].displayname;
     this.fancy = 'fancy' in achievementData[achievementID] ? achievementData[achievementID].fancy : false;
+    this.hasChild = function(childID) { // recursive check if childID requires this, directly or indirectly
+        return _.some(this.children, function(achievement) {
+            return achievement.id == childID || achievement.hasChild(childID);
+        });
+    };
     this.id = achievementID;
     this.item = function(itemData) {
         return itemData.itemById(achievementData[achievementID].icon);
     };
     this.requires = achievementData[achievementID].requires ? new Achievement(achievementData, achievementData[achievementID].requires) : null;
+    this.root = (this.requires === null) ? this : this.requires.root;
     this.sortOrder = function(other) {
         if (this.id === other.id) {
             return 0;
         }
+        if (this.hasChild(other.id)) {
+            return 1;
+        }
+        if (other.hasChild(this.id)) {
+            return -1;
+        }
         var required = this;
+        var previousRequired = null;
+        var seenPrevious = false
         while (true) {
+            previousRequired = required;
             required = required.requires;
+            seenPrevious = false;
             if (required === null) {
                 break;
             }
-            if (required.id === other.id) {
-                return -1;
-            }
+            required.children.forEach(function(child) {
+                if (child == previousRequired) {
+                    seenPrevious = true;
+                } else if (child.id === other.id || child.hasChild(other.id)) {
+                    return seenPrevious ? 1 : -1;
+                }
+            });
         }
-        required = other;
-        while (true) {
-            required = required.requires;
-            if (required === null) {
-                break;
-            }
-            if (required.id === other.id) {
-                return 1;
-            }
-        }
-        if (this.id > other.id) {
+        if (this.root.id > other.root.id) {
             return 1;
         }
         return -1;
