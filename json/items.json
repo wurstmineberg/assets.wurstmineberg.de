@@ -1620,61 +1620,121 @@
         "type": "block"
     },
     "2256": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 1
+        },
         "id": "minecraft:record_13",
         "image": "musicdisc13.png",
         "name": "Music Disc: C418 \u2014 13"
     },
     "2257": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 2
+        },
         "id": "minecraft:record_cat",
         "image": "musicdisccat.png",
         "name": "Music Disc: C418 \u2014 cat"
     },
     "2258": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 3
+        },
         "id": "minecraft:record_blocks",
         "image": "musicdiscblocks.png",
         "name": "Music Disc: C418 \u2014 blocks"
     },
     "2259": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 4
+        },
         "id": "minecraft:record_chirp",
         "image": "musicdiscchirp.png",
         "name": "Music Disc: C418 \u2014 chirp"
     },
     "2260": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 5
+        },
         "id": "minecraft:record_far",
         "image": "musicdiscfar.png",
         "name": "Music Disc: C418 \u2014 far"
     },
     "2261": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 6
+        },
         "id": "minecraft:record_mall",
         "image": "musicdiscmall.png",
         "name": "Music Disc: C418 \u2014 mall"
     },
     "2262": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 7
+        },
         "id": "minecraft:record_mellohi",
         "image": "musicdiscmellohi.png",
         "name": "Music Disc: C418 \u2014 mellohi"
     },
     "2263": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 8
+        },
         "id": "minecraft:record_stal",
         "image": "musicdiscstal.png",
         "name": "Music Disc: C418 \u2014 stal"
     },
     "2264": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 9
+        },
         "id": "minecraft:record_strad",
         "image": "musicdiscstrad.png",
         "name": "Music Disc: C418 \u2014 strad"
     },
     "2265": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 10
+        },
         "id": "minecraft:record_ward",
         "image": "musicdiscward.png",
         "name": "Music Disc: C418 \u2014 ward"
     },
     "2266": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 11
+        },
         "id": "minecraft:record_11",
         "image": "musicdisc11.png",
         "name": "Music Disc: C418 \u2014 11"
     },
     "2267": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 12
+        },
         "id": "minecraft:record_wait",
         "image": "musicdiscwait.png",
         "name": "Music Disc: C418 \u2014 wait"
@@ -2264,11 +2324,21 @@
         "name": "Bread"
     },
     "298": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 16
+        },
         "id": "minecraft:leather_helmet",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/24/Grid_Leather_Cap.png",
         "name": "Leather Cap"
     },
     "299": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 17
+        },
         "id": "minecraft:leather_chestplate",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ed/Grid_Leather_Tunic.png",
         "name": "Leather Tunic"
@@ -2316,51 +2386,101 @@
         "type": "block"
     },
     "300": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 18
+        },
         "id": "minecraft:leather_leggings",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/ce/Grid_Leather_Pants.png",
         "name": "Leather Pants"
     },
     "301": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 19
+        },
         "id": "minecraft:leather_boots",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/06/Grid_Leather_Boots.png",
         "name": "Leather Boots"
     },
     "302": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 8
+        },
         "id": "minecraft:chainmail_helmet",
         "image": "chainhelmet.png",
         "name": "Chain Helmet"
     },
     "303": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 9
+        },
         "id": "minecraft:chainmail_chestplate",
         "image": "chainchestplate.png",
         "name": "Chain Chestplate"
     },
     "304": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 10
+        },
         "id": "minecraft:chainmail_leggings",
         "image": "chainleggings.png",
         "name": "Chain Leggings"
     },
     "305": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 11
+        },
         "id": "minecraft:chainmail_boots",
         "image": "chainboots.png",
         "name": "Chain Boots"
     },
     "306": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 4
+        },
         "id": "minecraft:iron_helmet",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ec/Grid_Iron_Helmet.png",
         "name": "Iron Helmet"
     },
     "307": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 5
+        },
         "id": "minecraft:iron_chestplate",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8d/Grid_Iron_Chestplate.png",
         "name": "Iron Chestplate"
     },
     "308": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 6
+        },
         "id": "minecraft:iron_leggings",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/99/Grid_Iron_Leggings.png",
         "name": "Iron Leggings"
     },
     "309": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 7
+        },
         "id": "minecraft:iron_boots",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f5/Grid_Iron_Boots.png",
         "name": "Iron Boots"
@@ -2404,41 +2524,81 @@
         "type": "block"
     },
     "310": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 0
+        },
         "id": "minecraft:diamond_helmet",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bd/Grid_Diamond_Helmet.png",
         "name": "Diamond Helmet"
     },
     "311": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 1
+        },
         "id": "minecraft:diamond_chestplate",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e7/Grid_Diamond_Chestplate.png",
         "name": "Diamond Chestplate"
     },
     "312": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 2
+        },
         "id": "minecraft:diamond_leggings",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e3/Grid_Diamond_Leggings.png",
         "name": "Diamond Leggings"
     },
     "313": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 3
+        },
         "id": "minecraft:diamond_boots",
         "image": "diamondboots.png",
         "name": "Diamond Boots"
     },
     "314": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 12
+        },
         "id": "minecraft:golden_helmet",
         "image": "goldhelmet.png",
         "name": "Golden Helmet"
     },
     "315": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 13
+        },
         "id": "minecraft:golden_chestplate",
         "image": "goldchestplate.png",
         "name": "Golden Chestplate"
     },
     "316": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 14
+        },
         "id": "minecraft:golden_leggings",
         "image": "goldleggings.png",
         "name": "Golden Leggings"
     },
     "317": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 15
+        },
         "id": "minecraft:golden_boots",
         "image": "goldboots.png",
         "name": "Golden Boots"
@@ -2695,6 +2855,11 @@
         "name": "Sugar Cane"
     },
     "339": {
+        "cloud": {
+            "x": 0,
+            "y": 6,
+            "z": 0
+        },
         "id": "minecraft:paper",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6c/Grid_Paper.png",
         "name": "Paper"
@@ -2704,6 +2869,11 @@
         "name": "Piston Extension"
     },
     "340": {
+        "cloud": {
+            "x": 0,
+            "y": 6,
+            "z": 1
+        },
         "id": "minecraft:book",
         "image": "book.png",
         "name": "Book"
@@ -4402,6 +4572,11 @@
         "name": "Fire Charge"
     },
     "386": {
+        "cloud": {
+            "x": 0,
+            "y": 6,
+            "z": 2
+        },
         "id": "minecraft:writable_book",
         "image": "bookandquill.png",
         "name": "Book and Quill"
@@ -4683,16 +4858,31 @@
         "type": "block"
     },
     "417": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 22
+        },
         "id": "minecraft:iron_horse_armor",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/af/Grid_Iron_Horse_Armor.png",
         "name": "Iron Horse Armor"
     },
     "418": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 21
+        },
         "id": "minecraft:golden_horse_armor",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/09/Grid_Golden_Horse_Armor.png",
         "name": "Golden Horse Armor"
     },
     "419": {
+        "cloud": {
+            "x": -1,
+            "y": 5,
+            "z": 20
+        },
         "id": "minecraft:diamond_horse_armor",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/af/Grid_Diamond_Horse_Armor.png",
         "name": "Diamond Horse Armor"
@@ -4908,6 +5098,11 @@
         "type": "block"
     },
     "47": {
+        "cloud": {
+            "x": 0,
+            "y": 6,
+            "z": 3
+        },
         "id": "minecraft:bookshelf",
         "image": "bookshelf.png",
         "name": "Bookshelf",
@@ -5485,6 +5680,11 @@
         "name": "Sugar Cane"
     },
     "84": {
+        "cloud": {
+            "x": 1,
+            "y": 6,
+            "z": 0
+        },
         "id": "minecraft:jukebox",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/10/Grid_Jukebox.png",
         "name": "Jukebox"
