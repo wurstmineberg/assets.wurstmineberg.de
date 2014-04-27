@@ -369,7 +369,7 @@ function Achievement(achievementData, achievementID) {
     this.id = achievementID;
     this.image = function(itemData) {
         return this.item(itemData).htmlImage(this.fancy ? 'achievement-image fancy' : 'achievement-image');
-    }
+    };
     this.item = function(itemData) {
         return itemData.itemById(achievementData[achievementID].icon);
     };
