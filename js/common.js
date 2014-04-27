@@ -367,6 +367,9 @@ function Achievement(achievementData, achievementID) {
         });
     };
     this.id = achievementID;
+    this.image = function(itemData) {
+        return this.item(itemData).htmlImage(this.fancy ? 'achievement-image fancy' : 'achievement-image');
+    }
     this.item = function(itemData) {
         return itemData.itemById(achievementData[achievementID].icon);
     };
@@ -388,7 +391,29 @@ function Achievement(achievementData, achievementID) {
         }
         return previous.sortIndex() + 1;
     };
-    this.track = achievementData[achievementID].track;
+    this.track = 'track' in achievementData[achievementID] ? achievementData[achievementID].track : null;
+}
+
+Achievement.all = function(achievementData) {
+    var ret = _.map(_.keys(achievementData), function(achievementID) {
+        return new Achievement(achievementData, achievementID);
+    });
+    ret.sort(function(a, b) {
+        if (a.root.id < b.root.id) {
+            return 1;
+        } else if (a.root.id > b.root.id) {
+            return -1;
+        } else {
+            return a.sortIndex() - b.sortIndex();
+        }
+    });
+    return ret;
+};
+
+Achievement.track = function(achievementData, trackName) {
+    return _.filter(Achievement.all(achievementData), function(achievement) {
+        return (achievement.track === trackName);
+    });
 }
 
 var API = {
