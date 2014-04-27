@@ -69,6 +69,7 @@ function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/1189
 }
 
 function Person(person_data) {
+    var _this = this;
     this.id = person_data['id'];
     this.description = person_data['description'];
     this.favColor = person_data['favColor'];
@@ -76,7 +77,6 @@ function Person(person_data) {
     this.invitedBy = person_data['invitedBy'];
     this.irc = person_data['irc'];
     this.joinDate = dateObjectFromUTC(person_data['join_date']);
-    var _this = this;
     this.latestDeath = API.ajaxJSONDeferred('//api.wurstmineberg.de/server/deaths/latest.json').then(function(latestDeaths) {
         if (_this.id in latestDeaths.deaths) {
             return {
@@ -88,6 +88,28 @@ function Person(person_data) {
         }
     }); // use with when/done/fail
     this.minecraft = person_data['minecraft'];
+    this.mobDeaths = API.ajaxJSONDeferred('//api.wurstmineberg.de/server/playerstats/entity.json').then(function(entityStats) {
+        var ret = {};
+        if (_this.minecraft in entityStats) {
+            $.each(entityStats[_this.minecraft], function(key, stat) {
+                if (key.startsWith('stat.entityKilledBy.')) {
+                    ret[key.substr('stat.entityKilledBy.'.length)] = stat;
+                }
+            });
+        }
+        return ret;
+    });
+    this.mobKills = API.ajaxJSONDeferred('//api.wurstmineberg.de/server/playerstats/entity.json').then(function(entityStats) {
+        var ret = {};
+        if (_this.minecraft in entityStats) {
+            $.each(entityStats[_this.minecraft], function(key, stat) {
+                if (key.startsWith('stat.killEntity.')) {
+                    ret[key.substr('stat.killEntity.'.length)] = stat;
+                }
+            });
+        }
+        return ret;
+    });
     this.reddit = person_data['reddit'];
     this.status = 'status' in person_data ? person_data['status'] : 'later';
     this.twitter = person_data['twitter'];
@@ -518,8 +540,7 @@ function initialize_tooltips() {
 }
 
 // Some string functions to ease the parsing of substrings
-String.prototype.startsWith = function(needle)
-{
+String.prototype.startsWith = function(needle) {
     return(this.indexOf(needle) == 0);
 };
 

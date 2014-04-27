@@ -355,7 +355,7 @@ function display_deathgames_stat_data(death_games_log, people) {
     });
 }
 
-function load_leaderboard_stat_data() {
+function loadLeaderboardStatData() {
     $.when(API.statData(), API.stringData(), API.people()).done(function(stat_data, string_data, people) {
         display_leaderboard_stat_data(stat_data, string_data, people)
     })
@@ -364,7 +364,11 @@ function load_leaderboard_stat_data() {
     });
 }
 
-function load_achievements_stat_data() {
+function loadMobStatData() {
+    //TODO
+}
+
+function loadAchievementsStatData() {
     $.when(API.biomes(), API.itemData(), API.achievementData(), API.achievementStatData(), API.people()).done(function(biome_data, item_data, achievement_data, achievement_stat_data, people) {
         var main_track = prepare_achievements(achievement_data, item_data);
         display_achievements_stat_data(achievement_data, achievement_stat_data, people, main_track);
@@ -375,7 +379,7 @@ function load_achievements_stat_data() {
     });
 }
 
-function load_deathgames_stat_data() {
+function loadDeathgamesStatData() {
     $.when(API.deathGamesLog(), API.people()).done(function(death_games_log, people) {
         display_deathgames_log(death_games_log, people);
         display_deathgames_stat_data(death_games_log, people);
@@ -386,6 +390,7 @@ function load_deathgames_stat_data() {
 
 select_tab_with_id("tab-stats-leaderboard");
 bind_tab_events();
-load_leaderboard_stat_data();
-load_achievements_stat_data();
-load_deathgames_stat_data();
+loadLeaderboardStatData();
+loadMobStatData();
+loadAchievementsStatData();
+loadDeathgamesStatData();
