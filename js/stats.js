@@ -102,7 +102,7 @@ function display_leaderboard_stat_data(stat_data, string_data, people) {
 function prepareAchievements(achievementData, items) {
     Achievement.track(achievementData, 'main').forEach(function(achievement) {
         var achievement_html = '<tr id="achievement-row-' + achievement.id + '"><td>' + achievement.image(items) + '</td><td>' + achievement.displayName + '</td><td class="achievement-players">&nbsp;</td>';
-        $('#achievement-row-none').after(achievement_html);
+        $('#achievement-row-noadventuringtime').before(achievement_html);
     });
     $('#achievement-row-loading').remove();
 }
