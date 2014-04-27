@@ -843,11 +843,3 @@ function display_funding_data() {
         $('.funding-progressbar').children('.progress-bar').addClass('progress-bar-danger');
     });
 };
-
-// Run by default
-linkify_headers();
-configure_navigation();
-set_anchor_height();
-display_funding_data();
-$(".use-tooltip").tooltip();
-$("abbr").tooltip();
