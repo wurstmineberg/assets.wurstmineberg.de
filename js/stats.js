@@ -99,9 +99,9 @@ function display_leaderboard_stat_data(stat_data, string_data, people) {
     $('#loading-stat-leaderboard-table').remove();
 }
 
-function prepareAchievements(achievementData, itemData) {
+function prepareAchievements(achievementData, items) {
     Achievement.track(achievementData, 'main').forEach(function(achievement) {
-        var achievement_html = '<tr id="achievement-row-' + achievement.id + '"><td>' + achievement.image(itemData) + '</td><td>' + achievement.displayName + '</td><td class="achievement-players">&nbsp;</td>';
+        var achievement_html = '<tr id="achievement-row-' + achievement.id + '"><td>' + achievement.image(items) + '</td><td>' + achievement.displayName + '</td><td class="achievement-players">&nbsp;</td>';
         $('#achievement-row-none').after(achievement_html);
     });
     $('#achievement-row-loading').remove();
@@ -342,8 +342,8 @@ function loadMobStatData() {
 }
 
 function loadAchievementsStatData() {
-    $.when(API.biomes(), API.itemData(), API.achievementData(), API.achievementStatData(), API.people()).done(function(biome_data, item_data, achievement_data, achievement_stat_data, people) {
-        prepareAchievements(achievement_data, item_data);
+    $.when(API.biomes(), API.items(), API.achievementData(), API.achievementStatData(), API.people()).done(function(biome_data, items, achievement_data, achievement_stat_data, people) {
+        prepareAchievements(achievement_data, items);
         display_achievements_stat_data(achievement_data, achievement_stat_data, people);
         display_biomes_stat_data(achievement_stat_data, biome_data, people);
     }).fail(function() {
