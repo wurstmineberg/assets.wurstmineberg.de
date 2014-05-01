@@ -113,7 +113,7 @@ function displayMobsStatData(people, entityStats) {
                         byMob[mob].mostKilledPlayers.push(person);
                     }
                 } else {
-                    byMob[mob].kills = kills;
+                    byMob[mob].kills = deaths;
                     byMob[mob].mostKilledPlayers = [person];
                 }
             } else {
