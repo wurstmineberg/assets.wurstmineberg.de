@@ -122,7 +122,7 @@ function displayMobsStatData(people, entityStats) {
                     'mostKilledPlayers': [person]
                 };
             }
-        }));
+        });
         $.each(person.mobKills(entityStats), function(mob, kills) {
             if (mob in byMob) {
                 if ('deaths' in byMob[mob]) {
