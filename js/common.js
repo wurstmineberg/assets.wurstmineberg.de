@@ -156,6 +156,8 @@ function Person(person_data) {
 }
 
 function People(people_data) {
+    var _this = this;
+    
     this.list = function() {
         return _.map(people_data, function(value) {
             return new Person(value);
@@ -163,7 +165,7 @@ function People(people_data) {
     }();
     
     this.activePeople = function() {
-        return this.list.filter(function(person) {
+        return _this.list.filter(function(person) {
             return (person.status != 'former');
         });
     }();
