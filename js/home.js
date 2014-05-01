@@ -10,7 +10,7 @@ function getOnlineData(list) {
                 $('#peopleCount').html(list.length + ' of the <span id="whitelistCount">(loading)</span> whitelisted players are');
             }
         }
-        $('#whitelistCount').html(people.activePeople().length);
+        $('#whitelistCount').html(people.activePeople.length);
         onlinePeople = list.map(function(minecraftName) {
             return people.personByMinecraft(minecraftName);
         });

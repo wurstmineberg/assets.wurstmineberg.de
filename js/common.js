@@ -88,7 +88,7 @@ function Person(person_data) {
         }
     }); // use with when/done/fail
     this.minecraft = person_data['minecraft'];
-    this.mobDeaths = API.ajaxJSONDeferred('//api.wurstmineberg.de/server/playerstats/entity.json').then(function(entityStats) {
+    this.mobDeaths = function(entityStats) {
         var ret = {};
         if (_this.minecraft in entityStats) {
             $.each(entityStats[_this.minecraft], function(key, stat) {
@@ -98,8 +98,8 @@ function Person(person_data) {
             });
         }
         return ret;
-    });
-    this.mobKills = API.ajaxJSONDeferred('//api.wurstmineberg.de/server/playerstats/entity.json').then(function(entityStats) {
+    };
+    this.mobKills = function(entityStats) {
         var ret = {};
         if (_this.minecraft in entityStats) {
             $.each(entityStats[_this.minecraft], function(key, stat) {
@@ -109,7 +109,7 @@ function Person(person_data) {
             });
         }
         return ret;
-    });
+    };
     this.reddit = person_data['reddit'];
     this.status = 'status' in person_data ? person_data['status'] : 'later';
     this.twitter = person_data['twitter'];
@@ -162,11 +162,11 @@ function People(people_data) {
         });
     }();
     
-    this.activePeople = function(id) {
+    this.activePeople = function() {
         return this.list.filter(function(person) {
             return (person.status != 'former');
         });
-    };
+    }();
     
     this.count = this.list.length;
     
