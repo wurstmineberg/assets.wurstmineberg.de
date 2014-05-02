@@ -162,6 +162,7 @@ function displayMobsStatData(people, entityStats) {
         }
         $('#loading-mobs-bymob').before($row);
     });
+    $('#loading-mobs-bymob').remove();
     // By Player
     //TODO
 }
