@@ -99,7 +99,7 @@ function display_leaderboard_stat_data(stat_data, string_data, people) {
     $('#loading-stat-leaderboard-table').remove();
 }
 
-function displayMobsStatData(people, entityStats) {
+function displayMobsStatData(people, entityStats, stringData) {
     // By Mob
     var byMob = {};
     people.activePeople.forEach(function(person) {
@@ -144,8 +144,19 @@ function displayMobsStatData(people, entityStats) {
             }
         });
     });
-    $.each(byMob, function(mob, data) {
-        var $row = $('<tr>').html($('<td>').text(mob));
+    byMob = _.map(_.pairs(byMob), function(mobPair) {
+        var ret = mobPair[1];
+        ret['mob'] = mobPair[0];
+        if ('stats' in stringData && 'mobs' in stringData.stats && mobPair[0] in stringData.stats.mobs) {
+            ret['mob'] = stringData.stats.mobs[mobPair[0]];
+        };
+        return ret;
+    });
+    byMob.sort(function(a, b) {
+        return a.mob.localeCompare(b.mob);
+    });
+    byMob.forEach(function(data) {
+        var $row = $('<tr>').html($('<td>').text(data.mob));
         if ('mostKilledPlayers' in data && data.mostKilledPlayers.length) {
             $row.append($('<td>').html(html_player_list(people.sorted(data.mostKilledPlayers))));
             $row.append($('<td>').text(data.kills));
@@ -406,8 +417,8 @@ function loadLeaderboardStatData() {
 }
 
 function loadMobStatData() {
-    $.when(API.people(), API.ajaxJSONDeferred('http://api.wurstmineberg.de/server/playerstats/entity.json')).done(function(people, entityStats) {
-        displayMobsStatData(people, entityStats);
+    $.when(API.people(), API.ajaxJSONDeferred('http://api.wurstmineberg.de/server/playerstats/entity.json'), API.stringData()).done(function(people, entityStats, stringData) {
+        displayMobsStatData(people, entityStats, stringData);
     });
 }
 
