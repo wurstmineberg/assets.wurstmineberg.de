@@ -137,16 +137,22 @@ function Person(person_data) {
         };
     }();
     this.html_ava = function(size) {
+        // custom avatar, saved in /assets
         var imageURLs = ['/assets/img/ava/' + size + '/' + this.id + '.png'];
         var hiDPIURLs = ['/assets/img/ava/' + (size * 2) + '/' + this.id + '.png'];
+        // gravatar
         if ('gravatar' in person_data && size <= 2048) {
             imageURLs.push('http://www.gravatar.com/avatar/' + md5(person_data['gravatar']) + '?d=404&s=' + size);
             if (size <= 1024) {
                 hiDPIURLs.push('http://www.gravatar.com/avatar/' + md5(person_data['gravatar']) + '?d=404&s=' + (size * 2));
             }
         }
+        // player head
         imageURLs.push('/assets/img/head/' + size + '/' + this.id + '.png');
         hiDPIURLs.push('/assets/img/head/' + (size * 2) + '/' + this.id + '.png');
+        // Steve head
+        imageURLs.push('/assets/img/head/' + size + '/Player.png');
+        hiDPIURLs.push('/assets/img/head/' + (size * 2) + '/Player.png');
         //TODO do something with the hiDPI images
         return imageStack(imageURLs, {
             'class': 'avatar',
