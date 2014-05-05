@@ -279,7 +279,7 @@ function display_biomes_stat_data(achievement_stat_data, biome_data, people) {
     $.each(biomeStats, function(numBiomes, people_list) {
         $tr = $('<tr>').html($('<td>').html(numBiomes));
         $tr.append($('<td>').html(html_player_list(people.sorted(people_list))));
-        $('#stats-achievements-table-biome-track tbody tr:last').after(people_list.length ? $tr : $('<tr>').html($('<td>', {'class': 'muted', 'colspan': '2'}).text((numBiomes == adventuringTimeBiomes.length) ? 'this many biomes required for Adventuring Time' : '(no one)')));
+        $('#stats-achievements-table-biome-track tbody tr:last').after(people_list.length ? $tr : $('<tr>').html($('<td>', {'class': 'muted', 'colspan': '2'}).text((numBiomes == adventuringTimeBiomes.length) ? numBiomes + ' biomes required for Adventuring Time' : '(no one)')));
     });
     $('#loading-achievements-table-biome-track').remove();
 }
