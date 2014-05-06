@@ -161,14 +161,14 @@ function displayMobsStatData(people, entityStats, stringData) {
             $row.append($('<td>').html(html_player_list(people.sorted(data.mostKilledPlayers))));
             $row.append($('<td>').text(data.kills));
         } else {
-            $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('(no one)')));
+            $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('no one')));
             $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('0')));
         }
         if ('mostKilledBy' in data && data.mostKilledBy.length) {
             $row.append($('<td>').html(html_player_list(people.sorted(data.mostKilledBy))));
             $row.append($('<td>').text(data.deaths));
         } else {
-            $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('(no one)')));
+            $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('no one')));
             $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('0')));
         }
         $('#loading-mobs-bymob').before($row);
