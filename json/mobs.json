@@ -1,0 +1,104 @@
+{
+    "mobs": {
+        "Bat": {
+            "name": "Bat",
+            "attitude": "friendly"
+        },
+        "Blaze": {
+            "name": "Blaze",
+            "attitude": "hostile"
+        },
+        "CaveSpider": {
+            "name": "Cave Spider",
+            "attitude": "hostile"
+        },
+        "Chicken": {
+            "name": "Chicken",
+            "attitude": "friendly"
+        },
+        "Cow": {
+            "name": "Cow",
+            "attitude": "friendly"
+        },
+        "Creeper": {
+            "name": "Creeper",
+            "attitude": "hostile"
+        },
+        "Enderman": {
+            "name": "Enderman",
+            "attitude": "hostile"
+        },
+        "Endermite": {
+            "name": "Endermite",
+            "attitude": "hostile"
+        },
+        "EntityHorse": {
+            "name": "Horse",
+            "attitude": "friendly"
+        },
+        "Ghast": {
+            "name": "Ghast",
+            "attitude": "hostile"
+        },
+        "LavaSlime": {
+            "name": "Magma Cube",
+            "attitude": "hostile"
+        },
+        "MushroomCow": {
+            "name": "Mooshroom",
+            "attitude": "friendly"
+        },
+        "Ozelot": {
+            "name": "Cat or Ocelot",
+            "attitude": "friendly"
+        },
+        "Pig": {
+            "name": "Pig",
+            "attitude": "friendly"
+        },
+        "PigZombie": {
+            "name": "Zombie Pigman",
+            "attitude": "hostile"
+        },
+        "Squid": {
+            "name": "Squid",
+            "attitude": "friendly"
+        },
+        "Silverfish": {
+            "name": "Silverfish",
+            "attitude": "hostile"
+        },
+        "Skeleton": {
+            "name": "Skeleton",
+            "attitude": "hostile"
+        },
+        "Slime": {
+            "name": "Slime",
+            "attitude": "hostile"
+        },
+        "Spider": {
+            "name": "Spider",
+            "attitude": "hostile"
+        },
+        "Squid": {
+            "name": "Squid",
+            "attitude": "friendly"
+        },
+        "Villager": {
+            "name": "Villager",
+            "attitude": "friendly"
+        },
+        "Witch": {
+            "name": "Witch",
+            "attitude": "friendly"
+        },
+        "Wolf": {
+            "name": "Wolf",
+            "attitude": "hostile"
+        },
+        "Zombie": {
+            "name": "Zombie",
+            "attitude": "hostile"
+        }
+    }
+}
