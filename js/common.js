@@ -705,14 +705,18 @@ function username_to_minecraft_nick(username, people) {
     return minecraftname;
 }
 
-function html_player_list(people) {
+function html_player_list(people, avas, text) {
+    avas = typeof avas === 'undefined' ? true : avas;
     var $list = $('<span>');
     $.each(people, function(index, person) {
         if (index >= 1) {
             $list.append(', ');
         };
-        var $a = $('<a>', {'href': 'http://wurstmineberg.de/people/' + person.id}).text(person.interfaceName);
-        $a.prepend(person.html_ava(16));
+        var personText = typeof text === 'undefined' ? person.interfaceName : text[index];
+        var $a = $('<a>', {'href': 'http://wurstmineberg.de/people/' + person.id}).text(personText);
+        if (avas) {
+            $a.prepend(person.html_ava(16));
+        };
         $list.append($('<span>', {'class': 'player-avatar-name'}).html($a));
     });
     return $list;
