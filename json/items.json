@@ -2086,7 +2086,7 @@
             "z": 4
         },
         "id": "minecraft:diamond_shovel",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8e/Grid_Diamond_Shovel.png",
+        "image": "diamondshovel.png",
         "name": "Diamond Shovel"
     },
     "278": {
@@ -3083,7 +3083,7 @@
                     "y": 1,
                     "z": 2
                 },
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fd/Grid_Magenta_Wool.png",
+                "image": "magentawool.png",
                 "name": "Magenta Wool",
                 "texture": "wool_colored_magenta"
             },
@@ -3093,7 +3093,7 @@
                     "y": 1,
                     "z": 3
                 },
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fb/Grid_Light_Blue_Wool.png",
+                "image": "lightbluewool.png",
                 "name": "Light Blue Wool",
                 "texture": "wool_colored_light_blue"
             },
@@ -5534,7 +5534,7 @@
             "z": 9
         },
         "id": "minecraft:lever",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/33/Grid_Lever.png",
+        "image": "lever.png",
         "name": "Lever"
     },
     "7": {
