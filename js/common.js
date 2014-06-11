@@ -159,6 +159,13 @@ function Person(person_data) {
             'style': 'width: ' + size + 'px; height: ' + size + 'px;'
         });
     };
+    this.wikiArticle = function(fallback) {
+        if (this.wiki) {
+            return wiki_user_link(this.wiki);
+        } else {
+            return fallback;
+        }
+    }
 }
 
 function People(people_data) {
@@ -705,15 +712,16 @@ function username_to_minecraft_nick(username, people) {
     return minecraftname;
 }
 
-function html_player_list(people, avas, text) {
+function html_player_list(people, avas, text, urls, useWikiArticles) {
     avas = typeof avas === 'undefined' ? true : avas;
+    useWikiArticles = typeof useWikiArticles === 'undefined' ? false : useWikiArticles;
     var $list = $('<span>');
     $.each(people, function(index, person) {
         if (index >= 1) {
             $list.append(', ');
         };
         var personText = typeof text === 'undefined' ? person.interfaceName : text[index];
-        var $a = $('<a>', {'href': 'http://wurstmineberg.de/people/' + person.id}).text(personText);
+        var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle('http://wurstmineberg.de/people/' + person.id) : 'http://wurstmineberg.de/people/' + person.id) : urls[index])}).text(personText);
         if (avas) {
             $a.prepend(person.html_ava(16));
         };
