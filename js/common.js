@@ -138,8 +138,8 @@ function Person(person_data) {
     }();
     this.html_ava = function(size) {
         // custom avatar, saved in /assets
-        var imageURLs = ['/assets/img/ava/' + size + '/' + this.id + '.png'];
-        var hiDPIURLs = ['/assets/img/ava/' + (size * 2) + '/' + this.id + '.png'];
+        var imageURLs = ['http://wurstmineberg.de/assets/img/ava/' + size + '/' + this.id + '.png'];
+        var hiDPIURLs = ['http://wurstmineberg.de/assets/img/ava/' + (size * 2) + '/' + this.id + '.png'];
         // gravatar
         if ('gravatar' in person_data && size <= 2048) {
             imageURLs.push('http://www.gravatar.com/avatar/' + md5(person_data['gravatar']) + '?d=404&s=' + size);
@@ -148,11 +148,11 @@ function Person(person_data) {
             }
         }
         // player head
-        imageURLs.push('/assets/img/head/' + size + '/' + this.id + '.png');
-        hiDPIURLs.push('/assets/img/head/' + (size * 2) + '/' + this.id + '.png');
+        imageURLs.push('http://wurstmineberg.de/assets/img/head/' + size + '/' + this.id + '.png');
+        hiDPIURLs.push('http://wurstmineberg.de/assets/img/head/' + (size * 2) + '/' + this.id + '.png');
         // Steve head
-        imageURLs.push('/assets/img/head/' + size + '/Player.png');
-        hiDPIURLs.push('/assets/img/head/' + (size * 2) + '/Player.png');
+        imageURLs.push('http://wurstmineberg.de/assets/img/head/' + size + '/Player.png');
+        hiDPIURLs.push('http://wurstmineberg.de/assets/img/head/' + (size * 2) + '/Player.png');
         //TODO do something with the hiDPI images
         return imageStack(imageURLs, {
             'class': 'avatar',
@@ -711,7 +711,7 @@ function html_player_list(people) {
         if (index >= 1) {
             $list.append(', ');
         };
-        var $a = $('<a>', {'href': '/people/' + person.id}).text(person.interfaceName);
+        var $a = $('<a>', {'href': 'http://wurstmineberg.de/people/' + person.id}).text(person.interfaceName);
         $a.prepend(person.html_ava(16));
         $list.append($('<span>', {'class': 'player-avatar-name'}).html($a));
     });
