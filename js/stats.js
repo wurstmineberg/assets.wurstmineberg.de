@@ -290,7 +290,7 @@ function display_deathgames_log(death_games_log, people) {
         $tr = $('<tr>').html('<td>' + logEntry['date'] + '</td>');
         $tr.append($('<td>').html(html_player_list([people.personById(logEntry['attacker'])])));
         $tr.append($('<td>').html(html_player_list([people.personById(logEntry['target'])])));
-        $tr.append($('<td>').html(logEntry['success'] ? '<span class="glyphicon glyphicon-ok text-success"></span>' : '<span class="glyphicon glyphicon-remove text-danger"></span>'));
+        $tr.append($('<td>').html(logEntry['success'] ? '<span class="fa fa-check fa-fw text-success"></span>' : '<span class="fa fa-times fa-fw text-danger"></span>'));
         $('#loading-deathgames-log').after($tr);
     });
     $('#loading-deathgames-log').remove();

@@ -353,13 +353,13 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
                         return biome.adventuringTime;
                     });
                     _.map(adventuring_biomes, function(biome) {
-                        final_value += '<span class="glyphicon-text-aligned achievement-value">';
+                        final_value += '<span class="achievement-value">';
                         if (_.find(visitedBiomes, function(biome_name) {
                             return biome_name === biome.id;
                         })) {
-                            final_value += '<span class="glyphicon glyphicon-ok text-success"></span> ';
+                            final_value += '<span class="fa fa-check fa-fw text-success"></span> ';
                         } else {
-                            final_value += '<span class="glyphicon glyphicon-remove text-danger"></span> ';
+                            final_value += '<span class="fa fa-times fa-fw text-danger"></span> ';
                         };
                         final_value += '<abbr class="nounderline achievement-name" title="' + biome.description + '">' + biome.name + '</abbr></span> ';
                     });
@@ -503,9 +503,9 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
     $.each(achievements, function(index, dict) {
         value = dict['value'];
         if (value === "Yes") {
-            value = '<span class="glyphicon glyphicon-ok text-success"></span>'
+            value = '<span class="fa fa-check fa-fw text-success"></span>'
         } else if (value === "No") {
-            value = '<span class="glyphicon glyphicon-remove text-danger"></span>'
+            value = '<span class="fa fa-times fa-fw text-danger"></span>'
         }
         row = '<tr id="achievement-row-' + dict.achievement.id + '" class="achievement-row"><td>' + dict.achievement.image(item_data) + '</td><td class="name"><a href="#" data-toggle="tooltip" data-placement="right" rel="tooltip" class="text-link" title="' + dict.achievement.description + '">' + dict.achievement.displayName + '</a></td><td class="value">' + value + '</td></tr>';
         loading_stat_achievements.before(row);
