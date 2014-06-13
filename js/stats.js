@@ -243,7 +243,7 @@ function display_achievements_stat_data(achievementData, achievementStatData, pe
     });
 }
 
-function display_biomes_stat_data(achievement_stat_data, biome_data, people) {
+function displayBiomesStatData(achievement_stat_data, biome_data, people) {
     var adventuringTimeBiomes = [];
     $.each(biome_data['biomes'], function(biomeNumberString, biomeInfo) {
         if ('adventuringTime' in biomeInfo && biomeInfo['adventuringTime'] == false) {
@@ -279,7 +279,7 @@ function display_biomes_stat_data(achievement_stat_data, biome_data, people) {
         $tr = $('<tr>').html($('<td>').html(numBiomes));
         $tr.append($('<td>').html(html_player_list(people.sorted(people_list))));
         if (people_list.length || numBiomes === adventuringTimeBiomes.length) {
-            $('#stats-achievements-table-biome-track tbody tr:last').after(people_list.length ? $tr : $('<tr>').html($('<td>', {'class': 'muted', 'colspan': '2'}).text(numBiomes + ' biomes required for Adventuring Time'));
+            $('#stats-achievements-table-biome-track tbody tr:last').after(people_list.length ? $tr : $('<tr>').html($('<td>', {'class': 'muted', 'colspan': '2'}).text(numBiomes + ' biomes required for Adventuring Time')));
         };
     });
     $('#loading-achievements-table-biome-track').remove();
@@ -427,7 +427,7 @@ function loadAchievementsStatData() {
     $.when(API.biomes(), API.items(), API.achievementData(), API.achievementStatData(), API.people()).done(function(biome_data, items, achievement_data, achievement_stat_data, people) {
         prepareAchievements(achievement_data, items);
         display_achievements_stat_data(achievement_data, achievement_stat_data, people);
-        display_biomes_stat_data(achievement_stat_data, biome_data, people);
+        displayBiomesStatData(achievement_stat_data, biome_data, people);
     }).fail(function() {
         $('#achievement-row-loading').html('<td colspan="3">Error: Could not load achievements</td>');
         $('#loading-achievements-table-biome-track').html('<td colspan="3">Error: Could not load biomes</td>');
