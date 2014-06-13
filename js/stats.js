@@ -275,11 +275,12 @@ function display_biomes_stat_data(achievement_stat_data, biome_data, people) {
         }
         biomeStats[numBiomes.toString()].push(person);
     });
-    //TODO sort by number of biomes
     $.each(biomeStats, function(numBiomes, people_list) {
         $tr = $('<tr>').html($('<td>').html(numBiomes));
         $tr.append($('<td>').html(html_player_list(people.sorted(people_list))));
-        $('#stats-achievements-table-biome-track tbody tr:last').after(people_list.length ? $tr : $('<tr>').html($('<td>', {'class': 'muted', 'colspan': '2'}).text((numBiomes == adventuringTimeBiomes.length) ? numBiomes + ' biomes required for Adventuring Time' : '(no one)')));
+        if (people_list.length || numBiomes === adventuringTimeBiomes.length) {
+            $('#stats-achievements-table-biome-track tbody tr:last').after(people_list.length ? $tr : $('<tr>').html($('<td>', {'class': 'muted', 'colspan': '2'}).text(numBiomes + ' biomes required for Adventuring Time'));
+        };
     });
     $('#loading-achievements-table-biome-track').remove();
 }
