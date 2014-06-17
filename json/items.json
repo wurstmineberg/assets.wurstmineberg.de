@@ -2806,7 +2806,7 @@
             "z": 23
         },
         "id": "minecraft:boat",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/59/Grid_Boat.png",
+        "image": "boat.png",
         "name": "Boat"
     },
     "334": {
