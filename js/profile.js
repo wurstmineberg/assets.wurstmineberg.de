@@ -241,7 +241,7 @@ function displayProfileData(person, items, people, statData) {
     $('#profile-stat-row-status').children('.value').html(statusDisplay(person.status || 'later'));
 }
 
-function display_stat_data(stat_data, string_data, item_data, achievement_data, biomes) {
+function displayStatData(stat_data, string_data, item_data, achievement_data, biomes, mobData) {
     var loading_stat_general = $('#loading-stat-general-table');
     var loading_stat_item = $('#loading-stat-items-table');
     var loading_stat_block = $('#loading-stat-blocks-table');
@@ -303,12 +303,8 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
                 var count = value;
 
                 var name = id;
-                if ('stats' in string_data) {
-                    if ('mobs' in string_data['stats']) {
-                        if (stat[2] in string_data['stats']['mobs']) {
-                            name = string_data['stats']['mobs'][stat[2]];
-                        };
-                    };
+                if ('mobs' in mobData && stat[2] in mobData.mobs && 'name' in mobData.mobs[stat[2]]) {
+                    name = mobData.mobs[stat[2]].name;
                 };
 
                 var found = false;
@@ -516,7 +512,7 @@ function display_stat_data(stat_data, string_data, item_data, achievement_data, 
     //initialize_datatables();
 }
 
-function load_stat_data(person, string_data, achievement_data, biomes, items) {
+function loadStatData(person, string_data, achievement_data, biomes, items, mobData) {
     if (person.option('show_inventory')) {
         $.when(API.playerData(person)).done(function(player_data) {
             display_inventory(player_data, items, string_data);
@@ -527,7 +523,7 @@ function load_stat_data(person, string_data, achievement_data, biomes, items) {
         $('.panel').before('<div class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>Want to show you inventory?</strong> Since you have not set a preference for this, your inventory and Ender chest will be displayed on this page once we get everything working. You can activate this feature now using the command <code>!<a href="//wiki.wurstmineberg.de/Commands#Option">Option</a> show_inventory on</code>, or permanently deactivate it with <code>!<a href="//wiki.wurstmineberg.de/Commands#Option">Option</a> show_inventory off</code>.</div>');
     }
     $.when(API.personStatData(person)).done(function(stat_data) {
-        display_stat_data(stat_data, string_data, items, achievement_data, biomes);
+        displayStatData(stat_data, string_data, items, achievement_data, biomes, mobData);
     }).fail(function() {
         $('.loading-stat').html('<td colspan="7">Error: Could not load ' + person.minecraft + '.json</td>');
     });
@@ -536,9 +532,9 @@ function load_stat_data(person, string_data, achievement_data, biomes, items) {
 function load_user_data() {
     var username = get_user_name();
     document.title = username + ' on Wurstmineberg';
-    $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people()).done(function(person, string_data, achievement_data, biomes, items, people) {
+    $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people(), API.mobData()).done(function(person, string_data, achievement_data, biomes, items, people, mobData) {
         document.title = person.interfaceName + ' on Wurstmineberg';
-        load_stat_data(person, string_data, achievement_data, biomes, items);
+        loadStatData(person, string_data, achievement_data, biomes, items, mobData);
         display_user_data(person);
         $.when(API.personStatData(person)).done(function(statData) {
             displayProfileData(person, items, people, statData);
