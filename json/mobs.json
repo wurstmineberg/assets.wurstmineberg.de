@@ -1,124 +1,129 @@
 {
     "mobs": {
         "Bat": {
-            "name": "Bat",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Bat"
         },
         "Blaze": {
-            "name": "Blaze",
             "attitude": "hostile",
-            "dimension": "Nether"
+            "dimension": "Nether",
+            "name": "Blaze"
         },
         "CaveSpider": {
-            "name": "Cave Spider",
             "attitude": "hostile",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Cave Spider"
         },
         "Chicken": {
-            "name": "Chicken",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Chicken"
         },
         "Cow": {
-            "name": "Cow",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Cow"
         },
         "Creeper": {
-            "name": "Creeper",
             "attitude": "hostile",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Creeper"
         },
         "Enderman": {
-            "name": "Enderman",
             "attitude": "hostile",
-            "dimension": "End"
+            "dimension": "End",
+            "name": "Enderman"
         },
         "Endermite": {
-            "name": "Endermite",
             "attitude": "hostile",
-            "dimension": "End"
+            "dimension": "End",
+            "name": "Endermite"
         },
         "EntityHorse": {
-            "name": "Horse",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Horse"
         },
         "Ghast": {
-            "name": "Ghast",
             "attitude": "hostile",
-            "dimension": "Nether"
+            "dimension": "Nether",
+            "name": "Ghast"
+        },
+        "Guardian": {
+            "attitude": "hostile",
+            "dimension": "Overworld",
+            "name": "Guardian"
         },
         "LavaSlime": {
-            "name": "Magma Cube",
             "attitude": "hostile",
-            "dimension": "Nether"
+            "dimension": "Nether",
+            "name": "Magma Cube"
         },
         "MushroomCow": {
-            "name": "Mooshroom",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Mooshroom"
         },
         "Ozelot": {
-            "name": "Cat or Ocelot",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Cat or Ocelot"
         },
         "Pig": {
-            "name": "Pig",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Pig"
         },
         "PigZombie": {
-            "name": "Zombie Pigman",
             "attitude": "hostile",
-            "dimension": "Nether"
+            "dimension": "Nether",
+            "name": "Zombie Pigman"
         },
         "Silverfish": {
-            "name": "Silverfish",
             "attitude": "hostile",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Silverfish"
         },
         "Skeleton": {
-            "name": "Skeleton",
             "attitude": "hostile",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Skeleton"
         },
         "Slime": {
-            "name": "Slime",
             "attitude": "hostile",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Slime"
         },
         "Spider": {
-            "name": "Spider",
             "attitude": "hostile",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Spider"
         },
         "Squid": {
-            "name": "Squid",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Squid"
         },
         "Villager": {
-            "name": "Villager",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Villager"
         },
         "Witch": {
-            "name": "Witch",
             "attitude": "friendly",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Witch"
         },
         "Wolf": {
-            "name": "Wolf",
             "attitude": "hostile",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Wolf"
         },
         "Zombie": {
-            "name": "Zombie",
             "attitude": "hostile",
-            "dimension": "Overworld"
+            "dimension": "Overworld",
+            "name": "Zombie"
         }
     }
 }
