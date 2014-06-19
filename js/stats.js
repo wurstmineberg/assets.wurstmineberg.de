@@ -99,7 +99,7 @@ function display_leaderboard_stat_data(stat_data, string_data, people) {
     $('#loading-stat-leaderboard-table').remove();
 }
 
-function displayMobsStatData(people, entityStats, stringData) {
+function displayMobsStatData(people, entityStats, mobData) {
     // By Mob
     var byMob = {};
     people.activePeople.forEach(function(person) {
@@ -147,8 +147,8 @@ function displayMobsStatData(people, entityStats, stringData) {
     byMob = _.map(_.pairs(byMob), function(mobPair) {
         var ret = mobPair[1];
         ret['mob'] = mobPair[0];
-        if ('stats' in stringData && 'mobs' in stringData.stats && mobPair[0] in stringData.stats.mobs) {
-            ret['mob'] = stringData.stats.mobs[mobPair[0]];
+        if ('mobs' in mobData && mobPair[0] in mobData.mobs && 'name' in mobData.mobs[mobPair[0]]) {
+            ret['mob'] = mobData.mobs[mobPair[0]].name;
         };
         return ret;
     });
@@ -418,8 +418,8 @@ function loadLeaderboardStatData() {
 }
 
 function loadMobStatData() {
-    $.when(API.people(), API.ajaxJSONDeferred('http://api.wurstmineberg.de/server/playerstats/entity.json'), API.stringData()).done(function(people, entityStats, stringData) {
-        displayMobsStatData(people, entityStats, stringData);
+    $.when(API.people(), API.ajaxJSONDeferred('http://api.wurstmineberg.de/server/playerstats/entity.json'), API.mobData()).done(function(people, entityStats, mobData) {
+        displayMobsStatData(people, entityStats, mobData);
     });
 }
 

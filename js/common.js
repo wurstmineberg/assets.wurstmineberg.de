@@ -446,6 +446,9 @@ var API = {
     stringData: function() {
         return API.ajaxJSONDeferred('/static/json/strings.json');
     },
+    mobData: function() {
+        return API.ajaxJSONDeferred('/static/json/mobs.json');
+    },
     itemData: function() {
         return API.ajaxJSONDeferred('/static/json/items.json');
     },
