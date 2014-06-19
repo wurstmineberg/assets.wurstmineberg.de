@@ -1211,6 +1211,28 @@
         "image": "irontrapdoor.png",
         "name": "Iron Trapdoor"
     },
+    "168": {
+        "damageValues": {
+            "1": {
+                "image": "prismarinebricks.png",
+                "name": "Prismarine Bricks"
+            },
+            "2": {
+                "image": "darkprismarine.png",
+                "name": "Dark Prismarine"
+            }
+        },
+        "id": "minecraft:prismarine",
+        "image": "prismarine.png",
+        "name": "Prismarine",
+        "type": "block"
+    },
+    "169": {
+        "id": "minecraft:sea_lantern",
+        "image": "sealantern.png",
+        "name": "Sea Lantern",
+        "type": "block"
+    },
     "17": {
         "cloud": {
             "x": 1,
@@ -1554,8 +1576,14 @@
         "type": "block"
     },
     "19": {
+        "damageValues": {
+            "1": {
+                "image": "wetsponge.png",
+                "name": "Wet Sponge"
+            }
+        },
         "id": "minecraft:sponge",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/56/Grid_Sponge.png",
+        "image": "sponge.png",
         "name": "Sponge",
         "solid": true,
         "texture": "sponge",
@@ -4844,6 +4872,11 @@
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/78/Grid_Minecart_with_Hopper.png",
         "name": "Minecart with Hopper"
     },
+    "409": {
+        "id": "minecraft:prismarine_shard",
+        "image": "prismarineshard.png",
+        "name": "Prismarine Shard"
+    },
     "41": {
         "cloud": {
             "x": 0,
@@ -4856,6 +4889,11 @@
         "solid": true,
         "texture": "gold_block",
         "type": "block"
+    },
+    "410": {
+        "id": "minecraft:prismarine_crystals",
+        "image": "prismarinecrystal.png",
+        "name": "Prismarine Crystal"
     },
     "417": {
         "cloud": {
