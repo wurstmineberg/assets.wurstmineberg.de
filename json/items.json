@@ -1229,7 +1229,7 @@
     },
     "169": {
         "id": "minecraft:sea_lantern",
-        "image": "sealantern.png",
+        "image": "sealantern.gif",
         "name": "Sea Lantern",
         "type": "block"
     },
