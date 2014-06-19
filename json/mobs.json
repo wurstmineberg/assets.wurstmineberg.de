@@ -2,128 +2,109 @@
     "mobs": {
         "Bat": {
             "attitude": "friendly",
-            "dimension": "Overworld",
-            "name": "Bat"
+            "dimension": "overworld"
         },
         "Blaze": {
             "attitude": "hostile",
-            "dimension": "Nether",
-            "name": "Blaze"
+            "dimension": "nether"
         },
         "CaveSpider": {
             "attitude": "hostile",
-            "dimension": "Overworld",
+            "dimension": "overworld",
             "name": "Cave Spider"
         },
         "Chicken": {
             "attitude": "friendly",
-            "dimension": "Overworld",
-            "name": "Chicken"
+            "dimension": "overworld"
         },
         "Cow": {
             "attitude": "friendly",
-            "dimension": "Overworld",
-            "name": "Cow"
+            "dimension": "overworld"
         },
         "Creeper": {
             "attitude": "hostile",
-            "dimension": "Overworld",
-            "name": "Creeper"
+            "dimension": "overworld"
         },
         "Enderman": {
             "attitude": "hostile",
-            "dimension": "End",
-            "name": "Enderman"
+            "dimension": "end"
         },
         "Endermite": {
             "attitude": "hostile",
-            "dimension": "End",
-            "name": "Endermite"
+            "dimension": "end"
         },
         "EntityHorse": {
             "attitude": "friendly",
-            "dimension": "Overworld",
+            "dimension": "overworld"
             "name": "Horse"
         },
         "Ghast": {
             "attitude": "hostile",
-            "dimension": "Nether",
-            "name": "Ghast"
+            "dimension": "nether"
         },
         "Guardian": {
             "attitude": "hostile",
-            "dimension": "Overworld",
-            "name": "Guardian"
+            "dimension": "overworld"
         },
         "LavaSlime": {
             "attitude": "hostile",
-            "dimension": "Nether",
+            "dimension": "nether",
             "name": "Magma Cube"
         },
         "MushroomCow": {
             "attitude": "friendly",
-            "dimension": "Overworld",
+            "dimension": "overworld",
             "name": "Mooshroom"
         },
         "Ozelot": {
             "attitude": "friendly",
-            "dimension": "Overworld",
+            "dimension": "overworld",
             "name": "Cat or Ocelot"
         },
         "Pig": {
             "attitude": "friendly",
-            "dimension": "Overworld",
-            "name": "Pig"
+            "dimension": "overworld"
         },
         "PigZombie": {
             "attitude": "hostile",
-            "dimension": "Nether",
+            "dimension": "nether",
             "name": "Zombie Pigman"
         },
         "Silverfish": {
             "attitude": "hostile",
-            "dimension": "Overworld",
-            "name": "Silverfish"
+            "dimension": "overworld"
         },
         "Skeleton": {
             "attitude": "hostile",
-            "dimension": "Overworld",
-            "name": "Skeleton"
+            "dimension": "overworld"
         },
         "Slime": {
             "attitude": "hostile",
-            "dimension": "Overworld",
-            "name": "Slime"
+            "dimension": "overworld"
         },
         "Spider": {
             "attitude": "hostile",
-            "dimension": "Overworld",
-            "name": "Spider"
+            "dimension": "overworld"
         },
         "Squid": {
             "attitude": "friendly",
-            "dimension": "Overworld",
-            "name": "Squid"
+            "dimension": "overworld"
         },
         "Villager": {
             "attitude": "friendly",
-            "dimension": "Overworld",
-            "name": "Villager"
+            "dimension": "overworld"
         },
         "Witch": {
             "attitude": "friendly",
-            "dimension": "Overworld",
-            "name": "Witch"
+            "dimension": "overworld"
         },
         "Wolf": {
             "attitude": "hostile",
-            "dimension": "Overworld",
-            "name": "Wolf"
+            "dimension": "overworld"
         },
         "Zombie": {
             "attitude": "hostile",
-            "dimension": "Overworld",
-            "name": "Zombie"
+            "dimension": "overworld"
         }
     }
 }

@@ -62,14 +62,6 @@
             "timeSinceDeath": "Time Played Since Last Death",
             "treasureFished": "Treasure Fished",
             "walkOneCm": "Distance Walked"
-        },
-        "mobs": {
-            "CaveSpider": "Cave Spider",
-            "EntityHorse": "Horse",
-            "LavaSlime": "Magma Cube",
-            "MushroomCow": "Mooshroom",
-            "Ozelot": "Cat or Ocelot",
-            "PigZombie": "Zombie Pigman"
         }
     }
 }
