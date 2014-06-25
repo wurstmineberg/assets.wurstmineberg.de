@@ -2379,7 +2379,8 @@
         },
         "damageValues": {
             "1": {
-                "name": "Grassless Dirt"
+                "image": "coarsedirt.png",
+                "name": "Coarse Dirt"
             },
             "2": {
                 "cloud": {
