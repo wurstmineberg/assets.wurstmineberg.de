@@ -10,6 +10,7 @@ The fields for the data values implicitely inherit the values of the parent
 	* stairs@[rotation]: renders stairs rotated by
 * solid: true if the block is solid and nontransparent
 * image: a link to a prerendered image of the item or block
+* alwaysGlow: if this is true, the item always shows the “enchanted” glow, even if it is not enchanted. Default: false
 * texture: The default texture for all sides.
 		* The value can be appended with @[0-10] (like "dirt@3") which specifies the flip and rotation that should be applied to the block prior to rendering it.
 			* 0: no rotation (default)

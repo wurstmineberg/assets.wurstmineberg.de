@@ -2691,7 +2691,7 @@
         },
         "damageValues": {
             "1": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 2,
@@ -3598,7 +3598,7 @@
                 "name": "Water Bottle"
             },
             "16": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3607,7 +3607,7 @@
                 "name": "Awkward Potion"
             },
             "16384": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3617,7 +3617,7 @@
                 "name": "Splash Mundane Potion"
             },
             "16385": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3627,7 +3627,7 @@
                 "name": "Splash Potion of Regeneration"
             },
             "16386": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3637,7 +3637,7 @@
                 "name": "Splash Potion of Swiftness"
             },
             "16387": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3647,7 +3647,7 @@
                 "name": "Splash Potion of Fire Resistance"
             },
             "16388": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3657,7 +3657,7 @@
                 "name": "Splash Potion of Poison"
             },
             "16389": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3667,7 +3667,7 @@
                 "name": "Splash Potion of Healing"
             },
             "16390": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3677,7 +3677,7 @@
                 "name": "Splash Potion of Night Vision"
             },
             "16392": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3687,7 +3687,7 @@
                 "name": "Splash Potion of Weakness"
             },
             "16393": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3697,7 +3697,7 @@
                 "name": "Splash Potion of Strength"
             },
             "16394": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3706,8 +3706,13 @@
                 "image": "splashslownesspotion.png",
                 "name": "Splash Potion of Slowness"
             },
+            "16395": {
+                "alwaysGlow": true,
+                "image": "splashjumppotion.png",
+                "name": "Splash Potion of Leaping"
+            },
             "16396": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3717,7 +3722,7 @@
                 "name": "Splash Potion of Harming"
             },
             "16397": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3727,7 +3732,7 @@
                 "name": "Splash Potion of Water Breathing"
             },
             "16398": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3737,7 +3742,7 @@
                 "name": "Splash Potion of Invisibility"
             },
             "16417": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3747,7 +3752,7 @@
                 "name": "Splash Potion of Regeneration \u2161"
             },
             "16418": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3757,12 +3762,12 @@
                 "name": "Splash Potion of Swiftness \u2161"
             },
             "16419": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "splashfireresistancepotion.png",
                 "name": "Splash Potion of Fire Resistance"
             },
             "16420": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3772,7 +3777,7 @@
                 "name": "Splash Potion of Poison \u2161"
             },
             "16421": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3782,17 +3787,17 @@
                 "name": "Splash Potion of Healing \u2161"
             },
             "16422": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "splashnightvisionpotion.png",
                 "name": "Splash Potion of Night Vision"
             },
             "16424": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "splashweaknesspotion.png",
                 "name": "Splash Potion of Weakness"
             },
             "16425": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3802,12 +3807,17 @@
                 "name": "Splash Potion of Strength \u2161"
             },
             "16426": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "splashslownesspotion.png",
                 "name": "Splash Potion of Slowness"
             },
+            "16427": {
+                "alwaysGlow": true,
+                "image": "splashjumppotion.png",
+                "name": "Splash Potion of Leaping \u2161"
+            },
             "16428": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3817,17 +3827,17 @@
                 "name": "Splash Potion of Harming \u2161"
             },
             "16429": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "splashwaterbreathingpotion.png",
                 "name": "Splash Potion of Water Breathing"
             },
             "16430": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "splashinvisibilitypotion.png",
                 "name": "Splash Potion of Invisibility"
             },
             "16449": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3837,7 +3847,7 @@
                 "name": "Splash Potion of Regeneration, extended"
             },
             "16450": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3847,7 +3857,7 @@
                 "name": "Splash Potion of Swiftness, extended"
             },
             "16451": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3857,7 +3867,7 @@
                 "name": "Splash Potion of Fire Resistance, extended"
             },
             "16452": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3867,12 +3877,12 @@
                 "name": "Splash Potion of Poison, extended"
             },
             "16453": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "splashhealthpotion.png",
                 "name": "Splash Potion of Healing"
             },
             "16454": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3882,7 +3892,7 @@
                 "name": "Splash Potion of Night Vision, extended"
             },
             "16456": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3892,7 +3902,7 @@
                 "name": "Splash Potion of Weakness, extended"
             },
             "16457": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3902,7 +3912,7 @@
                 "name": "Splash Potion of Strength, extended"
             },
             "16458": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3911,13 +3921,18 @@
                 "image": "splashslownesspotion.png",
                 "name": "Splash Potion of Slowness, extended"
             },
+            "16459": {
+                "alwaysGlow": true,
+                "image": "splashjumppotion.png",
+                "name": "Splash Potion of Leaping"
+            },
             "16460": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "splashdamagepotion.png",
                 "name": "Splash Potion of Harming"
             },
             "16461": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3927,7 +3942,7 @@
                 "name": "Splash Potion of Water Breathing, extended"
             },
             "16462": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3937,7 +3952,7 @@
                 "name": "Splash Potion of Invisibility, extended"
             },
             "32": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3946,7 +3961,7 @@
                 "name": "Thick Potion"
             },
             "64": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3955,7 +3970,7 @@
                 "name": "Mundane Potion, extended"
             },
             "8192": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3964,7 +3979,7 @@
                 "name": "Mundane Potion"
             },
             "8193": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3974,7 +3989,7 @@
                 "name": "Potion of Regeneration"
             },
             "8194": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3984,7 +3999,7 @@
                 "name": "Potion of Swiftness"
             },
             "8195": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -3994,7 +4009,7 @@
                 "name": "Potion of Fire Resistance"
             },
             "8196": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4004,7 +4019,7 @@
                 "name": "Potion of Poison"
             },
             "8197": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4014,7 +4029,7 @@
                 "name": "Potion of Healing"
             },
             "8198": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4024,7 +4039,7 @@
                 "name": "Potion of Night Vision"
             },
             "8200": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4034,7 +4049,7 @@
                 "name": "Potion of Weakness"
             },
             "8201": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4044,7 +4059,7 @@
                 "name": "Potion of Strength"
             },
             "8202": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4053,8 +4068,13 @@
                 "image": "slownesspotion.png",
                 "name": "Potion of Slowness"
             },
+            "8203": {
+                "alwaysGlow": true,
+                "image": "jumppotion.png",
+                "name": "Potion of Leaping"
+            },
             "8204": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4064,7 +4084,7 @@
                 "name": "Potion of Harming"
             },
             "8205": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4074,7 +4094,7 @@
                 "name": "Potion of Water Breathing"
             },
             "8206": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4084,7 +4104,7 @@
                 "name": "Potion of Invisibility"
             },
             "8225": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4094,7 +4114,7 @@
                 "name": "Potion of Regeneration \u2161"
             },
             "8226": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4104,12 +4124,12 @@
                 "name": "Potion of Swiftness \u2161"
             },
             "8227": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "fireresistancepotion.png",
                 "name": "Potion of Fire Resistance"
             },
             "8228": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4119,7 +4139,7 @@
                 "name": "Potion of Poison \u2161"
             },
             "8229": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4129,17 +4149,17 @@
                 "name": "Potion of Healing \u2161"
             },
             "8230": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "nightvisionpotion.png",
                 "name": "Potion of Night Vision"
             },
             "8232": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "weaknesspotion.png",
                 "name": "Potion of Weakness"
             },
             "8233": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4149,12 +4169,17 @@
                 "name": "Potion of Strength \u2161"
             },
             "8234": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "slownesspotion.png",
                 "name": "Potion of Slowness"
             },
+            "8235": {
+                "alwaysGlow": true,
+                "image": "jumppotion.png",
+                "name": "Potion of Leaping \u2161"
+            },
             "8236": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4164,17 +4189,17 @@
                 "name": "Potion of Harming \u2161"
             },
             "8237": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "waterbreathingpotion.png",
                 "name": "Potion of Water Breathing"
             },
             "8238": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "invisibilitypotion.png",
                 "name": "Potion of Invisibility"
             },
             "8257": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4184,7 +4209,7 @@
                 "name": "Potion of Regeneration, extended"
             },
             "8258": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4194,7 +4219,7 @@
                 "name": "Potion of Swiftness, extended"
             },
             "8259": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4204,7 +4229,7 @@
                 "name": "Potion of Fire Resistance, extended"
             },
             "8260": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4214,12 +4239,12 @@
                 "name": "Potion of Poison, extended"
             },
             "8261": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "healthpotion.png",
                 "name": "Potion of Healing"
             },
             "8262": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4229,7 +4254,7 @@
                 "name": "Potion of Night Vision, extended"
             },
             "8264": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4239,7 +4264,7 @@
                 "name": "Potion of Weakness, extended"
             },
             "8265": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4249,7 +4274,7 @@
                 "name": "Potion of Strength, extended"
             },
             "8266": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4258,13 +4283,18 @@
                 "image": "slownesspotion.png",
                 "name": "Potion of Slowness, extended"
             },
+            "8267": {
+                "alwaysGlow": true,
+                "image": "jumppotion.png",
+                "name": "Potion of Leaping"
+            },
             "8268": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "image": "damagepotion.png",
                 "name": "Potion of Harming"
             },
             "8269": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4274,7 +4304,7 @@
                 "name": "Potion of Water Breathing, extended"
             },
             "8270": {
-                "always_glow": true,
+                "alwaysGlow": true,
                 "cloud": {
                     "x": -1,
                     "y": 4,
@@ -4773,7 +4803,7 @@
         "name": "Carrot on a Stick"
     },
     "399": {
-        "always_glow": true,
+        "alwaysGlow": true,
         "cloud": {
             "x": -1,
             "y": 2,
