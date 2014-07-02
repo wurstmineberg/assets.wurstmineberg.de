@@ -4481,103 +4481,115 @@
     "383": {
         "damageValues": {
             "100": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e0/Grid_Spawn_Horse.png",
+                "image": "spawnhorse.png",
                 "name": "Spawn Horse"
             },
+            "101": {
+                "image": "spawnrabbit.png",
+                "name": "Spawn Rabbit"
+            },
             "120": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/02/Grid_Spawn_Villager.png",
+                "image": "spawnvillager.png",
                 "name": "Spawn Villager"
             },
             "50": {
                 "name": "Spawn Creeper"
             },
             "51": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/35/Grid_Spawn_Skeleton.png",
+                "image": "spawnskeleton.png",
                 "name": "Spawn Skeleton"
             },
             "52": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/50/Grid_Spawn_Spider.png",
+                "image": "spawnspider.png",
                 "name": "Spawn Spider"
             },
             "54": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/30/Grid_Spawn_Zombie.png",
+                "image": "spawnzombie.png",
                 "name": "Spawn Zombie"
             },
             "55": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/11/Grid_Spawn_Slime.png",
+                "image": "spawnslime.png",
                 "name": "Spawn Slime"
             },
             "56": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/3f/Grid_Spawn_Ghast.png",
+                "image": "spawnghast.png",
                 "name": "Spawn Ghast"
             },
             "57": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7b/Grid_Spawn_Pig_Zombie.png",
+                "image": "spawnpigzombie.png",
                 "name": "Spawn Zombie Pigman"
             },
             "58": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/62/Grid_Spawn_Enderman.png",
+                "image": "spawnenderman.png",
                 "name": "Spawn Enderman"
             },
             "59": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ee/Grid_Spawn_Cave_Spider.png",
+                "image": "spawncavespider.png",
                 "name": "Spawn Cave Spider"
             },
             "60": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/11/Grid_Spawn_Silverfish.png",
+                "image": "spawnsilverfish.png",
                 "name": "Spawn Silverfish"
             },
             "61": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/ff/Grid_Spawn_Blaze.png",
+                "image": "spawnblaze.png",
                 "name": "Spawn Blaze"
             },
             "62": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/25/Grid_Spawn_Magma_Cube.png",
+                "image": "spawnmagmacube.png",
                 "name": "Spawn Magma Cube"
             },
             "65": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f3/Grid_Spawn_Bat.png",
+                "image": "spawnbat.png",
                 "name": "Spawn Bat"
             },
             "66": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7c/Grid_Spawn_Witch.png",
+                "image": "spawnwitch.png",
                 "name": "Spawn Witch"
             },
+            "67": {
+                "image": "spawnendermite.png",
+                "name": "Spawn Endermite"
+            },
+            "68": {
+                "image": "spawnguardian.png",
+                "name": "Spawn Guardian"
+            },
             "90": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/09/Grid_Spawn_Pig.png",
+                "image": "spawnpig.png",
                 "name": "Spawn Pig"
             },
             "91": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f8/Grid_Spawn_Sheep.png",
+                "image": "spawnsheep.png",
                 "name": "Spawn Sheep"
             },
             "92": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/80/Grid_Spawn_Cow.png",
+                "image": "spawncow.png",
                 "name": "Spawn Cow"
             },
             "93": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/b0/Grid_Spawn_Chicken.png",
+                "image": "spawnchicken.png",
                 "name": "Spawn Chicken"
             },
             "94": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/58/Grid_Spawn_Squid.png",
+                "image": "spawnsquid.png",
                 "name": "Spawn Squid"
             },
             "95": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/4b/Grid_Spawn_Wolf.png",
+                "image": "spawnwolf.png",
                 "name": "Spawn Wolf"
             },
             "96": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/91/Grid_Spawn_Mooshroom.png",
+                "image": "spawnmooshroom.png",
                 "name": "Spawn Mooshroom"
             },
             "98": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e8/Grid_Spawn_Ocelot.png",
+                "image": "spawnocelot.png",
                 "name": "Spawn Ocelot"
             }
         },
         "id": "minecraft:spawn_egg",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fc/Grid_Spawn_Creeper.png",
+        "image": "spawncreeper.png",
         "name": "Spawn Egg"
     },
     "384": {
