@@ -4896,6 +4896,31 @@
         "image": "prismarinecrystal.png",
         "name": "Prismarine Crystal"
     },
+    "411": {
+        "id": "minecraft:raw_rabbit",
+        "image": "rawrabbit.png",
+        "name": "Raw Rabbit"
+    },
+    "412": {
+        "id": "minecraft:cooked_rabbit",
+        "image": "cookedrabbit.png",
+        "name": "Cooked Rabbit"
+    },
+    "413": {
+        "id": "minecraft:rabbit_stew",
+        "image": "rabbitstew.png",
+        "name": "Rabbit Stew"
+    },
+    "414": {
+        "id": "minecraft:rabbit_foot",
+        "image": "rabbitfoot.png",
+        "name": "Rabbit's Foot"
+    },
+    "415": {
+        "id": "minecraft:rabbit_hide",
+        "image": "rabbithide.png",
+        "name": "Rabbit Hide"
+    },
     "417": {
         "cloud": {
             "x": -1,
@@ -4963,6 +4988,16 @@
         "id": "minecraft:command_block_minecart",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a3/Grid_Minecart_with_Command_Block.png",
         "name": "Minecart with Command Block"
+    },
+    "423": {
+        "id": "minecraft:mutton",
+        "image": "rawmutton.png",
+        "name": "Raw Mutton"
+    },
+    "424": {
+        "id": "minecraft:cooked_mutton",
+        "image": "cookedmutton.png",
+        "name": "Cooked Mutton"
     },
     "43": {
         "damageValues": {
