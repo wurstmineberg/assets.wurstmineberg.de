@@ -70,6 +70,10 @@
             "dimension": "nether",
             "name": "Zombie Pigman"
         },
+        "Rabbit": {
+            "attitude": "friendly",
+            "dimension": "overworld"
+        },
         "Silverfish": {
             "attitude": "hostile",
             "dimension": "overworld"
