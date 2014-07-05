@@ -13,7 +13,7 @@ function displayPeopleData(people) {
         vetoed: 'former'
     };
     people.list.forEach(function(person) {
-        if (person.status in displayedStatuses) {
+        if (_.contains(displayedStatuses, person.status)) {
             var minecraft = '';
             var status = person.status in statusMapping ? statusMapping[person.status] : person.status;
             var $name = $('<td>', {'class': 'username'}).html($('<a>', {'href': '/people/' + person.id}).text(person.interfaceName));
