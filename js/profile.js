@@ -515,7 +515,7 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
 function displayMinigameData(people, person) {
     // Achievement Run
     $.when(people.achievementWinners()).done(function(winners) {
-        for (var index = 0; i < winners.length; i++) {
+        for (var index = 0; index < winners.length; index++) {
             if (winners[index].id === person.id) {
                 break;
             }
