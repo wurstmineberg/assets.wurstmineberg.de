@@ -512,6 +512,46 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
     //initialize_datatables();
 }
 
+function displayMinigameData(people, person) {
+    // Achievement Run
+    $.when(people.achievementWinners()).done(function(winners) {
+        var index = winners.indexOf(_.find(winners, function(winner) {
+            winner.id === person.id;
+        }));
+        if (index < 0) {
+            $('#minigames-stat-row-achievementrun-place').children('.value').text('not yet completed');
+            //TODO add current achievement progress
+        } else {
+            var suffix = 'th';
+            if (index.toString().endsWith('1')) {
+                suffix = 'st';
+            } else if (index.toString().endsWith('2')) {
+                suffix = 'nd';
+            } else if (index.toString().endsWith('3')) {
+                suffix = 'rd';
+            }
+            $('#minigames-stat-row-achievementrun-place').children('.value').html(index + suffix);
+            if (index > 0 || winners.length > index + 1) {
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(' (');
+            }
+            if (index > 0) {
+                $('#minigames-stat-row-achievementrun-place').children('.value').append('after ');
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(html_player_list([winners[index - 1]]));
+            }
+            if (index > 0 && winners.length > index + 1) {
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(', ');
+            }
+            if (winners.length > index + 1) {
+                $('#minigames-stat-row-achievementrun-place').children('.value').append('before ');
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(html_player_list([winners[index + 1]]));
+            }
+            if (index > 0 || winners.length > index + 1) {
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(')');
+            }
+        }
+    });
+}
+
 function loadStatData(person, string_data, achievement_data, biomes, items, mobData) {
     if (person.option('show_inventory')) {
         $.when(API.playerData(person)).done(function(player_data) {
@@ -529,7 +569,7 @@ function loadStatData(person, string_data, achievement_data, biomes, items, mobD
     });
 }
 
-function load_user_data() {
+function loadUserData() {
     var username = get_user_name();
     document.title = username + ' on Wurstmineberg';
     $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people(), API.mobData()).done(function(person, string_data, achievement_data, biomes, items, people, mobData) {
@@ -541,12 +581,12 @@ function load_user_data() {
         }).fail(function() {
             displayProfileData(person, items, people, {});
         });
+        displayMinigameData(people, person);
     }).fail(function() {
         $('.loading').html('Error: User with this name not found');
     });
 }
 
-
 select_tab_with_id("tab-stats-profile");
 bind_tab_events();
-load_user_data();
+loadUserData();

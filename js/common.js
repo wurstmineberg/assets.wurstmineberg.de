@@ -177,6 +177,14 @@ function People(people_data) {
         });
     }();
     
+    this.achievementWinners = function() {
+        return API.ajaxJSONDeferred('//api.wurstmineberg.de/minigame/achievements/winners.json').then(function(winners) {
+            return _.map(winners, function(winnerID) {
+                return this.personById(winnerID);
+            });
+        });
+    };
+    
     this.activePeople = function() {
         return _this.list.filter(function(person) {
             return (person.status != 'former');
@@ -522,7 +530,6 @@ var API = {
         });
     }
 }
-
 
 function bind_tab_events() {
     $('.tab-item').bind('click', function(eventObject) {
