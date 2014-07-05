@@ -1,3 +1,5 @@
+var isDev = location.hostname === 'dev.wurstmineberg.de';
+
 function dateObjectFromUTC(s) { // modified from http://stackoverflow.com/a/15518848/667338
     if (typeof s !== 'string') {
         return undefined;
@@ -138,8 +140,8 @@ function Person(person_data) {
     }();
     this.html_ava = function(size) {
         // custom avatar, saved in /assets
-        var imageURLs = ['http://wurstmineberg.de/assets/img/ava/' + size + '/' + this.id + '.png'];
-        var hiDPIURLs = ['http://wurstmineberg.de/assets/img/ava/' + (size * 2) + '/' + this.id + '.png'];
+        var imageURLs = [(isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/ava/' + size + '/' + this.id + '.png'];
+        var hiDPIURLs = [(isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/ava/' + (size * 2) + '/' + this.id + '.png'];
         // gravatar
         if ('gravatar' in person_data && size <= 2048) {
             imageURLs.push('http://www.gravatar.com/avatar/' + md5(person_data['gravatar']) + '?d=404&s=' + size);
@@ -148,11 +150,11 @@ function Person(person_data) {
             }
         }
         // player head
-        imageURLs.push('http://wurstmineberg.de/assets/img/head/' + size + '/' + this.id + '.png');
-        hiDPIURLs.push('http://wurstmineberg.de/assets/img/head/' + (size * 2) + '/' + this.id + '.png');
+        imageURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + size + '/' + this.id + '.png');
+        hiDPIURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + (size * 2) + '/' + this.id + '.png');
         // Steve head
-        imageURLs.push('http://wurstmineberg.de/assets/img/head/' + size + '/Player.png');
-        hiDPIURLs.push('http://wurstmineberg.de/assets/img/head/' + (size * 2) + '/Player.png');
+        imageURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + size + '/Player.png');
+        hiDPIURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + (size * 2) + '/Player.png');
         //TODO do something with the hiDPI images
         return imageStack(imageURLs, {
             'class': 'avatar',
@@ -292,7 +294,7 @@ function Item(numericID, itemInfo) {
             if (itemInfo['image'].startsWith('http://') || itemInfo['image'].startsWith('https://')) {
                 return '<img src="' + itemInfo['image'] + '" class="' + (classes || '') + '" />';
             } else {
-                return '<img src="/static/img/grid/' + itemInfo['image'] + '" class="' + (classes || '') + '" />';
+                return '<img src="' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid/' + itemInfo['image'] + '" class="' + (classes || '') + '" />';
             }
         } else {
             return '';
@@ -452,13 +454,13 @@ var API = {
         return API.ajaxJSONDeferred('assets/serverstatus/status.json');
     },
     stringData: function() {
-        return API.ajaxJSONDeferred('/static/json/strings.json');
+        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/strings.json');
     },
     mobData: function() {
-        return API.ajaxJSONDeferred('/static/json/mobs.json');
+        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/mobs.json');
     },
     itemData: function() {
-        return API.ajaxJSONDeferred('/static/json/items.json');
+        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/items.json');
     },
     items: function() {
         return API.itemData().then(function(itemData) {
@@ -466,7 +468,7 @@ var API = {
         });
     },
     achievementData: function() {
-        return API.ajaxJSONDeferred('/static/json/achievements.json');
+        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/achievements.json');
     },
     achievement: function(achievementID) {
         return API.achievementData().then(function(achievementData) {
@@ -510,7 +512,7 @@ var API = {
         return API.ajaxJSONDeferred('/assets/serverstatus/moneys.json');
     },
     biomeData: function() {
-        return API.ajaxJSONDeferred('/static/json/biomes.json');
+        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/biomes.json');
     },
     biomes: function() {
         return API.biomeData().then(function(biome_data) {
@@ -731,7 +733,7 @@ function html_player_list(people, avas, text, urls, useWikiArticles) {
             $list.append(', ');
         };
         var personText = typeof text === 'undefined' ? person.interfaceName : text[index];
-        var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle('http://wurstmineberg.de/people/' + person.id) : 'http://wurstmineberg.de/people/' + person.id) : urls[index])}).text(personText);
+        var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle((isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : (isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : urls[index])}).text(personText);
         if (avas) {
             $a.prepend(person.html_ava(16));
         };
