@@ -180,7 +180,7 @@ function People(people_data) {
     this.achievementWinners = function() {
         return API.ajaxJSONDeferred('//api.wurstmineberg.de/minigame/achievements/winners.json').then(function(winners) {
             return _.map(winners, function(winnerID) {
-                return this.personById(winnerID);
+                return _this.personById(winnerID);
             });
         });
     };
