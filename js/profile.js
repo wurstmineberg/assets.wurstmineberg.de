@@ -515,22 +515,24 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
 function displayMinigameData(people, person) {
     // Achievement Run
     $.when(people.achievementWinners()).done(function(winners) {
-        var index = winners.indexOf(_.find(winners, function(winner) {
-            winner.id === person.id;
-        }));
-        if (index < 0) {
+        for (var index = 0; i < winners.length; i++) {
+            if (winners[index].id === person.id) {
+                break;
+            }
+        }
+        if (index == winners.length) {
             $('#minigames-stat-row-achievementrun-place').children('.value').text('not yet completed');
             //TODO add current achievement progress
         } else {
             var suffix = 'th';
-            if (index.toString().endsWith('1')) {
+            if ((index + 1).toString().endsWith('1')) {
                 suffix = 'st';
-            } else if (index.toString().endsWith('2')) {
+            } else if ((index + 1).toString().endsWith('2')) {
                 suffix = 'nd';
-            } else if (index.toString().endsWith('3')) {
+            } else if ((index + 1).toString().endsWith('3')) {
                 suffix = 'rd';
             }
-            $('#minigames-stat-row-achievementrun-place').children('.value').html(index + suffix);
+            $('#minigames-stat-row-achievementrun-place').children('.value').html((index + 1) + suffix);
             if (index > 0 || winners.length > index + 1) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append(' (');
             }
