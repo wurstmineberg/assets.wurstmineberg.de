@@ -628,6 +628,7 @@
                     "y": 1,
                     "z": 9
                 },
+                "image": "slightlydamagedanvil.png",
                 "name": "Slightly Damaged Anvil"
             },
             "8": {
@@ -636,6 +637,7 @@
                     "y": 1,
                     "z": 10
                 },
+                "image": "verydamagedanvil.png",
                 "name": "Very Damaged Anvil"
             }
         },
