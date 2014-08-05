@@ -705,7 +705,7 @@
             "z": 8
         },
         "id": "minecraft:daylight_detector",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/18/Grid_Daylight_Sensor.png",
+        "image": "daylightsensor.png",
         "name": "Daylight Sensor"
     },
     "152": {
@@ -1526,6 +1526,21 @@
         "id": "minecraft:double_plant",
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/0a/Grid_Lilac.png",
         "name": "Large Flower"
+    },
+    "176": {
+        "id": "minecraft:standing_banner",
+        "image": "blackbanner.png",
+        "name": "Standing Banner"
+    },
+    "177": {
+        "id": "minecraft:wall_banner",
+        "image": "yellowbanner.png",
+        "name": "Wall Banner"
+    },
+    "178": {
+        "id": "minecraft:daylight_detector_inverted",
+        "image": "daylightsensor.png",
+        "name": "Inverted Daylight Sensor"
     },
     "18": {
         "cloud": {
@@ -5042,6 +5057,76 @@
         "id": "minecraft:cooked_mutton",
         "image": "cookedmutton.png",
         "name": "Cooked Mutton"
+    },
+    "425": {
+        "damageValues": {
+            "0": {
+                "image": "blackbanner.png",
+                "name": "Black Banner"
+            },
+            "1": {
+                "name": "Red Banner"
+            },
+            "10": {
+                "image": "limebanner.png",
+                "name": "Lime Banner"
+            },
+            "11": {
+                "image": "yellowbanner.png",
+                "name": "Yellow Banner"
+            },
+            "12": {
+                "image": "lightbluebanner.png",
+                "name": "Light Blue Banner"
+            },
+            "13": {
+                "image": "magentabanner.png",
+                "name": "Magenta Banner"
+            },
+            "14": {
+                "image": "orangebanner.png",
+                "name": "Orange Banner"
+            },
+            "15": {
+                "image": "whitebanner.png",
+                "name": "White Banner"
+            },
+            "2": {
+                "image": "greenbanner.png",
+                "name": "Green Banner"
+            },
+            "3": {
+                "image": "brownbanner.png",
+                "name": "Brown Banner"
+            },
+            "4": {
+                "image": "bluebanner.png",
+                "name": "Blue Banner"
+            },
+            "5": {
+                "image": "purplebanner.png",
+                "name": "Purple Banner"
+            },
+            "6": {
+                "image": "cyanbanner.png",
+                "name": "Cyan Banner"
+            },
+            "7": {
+                "image": "lightgraybanner.png",
+                "name": "Light Gray Banner"
+            },
+            "8": {
+                "image": "graybanner.png",
+                "name": "Gray Banner"
+            },
+            "9": {
+                "image": "pinkbanner.png",
+                "name": "Pink Banner"
+            }
+        },
+        "id": "minecraft:banner",
+        "image": "redbanner.png",
+        "name": "Banner"
     },
     "43": {
         "damageValues": {
