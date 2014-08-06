@@ -2028,8 +2028,9 @@
             "y": 5,
             "z": 7
         },
+        "durability": 250,
         "id": "minecraft:iron_shovel",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/01/Grid_Iron_Shovel.png",
+        "image": "ironshovel.png",
         "name": "Iron Shovel"
     },
     "257": {
@@ -2038,8 +2039,9 @@
             "y": 5,
             "z": 6
         },
+        "durability": 250,
         "id": "minecraft:iron_pickaxe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1d/Grid_Iron_Pickaxe.png",
+        "image": "ironpickaxe.png",
         "name": "Iron Pickaxe"
     },
     "258": {
@@ -2048,8 +2050,9 @@
             "y": 5,
             "z": 8
         },
+        "durability": 250,
         "id": "minecraft:iron_axe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1d/Grid_Iron_Axe.png",
+        "image": "ironaxe.png",
         "name": "Iron Axe"
     },
     "259": {
@@ -2058,8 +2061,9 @@
             "y": 5,
             "z": 9
         },
+        "durability": 64,
         "id": "minecraft:flint_and_steel",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fb/Grid_Flint_and_Steel.png",
+        "image": "flintandsteel.png",
         "name": "Flint and Steel"
     },
     "26": {
@@ -2096,6 +2100,7 @@
             "y": 5,
             "z": 0
         },
+        "durability": 384,
         "id": "minecraft:bow",
         "image": "bow.png",
         "name": "Bow"
@@ -2167,8 +2172,9 @@
             "y": 5,
             "z": 3
         },
+        "durability": 250,
         "id": "minecraft:iron_sword",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/d5/Grid_Iron_Sword.png",
+        "image": "ironsword.png",
         "name": "Iron Sword"
     },
     "268": {
@@ -2177,6 +2183,7 @@
             "y": 5,
             "z": 5
         },
+        "durability": 59,
         "id": "minecraft:wooden_sword",
         "image": "woodsword.png",
         "name": "Wooden Sword"
@@ -2187,8 +2194,9 @@
             "y": 5,
             "z": 14
         },
+        "durability": 59,
         "id": "minecraft:wooden_shovel",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/21/Grid_Wooden_Shovel.png",
+        "image": "woodshovel.png",
         "name": "Wooden Shovel"
     },
     "27": {
@@ -2215,6 +2223,7 @@
             "y": 5,
             "z": 13
         },
+        "durability": 59,
         "id": "minecraft:wooden_pickaxe",
         "image": "woodpickaxe.png",
         "name": "Wooden Pickaxe"
@@ -2225,8 +2234,9 @@
             "y": 5,
             "z": 15
         },
+        "durability": 59,
         "id": "minecraft:wooden_axe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2a/Grid_Wooden_Axe.png",
+        "image": "woodaxe.png",
         "name": "Wooden Axe"
     },
     "272": {
@@ -2235,8 +2245,9 @@
             "y": 5,
             "z": 4
         },
+        "durability": 131,
         "id": "minecraft:stone_sword",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e1/Grid_Stone_Sword.png",
+        "image": "stonesword.png",
         "name": "Stone Sword"
     },
     "273": {
@@ -2245,8 +2256,9 @@
             "y": 5,
             "z": 11
         },
+        "durability": 131,
         "id": "minecraft:stone_shovel",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/ff/Grid_Stone_Shovel.png",
+        "image": "stoneshovel.png",
         "name": "Stone Shovel"
     },
     "274": {
@@ -2255,6 +2267,7 @@
             "y": 5,
             "z": 10
         },
+        "durability": 131,
         "id": "minecraft:stone_pickaxe",
         "image": "stonepickaxe.png",
         "name": "Stone Pickaxe"
@@ -2265,8 +2278,9 @@
             "y": 5,
             "z": 12
         },
+        "durability": 131,
         "id": "minecraft:stone_axe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/55/Grid_Stone_Axe.png",
+        "image": "stoneaxe.png",
         "name": "Stone Axe"
     },
     "276": {
@@ -2275,6 +2289,7 @@
             "y": 5,
             "z": 2
         },
+        "durability": 1561,
         "id": "minecraft:diamond_sword",
         "image": "diamondsword.png",
         "name": "Diamond Sword"
@@ -2285,6 +2300,7 @@
             "y": 5,
             "z": 4
         },
+        "durability": 1561,
         "id": "minecraft:diamond_shovel",
         "image": "diamondshovel.png",
         "name": "Diamond Shovel"
@@ -2295,8 +2311,9 @@
             "y": 5,
             "z": 3
         },
+        "durability": 1561,
         "id": "minecraft:diamond_pickaxe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/ce/Grid_Diamond_Pickaxe.png",
+        "image": "diamondpickaxe.png",
         "name": "Diamond Pickaxe"
     },
     "279": {
@@ -2305,8 +2322,9 @@
             "y": 5,
             "z": 5
         },
+        "durability": 1561,
         "id": "minecraft:diamond_axe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8d/Grid_Diamond_Axe.png",
+        "image": "diamondaxe.png",
         "name": "Diamond Axe"
     },
     "28": {
@@ -2363,6 +2381,7 @@
             "y": 5,
             "z": 6
         },
+        "durability": 32,
         "id": "minecraft:golden_sword",
         "image": "goldsword.png",
         "name": "Golden Sword"
@@ -2373,8 +2392,9 @@
             "y": 5,
             "z": 17
         },
+        "durability": 32,
         "id": "minecraft:golden_shovel",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/85/Grid_Gold_Shovel.png",
+        "image": "goldshovel.png",
         "name": "Golden Shovel"
     },
     "285": {
@@ -2383,6 +2403,7 @@
             "y": 5,
             "z": 16
         },
+        "durability": 32,
         "id": "minecraft:golden_pickaxe",
         "image": "goldpickaxe.png",
         "name": "Golden Pickaxe"
@@ -2393,8 +2414,9 @@
             "y": 5,
             "z": 18
         },
+        "durability": 33,
         "id": "minecraft:golden_axe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/99/Grid_Gold_Axe.png",
+        "image": "goldaxe.png",
         "name": "Golden Axe"
     },
     "287": {
@@ -2449,6 +2471,7 @@
             "y": 4,
             "z": 34
         },
+        "durability": 59,
         "id": "minecraft:wooden_hoe",
         "image": "woodhoe.png",
         "name": "Wooden Hoe"
@@ -2459,8 +2482,9 @@
             "y": 4,
             "z": 33
         },
+        "durability": 131,
         "id": "minecraft:stone_hoe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/ba/Grid_Stone_Hoe.png",
+        "image": "stonehoe.png",
         "name": "Stone Hoe"
     },
     "292": {
@@ -2469,8 +2493,9 @@
             "y": 4,
             "z": 32
         },
+        "durability": 250,
         "id": "minecraft:iron_hoe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f8/Grid_Iron_Hoe.png",
+        "image": "ironhoe.png",
         "name": "Iron Hoe"
     },
     "293": {
@@ -2479,8 +2504,9 @@
             "y": 4,
             "z": 31
         },
+        "durability": 1561,
         "id": "minecraft:diamond_hoe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c9/Grid_Diamond_Hoe.png",
+        "image": "diamondhoe.png",
         "name": "Diamond Hoe"
     },
     "294": {
@@ -2489,8 +2515,9 @@
             "y": 4,
             "z": 35
         },
+        "durability": 32,
         "id": "minecraft:golden_hoe",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/77/Grid_Gold_Hoe.png",
+        "image": "goldhoe.png",
         "name": "Gold Hoe"
     },
     "295": {
@@ -2529,8 +2556,9 @@
             "y": 5,
             "z": 16
         },
+        "durability": 55,
         "id": "minecraft:leather_helmet",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/24/Grid_Leather_Cap.png",
+        "image": "leatherhelmet.png",
         "name": "Leather Cap"
     },
     "299": {
@@ -2539,8 +2567,9 @@
             "y": 5,
             "z": 17
         },
+        "durability": 80,
         "id": "minecraft:leather_chestplate",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ed/Grid_Leather_Tunic.png",
+        "image": "leatherchestplate.png",
         "name": "Leather Tunic"
     },
     "3": {
@@ -2592,8 +2621,9 @@
             "y": 5,
             "z": 18
         },
+        "durability": 75,
         "id": "minecraft:leather_leggings",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/ce/Grid_Leather_Pants.png",
+        "image": "leatherleggings.png",
         "name": "Leather Pants"
     },
     "301": {
@@ -2602,8 +2632,9 @@
             "y": 5,
             "z": 19
         },
+        "durability": 65,
         "id": "minecraft:leather_boots",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/06/Grid_Leather_Boots.png",
+        "image": "leatherboots.png",
         "name": "Leather Boots"
     },
     "302": {
@@ -2612,6 +2643,7 @@
             "y": 5,
             "z": 8
         },
+        "durability": 165,
         "id": "minecraft:chainmail_helmet",
         "image": "chainhelmet.png",
         "name": "Chain Helmet"
@@ -2622,6 +2654,7 @@
             "y": 5,
             "z": 9
         },
+        "durability": 240,
         "id": "minecraft:chainmail_chestplate",
         "image": "chainchestplate.png",
         "name": "Chain Chestplate"
@@ -2632,6 +2665,7 @@
             "y": 5,
             "z": 10
         },
+        "durability": 225,
         "id": "minecraft:chainmail_leggings",
         "image": "chainleggings.png",
         "name": "Chain Leggings"
@@ -2642,6 +2676,7 @@
             "y": 5,
             "z": 11
         },
+        "durability": 195,
         "id": "minecraft:chainmail_boots",
         "image": "chainboots.png",
         "name": "Chain Boots"
@@ -2652,8 +2687,9 @@
             "y": 5,
             "z": 4
         },
+        "durability": 165,
         "id": "minecraft:iron_helmet",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ec/Grid_Iron_Helmet.png",
+        "image": "ironhelmet.png",
         "name": "Iron Helmet"
     },
     "307": {
@@ -2662,8 +2698,9 @@
             "y": 5,
             "z": 5
         },
+        "durability": 240,
         "id": "minecraft:iron_chestplate",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8d/Grid_Iron_Chestplate.png",
+        "image": "ironchestplate.png",
         "name": "Iron Chestplate"
     },
     "308": {
@@ -2672,8 +2709,9 @@
             "y": 5,
             "z": 6
         },
+        "durability": 225,
         "id": "minecraft:iron_leggings",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/99/Grid_Iron_Leggings.png",
+        "image": "ironleggings.png",
         "name": "Iron Leggings"
     },
     "309": {
@@ -2682,8 +2720,9 @@
             "y": 5,
             "z": 7
         },
+        "durability": 195,
         "id": "minecraft:iron_boots",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f5/Grid_Iron_Boots.png",
+        "image": "ironboots.png",
         "name": "Iron Boots"
     },
     "31": {
@@ -2730,8 +2769,9 @@
             "y": 5,
             "z": 0
         },
+        "durbility": 363,
         "id": "minecraft:diamond_helmet",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bd/Grid_Diamond_Helmet.png",
+        "image": "diamondhelmet.png",
         "name": "Diamond Helmet"
     },
     "311": {
@@ -2740,8 +2780,9 @@
             "y": 5,
             "z": 1
         },
+        "durability": 528,
         "id": "minecraft:diamond_chestplate",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e7/Grid_Diamond_Chestplate.png",
+        "image": "diamondchestplate.png",
         "name": "Diamond Chestplate"
     },
     "312": {
@@ -2750,8 +2791,9 @@
             "y": 5,
             "z": 2
         },
+        "durability": 495,
         "id": "minecraft:diamond_leggings",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e3/Grid_Diamond_Leggings.png",
+        "image": "diamondleggings.png",
         "name": "Diamond Leggings"
     },
     "313": {
@@ -2760,6 +2802,7 @@
             "y": 5,
             "z": 3
         },
+        "durability": 429,
         "id": "minecraft:diamond_boots",
         "image": "diamondboots.png",
         "name": "Diamond Boots"
@@ -3135,8 +3178,9 @@
             "y": 5,
             "z": 2
         },
+        "durability": 64,
         "id": "minecraft:fishing_rod",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c7/Grid_Fishing_Rod.png",
+        "image": "fishingrod.png",
         "name": "Fishing Rod"
     },
     "347": {
@@ -3608,8 +3652,9 @@
             "y": 5,
             "z": 2
         },
+        "durability": 238,
         "id": "minecraft:shears",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/13/Grid_Shears.png",
+        "image": "shears.png",
         "name": "Shears"
     },
     "36": {
@@ -4970,8 +5015,9 @@
             "y": 5,
             "z": 19
         },
+        "durability": 25,
         "id": "minecraft:carrot_on_a_stick",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e4/Grid_Carrot_on_a_Stick.png",
+        "image": "carrotstick.png",
         "name": "Carrot on a Stick"
     },
     "399": {

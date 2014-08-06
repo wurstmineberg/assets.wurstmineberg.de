@@ -94,3 +94,4 @@ The fields for the data values implicitely inherit the values of the parent
         * structureName: a human-readable version of the structure's name, in singular and title case.
         * inventoryType: a human-readable version of the type of inventory in plural (e.g. “dispensers” or “library chests”). Defaults to “chests”.
 * dropsSelf: an array of objects structured like “method of obtaining: mining” objects, except without the “block” key. This is used to specify how the block must be mined so that it drops itself. The default implies that the block always drops itself.
+* durability: the durability of the tool, as displayed in-game.
