@@ -290,13 +290,13 @@
                     "y": 1,
                     "z": 7
                 },
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/85/Grid_Red_Sand.png",
+                "image": "redsand.png",
                 "name": "Red Sand",
                 "texture": "red_sand"
             }
         },
         "id": "minecraft:sand",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bb/Grid_Sand.png",
+        "image": "sand.png",
         "name": "Sand",
         "solid": true,
         "texture": "sand",
@@ -1542,6 +1542,102 @@
         "image": "daylightsensor.png",
         "name": "Inverted Daylight Sensor"
     },
+    "179": {
+        "damageValues": {
+            "0": {
+                "obtaining": [
+                    {
+                        "recipe": [
+                            {
+                                "damage": 1,
+                                "id": "minecraft:sand"
+                            },
+                            {
+                                "damage": 1,
+                                "id": "minecraft:sand"
+                            },
+                            null,
+                            {
+                                "damage": 1,
+                                "id": "minecraft:sand"
+                            },
+                            {
+                                "damage": 1,
+                                "id": "minecraft:sand"
+                            },
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "type": "craftingShaped"
+                    }
+                ]
+            },
+            "1": {
+                "image": "smoothredsandstone.png",
+                "name": "Smooth Red Sandstone",
+                "obtaining": [
+                    {
+                        "outputAmount": 4,
+                        "recipe": [
+                            {
+                                "damage": 0,
+                                "id": "minecraft:red_sandstone"
+                            },
+                            {
+                                "damage": 0,
+                                "id": "minecraft:red_sandstone"
+                            },
+                            null,
+                            {
+                                "damage": 0,
+                                "id": "minecraft:red_sandstone"
+                            },
+                            {
+                                "damage": 0,
+                                "id": "minecraft:red_sandstone"
+                            },
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "type": "craftingShaped"
+                    }
+                ]
+            },
+            "2": {
+                "image": "chiseledredsandstone.png",
+                "name": "Chiseled Red Sandstone",
+                "obtaining": [
+                    {
+                        "recipe": [
+                            {
+                                "damage": 0,
+                                "id": "minecraft:stone_slab2"
+                            },
+                            null,
+                            null,
+                            {
+                                "damage": 0,
+                                "id": "minecraft:stone_slab2"
+                            },
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "type": "craftingShaped"
+                    }
+                ]
+            }
+        },
+        "id": "minecraft:red_sandstone",
+        "image": "redsandstone.png",
+        "name": "Red Sandstone"
+    },
     "18": {
         "cloud": {
             "x": 1,
@@ -1591,6 +1687,65 @@
         "solid": true,
         "texture_needs_colorisation": true,
         "type": "block"
+    },
+    "180": {
+        "id": "minecraft:red_sandstone_stairs",
+        "image": "redsandstonestairs.png",
+        "name": "Red Sandstone Stairs",
+        "obtaining": [
+            {
+                "outputAmount": 4,
+                "recipe": [
+                    null,
+                    null,
+                    "minecraft:red_sandstone",
+                    null,
+                    "minecraft:red_sandstone",
+                    "minecraft:red_sandstone",
+                    "minecraft:red_sandstone",
+                    "minecraft:red_sandstone",
+                    "minecraft:red_sandstone"
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "181": {
+        "damageValues": {
+            "0": {
+                "name": "Double Red Sandstone Slab"
+            }
+        },
+        "id": "minecraft:double_stone_slab2",
+        "image": "redsandstoneslab.png",
+        "name": "Double Slab"
+    },
+    "182": {
+        "damageValues": {
+            "0": {
+                "name": "Red Sandstone Slab",
+                "obtaining": [
+                    {
+                        "outputAmount": 6,
+                        "recipe": [
+                            "minecraft:red_sandstone",
+                            "minecraft:red_sandstone",
+                            "minecraft:red_sandstone",
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        "type": "craftingShaped"
+                    }
+                ]
+            }
+        },
+        "id": "minecraft:stone_slab2",
+        "image": "redsandstoneslab.png",
+        "name": "Slab"
     },
     "19": {
         "damageValues": {
@@ -4979,6 +5134,27 @@
         "id": "minecraft:rabbit_hide",
         "image": "rabbithide.png",
         "name": "Rabbit Hide"
+    },
+    "416": {
+        "id": "minecraft:armor_stand",
+        "image": "armorstand.png",
+        "name": "Armor Stand",
+        "obtaining": [
+            {
+                "recipe": [
+                    "minecraft:stick",
+                    "minecraft:stick",
+                    "minecraft:stick",
+                    null,
+                    "minecraft:stick",
+                    null,
+                    "minecraft:stick",
+                    "minecraft:stone_slab",
+                    "minecraft:stick"
+                ],
+                "type": "craftingShaped"
+            }
+        ]
     },
     "417": {
         "cloud": {
