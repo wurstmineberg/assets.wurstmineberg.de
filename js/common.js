@@ -573,7 +573,7 @@ function url_domain(data) {
 }
 
 function reddit_user_link(username) {
-    return 'https://reddit.com/u/' + username;
+    return 'http://www.reddit.com/user/' + username;
 }
 
 function twitter_user_link(username) {
