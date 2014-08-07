@@ -124,7 +124,7 @@ function displaySlot(cell, stack, items, stringData) {
         var durability = (item.durability - stack['Damage']) / item.durability;
         cell.children('div').append($('<div>', {class: 'durability'}).html($('<div>').css({
             'background-color': 'rgb(' + (255 - Math.floor(durability * 256)) + ', ' + Math.floor(durability * 256) + ', 0)',
-            width: Math.floor(durability * 13) * 2 + 'px'
+            width: Math.floor(durability * 14) * 2 + 'px'
         })));
     }
     if ('Count' in stack && stack['Count'] > 1) {
