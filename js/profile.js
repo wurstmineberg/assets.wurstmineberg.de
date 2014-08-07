@@ -86,12 +86,12 @@ function initializeInventory(tbody, rows, cols) {
 }
 
 function displaySlot(cell, stack, items, stringData) {
-    var item = items.itemByDamage(stack.id, stack['Damage']);
+    var item = items.itemByDamage(stack.id, stack.Damage);
     cell.children('div').children('.inv-cell-image').append(item.htmlImage());
-    var name = item.name || stack['id'].toString();
+    var name = item.name || stack.id.toString();
     if ('tag' in stack) {
         if ('display' in stack.tag && 'Name' in stack.tag.display) {
-            name += ' “' + stack.tag.display['Name'] + '”';
+            name += ' “' + stack.tag.display.Name + '”';
         } else if ('title' in stack.tag) {
             name += ' “' + stack.tag.title + '”';
             if ("author" in stack.tag) {
@@ -116,19 +116,31 @@ function displaySlot(cell, stack, items, stringData) {
                 name += stringData.enchantments.names[ench.id.toString()] + ' ' + stringData.enchantments.levels[ench.lvl.toString()];
             });
             name += ')';
+        } else if ('BlockEntityTag' in stack.tag && 'Patterns' in stack.tag.BlockEntityTag && stack.tag.BlockEntityTag.Patterns.length > 0) {
+            name += ' (';
+            var first = true;
+            stack.tag.BlockEntityTag.Patterns.forEach(function(pattern) {
+                if (first) {
+                    first = false;
+                } else {
+                    name += ', ';
+                }
+                name += stringData.items.colors[pattern.Color] + ' ' + stringData.items.bannerPatterns[pattern.Pattern];
+            });
+            name += ')';
         }
     }
     cell.children('div').attr('title', name);
     cell.children('div').tooltip();
-    if (stack['Damage'] > 0 && item.durability > 0) {
-        var durability = (item.durability - stack['Damage']) / item.durability;
+    if (stack.Damage > 0 && item.durability > 0) {
+        var durability = (item.durability - stack.Damage) / item.durability;
         cell.children('div').append($('<div>', {class: 'durability'}).html($('<div>').css({
             'background-color': 'rgb(' + (255 - Math.floor(durability * 256)) + ', ' + Math.floor(durability * 256) + ', 0)',
             width: Math.floor(durability * 14) * 2 + 'px'
         })));
     }
-    if ('Count' in stack && stack['Count'] > 1) {
-        cell.children('div').append('<span class="count">' + stack['Count'] + '</span>');
+    if ('Count' in stack && stack.Count > 1) {
+        cell.children('div').append('<span class="count">' + stack.Count + '</span>');
     }
 }
 
