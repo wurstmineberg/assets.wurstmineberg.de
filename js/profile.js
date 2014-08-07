@@ -120,7 +120,7 @@ function displaySlot(cell, stack, items, stringData) {
     }
     cell.children('div').attr('title', name);
     cell.children('div').tooltip();
-    if (stack['Damage'] > 0 and item.durability > 0) {
+    if (stack['Damage'] > 0 && item.durability > 0) {
         var durability = (item.durability - stack['Damage']) / item.durability;
         cell.children('div').append($('<div>', {class: 'durability'}).html($('<div>').css({
             'background-color': 'rgb(' + (255 - Math.floor(durability * 256)) + ', ' + Math.floor(durability * 256) + ', 0)',
