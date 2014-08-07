@@ -201,7 +201,7 @@ a {
     position: relative;
 }
 
-.inv-cell > div.inv-cell-style > div {
+.inv-cell > div.inv-cell-style > div.inv-cell-image {
     border-color: white;
     border-style: none solid solid none;
     border-width: 2px;
@@ -211,7 +211,7 @@ a {
     min-width: 32px;
 }
 
-.inv-cell > div.inv-cell-style > div > img {
+.inv-cell > div.inv-cell-style > div.inv-cell-image > img {
     bottom: 1px;
     position: relative;
 }

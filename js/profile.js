@@ -76,18 +76,18 @@ function display_user_data(person) {
     }
 }
 
-function initialize_inventory(tbody, rows, cols) {
+function initializeInventory(tbody, rows, cols) {
     for (var row = 0; row < rows; row++) {
         tbody.append('<tr class="inv-row inv-row-' + row + '"></tr>');
     }
     for (var col = 0; col < cols; col++) {
-        tbody.children('tr.inv-row').append('<td class="inv-cell inv-cell-' + col + '"><div class="inv-cell-style"><div></div></div></td>');
+        tbody.children('tr.inv-row').append($('<td>', {class: 'inv-cell inv-cell-' + col}).html($('<div>', {class: 'inv-cell-style'}).html($('<div>', {class: 'inv-cell-image'}))));
     }
 }
 
 function displaySlot(cell, stack, items, stringData) {
     var item = items.itemByDamage(stack.id, stack['Damage']);
-    cell.children('div').children('div').append(item.htmlImage());
+    cell.children('div').children('.inv-cell-image').append(item.htmlImage());
     var name = item.name || stack['id'].toString();
     if ('tag' in stack) {
         if ('display' in stack.tag && 'Name' in stack.tag.display) {
@@ -135,9 +135,9 @@ function displaySlot(cell, stack, items, stringData) {
 function display_inventory(player_data, items, string_data) {
     $('tr.loading').remove();
     $('.inventory-opt-out').removeClass('inventory-opt-out').addClass('inventory-opt-in');
-    initialize_inventory($('#main-inventory > tbody'), 3, 9);
-    initialize_inventory($('#hotbar-table > tbody'), 1, 9);
-    initialize_inventory($('#ender-chest-table > tbody'), 3, 9);
+    initializeInventory($('#main-inventory > tbody'), 3, 9);
+    initializeInventory($('#hotbar-table > tbody'), 1, 9);
+    initializeInventory($('#ender-chest-table > tbody'), 3, 9);
     player_data['Inventory'].forEach(function(stack) {
         if ('Slot' in stack) {
             var cell = undefined;
