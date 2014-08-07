@@ -165,8 +165,30 @@
             "z": 2
         },
         "id": "minecraft:fence_gate",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c2/Grid_Fence_Gate.png",
-        "name": "Fence Gate"
+        "image": "oakfencegate.png",
+        "name": "Oak Fence Gate",
+        "obtaining": [
+            {
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    "minecraft:stick",
+                    {
+                        "damage": 0,
+                        "id": "minecaft:planks"
+                    },
+                    "minecraft:stick",
+                    "minecraft:stick",
+                    {
+                        "damage": 0,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick"
+                ],
+                "type": "craftingShaped"
+            }
+        ]
     },
     "108": {
         "cloud": {
@@ -1747,6 +1769,205 @@
         "image": "redsandstoneslab.png",
         "name": "Slab"
     },
+    "183": {
+        "id": "minecraft:spruce_fence_gate",
+        "image": "sprucefencegate.png",
+        "name": "Spruce Fence Gate",
+        "obtaining": [
+            {
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    "mincraft:stick",
+                    {
+                        "damage": [
+                            1,
+                            3
+                        ],
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    "minecraft:stick",
+                    {
+                        "damage": [
+                            1,
+                            3
+                        ],
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick"
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "184": {
+        "id": "minecraft:birch_fence_gate",
+        "image": "birchfencegate.png",
+        "name": "Birch Fence Gate",
+        "obtaining": [
+            {
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    "minecraft:stick",
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    "minecraft:stick",
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick"
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "185": {
+        "id": "minecraft:jungle_fence_gate",
+        "image": "junglefencegate.png",
+        "name": "Jungle Fence Gate"
+    },
+    "186": {
+        "id": "minecraft:dark_oak_fence_gate",
+        "image": "darkoakfencegate.png",
+        "name": "Dark Oak Fence Gate",
+        "obtaining": [
+            {
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    "minecraft:stick",
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    "minecraft:stick",
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick"
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "187": {
+        "id": "minecraft:acacia_fence_gate",
+        "image": "acaciafencegate.png",
+        "name": "Acacia Fence Gate",
+        "obtaining": [
+            {
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    "minecraft:stick",
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    "minecraft:stick",
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick"
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "188": {
+        "id": "minecraft:spruce_fence",
+        "image": "sprucefence.png",
+        "name": "Spruce Fence",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    {
+                        "damage": [
+                            1,
+                            3
+                        ],
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": [
+                            1,
+                            3
+                        ],
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": [
+                            1,
+                            3
+                        ],
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": [
+                            1,
+                            3
+                        ],
+                        "id": "minecraft:planks"
+                    }
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "189": {
+        "id": "minecraft:birch_fence",
+        "image": "birchfence.png",
+        "name": "Birch Fence",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    }
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
     "19": {
         "damageValues": {
             "1": {
@@ -1760,6 +1981,79 @@
         "solid": true,
         "texture": "sponge",
         "type": "block"
+    },
+    "190": {
+        "id": "minecraft:jungle_fence",
+        "image": "junglefence.png",
+        "name": "Jungle Fence"
+    },
+    "191": {
+        "id": "minecraft:dark_oak_fence",
+        "image": "darkoakfence.png",
+        "name": "Dark Oak Fence",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    }
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "192": {
+        "id": "minecraft:acacia_fence",
+        "image": "acaciafence.png",
+        "name": "Acacia Fence",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    }
+                ],
+                "type": "craftingShaped"
+            }
+        ]
     },
     "2": {
         "cloud": {
@@ -6121,8 +6415,37 @@
             "z": 1
         },
         "id": "minecraft:fence",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c8/Grid_Fence.png",
-        "name": "Fence"
+        "image": "oakfence.png",
+        "name": "Oak Fence",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    null,
+                    null,
+                    null,
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    },
+                    "minecraft:stick",
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    }
+                ],
+                "type": "craftingShaped"
+            }
+        ]
     },
     "86": {
         "cloud": {
