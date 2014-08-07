@@ -304,6 +304,7 @@ function Item(numericID, itemInfo) {
         this.id = itemInfo.id;
         this.image = itemInfo.image;
         this.name = itemInfo.name;
+        this.durability = 'durability' in itemInfo ? itemInfo.durability : 0;
     }
     this.isBlock = numericID <= 255;
     if (_.isString(numericID)) {

@@ -192,14 +192,6 @@ a {
     padding: 0;
 }
 
-.inv-cell > div.inv-cell-style > span.count {
-    bottom: 0;
-    color: white;
-    font-size: 16px;
-    position: absolute;
-    right: 0;
-}
-
 .inv-cell > div.inv-cell-style {
     border-color: #373737;
     border-style: solid none none solid;
@@ -222,6 +214,33 @@ a {
 .inv-cell > div.inv-cell-style > div > img {
     bottom: 1px;
     position: relative;
+}
+
+.inv-cell > div.inv-cell-style > span.count {
+    bottom: 0;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+}
+
+.inv-cell > div.inv-cell-style > div.durability {
+    background-color: #283101;
+    bottom: 2px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    box-sizing: border-box;
+    height: 4px;
+    left: 4px;
+    position: absolute;
+    right: 2px;
+}
+
+.inv-cell > div.inv-cell-style > div.durability > div {
+    bottom: 4px;
+    height: 2px;
+    left: 4px;
+    position: absolute;
 }
 
 .achievement-list {

@@ -85,24 +85,24 @@ function initialize_inventory(tbody, rows, cols) {
     }
 }
 
-function display_slot(cell, stack, items, string_data) {
-    var item = items.itemByDamage(stack.id, stack.Damage);
+function displaySlot(cell, stack, items, stringData) {
+    var item = items.itemByDamage(stack.id, stack['Damage']);
     cell.children('div').children('div').append(item.htmlImage());
     var name = item.name || stack['id'].toString();
     if ('tag' in stack) {
-        if ('display' in stack['tag'] && 'Name' in stack['tag']['display']) {
-            name += ' “' + stack['tag']['display']['Name'] + '”';
-        } else if ('title' in stack['tag']) {
-            name += ' “' + stack['tag']['title'] + '”';
-            if ("author" in stack['tag']) {
-                name += ' by ' + stack['tag']['author'];
+        if ('display' in stack.tag && 'Name' in stack.tag.display) {
+            name += ' “' + stack.tag.display['Name'] + '”';
+        } else if ('title' in stack.tag) {
+            name += ' “' + stack.tag.title + '”';
+            if ("author" in stack.tag) {
+                name += ' by ' + stack.tag.author;
             }
         }
         var enchantments = [];
-        if ('ench' in stack['tag']) {
-            enchantments = stack['tag']['ench'];
-        } else if ('StoredEnchantments' in stack['tag']) {
-            enchantments = stack['tag']['StoredEnchantments'];
+        if ('ench' in stack.tag) {
+            enchantments = stack.tag.ench;
+        } else if ('StoredEnchantments' in stack.tag) {
+            enchantments = stack.tag.StoredEnchantments;
         }
         if (enchantments.length > 0) {
             name += ' (';
@@ -113,13 +113,20 @@ function display_slot(cell, stack, items, string_data) {
                 } else {
                     name += ', ';
                 }
-                name += string_data['enchantments']['names'][ench['id'].toString()] + ' ' + string_data['enchantments']['levels'][ench['lvl'].toString()];
+                name += stringData.enchantments.names[ench.id.toString()] + ' ' + stringData.enchantments.levels[ench.lvl.toString()];
             });
             name += ')';
         }
     }
     cell.children('div').attr('title', name);
     cell.children('div').tooltip();
+    if (stack['Damage'] > 0 and item.durability > 0) {
+        var durability = (item.durability - stack['Damage']) / item.durability;
+        cell.children('div').append($('<div>', {class: 'durability'}).html($('<div>').css({
+            'background-color': 'rgb(' + (255 - Math.floor(durability * 256)) + ', ' + Math.floor(durability * 256) + ', 0)',
+            width: Math.floor(durability * 13) * 2 + 'px'
+        })));
+    }
     if ('Count' in stack && stack['Count'] > 1) {
         cell.children('div').append('<span class="count">' + stack['Count'] + '</span>');
     }
@@ -140,14 +147,14 @@ function display_inventory(player_data, items, string_data) {
                 cell = $('#main-inventory .inv-row-' + (Math.floor(stack['Slot'] / 9) - 1) + ' .inv-cell-' + (stack['Slot'] % 9));
             }
             if (cell !== undefined) {
-                display_slot(cell, stack, items, string_data);
+                displaySlot(cell, stack, items, string_data);
             }
         }
     });
     player_data['EnderItems'].forEach(function(stack) {
         if ('Slot' in stack && stack['Slot'] >= 0 && stack['Slot'] < 27) {
             var cell = $('#ender-chest-table .inv-row-' + Math.floor(stack['Slot'] / 9) + ' .inv-cell-' + (stack['Slot'] % 9));
-            display_slot(cell, stack, items, string_data);
+            displaySlot(cell, stack, items, string_data);
         }
     });
 }
