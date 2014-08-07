@@ -237,10 +237,7 @@ a {
 }
 
 .inv-cell > div.inv-cell-style > div.durability > div {
-    bottom: 4px;
     height: 2px;
-    left: 4px;
-    position: absolute;
 }
 
 .achievement-list {
