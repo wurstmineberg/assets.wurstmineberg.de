@@ -3262,8 +3262,43 @@
             "z": 17
         },
         "id": "minecraft:wooden_door",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/cd/Grid_Wooden_Door.png",
-        "name": "Wooden Door"
+        "image": "oakdoor.png",
+        "name": "Oak Door",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    {
+                        "damage": 0,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 0,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 0,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 0,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 0,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 0,
+                        "id": "minecraft:planks"
+                    },
+                    null
+                ],
+                "type": "craftingShaped"
+            }
+        ]
     },
     "325": {
         "cloud": {
@@ -3346,8 +3381,25 @@
             "z": 18
         },
         "id": "minecraft:iron_door",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/27/Grid_Iron_Door.png",
-        "name": "Iron Door"
+        "image": "irondoor.png",
+        "name": "Iron Door",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    "minecraft:iron_ingot",
+                    "minecraft:iron_ingot",
+                    null,
+                    "minecraft:iron_ingot",
+                    "minecraft:iron_ingot",
+                    null,
+                    "minecraft:iron_ingot",
+                    "minecraft:iron_ingot",
+                    null
+                ],
+                "type": "craftingShaped"
+            }
+        ]
     },
     "331": {
         "cloud": {
@@ -5676,6 +5728,126 @@
         "image": "redbanner.png",
         "name": "Banner"
     },
+    "427": {
+        "id": "minecraft:spruce_door",
+        "image": "sprucedoor.png",
+        "name": "Spruce Door",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    {
+                        "damage": 1,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 1,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 1,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 1,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 1,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 1,
+                        "id": "minecraft:planks"
+                    },
+                    null
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "428": {
+        "id": "minecraft:birch_door",
+        "image": "birchdoor.png",
+        "name": "Birch Door",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 2,
+                        "id": "minecraft:planks"
+                    },
+                    null
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "429": {
+        "id": "minecraft:jungle_door",
+        "image": "jungledoor.png",
+        "name": "Jungle Door",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 3,
+                        "id": "minecraft:planks"
+                    },
+                    null
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
     "43": {
         "damageValues": {
             "0": {
@@ -5727,6 +5899,86 @@
         "name": "Double Slab",
         "solid": true,
         "type": "block"
+    },
+    "430": {
+        "id": "minecraft:acacia_door",
+        "image": "acaciadoor.png",
+        "name": "Acacia Door",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 4,
+                        "id": "minecraft:planks"
+                    },
+                    null
+                ],
+                "type": "craftingShaped"
+            }
+        ]
+    },
+    "431": {
+        "id": "minecraft:dark_oak_door",
+        "image": "darkoakdoor.png",
+        "name": "Dark Oak Door",
+        "obtaining": [
+            {
+                "outputAmount": 3,
+                "recipe": [
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    null,
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    {
+                        "damage": 5,
+                        "id": "minecraft:planks"
+                    },
+                    null
+                ],
+                "type": "craftingShaped"
+            }
+        ]
     },
     "44": {
         "cloud": {
