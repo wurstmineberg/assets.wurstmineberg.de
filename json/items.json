@@ -2087,6 +2087,31 @@
             }
         ]
     },
+    "193": {
+        "id": "minecraft:spruce_door",
+        "image": "sprucedoor.png",
+        "name": "Spruce Door"
+    },
+    "194": {
+        "id": "minecraft:birch_door",
+        "image": "birchdoor.png",
+        "name": "Birch Door"
+    },
+    "195": {
+        "id": "minecraft:jungle_door",
+        "image": "jungledoor.png",
+        "name": "Jungle Door"
+    },
+    "196": {
+        "id": "minecraft:acacia_door",
+        "image": "acaciadoor.png",
+        "name": "Acacia Door"
+    },
+    "197": {
+        "id": "minecraft:dark_oak_door",
+        "image": "darkoakdoor.png",
+        "name": "Dark Oak Door"
+    },
     "2": {
         "cloud": {
             "x": 0,
@@ -6492,8 +6517,8 @@
     },
     "64": {
         "id": "minecraft:wooden_door",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/cd/Grid_Wooden_Door.png",
-        "name": "Wooden Door"
+        "image": "oakdoor.png",
+        "name": "Oak Door"
     },
     "65": {
         "cloud": {
@@ -6560,7 +6585,7 @@
     },
     "71": {
         "id": "minecraft:iron_door",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/27/Grid_Iron_Door.png",
+        "image": "irondoor.png",
         "name": "Iron Door"
     },
     "72": {
