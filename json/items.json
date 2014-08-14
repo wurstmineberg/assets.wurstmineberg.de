@@ -6014,6 +6014,32 @@
         "damageValues": {
             "0": {
                 "name": "Stone Slab",
+                "obtaining": [
+                    {
+                        "outputAmount": 6,
+                        "recipe": [
+                            null,
+                            null,
+                            null,
+                            {
+                                "damage": 0,
+                                "id": "minecraft:stone"
+                            },
+                            {
+                                "damage": 0,
+                                "id": "minecraft:stone"
+                            },
+                            {
+                                "damage": 0,
+                                "id": "minecraft:stone"
+                            },
+                            null,
+                            null,
+                            null
+                        ],
+                        "type": "craftingShaped"
+                    }
+                ],
                 "texture": "stone_slab_side"
             },
             "1": {
