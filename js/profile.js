@@ -113,7 +113,7 @@ function displaySlot(cell, stack, items, stringData) {
                 } else {
                     name += ', ';
                 }
-                name += stringData.enchantments.names[ench.id.toString()] + ' ' + stringData.enchantments.levels[ench.lvl.toString()];
+                name += (ench.id.toString() in stringData.enchantments.names ? stringData.enchantments.names[ench.id.toString()] : '<' + ench.id + '>') + ' ' + (ench.lvl.toString() in stringData.enchantments.levels ? stringData.enchantments.levels[ench.lvl.toString()] : ench.lvl.toString());
             });
             name += ')';
         } else if ('BlockEntityTag' in stack.tag && 'Patterns' in stack.tag.BlockEntityTag && stack.tag.BlockEntityTag.Patterns.length > 0) {
