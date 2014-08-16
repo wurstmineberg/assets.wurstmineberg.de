@@ -5402,8 +5402,24 @@
             "z": 20
         },
         "id": "minecraft:map",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c7/Grid_Empty_Map.png",
-        "name": "Empty Map"
+        "image": "emptymap.png",
+        "name": "Empty Map",
+        "obtaining": [
+            {
+                "recipe": [
+                    "minecraft:paper",
+                    "minecraft:paper",
+                    "minecraft:paper",
+                    "minecraft:paper",
+                    "minecraft:compass",
+                    "minecraft:paper",
+                    "minecraft:paper",
+                    "minecraft:paper",
+                    "minecraft:paper"
+                ],
+                "type": "craftingShaped"
+            }
+        ]
     },
     "396": {
         "cloud": {
