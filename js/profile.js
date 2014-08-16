@@ -150,13 +150,16 @@ function display_inventory(player_data, items, string_data) {
     initializeInventory($('#main-inventory > tbody'), 3, 9);
     initializeInventory($('#hotbar-table > tbody'), 1, 9);
     initializeInventory($('#ender-chest-table > tbody'), 3, 9);
+    initializeInventory($('#armor-table > tbody'), 1, 4);
     player_data['Inventory'].forEach(function(stack) {
         if ('Slot' in stack) {
             var cell = undefined;
-            if (stack['Slot'] >= 0 && stack['Slot'] < 9) {
-                cell = $('#hotbar-table .inv-row-0 .inv-cell-' + stack['Slot']);
-            } else if (stack['Slot'] >= 9 && stack['Slot'] < 36) {
-                cell = $('#main-inventory .inv-row-' + (Math.floor(stack['Slot'] / 9) - 1) + ' .inv-cell-' + (stack['Slot'] % 9));
+            if (stack.Slot >= 0 && stack.Slot < 9) {
+                cell = $('#hotbar-table .inv-row-0 .inv-cell-' + stack.Slot);
+            } else if (stack.Slot >= 9 && stack.Slot < 36) {
+                cell = $('#main-inventory .inv-row-' + (Math.floor(stack.Slot / 9) - 1) + ' .inv-cell-' + (stack.Slot % 9));
+            } else if (stack.Slot >= 100 && stack.Slot < 104) {
+                cell = $('#armor-table .inv-row-0 .inv-cell-' + (103 - stack.Slot));
             }
             if (cell !== undefined) {
                 displaySlot(cell, stack, items, string_data);
