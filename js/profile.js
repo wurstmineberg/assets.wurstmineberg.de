@@ -89,6 +89,9 @@ function displaySlot(cell, stack, items, stringData) {
     var item = items.itemByDamage(stack.id, stack.Damage);
     cell.children('div').children('.inv-cell-image').append(item.htmlImage());
     var name = item.name || stack.id.toString();
+    if (stack.id == 'minecraft:filled_map') {
+        name += ' #' + stack.Damage;
+    }
     if ('tag' in stack) {
         if ('display' in stack.tag && 'Name' in stack.tag.display) {
             name += ' “' + stack.tag.display.Name + '”';
