@@ -3256,6 +3256,24 @@
             "z": 11
         },
         "damageValues": {
+            "0": {
+                "obtaining": [
+                    {
+                        "recipe": [
+                            "minecraft:gold_ingot",
+                            "minecraft:gold_ingot",
+                            "minecraft:gold_ingot",
+                            "minecraft:gold_ingot",
+                            "minecraft:apple",
+                            "minecraft:gold_ingot",
+                            "minecraft:gold_ingot",
+                            "minecraft:gold_ingot",
+                            "minecraft:gold_ingot"
+                        ],
+                        "type": "craftingShaped"
+                    }
+                ]
+            },
             "1": {
                 "alwaysGlow": true,
                 "cloud": {
@@ -3263,7 +3281,23 @@
                     "y": 2,
                     "z": 12
                 },
-                "name": "Enchanted Golden Apple"
+                "name": "Notch Apple",
+                "obtaining": [
+                    {
+                        "recipe": [
+                            "minecraft:gold_block",
+                            "minecraft:gold_block",
+                            "minecraft:gold_block",
+                            "minecraft:gold_block",
+                            "minecraft:apple",
+                            "minecraft:gold_block",
+                            "minecraft:gold_block",
+                            "minecraft:gold_block",
+                            "minecraft:gold_block"
+                        ],
+                        "type": "craftingShaped"
+                    }
+                ]
             }
         },
         "id": "minecraft:golden_apple",
