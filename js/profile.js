@@ -87,7 +87,7 @@ function initializeInventory(tbody, rows, cols) {
 
 function displaySlot(cell, stack, items, stringData) {
     var item = items.itemByDamage(stack.id, stack.Damage);
-    cell.children('div').children('.inv-cell-image').append(item.htmlImage());
+    cell.children('div').children('.inv-cell-image').append(item.htmlImage('', 'tag' in stack && 'display' in stack.tag && 'color' in stack.tag.display ? stack.tag.display.color : null));
     // base name
     var name = item.name || stack.id.toString();
     // map id / armor color

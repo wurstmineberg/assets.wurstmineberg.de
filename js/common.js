@@ -289,12 +289,14 @@ function is_block(id) {
 }
 
 function Item(numericID, itemInfo) {
-    this.htmlImage = function(classes) {
+    this.htmlImage = function(classes, tint) {
         if (itemInfo && 'image' in itemInfo) {
-            if (itemInfo['image'].startsWith('http://') || itemInfo['image'].startsWith('https://')) {
-                return '<img src="' + itemInfo['image'] + '" class="' + (classes || '') + '" />';
+            if (itemInfo.image.startsWith('http://') || itemInfo.image.startsWith('https://')) {
+                return '<img src="' + itemInfo.image + '" class="' + (classes || '') + '" />';
+            } else if (typeof tint === 'undefined' || tint === null) {
+                return '<img src="' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid/' + itemInfo.image + '" class="' + (classes || '') + '" />';
             } else {
-                return '<img src="' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid/' + itemInfo['image'] + '" class="' + (classes || '') + '" />';
+                return '<img style="background: url(' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid-base/' + itemInfo.image + ')" src="' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid-overlay/' + itemInfo.image + '" class="' + (classes || '') + '" />';
             }
         } else {
             return '';
