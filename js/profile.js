@@ -88,10 +88,15 @@ function initializeInventory(tbody, rows, cols) {
 function displaySlot(cell, stack, items, stringData) {
     var item = items.itemByDamage(stack.id, stack.Damage);
     cell.children('div').children('.inv-cell-image').append(item.htmlImage());
+    // base name
     var name = item.name || stack.id.toString();
+    // map id / armor color
     if (stack.id == 'minecraft:filled_map') {
         name += ' #' + stack.Damage;
+    } else if ('tag' in stack && 'display' in stack.tag && 'color' in stack.tag.display) {
+        name += ' #' + zeroFill(stack.tag.display.color.toString(16), 6);
     }
+    // title
     if ('tag' in stack) {
         if ('display' in stack.tag && 'Name' in stack.tag.display) {
             name += ' “' + stack.tag.display.Name + '”';
@@ -101,6 +106,9 @@ function displaySlot(cell, stack, items, stringData) {
                 name += ' by ' + stack.tag.author;
             }
         }
+    }
+    // enchantments / patterns
+    if ('tag' in stack ) {
         var enchantments = [];
         if ('ench' in stack.tag) {
             enchantments = stack.tag.ench;
