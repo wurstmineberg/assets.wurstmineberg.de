@@ -91,7 +91,7 @@
     "10": {
         "cloud": null,
         "id": "minecraft:flowing_lava",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/61/Grid_Lava.png",
+        "image": "lava.png",
         "name": "Flowing Lava",
         "solid": false,
         "subtype": "lava.flow",
@@ -140,12 +140,12 @@
     },
     "104": {
         "id": "minecraft:pumpkin_stem",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/72/Grid_Pumpkin_Seeds.png",
+        "image": "pumpkinseeds.png",
         "name": "Pumpkin Stem"
     },
     "105": {
         "id": "minecraft:melon_stem",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/75/Grid_Melon_Seeds.png",
+        "image": "melonseeds.png",
         "name": "Melon Stem"
     },
     "106": {
@@ -212,7 +212,7 @@
     },
     "11": {
         "id": "minecraft:lava",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/61/Grid_Lava.png",
+        "image": "lava.png",
         "name": "Still Lava",
         "solid": false,
         "subtype": "lava.still",
@@ -271,7 +271,7 @@
     },
     "115": {
         "id": "minecraft:nether_wart",
-        "image": "netherwart.png",
+        "image": "netherwartblock.png",
         "name": "Nether Wart"
     },
     "116": {
@@ -296,7 +296,7 @@
     },
     "119": {
         "id": "minecraft:end_portal",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/da/Grid_End_Portal.png",
+        "image": "endportal.png",
         "name": "End Portal"
     },
     "12": {
@@ -356,13 +356,13 @@
             "z": 7
         },
         "id": "minecraft:redstone_lamp",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fa/Grid_Redstone_Lamp.png",
+        "image": "redstonelamp.png",
         "name": "Redstone Lamp"
     },
     "124": {
         "id": "minecraft:lit_redstone_lamp",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fa/Grid_Redstone_Lamp.png",
-        "name": "Redstone Lamp"
+        "image": "redstonelamp.png",
+        "name": "Lit Redstone Lamp"
     },
     "125": {
         "damageValues": {
@@ -609,18 +609,18 @@
     },
     "140": {
         "id": "minecraft:flower_pot",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/89/Grid_Flower_Pot.png",
+        "image": "flowerpot.png",
         "name": "Flower Pot"
     },
     "141": {
         "id": "minecraft:carrots",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8b/Grid_Carrot.png",
-        "name": "Carrots"
+        "image": "carrot.png",
+        "name": "Carrot Crops"
     },
     "142": {
         "id": "minecraft:potatoes",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2b/Grid_Potato.png",
-        "name": "Potatoes"
+        "image": "potato.png",
+        "name": "Potato Crops"
     },
     "143": {
         "cloud": {
@@ -634,7 +634,7 @@
     },
     "144": {
         "id": "minecraft:skull",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c9/Grid_Skeleton_Skull.png",
+        "image": "skeletonskull.png",
         "name": "Mob Head"
     },
     "145": {
@@ -718,7 +718,7 @@
     "150": {
         "id": "minecraft:powered_comparator",
         "image": "comparator.png",
-        "name": "Comparator"
+        "name": "Alternative Powered Comparator"
     },
     "151": {
         "cloud": {
@@ -1561,7 +1561,7 @@
     },
     "178": {
         "id": "minecraft:daylight_detector_inverted",
-        "image": "daylightsensor.png",
+        "image": "inverteddaylightsensor.png",
         "name": "Inverted Daylight Sensor"
     },
     "179": {
@@ -2428,7 +2428,7 @@
             }
         },
         "id": "minecraft:bed",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a3/Grid_Bed.png",
+        "image": "bed.png",
         "name": "Bed",
         "solid": false,
         "subtype": "bed",
@@ -2878,7 +2878,7 @@
             "z": 2
         },
         "id": "minecraft:wheat_seeds",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/68/Grid_Seeds.png",
+        "image": "wheatseeds.png",
         "name": "Seeds"
     },
     "296": {
@@ -3547,7 +3547,7 @@
     },
     "34": {
         "id": "minecraft:piston_head",
-        "name": "Piston Extension"
+        "name": "Piston Head"
     },
     "340": {
         "cloud": {
@@ -4055,7 +4055,7 @@
             "z": 19
         },
         "id": "minecraft:bed",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a3/Grid_Bed.png",
+        "image": "bed.png",
         "name": "Bed"
     },
     "356": {
@@ -4065,7 +4065,7 @@
             "z": 3
         },
         "id": "minecraft:repeater",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e6/Grid_Redstone_Repeater.png",
+        "image": "repeater.png",
         "name": "Repeater"
     },
     "357": {
@@ -4096,7 +4096,7 @@
     },
     "36": {
         "id": "minecraft:piston_extension",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/da/Grid_End_Portal.png",
+        "image": "pistonextension.png",
         "name": "Extending Piston Head"
     },
     "360": {
@@ -4116,7 +4116,7 @@
             "z": 6
         },
         "id": "minecraft:pumpkin_seeds",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/72/Grid_Pumpkin_Seeds.png",
+        "image": "pumpkinseeds.png",
         "name": "Pumpkin Seeds"
     },
     "362": {
@@ -4126,7 +4126,7 @@
             "z": 4
         },
         "id": "minecraft:melon_seeds",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/75/Grid_Melon_Seeds.png",
+        "image": "melonseeds.png",
         "name": "Melon Seeds"
     },
     "363": {
@@ -5352,7 +5352,7 @@
             "z": 28
         },
         "id": "minecraft:flower_pot",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/89/Grid_Flower_Pot.png",
+        "image": "flowerpot.png",
         "name": "Flower Pot"
     },
     "391": {
@@ -5362,7 +5362,7 @@
             "z": 13
         },
         "id": "minecraft:carrot",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8b/Grid_Carrot.png",
+        "image": "carrot.png",
         "name": "Carrot"
     },
     "392": {
@@ -5372,7 +5372,7 @@
             "z": 25
         },
         "id": "minecraft:potato",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2b/Grid_Potato.png",
+        "image": "potato.png",
         "name": "Potato"
     },
     "393": {
@@ -5439,22 +5439,22 @@
         },
         "damageValues": {
             "0": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c9/Grid_Skeleton_Skull.png",
+                "image": "skeletonskull.png",
                 "name": "Skeleton Skull"
             },
             "1": {
                 "name": "Wither Skeleton Skull"
             },
             "2": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6f/Grid_Zombie_Head.png",
+                "image": "zombiehead.png",
                 "name": "Zombie Head"
             },
             "3": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/55/Grid_Head.png",
+                "image": "playerhead.png",
                 "name": "Head"
             },
             "4": {
-                "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c7/Grid_Creeper_Head.png",
+                "image": "creeperhead.png",
                 "name": "Creeper Head"
             }
         },
@@ -6326,7 +6326,7 @@
     },
     "51": {
         "id": "minecraft:fire",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/21/Grid_Fire.gif",
+        "image": "fire.gif",
         "name": "Fire",
         "solid": false,
         "subtype": "fire",
@@ -6372,7 +6372,7 @@
     },
     "55": {
         "id": "minecraft:redstone_wire",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c3/Grid_Redstone_%28Dust%29.png",
+        "image": "redstonedust.png",
         "name": "Redstone Wire",
         "subtype": "redstone.wire",
         "texture": "redstone_dust_cross",
@@ -6452,7 +6452,7 @@
             }
         },
         "id": "minecraft:wheat",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/68/Grid_Seeds.png",
+        "image": "wheatseeds.png",
         "name": "Wheat",
         "render_type": "square",
         "solid": false,
@@ -6535,7 +6535,7 @@
             }
         },
         "id": "minecraft:farmland",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6a/Grid_Farmland.png",
+        "image": "farmland.png",
         "name": "Farmland",
         "solid": false,
         "subtype": "farmland",
@@ -6691,7 +6691,7 @@
     },
     "75": {
         "id": "minecraft:unlit_redstone_torch",
-        "image": "redstonetorch.png",
+        "image": "unlitredstonetorch.png",
         "name": "Redstone Torch"
     },
     "76": {
@@ -6736,7 +6736,7 @@
     },
     "8": {
         "id": "minecraft:flowing_water",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/13/Grid_Water.png",
+        "image": "water.png",
         "name": "Flowing Water",
         "solid": false,
         "subtype": "water.flow",
@@ -6874,7 +6874,7 @@
     },
     "9": {
         "id": "minecraft:water",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/13/Grid_Water.png",
+        "image": "water.png",
         "name": "Still Water",
         "solid": false,
         "subtype": "water.still",
@@ -6883,7 +6883,7 @@
     },
     "90": {
         "id": "minecraft:portal",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8f/Grid_Portal.png",
+        "image": "netherportal.gif",
         "name": "Nether Portal"
     },
     "91": {
@@ -6903,13 +6903,13 @@
     },
     "93": {
         "id": "minecraft:unpowered_repeater",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e6/Grid_Redstone_Repeater.png",
+        "image": "repeater.png",
         "name": "Repeater"
     },
     "94": {
         "id": "minecraft:powered_repeater",
-        "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e6/Grid_Redstone_Repeater.png",
-        "name": "Repeater"
+        "image": "repeater.png",
+        "name": "Powered Repeater"
     },
     "95": {
         "cloud": {
