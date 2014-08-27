@@ -125,7 +125,9 @@
             "playerKills": "Player Kills",
             "sprintOneCm": "Distance Sprinted",
             "swimOneCm": "Distance Swum",
+            "talkedToVillager": "Talked to Villagers",
             "timeSinceDeath": "Time Played Since Last Death",
+            "tradedWithVillager": "Traded with Villagers",
             "treasureFished": "Treasure Fished",
             "walkOneCm": "Distance Walked"
         }

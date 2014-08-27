@@ -677,12 +677,13 @@ function prettify_stats_value(key, value) {
             final_value += hours + 'h ';
         }
         if (minutes) {
-            final_value += minutes + 'min '
+            final_value += minutes + 'min ';
         }
     } else if (key.startsWith('damage')) {
         final_value = (Math.floor(value / 10) / 2) + ' hearts';
+    } else if (key == 'talkedToVillager' || key == 'tradedWithVillager') {
+        final_value = value + ' times';
     }
-
     return final_value;
 }
 
