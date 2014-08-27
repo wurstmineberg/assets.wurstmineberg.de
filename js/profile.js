@@ -620,9 +620,9 @@ function loadUserData() {
     }).fail(function() {
         $('.loading').text('Error: User with this name not found');
         if (isDev) {
-            $('.panel-loading').text(arguments);
+            $('p.panel-loading').text(arguments);
         } else {
-            $('.panel-loading').text('Error: User with this name not found');
+            $('p.panel-loading').text('Error: User with this name not found');
         }
     });
 }
