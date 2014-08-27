@@ -240,7 +240,7 @@ function Biome(biome_data) {
             return biome_data['name'];
         } else {
             return biome_data['id'];
-        };
+        }
     }();
 
     this.adventuringTime = function() {
@@ -678,10 +678,9 @@ function minecraft_nick_to_username(minecraft, people) {
                     playername = values['id'];
                 }
                 return;
-            };
-        };
+            }
+        }
     });
-
     return playername;
 }
 
@@ -689,13 +688,12 @@ function username_for_player_values(values) {
     if ('name' in values) {
         return values['name'];
     }
-
     return values['id'];
 }
 
 function username_to_minecraft_nick(username, people) {
     var minecraftname;
-
+    
     $.each(people, function(index, values) {
         var name = username_for_player_values(values)
         if (name === username) {
@@ -704,7 +702,7 @@ function username_to_minecraft_nick(username, people) {
             }
         }
     });
-
+    
     return minecraftname;
 }
 
@@ -715,16 +713,16 @@ function html_player_list(people, avas, text, urls, useWikiArticles) {
     $.each(people, function(index, person) {
         if (index >= 1) {
             $list.append(', ');
-        };
+        }
         var personText = typeof text === 'undefined' ? person.interfaceName : text[index];
         var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle((isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : (isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : urls[index])}).text(personText);
         if (avas) {
             $a.prepend(person.html_ava(16));
-        };
+        }
         $list.append($('<span>', {'class': 'player-avatar-name'}).html($a));
     });
     return $list;
-};
+}
 
 function get_version_url(version, func) {
     if (version == null) {
@@ -746,7 +744,7 @@ function get_version_url(version, func) {
             func('http://minecraft.gamepedia.com/Version_history' + ((version.indexOf('pre') != -1 || version.substring(2,3) == 'w') ? '/Development_versions#' : '#') + version);
         });
     }
-};
+}
 
 function display_funding_data() {
     $.when(API.moneys()).done(function(money_data) {
@@ -858,4 +856,4 @@ function display_funding_data() {
         $('.funding-progressbar').removeClass('active');
         $('.funding-progressbar').children('.progress-bar').addClass('progress-bar-danger');
     });
-};
+}
