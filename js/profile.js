@@ -618,7 +618,12 @@ function loadUserData() {
         });
         displayMinigameData(people, person);
     }).fail(function() {
-        $('.loading').html('Error: User with this name not found');
+        $('.loading').text('Error: User with this name not found');
+        if (isDev) {
+            $('.panel-loading').text(arguments);
+        } else {
+            $('.panel-loading').text('Error: User with this name not found');
+        }
     });
 }
 
