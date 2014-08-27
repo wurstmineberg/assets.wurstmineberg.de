@@ -176,7 +176,7 @@
         "displayname": "Overkill",
         "fancy": true,
         "icon": "minecraft:diamond_sword",
-        "requires": "enchantments",
+        "requires": "enchantments"
     },
     "overpowered": {
         "description": "Build a Notch apple",
@@ -185,7 +185,7 @@
         "icon": "minecraft:golden_apple",
         "iconDamage": 1,
         "iconName": "minecraft:golden_apple",
-        "requires": "buildBetterPickaxe",
+        "requires": "buildBetterPickaxe"
     },
     "portal": {
         "description": "Build a portal to the Nether",
@@ -198,14 +198,14 @@
         "description": "Brew a potion",
         "displayname": "Local Brewery",
         "icon": "minecraft:potion",
-        "requires": "blazeRod",
+        "requires": "blazeRod"
     },
     "snipeSkeleton": {
         "description": "Kill a skeleton or wither skeleton with an arrow from more than 50 meters",
         "displayname": "Sniper Duel",
         "fancy": "minecraft:bow",
         "icon": 261,
-        "requires": "killEnemy",
+        "requires": "killEnemy"
     },
     "spawnWither": {
         "description": "Spawn the Wither",
