@@ -136,7 +136,7 @@ function Person(person_data) {
             return person_data['id'];
         } else if ('minecraft' in person_data) {
             return person_data['minecraft'];
-        };
+        }
     }();
     this.html_ava = function(size) {
         // custom avatar, saved in /assets
@@ -288,7 +288,7 @@ function is_block(id) {
     return id <= 255;
 }
 
-function Item(numericID, itemInfo) {
+function Item(stringID, itemInfo) {
     this.htmlImage = function(classes, tint) {
         if (itemInfo && 'image' in itemInfo) {
             if (itemInfo.image.startsWith('http://') || itemInfo.image.startsWith('https://')) {
@@ -303,17 +303,12 @@ function Item(numericID, itemInfo) {
         }
     };
     if (itemInfo) {
-        this.id = itemInfo.id;
+        this.id = stringID;
         this.image = itemInfo.image;
         this.name = itemInfo.name;
         this.durability = 'durability' in itemInfo ? itemInfo.durability : 0;
     }
-    this.isBlock = numericID <= 255;
-    if (_.isString(numericID)) {
-        this.numericID = parseInt(numericID);
-    } else {
-        this.numericID = numericID;
-    }
+    this.isBlock = 'blockID' in itemInfo;
 }
 
 function ItemData(itemData) {
@@ -322,51 +317,36 @@ function ItemData(itemData) {
             id = parseInt(id);
         }
         var item = undefined;
-        var numericID = id;
         if (_.isString(id)) {
-            $.each(itemData, function(numericItemID, itemInfo) {
-                if (itemInfo['id'] == id && (item === undefined || ! is_block(numericItemID))) {
-                    numericID = numericItemID;
+            item = itemData[id];
+        } else {
+            var numericID = id;
+            $.each(itemData, function(stringID, itemInfo) {
+                if (itemInfo.itemID == id || itemInfo.blockID == id) {
+                    id = stringID;
                     item = itemInfo;
                 }
             });
-        } else {
-            item = itemData[id.toString()];
         }
-        if ('damageValues' in item && damage.toString() in item.damageValues) {
-            item = $.extend({}, item, item.damageValues[damage.toString()]);
+        if ('blockInfo' in item) {
+            if (typeof numericID !== 'undefined' && numericID < 256) {
+                item = $.extend({}, item, item.blockInfo);
+            }
+            delete item.blockInfo;
+        }
+        if ('damageValues' in item) {
+            if (typeof damage !== 'undefined' && damage.toString() in item.damageValues) {
+                item = $.extend({}, item, item.damageValues[damage.toString()]);
+            }
+            delete item.damageValues;
         }
         return new Item(numericID, item);
     };
-    
-    this.itemById = function(id) {
-        if (_.isString(id) && /^[0-9]+$/.test(id)) {
-            id = parseInt(id);
-        }
-        if (_.isString(id)) {
-            var item = undefined;
-            var numericID = undefined;
-            $.each(itemData, function(numericItemID, itemInfo) {
-                if (itemInfo['id'] == id && (item === undefined || ! is_block(numericItemID))) {
-                    numericID = numericItemID;
-                    item = itemInfo;
-                }
-            });
-            return new Item(numericID, item);
-        } else {
-            return new Item(id, itemData[id.toString()]);
-        }
-    };
-    
     this.favItem = function(person) {
         if (!person.fav_item || !('id' in person.fav_item)) {
             return null;
         }
-        if ('Damage' in person.fav_item) {
-            return this.itemByDamage(person.fav_item['id'], person.fav_item['Damage']);
-        } else {
-            return this.itemByDamage(person.fav_item['id']);
-        }
+        return this.itemByDamage(person.fav_item.id, person.fav_item.Damage);
     };
 }
 
@@ -399,7 +379,7 @@ function Achievement(achievementData, achievementID) {
         return this.item(items).htmlImage(this.fancy ? 'achievement-image fancy' : 'achievement-image');
     };
     this.item = function(items) {
-        return items.itemById(achievementData[achievementID].icon);
+        return items.itemByDamage(achievementData[achievementID].icon, achievementData[achievementID].iconDamage);
     };
     this.requires = achievementData[achievementID].requires ? new Achievement(achievementData, achievementData[achievementID].requires) : null;
     this.root = (this.requires === null) ? this : this.requires.root;

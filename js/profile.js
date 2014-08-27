@@ -294,7 +294,7 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
 
         if (stat[0] === 'stat') {
             if (stat[1] === 'craftItem' || stat[1] === 'useItem' || stat[1] === 'breakItem' || stat[1] === 'mineBlock') {
-                var item = item_data.itemById(stat.slice(2).join(':'));
+                var item = item_data.itemByDamage(stat.slice(2).join(':'));
                 var name = item.name || stat.slice(2).join(':');
                 var actionIndex = stat[1];
                 var count = value;
