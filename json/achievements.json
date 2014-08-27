@@ -2,294 +2,233 @@
     "acquireIron": {
         "description": "Smelt an iron ingot",
         "displayname": "Acquire Hardware",
-        "icon": 265,
-        "id": 5,
+        "icon": "minecraft:iron_ingot",
         "requires": "buildFurnace",
-        "runobjective": "iron",
         "track": "main"
     },
     "bakeCake": {
         "description": "Wheat, sugar, milk, and eggs!",
         "displayname": "The Lie",
-        "icon": 354,
-        "id": 8,
-        "requires": "buildHoe",
-        "runobjective": "cake"
+        "icon": "minecraft:cake",
+        "requires": "buildHoe"
     },
     "blazeRod": {
         "description": "Relieve a Blaze of its rod",
         "displayname": "Into Fire",
-        "icon": 369,
-        "id": 20,
+        "icon": "minecraft:blaze_rod",
         "requires": "portal",
-        "runobjective": "blaze",
         "track": "main"
     },
     "bookcase": {
         "description": "Build some bookshelves to improve your enchantment table",
         "displayname": "Librarian",
-        "icon": 47,
-        "id": 26,
-        "requires": "enchantments",
-        "runobjective": "book"
+        "icon": "minecraft:bookshelf",
+        "requires": "enchantments"
     },
     "breedCow": {
         "description": "Breed two cows with wheat",
         "displayname": "Repopulation",
-        "icon": 296,
-        "requires": "killCow",
-        "runobjective": "breed"
+        "icon": "minecraft:wheat",
+        "requires": "killCow"
     },
     "buildBetterPickaxe": {
         "description": "Construct a better pickaxe",
         "displayname": "Getting an Upgrade",
-        "icon": 274,
-        "id": 9,
-        "requires": "buildPickaxe",
-        "runobjective": "spick"
+        "icon": "minecraft:stone_pickaxe",
+        "requires": "buildPickaxe"
     },
     "buildFurnace": {
         "description": "Construct a furnace out of eight stone blocks",
         "displayname": "Hot Topic",
-        "icon": 61,
-        "id": 4,
+        "icon": "minecraft:furnace",
         "requires": "buildPickaxe",
-        "runobjective": "furn",
         "track": "main"
     },
     "buildHoe": {
         "description": "Use planks and sticks to make a hoe",
         "displayname": "Time to Farm!",
-        "icon": 290,
-        "id": 6,
-        "requires": "buildWorkBench",
-        "runobjective": "hoe"
+        "icon": "minecraft:wooden_hoe",
+        "requires": "buildWorkBench"
     },
     "buildPickaxe": {
         "description": "Use planks and sticks to make a pickaxe",
         "displayname": "Time to Mine!",
-        "icon": 270,
-        "id": 3,
+        "icon": "minecraft:wooden_pickaxe",
         "requires": "buildWorkBench",
-        "runobjective": "pick",
         "track": "main"
     },
     "buildSword": {
         "description": "Use planks and sticks to make a sword",
         "displayname": "Time to Strike!",
-        "icon": 268,
-        "id": 12,
-        "requires": "buildWorkBench",
-        "runobjective": "sword"
+        "icon": "minecraft:wooden_sword",
+        "requires": "buildWorkBench"
     },
     "buildWorkBench": {
         "description": "Craft a workbench with four blocks of planks",
         "displayname": "Benchmarking",
-        "icon": 58,
-        "id": 2,
+        "icon": "minecraft:crafting_table",
         "requires": "mineWood",
-        "runobjective": "bench",
         "track": "main"
     },
     "cookFish": {
         "description": "Catch and cook a fish!",
         "displayname": "Delicious Fish",
-        "icon": 350,
-        "id": 10,
-        "requires": "buildFurnace",
-        "runobjective": "fish"
+        "icon": "minecraft:cooked_fish",
+        "requires": "buildFurnace"
     },
     "diamonds": {
         "description": "Acquire diamonds with your iron tools",
         "displayname": "DIAMONDS!",
-        "icon": 56,
-        "id": 17,
+        "icon": "minecraft:diamond_ore",
         "requires": "acquireIron",
-        "runobjective": "dia",
         "track": "main"
     },
     "diamondsToYou": {
         "description": "Throw diamonds at another player.",
         "displayname": "Diamonds to you!",
-        "icon": 264,
-        "requires": "diamonds",
-        "runobjective": "dtyou"
+        "icon": "minecraft:diamond",
+        "requires": "diamonds"
     },
     "enchantments": {
         "description": "Use a book, obsidian and diamonds to construct an enchantment table",
         "displayname": "Enchanter",
-        "icon": 116,
-        "id": 24,
-        "requires": "diamonds",
-        "runobjective": "ench"
+        "icon": "minecraft:enchanting_table",
+        "requires": "diamonds"
     },
     "exploreAllBiomes": {
         "description": "Discover all biomes",
         "displayname": "Adventuring Time",
         "fancy": true,
-        "icon": 313,
-        "id": 27,
+        "icon": "minecraft:diamond_boots",
         "requires": "theEnd",
-        "runobjective": "biome",
         "track": "biome"
     },
     "flyPig": {
         "description": "Fly a pig off a cliff",
         "displayname": "When Pigs Fly",
         "fancy": true,
-        "icon": 329,
-        "id": 15,
-        "requires": "killCow",
-        "runobjective": "fly"
+        "icon": "minecraft:saddle",
+        "requires": "killCow"
     },
     "fullBeacon": {
         "description": "Create a full beacon",
         "displayname": "Beaconator",
         "fancy": true,
-        "icon": 138,
+        "icon": "minecraft:beacon",
         "requires": "killWither",
-        "runobjective": "beac",
         "track": "main"
     },
     "ghast": {
         "description": "Destroy a Ghast with a fireball",
         "displayname": "Return to Sender",
         "fancy": true,
-        "icon": 370,
-        "id": 19,
-        "requires": "portal",
-        "runobjective": "ghast"
+        "icon": "minecraft:ghast_tear",
+        "requires": "portal"
     },
     "killCow": {
         "description": "Harvest some leather",
         "displayname": "Cow Tipper",
-        "icon": 334,
-        "id": 14,
-        "requires": "buildSword",
-        "runobjective": "cow"
+        "icon": "minecraft:leather",
+        "requires": "buildSword"
     },
     "killEnemy": {
         "description": "Attack and destroy a monster",
         "displayname": "Monster Hunter",
-        "icon": 352,
-        "id": 13,
-        "requires": "buildSword",
-        "runobjective": "kill"
+        "icon": "minecraft:bone",
+        "requires": "buildSword"
     },
     "killWither": {
         "description": "Kill the Wither",
         "displayname": "The Beginning.",
-        "icon": 399,
+        "icon": "minecraft:nether_star",
         "requires": "spawnWither",
-        "runobjective": "withk",
         "track": "main"
     },
     "makeBread": {
         "description": "Turn wheat into bread",
         "displayname": "Bake Bread",
-        "icon": 297,
-        "id": 7,
-        "requires": "buildHoe",
-        "runobjective": "bread"
+        "icon": "minecraft:bread",
+        "requires": "buildHoe"
     },
     "mineWood": {
         "description": "Attack a tree until a block of wood pops out",
         "displayname": "Getting Wood",
-        "icon": 17,
-        "id": 1,
+        "icon": "minecraft:log",
         "requires": "openInventory",
-        "runobjective": "wood",
         "track": "main"
     },
     "onARail": {
         "description": "Travel by minecart at least 1 km from where you started",
         "displayname": "On A Rail",
         "fancy": true,
-        "icon": 66,
-        "id": 11,
-        "requires": "acquireIron",
-        "runobjective": "rail"
+        "icon": "minecraft:rail",
+        "requires": "acquireIron"
     },
     "openInventory": {
         "description": "Press E to open your inventory.",
         "displayname": "Taking Inventory",
-        "icon": 340,
-        "id": 0,
+        "icon": "minecraft:book",
         "requires": null,
-        "runobjective": "inv",
         "track": "main"
     },
     "overkill": {
         "description": "Deal nine hearts of damage in a single hit",
         "displayname": "Overkill",
         "fancy": true,
-        "icon": 276,
-        "id": 25,
+        "icon": "minecraft:diamond_sword",
         "requires": "enchantments",
-        "runobjective": "okill"
     },
     "overpowered": {
         "description": "Build a Notch apple",
         "displayname": "Overpowered",
         "fancy": true,
-        "icon": 322,
+        "icon": "minecraft:golden_apple",
+        "iconDamage": 1,
         "iconName": "minecraft:golden_apple",
         "requires": "buildBetterPickaxe",
-        "runobjective": "opple"
     },
     "portal": {
         "description": "Build a portal to the Nether",
         "displayname": "We Need to Go Deeper",
-        "icon": 49,
-        "id": 18,
+        "icon": "minecraft:obsidian",
         "requires": "diamonds",
-        "runobjective": "hell",
         "track": "main"
     },
     "potion": {
         "description": "Brew a potion",
         "displayname": "Local Brewery",
-        "icon": 373,
-        "id": 21,
+        "icon": "minecraft:potion",
         "requires": "blazeRod",
-        "runobjective": "brew"
     },
     "snipeSkeleton": {
         "description": "Kill a skeleton or wither skeleton with an arrow from more than 50 meters",
         "displayname": "Sniper Duel",
-        "fancy": true,
+        "fancy": "minecraft:bow",
         "icon": 261,
-        "id": 16,
         "requires": "killEnemy",
-        "runobjective": "snipe"
     },
     "spawnWither": {
         "description": "Spawn the Wither",
         "displayname": "The Beginning?",
-        "icon": 397,
-        "icondamage": 1,
+        "icon": "minecraft:skull",
+        "iconDamage": 1,
         "requires": "theEnd2",
-        "runobjective": "withs",
         "track": "main"
     },
     "theEnd": {
         "description": "Locate the End",
         "displayname": "The End?",
         "fancy": true,
-        "icon": 381,
-        "id": 22,
+        "icon": "minecraft:ender_eye",
         "requires": "blazeRod",
-        "runobjective": "end",
         "track": "main"
     },
     "theEnd2": {
         "description": "Defeat the Ender Dragon",
         "displayname": "The End.",
         "fancy": true,
-        "icon": 122,
-        "id": 23,
+        "icon": "minecraft:dragon_egg",
         "requires": "theEnd",
-        "runobjective": "dragn",
         "track": "main"
     }
 }
