@@ -318,14 +318,19 @@ function ItemData(itemData) {
         }
         var item = undefined;
         if (_.isString(id)) {
-            item = itemData[id];
+            var idParts = id.split(':');
+            var plugin = idParts[0];
+            var name = idParts[1];
+            item = itemData[plugin][name];
         } else {
             var numericID = id;
-            $.each(itemData, function(stringID, itemInfo) {
-                if (itemInfo.itemID == id || itemInfo.blockID == id) {
-                    id = stringID;
-                    item = itemInfo;
-                }
+            $.each(itemData, function(pluginName, plugin) {
+                $.each(plugin, function(stringID, itemInfo) {
+                    if (itemInfo.itemID == id || itemInfo.blockID == id) {
+                        id = pluginName + ':' + stringID;
+                        item = itemInfo;
+                    }
+                });
             });
         }
         if ('blockInfo' in item) {
