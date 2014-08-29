@@ -1,4 +1,4 @@
-function get_user_name() {
+function getUserName() {
     var user;
     var url = $(location).attr('pathname');
     if (url == '/people/') {
@@ -9,18 +9,6 @@ function get_user_name() {
     }
     var username = url.substring('/people/'.length, url.length).toLowerCase();
     return username;
-}
-
-function initialize_datatables() {
-    /* Set the defaults for DataTables initialisation */
-    var table = $('#stats-blocks-table').dataTable({
-        "bPaginate": false,
-        "bAutoWidth": false,
-        "bLengthChange": false,
-        "bFilter": false,
-        "sDom": "<'row-fluid'<'span6'f><'span6'<'pull-right'T>>r>t",
-    });
-    new FixedHeader(table)
 }
 
 function display_user_data(person) {
@@ -274,72 +262,46 @@ function displayProfileData(person, items, people, statData) {
     $('#profile-stat-row-status').children('.value').html(statusDisplay(person.status || 'later'));
 }
 
-function displayStatData(stat_data, string_data, item_data, achievement_data, biomes, mobData) {
-    var loading_stat_general = $('#loading-stat-general-table');
-    var loading_stat_item = $('#loading-stat-items-table');
-    var loading_stat_block = $('#loading-stat-blocks-table');
-    var loading_stat_general = $('#loading-stat-general-table');
-    var loading_stat_mobs = $('#loading-stat-mobs-table');
-    var loading_stat_achievements = $('#loading-stat-achievements-table');
-
+function displayStatData(stat_data, string_data, itemData, achievement_data, biomes, mobData) {
+    var $loadingStatGeneral = $('#loading-stat-general-table');
+    var $loadingStatBlock = $('#loading-stat-blocks-table');
+    var $loadingStatItem = $('#loading-stat-items-table');
+    var $loadingStatMobs = $('#loading-stat-mobs-table');
+    var $loadingStatAchievements = $('#loading-stat-achievements-table');
+    
     var general = [];
-    var items = [];
-    var blocks = [];
+    var blocks = {};
+    var items = {};
     var mobs = [];
     var achievements = [];
     
     $.each(stat_data, function(key, value) {
         stat = key.split('.');
         var name;
-
+        
         if (stat[0] === 'stat') {
             if (stat[1] === 'craftItem' || stat[1] === 'useItem' || stat[1] === 'breakItem' || stat[1] === 'mineBlock') {
-                var item = item_data.itemByDamage(stat.slice(2).join(':'));
+                var item = itemData.itemByDamage(stat.slice(2).join(':'));
                 var name = item.name || stat.slice(2).join(':');
                 var actionIndex = stat[1];
-                var count = value;
-                
-                var collection;
-                if (item.isBlock) {
-                    collection = blocks;
-                } else {
-                    collection = items;
+                var collection = item.isBlock ? blocks : items;
+                if (!item.id in collection) {
+                    collection[item.id] = {name: name};
                 }
-                
-                var found = false;
-                if (item.id) {
-                    collection.forEach(function(value) {
-                        if (value['id'] === item.id) {
-                            value[actionIndex] = count;
-                            found = true;
-                            return;
-                        }
-                    });
-                }
-                
-                if (!found) {
-                    newEntry = {
-                        'name': name,
-                        'numericID': item.numericID,
-                        'id': item.id
-                    };
-                    newEntry[actionIndex] = count;
-                    if (item) {
-                        newEntry['info'] = item;
-                    };
-                    collection.push(newEntry);
-                }
-            } else if (stat[1] === 'killEntity' ||
-                       stat[1] === 'entityKilledBy') {
+                collection[item.id][actionIndex] = value;
+                if (item) {
+                    collection[item.id][actionIndex].info = item;
+                };
+            } else if (stat[1] === 'killEntity' || stat[1] === 'entityKilledBy') {
                 var id = stat[2];
                 var actionIndex = stat[1];
                 var count = value;
-
+                
                 var name = id;
                 if ('mobs' in mobData && stat[2] in mobData.mobs && 'name' in mobData.mobs[stat[2]]) {
                     name = mobData.mobs[stat[2]].name;
                 };
-
+                
                 var found = false;
                 $.each(mobs, function(key, value) {
                     if (value['id'] === id) {
@@ -348,35 +310,34 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
                         return;
                     }
                 });
-
+                
                 if (!found) {
-                    newEntry = {'id': id, 'name': name};
+                    newEntry = {
+                        id: id,
+                        name: name
+                    };
                     newEntry[actionIndex] = count;
                     mobs.push(newEntry);
                 };
-
             } else {
                 var final_key = key;
                 var final_value = prettify_stats_value(stat[1], value);
-
-                if ('stats' in string_data) {
-                    if ('general' in string_data['stats']) {
-                        if (stat[1] in string_data['stats']['general']) {
-                            final_key = string_data['stats']['general'][stat[1]];
-                        };
-                    };
-                };
-
-                general.push({'name': final_key, 'value': final_value});
+                if ('stats' in string_data && 'general' in string_data.stats && stat[1] in string_data.stats.general) {
+                    final_key = string_data.stats.general[stat[1]];
+                }
+                general.push({
+                    name: final_key,
+                    value: final_value
+                });
             }
         } else if (stat[0] === 'achievement') {
             var id = stat[1];
             var final_value = value;
             if (id === 'exploreAllBiomes' && 'value' in value) {
-                if (value['value'] > 0) {
+                if (value.value > 0) {
                     final_value = 'Yes';
                 } else {
-                    var visitedBiomes = value['progress'].slice(0);
+                    var visitedBiomes = value.progress.slice(0);
                     final_value = '<span class="achievement-list">';
                     adventuring_biomes = _.filter(biomes.biomes, function(biome) {
                         return biome.adventuringTime;
@@ -402,8 +363,8 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
                 }
             }
             achievements.push({
-                'achievement': new Achievement(achievement_data, id),
-                'value': final_value
+                achievement: new Achievement(achievement_data, id),
+                value: final_value
             });
         }
     });
@@ -432,14 +393,6 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
         return nameA.localeCompare(nameB);
     });
     
-    items.sort(function(a, b) {
-        return a.numericID - b.numericID;
-    });
-    
-    blocks.sort(function(a, b) {
-        return a.numericID - b.numericID;
-    });
-    
     achievements.sort(function(a, b) {
         if (a.achievement.root.id < b.achievement.root.id) {
             return 1;
@@ -454,7 +407,7 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
         name = dict['name'];
         value = dict['value'];
         var row = '<tr id="general-row-' + name + '" class="general-row"><td class="name">' + name + '</td><td class="info">' + value + '</td></tr>'
-        loading_stat_general.before(row);
+        $loadingStatGeneral.before(row);
     });
     
     $.each(mobs, function(index, dict) {
@@ -462,7 +415,7 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
         id = dict['id']
         
         row = '<tr id="mob-row-' + id + '" class="mob-row"><td class="name"></td><td class="killed">0</td><td class="killed-by">0</td></tr>';
-        loading_stat_mobs.before(row);
+        $loadingStatMobs.before(row);
         row = $('#mob-row-' + id);
         row.children('.name').text(name);
         
@@ -474,58 +427,62 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
             row.children('.killed-by').text(dict['entityKilledBy']);
         }
     });
-    $.each(items, function(index, dict) {
-        var name = dict['name'];
-        var id = dict['numericID'];
-        var image = "";
-        if ('info' in dict) {
-            var info = dict['info'];
-            image = info.htmlImage('item-image');
+    
+    _.each(_.sortBy(_.items(items), function(pair) {
+        return pair[0];
+    }), function(pair) {
+        var itemDict = pair[1];
+        var $row = $('<tr>', {
+                class: 'item-row',
+                id: 'item-row-' + id
+            }).append([
+            $('<td>', {class: 'image'}),
+            $('<td>', {class: 'name'}).text(itemDict.name),
+            $('<td>', {class: 'crafted'}).html($('<span>', {class: 'muted'}).text('0')),
+            $('<td>', {class: 'used'}).html($('<span>', {class: 'muted'}).text('0')),
+            $('<td>', {class: 'depleted'}).html($('<span>', {class: 'muted'}).text('0'))
+        ]);
+        $loadingStatItem.before($row);
+        if ('info' in itemDict) {
+            $row.children('.image').html(itemDict.itemInfo.htmlImage('item-image'));
         }
-        var row = '<tr id="item-row-' + id + '" class="item-row"><td class="image"></td><td class="name"></td><td class="depleted">0</td><td class="crafted">0</td><td class="used">0</td></tr>';
-        loading_stat_item.before(row);
-        row = $('#item-row-' + id);
-        row.children('.name').text(name);
-        row.children('.image').html(image);
-        
-        if ('craftItem' in dict) {
-            row.children('.crafted').text(dict['craftItem']);
+        if ('craftItem' in itemDict) {
+            $row.children('.crafted').text(itemDict.craftItem);
         }
-        
-        if ('useItem' in dict) {
-            row.children('.used').text(dict['useItem']);
+        if ('useItem' in itemDict) {
+            $row.children('.used').text(itemDict.useItem);
         }
-        
-        if ('breakItem' in dict) {
-            row.children('.depleted').text(dict['breakItem']);
+        if ('breakItem' in itemDict) {
+            $row.children('.depleted').text(itemDict.breakItem);
         }
     });
     
-    $.each(blocks, function(index, dict) {
-        var name = dict['name'];
-        var id = dict['numericID'];
-        var image = "";
-        if ('info' in dict) {
-            var info = dict['info'];
-            image = info.htmlImage('item-image');
+    _.each(_.sortBy(_.items(blocks), function(pair) {
+        return pair[0];
+    }), function(pair) {
+        var blockDict = pair[1];
+        var $row = $('<tr>', {
+            class: 'block-row',
+            id: 'block-row-' + id
+        }).append([
+            $('<td>', {class: 'image'}),
+            $('<td>', {class: 'name'}).text(blockDict.name),
+            $('<td>', {class: 'crafted'}).html($('<span>', {class: 'muted'}).text('0')),
+            $('<td>', {class: 'used'}).html($('<span>', {class: 'muted'}).text('0')),
+            $('<td>', {class: 'mined'}).html($('<span>', {class: 'muted'}).text('0'))
+        ]);
+        $loadingStatBlock.before($row);
+        if ('info' in blockDict) {
+            $row.children('.image').html(blockDict.itemInfo.htmlImage('item-image'));
         }
-        
-        var row = '<tr id="block-row-' + id + '" class="block-row"><td class="image"></td><td class="name"></td><td class="crafted">0</td><td class="used">0</td><td class="mined">0</td></tr>';
-        loading_stat_block.before(row);
-        row = $('#block-row-' + id);
-        row.children('.name').text(name);
-        row.children('.image').html(image);
-        
-        if ('craftItem' in dict) {
-            row.children('.crafted').text(dict['craftItem']);
+        if ('craftItem' in blockDict) {
+            $row.children('.crafted').text(blockDict.craftItem);
         }
-        
         if ('useItem' in dict) {
-            row.children('.used').text(dict['useItem']);
+            $row.children('.used').text(blockDict.useItem);
         }
-        
         if ('mineBlock' in dict) {
-            row.children('.mined').text(dict['mineBlock']);
+            $row.children('.mined').text(blockDict.mineBlock);
         }
     });
     
@@ -537,12 +494,11 @@ function displayStatData(stat_data, string_data, item_data, achievement_data, bi
             value = '<span class="fa fa-times fa-fw text-danger"></span>'
         }
         row = '<tr id="achievement-row-' + dict.achievement.id + '" class="achievement-row"><td>' + dict.achievement.image(item_data) + '</td><td class="name"><a href="#" data-toggle="tooltip" data-placement="right" rel="tooltip" class="text-link" title="' + dict.achievement.description + '">' + dict.achievement.displayName + '</a></td><td class="value">' + value + '</td></tr>';
-        loading_stat_achievements.before(row);
+        $loadingStatAchievements.before(row);
     });
     
     $('.loading-stat').remove();
     initialize_tooltips();
-    //initialize_datatables();
 }
 
 function displayMinigameData(people, person) {
@@ -605,7 +561,7 @@ function loadStatData(person, string_data, achievement_data, biomes, items, mobD
 }
 
 function loadUserData() {
-    var username = get_user_name();
+    var username = getUserName();
     document.title = username + ' on Wurstmineberg';
     $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people(), API.mobData()).done(function(person, string_data, achievement_data, biomes, items, people, mobData) {
         document.title = person.interfaceName + ' on Wurstmineberg';
