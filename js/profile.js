@@ -575,10 +575,6 @@ function loadUserData() {
     var username = getUserName();
     document.title = username + ' on Wurstmineberg';
     $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people(), API.mobData()).done(function(person, string_data, achievement_data, biomes, items, people, mobData) {
-        if (person === undefined) {
-            $('p.panel-loading').text('Error: User with this Wurstmineberg ID not found');
-            return;
-        }
         document.title = person.interfaceName + ' on Wurstmineberg';
         loadStatData(person, string_data, achievement_data, biomes, items, mobData);
         display_user_data(person);
@@ -588,8 +584,12 @@ function loadUserData() {
             displayProfileData(person, items, people, {});
         });
         displayMinigameData(people, person);
-    }).fail(function() {
-        $('.loading').text('Error: User with this name not found');
+    }).fail(function(deferred, error, description) {
+        if (error === 'personNotFound') {
+            $('p.panel-loading').text('Error: User with this Wurstmineberg ID not found');
+            $('.loading').text('Error: User with this name not found');
+            return;
+        }
         if (isDev) {
             [].slice.apply(arguments).forEach(function(arg) {
                 $('p.panel-loading').append(arg);

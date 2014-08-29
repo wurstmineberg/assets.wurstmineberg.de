@@ -472,8 +472,8 @@ var API = {
     personById: function(playerID) {
         return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/player/' + playerID + '/info.json').then(function(personData) {
             return new Person(personData);
-        }, function() {
-            return undefined;
+        }, function(deferred, error, description) {
+            return [deferred, 'personNotFound', error + ': ' + description];
         });
     },
     statData: function() {
