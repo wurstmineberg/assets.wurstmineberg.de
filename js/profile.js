@@ -503,7 +503,7 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
                 class: 'text-link',
                 title: dict.achievement.description
             }).html(dict.achievement.displayName)),
-            $('<td>', {class: 'value').html(value)
+            $('<td>', {class: 'value'}).html(value)
         ]);
         $loadingStatAchievements.before($row);
     });
