@@ -343,7 +343,7 @@ function ItemData(itemData) {
             }
             delete item.damageValues;
         }
-        return new Item(numericID, item);
+        return new Item(id, item);
     };
     this.favItem = function(person) {
         if (!person.fav_item || !('id' in person.fav_item)) {
