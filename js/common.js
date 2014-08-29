@@ -290,7 +290,7 @@ function is_block(id) {
 
 function Item(stringID, itemInfo) {
     this.htmlImage = function(classes, tint) {
-        if (itemInfo && 'image' in itemInfo) {
+        if ('image' in itemInfo) {
             if (itemInfo.image.startsWith('http://') || itemInfo.image.startsWith('https://')) {
                 return '<img src="' + itemInfo.image + '" class="' + (classes || '') + '" />';
             } else if (typeof tint === 'undefined' || tint === null) {
@@ -302,12 +302,10 @@ function Item(stringID, itemInfo) {
             return '';
         }
     };
-    if (itemInfo) {
-        this.id = stringID;
-        this.image = itemInfo.image;
-        this.name = itemInfo.name;
-        this.durability = 'durability' in itemInfo ? itemInfo.durability : 0;
-    }
+    this.id = stringID;
+    this.image = itemInfo.image;
+    this.name = itemInfo.name;
+    this.durability = 'durability' in itemInfo ? itemInfo.durability : 0;
     this.isBlock = 'blockID' in itemInfo;
 }
 
