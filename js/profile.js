@@ -287,11 +287,11 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
                 var collection = item.isBlock ? blocks : items;
                 if (!(item.id in collection)) {
                     collection[item.id] = {name: name};
+                    if (item) {
+                        collection[item.id].itemInfo = item;
+                    };
                 }
                 collection[item.id][actionIndex] = value;
-                if (item) {
-                    collection[item.id][actionIndex].itemInfo = item;
-                };
             } else if (stat[1] === 'killEntity' || stat[1] === 'entityKilledBy') {
                 var id = stat[2];
                 var actionIndex = stat[1];
