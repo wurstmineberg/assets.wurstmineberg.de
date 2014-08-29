@@ -486,15 +486,26 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
         }
     });
     
-    $.each(achievements, function(index, dict) {
-        value = dict['value'];
-        if (value === "Yes") {
-            value = '<span class="fa fa-check fa-fw text-success"></span>'
+    _.each(achievements, function(dict) {
+        value = dict.value;
+        if (value === 'Yes') {
+            value = $('<span>', {class: 'fa fa-check fa-fw text-success'});
         } else if (value === "No") {
-            value = '<span class="fa fa-times fa-fw text-danger"></span>'
+            value = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
         }
-        row = '<tr id="achievement-row-' + dict.achievement.id + '" class="achievement-row"><td>' + dict.achievement.image(item_data) + '</td><td class="name"><a href="#" data-toggle="tooltip" data-placement="right" rel="tooltip" class="text-link" title="' + dict.achievement.description + '">' + dict.achievement.displayName + '</a></td><td class="value">' + value + '</td></tr>';
-        $loadingStatAchievements.before(row);
+        var $row = $('<tr>', {id: 'achievement-row-' + dict.achievement.id, class: 'achievement-row'}).append([
+            $('<td>').html(dict.achievement.image(itemData)),
+            $('<td>', {class: 'name'}).html($('<a>', {
+                href: '#',
+                'data-toggle': 'tooltip',
+                'data-placement': 'right',
+                rel: 'tooltip',
+                class: 'text-link',
+                title: dict.achievement.description
+            }).html(dict.achievement.displayName)),
+            $('<td>', {class: 'value').html(value)
+        ]);
+        $loadingStatAchievements.before($row);
     });
     
     $('.loading-stat').remove();
