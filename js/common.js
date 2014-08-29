@@ -79,7 +79,7 @@ function Person(person_data) {
     this.invitedBy = person_data['invitedBy'];
     this.irc = person_data['irc'];
     this.joinDate = dateObjectFromUTC(person_data['join_date']);
-    this.latestDeath = API.ajaxJSONDeferred('//api.wurstmineberg.de/server/deaths/latest.json').then(function(latestDeaths) {
+    this.latestDeath = API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/server/deaths/latest.json').then(function(latestDeaths) {
         if (_this.id in latestDeaths.deaths) {
             return {
                 'cause': latestDeaths.deaths[_this.id].cause,
@@ -180,7 +180,7 @@ function People(people_data) {
     }();
     
     this.achievementWinners = function() {
-        return API.ajaxJSONDeferred('//api.wurstmineberg.de/minigame/achievements/winners.json').then(function(winners) {
+        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/minigame/achievements/winners.json').then(function(winners) {
             return _.map(winners, function(winnerID) {
                 return _this.personById(winnerID);
             });
@@ -469,29 +469,30 @@ var API = {
             return new People('people' in people_data ? people_data['people'] : people_data);
         });
     },
-    personById: function(player_id) {
-        return API.ajaxJSONDeferred('//api.wurstmineberg.de/player/' + player_id + '/info.json')
-            .then(function(person_data) {
-                return new Person(person_data);
-            });
+    personById: function(playerID) {
+        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/player/' + playerID + '/info.json').then(function(personData) {
+            return new Person(personData);
+        }, function() {
+            return undefined;
+        });
     },
     statData: function() {
-        return API.ajaxJSONDeferred('//api.wurstmineberg.de/server/playerstats/general.json');
+        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/server/playerstats/general.json');
     },
     achievementStatData: function() {
-        return API.ajaxJSONDeferred('//api.wurstmineberg.de/server/playerstats/achievement.json');
+        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/server/playerstats/achievement.json');
     },
     person: function(player) {
         return API.personById(player.id)
     },
     playerData: function(person) {
         if (person.minecraft) {
-            return API.ajaxJSONDeferred('//api.wurstmineberg.de/player/' + person.minecraft + '/playerdata.json');
+            return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/player/' + person.minecraft + '/playerdata.json');
         }
     },
     personStatData: function(person) {
         if (person.minecraft) {
-            return API.ajaxJSONDeferred('//api.wurstmineberg.de/player/' + person.minecraft + '/stats.json');
+            return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/player/' + person.minecraft + '/stats.json');
         };
     },
     moneys: function() {
@@ -506,12 +507,12 @@ var API = {
         });
     },
     deathGamesLog: function() {
-        return API.ajaxJSONDeferred('//api.wurstmineberg.de/deathgames/log.json');
+        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/deathgames/log.json');
     },
     lastSeen: function(person) {
-        return API.ajaxJSONDeferred('//api.wurstmineberg.de/server/sessions/lastseen.json').then(function(lastSeenData) {
+        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de/') + '/server/sessions/lastseen.json').then(function(lastSeenData) {
             if (person.id in lastSeenData) {
-                return 'leaveTime' in lastSeenData[person.id] ? dateObjectFromUTC(lastSeenData[person.id]['leaveTime']) : 'currentlyOnline';
+                return 'leaveTime' in lastSeenData[person.id] ? dateObjectFromUTC(lastSeenData[person.id].leaveTime) : 'currentlyOnline';
             } else {
                 return null;
             }
