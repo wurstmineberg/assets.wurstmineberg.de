@@ -428,7 +428,7 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
         }
     });
     
-    _.each(_.sortBy(_.items(items), function(pair) {
+    _.each(_.sortBy(_.pairs(items), function(pair) {
         return pair[0];
     }), function(pair) {
         var itemDict = pair[1];
@@ -457,7 +457,7 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
         }
     });
     
-    _.each(_.sortBy(_.items(blocks), function(pair) {
+    _.each(_.sortBy(_.pairs(blocks), function(pair) {
         return pair[0];
     }), function(pair) {
         var blockDict = pair[1];
