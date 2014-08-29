@@ -290,7 +290,7 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
                 }
                 collection[item.id][actionIndex] = value;
                 if (item) {
-                    collection[item.id][actionIndex].info = item;
+                    collection[item.id][actionIndex].itemInfo = item;
                 };
             } else if (stat[1] === 'killEntity' || stat[1] === 'entityKilledBy') {
                 var id = stat[2];
@@ -443,7 +443,7 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
             $('<td>', {class: 'depleted'}).html($('<span>', {class: 'muted'}).text('0'))
         ]);
         $loadingStatItem.before($row);
-        if ('info' in itemDict) {
+        if ('itemInfo' in itemDict) {
             $row.children('.image').html(itemDict.itemInfo.htmlImage('item-image'));
         }
         if ('craftItem' in itemDict) {
@@ -472,7 +472,7 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
             $('<td>', {class: 'mined'}).html($('<span>', {class: 'muted'}).text('0'))
         ]);
         $loadingStatBlock.before($row);
-        if ('info' in blockDict) {
+        if ('itemInfo' in blockDict) {
             $row.children('.image').html(blockDict.itemInfo.htmlImage('item-image'));
         }
         if ('craftItem' in blockDict) {
