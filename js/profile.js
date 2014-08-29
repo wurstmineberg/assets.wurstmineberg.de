@@ -478,10 +478,10 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
         if ('craftItem' in blockDict) {
             $row.children('.crafted').text(blockDict.craftItem);
         }
-        if ('useItem' in dict) {
+        if ('useItem' in blockDict) {
             $row.children('.used').text(blockDict.useItem);
         }
-        if ('mineBlock' in dict) {
+        if ('mineBlock' in blockDict) {
             $row.children('.mined').text(blockDict.mineBlock);
         }
     });
