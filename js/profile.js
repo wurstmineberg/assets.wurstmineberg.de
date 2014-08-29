@@ -285,7 +285,7 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
                 var name = item.name || stat.slice(2).join(':');
                 var actionIndex = stat[1];
                 var collection = item.isBlock ? blocks : items;
-                if (!item.id in collection) {
+                if (!(item.id in collection)) {
                     collection[item.id] = {name: name};
                 }
                 collection[item.id][actionIndex] = value;
