@@ -595,8 +595,10 @@ function loadUserData() {
             }
         });
     }).fail(function() {
+        $('#username').text(username).append($('<span>', {class: 'muted'}).text(' (failed to load profile)'));
         $('p.panel-loading').text('Error: User with this Wurstmineberg ID not found');
         $('.loading').text('Error: User with this name not found');
+        $('.loading-stat').html($('<td>', {colspan: '7'}).text('Error: No user with ID ' + username));
     });
 }
 
