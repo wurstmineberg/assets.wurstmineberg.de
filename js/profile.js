@@ -11,7 +11,7 @@ function getUserName() {
     return username;
 }
 
-function display_user_data(person) {
+function displayUserData(person) {
     $('.panel-loading').removeClass('loading');
     
     var name = person.interfaceName;
@@ -574,29 +574,29 @@ function loadStatData(person, string_data, achievement_data, biomes, items, mobD
 function loadUserData() {
     var username = getUserName();
     document.title = username + ' on Wurstmineberg';
-    $.when(API.personById(username), API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people(), API.mobData()).done(function(person, string_data, achievement_data, biomes, items, people, mobData) {
-        document.title = person.interfaceName + ' on Wurstmineberg';
-        loadStatData(person, string_data, achievement_data, biomes, items, mobData);
-        display_user_data(person);
-        $.when(API.personStatData(person)).done(function(statData) {
-            displayProfileData(person, items, people, statData);
-        }).fail(function() {
-            displayProfileData(person, items, people, {});
-        });
-        displayMinigameData(people, person);
-    }).fail(function(deferred, error, description) {
-        if (error === 'personNotFound') {
-            $('p.panel-loading').text('Error: User with this Wurstmineberg ID not found');
-            $('.loading').text('Error: User with this name not found');
-            return;
-        }
-        if (isDev) {
-            [].slice.apply(arguments).forEach(function(arg) {
-                $('p.panel-loading').append(arg);
+    $.when(API.personById(username)).done(function(person) {
+        $.when(API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people(), API.mobData()).done(function(stringData, achievementData, biomes, items, people, mobData) {
+            document.title = person.interfaceName + ' on Wurstmineberg';
+            loadStatData(person, stringData, achievementData, biomes, items, mobData);
+            displayUserData(person);
+            $.when(API.personStatData(person)).done(function(statData) {
+                displayProfileData(person, items, people, statData);
+            }).fail(function() {
+                displayProfileData(person, items, people, {});
             });
-        } else {
-            $('p.panel-loading').text('Unknown error');
-        }
+            displayMinigameData(people, person);
+        }).fail(function(deferred, error, description) {
+            if (isDev) {
+                [].slice.apply(arguments).forEach(function(arg) {
+                    $('p.panel-loading').append(arg);
+                });
+            } else {
+                $('p.panel-loading').text('Unknown error');
+            }
+        });
+    }).fail(function() {
+        $('p.panel-loading').text('Error: User with this Wurstmineberg ID not found');
+        $('.loading').text('Error: User with this name not found');
     });
 }
 
