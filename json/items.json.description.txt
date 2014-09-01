@@ -39,7 +39,7 @@ The fields for the damage values and block info implicitely inherit the values o
     * cross: Will render the block with the texture forming a cross meeting in the middle
     * square: Will render the block as a square crossing at the four corners, like wheat
 * cloud: The id of the Cloud chest with the item in it
-    * x: The corridor. 0 is the central corridor, -1 is the corridor to the left, 2 is the second corridor to the right.
+    * x: The corridor. 0 is the central corridor, 1 is the corridor to the left, -2 is the second corridor to the right.
     * y: The floor. 1 is the first underground floor.
     * z: The chest number. 0 is the first chest to the left, 1 the first to the right, 2 the second to the left, etc.
 * blockID: The numeric block id
