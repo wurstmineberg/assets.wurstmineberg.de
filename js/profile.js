@@ -79,7 +79,7 @@ function displaySlot(cell, stack, items, stringData) {
     // base name
     var name = item.name || stack.id.toString();
     // map id / armor color
-    if (stack.id == 'minecraft:filled_map') {
+    if (item.id == 'minecraft:filled_map') {
         name += ' #' + stack.Damage;
     } else if ('tag' in stack && 'display' in stack.tag && 'color' in stack.tag.display) {
         name += ' #' + zeroFill(stack.tag.display.color.toString(16), 6);
