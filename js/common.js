@@ -333,15 +333,15 @@ function ItemData(itemData) {
         }
         if ('blockInfo' in item) {
             if (typeof numericID !== 'undefined' && numericID < 256) {
-                item = $.extend({}, item, item.blockInfo);
+                item = _.extend({}, item, item.blockInfo);
             }
-            delete item.blockInfo;
+            item = _.omit(item, 'blockInfo');
         }
         if ('damageValues' in item) {
             if (typeof damage !== 'undefined' && damage.toString() in item.damageValues) {
-                item = $.extend({}, item, item.damageValues[damage.toString()]);
+                item = _.extend({}, item, item.damageValues[damage.toString()]);
             }
-            delete item.damageValues;
+            item = _.omit(item, 'damageValues');
         }
         return new Item(id, item);
     };
