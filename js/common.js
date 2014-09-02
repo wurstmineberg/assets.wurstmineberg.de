@@ -486,14 +486,10 @@ var API = {
         return API.personById(player.id)
     },
     playerData: function(person) {
-        if (person.minecraft) {
-            return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/player/' + person.minecraft + '/playerdata.json');
-        }
+        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/player/' + person.id + '/playerdata.json');
     },
     personStatData: function(person) {
-        if (person.minecraft) {
-            return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/player/' + person.minecraft + '/stats.json');
-        };
+        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/player/' + person.id + '/stats.json');
     },
     moneys: function() {
         return API.ajaxJSONDeferred('/assets/serverstatus/moneys.json');
