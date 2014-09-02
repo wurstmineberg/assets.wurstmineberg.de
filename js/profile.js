@@ -433,8 +433,7 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
     }), function(pair) {
         var itemDict = pair[1];
         var $row = $('<tr>', {
-                class: 'item-row',
-                id: 'item-row-' + id
+                class: 'item-row'
             }).append([
             $('<td>', {class: 'image'}),
             $('<td>', {class: 'name'}).text(itemDict.name),
@@ -462,8 +461,7 @@ function displayStatData(stat_data, string_data, itemData, achievement_data, bio
     }), function(pair) {
         var blockDict = pair[1];
         var $row = $('<tr>', {
-            class: 'block-row',
-            id: 'block-row-' + id
+            class: 'block-row'
         }).append([
             $('<td>', {class: 'image'}),
             $('<td>', {class: 'name'}).text(blockDict.name),
