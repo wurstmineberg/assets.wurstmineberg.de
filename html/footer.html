@@ -13,4 +13,15 @@
     display_funding_data();
     $(".use-tooltip").tooltip();
     $("abbr").tooltip();
+    // mark as dev.wurstmineberg.de
+    if (isDev) {
+        $('.navbar-brand').after($('<span>').css({
+            color: 'red',
+            left: 100,
+            position: 'absolute',
+            top: 30,
+            transform: 'rotate(-10deg) scale(2)',
+            'z-index': 10
+        }).text('[DEV]'));
+    }
 </script>
