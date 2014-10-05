@@ -437,7 +437,7 @@ var API = {
         });
     },
     serverStatus: function() {
-        return API.ajaxJSONDeferred('assets/serverstatus/status.json');
+        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/server/status.json');
     },
     stringData: function() {
         return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/strings.json');
