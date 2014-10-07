@@ -296,7 +296,7 @@ function Item(stringID, itemInfo) {
             } else if (typeof tint === 'undefined' || tint === null) {
                 return '<img src="' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid/' + itemInfo.image + '" class="' + (classes || '') + '" />';
             } else {
-                return '<img style="background: url(' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid-base/' + itemInfo.image + ')" src="' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid-overlay/' + itemInfo.image + '" class="' + (classes || '') + '" />';
+                return '<img style="background: url(' + (isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/minecraft/items/render/dyed-by-id/' + stringID.replace(/:/g, '.') + '/' + zeroFill(timt.toString(16), 6) + '/png.png' + itemInfo.image + ')" src="' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid-overlay/' + itemInfo.image + '" class="' + (classes || '') + '" />';
             }
         } else {
             return '';
