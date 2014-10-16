@@ -724,25 +724,11 @@ function html_player_list(people, avas, text, urls, useWikiArticles) {
     return $list;
 }
 
-function get_version_url(version, func) {
+function getVersionURL(version, func) {
     if (version == null) {
         func('http://minecraft.gamepedia.com/Version_history');
     } else {
-        $.when(API.ajaxJSONDeferred('http://minecraft.gamepedia.com/api.php?format=json&action=query&titles=' + encodeURIComponent(version))).done(function(minecraft_wiki_result) {
-            if ('query' in minecraft_wiki_result && 'pages' in minecraft_wiki_result['query']) {
-                $.each(minecraft_wiki_result['query']['pages'], function(page_id, page_info) {
-                    if ('missing' in page_info) {
-                        func('http://minecraft.gamepedia.com/Version_history' + ((version.indexOf('pre') != -1 || version.substring(2,3) == 'w') ? '/Development_versions#' : '#') + version);
-                    } else {
-                        func('http://minecraft.gamepedia.com/' + page_info['title']);
-                    }
-                });
-            } else {
-                func('http://minecraft.gamepedia.com/Version_history' + ((version.indexOf('pre') != -1 || version.substring(2,3) == 'w') ? '/Development_versions#' : '#') + version);
-            }
-        }).fail(function() {
-            func('http://minecraft.gamepedia.com/Version_history' + ((version.indexOf('pre') != -1 || version.substring(2,3) == 'w') ? '/Development_versions#' : '#') + version);
-        });
+        func('http://minecraft.gamepedia.com/' + encodeURIComponent(version));
     }
 }
 

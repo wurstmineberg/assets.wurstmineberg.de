@@ -24,8 +24,8 @@ function getOnlineData(list) {
 function displayServerStatus() {
     $.when(API.serverStatus()).done(function(data) {
         if (data.on) {
-            get_version_url(data.version, function(version_url) {
-                $('#serverinfo').html('The server is currently <strong>online</strong> and running on version <a href="' + version_url + '" style="font-weight: bold;">' + data.version + '</a>, and <span id="peopleCount">(loading) of the <span id="whitelistCount">(loading)</span> whitelisted players are</span> currently active<span id="punctuation">.</span><br /><span id="peopleList"></span>');
+            getVersionURL(data.version, function(versionURL) {
+                $('#serverinfo').html('The server is currently <strong>online</strong> and running on version <a href="' + versionURL + '" style="font-weight: bold;">' + data.version + '</a>, and <span id="peopleCount">(loading) of the <span id="whitelistCount">(loading)</span> whitelisted players are</span> currently active<span id="punctuation">.</span><br /><span id="peopleList"></span>');
                 getOnlineData(data.list);
             });
         } else {
