@@ -11,8 +11,8 @@ function getOnlineData(list) {
             }
         }
         $('#whitelistCount').html(people.activePeople.length);
-        onlinePeople = list.map(function(minecraftName) {
-            return people.personByMinecraft(minecraftName);
+        onlinePeople = list.map(function(wurstminebergID) {
+            return people.personById(wurstminebergID);
         });
         $('#peopleList').html(html_player_list(people.sorted(onlinePeople)));
     }).fail(function() {
