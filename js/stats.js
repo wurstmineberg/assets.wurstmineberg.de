@@ -81,15 +81,15 @@ function displayLeaderboardStatData(statData, stringData, people) {
         var players = data.players;
         var playerHTML = html_player_list(people.sorted(players));
         var secondPlayers = data.secondPlayers;
-        var secondPlayerHTML = secondPlayers.length ? html_player_list(people.sorted(secondPlayers)) : $('<span>', {'class': 'muted'}).text('no one');
+        var secondPlayerHTML = secondPlayers.length ? html_player_list(people.sorted(secondPlayers)) : $('<span>', {'class': 'muted'}).text('everyone else');
         var minPlayers = data.minPlayers;
         var minPlayerHTML = html_player_list(people.sorted(minPlayers));
-        var value = prettify_stats_value(stat[1], data.value);
-        var secondValue = prettify_stats_value(stat[1], data.secondValue);
+        var value = prettifyStatsValue(stat[1], data.value);
+        var secondValue = prettifyStatsValue(stat[1], data.secondValue);
         if (data.secondPlayers.length == 0) {
             secondValue = $('<span>', {'class': 'muted'}).text(secondValue);
         }
-        var minValue = prettify_stats_value(stat[1], data.minValue);
+        var minValue = prettifyStatsValue(stat[1], data.minValue);
         
         $row = $('<tr>', {'class': 'leaderboard-row'}).html($('<td>', {'class': 'stat'}).html('<a href="//i.wurstmineberg.de/wurstminestats/statspage/' + stat[1] + '.png">' + name + '</a>'));
         $row.append($('<td>', {'class': 'leading-player'}).html(playerHTML));

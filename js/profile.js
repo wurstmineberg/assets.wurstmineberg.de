@@ -321,7 +321,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
                 };
             } else {
                 var finalKey = key;
-                var finalValue = prettify_stats_value(stat[1], value);
+                var finalValue = prettifyStatsValue(stat[1], value);
                 if ('stats' in stringData && 'general' in stringData.stats && stat[1] in stringData.stats.general) {
                     finalKey = stringData.stats.general[stat[1]];
                 }

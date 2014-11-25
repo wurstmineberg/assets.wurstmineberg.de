@@ -623,48 +623,63 @@ function minecraft_ticks_to_real_minutes(minecraft_minutes) {
     return minecraft_minutes / 1200;
 }
 
-function prettify_stats_value(key, value) {
-    var final_value = value;
-
+function prettifyStatsValue(key, value) {
     if (key.endsWith('OneCm')) {
         if (value > 100000) {
-            final_value = (value / 100000).toFixed(2) + 'km';
+            return (value / 100000).toFixed(2) + 'km';
         } else if (value > 100) {
-            final_value = (value / 100).toFixed(2) + 'm';
+            return (value / 100).toFixed(2) + 'm';
         } else {
-            final_value = value + 'cm';
+            return value + 'cm';
         }
     } else if (key == 'playOneMinute' || key == 'timeSinceDeath') {
-        var minutes = Math.floor(minecraft_ticks_to_real_minutes(value));
+        var minutes = minecraft_ticks_to_real_minutes(value);
         var hours = 0;
         var days = 0;
-
         if (minutes >= 60) {
             hours = Math.floor(minutes / 60);
             minutes = minutes % 60;
+        } else if (minutes >= 1) {
+            return Math.floor(minutes) + 'min ' + Math.floor(value / 20) + 'sec';
+        } else {
+            return Math.floor(value / 20) + 'sec';
         }
-
         if (hours >= 24) {
             days = Math.floor(hours / 60);
             hours = hours % 24;
         }
-
-        final_value = '';
+        var finalValue = '';
         if (days) {
-            final_value += days + 'd ';
+            finalValue += days + 'd';
+            if (hours) {
+                finalValue += ' ';
+            }
         }
         if (hours) {
-            final_value += hours + 'h ';
+            finalValue += hours + 'h';
+            if (minutes) {
+                finalValue += ' ';
+            }
         }
         if (minutes) {
-            final_value += minutes + 'min ';
+            finalValue += Math.floor(minutes) + 'min';
         }
+        return finalValue;
     } else if (key.startsWith('damage')) {
-        final_value = (Math.floor(value / 10) / 2) + ' hearts';
+        return (Math.floor(value / 10) / 2) + ' hearts';
     } else if (key == 'talkedToVillager' || key == 'tradedWithVillager') {
-        final_value = value + ' times';
+        if (value == 0) {
+            return 'never';
+        } else if (value == 1) {
+            return 'once';
+        } else if (value == 2) {
+            return 'twice';
+        } else {
+            return value + ' times';
+        }
+    } else {
+        return value;
     }
-    return final_value;
 }
 
 function minecraft_nick_to_username(minecraft, people) {
