@@ -2,7 +2,7 @@ function displayLeaderboardStatData(statData, stringData, people) {
     var stats = [];
     var loadingLeaderboards = $('#loading-stat-leaderboard-table');
     
-    $.each(statData, function(minecraftMame, playerStats) {
+    $.each(statData, function(minecraftName, playerStats) {
         player = people.personByMinecraft(minecraftName);
         if (player == undefined) {
             return;
