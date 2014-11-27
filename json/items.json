@@ -106,22 +106,12 @@
         },
         "acacia_stairs": {
             "blockID": 163,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 26
-            },
             "image": "acaciawoodstairs.png",
             "itemID": 163,
             "name": "Acacia Wood Stairs"
         },
         "activator_rail": {
             "blockID": 157,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 20
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/50/Grid_Activator_Rail.png",
             "itemID": 157,
             "name": "Activator Rail"
@@ -129,7 +119,6 @@
         "air": {
             "blast_resistance": -1,
             "blockID": 0,
-            "cloud": null,
             "itemID": 0,
             "luminance": false,
             "name": "Air",
@@ -142,27 +131,12 @@
         },
         "anvil": {
             "blockID": 145,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 8
-            },
             "damageValues": {
                 "4": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 1,
-                        "z": 9
-                    },
                     "image": "slightlydamagedanvil.png",
                     "name": "Slightly Damaged Anvil"
                 },
                 "8": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 1,
-                        "z": 10
-                    },
                     "image": "verydamagedanvil.png",
                     "name": "Very Damaged Anvil"
                 }
@@ -172,11 +146,6 @@
             "name": "Anvil"
         },
         "apple": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 14
-            },
             "image": "apple.png",
             "itemID": 260,
             "name": "Apple"
@@ -203,21 +172,11 @@
             ]
         },
         "arrow": {
-            "cloud": {
-                "x": 1,
-                "y": 5,
-                "z": 1
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/cc/Grid_Arrow.png",
             "itemID": 262,
             "name": "Arrow"
         },
         "baked_potato": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 6
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6c/Grid_Baked_Potato.png",
             "itemID": 393,
             "name": "Baked Potato"
@@ -294,18 +253,12 @@
         },
         "barrier": {
             "blockID": 166,
-            "cloud": null,
             "image": "barrier.png",
             "itemID": 166,
             "name": "Barrier"
         },
         "beacon": {
             "blockID": 138,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 29
-            },
             "image": "beacon.png",
             "itemID": 138,
             "name": "Beacon"
@@ -323,11 +276,6 @@
                     }
                 }
             },
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 19
-            },
             "image": "bed.png",
             "itemID": 355,
             "name": "Bed",
@@ -344,11 +292,6 @@
             "texture": "bedrock"
         },
         "beef": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 16
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/61/Grid_Raw_Beef.png",
             "itemID": 363,
             "name": "Raw Beef"
@@ -459,72 +402,37 @@
         },
         "birch_stairs": {
             "blockID": 135,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 24
-            },
             "image": "birchwoodstairs.png",
             "itemID": 135,
             "name": "Birch Wood Stairs"
         },
         "blaze_powder": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 7
-            },
             "image": "blazepowder.png",
             "itemID": 377,
             "name": "Blaze Powder"
         },
         "blaze_rod": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 6
-            },
             "image": "blazerod.png",
             "itemID": 369,
             "name": "Blaze Rod"
         },
         "boat": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 23
-            },
             "image": "boat.png",
             "itemID": 333,
             "name": "Boat"
         },
         "bone": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 31
-            },
             "image": "bone.png",
             "itemID": 352,
             "name": "Bone"
         },
         "book": {
-            "cloud": {
-                "x": 0,
-                "y": 6,
-                "z": 1
-            },
             "image": "book.png",
             "itemID": 340,
             "name": "Book"
         },
         "bookshelf": {
             "blockID": 47,
-            "cloud": {
-                "x": 0,
-                "y": 6,
-                "z": 3
-            },
             "image": "bookshelf.png",
             "itemID": 47,
             "name": "Bookshelf",
@@ -534,64 +442,34 @@
             "texture_top": "planks_oak"
         },
         "bow": {
-            "cloud": {
-                "x": 1,
-                "y": 5,
-                "z": 0
-            },
             "durability": 384,
             "image": "bow.png",
             "itemID": 261,
             "name": "Bow"
         },
         "bowl": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 29
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f1/Grid_Bowl.png",
             "itemID": 281,
             "name": "Bowl"
         },
         "bread": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 10
-            },
             "image": "bread.png",
             "itemID": 297,
             "name": "Bread"
         },
         "brewing_stand": {
             "blockID": 117,
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 0
-            },
             "image": "brewingstand.png",
             "itemID": 379,
             "name": "Brewing Stand"
         },
         "brick": {
-            "cloud": {
-                "x": -1,
-                "y": 1,
-                "z": 18
-            },
             "image": "brick.png",
             "itemID": 336,
             "name": "Brick"
         },
         "brick_block": {
             "blockID": 45,
-            "cloud": {
-                "x": -1,
-                "y": 1,
-                "z": 19
-            },
             "image": "bricks.png",
             "itemID": 45,
             "name": "Brick",
@@ -600,22 +478,12 @@
         },
         "brick_stairs": {
             "blockID": 108,
-            "cloud": {
-                "x": -1,
-                "y": 1,
-                "z": 20
-            },
             "image": "brickstairs.png",
             "itemID": 108,
             "name": "Brick Stairs"
         },
         "brown_mushroom": {
             "blockID": 39,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 10
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/d8/Grid_Brown_Mushroom.png",
             "itemID": 39,
             "name": "Brown Mushroom",
@@ -625,190 +493,90 @@
         },
         "brown_mushroom_block": {
             "blockID": 99,
-            "cloud": {
-                "x": 1,
-                "y": 4,
-                "z": 2
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/07/Grid_Huge_Brown_Mushroom.png",
             "itemID": 99,
             "name": "Huge Brown Mushroom"
         },
         "bucket": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 13
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2a/Grid_Bucket.png",
             "itemID": 325,
             "name": "Bucket"
         },
         "cactus": {
             "blockID": 81,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 8
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fb/Grid_Cactus.png",
             "itemID": 81,
             "name": "Cactus"
         },
         "cake": {
             "blockID": 92,
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 0
-            },
             "image": "cake.png",
             "itemID": 354,
             "name": "Cake"
         },
         "carpet": {
             "blockID": 171,
-            "cloud": {
-                "x": -2,
-                "y": 1,
-                "z": 16
-            },
             "damageValues": {
                 "0": {
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/72/Grid_White_Carpet.png",
                     "name": "White Carpet"
                 },
                 "1": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 17
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/3c/Grid_Orange_Carpet.png",
                     "name": "Orange Carpet"
                 },
                 "10": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 26
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/55/Grid_Purple_Carpet.png",
                     "name": "Purple Carpet"
                 },
                 "11": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 27
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/5a/Grid_Blue_Carpet.png",
                     "name": "Blue Carpet"
                 },
                 "12": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 28
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/ad/Grid_Brown_Carpet.png",
                     "name": "Brown Carpet"
                 },
                 "13": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 29
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/41/Grid_Green_Carpet.png",
                     "name": "Green Carpet"
                 },
                 "14": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 30
-                    },
                     "name": "Red Carpet"
                 },
                 "15": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 31
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e6/Grid_Black_Carpet.png",
                     "name": "Black Carpet"
                 },
                 "2": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 18
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/01/Grid_Magenta_Carpet.png",
                     "name": "Magenta Carpet"
                 },
                 "3": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 19
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/4b/Grid_Light_Blue_Carpet.png",
                     "name": "Light Blue Carpet"
                 },
                 "4": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 20
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/63/Grid_Yellow_Carpet.png",
                     "name": "Yellow Carpet"
                 },
                 "5": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 21
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/34/Grid_Lime_Carpet.png",
                     "name": "Lime Carpet"
                 },
                 "6": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 22
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/be/Grid_Pink_Carpet.png",
                     "name": "Pink Carpet"
                 },
                 "7": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 23
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2b/Grid_Gray_Carpet.png",
                     "name": "Gray Carpet"
                 },
                 "8": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 24
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/3a/Grid_Light_Gray_Carpet.png",
                     "name": "Light Gray Carpet"
                 },
                 "9": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 25
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/d4/Grid_Cyan_Carpet.png",
                     "name": "Cyan Carpet"
                 }
@@ -818,21 +586,11 @@
             "name": "Carpet"
         },
         "carrot": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 13
-            },
             "image": "carrot.png",
             "itemID": 391,
             "name": "Carrot"
         },
         "carrot_on_a_stick": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 19
-            },
             "durability": 25,
             "image": "carrotstick.png",
             "itemID": 398,
@@ -846,54 +604,29 @@
         },
         "cauldron": {
             "blockID": 118,
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 1
-            },
             "image": "cauldron.png",
             "itemID": 380,
             "name": "Cauldron"
         },
         "chainmail_boots": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 11
-            },
             "durability": 195,
             "image": "chainboots.png",
             "itemID": 305,
             "name": "Chain Boots"
         },
         "chainmail_chestplate": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 9
-            },
             "durability": 240,
             "image": "chainchestplate.png",
             "itemID": 303,
             "name": "Chain Chestplate"
         },
         "chainmail_helmet": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 8
-            },
             "durability": 165,
             "image": "chainhelmet.png",
             "itemID": 302,
             "name": "Chain Helmet"
         },
         "chainmail_leggings": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 10
-            },
             "durability": 225,
             "image": "chainleggings.png",
             "itemID": 304,
@@ -901,11 +634,6 @@
         },
         "chest": {
             "blockID": 54,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 4
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c1/Grid_Chest.png",
             "itemID": 54,
             "name": "Chest",
@@ -913,69 +641,34 @@
             "subtype": "chest"
         },
         "chest_minecart": {
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 22
-            },
             "image": "minecartwithchest.png",
             "itemID": 342,
             "name": "Minecart with Chest"
         },
         "chicken": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 21
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e5/Grid_Raw_Chicken.png",
             "itemID": 365,
             "name": "Raw Chicken"
         },
         "clay": {
             "blockID": 82,
-            "cloud": {
-                "x": -1,
-                "y": 1,
-                "z": 17
-            },
             "image": "clayblock.png",
             "itemID": 82,
             "name": "Clay Block"
         },
         "clay_ball": {
-            "cloud": {
-                "x": -1,
-                "y": 1,
-                "z": 16
-            },
             "image": "clay.png",
             "itemID": 337,
             "name": "Clay Ball"
         },
         "clock": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 1
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/32/Grid_Clock.png",
             "itemID": 347,
             "name": "Clock"
         },
         "coal": {
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 0
-            },
             "damageValues": {
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 3,
-                        "z": 1
-                    },
                     "image": "charcoal.png",
                     "name": "Charcoal"
                 }
@@ -986,22 +679,12 @@
         },
         "coal_block": {
             "blockID": 173,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 8
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/b2/Grid_Block_of_Coal.png",
             "itemID": 173,
             "name": "Block of Coal"
         },
         "coal_ore": {
             "blockID": 16,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 14
-            },
             "image": "coalore.png",
             "itemID": 16,
             "name": "Coal Ore",
@@ -1010,11 +693,6 @@
         },
         "cobblestone": {
             "blockID": 4,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 2
-            },
             "image": "cobble.png",
             "itemID": 4,
             "name": "Cobblestone",
@@ -1023,18 +701,8 @@
         },
         "cobblestone_wall": {
             "blockID": 139,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 26
-            },
             "damageValues": {
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 27
-                    },
                     "image": "mossycobblewall.png",
                     "name": "Mossy Cobblestone Wall"
                 }
@@ -1051,7 +719,6 @@
         },
         "command_block": {
             "blockID": 137,
-            "cloud": null,
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/de/Grid_Adventure_Mode_Control_Block.png",
             "itemID": 137,
             "name": "Command Block"
@@ -1062,58 +729,28 @@
             "name": "Minecart with Command Block"
         },
         "comparator": {
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 4
-            },
             "image": "comparator.png",
             "itemID": 404,
             "name": "Comparator"
         },
         "compass": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 0
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f2/Grid_Compass.png",
             "itemID": 345,
             "name": "Compass"
         },
         "cooked_beef": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 2
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/da/Grid_Steak.png",
             "itemID": 364,
             "name": "Steak"
         },
         "cooked_chicken": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 7
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2e/Grid_Cooked_Chicken.png",
             "itemID": 366,
             "name": "Cooked Chicken"
         },
         "cooked_fish": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 9
-            },
             "damageValues": {
                 "1": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 2,
-                        "z": 5
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a5/Grid_Cooked_Salmon.png",
                     "name": "Cooked Salmon"
                 }
@@ -1128,11 +765,6 @@
             "name": "Cooked Mutton"
         },
         "cooked_porkchop": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 1
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bd/Grid_Cooked_Porkchop.png",
             "itemID": 320,
             "name": "Cooked Porkchop"
@@ -1143,22 +775,12 @@
             "name": "Cooked Rabbit"
         },
         "cookie": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 22
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/95/Grid_Cookie.png",
             "itemID": 357,
             "name": "Cookie"
         },
         "crafting_table": {
             "blockID": 58,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 1
-            },
             "image": "craftingtable.png",
             "itemID": 58,
             "name": "Crafting Table",
@@ -1275,22 +897,12 @@
         },
         "dark_oak_stairs": {
             "blockID": 164,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 27
-            },
             "image": "darkoakwoodstairs.png",
             "itemID": 164,
             "name": "Dark Oak Wood Stairs"
         },
         "daylight_detector": {
             "blockID": 151,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 8
-            },
             "image": "daylightsensor.png",
             "itemID": 151,
             "name": "Daylight Sensor"
@@ -1303,11 +915,6 @@
         },
         "deadbush": {
             "blockID": 32,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 28
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f6/Grid_Dead_Bush.png",
             "itemID": 32,
             "name": "Dead Bush",
@@ -1315,11 +922,6 @@
         },
         "detector_rail": {
             "blockID": 28,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 19
-            },
             "damageValues": {
                 "1": {
                     "texture_top": "rail_detector_powered"
@@ -1332,21 +934,11 @@
             "texture_top": "rail_detector"
         },
         "diamond": {
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 5
-            },
             "image": "diamond.png",
             "itemID": 264,
             "name": "Diamond"
         },
         "diamond_axe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 5
-            },
             "durability": 1561,
             "image": "diamondaxe.png",
             "itemID": 279,
@@ -1354,11 +946,6 @@
         },
         "diamond_block": {
             "blockID": 57,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 12
-            },
             "image": "diamondblock.png",
             "itemID": 57,
             "name": "Block of Diamond",
@@ -1366,65 +953,35 @@
             "texture": "diamond_block"
         },
         "diamond_boots": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 3
-            },
             "durability": 429,
             "image": "diamondboots.png",
             "itemID": 313,
             "name": "Diamond Boots"
         },
         "diamond_chestplate": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 1
-            },
             "durability": 528,
             "image": "diamondchestplate.png",
             "itemID": 311,
             "name": "Diamond Chestplate"
         },
         "diamond_helmet": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 0
-            },
             "durability": 363,
             "image": "diamondhelmet.png",
             "itemID": 310,
             "name": "Diamond Helmet"
         },
         "diamond_hoe": {
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 31
-            },
             "durability": 1561,
             "image": "diamondhoe.png",
             "itemID": 293,
             "name": "Diamond Hoe"
         },
         "diamond_horse_armor": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 20
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/af/Grid_Diamond_Horse_Armor.png",
             "itemID": 419,
             "name": "Diamond Horse Armor"
         },
         "diamond_leggings": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 2
-            },
             "durability": 495,
             "image": "diamondleggings.png",
             "itemID": 312,
@@ -1432,11 +989,6 @@
         },
         "diamond_ore": {
             "blockID": 56,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 19
-            },
             "image": "diamondore.png",
             "itemID": 56,
             "name": "Diamond Ore",
@@ -1444,33 +996,18 @@
             "texture": "diamond_ore"
         },
         "diamond_pickaxe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 3
-            },
             "durability": 1561,
             "image": "diamondpickaxe.png",
             "itemID": 278,
             "name": "Diamond Pickaxe"
         },
         "diamond_shovel": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 4
-            },
             "durability": 1561,
             "image": "diamondshovel.png",
             "itemID": 277,
             "name": "Diamond Shovel"
         },
         "diamond_sword": {
-            "cloud": {
-                "x": 1,
-                "y": 5,
-                "z": 2
-            },
             "durability": 1561,
             "image": "diamondsword.png",
             "itemID": 276,
@@ -1478,22 +1015,12 @@
         },
         "dirt": {
             "blockID": 3,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 1
-            },
             "damageValues": {
                 "1": {
                     "image": "coarsedirt.png",
                     "name": "Coarse Dirt"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 11
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6d/Grid_Podzol.png",
                     "name": "Podzol",
                     "texture_side": "dirt_podzol_side",
@@ -1508,11 +1035,6 @@
         },
         "dispenser": {
             "blockID": 23,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 13
-            },
             "damageValues": {
                 "0": {
                     "texture_bottom": "furnace_front_vertical"
@@ -1541,22 +1063,12 @@
         },
         "double_plant": {
             "blockID": 175,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 22
-            },
             "damageValues": {
                 "0": {
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bc/Grid_Sunflower.png",
                     "name": "Sunflower"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 23
-                    },
                     "name": "Lilac"
                 },
                 "2": {
@@ -1568,20 +1080,10 @@
                     "name": "Large Fern"
                 },
                 "4": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 24
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c3/Grid_Rose_Bush.png",
                     "name": "Rose Bush"
                 },
                 "5": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 25
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/eb/Grid_Peony.png",
                     "name": "Peony"
                 }
@@ -1686,168 +1188,78 @@
         },
         "dragon_egg": {
             "blockID": 122,
-            "cloud": {
-                "x": 1,
-                "y": 4,
-                "z": 5
-            },
             "image": "dragonegg.png",
             "itemID": 122,
             "name": "Dragon Egg"
         },
         "dropper": {
             "blockID": 158,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 14
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7f/Grid_Dropper.png",
             "itemID": 158,
             "name": "Dropper"
         },
         "dye": {
-            "cloud": {
-                "x": -1,
-                "y": 1,
-                "z": 15
-            },
             "damageValues": {
                 "0": {
                     "name": "Ink Sac"
                 },
                 "1": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 14
-                    },
                     "image": "rosered.png",
                     "name": "Rose Red"
                 },
                 "10": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 5
-                    },
                     "image": "limedye.png",
                     "name": "Lime Dye"
                 },
                 "11": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 4
-                    },
                     "image": "dandelionyellow.png",
                     "name": "Dandelion Yellow"
                 },
                 "12": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 3
-                    },
                     "image": "lightbluedye.png",
                     "name": "Light Blue Dye"
                 },
                 "13": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 2
-                    },
                     "image": "magentadye.png",
                     "name": "Magenta Dye"
                 },
                 "14": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 1
-                    },
                     "image": "orangedye.png",
                     "name": "Orange Dye"
                 },
                 "15": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 0
-                    },
                     "image": "bonemeal.png",
                     "name": "Bone Meal"
                 },
                 "2": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 13
-                    },
                     "image": "cactusgreen.png",
                     "name": "Cactus Green"
                 },
                 "3": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 12
-                    },
                     "image": "cocoabeans.png",
                     "name": "Cocoa Beans"
                 },
                 "4": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 11
-                    },
                     "image": "lapislazuli.png",
                     "name": "Lapis Lazuli"
                 },
                 "5": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 10
-                    },
                     "image": "purpledye.png",
                     "name": "Purple Dye"
                 },
                 "6": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 9
-                    },
                     "image": "cyandye.png",
                     "name": "Cyan Dye"
                 },
                 "7": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 8
-                    },
                     "image": "lightgraydye.png",
                     "name": "Light Gray Dye"
                 },
                 "8": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 7
-                    },
                     "image": "graydye.png",
                     "name": "Gray Dye"
                 },
                 "9": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 6
-                    },
                     "image": "pinkdye.png",
                     "name": "Pink Dye"
                 }
@@ -1857,43 +1269,23 @@
             "name": "Dye"
         },
         "egg": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 35
-            },
             "image": "egg.png",
             "itemID": 344,
             "name": "Egg"
         },
         "emerald": {
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 6
-            },
             "image": "emerald.png",
             "itemID": 388,
             "name": "Emerald"
         },
         "emerald_block": {
             "blockID": 133,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 13
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/27/Grid_Block_of_Emerald.png",
             "itemID": 133,
             "name": "Block of Emerald"
         },
         "emerald_ore": {
             "blockID": 129,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 20
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e7/Grid_Emerald_Ore.png",
             "itemID": 129,
             "name": "Emerald Ore"
@@ -1905,11 +1297,6 @@
         },
         "enchanting_table": {
             "blockID": 116,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 7
-            },
             "image": "enchantmenttable.png",
             "itemID": 116,
             "name": "Enchantment Table"
@@ -1928,52 +1315,27 @@
         },
         "end_stone": {
             "blockID": 121,
-            "cloud": {
-                "x": 1,
-                "y": 4,
-                "z": 0
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/50/Grid_End_Stone.png",
             "itemID": 121,
             "name": "End Stone"
         },
         "ender_chest": {
             "blockID": 130,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 6
-            },
             "image": "enderchest.png",
             "itemID": 130,
             "name": "Ender Chest"
         },
         "ender_eye": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 21
-            },
             "image": "eyeofender.png",
             "itemID": 381,
             "name": "Eye of Ender"
         },
         "ender_pearl": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 0
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/13/Grid_Ender_Pearl.png",
             "itemID": 368,
             "name": "Ender Pearl"
         },
         "experience_bottle": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 4
-            },
             "image": "xpbottle.png",
             "itemID": 384,
             "name": "Bottle o'Enchanting"
@@ -1994,22 +1356,12 @@
             "texture_top": "farmland_wet"
         },
         "feather": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 33
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a7/Grid_Feather.png",
             "itemID": 288,
             "name": "Feather"
         },
         "fence": {
             "blockID": 85,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 1
-            },
             "image": "oakfence.png",
             "itemID": 85,
             "name": "Oak Fence",
@@ -2045,11 +1397,6 @@
         },
         "fence_gate": {
             "blockID": 107,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 2
-            },
             "image": "oakfencegate.png",
             "itemID": 107,
             "name": "Oak Fence Gate",
@@ -2077,11 +1424,6 @@
             ]
         },
         "fermented_spider_eye": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 10
-            },
             "image": "fermentedspidereye.png",
             "itemID": 376,
             "name": "Fermented Spider Eye"
@@ -2103,11 +1445,6 @@
             "texture_top": "fire_layer_0"
         },
         "fire_charge": {
-            "cloud": {
-                "x": 1,
-                "y": 5,
-                "z": 7
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e1/Grid_Fire_Charge.png",
             "itemID": 385,
             "name": "Fire Charge"
@@ -2123,36 +1460,16 @@
             "name": "Firework Rocket"
         },
         "fish": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 23
-            },
             "damageValues": {
                 "1": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 2,
-                        "z": 24
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c0/Grid_Raw_Salmon.png",
                     "name": "Raw Salmon"
                 },
                 "2": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 2,
-                        "z": 26
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/81/Grid_Clownfish.png",
                     "name": "Clownfish"
                 },
                 "3": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 2,
-                        "z": 27
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/df/Grid_Pufferfish.png",
                     "name": "Pufferfish"
                 }
@@ -2162,32 +1479,17 @@
             "name": "Raw Fish"
         },
         "fishing_rod": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 2
-            },
             "durability": 64,
             "image": "fishingrod.png",
             "itemID": 346,
             "name": "Fishing Rod"
         },
         "flint": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 16
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/82/Grid_Flint.png",
             "itemID": 318,
             "name": "Flint"
         },
         "flint_and_steel": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 9
-            },
             "durability": 64,
             "image": "flintandsteel.png",
             "itemID": 259,
@@ -2195,18 +1497,12 @@
         },
         "flower_pot": {
             "blockID": 140,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 28
-            },
             "image": "flowerpot.png",
             "itemID": 390,
             "name": "Flower Pot"
         },
         "flowing_lava": {
             "blockID": 10,
-            "cloud": null,
             "image": "lava.png",
             "itemID": 10,
             "name": "Flowing Lava",
@@ -2225,11 +1521,6 @@
         },
         "furnace": {
             "blockID": 61,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 2
-            },
             "damageValues": {
                 "2": {
                     "texture_north": "furnace_front_on"
@@ -2253,32 +1544,17 @@
             "texture_top": "furnace_top"
         },
         "furnace_minecart": {
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 23
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7f/Grid_Powered_Minecart.png",
             "itemID": 343,
             "name": "Minecart with Furnace"
         },
         "ghast_tear": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 9
-            },
             "image": "ghasttear.png",
             "itemID": 370,
             "name": "Ghast Tear"
         },
         "glass": {
             "blockID": 20,
-            "cloud": {
-                "x": -3,
-                "y": 1,
-                "z": 0
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/00/Grid_Glass.png",
             "itemID": 20,
             "name": "Glass",
@@ -2286,54 +1562,29 @@
             "texture": "glass"
         },
         "glass_bottle": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 2
-            },
             "image": "bottle.png",
             "itemID": 374,
             "name": "Glass Bottle"
         },
         "glass_pane": {
             "blockID": 102,
-            "cloud": {
-                "x": -3,
-                "y": 1,
-                "z": 1
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/30/Grid_Glass_Pane.png",
             "itemID": 102,
             "name": "Glass Pane"
         },
         "glowstone": {
             "blockID": 89,
-            "cloud": {
-                "x": 1,
-                "y": 3,
-                "z": 3
-            },
             "image": "glowstone.png",
             "itemID": 89,
             "name": "Glowstone"
         },
         "glowstone_dust": {
-            "cloud": {
-                "x": 1,
-                "y": 3,
-                "z": 2
-            },
             "image": "glowstonedust.png",
             "itemID": 348,
             "name": "Glowstone Dust"
         },
         "gold_block": {
             "blockID": 41,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 10
-            },
             "image": "goldblock.png",
             "itemID": 41,
             "name": "Block of Gold",
@@ -2341,32 +1592,17 @@
             "texture": "gold_block"
         },
         "gold_ingot": {
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 4
-            },
             "image": "goldingot.png",
             "itemID": 266,
             "name": "Gold Ingot"
         },
         "gold_nugget": {
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 3
-            },
             "image": "goldnugget.png",
             "itemID": 371,
             "name": "Gold Nugget"
         },
         "gold_ore": {
             "blockID": 14,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 16
-            },
             "image": "goldore.png",
             "itemID": 14,
             "name": "Gold Ore",
@@ -2374,11 +1610,6 @@
             "texture": "gold_ore"
         },
         "golden_apple": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 11
-            },
             "damageValues": {
                 "0": {
                     "obtaining": [
@@ -2400,11 +1631,6 @@
                 },
                 "1": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 2,
-                        "z": 12
-                    },
                     "name": "Notch Apple",
                     "obtaining": [
                         {
@@ -2429,93 +1655,48 @@
             "name": "Golden Apple"
         },
         "golden_axe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 18
-            },
             "durability": 33,
             "image": "goldaxe.png",
             "itemID": 286,
             "name": "Golden Axe"
         },
         "golden_boots": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 15
-            },
             "image": "goldboots.png",
             "itemID": 317,
             "name": "Golden Boots"
         },
         "golden_carrot": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 4
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a7/Grid_Golden_Carrot.png",
             "itemID": 396,
             "name": "Golden Carrot"
         },
         "golden_chestplate": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 13
-            },
             "image": "goldchestplate.png",
             "itemID": 315,
             "name": "Golden Chestplate"
         },
         "golden_helmet": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 12
-            },
             "image": "goldhelmet.png",
             "itemID": 314,
             "name": "Golden Helmet"
         },
         "golden_hoe": {
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 35
-            },
             "durability": 32,
             "image": "goldhoe.png",
             "itemID": 294,
             "name": "Gold Hoe"
         },
         "golden_horse_armor": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 21
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/09/Grid_Golden_Horse_Armor.png",
             "itemID": 418,
             "name": "Golden Horse Armor"
         },
         "golden_leggings": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 14
-            },
             "image": "goldleggings.png",
             "itemID": 316,
             "name": "Golden Leggings"
         },
         "golden_pickaxe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 16
-            },
             "durability": 32,
             "image": "goldpickaxe.png",
             "itemID": 285,
@@ -2523,11 +1704,6 @@
         },
         "golden_rail": {
             "blockID": 27,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 18
-            },
             "damageValues": {
                 "1": {
                     "texture_top": "rail_golden_powered"
@@ -2540,22 +1716,12 @@
             "texture_top": "rail_golden"
         },
         "golden_shovel": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 17
-            },
             "durability": 32,
             "image": "goldshovel.png",
             "itemID": 284,
             "name": "Golden Shovel"
         },
         "golden_sword": {
-            "cloud": {
-                "x": 1,
-                "y": 5,
-                "z": 6
-            },
             "durability": 32,
             "image": "goldsword.png",
             "itemID": 283,
@@ -2563,11 +1729,6 @@
         },
         "grass": {
             "blockID": 2,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 9
-            },
             "color_map": "grass",
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/08/Grid_Grass_Block.png",
             "itemID": 2,
@@ -2582,11 +1743,6 @@
         },
         "gravel": {
             "blockID": 13,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 8
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/03/Grid_Gravel.png",
             "itemID": 13,
             "name": "Gravel",
@@ -2594,86 +1750,46 @@
             "texture": "gravel"
         },
         "gunpowder": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 36
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7a/Grid_Gunpowder.png",
             "itemID": 289,
             "name": "Gunpowder"
         },
         "hardened_clay": {
             "blockID": 172,
-            "cloud": {
-                "x": -1,
-                "y": 1,
-                "z": 22
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6d/Grid_Hardened_Clay.png",
             "itemID": 172,
             "name": "Hardened Clay"
         },
         "hay_block": {
             "blockID": 170,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 1
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1f/Grid_Hay_Bale.png",
             "itemID": 170,
             "name": "Hay Bale"
         },
         "heavy_weighted_pressure_plate": {
             "blockID": 148,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 29
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/65/Grid_Weighted_Pressure_Plate_%28Heavy%29.png",
             "itemID": 148,
             "name": "Weighted Pressure Plate (Heavy)"
         },
         "hopper": {
             "blockID": 154,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 15
-            },
             "image": "hopper.png",
             "itemID": 154,
             "name": "Hopper"
         },
         "hopper_minecart": {
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 24
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/78/Grid_Minecart_with_Hopper.png",
             "itemID": 408,
             "name": "Minecart with Hopper"
         },
         "ice": {
             "blockID": 79,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 14
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2e/Grid_Ice.png",
             "itemID": 79,
             "name": "Ice"
         },
         "iron_axe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 8
-            },
             "durability": 250,
             "image": "ironaxe.png",
             "itemID": 258,
@@ -2681,22 +1797,12 @@
         },
         "iron_bars": {
             "blockID": 101,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 12
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/00/Grid_Iron_Bars.png",
             "itemID": 101,
             "name": "Iron Bars"
         },
         "iron_block": {
             "blockID": 42,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 9
-            },
             "image": "ironblock.png",
             "itemID": 42,
             "name": "Block of Iron",
@@ -2704,22 +1810,12 @@
             "texture": "iron_block"
         },
         "iron_boots": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 7
-            },
             "durability": 195,
             "image": "ironboots.png",
             "itemID": 309,
             "name": "Iron Boots"
         },
         "iron_chestplate": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 5
-            },
             "durability": 240,
             "image": "ironchestplate.png",
             "itemID": 307,
@@ -2727,11 +1823,6 @@
         },
         "iron_door": {
             "blockID": 71,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 18
-            },
             "image": "irondoor.png",
             "itemID": 330,
             "name": "Iron Door",
@@ -2754,53 +1845,28 @@
             ]
         },
         "iron_helmet": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 4
-            },
             "durability": 165,
             "image": "ironhelmet.png",
             "itemID": 306,
             "name": "Iron Helmet"
         },
         "iron_hoe": {
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 32
-            },
             "durability": 250,
             "image": "ironhoe.png",
             "itemID": 292,
             "name": "Iron Hoe"
         },
         "iron_horse_armor": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 22
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/af/Grid_Iron_Horse_Armor.png",
             "itemID": 417,
             "name": "Iron Horse Armor"
         },
         "iron_ingot": {
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 2
-            },
             "image": "ironingot.png",
             "itemID": 265,
             "name": "Iron Ingot"
         },
         "iron_leggings": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 6
-            },
             "durability": 225,
             "image": "ironleggings.png",
             "itemID": 308,
@@ -2808,11 +1874,6 @@
         },
         "iron_ore": {
             "blockID": 15,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 15
-            },
             "image": "ironore.png",
             "itemID": 15,
             "name": "Iron Ore",
@@ -2820,33 +1881,18 @@
             "texture": "iron_ore"
         },
         "iron_pickaxe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 6
-            },
             "durability": 250,
             "image": "ironpickaxe.png",
             "itemID": 257,
             "name": "Iron Pickaxe"
         },
         "iron_shovel": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 7
-            },
             "durability": 250,
             "image": "ironshovel.png",
             "itemID": 256,
             "name": "Iron Shovel"
         },
         "iron_sword": {
-            "cloud": {
-                "x": 1,
-                "y": 5,
-                "z": 3
-            },
             "durability": 250,
             "image": "ironsword.png",
             "itemID": 267,
@@ -2854,32 +1900,17 @@
         },
         "iron_trapdoor": {
             "blockID": 167,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 30
-            },
             "image": "irontrapdoor.png",
             "itemID": 167,
             "name": "Iron Trapdoor"
         },
         "item_frame": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 12
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c5/Grid_Item_Frame.png",
             "itemID": 389,
             "name": "Item Frame"
         },
         "jukebox": {
             "blockID": 84,
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 0
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/10/Grid_Jukebox.png",
             "itemID": 84,
             "name": "Jukebox"
@@ -2989,33 +2020,18 @@
         },
         "jungle_stairs": {
             "blockID": 136,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 25
-            },
             "image": "junglewoodstairs.png",
             "itemID": 136,
             "name": "Jungle Wood Stairs"
         },
         "ladder": {
             "blockID": 65,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 22
-            },
             "image": "ladder.png",
             "itemID": 65,
             "name": "Ladder"
         },
         "lapis_block": {
             "blockID": 22,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 11
-            },
             "image": "lapislazuliblock.png",
             "itemID": 22,
             "name": "Lapis Lazuli Block",
@@ -3024,11 +2040,6 @@
         },
         "lapis_ore": {
             "blockID": 21,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 17
-            },
             "image": "lapislazuliore.png",
             "itemID": 21,
             "name": "Lapis Lazuli Ore",
@@ -3045,74 +2056,39 @@
             "texture": "lava_still"
         },
         "lava_bucket": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 15
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/cf/Grid_Lava_Bucket.png",
             "itemID": 327,
             "name": "Lava Bucket"
         },
         "lead": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 25
-            },
             "image": "lead.png",
             "itemID": 420,
             "name": "Lead"
         },
         "leather": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 32
-            },
             "image": "leather.png",
             "itemID": 334,
             "name": "Leather"
         },
         "leather_boots": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 19
-            },
             "durability": 65,
             "image": "leatherboots.png",
             "itemID": 301,
             "name": "Leather Boots"
         },
         "leather_chestplate": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 17
-            },
             "durability": 80,
             "image": "leatherchestplate.png",
             "itemID": 299,
             "name": "Leather Tunic"
         },
         "leather_helmet": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 16
-            },
             "durability": 55,
             "image": "leatherhelmet.png",
             "itemID": 298,
             "name": "Leather Cap"
         },
         "leather_leggings": {
-            "cloud": {
-                "x": -1,
-                "y": 5,
-                "z": 18
-            },
             "durability": 75,
             "image": "leatherleggings.png",
             "itemID": 300,
@@ -3120,11 +2096,6 @@
         },
         "leaves": {
             "blockID": 18,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 34
-            },
             "color_map": "foliage",
             "damageValues": {
                 "0": {
@@ -3132,31 +2103,16 @@
                     "texture_uncolored": "leaves_oak_opaque"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 35
-                    },
                     "image": "spruceleaves.png",
                     "name": "Spruce Leaves",
                     "texture_uncolored": "leaves_spruce_opaque"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 36
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/0a/Grid_Leaves_%28Birch%29.png",
                     "name": "Birch Leaves",
                     "texture_uncolored": "leaves_birch_opaque"
                 },
                 "3": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 37
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1b/Grid_Leaves_%28Jungle%29.png",
                     "name": "Jungle Leaves",
                     "texture_uncolored": "leaves_jungle_opaque"
@@ -3170,21 +2126,11 @@
         },
         "leaves2": {
             "blockID": 161,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 38
-            },
             "damageValues": {
                 "0": {
                     "name": "Acacia Leaves"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 39
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/57/Grid_Dark_Oak_Leaves.png",
                     "name": "Dark Oak Leaves"
                 }
@@ -3195,22 +2141,12 @@
         },
         "lever": {
             "blockID": 69,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 9
-            },
             "image": "lever.png",
             "itemID": 69,
             "name": "Lever"
         },
         "light_weighted_pressure_plate": {
             "blockID": 147,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 28
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/b9/Grid_Weighted_Pressure_Plate_%28Light%29.png",
             "itemID": 147,
             "name": "Weighted Pressure Plate (Light)"
@@ -3227,11 +2163,6 @@
         },
         "lit_pumpkin": {
             "blockID": 91,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 7
-            },
             "image": "jackolantern.png",
             "itemID": 91,
             "name": "Jack o'Lantern"
@@ -3250,43 +2181,23 @@
         },
         "log": {
             "blockID": 17,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 10
-            },
             "damageValues": {
                 "0": {
                     "name": "Oak Wood"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 11
-                    },
                     "image": "sprucewood.png",
                     "name": "Spruce Wood",
                     "texture": "log_spruce",
                     "texture_top": "log_spruce_top"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 12
-                    },
                     "image": "birchwood.png",
                     "name": "Birch Wood",
                     "texture": "log_birch",
                     "texture_top": "log_birch_top"
                 },
                 "3": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 13
-                    },
                     "image": "junglewood.png",
                     "name": "Jungle Wood",
                     "texture": "log_jungle",
@@ -3302,21 +2213,11 @@
         },
         "log2": {
             "blockID": 162,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 14
-            },
             "damageValues": {
                 "0": {
                     "name": "Acacia Wood"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 15
-                    },
                     "image": "darkoakwood.png",
                     "name": "Dark Oak Wood"
                 }
@@ -3326,21 +2227,11 @@
             "name": "Wood"
         },
         "magma_cream": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 11
-            },
             "image": "magmacream.png",
             "itemID": 378,
             "name": "Magma Cream"
         },
         "map": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 20
-            },
             "image": "emptymap.png",
             "itemID": 395,
             "name": "Empty Map",
@@ -3362,32 +2253,17 @@
             ]
         },
         "melon": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 19
-            },
             "image": "melon.png",
             "itemID": 360,
             "name": "Melon"
         },
         "melon_block": {
             "blockID": 103,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 3
-            },
             "image": "melonblock.png",
             "itemID": 103,
             "name": "Melon"
         },
         "melon_seeds": {
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 4
-            },
             "image": "melonseeds.png",
             "itemID": 362,
             "name": "Melon Seeds"
@@ -3399,21 +2275,11 @@
             "name": "Melon Stem"
         },
         "milk_bucket": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 28
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/63/Grid_Milk_Bucket.png",
             "itemID": 335,
             "name": "Milk"
         },
         "minecart": {
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 21
-            },
             "image": "minecart.png",
             "itemID": 328,
             "name": "Minecart"
@@ -3460,11 +2326,6 @@
         },
         "mossy_cobblestone": {
             "blockID": 48,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 27
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7d/Grid_Moss_Stone.png",
             "itemID": 48,
             "name": "Moss Stone",
@@ -3472,11 +2333,6 @@
             "texture": "cobblestone_mossy"
         },
         "mushroom_stew": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 8
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fd/Grid_Mushroom_Stew.png",
             "itemID": 282,
             "name": "Mushroom Stew"
@@ -3488,108 +2344,58 @@
         },
         "mycelium": {
             "blockID": 110,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 10
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/aa/Grid_Mycelium.png",
             "itemID": 110,
             "name": "Mycelium"
         },
         "name_tag": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 26
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/97/Grid_Name_Tag.png",
             "itemID": 421,
             "name": "Name Tag"
         },
         "nether_brick": {
             "blockID": 112,
-            "cloud": {
-                "x": 1,
-                "y": 3,
-                "z": 5
-            },
             "image": "netherbricks.png",
             "itemID": 112,
             "name": "Nether Brick"
         },
         "nether_brick_fence": {
             "blockID": 113,
-            "cloud": {
-                "x": 1,
-                "y": 3,
-                "z": 7
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/59/Grid_Nether_Brick_Fence.png",
             "itemID": 113,
             "name": "Nether Brick Fence"
         },
         "nether_brick_stairs": {
             "blockID": 114,
-            "cloud": {
-                "x": 1,
-                "y": 3,
-                "z": 6
-            },
             "image": "netherbrickstairs.png",
             "itemID": 114,
             "name": "Nether Brick Stairs"
         },
         "nether_star": {
             "alwaysGlow": true,
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 38
-            },
             "image": "netherstar.png",
             "itemID": 399,
             "name": "Nether Star"
         },
         "nether_wart": {
             "blockID": 115,
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 5
-            },
             "image": "netherwart.png",
             "itemID": 372,
             "name": "Nether Wart"
         },
         "netherbrick": {
-            "cloud": {
-                "x": 1,
-                "y": 3,
-                "z": 4
-            },
             "image": "netherbrick.png",
             "itemID": 405,
             "name": "Nether Brick"
         },
         "netherrack": {
             "blockID": 87,
-            "cloud": {
-                "x": 1,
-                "y": 3,
-                "z": 0
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/86/Grid_Netherrack.png",
             "itemID": 87,
             "name": "Netherrack"
         },
         "noteblock": {
             "blockID": 25,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 31
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1d/Grid_Note_Block.png",
             "itemID": 25,
             "name": "Note Block",
@@ -3598,11 +2404,6 @@
         },
         "oak_stairs": {
             "blockID": 53,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 22
-            },
             "image": "oakwoodstairs.png",
             "itemID": 53,
             "name": "Oak Wood Stairs",
@@ -3611,11 +2412,6 @@
         },
         "obsidian": {
             "blockID": 49,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 13
-            },
             "image": "obsidian.png",
             "itemID": 49,
             "name": "Obsidian",
@@ -3624,31 +2420,16 @@
         },
         "packed_ice": {
             "blockID": 174,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 14
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/b2/Grid_Packed_Ice.png",
             "itemID": 174,
             "name": "Packed Ice"
         },
         "painting": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 27
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/cc/Grid_Painting.png",
             "itemID": 321,
             "name": "Painting"
         },
         "paper": {
-            "cloud": {
-                "x": 0,
-                "y": 6,
-                "z": 0
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6c/Grid_Paper.png",
             "itemID": 339,
             "name": "Paper"
@@ -3656,11 +2437,6 @@
         "piston": {
             "FIXME": "All rotational values",
             "blockID": 33,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 5
-            },
             "damageValues": {
                 "1": {
                     "texture_bottom": "piston_bottom",
@@ -3690,62 +2466,32 @@
         },
         "planks": {
             "blockID": 5,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 16
-            },
             "damageValues": {
                 "0": {
                     "name": "Oak Wood Planks",
                     "texture": "planks_oak"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 17
-                    },
                     "image": "sprucewoodplanks.png",
                     "name": "Spruce Wood Planks",
                     "texture": "planks_spruce"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 18
-                    },
                     "image": "birchwoodplanks.png",
                     "name": "Birch Wood Planks",
                     "texture": "planks_birch"
                 },
                 "3": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 19
-                    },
                     "image": "junglewoodplanks.png",
                     "name": "Jungle Wood Planks",
                     "texture": "planks_jungle"
                 },
                 "4": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 20
-                    },
                     "image": "acaciawoodplanks.png",
                     "name": "Acacia Wood Planks",
                     "texture": "planks_acacia"
                 },
                 "5": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 21
-                    },
                     "image": "darkoakwoodplanks.png",
                     "name": "Dark Oak Wood Planks",
                     "texture": "planks_big_oak"
@@ -3757,21 +2503,11 @@
             "solid": true
         },
         "poisonous_potato": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 20
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fd/Grid_Poisonous_Potato.png",
             "itemID": 394,
             "name": "Poisonous Potato"
         },
         "porkchop": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 17
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ec/Grid_Raw_Porkchop.png",
             "itemID": 319,
             "name": "Raw Porkchop"
@@ -3783,11 +2519,6 @@
             "name": "Nether Portal"
         },
         "potato": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 25
-            },
             "image": "potato.png",
             "itemID": 392,
             "name": "Potato"
@@ -3799,121 +2530,61 @@
             "name": "Potato Crops"
         },
         "potion": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 3
-            },
             "damageValues": {
                 "0": {
                     "name": "Water Bottle"
                 },
                 "16": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 13
-                    },
                     "name": "Awkward Potion"
                 },
                 "16384": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 17
-                    },
                     "image": "splashpotion.png",
                     "name": "Splash Mundane Potion"
                 },
                 "16385": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 35
-                    },
                     "image": "splashregenpotion.png",
                     "name": "Splash Potion of Regeneration"
                 },
                 "16386": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 19
-                    },
                     "image": "splashspeedpotion.png",
                     "name": "Splash Potion of Swiftness"
                 },
                 "16387": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 41
-                    },
                     "image": "splashfireresistancepotion.png",
                     "name": "Splash Potion of Fire Resistance"
                 },
                 "16388": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 69
-                    },
                     "image": "splashpoisonpotion.png",
                     "name": "Splash Potion of Poison"
                 },
                 "16389": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 31
-                    },
                     "image": "splashhealthpotion.png",
                     "name": "Splash Potion of Healing"
                 },
                 "16390": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 53
-                    },
                     "image": "splashnightvisionpotion.png",
                     "name": "Splash Potion of Night Vision"
                 },
                 "16392": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 65
-                    },
                     "image": "splashweaknesspotion.png",
                     "name": "Splash Potion of Weakness"
                 },
                 "16393": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 25
-                    },
                     "image": "splashstrengthpotion.png",
                     "name": "Splash Potion of Strength"
                 },
                 "16394": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 57
-                    },
                     "image": "splashslownesspotion.png",
                     "name": "Splash Potion of Slowness"
                 },
@@ -3924,51 +2595,26 @@
                 },
                 "16396": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 61
-                    },
                     "image": "splashdamagepotion.png",
                     "name": "Splash Potion of Harming"
                 },
                 "16397": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 45
-                    },
                     "image": "splashwaterbreathingpotion.png",
                     "name": "Splash Potion of Water Breathing"
                 },
                 "16398": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 49
-                    },
                     "image": "splashinvisibilitypotion.png",
                     "name": "Splash Potion of Invisibility"
                 },
                 "16417": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 39
-                    },
                     "image": "splashregenpotion.png",
                     "name": "Splash Potion of Regeneration \u2161"
                 },
                 "16418": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 23
-                    },
                     "image": "splashspeedpotion.png",
                     "name": "Splash Potion of Swiftness \u2161"
                 },
@@ -3979,21 +2625,11 @@
                 },
                 "16420": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 73
-                    },
                     "image": "splashpoisonpotion.png",
                     "name": "Splash Potion of Poison \u2161"
                 },
                 "16421": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 33
-                    },
                     "image": "splashhealthpotion.png",
                     "name": "Splash Potion of Healing \u2161"
                 },
@@ -4009,11 +2645,6 @@
                 },
                 "16425": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 29
-                    },
                     "image": "splashstrengthpotion.png",
                     "name": "Splash Potion of Strength \u2161"
                 },
@@ -4029,11 +2660,6 @@
                 },
                 "16428": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 63
-                    },
                     "image": "splashdamagepotion.png",
                     "name": "Splash Potion of Harming \u2161"
                 },
@@ -4049,41 +2675,21 @@
                 },
                 "16449": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 37
-                    },
                     "image": "splashregenpotion.png",
                     "name": "Splash Potion of Regeneration, extended"
                 },
                 "16450": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 21
-                    },
                     "image": "splashspeedpotion.png",
                     "name": "Splash Potion of Swiftness, extended"
                 },
                 "16451": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 43
-                    },
                     "image": "splashfireresistancepotion.png",
                     "name": "Splash Potion of Fire Resistance, extended"
                 },
                 "16452": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 71
-                    },
                     "image": "splashpoisonpotion.png",
                     "name": "Splash Potion of Poison, extended"
                 },
@@ -4094,41 +2700,21 @@
                 },
                 "16454": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 55
-                    },
                     "image": "splashnightvisionpotion.png",
                     "name": "Splash Potion of Night Vision, extended"
                 },
                 "16456": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 67
-                    },
                     "image": "splashweaknesspotion.png",
                     "name": "Splash Potion of Weakness, extended"
                 },
                 "16457": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 27
-                    },
                     "image": "splashstrengthpotion.png",
                     "name": "Splash Potion of Strength, extended"
                 },
                 "16458": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 59
-                    },
                     "image": "splashslownesspotion.png",
                     "name": "Splash Potion of Slowness, extended"
                 },
@@ -4144,138 +2730,68 @@
                 },
                 "16461": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 47
-                    },
                     "image": "splashwaterbreathingpotion.png",
                     "name": "Splash Potion of Water Breathing, extended"
                 },
                 "16462": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 51
-                    },
                     "image": "splashinvisibilitypotion.png",
                     "name": "Splash Potion of Invisibility, extended"
                 },
                 "32": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 14
-                    },
                     "name": "Thick Potion"
                 },
                 "64": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 15
-                    },
                     "name": "Mundane Potion, extended"
                 },
                 "8192": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 16
-                    },
                     "name": "Mundane Potion"
                 },
                 "8193": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 34
-                    },
                     "image": "regenpotion.png",
                     "name": "Potion of Regeneration"
                 },
                 "8194": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 18
-                    },
                     "image": "speedpotion.png",
                     "name": "Potion of Swiftness"
                 },
                 "8195": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 40
-                    },
                     "image": "fireresistancepotion.png",
                     "name": "Potion of Fire Resistance"
                 },
                 "8196": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 68
-                    },
                     "image": "poisonpotion.png",
                     "name": "Potion of Poison"
                 },
                 "8197": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 30
-                    },
                     "image": "healthpotion.png",
                     "name": "Potion of Healing"
                 },
                 "8198": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 52
-                    },
                     "image": "nightvisionpotion.png",
                     "name": "Potion of Night Vision"
                 },
                 "8200": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 64
-                    },
                     "image": "weaknesspotion.png",
                     "name": "Potion of Weakness"
                 },
                 "8201": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 24
-                    },
                     "image": "strengthpotion.png",
                     "name": "Potion of Strength"
                 },
                 "8202": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 56
-                    },
                     "image": "slownesspotion.png",
                     "name": "Potion of Slowness"
                 },
@@ -4286,51 +2802,26 @@
                 },
                 "8204": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 60
-                    },
                     "image": "damagepotion.png",
                     "name": "Potion of Harming"
                 },
                 "8205": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 44
-                    },
                     "image": "waterbreathingpotion.png",
                     "name": "Potion of Water Breathing"
                 },
                 "8206": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 48
-                    },
                     "image": "invisibilitypotion.png",
                     "name": "Potion of Invisibility"
                 },
                 "8225": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 38
-                    },
                     "image": "regenpotion.png",
                     "name": "Potion of Regeneration \u2161"
                 },
                 "8226": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 22
-                    },
                     "image": "speedpotion.png",
                     "name": "Potion of Swiftness \u2161"
                 },
@@ -4341,21 +2832,11 @@
                 },
                 "8228": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 72
-                    },
                     "image": "poisonpotion.png",
                     "name": "Potion of Poison \u2161"
                 },
                 "8229": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 32
-                    },
                     "image": "healthpotion.png",
                     "name": "Potion of Healing \u2161"
                 },
@@ -4371,11 +2852,6 @@
                 },
                 "8233": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 28
-                    },
                     "image": "strengthpotion.png",
                     "name": "Potion of Strength \u2161"
                 },
@@ -4391,11 +2867,6 @@
                 },
                 "8236": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 62
-                    },
                     "image": "damagepotion.png",
                     "name": "Potion of Harming \u2161"
                 },
@@ -4411,41 +2882,21 @@
                 },
                 "8257": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 36
-                    },
                     "image": "regenpotion.png",
                     "name": "Potion of Regeneration, extended"
                 },
                 "8258": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 20
-                    },
                     "image": "speedpotion.png",
                     "name": "Potion of Swiftness, extended"
                 },
                 "8259": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 42
-                    },
                     "image": "fireresistancepotion.png",
                     "name": "Potion of Fire Resistance, extended"
                 },
                 "8260": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 70
-                    },
                     "image": "poisonpotion.png",
                     "name": "Potion of Poison, extended"
                 },
@@ -4456,41 +2907,21 @@
                 },
                 "8262": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 54
-                    },
                     "image": "nightvisionpotion.png",
                     "name": "Potion of Night Vision, extended"
                 },
                 "8264": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 66
-                    },
                     "image": "weaknesspotion.png",
                     "name": "Potion of Weakness, extended"
                 },
                 "8265": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 26
-                    },
                     "image": "strengthpotion.png",
                     "name": "Potion of Strength, extended"
                 },
                 "8266": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 58
-                    },
                     "image": "slownesspotion.png",
                     "name": "Potion of Slowness, extended"
                 },
@@ -4506,21 +2937,11 @@
                 },
                 "8269": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 46
-                    },
                     "image": "waterbreathingpotion.png",
                     "name": "Potion of Water Breathing, extended"
                 },
                 "8270": {
                     "alwaysGlow": true,
-                    "cloud": {
-                        "x": -1,
-                        "y": 4,
-                        "z": 50
-                    },
                     "image": "invisibilitypotion.png",
                     "name": "Potion of Invisibility, extended"
                 }
@@ -4569,31 +2990,16 @@
         },
         "pumpkin": {
             "blockID": 86,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 5
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/be/Grid_Pumpkin.png",
             "itemID": 86,
             "name": "Pumpkin"
         },
         "pumpkin_pie": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 3
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/9f/Grid_Pumpkin_Pie.png",
             "itemID": 400,
             "name": "Pumpkin Pie"
         },
         "pumpkin_seeds": {
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 6
-            },
             "image": "pumpkinseeds.png",
             "itemID": 361,
             "name": "Pumpkin Seeds"
@@ -4605,38 +3011,18 @@
             "name": "Pumpkin Stem"
         },
         "quartz": {
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 7
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2b/Grid_Nether_Quartz.png",
             "itemID": 406,
             "name": "Nether Quartz"
         },
         "quartz_block": {
             "blockID": 155,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 4
-            },
             "damageValues": {
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 36
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8d/Grid_Chiseled_Quartz_Block.png",
                     "name": "Chiseled Quartz Block"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 35
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/59/Grid_Pillar_Quartz_Block.png",
                     "name": "Pillar Quartz Block"
                 },
@@ -4655,22 +3041,12 @@
         },
         "quartz_ore": {
             "blockID": 153,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 21
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/82/Grid_Nether_Quartz_Ore.png",
             "itemID": 153,
             "name": "Nether Quartz Ore"
         },
         "quartz_stairs": {
             "blockID": 156,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 33
-            },
             "image": "quartzstairs.png",
             "itemID": 156,
             "name": "Quartz Stairs"
@@ -4697,223 +3073,113 @@
         },
         "rail": {
             "blockID": 66,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 17
-            },
             "image": "rail.png",
             "itemID": 66,
             "name": "Rail"
         },
         "record_11": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 11
-            },
             "image": "musicdisc11.png",
             "itemID": 2266,
             "name": "Music Disc: C418 \u2014 11"
         },
         "record_13": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 1
-            },
             "image": "musicdisc13.png",
             "itemID": 2256,
             "name": "Music Disc: C418 \u2014 13"
         },
         "record_blocks": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 3
-            },
             "image": "musicdiscblocks.png",
             "itemID": 2258,
             "name": "Music Disc: C418 \u2014 blocks"
         },
         "record_cat": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 2
-            },
             "image": "musicdisccat.png",
             "itemID": 2257,
             "name": "Music Disc: C418 \u2014 cat"
         },
         "record_chirp": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 4
-            },
             "image": "musicdiscchirp.png",
             "itemID": 2259,
             "name": "Music Disc: C418 \u2014 chirp"
         },
         "record_far": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 5
-            },
             "image": "musicdiscfar.png",
             "itemID": 2260,
             "name": "Music Disc: C418 \u2014 far"
         },
         "record_mall": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 6
-            },
             "image": "musicdiscmall.png",
             "itemID": 2261,
             "name": "Music Disc: C418 \u2014 mall"
         },
         "record_mellohi": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 7
-            },
             "image": "musicdiscmellohi.png",
             "itemID": 2262,
             "name": "Music Disc: C418 \u2014 mellohi"
         },
         "record_stal": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 8
-            },
             "image": "musicdiscstal.png",
             "itemID": 2263,
             "name": "Music Disc: C418 \u2014 stal"
         },
         "record_strad": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 9
-            },
             "image": "musicdiscstrad.png",
             "itemID": 2264,
             "name": "Music Disc: C418 \u2014 strad"
         },
         "record_wait": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 12
-            },
             "image": "musicdiscwait.png",
             "itemID": 2267,
             "name": "Music Disc: C418 \u2014 wait"
         },
         "record_ward": {
-            "cloud": {
-                "x": 1,
-                "y": 6,
-                "z": 10
-            },
             "image": "musicdiscward.png",
             "itemID": 2265,
             "name": "Music Disc: C418 \u2014 ward"
         },
         "red_flower": {
             "blockID": 38,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 13
-            },
             "damageValues": {
                 "0": {
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c7/Grid_Poppy.png",
                     "name": "Poppy"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 14
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/56/Grid_Blue_Orchid.png",
                     "name": "Blue Orchid",
                     "texture": "flower_blue_orchid"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 15
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/33/Grid_Allium.png",
                     "name": "Allium",
                     "texture": "flower_allium"
                 },
                 "3": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 16
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/79/Grid_Azure_Bluet.png",
                     "name": "Azure Bluet",
                     "texture": "flower_houstonia"
                 },
                 "4": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 17
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6f/Grid_Red_Tulip.png",
                     "name": "Red Tulip",
                     "texture": "flower_tulip_red"
                 },
                 "5": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 18
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ec/Grid_Orange_Tulip.png",
                     "name": "Orange Tulip",
                     "texture": "flower_tulip_orange"
                 },
                 "6": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 19
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/4f/Grid_White_Tulip.png",
                     "name": "White Tulip",
                     "texture": "flower_tulip_white"
                 },
                 "7": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 20
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/61/Grid_Pink_Tulip.png",
                     "name": "Pink Tulip",
                     "texture": "flower_tulip_pink"
                 },
                 "8": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 21
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f6/Grid_Oxeye_Daisy.png",
                     "name": "Oxeye Daisy",
                     "texture": "flower_oxeye_daisy"
@@ -4928,11 +3194,6 @@
         },
         "red_mushroom": {
             "blockID": 40,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 11
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/01/Grid_Red_Mushroom.png",
             "itemID": 40,
             "name": "Red Mushroom",
@@ -4942,11 +3203,6 @@
         },
         "red_mushroom_block": {
             "blockID": 100,
-            "cloud": {
-                "x": 1,
-                "y": 4,
-                "z": 3
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/33/Grid_Huge_Red_Mushroom.png",
             "itemID": 100,
             "name": "Huge Red Mushroom"
@@ -5072,55 +3328,30 @@
             ]
         },
         "redstone": {
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 0
-            },
             "image": "redstonedust.png",
             "itemID": 331,
             "name": "Redstone Dust"
         },
         "redstone_block": {
             "blockID": 152,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 1
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2e/Grid_Block_of_Redstone.png",
             "itemID": 152,
             "name": "Block of Redstone"
         },
         "redstone_lamp": {
             "blockID": 123,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 7
-            },
             "image": "redstonelamp.png",
             "itemID": 123,
             "name": "Redstone Lamp"
         },
         "redstone_ore": {
             "blockID": 73,
-            "cloud": {
-                "x": 0,
-                "y": 3,
-                "z": 18
-            },
             "image": "redstoneore.png",
             "itemID": 73,
             "name": "Redstone Ore"
         },
         "redstone_torch": {
             "blockID": 76,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 2
-            },
             "image": "redstonetorch.png",
             "itemID": 76,
             "name": "Redstone Torch"
@@ -5136,59 +3367,29 @@
         },
         "reeds": {
             "blockID": 83,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 9
-            },
             "image": "sugarcane.png",
             "itemID": 338,
             "name": "Sugar Cane"
         },
         "repeater": {
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 3
-            },
             "image": "repeater.png",
             "itemID": 356,
             "name": "Repeater"
         },
         "rotten_flesh": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 15
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/33/Grid_Rotten_Flesh.png",
             "itemID": 367,
             "name": "Rotten Flesh"
         },
         "saddle": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 24
-            },
             "image": "saddle.png",
             "itemID": 329,
             "name": "Saddle"
         },
         "sand": {
             "blockID": 12,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 6
-            },
             "damageValues": {
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 7
-                    },
                     "image": "redsand.png",
                     "name": "Red Sand",
                     "texture": "red_sand"
@@ -5202,28 +3403,13 @@
         },
         "sandstone": {
             "blockID": 24,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 5
-            },
             "damageValues": {
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 40
-                    },
                     "image": "chiseledsandstone.png",
                     "name": "Chiseled Sandstone",
                     "texture": "sandstone_carved"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 39
-                    },
                     "image": "smoothsandstone.png",
                     "name": "Smooth Sandstone",
                     "texture": "sandstone_smooth"
@@ -5239,73 +3425,38 @@
         },
         "sandstone_stairs": {
             "blockID": 128,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 37
-            },
             "image": "sandstonestairs.png",
             "itemID": 128,
             "name": "Sandstone Stairs"
         },
         "sapling": {
             "blockID": 6,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 4
-            },
             "damageValues": {
                 "0": {
                     "name": "Oak Sapling",
                     "texture": "sapling_birch"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 5
-                    },
                     "image": "sprucesapling.png",
                     "name": "Spruce Sapling",
                     "texture": "sapling_spruce"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 6
-                    },
                     "image": "birchsapling.png",
                     "name": "Birch Sapling",
                     "texture": "sapling_birch"
                 },
                 "3": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 7
-                    },
                     "image": "junglesapling.png",
                     "name": "Jungle Sapling",
                     "texture": "sapling_jungle"
                 },
                 "4": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 8
-                    },
                     "image": "acaciasapling.png",
                     "name": "Acacia Sapling",
                     "texture": "sapling_acacia"
                 },
                 "5": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 9
-                    },
                     "image": "darkoaksapling.png",
                     "name": "Dark Oak Sapling",
                     "texture": "sapling_oak"
@@ -5325,33 +3476,18 @@
             "name": "Sea Lantern"
         },
         "shears": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 2
-            },
             "durability": 238,
             "image": "shears.png",
             "itemID": 359,
             "name": "Shears"
         },
         "sign": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 11
-            },
             "image": "sign.png",
             "itemID": 323,
             "name": "Sign"
         },
         "skull": {
             "blockID": 144,
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 37
-            },
             "damageValues": {
                 "0": {
                     "image": "skeletonskull.png",
@@ -5379,64 +3515,34 @@
         },
         "slime": {
             "blockID": 165,
-            "cloud": {
-                "x": 1,
-                "y": 4,
-                "z": 4
-            },
             "image": "slimeblock.png",
             "itemID": 165,
             "name": "Slime Block"
         },
         "slime_ball": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 34
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c9/Grid_Slimeball.png",
             "itemID": 341,
             "name": "Slimeball"
         },
         "snow": {
             "blockID": 80,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 15
-            },
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6c/Grid_Snow.png",
+            "image": "snowblock.png",
             "itemID": 80,
             "name": "Snow Block"
         },
         "snow_layer": {
             "blockID": 78,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 16
-            },
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/31/Grid_Snow_%28cover%29.png",
+            "image": "snow.png",
             "itemID": 78,
             "name": "Snow"
         },
         "snowball": {
-            "cloud": {
-                "x": 1,
-                "y": 5,
-                "z": 8
-            },
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/67/Grid_Snowball.png",
+            "image": "snowball.png",
             "itemID": 332,
             "name": "Snowball"
         },
         "soul_sand": {
             "blockID": 88,
-            "cloud": {
-                "x": 1,
-                "y": 3,
-                "z": 1
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e4/Grid_Soul_Sand.png",
             "itemID": 88,
             "name": "Soul Sand"
@@ -5556,21 +3662,11 @@
             "name": "Spawn Egg"
         },
         "speckled_melon": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 12
-            },
             "image": "goldmelon.png",
             "itemID": 382,
             "name": "Glistering Melon"
         },
         "spider_eye": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 18
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/03/Grid_Spider_Eye.png",
             "itemID": 375,
             "name": "Spider Eye"
@@ -5695,158 +3791,73 @@
         },
         "spruce_stairs": {
             "blockID": 134,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 23
-            },
             "image": "sprucewoodstairs.png",
             "itemID": 134,
             "name": "Spruce Wood Stairs"
         },
         "stained_glass": {
             "blockID": 95,
-            "cloud": {
-                "x": -3,
-                "y": 1,
-                "z": 2
-            },
             "damageValues": {
                 "0": {
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/92/Grid_White_Stained_Glass.png",
                     "name": "White Stained Glass"
                 },
                 "1": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 4
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bd/Grid_Orange_Stained_Glass.png",
                     "name": "Orange Stained Glass"
                 },
                 "10": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 22
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/b8/Grid_Purple_Stained_Glass.png",
                     "name": "Purple Stained Glass"
                 },
                 "11": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 24
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/35/Grid_Blue_Stained_Glass.png",
                     "name": "Blue Stained Glass"
                 },
                 "12": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 26
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/29/Grid_Brown_Stained_Glass.png",
                     "name": "Brown Stained Glass"
                 },
                 "13": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 28
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/5f/Grid_Green_Stained_Glass.png",
                     "name": "Green Stained Glass"
                 },
                 "14": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 30
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/d8/Grid_Red_Stained_Glass.png",
                     "name": "Red Stained Glass"
                 },
                 "15": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 32
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/9f/Grid_Black_Stained_Glass.png",
                     "name": "Black Stained Glass"
                 },
                 "2": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 6
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/4d/Grid_Magenta_Stained_Glass.png",
                     "name": "Magenta Stained Glass"
                 },
                 "3": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 8
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/25/Grid_Light_Blue_Stained_Glass.png",
                     "name": "Light Blue Stained Glass"
                 },
                 "4": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 10
-                    },
                     "name": "Yellow Stained Glass"
                 },
                 "5": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 12
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a5/Grid_Lime_Stained_Glass.png",
                     "name": "Lime Stained Glass"
                 },
                 "6": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 14
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/71/Grid_Pink_Stained_Glass.png",
                     "name": "Pink Stained Glass"
                 },
                 "7": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 16
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bb/Grid_Gray_Stained_Glass.png",
                     "name": "Gray Stained Glass"
                 },
                 "8": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 18
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/26/Grid_Light_Gray_Stained_Glass.png",
                     "name": "Light Gray Stained Glass"
                 },
                 "9": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 20
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f3/Grid_Cyan_Stained_Glass.png",
                     "name": "Cyan Stained Glass"
                 }
@@ -5857,147 +3868,67 @@
         },
         "stained_glass_pane": {
             "blockID": 160,
-            "cloud": {
-                "x": -3,
-                "y": 1,
-                "z": 3
-            },
             "damageValues": {
                 "0": {
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/55/Grid_White_Stained_Glass_Pane.png",
                     "name": "White Stained Glass Pane"
                 },
                 "1": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 5
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f1/Grid_Orange_Stained_Glass_Pane.png",
                     "name": "Orange Stained Glass Pane"
                 },
                 "10": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 23
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/41/Grid_Purple_Stained_Glass_Pane.png",
                     "name": "Purple Stained Glass Pane"
                 },
                 "11": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 25
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fe/Grid_Blue_Stained_Glass_Pane.png",
                     "name": "Blue Stained Glass Pane"
                 },
                 "12": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 27
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/ce/Grid_Brown_Stained_Glass_Pane.png",
                     "name": "Brown Stained Glass Pane"
                 },
                 "13": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 29
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/9c/Grid_Green_Stained_Glass_Pane.png",
                     "name": "Green Stained Glass Pane"
                 },
                 "14": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 31
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/71/Grid_Red_Stained_Glass_Pane.png",
                     "name": "Red Stained Glass Pane"
                 },
                 "15": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 33
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7b/Grid_Black_Stained_Glass_Pane.png",
                     "name": "Black Stained Glass Pane"
                 },
                 "2": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 7
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/91/Grid_Magenta_Stained_Glass_Pane.png",
                     "name": "Magenta Stained Glass Pane"
                 },
                 "3": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 9
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2a/Grid_Light_Blue_Stained_Glass_Pane.png",
                     "name": "Light Blue Stained Glass Pane"
                 },
                 "4": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 11
-                    },
                     "name": "Yellow Stained Glass Pane"
                 },
                 "5": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 13
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/ae/Grid_Lime_Stained_Glass_Pane.png",
                     "name": "Lime Stained Glass Pane"
                 },
                 "6": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 15
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/86/Grid_Pink_Stained_Glass_Pane.png",
                     "name": "Pink Stained Glass Pane"
                 },
                 "7": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 17
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f0/Grid_Gray_Stained_Glass_Pane.png",
                     "name": "Gray Stained Glass Pane"
                 },
                 "8": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 19
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/79/Grid_Light_Gray_Stained_Glass_Pane.png",
                     "name": "Light Gray Stained Glass Pane"
                 },
                 "9": {
-                    "cloud": {
-                        "x": -3,
-                        "y": 1,
-                        "z": 21
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/97/Grid_Cyan_Stained_Glass_Pane.png",
                     "name": "Cyan Stained Glass Pane"
                 }
@@ -6008,147 +3939,67 @@
         },
         "stained_hardened_clay": {
             "blockID": 159,
-            "cloud": {
-                "x": -1,
-                "y": 1,
-                "z": 23
-            },
             "damageValues": {
                 "0": {
                     "name": "White Stained Clay"
                 },
                 "1": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 24
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/3c/Grid_Orange_Stained_Clay.png",
                     "name": "Orange Stained Clay"
                 },
                 "10": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 33
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/6a/Grid_Purple_Stained_Clay.png",
                     "name": "Purple Stained Clay"
                 },
                 "11": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 34
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/91/Grid_Blue_Stained_Clay.png",
                     "name": "Blue Stained Clay"
                 },
                 "12": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 35
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/20/Grid_Brown_Stained_Clay.png",
                     "name": "Brown Stained Clay"
                 },
                 "13": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 36
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/19/Grid_Green_Stained_Clay.png",
                     "name": "Green Stained Clay"
                 },
                 "14": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 37
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/cd/Grid_Red_Stained_Clay.png",
                     "name": "Red Stained Clay"
                 },
                 "15": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 38
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/91/Grid_Black_Stained_Clay.png",
                     "name": "Black Stained Clay"
                 },
                 "2": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 25
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/ce/Grid_Magenta_Stained_Clay.png",
                     "name": "Magenta Stained Clay"
                 },
                 "3": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 26
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a0/Grid_Light_Blue_Stained_Clay.png",
                     "name": "Light Blue Stained Clay"
                 },
                 "4": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 27
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ef/Grid_Yellow_Stained_Clay.png",
                     "name": "Yellow Stained Clay"
                 },
                 "5": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 28
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/aa/Grid_Lime_Stained_Clay.png",
                     "name": "Lime Stained Clay"
                 },
                 "6": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 29
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/68/Grid_Pink_Stained_Clay.png",
                     "name": "Pink Stained Clay"
                 },
                 "7": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 30
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/18/Grid_Gray_Stained_Clay.png",
                     "name": "Gray Stained Clay"
                 },
                 "8": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 31
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/47/Grid_Light_Gray_Stained_Clay.png",
                     "name": "Light Gray Stained Clay"
                 },
                 "9": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 32
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/78/Grid_Cyan_Stained_Clay.png",
                     "name": "Cyan Stained Clay"
                 }
@@ -6173,11 +4024,6 @@
             "texture_sign": "planks_oak"
         },
         "stick": {
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 0
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e9/Grid_Stick.png",
             "itemID": 280,
             "name": "Stick"
@@ -6185,11 +4031,6 @@
         "sticky_piston": {
             "FIXME": "orientation",
             "blockID": 29,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 6
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/32/Grid_Sticky_Piston.png",
             "itemID": 29,
             "name": "Sticky Piston",
@@ -6201,63 +4042,28 @@
         "stone": {
             "blast_resistance": 30,
             "blockID": 1,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 0
-            },
             "damageValues": {
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 17
-                    },
                     "image": "granite.png",
                     "name": "Granite"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 18
-                    },
                     "image": "polishedgranite.png",
                     "name": "Polished Granite"
                 },
                 "3": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 19
-                    },
                     "image": "diorite.png",
                     "name": "Diorite"
                 },
                 "4": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 20
-                    },
                     "image": "polisheddiorite.png",
                     "name": "Polished Diorite"
                 },
                 "5": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 21
-                    },
                     "image": "andesite.png",
                     "name": "Andesite"
                 },
                 "6": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 22
-                    },
                     "image": "polishedandesite.png",
                     "name": "Polished Andesite"
                 }
@@ -6274,11 +4080,6 @@
             "transparent": false
         },
         "stone_axe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 12
-            },
             "durability": 131,
             "image": "stoneaxe.png",
             "itemID": 275,
@@ -6286,43 +4087,23 @@
         },
         "stone_brick_stairs": {
             "blockID": 109,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 28
-            },
             "image": "stonebrickstairs.png",
             "itemID": 109,
             "name": "Stone Brick Stairs"
         },
         "stone_button": {
             "blockID": 77,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 11
-            },
             "image": "stonebutton.png",
             "itemID": 77,
             "name": "Stone Button"
         },
         "stone_hoe": {
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 33
-            },
             "durability": 131,
             "image": "stonehoe.png",
             "itemID": 291,
             "name": "Stone Hoe"
         },
         "stone_pickaxe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 10
-            },
             "durability": 131,
             "image": "stonepickaxe.png",
             "itemID": 274,
@@ -6330,21 +4111,11 @@
         },
         "stone_pressure_plate": {
             "blockID": 70,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 27
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/46/Grid_Stone_Pressure_Plate.png",
             "itemID": 70,
             "name": "Stone Pressure Plate"
         },
         "stone_shovel": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 11
-            },
             "durability": 131,
             "image": "stoneshovel.png",
             "itemID": 273,
@@ -6352,11 +4123,6 @@
         },
         "stone_slab": {
             "blockID": 44,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 23
-            },
             "damageValues": {
                 "0": {
                     "name": "Stone Slab",
@@ -6389,11 +4155,6 @@
                     "texture": "stone_slab_side"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 38
-                    },
                     "image": "sandstoneslab.png",
                     "name": "Sandstone Slab",
                     "texture": "sandstone_normal",
@@ -6401,60 +4162,30 @@
                     "texture_top": "sandstone_top"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 40
-                    },
                     "image": "oakwoodslab.png",
                     "name": "Stone-Wood Slab"
                 },
                 "3": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 25
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f7/Grid_Cobblestone_Slab.png",
                     "name": "Cobblestone Slab",
                     "texture": "cobblestone"
                 },
                 "4": {
-                    "cloud": {
-                        "x": -1,
-                        "y": 1,
-                        "z": 21
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/01/Grid_Brick_Slab.png",
                     "name": "Brick Slab",
                     "texture": "brick"
                 },
                 "5": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 29
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/46/Grid_Stone_Bricks_Slab.png",
                     "name": "Stone Brick Slab",
                     "texture": "stonebrick"
                 },
                 "6": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 3,
-                        "z": 6
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/dd/Grid_Nether_Brick_Slab.png",
                     "name": "Nether Brick Slab",
                     "texture": "nether_brick"
                 },
                 "7": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 34
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/09/Grid_Quartz_Slab.png",
                     "name": "Quartz Slab",
                     "texture": "quartz_block_side",
@@ -6498,21 +4229,11 @@
         },
         "stone_stairs": {
             "blockID": 67,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 24
-            },
             "image": "cobblestairs.png",
             "itemID": 67,
             "name": "Cobblestone Stairs"
         },
         "stone_sword": {
-            "cloud": {
-                "x": 1,
-                "y": 5,
-                "z": 4
-            },
             "durability": 131,
             "image": "stonesword.png",
             "itemID": 272,
@@ -6520,36 +4241,16 @@
         },
         "stonebrick": {
             "blockID": 98,
-            "cloud": {
-                "x": 0,
-                "y": 1,
-                "z": 3
-            },
             "damageValues": {
                 "1": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 30
-                    },
                     "image": "mossystonebricks.png",
                     "name": "Mossy Stone Brick"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 31
-                    },
                     "image": "crackedstonebricks.png",
                     "name": "Cracked Stone Brick"
                 },
                 "3": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 1,
-                        "z": 32
-                    },
                     "image": "chiseledstonebricks.png",
                     "name": "Chiseled Stone Brick"
                 }
@@ -6559,32 +4260,17 @@
             "name": "Stone Brick"
         },
         "string": {
-            "cloud": {
-                "x": -1,
-                "y": 2,
-                "z": 30
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fa/Grid_String.png",
             "itemID": 287,
             "name": "String"
         },
         "sugar": {
-            "cloud": {
-                "x": -1,
-                "y": 4,
-                "z": 8
-            },
             "image": "sugar.png",
             "itemID": 353,
             "name": "Sugar"
         },
         "tallgrass": {
             "blockID": 31,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 26
-            },
             "damageValues": {
                 "0": {
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f6/Grid_Dead_Bush.png",
@@ -6598,11 +4284,6 @@
                     "texture_uncolored": "tallgrass"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 0,
-                        "y": 4,
-                        "z": 27
-                    },
                     "color_map": "foliage",
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e1/Grid_Tall_Grass3.png",
                     "name": "Fern",
@@ -6618,11 +4299,6 @@
         },
         "tnt": {
             "blockID": 46,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 16
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2b/Grid_TNT.png",
             "itemID": 46,
             "name": "TNT",
@@ -6632,22 +4308,12 @@
             "texture_top": "tnt_top"
         },
         "tnt_minecart": {
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 25
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/93/Grid_Minecart_with_TNT.png",
             "itemID": 407,
             "name": "Minecart with TNT"
         },
         "torch": {
             "blockID": 50,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 3
-            },
             "image": "torch.png",
             "itemID": 50,
             "name": "Torch",
@@ -6657,22 +4323,12 @@
         },
         "trapdoor": {
             "blockID": 96,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 3
-            },
             "image": "trapdoor.png",
             "itemID": 96,
             "name": "Trapdoor"
         },
         "trapped_chest": {
             "blockID": 146,
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 5
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bb/Grid_Trapped_Chest.png",
             "itemID": 146,
             "name": "Trapped Chest"
@@ -6685,11 +4341,6 @@
         },
         "tripwire_hook": {
             "blockID": 131,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 12
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/90/Grid_Tripwire_Hook.png",
             "itemID": 131,
             "name": "Tripwire Hook"
@@ -6714,11 +4365,6 @@
         },
         "vine": {
             "blockID": 106,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 29
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/29/Grid_Vines.png",
             "itemID": 106,
             "name": "Vines"
@@ -6745,33 +4391,18 @@
             "texture": "water_still"
         },
         "water_bucket": {
-            "cloud": {
-                "x": 1,
-                "y": 1,
-                "z": 14
-            },
             "image": "waterbucket.png",
             "itemID": 326,
             "name": "Water Bucket"
         },
         "waterlily": {
             "blockID": 111,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 30
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/49/Grid_Lily_Pad.png",
             "itemID": 111,
             "name": "Lily Pad"
         },
         "web": {
             "blockID": 30,
-            "cloud": {
-                "x": 1,
-                "y": 4,
-                "z": 1
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/36/Grid_Cobweb.png",
             "itemID": 30,
             "name": "Cobweb",
@@ -6810,11 +4441,6 @@
                 },
                 "image": "wheatseeds.png"
             },
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 0
-            },
             "image": "wheat.png",
             "itemID": 296,
             "name": "Wheat",
@@ -6822,21 +4448,11 @@
             "solid": false
         },
         "wheat_seeds": {
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 2
-            },
             "image": "wheatseeds.png",
             "itemID": 295,
             "name": "Seeds"
         },
         "wooden_axe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 15
-            },
             "durability": 59,
             "image": "woodaxe.png",
             "itemID": 271,
@@ -6844,11 +4460,6 @@
         },
         "wooden_button": {
             "blockID": 143,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 10
-            },
             "image": "woodbutton.png",
             "itemID": 143,
             "name": "Wooden Button"
@@ -6895,22 +4506,12 @@
             ]
         },
         "wooden_hoe": {
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 34
-            },
             "durability": 59,
             "image": "woodhoe.png",
             "itemID": 290,
             "name": "Wooden Hoe"
         },
         "wooden_pickaxe": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 13
-            },
             "durability": 59,
             "image": "woodpickaxe.png",
             "itemID": 270,
@@ -6918,21 +4519,11 @@
         },
         "wooden_pressure_plate": {
             "blockID": 72,
-            "cloud": {
-                "x": 0,
-                "y": 2,
-                "z": 26
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/d4/Grid_Wooden_Pressure_Plate.png",
             "itemID": 72,
             "name": "Wooden Pressure Plate"
         },
         "wooden_shovel": {
-            "cloud": {
-                "x": 0,
-                "y": 5,
-                "z": 14
-            },
             "durability": 59,
             "image": "woodshovel.png",
             "itemID": 269,
@@ -6940,57 +4531,27 @@
         },
         "wooden_slab": {
             "blockID": 126,
-            "cloud": {
-                "x": 1,
-                "y": 2,
-                "z": 28
-            },
             "damageValues": {
                 "0": {
                     "name": "Oak Wood Slab"
                 },
                 "1": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 29
-                    },
                     "image": "sprucewoodslab.png",
                     "name": "Spruce Wood Slab"
                 },
                 "2": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 30
-                    },
                     "image": "birchwoodslab.png",
                     "name": "Birch Wood Slab"
                 },
                 "3": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 31
-                    },
                     "image": "junglewoodslab.png",
                     "name": "Jungle Wood Slab"
                 },
                 "4": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 32
-                    },
                     "image": "acaciawoodslab.png",
                     "name": "Acacia Wood Slab"
                 },
                 "5": {
-                    "cloud": {
-                        "x": 1,
-                        "y": 2,
-                        "z": 33
-                    },
                     "image": "darkoakwoodslab.png",
                     "name": "Dark Oak Wood Slab"
                 }
@@ -7000,11 +4561,6 @@
             "name": "Wooden Slab"
         },
         "wooden_sword": {
-            "cloud": {
-                "x": 1,
-                "y": 5,
-                "z": 5
-            },
             "durability": 59,
             "image": "woodsword.png",
             "itemID": 268,
@@ -7012,161 +4568,81 @@
         },
         "wool": {
             "blockID": 35,
-            "cloud": {
-                "x": -2,
-                "y": 1,
-                "z": 0
-            },
             "damageValues": {
                 "0": {
                     "name": "White Wool"
                 },
                 "1": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 1
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/07/Grid_Orange_Wool.png",
                     "name": "Orange Wool",
                     "texture": "wool_colored_orange"
                 },
                 "10": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 10
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/51/Grid_Purple_Wool.png",
                     "name": "Purple Wool",
                     "texture": "wool_colored_purple"
                 },
                 "11": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 11
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/40/Grid_Blue_Wool.png",
                     "name": "Blue Wool",
                     "texture": "wool_colored_blue"
                 },
                 "12": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 12
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2a/Grid_Brown_Wool.png",
                     "name": "Brown Wool",
                     "texture": "wool_colored_brown"
                 },
                 "13": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 13
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fa/Grid_Green_Wool.png",
                     "name": "Green Wool",
                     "texture": "wool_colored_green"
                 },
                 "14": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 14
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/2a/Grid_Red_Wool.png",
                     "name": "Red Wool",
                     "texture": "wool_colored_red"
                 },
                 "15": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 15
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/45/Grid_Black_Wool.png",
                     "name": "Black Wool",
                     "texture": "wool_colored_black"
                 },
                 "2": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 2
-                    },
                     "image": "magentawool.png",
                     "name": "Magenta Wool",
                     "texture": "wool_colored_magenta"
                 },
                 "3": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 3
-                    },
                     "image": "lightbluewool.png",
                     "name": "Light Blue Wool",
                     "texture": "wool_colored_light_blue"
                 },
                 "4": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 4
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ed/Grid_Yellow_Wool.png",
                     "name": "Yellow Wool",
                     "texture": "wool_colored_yellow"
                 },
                 "5": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 5
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/a/a2/Grid_Lime_Wool.png",
                     "name": "Lime Wool",
                     "texture": "wool_colored_lime"
                 },
                 "6": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 6
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/b3/Grid_Pink_Wool.png",
                     "name": "Pink Wool",
                     "texture": "wool_colored_pink"
                 },
                 "7": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 7
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/d3/Grid_Gray_Wool.png",
                     "name": "Gray Wool",
                     "texture": "wool_colored_gray"
                 },
                 "8": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 8
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e5/Grid_Light_Gray_Wool.png",
                     "name": "Light Gray Wool",
                     "texture": "wool_colored_silver"
                 },
                 "9": {
-                    "cloud": {
-                        "x": -2,
-                        "y": 1,
-                        "z": 9
-                    },
                     "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/cd/Grid_Cyan_Wool.png",
                     "name": "Cyan Wool",
                     "texture": "wool_colored_cyan"
@@ -7179,11 +4655,6 @@
             "texture": "wool_colored_white"
         },
         "writable_book": {
-            "cloud": {
-                "x": 0,
-                "y": 6,
-                "z": 2
-            },
             "image": "bookandquill.png",
             "itemID": 386,
             "name": "Book and Quill"
@@ -7195,11 +4666,6 @@
         },
         "yellow_flower": {
             "blockID": 37,
-            "cloud": {
-                "x": 0,
-                "y": 4,
-                "z": 12
-            },
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/49/Grid_Dandelion.png",
             "itemID": 37,
             "name": "Dandelion",
