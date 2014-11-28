@@ -1098,7 +1098,7 @@
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
-                "id": "minecaft:slab"
+                "id": "minecraft:stone_slab"
             },
             {
                 "damage": 0,
