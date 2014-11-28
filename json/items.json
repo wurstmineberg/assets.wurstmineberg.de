@@ -1117,7 +1117,7 @@
                     "texture": "cobblestone"
                 },
                 "4": {
-                    "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/01/Grid_Brick_Slab.png",
+                    "image": "brickslab.png",
                     "name": "Double Brick Slab",
                     "texture": "brick"
                 },
