@@ -915,7 +915,7 @@
         },
         "deadbush": {
             "blockID": 32,
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f6/Grid_Dead_Bush.png",
+            "image": "deadbush.png",
             "itemID": 32,
             "name": "Dead Bush",
             "texture": "deadbush"
@@ -1544,7 +1544,7 @@
             "texture_top": "furnace_top"
         },
         "furnace_minecart": {
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7f/Grid_Powered_Minecart.png",
+            "image": "minecartwithfurnace.png",
             "itemID": 343,
             "name": "Minecart with Furnace"
         },
@@ -2108,12 +2108,12 @@
                     "texture_uncolored": "leaves_spruce_opaque"
                 },
                 "2": {
-                    "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/0a/Grid_Leaves_%28Birch%29.png",
+                    "image": "birchleaves.png",
                     "name": "Birch Leaves",
                     "texture_uncolored": "leaves_birch_opaque"
                 },
                 "3": {
-                    "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1b/Grid_Leaves_%28Jungle%29.png",
+                    "image": "jungleleaves.png",
                     "name": "Jungle Leaves",
                     "texture_uncolored": "leaves_jungle_opaque"
                 }
@@ -2131,11 +2131,11 @@
                     "name": "Acacia Leaves"
                 },
                 "1": {
-                    "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/57/Grid_Dark_Oak_Leaves.png",
+                    "image": "darkoakleaves.png",
                     "name": "Dark Oak Leaves"
                 }
             },
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/76/Grid_Acacia_Leaves.png",
+            "image": "acacialeaves.png",
             "itemID": 161,
             "name": "Leaves"
         },
@@ -2275,7 +2275,7 @@
             "name": "Melon Stem"
         },
         "milk_bucket": {
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/63/Grid_Milk_Bucket.png",
+            "image": "milkbucket.png",
             "itemID": 335,
             "name": "Milk"
         },
@@ -4171,7 +4171,7 @@
                     "texture": "cobblestone"
                 },
                 "4": {
-                    "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/01/Grid_Brick_Slab.png",
+                    "image": "brickslab.png",
                     "name": "Brick Slab",
                     "texture": "brick"
                 },
@@ -4273,19 +4273,18 @@
             "blockID": 31,
             "damageValues": {
                 "0": {
-                    "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f6/Grid_Dead_Bush.png",
+                    "image": "deadbush.png",
                     "name": "Shrub",
                     "texture": "deadbush"
                 },
                 "1": {
                     "color_map": "foliage",
-                    "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c1/Grid_Tall_Grass2.png",
                     "texture_needs_colorisation": true,
                     "texture_uncolored": "tallgrass"
                 },
                 "2": {
                     "color_map": "foliage",
-                    "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e1/Grid_Tall_Grass3.png",
+                    "image": "fern.png",
                     "name": "Fern",
                     "texture_needs_colorisation": true,
                     "texture_uncolored": "fern"
