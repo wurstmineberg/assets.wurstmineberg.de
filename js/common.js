@@ -525,7 +525,7 @@ function bindTabEvents() {
         var id = $(this).attr('id')
         var elementid = id.substring('tab-'.length, id.length);
         var selected = $('#' + elementid);
-        $('.stats-section').each(function(index, element) {
+        $('.section').each(function(index, element) {
             var table = $(element);
             if (table.attr('id') == selected.attr('id')) {
                 table.removeClass("hidden");
