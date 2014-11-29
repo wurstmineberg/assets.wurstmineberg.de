@@ -516,12 +516,11 @@ var API = {
     }
 }
 
-function bind_tab_events() {
+function bindTabEvents() {
     $('.tab-item').bind('click', function(eventObject) {
         eventObject.preventDefault();
         $(this).tab('show');
     });
-
     $('.tab-item').on('show.bs.tab', function(e) {
         var id = $(this).attr('id')
         var elementid = id.substring('tab-'.length, id.length);
@@ -535,16 +534,18 @@ function bind_tab_events() {
             }
         });
     });
-    
-    if (location.hash !== '') {
-        $('a[href="' + location.hash + '"]').tab('show');
-    }
+    window.onhashchange = function() {
+        if (location.hash !== '') {
+            $('a[href="' + location.hash + '"]').tab('show');
+        }
+    };
+    window.onhashchange();
     return $('a.tab-item').on('shown.bs.tab', function(e) {
         return location.hash = $(e.target).attr('href').substr(1);
     });
 }
 
-function select_tab_with_id(id) {
+function selectTabWithID(id) {
     $('#' + id).tab('show');
 }
 

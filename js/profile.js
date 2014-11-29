@@ -603,6 +603,6 @@ function loadUserData() {
     });
 }
 
-select_tab_with_id("tab-stats-profile");
-bind_tab_events();
+selectTabWithID("tab-stats-profile");
+bindTabEvents();
 loadUserData();

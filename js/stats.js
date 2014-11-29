@@ -446,8 +446,8 @@ function loadDeathgamesStatData() {
     });
 }
 
-select_tab_with_id("tab-stats-leaderboard");
-bind_tab_events();
+selectTabWithID("tab-stats-leaderboard");
+bindTabEvents();
 loadLeaderboardStatData();
 loadMobStatData();
 loadAchievementsStatData();
