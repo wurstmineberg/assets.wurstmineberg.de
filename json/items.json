@@ -120,7 +120,6 @@
             "blast_resistance": -1,
             "blockID": 0,
             "image": "air.png",
-            "itemID": 0,
             "luminance": false,
             "name": "Air",
             "renewable": false,
@@ -600,7 +599,6 @@
         "carrots": {
             "blockID": 141,
             "image": "carrot.png",
-            "itemID": 141,
             "name": "Carrot Crops"
         },
         "cauldron": {
@@ -715,7 +713,6 @@
         "cocoa": {
             "blockID": 127,
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7d/Grid_Cocoa_Beans.png",
-            "itemID": 127,
             "name": "Cocoa"
         },
         "command_block": {
@@ -911,7 +908,6 @@
         "daylight_detector_inverted": {
             "blockID": 178,
             "image": "inverteddaylightsensor.png",
-            "itemID": 178,
             "name": "Inverted Daylight Sensor"
         },
         "deadbush": {
@@ -1141,7 +1137,6 @@
                 }
             },
             "image": "stoneslab.png",
-            "itemID": 43,
             "name": "Double Slab",
             "solid": true
         },
@@ -1153,7 +1148,6 @@
                 }
             },
             "image": "redsandstoneslab.png",
-            "itemID": 181,
             "name": "Double Slab"
         },
         "double_wooden_slab": {
@@ -1184,7 +1178,6 @@
                 }
             },
             "image": "oakwoodslab.png",
-            "itemID": 125,
             "name": "Double Wooden Slab"
         },
         "dragon_egg": {
@@ -1305,7 +1298,6 @@
         "end_portal": {
             "blockID": 119,
             "image": "endportal.png",
-            "itemID": 119,
             "name": "End Portal"
         },
         "end_portal_frame": {
@@ -1445,7 +1437,6 @@
         "fire": {
             "blockID": 51,
             "image": "fire.gif",
-            "itemID": 51,
             "name": "Fire",
             "solid": false,
             "subtype": "fire",
@@ -1513,7 +1504,6 @@
         "flowing_lava": {
             "blockID": 10,
             "image": "lava.png",
-            "itemID": 10,
             "name": "Flowing Lava",
             "solid": false,
             "subtype": "lava.flow",
@@ -1522,7 +1512,6 @@
         "flowing_water": {
             "blockID": 8,
             "image": "water.png",
-            "itemID": 8,
             "name": "Flowing Water",
             "solid": false,
             "subtype": "water.flow",
@@ -2058,7 +2047,6 @@
         "lava": {
             "blockID": 11,
             "image": "lava.png",
-            "itemID": 11,
             "name": "Still Lava",
             "solid": false,
             "subtype": "lava.still",
@@ -2179,13 +2167,11 @@
         "lit_redstone_lamp": {
             "blockID": 124,
             "image": "redstonelamp.png",
-            "itemID": 124,
             "name": "Lit Redstone Lamp"
         },
         "lit_redstone_ore": {
             "blockID": 74,
             "image": "redstoneore.png",
-            "itemID": 74,
             "name": "Redstone Ore"
         },
         "log": {
@@ -2280,7 +2266,6 @@
         "melon_stem": {
             "blockID": 105,
             "image": "melonseeds.png",
-            "itemID": 105,
             "name": "Melon Stem"
         },
         "milk_bucket": {
@@ -2465,12 +2450,10 @@
         "piston_extension": {
             "blockID": 36,
             "image": "pistonextension.png",
-            "itemID": 36,
             "name": "Extending Piston Head"
         },
         "piston_head": {
             "blockID": 34,
-            "itemID": 34,
             "name": "Piston Head"
         },
         "planks": {
@@ -2524,7 +2507,6 @@
         "portal": {
             "blockID": 90,
             "image": "netherportal.gif",
-            "itemID": 90,
             "name": "Nether Portal"
         },
         "potato": {
@@ -2535,7 +2517,6 @@
         "potatoes": {
             "blockID": 142,
             "image": "potato.png",
-            "itemID": 142,
             "name": "Potato Crops"
         },
         "potion": {
@@ -2962,13 +2943,11 @@
         "powered_comparator": {
             "blockID": 150,
             "image": "comparator.png",
-            "itemID": 150,
             "name": "Alternative Powered Comparator"
         },
         "powered_repeater": {
             "blockID": 94,
             "image": "repeater.png",
-            "itemID": 94,
             "name": "Powered Repeater"
         },
         "prismarine": {
@@ -3016,7 +2995,6 @@
         "pumpkin_stem": {
             "blockID": 104,
             "image": "pumpkinseeds.png",
-            "itemID": 104,
             "name": "Pumpkin Stem"
         },
         "quartz": {
@@ -3368,7 +3346,6 @@
         "redstone_wire": {
             "blockID": 55,
             "image": "redstonedust.png",
-            "itemID": 55,
             "name": "Redstone Wire",
             "subtype": "redstone.wire",
             "texture": "redstone_dust_cross",
@@ -4020,13 +3997,11 @@
         "standing_banner": {
             "blockID": 176,
             "image": "blackbanner.png",
-            "itemID": 176,
             "name": "Standing Banner"
         },
         "standing_sign": {
             "blockID": 63,
             "image": "sign.png",
-            "itemID": 63,
             "name": "Sign",
             "solid": false,
             "subtype": "sign",
@@ -4344,7 +4319,6 @@
         "tripwire": {
             "blockID": 132,
             "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/fa/Grid_String.png",
-            "itemID": 132,
             "name": "String"
         },
         "tripwire_hook": {
@@ -4356,19 +4330,16 @@
         "unlit_redstone_torch": {
             "blockID": 75,
             "image": "unlitredstonetorch.png",
-            "itemID": 75,
             "name": "Redstone Torch"
         },
         "unpowered_comparator": {
             "blockID": 149,
             "image": "comparator.png",
-            "itemID": 149,
             "name": "Comparator"
         },
         "unpowered_repeater": {
             "blockID": 93,
             "image": "repeater.png",
-            "itemID": 93,
             "name": "Repeater"
         },
         "vine": {
@@ -4380,19 +4351,16 @@
         "wall_banner": {
             "blockID": 177,
             "image": "yellowbanner.png",
-            "itemID": 177,
             "name": "Wall Banner"
         },
         "wall_sign": {
             "blockID": 68,
             "image": "sign.png",
-            "itemID": 68,
             "name": "Sign"
         },
         "water": {
             "blockID": 9,
             "image": "water.png",
-            "itemID": 9,
             "name": "Still Water",
             "solid": false,
             "subtype": "water.still",
