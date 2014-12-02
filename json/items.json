@@ -119,6 +119,7 @@
         "air": {
             "blast_resistance": -1,
             "blockID": 0,
+            "image": "air.png",
             "itemID": 0,
             "luminance": false,
             "name": "Air",
@@ -719,7 +720,7 @@
         },
         "command_block": {
             "blockID": 137,
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/de/Grid_Adventure_Mode_Control_Block.png",
+            "image": "commandblock.png",
             "itemID": 137,
             "name": "Command Block"
         },
@@ -1182,7 +1183,7 @@
                     "name": "Double Dark Oak Wood Slab"
                 }
             },
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/4e/Grid_Wooden_Slab.png",
+            "image": "oakwoodslab.png",
             "itemID": 125,
             "name": "Double Wooden Slab"
         },
@@ -1309,7 +1310,7 @@
         },
         "end_portal_frame": {
             "blockID": 120,
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/27/Grid_End_Portal_Frame.png",
+            "image": "endportalframe.png",
             "itemID": 120,
             "name": "End Portal Frame"
         },
@@ -1458,12 +1459,12 @@
             "name": "Fire Charge"
         },
         "firework_charge": {
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/40/Grid_Firework_star.png",
+            "image": "fireworkstar.png",
             "itemID": 402,
             "name": "Firework Star"
         },
         "fireworks": {
-            "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/12/Grid_Fireworks.png",
+            "image": "fireworkrocket.png",
             "itemID": 401,
             "name": "Firework Rocket"
         },
