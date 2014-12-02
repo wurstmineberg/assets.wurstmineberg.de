@@ -119,6 +119,7 @@
         "air": {
             "blast_resistance": -1,
             "blockID": 0,
+            "image": "air.png",
             "itemID": 0,
             "luminance": false,
             "name": "Air",
