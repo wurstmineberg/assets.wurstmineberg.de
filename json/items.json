@@ -1393,6 +1393,11 @@
                 {
                     "structure": "village",
                     "type": "structure"
+                },
+                {
+                    "amount": 4,
+                    "structure": "witchHut",
+                    "type": "structure"
                 }
             ]
         },

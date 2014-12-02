@@ -23,5 +23,13 @@
             "plural": "villages"
         },
         "requiresOption": true
+    },
+    "witchHut": {
+        "dimension": "overworld",
+        "name": {
+            "default": "witch hut",
+            "plural": "villages"
+        },
+        "requiresOption": true
     }
 }
