@@ -1,0 +1,27 @@
+{
+    "abandonedMineShaft": {
+        "dimension": "overworld",
+        "name": {
+            "default": "abandoned mine shaft",
+            "plural": "abandoned mine shafts"
+        },
+        "requiresOption": true
+    },
+    "stronghold": {
+        "dimension": "overworld",
+        "infinite": false,
+        "name": {
+            "default": "stronghold",
+            "plural": "strongholds"
+        },
+        "requiresOption": true
+    },
+    "village": {
+        "dimension": "overworld",
+        "name": {
+            "default": "village",
+            "plural": "villages"
+        },
+        "requiresOption": true
+    }
+}

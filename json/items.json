@@ -1392,6 +1392,14 @@
                         }
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "abandonedMineShaft",
+                    "type": "structure"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
                 }
             ]
         },
@@ -3214,6 +3222,9 @@
                     "obtaining": [
                         {
                             "recipe": [
+                                null,
+                                null,
+                                null,
                                 {
                                     "damage": 1,
                                     "id": "minecraft:sand"
@@ -3231,9 +3242,6 @@
                                     "damage": 1,
                                     "id": "minecraft:sand"
                                 },
-                                null,
-                                null,
-                                null,
                                 null
                             ],
                             "type": "craftingShaped"
@@ -3247,6 +3255,9 @@
                         {
                             "outputAmount": 4,
                             "recipe": [
+                                null,
+                                null,
+                                null,
                                 {
                                     "damage": 0,
                                     "id": "minecraft:red_sandstone"
@@ -3264,9 +3275,6 @@
                                     "damage": 0,
                                     "id": "minecraft:red_sandstone"
                                 },
-                                null,
-                                null,
-                                null,
                                 null
                             ],
                             "type": "craftingShaped"
@@ -3279,6 +3287,10 @@
                     "obtaining": [
                         {
                             "recipe": [
+                                null,
+                                null,
+                                null,
+                                null,
                                 {
                                     "damage": 0,
                                     "id": "minecraft:stone_slab2"
@@ -3289,10 +3301,6 @@
                                     "damage": 0,
                                     "id": "minecraft:stone_slab2"
                                 },
-                                null,
-                                null,
-                                null,
-                                null,
                                 null
                             ],
                             "type": "craftingShaped"

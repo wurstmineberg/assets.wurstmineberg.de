@@ -1,0 +1,4 @@
+* dimension: the dimension in which the structure generates: "overworld", "nether", or "end".
+* infinite: whether an “infinite” (limited only by the world size) number of these structures generate. Defaults to true.
+* name: human-readable structure name, in singular and plural form.
+* requiresOption: whether the structure requires the Generate Structures world option to be generated. Defaults to true.

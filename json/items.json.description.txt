@@ -71,6 +71,9 @@ The fields for the damage values and block info implicitely inherit the values o
         * tools: an array of item stubs specifying the tools with which this method of obtaining works, or null for no tool. Defaults to all tools.
         * excludeTools: if true, this method of obtaining works with tools other than those in the tools array. Defaults to false.
         * silkTouch: whether or not the Silk Touch enchantment should be used. The default, null, means that it works with or without Silk Touch.
+    * structure: the block generates naturally as part of a structure.
+        * amount: how many of the block will typically generate as part of a single structure. If not given, it varies.
+        * structure: the structure ID as used in structures.json
     * trading: the item can be bought from a testificate.
         * profession: the villager type ID, determining their appearance. For example, 0 for farmers.
         * career: the villager subtype ID, determining their trades. For example, 2 for fishermen (profession 0) or weapon smiths (profession 3).
@@ -87,15 +90,12 @@ The fields for the damage values and block info implicitely inherit the values o
         * stacksMax: the maximum number of total stacks generated in the bonus chest.
         * weight: the chance that a generated stack will have this item.
     * chest: the item may appear in chests or other inventories generated naturally with structures in the world.
-        * dimension: the dimension in which the structure generates: "overworld", "nether", or "end".
-        * infinite: whether an “infinite” (limited only by the world size) number of these structures generate. Defaults to true.
-        * generateStructures: whether the chests require the Generate Structures world option to be generated. Defaults to true.
         * amountMin: the minimum number of items in a single generated stack. Defaults to 1.
         * amountMax: the maximum number of items in a single generated stack. Defaults to 1.
         * stacksMin: the minimum number of total stacks generated in the chest.
         * stacksMax: the maximum number of total stacks generated in the chest.
         * weight: the chance that a generated stack will have this item.
-        * structureName: a human-readable version of the structure's name, in singular and title case.
+        * structure: the structure ID as used in structres.json
         * inventoryType: a human-readable version of the type of inventory in plural (e.g. “dispensers” or “library chests”). Defaults to “chests”.
 * dropsSelf: an array of objects structured like “method of obtaining: mining” objects, except without the “block” key. This is used to specify how the block must be mined so that it drops itself. The default is true, implying that the block always drops itself.
 * durability: the durability of the tool, as displayed in-game.
