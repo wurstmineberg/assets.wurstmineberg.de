@@ -513,7 +513,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
     initialize_tooltips();
 }
 
-function displayMinigameData(people, person) {
+function displayMinigameData(people, person, deathGamesLog) {
     // Achievement Run
     $.when(people.achievementWinners()).done(function(winners) {
         for (var index = 0; index < winners.length; index++) {
@@ -553,6 +553,96 @@ function displayMinigameData(people, person) {
             }
         }
     });
+    // Death Games
+    function() {
+        var log = deathGamesLog.log;
+        var participating = people.activePeople;
+        if ('participating' in deathGamesLog) {
+            if (person.id in deathGamesLog.participating) {
+                participating = people.sorted(deathGamesLog.participating);
+            } else {
+                return;
+            }
+        }
+        var stats = {
+            kills: function(person) {
+                return log.filter(function(logEntry) {
+                    if (logEntry.success) {
+                        return (logEntry.attacker == person.id);
+                    } else {
+                        return (logEntry.target == person.id);
+                    }
+                }).length;
+            },
+            deaths: function(person) {
+                return log.filter(function(logEntry) {
+                    if (logEntry.success) {
+                        return (logEntry.target == person.id);
+                    } else {
+                        return (logEntry.attacker == person.id);
+                    }
+                }).length;
+            },
+            diamonds: function(person) {
+                ret = 0;
+                log.forEach(function(logEntry) {
+                    if (logEntry.attacker == person.id) {
+                        if (logEntry.success) {
+                            ret++;
+                        } else {
+                            ret--;
+                        }
+                    } else if (logEntry.target == person.id) {
+                        if (logEntry.success) {
+                            ret--;
+                        } else {
+                            ret++;
+                        }
+                    }
+                });
+                return ret;
+            },
+            attacks: function(person) {
+                return log.filter(function(logEntry) {
+                    return (logEntry.attacker == person.id);
+                }).length;
+            },
+            'attacks-success': function(person) {
+                return log.filter(function(logEntry) {
+                    return (logEntry.attacker == person.id && logEntry.success);
+                }).length;
+            },
+            'attacks-fail': function(person) {
+                return log.filter(function(logEntry) {
+                    return (logEntry.attacker == person.id && !logEntry.success);
+                }).length;
+            },
+            defense: function(person) {
+                return log.filter(function(logEntry) {
+                    return (logEntry.target == person.id);
+                }).length;
+            },
+            'defense-success': function(person) {
+                return log.filter(function(logEntry) {
+                    return (logEntry.target == person.id && !logEntry.success);
+                }).length;
+            },
+            'defense-fail': function(person) {
+                return log.filter(function(logEntry) {
+                    return (logEntry.target == person.id && logEntry.success);
+                }).length;
+            }
+        }
+        $.each(stats, function(statName, statFunction) {
+            var value = statFunction(person);
+            var statRow = $('#minigames-stat-row-deathgames-' + statName);
+            if (value === null) {
+                statRow.children('.value').html('');
+            } else {
+                statRow.children('.value').html(value);
+            }
+        });
+    }();
 }
 
 function loadStatData(person, string_data, achievement_data, biomes, items, mobData) {
@@ -585,7 +675,11 @@ function loadUserData() {
             }).fail(function() {
                 displayProfileData(person, items, people, {});
             });
-            displayMinigameData(people, person);
+            $.when(API.deathGamesLog()).done(function(deathGamesLog) {
+                displayMinigameData(people, person, deathGamesLog);
+            }).fail(function() {
+                $('#minigames-stats-table-deathgames').replace($('<p>', {'class': 'text-danger'}).text('Failed to load Death Games log. Refresh to try again.'));
+            });
         }).fail(function(deferred, error, description) {
             if (isDev) {
                 [].slice.apply(arguments).forEach(function(arg) {
