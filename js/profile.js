@@ -557,13 +557,15 @@ function displayMinigameData(people, person, deathGamesLog) {
     var log = deathGamesLog.log;
     var participating = people.activePeople;
     if ('participating' in deathGamesLog) {
-        if (person.id in deathGamesLog.participating) {
+        if (deathGamesLog.participating.indexOf(person.id) > -1) {
             participating = people.sorted(deathGamesLog.participating);
         } else {
             participating = undefined;
         }
     }
-    if (typeof participating !== 'undefined') {
+    if (typeof participating === 'undefined') {
+        $('#minigames-stats-table-deathgames').replace($('<p>', {'class': 'muted'}).text('Not participating.'));
+    } else {
         var stats = {
             kills: function(person) {
                 return log.filter(function(logEntry) {
