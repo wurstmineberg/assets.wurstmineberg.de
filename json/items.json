@@ -1415,7 +1415,7 @@
                         "minecraft:stick",
                         {
                             "damage": 0,
-                            "id": "minecaft:planks"
+                            "id": "minecraft:planks"
                         },
                         "minecraft:stick",
                         "minecraft:stick",
@@ -3763,7 +3763,7 @@
                         null,
                         null,
                         null,
-                        "mincraft:stick",
+                        "minecraft:stick",
                         {
                             "damage": 1,
                             "id": "minecraft:planks"
