@@ -554,16 +554,16 @@ function displayMinigameData(people, person, deathGamesLog) {
         }
     });
     // Death Games
-    function() {
-        var log = deathGamesLog.log;
-        var participating = people.activePeople;
-        if ('participating' in deathGamesLog) {
-            if (person.id in deathGamesLog.participating) {
-                participating = people.sorted(deathGamesLog.participating);
-            } else {
-                return;
-            }
+    var log = deathGamesLog.log;
+    var participating = people.activePeople;
+    if ('participating' in deathGamesLog) {
+        if (person.id in deathGamesLog.participating) {
+            participating = people.sorted(deathGamesLog.participating);
+        } else {
+            participating = undefined;
         }
+    }
+    if (typeof participating !== 'undefined') {
         var stats = {
             kills: function(person) {
                 return log.filter(function(logEntry) {
@@ -642,7 +642,7 @@ function displayMinigameData(people, person, deathGamesLog) {
                 statRow.children('.value').html(value);
             }
         });
-    }();
+    }
 }
 
 function loadStatData(person, string_data, achievement_data, biomes, items, mobData) {
