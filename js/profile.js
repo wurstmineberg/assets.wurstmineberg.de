@@ -564,7 +564,7 @@ function displayMinigameData(people, person, deathGamesLog) {
         }
     }
     if (typeof participating === 'undefined') {
-        $('#minigames-stats-table-deathgames').replace($('<p>', {'class': 'muted'}).text('Not participating.'));
+        $('#minigames-stats-table-deathgames').replaceWith($('<p>', {'class': 'muted'}).text('Not participating.'));
     } else {
         var stats = {
             kills: function(person) {
@@ -680,7 +680,7 @@ function loadUserData() {
             $.when(API.deathGamesLog()).done(function(deathGamesLog) {
                 displayMinigameData(people, person, deathGamesLog);
             }).fail(function() {
-                $('#minigames-stats-table-deathgames').replace($('<p>', {'class': 'text-danger'}).text('Failed to load Death Games log. Refresh to try again.'));
+                $('#minigames-stats-table-deathgames').replaceWith($('<p>', {'class': 'text-danger'}).text('Failed to load Death Games log. Refresh to try again.'));
             });
         }).fail(function(deferred, error, description) {
             if (isDev) {
