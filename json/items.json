@@ -2716,7 +2716,7 @@
                 "16459": {
                     "alwaysGlow": true,
                     "image": "splashjumppotion.png",
-                    "name": "Splash Potion of Leaping"
+                    "name": "Splash Potion of Leaping, extended"
                 },
                 "16460": {
                     "alwaysGlow": true,
@@ -2923,7 +2923,7 @@
                 "8267": {
                     "alwaysGlow": true,
                     "image": "jumppotion.png",
-                    "name": "Potion of Leaping"
+                    "name": "Potion of Leaping, extended"
                 },
                 "8268": {
                     "alwaysGlow": true,
