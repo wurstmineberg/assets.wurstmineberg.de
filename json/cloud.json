@@ -1820,6 +1820,15 @@
             },
             {
                 "damage": 0,
+                "exists": false,
+                "hasOverflow": false,
+                "hasSmartChest": false,
+                "hasSorter": false,
+                "id": "minecraft:redstone_lamp"
+            },
+            {
+                "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1827,6 +1836,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1834,6 +1844,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1841,17 +1852,11 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
                 "id": "minecraft:sticky_piston"
-            },
-            {
-                "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:redstone_lamp"
             },
             {
                 "damage": 0,
@@ -1890,6 +1895,15 @@
             },
             {
                 "damage": 0,
+                "exists": false,
+                "hasOverflow": false,
+                "hasSmartChest": false,
+                "hasSorter": false,
+                "id": "minecraft:hopper"
+            },
+            {
+                "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1897,17 +1911,11 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
                 "id": "minecraft:dropper"
-            },
-            {
-                "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:hopper"
             },
             {
                 "damage": 0,
@@ -3406,20 +3414,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:melon_block"
-            },
-            {
-                "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:melon_seeds"
-            },
-            {
-                "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3427,6 +3422,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3434,6 +3430,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3441,17 +3438,35 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
-                "id": "minecraft:cactus"
+                "id": "minecraft:melon_seeds"
             },
             {
                 "damage": 0,
+                "exists": false,
+                "hasOverflow": false,
+                "hasSmartChest": false,
+                "hasSorter": false,
+                "id": "minecraft:melon_block"
+            },
+            {
+                "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
                 "id": "minecraft:reeds"
+            },
+            {
+                "damage": 0,
+                "exists": false,
+                "hasOverflow": false,
+                "hasSmartChest": false,
+                "hasSorter": false,
+                "id": "minecraft:cactus"
             },
             {
                 "damage": 0,
