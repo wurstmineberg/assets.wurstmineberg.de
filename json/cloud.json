@@ -1174,7 +1174,7 @@
                 "damage": 0,
                 "hasOverflow": false,
                 "hasSmartChest": true,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:quartz_stairs"
             },
             {
