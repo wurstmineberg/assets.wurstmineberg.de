@@ -99,3 +99,4 @@ The fields for the damage values and block info implicitely inherit the values o
         * inventoryType: a human-readable version of the type of inventory in plural (e.g. “dispensers” or “library chests”). Defaults to “chests”.
 * dropsSelf: an array of objects structured like “method of obtaining: mining” objects, except without the “block” key. This is used to specify how the block must be mined so that it drops itself. The default is true, implying that the block always drops itself.
 * durability: the durability of the tool, as displayed in-game.
+* stackable: how many of this item, given that they are identical, may be stacked together. May be true or omitted for stackable (64), false for unstackable (1), or another positive integer for a custom value.

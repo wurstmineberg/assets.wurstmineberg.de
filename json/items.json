@@ -169,7 +169,8 @@
                     ],
                     "type": "craftingShaped"
                 }
-            ]
+            ],
+            "stackable": 16
         },
         "arrow": {
             "image": "arrow.png",
@@ -249,7 +250,8 @@
             },
             "image": "redbanner.png",
             "itemID": 425,
-            "name": "Banner"
+            "name": "Banner",
+            "stackable": 16
         },
         "barrier": {
             "blockID": 166,
@@ -280,6 +282,7 @@
             "itemID": 355,
             "name": "Bed",
             "solid": false,
+            "stackable": false,
             "subtype": "bed",
             "texture": "bed_feet_top"
         },
@@ -419,7 +422,8 @@
         "boat": {
             "image": "boat.png",
             "itemID": 333,
-            "name": "Boat"
+            "name": "Boat",
+            "stackable": false
         },
         "bone": {
             "image": "bone.png",
@@ -445,7 +449,8 @@
             "durability": 384,
             "image": "bow.png",
             "itemID": 261,
-            "name": "Bow"
+            "name": "Bow",
+            "stackable": false
         },
         "bowl": {
             "image": "bowl.png",
@@ -500,7 +505,8 @@
         "bucket": {
             "image": "bucket.png",
             "itemID": 325,
-            "name": "Bucket"
+            "name": "Bucket",
+            "stackable": 16
         },
         "cactus": {
             "blockID": 81,
@@ -512,7 +518,8 @@
             "blockID": 92,
             "image": "cake.png",
             "itemID": 354,
-            "name": "Cake"
+            "name": "Cake",
+            "stackable": false
         },
         "carpet": {
             "blockID": 171,
@@ -594,7 +601,8 @@
             "durability": 25,
             "image": "carrotstick.png",
             "itemID": 398,
-            "name": "Carrot on a Stick"
+            "name": "Carrot on a Stick",
+            "stackable": false
         },
         "carrots": {
             "blockID": 141,
@@ -611,25 +619,29 @@
             "durability": 195,
             "image": "chainboots.png",
             "itemID": 305,
-            "name": "Chain Boots"
+            "name": "Chain Boots",
+            "stackable": false
         },
         "chainmail_chestplate": {
             "durability": 240,
             "image": "chainchestplate.png",
             "itemID": 303,
-            "name": "Chain Chestplate"
+            "name": "Chain Chestplate",
+            "stackable": false
         },
         "chainmail_helmet": {
             "durability": 165,
             "image": "chainhelmet.png",
             "itemID": 302,
-            "name": "Chain Helmet"
+            "name": "Chain Helmet",
+            "stackable": false
         },
         "chainmail_leggings": {
             "durability": 225,
             "image": "chainleggings.png",
             "itemID": 304,
-            "name": "Chain Leggings"
+            "name": "Chain Leggings",
+            "stackable": false
         },
         "chest": {
             "blockID": 54,
@@ -642,7 +654,8 @@
         "chest_minecart": {
             "image": "minecartwithchest.png",
             "itemID": 342,
-            "name": "Minecart with Chest"
+            "name": "Minecart with Chest",
+            "stackable": false
         },
         "chicken": {
             "image": "rawchicken.png",
@@ -724,7 +737,8 @@
         "command_block_minecart": {
             "image": "minecartwithcommandblock.png",
             "itemID": 422,
-            "name": "Minecart with Command Block"
+            "name": "Minecart with Command Block",
+            "stackable": false
         },
         "comparator": {
             "image": "comparator.png",
@@ -939,7 +953,8 @@
             "durability": 1561,
             "image": "diamondaxe.png",
             "itemID": 279,
-            "name": "Diamond Axe"
+            "name": "Diamond Axe",
+            "stackable": false
         },
         "diamond_block": {
             "blockID": 57,
@@ -953,36 +968,42 @@
             "durability": 429,
             "image": "diamondboots.png",
             "itemID": 313,
-            "name": "Diamond Boots"
+            "name": "Diamond Boots",
+            "stackable": false
         },
         "diamond_chestplate": {
             "durability": 528,
             "image": "diamondchestplate.png",
             "itemID": 311,
-            "name": "Diamond Chestplate"
+            "name": "Diamond Chestplate",
+            "stackable": false
         },
         "diamond_helmet": {
             "durability": 363,
             "image": "diamondhelmet.png",
             "itemID": 310,
-            "name": "Diamond Helmet"
+            "name": "Diamond Helmet",
+            "stackable": false
         },
         "diamond_hoe": {
             "durability": 1561,
             "image": "diamondhoe.png",
             "itemID": 293,
-            "name": "Diamond Hoe"
+            "name": "Diamond Hoe",
+            "stackable": false
         },
         "diamond_horse_armor": {
             "image": "diamondhorsearmor.png",
             "itemID": 419,
-            "name": "Diamond Horse Armor"
+            "name": "Diamond Horse Armor",
+            "stackable": false
         },
         "diamond_leggings": {
             "durability": 495,
             "image": "diamondleggings.png",
             "itemID": 312,
-            "name": "Diamond Leggings"
+            "name": "Diamond Leggings",
+            "stackable": false
         },
         "diamond_ore": {
             "blockID": 56,
@@ -996,19 +1017,22 @@
             "durability": 1561,
             "image": "diamondpickaxe.png",
             "itemID": 278,
-            "name": "Diamond Pickaxe"
+            "name": "Diamond Pickaxe",
+            "stackable": false
         },
         "diamond_shovel": {
             "durability": 1561,
             "image": "diamondshovel.png",
             "itemID": 277,
-            "name": "Diamond Shovel"
+            "name": "Diamond Shovel",
+            "stackable": false
         },
         "diamond_sword": {
             "durability": 1561,
             "image": "diamondsword.png",
             "itemID": 276,
-            "name": "Diamond Sword"
+            "name": "Diamond Sword",
+            "stackable": false
         },
         "dirt": {
             "blockID": 3,
@@ -1265,7 +1289,8 @@
         "egg": {
             "image": "egg.png",
             "itemID": 344,
-            "name": "Egg"
+            "name": "Egg",
+            "stackable": 16
         },
         "emerald": {
             "image": "emerald.png",
@@ -1287,7 +1312,8 @@
         "enchanted_book": {
             "image": "enchantedbook.png",
             "itemID": 403,
-            "name": "Enchanted Book"
+            "name": "Enchanted Book",
+            "stackable": false
         },
         "enchanting_table": {
             "blockID": 116,
@@ -1326,7 +1352,8 @@
         "ender_pearl": {
             "image": "enderpearl.png",
             "itemID": 368,
-            "name": "Ender Pearl"
+            "name": "Ender Pearl",
+            "stackable": 16
         },
         "experience_bottle": {
             "image": "xpbottle.png",
@@ -1487,7 +1514,8 @@
             "durability": 64,
             "image": "fishingrod.png",
             "itemID": 346,
-            "name": "Fishing Rod"
+            "name": "Fishing Rod",
+            "stackable": false
         },
         "flint": {
             "image": "flint.png",
@@ -1498,7 +1526,8 @@
             "durability": 64,
             "image": "flintandsteel.png",
             "itemID": 259,
-            "name": "Flint and Steel"
+            "name": "Flint and Steel",
+            "stackable": false
         },
         "flower_pot": {
             "blockID": 140,
@@ -1549,7 +1578,8 @@
         "furnace_minecart": {
             "image": "minecartwithfurnace.png",
             "itemID": 343,
-            "name": "Minecart with Furnace"
+            "name": "Minecart with Furnace",
+            "stackable": false
         },
         "ghast_tear": {
             "image": "ghasttear.png",
@@ -1661,12 +1691,14 @@
             "durability": 33,
             "image": "goldaxe.png",
             "itemID": 286,
-            "name": "Golden Axe"
+            "name": "Golden Axe",
+            "stackable": false
         },
         "golden_boots": {
             "image": "goldboots.png",
             "itemID": 317,
-            "name": "Golden Boots"
+            "name": "Golden Boots",
+            "stackable": false
         },
         "golden_carrot": {
             "image": "goldencarrot.png",
@@ -1676,34 +1708,40 @@
         "golden_chestplate": {
             "image": "goldchestplate.png",
             "itemID": 315,
-            "name": "Golden Chestplate"
+            "name": "Golden Chestplate",
+            "stackable": false
         },
         "golden_helmet": {
             "image": "goldhelmet.png",
             "itemID": 314,
-            "name": "Golden Helmet"
+            "name": "Golden Helmet",
+            "stackable": false
         },
         "golden_hoe": {
             "durability": 32,
             "image": "goldhoe.png",
             "itemID": 294,
-            "name": "Gold Hoe"
+            "name": "Gold Hoe",
+            "stackable": false
         },
         "golden_horse_armor": {
             "image": "goldenhorsearmor.png",
             "itemID": 418,
-            "name": "Golden Horse Armor"
+            "name": "Golden Horse Armor",
+            "stackable": false
         },
         "golden_leggings": {
             "image": "goldleggings.png",
             "itemID": 316,
-            "name": "Golden Leggings"
+            "name": "Golden Leggings",
+            "stackable": false
         },
         "golden_pickaxe": {
             "durability": 32,
             "image": "goldpickaxe.png",
             "itemID": 285,
-            "name": "Golden Pickaxe"
+            "name": "Golden Pickaxe",
+            "stackable": false
         },
         "golden_rail": {
             "blockID": 27,
@@ -1722,13 +1760,15 @@
             "durability": 32,
             "image": "goldshovel.png",
             "itemID": 284,
-            "name": "Golden Shovel"
+            "name": "Golden Shovel",
+            "stackable": false
         },
         "golden_sword": {
             "durability": 32,
             "image": "goldsword.png",
             "itemID": 283,
-            "name": "Golden Sword"
+            "name": "Golden Sword",
+            "stackable": false
         },
         "grass": {
             "blockID": 2,
@@ -1784,7 +1824,8 @@
         "hopper_minecart": {
             "image": "minecartwithhopper.png",
             "itemID": 408,
-            "name": "Minecart with Hopper"
+            "name": "Minecart with Hopper",
+            "stackable": false
         },
         "ice": {
             "blockID": 79,
@@ -1796,7 +1837,8 @@
             "durability": 250,
             "image": "ironaxe.png",
             "itemID": 258,
-            "name": "Iron Axe"
+            "name": "Iron Axe",
+            "stackable": false
         },
         "iron_bars": {
             "blockID": 101,
@@ -1816,13 +1858,15 @@
             "durability": 195,
             "image": "ironboots.png",
             "itemID": 309,
-            "name": "Iron Boots"
+            "name": "Iron Boots",
+            "stackable": false
         },
         "iron_chestplate": {
             "durability": 240,
             "image": "ironchestplate.png",
             "itemID": 307,
-            "name": "Iron Chestplate"
+            "name": "Iron Chestplate",
+            "stackable": false
         },
         "iron_door": {
             "blockID": 71,
@@ -1851,18 +1895,21 @@
             "durability": 165,
             "image": "ironhelmet.png",
             "itemID": 306,
-            "name": "Iron Helmet"
+            "name": "Iron Helmet",
+            "stackable": false
         },
         "iron_hoe": {
             "durability": 250,
             "image": "ironhoe.png",
             "itemID": 292,
-            "name": "Iron Hoe"
+            "name": "Iron Hoe",
+            "stackable": false
         },
         "iron_horse_armor": {
             "image": "ironhorsearmor.png",
             "itemID": 417,
-            "name": "Iron Horse Armor"
+            "name": "Iron Horse Armor",
+            "stackable": false
         },
         "iron_ingot": {
             "image": "ironingot.png",
@@ -1873,7 +1920,8 @@
             "durability": 225,
             "image": "ironleggings.png",
             "itemID": 308,
-            "name": "Iron Leggings"
+            "name": "Iron Leggings",
+            "stackable": false
         },
         "iron_ore": {
             "blockID": 15,
@@ -1887,19 +1935,22 @@
             "durability": 250,
             "image": "ironpickaxe.png",
             "itemID": 257,
-            "name": "Iron Pickaxe"
+            "name": "Iron Pickaxe",
+            "stackable": false
         },
         "iron_shovel": {
             "durability": 250,
             "image": "ironshovel.png",
             "itemID": 256,
-            "name": "Iron Shovel"
+            "name": "Iron Shovel",
+            "stackable": false
         },
         "iron_sword": {
             "durability": 250,
             "image": "ironsword.png",
             "itemID": 267,
-            "name": "Iron Sword"
+            "name": "Iron Sword",
+            "stackable": false
         },
         "iron_trapdoor": {
             "blockID": 167,
@@ -2060,7 +2111,8 @@
         "lava_bucket": {
             "image": "lavabucket.png",
             "itemID": 327,
-            "name": "Lava Bucket"
+            "name": "Lava Bucket",
+            "stackable": false
         },
         "lead": {
             "image": "lead.png",
@@ -2076,25 +2128,29 @@
             "durability": 65,
             "image": "leatherboots.png",
             "itemID": 301,
-            "name": "Leather Boots"
+            "name": "Leather Boots",
+            "stackable": false
         },
         "leather_chestplate": {
             "durability": 80,
             "image": "leatherchestplate.png",
             "itemID": 299,
-            "name": "Leather Tunic"
+            "name": "Leather Tunic",
+            "stackable": false
         },
         "leather_helmet": {
             "durability": 55,
             "image": "leatherhelmet.png",
             "itemID": 298,
-            "name": "Leather Cap"
+            "name": "Leather Cap",
+            "stackable": false
         },
         "leather_leggings": {
             "durability": 75,
             "image": "leatherleggings.png",
             "itemID": 300,
-            "name": "Leather Pants"
+            "name": "Leather Pants",
+            "stackable": false
         },
         "leaves": {
             "blockID": 18,
@@ -2276,12 +2332,14 @@
         "milk_bucket": {
             "image": "milkbucket.png",
             "itemID": 335,
-            "name": "Milk"
+            "name": "Milk",
+            "stackable": false
         },
         "minecart": {
             "image": "minecart.png",
             "itemID": 328,
-            "name": "Minecart"
+            "name": "Minecart",
+            "stackable": false
         },
         "mob_spawner": {
             "blockID": 52,
@@ -2334,7 +2392,8 @@
         "mushroom_stew": {
             "image": "mushroomstew.png",
             "itemID": 282,
-            "name": "Mushroom Stew"
+            "name": "Mushroom Stew",
+            "stackable": false
         },
         "mutton": {
             "image": "rawmutton.png",
@@ -2943,7 +3002,8 @@
             },
             "image": "waterbottle.png",
             "itemID": 373,
-            "name": "Potion"
+            "name": "Potion",
+            "stackable": false
         },
         "powered_comparator": {
             "blockID": 150,
@@ -3061,7 +3121,8 @@
         "rabbit_stew": {
             "image": "rabbitstew.png",
             "itemID": 413,
-            "name": "Rabbit Stew"
+            "name": "Rabbit Stew",
+            "stackable": false
         },
         "rail": {
             "blockID": 66,
@@ -3072,62 +3133,74 @@
         "record_11": {
             "image": "musicdisc11.png",
             "itemID": 2266,
-            "name": "Music Disc: C418 \u2014 11"
+            "name": "Music Disc: C418 \u2014 11",
+            "stackable": false
         },
         "record_13": {
             "image": "musicdisc13.png",
             "itemID": 2256,
-            "name": "Music Disc: C418 \u2014 13"
+            "name": "Music Disc: C418 \u2014 13",
+            "stackable": false
         },
         "record_blocks": {
             "image": "musicdiscblocks.png",
             "itemID": 2258,
-            "name": "Music Disc: C418 \u2014 blocks"
+            "name": "Music Disc: C418 \u2014 blocks",
+            "stackable": false
         },
         "record_cat": {
             "image": "musicdisccat.png",
             "itemID": 2257,
-            "name": "Music Disc: C418 \u2014 cat"
+            "name": "Music Disc: C418 \u2014 cat",
+            "stackable": false
         },
         "record_chirp": {
             "image": "musicdiscchirp.png",
             "itemID": 2259,
-            "name": "Music Disc: C418 \u2014 chirp"
+            "name": "Music Disc: C418 \u2014 chirp",
+            "stackable": false
         },
         "record_far": {
             "image": "musicdiscfar.png",
             "itemID": 2260,
-            "name": "Music Disc: C418 \u2014 far"
+            "name": "Music Disc: C418 \u2014 far",
+            "stackable": false
         },
         "record_mall": {
             "image": "musicdiscmall.png",
             "itemID": 2261,
-            "name": "Music Disc: C418 \u2014 mall"
+            "name": "Music Disc: C418 \u2014 mall",
+            "stackable": false
         },
         "record_mellohi": {
             "image": "musicdiscmellohi.png",
             "itemID": 2262,
-            "name": "Music Disc: C418 \u2014 mellohi"
+            "name": "Music Disc: C418 \u2014 mellohi",
+            "stackable": false
         },
         "record_stal": {
             "image": "musicdiscstal.png",
             "itemID": 2263,
-            "name": "Music Disc: C418 \u2014 stal"
+            "name": "Music Disc: C418 \u2014 stal",
+            "stackable": false
         },
         "record_strad": {
             "image": "musicdiscstrad.png",
             "itemID": 2264,
-            "name": "Music Disc: C418 \u2014 strad"
+            "name": "Music Disc: C418 \u2014 strad",
+            "stackable": false
         },
         "record_wait": {
             "image": "musicdiscwait.png",
             "itemID": 2267,
-            "name": "Music Disc: C418 \u2014 wait"
+            "name": "Music Disc: C418 \u2014 wait",
+            "stackable": false
         },
         "record_ward": {
             "image": "musicdiscward.png",
             "itemID": 2265,
-            "name": "Music Disc: C418 \u2014 ward"
+            "name": "Music Disc: C418 \u2014 ward",
+            "stackable": false
         },
         "red_flower": {
             "blockID": 38,
@@ -3375,7 +3448,8 @@
         "saddle": {
             "image": "saddle.png",
             "itemID": 329,
-            "name": "Saddle"
+            "name": "Saddle",
+            "stackable": false
         },
         "sand": {
             "blockID": 12,
@@ -3470,12 +3544,14 @@
             "durability": 238,
             "image": "shears.png",
             "itemID": 359,
-            "name": "Shears"
+            "name": "Shears",
+            "stackable": false
         },
         "sign": {
             "image": "sign.png",
             "itemID": 323,
-            "name": "Sign"
+            "name": "Sign",
+            "stackable": 16
         },
         "skull": {
             "blockID": 144,
@@ -3530,7 +3606,8 @@
         "snowball": {
             "image": "snowball.png",
             "itemID": 332,
-            "name": "Snowball"
+            "name": "Snowball",
+            "stackable": 16
         },
         "soul_sand": {
             "blockID": 88,
@@ -4072,7 +4149,8 @@
             "durability": 131,
             "image": "stoneaxe.png",
             "itemID": 275,
-            "name": "Stone Axe"
+            "name": "Stone Axe",
+            "stackable": false
         },
         "stone_brick_stairs": {
             "blockID": 109,
@@ -4090,13 +4168,15 @@
             "durability": 131,
             "image": "stonehoe.png",
             "itemID": 291,
-            "name": "Stone Hoe"
+            "name": "Stone Hoe",
+            "stackable": false
         },
         "stone_pickaxe": {
             "durability": 131,
             "image": "stonepickaxe.png",
             "itemID": 274,
-            "name": "Stone Pickaxe"
+            "name": "Stone Pickaxe",
+            "stackable": false
         },
         "stone_pressure_plate": {
             "blockID": 70,
@@ -4108,7 +4188,8 @@
             "durability": 131,
             "image": "stoneshovel.png",
             "itemID": 273,
-            "name": "Stone Shovel"
+            "name": "Stone Shovel",
+            "stackable": false
         },
         "stone_slab": {
             "blockID": 44,
@@ -4226,7 +4307,8 @@
             "durability": 131,
             "image": "stonesword.png",
             "itemID": 272,
-            "name": "Stone Sword"
+            "name": "Stone Sword",
+            "stackable": false
         },
         "stonebrick": {
             "blockID": 98,
@@ -4298,7 +4380,8 @@
         "tnt_minecart": {
             "image": "minecartwithtnt.png",
             "itemID": 407,
-            "name": "Minecart with TNT"
+            "name": "Minecart with TNT",
+            "stackable": false
         },
         "torch": {
             "blockID": 50,
@@ -4374,7 +4457,8 @@
         "water_bucket": {
             "image": "waterbucket.png",
             "itemID": 326,
-            "name": "Water Bucket"
+            "name": "Water Bucket",
+            "stackable": false
         },
         "waterlily": {
             "blockID": 111,
@@ -4437,7 +4521,8 @@
             "durability": 59,
             "image": "woodaxe.png",
             "itemID": 271,
-            "name": "Wooden Axe"
+            "name": "Wooden Axe",
+            "stackable": false
         },
         "wooden_button": {
             "blockID": 143,
@@ -4490,13 +4575,15 @@
             "durability": 59,
             "image": "woodhoe.png",
             "itemID": 290,
-            "name": "Wooden Hoe"
+            "name": "Wooden Hoe",
+            "stackable": false
         },
         "wooden_pickaxe": {
             "durability": 59,
             "image": "woodpickaxe.png",
             "itemID": 270,
-            "name": "Wooden Pickaxe"
+            "name": "Wooden Pickaxe",
+            "stackable": false
         },
         "wooden_pressure_plate": {
             "blockID": 72,
@@ -4508,7 +4595,8 @@
             "durability": 59,
             "image": "woodshovel.png",
             "itemID": 269,
-            "name": "Wooden Shovel"
+            "name": "Wooden Shovel",
+            "stackable": false
         },
         "wooden_slab": {
             "blockID": 126,
@@ -4545,7 +4633,8 @@
             "durability": 59,
             "image": "woodsword.png",
             "itemID": 268,
-            "name": "Wooden Sword"
+            "name": "Wooden Sword",
+            "stackable": false
         },
         "wool": {
             "blockID": 35,
@@ -4638,12 +4727,14 @@
         "writable_book": {
             "image": "bookandquill.png",
             "itemID": 386,
-            "name": "Book and Quill"
+            "name": "Book and Quill",
+            "stackable": false
         },
         "written_book": {
             "image": "writtenbook.png",
             "itemID": 387,
-            "name": "Written Book"
+            "name": "Written Book",
+            "stackable": 16
         },
         "yellow_flower": {
             "blockID": 37,
