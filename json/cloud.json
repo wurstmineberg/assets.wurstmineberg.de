@@ -1685,7 +1685,7 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:bowl"
             },
             {
@@ -1693,7 +1693,7 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:string"
             },
             {
@@ -1701,21 +1701,21 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:bone"
             },
             {
                 "damage": 0,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:rabbit_foot"
             },
             {
                 "damage": 0,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:rabbit_hide"
             },
             {
@@ -1723,7 +1723,7 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:leather"
             },
             {
@@ -1731,7 +1731,7 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:feather"
             },
             {
@@ -1739,7 +1739,7 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:slime_ball"
             },
             {
@@ -1747,7 +1747,7 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:egg"
             },
             {
@@ -1755,7 +1755,7 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:gunpowder"
             },
             {
@@ -1763,7 +1763,7 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:nether_star"
             },
             {
@@ -1778,7 +1778,7 @@
                 "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSorter": true,
                 "id": "minecraft:skull"
             },
             {
