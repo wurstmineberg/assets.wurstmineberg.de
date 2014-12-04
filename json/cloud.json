@@ -3031,6 +3031,7 @@
             },
             {
                 "damage": 8267,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3038,6 +3039,7 @@
             },
             {
                 "damage": 16459,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
