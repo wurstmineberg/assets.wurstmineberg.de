@@ -1202,7 +1202,7 @@
         "1": [
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:ender_pearl"
