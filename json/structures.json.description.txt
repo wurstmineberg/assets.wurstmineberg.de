@@ -1,3 +1,4 @@
+* biomes: an array of biome IDs (corresponding to the "id" field in biomes.json) where the structure can generate. By default, it can generate in all biomes.
 * dimension: the dimension in which the structure generates: "overworld", "nether", or "end".
 * infinite: whether an “infinite” (limited only by the world size) number of these structures generate. Defaults to true.
 * name: human-readable structure name, in singular and plural form.

@@ -88,15 +88,21 @@ The fields for the damage values and block info implicitely inherit the values o
         * amountMax: the maximum number of items in a single generated stack. Defaults to 1.
         * stacksMin: the minimum number of total stacks generated in the bonus chest.
         * stacksMax: the maximum number of total stacks generated in the bonus chest.
-        * weight: the chance that a generated stack will have this item.
+        * weight: the chance that a generated stack will have this item, if known.
     * chest: the item may appear in chests or other inventories generated naturally with structures in the world.
         * amountMin: the minimum number of items in a single generated stack. Defaults to 1.
         * amountMax: the maximum number of items in a single generated stack. Defaults to 1.
-        * stacksMin: the minimum number of total stacks generated in the chest.
-        * stacksMax: the maximum number of total stacks generated in the chest.
-        * weight: the chance that a generated stack will have this item.
+        * chestsMin: the minimum number of chests that will generate in a single structure. Defaults to 0.
+        * chestsMax: the maximum number of chests that will generate in a single structure. If not given, it varies.
+        * stacksMin: the minimum number of total stacks generated in the chest. Defaults to 1.
+        * stacksMax: the maximum number of total stacks generated in the chest. Defaults to 1.
+        * weight: the chance that a generated stack will have this item, if known.
         * structure: the structure ID as used in structres.json
-        * inventoryType: a human-readable version of the type of inventory in plural (e.g. “dispensers” or “library chests”). Defaults to “chests”.
+        * inventoryType: the block ID for the type of inventory. Defaults to "minecraft:chest".
+    * natural: the block generates naturally as part of the world.
+        * biomes: an array of biome IDs (corresponding to the "id" field in biomes.json) where the block can generate. By default, it can generate in all biomes.
+        * dimension: the dimension where the block generates: "overworld", "nether", or "end".
+        * infinite: whether an infinite amount of the block will generate, limited only by the world size. Defaults to true.
 * dropsSelf: an array of objects structured like “method of obtaining: mining” objects, except without the “block” key. This is used to specify how the block must be mined so that it drops itself. The default is true, implying that the block always drops itself.
 * durability: the durability of the tool, as displayed in-game.
 * stackable: how many of this item, given that they are identical, may be stacked together. May be true or omitted for stackable (64), false for unstackable (1), or another positive integer for a custom value.

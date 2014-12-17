@@ -1659,6 +1659,19 @@
                                 "minecraft:gold_ingot"
                             ],
                             "type": "craftingShaped"
+                        },
+                        {
+                            "chestsMax": 2,
+                            "chestsMin": 1,
+                            "stacksMax": 8,
+                            "structure": "dungeon",
+                            "type": "chest"
+                        },
+                        {
+                            "stacksMax": 3,
+                            "stacksMin": 2,
+                            "structure": "stronghold",
+                            "type": "chest"
                         }
                     ]
                 },
@@ -1888,6 +1901,10 @@
                         null
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "stronghold",
+                    "type": "structure"
                 }
             ]
         },
@@ -3302,6 +3319,13 @@
                                 null
                             ],
                             "type": "craftingShaped"
+                        },
+                        {
+                            "biomes": [
+                                "Mesa"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
                         }
                     ]
                 },
@@ -4220,6 +4244,14 @@
                                 null
                             ],
                             "type": "craftingShaped"
+                        },
+                        {
+                            "structure": "village",
+                            "type": "structure"
+                        },
+                        {
+                            "structure": "stronghold",
+                            "type": "structure"
                         }
                     ],
                     "texture": "stone_slab_side"
@@ -4227,6 +4259,22 @@
                 "1": {
                     "image": "sandstoneslab.png",
                     "name": "Sandstone Slab",
+                    "obtaining": [
+                        {
+                            "structure": "village",
+                            "type": "structure"
+                        },
+                        {
+                            "amount": 12,
+                            "structure": "desertWell",
+                            "type": "structure"
+                        },
+                        {
+                            "amount": 2,
+                            "structure": "desertTemple",
+                            "type": "structure"
+                        }
+                    ],
                     "texture": "sandstone_normal",
                     "texture_bottom": "sandstone_bottom",
                     "texture_top": "sandstone_top"

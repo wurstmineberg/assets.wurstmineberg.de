@@ -7,6 +7,33 @@
         },
         "requiresOption": true
     },
+    "desertTemple": {
+        "biomes": [
+            "Desert"
+        ],
+        "dimension": "overworld",
+        "name": {
+            "default": "desert temple",
+            "plural": "desert temples"
+        },
+        "requiresOption": true
+    },
+    "desertWell": {
+        "dimension": "overworld",
+        "name": {
+            "default": "desert well",
+            "plural": "desert wells"
+        },
+        "requiresOption": false
+    },
+    "dungeon": {
+        "dimension": "overworld",
+        "name": {
+            "default": "dungeon",
+            "plural": "dungeons"
+        },
+        "requiresOption": false
+    },
     "stronghold": {
         "dimension": "overworld",
         "infinite": false,
@@ -17,6 +44,11 @@
         "requiresOption": true
     },
     "village": {
+        "biomes": [
+            "Desert",
+            "Plains",
+            "Savanna"
+        ],
         "dimension": "overworld",
         "name": {
             "default": "village",
@@ -25,6 +57,9 @@
         "requiresOption": true
     },
     "witchHut": {
+        "biomes": [
+            "Swampland"
+        ],
         "dimension": "overworld",
         "name": {
             "default": "witch hut",
