@@ -1674,7 +1674,6 @@
         "-2": [
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": true,
                 "hasSorter": false,
@@ -1682,7 +1681,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -1690,7 +1688,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -1698,7 +1695,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -1720,7 +1716,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -1728,7 +1723,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -1736,7 +1730,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -1744,7 +1737,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -1752,7 +1744,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -1760,7 +1751,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -1775,7 +1765,6 @@
             },
             {
                 "damage": 1,
-                "exists": false,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
