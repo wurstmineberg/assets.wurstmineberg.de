@@ -503,7 +503,7 @@
             },
             {
                 "damage": 15,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -517,7 +517,7 @@
             },
             {
                 "damage": 13,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -531,7 +531,7 @@
             },
             {
                 "damage": 11,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -545,7 +545,7 @@
             },
             {
                 "damage": 9,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -559,7 +559,7 @@
             },
             {
                 "damage": 7,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -573,7 +573,7 @@
             },
             {
                 "damage": 5,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -587,7 +587,7 @@
             },
             {
                 "damage": 3,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -601,7 +601,7 @@
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -1642,7 +1642,7 @@
         "-2": [
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:milk_bucket"
@@ -1656,7 +1656,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:string"
@@ -1670,7 +1670,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:rabbit_foot"
@@ -1684,7 +1684,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:leather"
@@ -1698,7 +1698,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:slime_ball"
@@ -1712,7 +1712,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:gunpowder"
@@ -1726,7 +1726,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:skull"
@@ -1740,7 +1740,7 @@
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:skull"
@@ -2468,7 +2468,7 @@
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:sponge"
@@ -2482,7 +2482,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:prismarine"
@@ -2496,7 +2496,7 @@
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:prismarine"
@@ -2510,7 +2510,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:prismarine_crystals"
