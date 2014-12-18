@@ -678,6 +678,8 @@ function prettifyStatsValue(key, value) {
         } else {
             return value + ' times';
         }
+    } else if (key == 'cauldronUsed') {
+        return value + ' bottle' + (value == 1 ? '' : 's');
     } else {
         return value;
     }
