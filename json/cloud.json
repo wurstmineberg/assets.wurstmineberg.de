@@ -1409,265 +1409,233 @@
         "-1": [
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:cake"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:rabbit_stew"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cooked_porkchop"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cooked_beef"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:pumpkin_pie"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:golden_carrot"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cooked_mutton"
             },
             {
                 "damage": 1,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cooked_fish"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:baked_potato"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cooked_chicken"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:mushroom_stew"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cooked_fish"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cooked_rabbit"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:bread"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:golden_apple"
             },
             {
                 "damage": 1,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:golden_apple"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:carrot"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:apple"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:rotten_flesh"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:beef"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:porkchop"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:rabbit"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:spider_eye"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:melon"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:poisonous_potato"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:chicken"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:mutton"
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cookie"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:fish"
             },
             {
                 "damage": 1,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:fish"
             },
             {
                 "damage": 0,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:potato"
             },
             {
                 "damage": 2,
-                "exists": false,
                 "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:fish"
             },
             {
                 "damage": 3,
-                "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:fish"
             }
         ],
