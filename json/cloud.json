@@ -1416,7 +1416,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:rabbit_stew"
@@ -1430,7 +1430,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:cooked_beef"
@@ -1444,7 +1444,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:golden_carrot"
@@ -1458,7 +1458,7 @@
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:cooked_fish"
@@ -1472,7 +1472,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:cooked_chicken"
@@ -1486,7 +1486,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:cooked_fish"
@@ -1500,7 +1500,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:bread"
@@ -1514,7 +1514,7 @@
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:golden_apple"
@@ -1528,7 +1528,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:apple"
@@ -1542,7 +1542,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:beef"
@@ -1556,7 +1556,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:rabbit"
@@ -1570,7 +1570,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:melon"
@@ -1584,7 +1584,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:chicken"
@@ -1598,7 +1598,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:cookie"
@@ -1612,7 +1612,7 @@
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:fish"
@@ -1626,7 +1626,7 @@
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:fish"
