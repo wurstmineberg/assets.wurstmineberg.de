@@ -510,7 +510,7 @@
             },
             {
                 "damage": 14,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -524,7 +524,7 @@
             },
             {
                 "damage": 12,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -538,7 +538,7 @@
             },
             {
                 "damage": 10,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -552,7 +552,7 @@
             },
             {
                 "damage": 8,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -566,7 +566,7 @@
             },
             {
                 "damage": 6,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -580,7 +580,7 @@
             },
             {
                 "damage": 4,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -594,7 +594,7 @@
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
@@ -608,7 +608,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
+                "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
                 "id": "minecraft:banner"
