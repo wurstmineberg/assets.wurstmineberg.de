@@ -1777,7 +1777,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1785,7 +1784,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1793,7 +1791,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1801,7 +1798,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1809,7 +1805,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1852,7 +1847,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1860,7 +1854,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -1868,7 +1861,6 @@
             },
             {
                 "damage": 0,
-                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
