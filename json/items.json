@@ -3330,6 +3330,32 @@
                     ]
                 },
                 "1": {
+                    "image": "chiseledredsandstone.png",
+                    "name": "Chiseled Red Sandstone",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stone_slab2"
+                                },
+                                null,
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stone_slab2"
+                                },
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "2": {
                     "image": "smoothredsandstone.png",
                     "name": "Smooth Red Sandstone",
                     "obtaining": [
@@ -3355,32 +3381,6 @@
                                 {
                                     "damage": 0,
                                     "id": "minecraft:red_sandstone"
-                                },
-                                null
-                            ],
-                            "type": "craftingShaped"
-                        }
-                    ]
-                },
-                "2": {
-                    "image": "chiseledredsandstone.png",
-                    "name": "Chiseled Red Sandstone",
-                    "obtaining": [
-                        {
-                            "recipe": [
-                                null,
-                                null,
-                                null,
-                                null,
-                                {
-                                    "damage": 0,
-                                    "id": "minecraft:stone_slab2"
-                                },
-                                null,
-                                null,
-                                {
-                                    "damage": 0,
-                                    "id": "minecraft:stone_slab2"
                                 },
                                 null
                             ],
