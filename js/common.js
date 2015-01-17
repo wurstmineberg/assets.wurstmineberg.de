@@ -769,7 +769,7 @@ function displayFundingData() {
                 year++;
                 month -= 12;
             }
-            ver ret = Math.abs(moneyData.spendingMonthly);
+            var ret = Math.abs(moneyData.spendingMonthly);
             moneyData.history.forEach(function(transaction) {
                 if (transaction.type == 'monthly' && transaction.date.startsWith(zeroFill(year, 4) + '-' + zeroFill(month, 2) + '-')) {
                     ret = transaction.amount;
