@@ -839,7 +839,7 @@ function displayFundingData() {
         }
         
         if (fundedForThisMonth) {
-            percent = Math.floor(fundingTotal * 100 / spendingMonthly);
+            percent = Math.floor(fundingTotal * 100 / spendingMonthly(fundedYear, fundedMonth));
             $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + percent + '%;"><span class="sr-only">' + percent + '% funded</span></div>');
         } else {
             var expectedTotal = fundingTotal + moneyData.fundingMonthly;
@@ -859,7 +859,7 @@ function displayFundingData() {
                 }
             });
             
-            var expectedPercent = Math.max(0, Math.min(100 - percent, Math.floor(expectedTotal * 100 / -moneyData.spendingMonthly)));
+            var expectedPercent = Math.max(0, Math.min(100 - percent, Math.floor(expectedTotal * 100 / spendingMonthly(fundedMonth, fundedYear))));
             var progressBarClass = 'progress-bar-warning';
             if (expectedPercent <= 50) {
                 progressBarClass = 'progress-bar-danger';
