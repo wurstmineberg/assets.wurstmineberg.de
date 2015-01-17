@@ -769,13 +769,13 @@ function displayFundingData() {
                 year++;
                 month -= 12;
             }
-            var ret = Math.abs(moneyData.spendingMonthly);
+            var ret = moneyData.spendingMonthly;
             moneyData.history.forEach(function(transaction) {
                 if (transaction.type == 'monthly' && transaction.date.startsWith(zeroFill(year, 4) + '-' + zeroFill(month, 2) + '-')) {
                     ret = transaction.amount;
                 };
             });
-            return ret;
+            return Math.abs(ret);
         }
         
         // This is the beginning of the billing period: Sept-Oct 2013
