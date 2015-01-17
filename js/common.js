@@ -868,7 +868,7 @@ function displayFundingData() {
             $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + expectedPercent + '%;"><span class="sr-only">' + expectedPercent + '% expected</span></div>');
             $('.funding-progressbar').append('<div class="progress-bar ' + progressBarClass + '" style="width: ' + (100 - expectedPercent) + '%;"><span class="sr-only">bla</span></div>');
         }
-        $('.funding-progressbar').attr('title', fundingTotal.toFixed(2) + '€ out of ' + spendingMonthly.toFixed(2) + '€');
+        $('.funding-progressbar').attr('title', fundingTotal.toFixed(2) + '€ out of ' + spendingMonthly(fundedYear, fundedMonth).toFixed(2) + '€');
         $('.funding-progressbar').tooltip();
     }).fail(function() {
         $('.funding-month').html('(error)');
