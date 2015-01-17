@@ -857,310 +857,310 @@
         "0": [
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:dirt"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cobblestone"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stonebrick"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:quartz_block"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:iron_bars"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:sandstone"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:red_sandstone"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:sand"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:sand"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:gravel"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:grass"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:mycelium"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:dirt"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:dirt"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:obsidian"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:ice"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:packed_ice"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:snow"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:snow_layer"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 3,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 4,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 5,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 6,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:sandstone_stairs"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:red_sandstone_stairs"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone_slab"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone_slab2"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:sandstone"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:red_sandstone"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:sandstone"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:red_sandstone"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone_slab"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone_stairs"
             },
             {
                 "damage": 3,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone_slab"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cobblestone_wall"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:mossy_cobblestone"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:cobblestone_wall"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone_brick_stairs"
             },
             {
                 "damage": 5,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stone_slab"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stonebrick"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:stonebrick"
             },
             {
