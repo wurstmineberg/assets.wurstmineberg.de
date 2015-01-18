@@ -841,7 +841,7 @@ function displayFundingData() {
         var percent = Math.floor(fundingTotal * 100 / spendingMonthly(fundedYear, fundedMonth));
         if (fundedForThisMonth) {
             $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + percent + '%;"><span class="sr-only">' + percent + '% funded</span></div>');
-        if (!fundedForThisMonth) {
+        } else {
             var expectedTotal = fundingTotal + moneyData.fundingMonthly;
             
             moneyData.history.forEach(function(transaction) {
