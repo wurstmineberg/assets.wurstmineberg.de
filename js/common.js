@@ -838,10 +838,10 @@ function displayFundingData() {
             }
         }
         
+        var percent = Math.floor(fundingTotal * 100 / spendingMonthly(fundedYear, fundedMonth));
         if (fundedForThisMonth) {
-            percent = Math.floor(fundingTotal * 100 / spendingMonthly(fundedYear, fundedMonth));
             $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + percent + '%;"><span class="sr-only">' + percent + '% funded</span></div>');
-        } else {
+        if (!fundedForThisMonth) {
             var expectedTotal = fundingTotal + moneyData.fundingMonthly;
             
             moneyData.history.forEach(function(transaction) {
@@ -860,13 +860,14 @@ function displayFundingData() {
             });
             
             var expectedPercent = Math.max(0, Math.min(100 - percent, Math.floor(expectedTotal * 100 / spendingMonthly(fundedMonth, fundedYear))));
-            var progressBarClass = 'progress-bar-warning';
             if (expectedPercent <= 50) {
-                progressBarClass = 'progress-bar-danger';
+                var progressBarClass = 'progress-bar-danger';
+            } else if (expectedPercent <= 100) {
+                var progressBarClass = 'progress-bar-warning';
             }
             
-            $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + expectedPercent + '%;"><span class="sr-only">' + expectedPercent + '% expected</span></div>');
-            $('.funding-progressbar').append('<div class="progress-bar ' + progressBarClass + '" style="width: ' + (100 - expectedPercent) + '%;"><span class="sr-only">bla</span></div>');
+            $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + percent + '%;"><span class="sr-only">' + percent + '% funded</span></div>');
+            $('.funding-progressbar').append('<div class="progress-bar ' + progressBarClass + '" style="width: ' + (100 - percent) + '%;"><span class="sr-only">bla</span></div>');
         }
         $('.funding-progressbar').attr('title', fundingTotal.toFixed(2) + '€ out of ' + spendingMonthly(fundedYear, fundedMonth).toFixed(2) + '€');
         $('.funding-progressbar').tooltip();
