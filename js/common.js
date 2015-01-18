@@ -789,7 +789,7 @@ function displayFundingData() {
         // This is today
         var year = today.getFullYear();
         var month = today.getMonth();
-        var day = today.getDay();
+        var day = today.getDate();
         
         // Subtract the first month
         fundingTotal -= spendingMonthly(beginYear, beginMonth);
