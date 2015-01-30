@@ -2222,7 +2222,6 @@
         "2": [
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2230,7 +2229,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2238,7 +2236,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2246,7 +2243,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2254,7 +2250,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2262,7 +2257,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2270,7 +2264,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2278,7 +2271,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2286,7 +2278,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2294,7 +2285,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2302,7 +2292,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2310,7 +2299,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2318,7 +2306,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2326,7 +2313,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2334,7 +2320,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2342,7 +2327,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2350,7 +2334,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2358,7 +2341,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2366,7 +2348,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2374,7 +2355,6 @@
             },
             {
                 "damage": 1,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2382,7 +2362,6 @@
             },
             {
                 "damage": 2,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2390,7 +2369,6 @@
             },
             {
                 "damage": 3,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2398,7 +2376,6 @@
             },
             {
                 "damage": 0,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
@@ -2406,7 +2383,6 @@
             },
             {
                 "damage": 1,
-                "exists": true,
                 "hasOverflow": true,
                 "hasSmartChest": true,
                 "hasSorter": true,
