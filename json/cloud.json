@@ -2763,8 +2763,10 @@
                 "hasSmartChest": false,
                 "hasSorter": false,
                 "id": "minecraft:speckled_melon"
-            },
-            {
+            }
+        ],
+        "-2": [
+                        {
                 "damage": 16,
                 "hasOverflow": false,
                 "hasSmartChest": false,
@@ -3134,7 +3136,9 @@
                 "hasSmartChest": false,
                 "hasSorter": false,
                 "id": "minecraft:potion"
-            },
+            }
+        ],
+        "-3": [
             {
                 "damage": 8202,
                 "exists": false,
