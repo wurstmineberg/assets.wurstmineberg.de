@@ -2763,10 +2763,8 @@
                 "hasSmartChest": false,
                 "hasSorter": false,
                 "id": "minecraft:speckled_melon"
-            }
-        ],
-        "-2": [
-                        {
+            },
+            {
                 "damage": 16,
                 "hasOverflow": false,
                 "hasSmartChest": false,
@@ -2801,8 +2799,11 @@
                 "hasSorter": false,
                 "id": "minecraft:potion"
             },
+        ],
+        "-2": [
             {
                 "damage": 8194,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2810,6 +2811,7 @@
             },
             {
                 "damage": 16386,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2817,6 +2819,7 @@
             },
             {
                 "damage": 8258,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2824,6 +2827,7 @@
             },
             {
                 "damage": 16450,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2831,6 +2835,7 @@
             },
             {
                 "damage": 8226,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2838,6 +2843,7 @@
             },
             {
                 "damage": 16418,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2845,6 +2851,7 @@
             },
             {
                 "damage": 8201,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2852,6 +2859,7 @@
             },
             {
                 "damage": 16393,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2859,6 +2867,7 @@
             },
             {
                 "damage": 8265,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2866,6 +2875,7 @@
             },
             {
                 "damage": 16457,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2873,6 +2883,7 @@
             },
             {
                 "damage": 8233,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2880,6 +2891,7 @@
             },
             {
                 "damage": 16425,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2887,6 +2899,7 @@
             },
             {
                 "damage": 8197,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2894,6 +2907,7 @@
             },
             {
                 "damage": 16389,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2901,6 +2915,7 @@
             },
             {
                 "damage": 8229,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -2908,6 +2923,7 @@
             },
             {
                 "damage": 16421,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
