@@ -1129,7 +1129,7 @@
                 },
                 "2": {
                     "image": "oakwoodslab.png",
-                    "name": "Double Stone-Wood Slab",
+                    "name": "Double Fake Wood Slab",
                     "texture": "planks_oak"
                 },
                 "3": {
@@ -4281,7 +4281,7 @@
                 },
                 "2": {
                     "image": "oakwoodslab.png",
-                    "name": "Stone-Wood Slab"
+                    "name": "Fake Wood Slab"
                 },
                 "3": {
                     "image": "cobblestoneslab.png",
