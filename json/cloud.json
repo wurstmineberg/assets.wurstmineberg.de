@@ -3982,122 +3982,122 @@
         "0": [
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:paper"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:book"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:writable_book"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:bookshelf"
             }
         ],
         "1": [
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:jukebox"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_13"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_cat"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_blocks"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_chirp"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_far"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_mall"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_mellohi"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_stal"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_strad"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_ward"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_11"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:record_wait"
             }
