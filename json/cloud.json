@@ -3603,162 +3603,162 @@
         "-1": [
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:diamond_helmet"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:diamond_chestplate"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:diamond_leggings"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:diamond_boots"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:iron_helmet"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:iron_chestplate"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:iron_leggings"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:iron_boots"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:chainmail_helmet"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:chainmail_chestplate"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:chainmail_leggings"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:chainmail_boots"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:golden_helmet"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:golden_chestplate"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:golden_leggings"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:golden_boots"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:leather_helmet"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:leather_chestplate"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:leather_leggings"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:leather_boots"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:diamond_horse_armor"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:golden_horse_armor"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:iron_horse_armor"
             }
@@ -3766,148 +3766,148 @@
         "0": [
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:compass"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:clock"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:shears"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:fishing_rod"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:diamond_pickaxe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:diamond_shovel"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:diamond_axe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:iron_pickaxe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:iron_shovel"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:iron_axe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:flint_and_steel"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:stone_pickaxe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:stone_shovel"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:stone_axe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:wooden_pickaxe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:wooden_shovel"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:wooden_axe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:golden_pickaxe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:golden_shovel"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:golden_axe"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:carrot_on_a_stick"
             }
@@ -3915,65 +3915,65 @@
         "1": [
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:bow"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:arrow"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:diamond_sword"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:iron_sword"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:stone_sword"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:wooden_sword"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:golden_sword"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:fire_charge"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "hasOverflow": true,
+                "hasSmartChest": true,
+                "hasSorter": true,
                 "id": "minecraft:snowball"
             }
         ]
