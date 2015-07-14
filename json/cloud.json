@@ -1751,6 +1751,22 @@
                 "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:skull"
+            },
+            {
+                "damage": 0,
+                "exists": false,
+                "hasOverflow": false,
+                "hasSmartChest": false,
+                "hasSorter": false,
+                "id": "minecraft:slime"
+            },
+            {
+                "damage": 0,
+                "exists": false,
+                "hasOverflow": false,
+                "hasSmartChest": false,
+                "hasSorter": false,
+                "id": "minecraft:web"
             }
         ],
         "0": [
@@ -3387,6 +3403,23 @@
             },
             {
                 "damage": 0,
+                "exists": false,
+                "hasOverflow": false,
+                "hasSmartChest": false,
+                "hasSorter": false,
+                "id": "minecraft:brown_mushroom_block"
+            },
+            {
+                "damage": 0,
+                "exists": false,
+                "hasOverflow": false,
+                "hasSmartChest": false,
+                "hasSorter": false,
+                "id": "minecraft:red_mushroom_block"
+            },
+            {
+                "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3394,6 +3427,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3401,6 +3435,7 @@
             },
             {
                 "damage": 1,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3408,6 +3443,7 @@
             },
             {
                 "damage": 2,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3415,6 +3451,7 @@
             },
             {
                 "damage": 3,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3422,6 +3459,7 @@
             },
             {
                 "damage": 4,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3429,6 +3467,7 @@
             },
             {
                 "damage": 5,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3436,6 +3475,7 @@
             },
             {
                 "damage": 6,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3443,6 +3483,7 @@
             },
             {
                 "damage": 7,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3450,6 +3491,7 @@
             },
             {
                 "damage": 8,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3457,6 +3499,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3464,6 +3507,7 @@
             },
             {
                 "damage": 1,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3471,6 +3515,7 @@
             },
             {
                 "damage": 4,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3478,6 +3523,7 @@
             },
             {
                 "damage": 5,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3485,6 +3531,7 @@
             },
             {
                 "damage": 1,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3492,6 +3539,7 @@
             },
             {
                 "damage": 2,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3499,6 +3547,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3506,6 +3555,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3513,6 +3563,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3520,6 +3571,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3527,6 +3579,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3534,6 +3587,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3541,6 +3595,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3548,6 +3603,7 @@
             },
             {
                 "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3564,34 +3620,7 @@
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:web"
-            },
-            {
-                "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:brown_mushroom_block"
-            },
-            {
-                "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:red_mushroom_block"
-            },
-            {
-                "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:slime"
-            },
-            {
-                "damage": 0,
+                "exists": false,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
