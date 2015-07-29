@@ -788,7 +788,7 @@ function displayFundingData() {
 
         var fundedForThisMonth = false;
 
-        var percent = fundingTotal * 100 / moneyData.spendingMonthly;
+        var percent = fundingTotal * 100 / (moneyData.spendingMonthly * -1);
         if (percent >= 100) {
             $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: 100%;"><span class="sr-only">100% funded</span></div>');
         } else if (percent < 0) {
@@ -802,7 +802,7 @@ function displayFundingData() {
             $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + percent + '%;"><span class="sr-only">' + percent + '% funded</span></div>');
             $('.funding-progressbar').append('<div class="progress-bar ' + progressBarClass + '" style="width: ' + (100 - percent) + '%;"></div>');
         }
-        $('.funding-progressbar').attr('title', fundingTotal.toFixed(2) + '€ out of ' + moneyData.spendingMonthly.toFixed(2) + '€');
+        $('.funding-progressbar').attr('title', fundingTotal.toFixed(2) + '€ out of ' + (moneyData.spendingMonthly * -1).toFixed(2) + '€');
         $('.funding-progressbar').tooltip();
     }).fail(function() {
         $('.funding-month').html('(error)');
