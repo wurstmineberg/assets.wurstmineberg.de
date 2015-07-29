@@ -23,7 +23,7 @@ function imageStack(images, attributes) {
             $(this).replaceWith($('<img>', attrs).on('error', errorHandler(imgs, attrs, index + 1)));
         };
     }
-    
+
     return $('<img>', attributes).on('error', errorHandler(images, attributes, 0));
 }
 
@@ -42,7 +42,7 @@ function formatDate(d, includeTime) {
 
 function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/11892228/667338
     allowedTags = typeof allowedTags === 'undefined' ? [] : allowedTags;
-    
+
     function sanitize(el) {
         // Remove all tags from element `el' that aren't in the allowedTags list.
         var tags = Array.prototype.slice.apply(el.getElementsByTagName('*'), [0]);
@@ -52,7 +52,7 @@ function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/1189
             }
         }
     }
-    
+
     function usurp(p) {
         // Replace parent `p' with its children.
         var last = p;
@@ -63,7 +63,7 @@ function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/1189
         }
         p.parentNode.removeChild(p);
     }
-    
+
     var div = document.createElement('div');
     div.innerHTML = string;
     sanitize(div);
@@ -172,13 +172,13 @@ function Person(person_data) {
 
 function People(people_data) {
     var _this = this;
-    
+
     this.list = function() {
         return _.map(people_data, function(value) {
             return new Person(value);
         });
     }();
-    
+
     this.achievementWinners = function() {
         return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/minigame/achievements/winners.json').then(function(winners) {
             return _.map(winners, function(winnerID) {
@@ -186,27 +186,27 @@ function People(people_data) {
             });
         });
     };
-    
+
     this.activePeople = function() {
         return _this.list.filter(function(person) {
             return (person.status != 'former');
         });
     }();
-    
+
     this.count = this.list.length;
-    
+
     this.personById = function(id) {
         return _.find(this.list, function(person) {
             return 'id' in person && person['id'] === id;
         });
     };
-    
+
     this.personByMinecraft = function(id) {
         return _.find(this.list, function(person) {
             return 'minecraft' in person && person['minecraft'] === id;
         });
     };
-    
+
     this.sorted = function(peopleList) {
         peopleList = typeof peopleList === 'undefined' ? this.list : peopleList;
         var ret = [];
@@ -711,7 +711,7 @@ function username_for_player_values(values) {
 
 function username_to_minecraft_nick(username, people) {
     var minecraftname;
-    
+
     $.each(people, function(index, values) {
         var name = username_for_player_values(values)
         if (name === username) {
@@ -720,7 +720,7 @@ function username_to_minecraft_nick(username, people) {
             }
         }
     });
-    
+
     return minecraftname;
 }
 
@@ -755,59 +755,27 @@ function displayFundingData() {
         $('.funding-progressbar').removeClass('active progress-striped');
         $('.funding-progressbar').empty();
         var fundingTotal = 0.0;
-        
-        moneyData.history.forEach(function(transaction) {
-            if (transaction.type !== 'monthly') {
-                fundingTotal += transaction.amount;
-            };
-        });
-        
-        var today = new Date();
-        
-        function spendingMonthly(year, month) {
-            while (month >= 12) {
-                year++;
-                month -= 12;
-            }
-            var ret = moneyData.spendingMonthly;
-            moneyData.history.forEach(function(transaction) {
-                if (transaction.type == 'monthly' && transaction.date.startsWith(zeroFill(year, 4) + '-' + zeroFill(month, 2) + '-')) {
-                    ret = transaction.amount;
-                };
-            });
-            return Math.abs(ret);
-        }
-        
+
         // This is the beginning of the billing period: Sept-Oct 2013
         var beginMonth = 8;
         var beginYear = 2013;
-        
+
         // This is the current month that is currently funded
         var fundedYear = beginYear;
         var fundedMonth = beginMonth;
-        
-        // This is today
-        var year = today.getFullYear();
-        var month = today.getMonth();
-        var day = today.getDate();
-        
-        // Subtract the first month
-        fundingTotal -= spendingMonthly(beginYear, beginMonth);
-        
-        // Add a month until it doesn't fit anymore
-        while (fundingTotal >= spendingMonthly(fundedYear, fundedMonth + 1)) {
-            fundedMonth++;
-            if (fundedMonth >= 12) {
-                fundedYear++;
-                fundedMonth = 0;
+
+        moneyData.history.forEach(function(transaction) {
+            fundingTotal += transaction.amount;
+            if (transaction.type === 'monthly') {
+                transactionDate = transaction.date.split(/\D/);
+                fundedYear = transactionDate[0];
+                fundedMonth = transactionDate[1];
             }
-            
-            fundingTotal -= spendingMonthly(fundedYear, fundedMonth);
-        }
-        
+        });
+
         var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         var abbrMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        
+
         if (fundedMonth == 11) {
             $('.funding-month').html(months[fundedMonth] + ' ' + fundedYear + ' to ' + months[0] + ' ' + (fundedYear + 1));
             $('.funding-month-small').html(abbrMonths[fundedMonth] + ' ' + fundedYear % 100 + ' to ' + abbrMonths[0] + ' ' + (fundedYear + 1) % 100);
@@ -815,61 +783,26 @@ function displayFundingData() {
             $('.funding-month').html(months[fundedMonth] + ' to ' + months[(fundedMonth + 1) % 12] + ' ' + fundedYear);
             $('.funding-month-small').html(abbrMonths[fundedMonth] + ' to ' + abbrMonths[(fundedMonth + 1) % 12] + ' ' + fundedYear % 100);
         }
-        
+
         var percent = 0;
-        
+
         var fundedForThisMonth = false;
-        if (fundedYear > year) {
-            // We are funded until next year
-            fundedForThisMonth = true;
-        } else if (fundedYear < year) {
-            // We are underfunded, possibly severely
-            fundedForThisMonth = false;
+
+        var percent = fundingTotal * 100 / moneyData.spendingMonthly;
+        if (percent >= 100) {
+            $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: 100%;"><span class="sr-only">100% funded</span></div>');
+        } else if (percent < 0) {
+            $('.funding-progressbar').append('<div class="progress-bar progress-bar-danger" style="width: 100%;"><span class="sr-only">underfunded</span></div>');
         } else {
-            if (fundedMonth == month) {
-                // We are in the month that is just not funded.
-                // Check if the billing date is already over.
-                
-                if (day < moneyData.billingDayOfMonth) {
-                    fundedForThisMonth = true;
-                }
-            } else {
-                fundedForThisMonth = fundedMonth >= month;
-            }
-        }
-        
-        var percent = Math.floor(fundingTotal * 100 / spendingMonthly(fundedYear, fundedMonth));
-        if (fundedForThisMonth) {
-            $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + percent + '%;"><span class="sr-only">' + percent + '% funded</span></div>');
-        } else {
-            var expectedTotal = fundingTotal + moneyData.fundingMonthly;
-            
-            moneyData.history.forEach(function(transaction) {
-                if (transaction.type == 'playerMonthly') {
-                    var transactionYear = transaction.date.split('-')[0];
-                    var transactionMonth = transaction.date.split('-')[1];
-                    var transactionDay = transaction.date.split('-')[2];
-                    if (transactionDay < moneyData.billingDayOfMonth) {
-                        if ((transactionMonth - 1 == month && transactionYear == year) || (month == 12 && transactionMonth == 1 && transactionYear - 1 == year)) {
-                            expectedTotal -= transaction.amount;
-                        }
-                    } else if (transactionYear == year && transactionMonth == month) {
-                        expectedTotal -= transaction.amount;
-                    }
-                }
-            });
-            
-            var expectedPercent = Math.max(0, Math.min(100 - percent, Math.floor(expectedTotal * 100 / spendingMonthly(fundedMonth, fundedYear))));
-            if (expectedPercent <= 50) {
-                var progressBarClass = 'progress-bar-danger';
-            } else if (expectedPercent <= 100) {
+            if (percent < 50) {
                 var progressBarClass = 'progress-bar-warning';
+            } else {
+                var progressBarClass = '';
             }
-            
             $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + percent + '%;"><span class="sr-only">' + percent + '% funded</span></div>');
-            $('.funding-progressbar').append('<div class="progress-bar ' + progressBarClass + '" style="width: ' + (100 - percent) + '%;"><span class="sr-only">bla</span></div>');
+            $('.funding-progressbar').append('<div class="progress-bar ' + progressBarClass + '" style="width: ' + (100 - percent) + '%;"></div>');
         }
-        $('.funding-progressbar').attr('title', fundingTotal.toFixed(2) + '€ out of ' + spendingMonthly(fundedYear, fundedMonth).toFixed(2) + '€');
+        $('.funding-progressbar').attr('title', fundingTotal.toFixed(2) + '€ out of ' + moneyData.spendingMonthly.toFixed(2) + '€');
         $('.funding-progressbar').tooltip();
     }).fail(function() {
         $('.funding-month').html('(error)');
