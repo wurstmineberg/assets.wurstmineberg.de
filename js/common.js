@@ -768,8 +768,8 @@ function displayFundingData() {
             fundingTotal += transaction.amount;
             if (transaction.type === 'monthly') {
                 transactionDate = transaction.date.split(/\D/);
-                fundedYear = transactionDate[0];
-                fundedMonth = transactionDate[1];
+                fundedYear = parseInt(transactionDate[0]);
+                fundedMonth = parseInt(transactionDate[1]);
             }
         });
 
