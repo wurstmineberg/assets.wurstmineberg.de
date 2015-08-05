@@ -1,7 +1,7 @@
 function displayLeaderboardStatData(statData, stringData, people) {
     var stats = [];
     var loadingLeaderboards = $('#loading-stat-leaderboard-table');
-    
+
     $.each(statData, function(minecraftName, playerStats) {
         player = people.personByMinecraft(minecraftName);
         if (player == undefined) {
@@ -23,7 +23,7 @@ function displayLeaderboardStatData(statData, stringData, people) {
                     };
                 };
             }
-            
+
             $.each(stats, function(index, playerStat) {
                 if (found) {
                     return;
@@ -51,7 +51,7 @@ function displayLeaderboardStatData(statData, stringData, people) {
                     }
                 }
             });
-            
+
             if (!found) {
                 stats.push({
                     id: key,
@@ -66,18 +66,18 @@ function displayLeaderboardStatData(statData, stringData, people) {
             };
         });
     });
-    
+
     stats.sort(function(a, b) {
         nameA = a.name;
         nameB = b.name;
         return nameA.localeCompare(nameB);
     });
-    
+
     $.each(stats, function(index, data) {
         var key = data.id;
         var stat = key.split('.');
         var name = data.name;
-        
+
         var players = data.players;
         var playerHTML = html_player_list(people.sorted(players));
         var secondPlayers = data.secondPlayers;
@@ -90,7 +90,7 @@ function displayLeaderboardStatData(statData, stringData, people) {
             secondValue = $('<span>', {'class': 'muted'}).text(secondValue);
         }
         var minValue = prettifyStatsValue(stat[1], data.minValue);
-        
+
         $row = $('<tr>', {'class': 'leaderboard-row'}).html($('<td>', {'class': 'stat'}).html('<a href="//i.wurstmineberg.de/wurstminestats/statspage/' + stat[1] + '.png">' + name + '</a>'));
         $row.append($('<td>', {'class': 'leading-player'}).html(playerHTML));
         $row.append($('<td>', {'class': 'value'}).html(value));
@@ -98,7 +98,7 @@ function displayLeaderboardStatData(statData, stringData, people) {
         $row.append($('<td>', {'class': 'secondvalue'}).html(secondValue));
         loadingLeaderboards.before($row);
     });
-    
+
     $('#loading-stat-leaderboard-table').remove();
 }
 

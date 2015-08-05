@@ -620,8 +620,8 @@ function set_anchor_height() {
     anchor.css("margin-top", "-=" + navigation_height);
 }
 
-function minecraft_ticks_to_real_minutes(minecraft_minutes) {
-    return minecraft_minutes / 1200;
+function minecraftTicksToRealMinutes(minecraftTicks) {
+    return minecraftTicks / 1200;
 }
 
 function prettifyStatsValue(key, value) {
@@ -633,8 +633,8 @@ function prettifyStatsValue(key, value) {
         } else {
             return value + 'cm';
         }
-    } else if (key == 'playOneMinute' || key == 'timeSinceDeath') {
-        var minutes = minecraft_ticks_to_real_minutes(value);
+    } else if (key == 'playOneMinute' || key == 'timeSinceDeath' || key == 'sneakTime') {
+        var minutes = minecraftTicksToRealMinutes(value);
         var hours = 0;
         var days = 0;
         if (minutes >= 60) {
