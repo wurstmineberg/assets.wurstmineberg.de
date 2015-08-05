@@ -794,13 +794,10 @@ function displayFundingData() {
         } else if (percent < 0) {
             $('.funding-progressbar').append('<div class="progress-bar progress-bar-danger" style="width: 100%;"><span class="sr-only">underfunded</span></div>');
         } else {
-            if (percent < 50) {
-                var progressBarClass = 'progress-bar-warning';
-            } else {
-                var progressBarClass = '';
-            }
             $('.funding-progressbar').append('<div class="progress-bar progress-bar-success" style="width: ' + percent + '%;"><span class="sr-only">' + percent + '% funded</span></div>');
-            $('.funding-progressbar').append('<div class="progress-bar ' + progressBarClass + '" style="width: ' + (100 - percent) + '%;"></div>');
+            if (percent < 50) {
+                $('.funding-progressbar').append('<div class="progress-bar progress-bar-warning" style="width: ' + (100 - percent) + '%;"></div>');
+            }
         }
         $('.funding-progressbar').attr('title', fundingTotal.toFixed(2) + '€ out of ' + (moneyData.spendingMonthly * -1).toFixed(2) + '€');
         $('.funding-progressbar').tooltip();
