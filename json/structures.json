@@ -34,6 +34,57 @@
         },
         "requiresOption": false
     },
+    "endCity": {
+        "dimension": "end",
+        "name": {
+            "default": "End city",
+            "plural": "End cities"
+        },
+        "requiresOption": false
+    },
+    "endCrystalPillar": {
+        "dimension": "end",
+        "infinite": false,
+        "name": {
+            "default": "Ender crystal pillar",
+            "plural": "Ender crystal pillars"
+        },
+        "requiresOption": false
+    },
+    "endExitPortal": {
+        "dimension": "end",
+        "infinite": false,
+        "name": {
+            "default": "End exit portal",
+            "plural": "End exit portal"
+        },
+        "requiresOption": false
+    },
+    "endShip": {
+        "dimension": "end",
+        "name": {
+            "default": "End ship",
+            "plural": "End ships"
+        },
+        "requiresOption": false
+    },
+    "jungleTemple": {
+        "biomes": [
+            "Jungle"
+        ],
+        "dimension": "overworld",
+        "name": {
+            "default": "jungle temple",
+            "plural": "jungle temples"
+        }
+    },
+    "netherFortress": {
+        "dimension": "nether",
+        "name": {
+            "default": "Nether fortress",
+            "plural": "Nether fortresses"
+        }
+    },
     "stronghold": {
         "dimension": "overworld",
         "infinite": false,
@@ -63,7 +114,7 @@
         "dimension": "overworld",
         "name": {
             "default": "witch hut",
-            "plural": "villages"
+            "plural": "witch huts"
         },
         "requiresOption": true
     }

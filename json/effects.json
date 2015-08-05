@@ -1,0 +1,233 @@
+{
+    "minecraft": {
+        "absorption": {
+            "color": {
+                "blue": 165,
+                "green": 82,
+                "red": 37
+            },
+            "name": "Absorption",
+            "numericID": 22
+        },
+        "awkward": {
+            "dummy": true
+        },
+        "blindness": {
+            "color": {
+                "blue": 35,
+                "green": 31,
+                "red": 31
+            },
+            "name": "Blindness",
+            "numericID": 15
+        },
+        "fire_resistance": {
+            "color": {
+                "blue": 58,
+                "green": 154,
+                "red": 228
+            },
+            "name": "Fire Resistance",
+            "numericID": 12
+        },
+        "glowing": {
+            "name": "Glowing",
+            "numericID": 24
+        },
+        "haste": {
+            "color": {
+                "blue": 67,
+                "green": 192,
+                "red": 217
+            },
+            "name": "Haste",
+            "numericID": 3
+        },
+        "health_boost": {
+            "color": {
+                "blue": 35,
+                "green": 125,
+                "red": 248
+            },
+            "name": "Health Boost",
+            "numericID": 21
+        },
+        "hunger": {
+            "color": {
+                "blue": 83,
+                "green": 118,
+                "red": 88
+            },
+            "name": "Hunger",
+            "numericID": 17
+        },
+        "instant_damage": {
+            "color": {
+                "blue": 9,
+                "green": 10,
+                "red": 67
+            },
+            "instant": true,
+            "name": "Instant Damage",
+            "numericID": 7
+        },
+        "instant_health": {
+            "color": {
+                "blue": 35,
+                "green": 36,
+                "red": 248
+            },
+            "instant": true,
+            "name": "Instant Health",
+            "numericID": 6
+        },
+        "invisibility": {
+            "color": {
+                "blue": 146,
+                "green": 131,
+                "red": 127
+            },
+            "name": "Invisibility",
+            "numericID": 14
+        },
+        "jump_boost": {
+            "color": {
+                "blue": 151,
+                "green": 98,
+                "red": 120
+            },
+            "name": "Jump Boost",
+            "numericID": 8
+        },
+        "levitation": {
+            "name": "Levitation",
+            "numericID": 25
+        },
+        "mining_fatigue": {
+            "color": {
+                "blue": 23,
+                "green": 66,
+                "red": 74
+            },
+            "name": "Mining Fatigue",
+            "numericID": 4
+        },
+        "mundane": {
+            "dummy": true
+        },
+        "nausea": {
+            "color": {
+                "blue": 74,
+                "green": 29,
+                "red": 85
+            },
+            "name": "Nausea",
+            "numericID": 9
+        },
+        "night_vision": {
+            "color": {
+                "blue": 161,
+                "green": 31,
+                "red": 31
+            },
+            "name": "Night Vision",
+            "numericID": 16
+        },
+        "poison": {
+            "color": {
+                "blue": 49,
+                "green": 147,
+                "red": 78
+            },
+            "name": "Poison",
+            "numericID": 19
+        },
+        "regeneration": {
+            "color": {
+                "blue": 171,
+                "green": 92,
+                "red": 205
+            },
+            "name": "Regeneration",
+            "numericID": 10
+        },
+        "resistance": {
+            "color": {
+                "blue": 58,
+                "green": 69,
+                "red": 153
+            },
+            "name": "Resistance",
+            "numericID": 11
+        },
+        "saturation": {
+            "color": {
+                "blue": 35,
+                "green": 36,
+                "red": 248
+            },
+            "name": "Saturation",
+            "numericID": 23
+        },
+        "slowness": {
+            "color": {
+                "blue": 129,
+                "green": 108,
+                "red": 90
+            },
+            "name": "Slowness",
+            "numericID": 2
+        },
+        "speed": {
+            "color": {
+                "blue": 198,
+                "green": 175,
+                "red": 124
+            },
+            "name": "Speed",
+            "numericID": 1
+        },
+        "strength": {
+            "color": {
+                "blue": 35,
+                "green": 36,
+                "red": 147
+            },
+            "name": "Strength",
+            "numericID": 5
+        },
+        "thick": {
+            "dummy": true
+        },
+        "water": {
+            "dummy": true
+        },
+        "water_breathing": {
+            "color": {
+                "blue": 153,
+                "green": 82,
+                "red": 46
+            },
+            "name": "Water Breathing",
+            "numericID": 13
+        },
+        "weakness": {
+            "color": {
+                "blue": 72,
+                "green": 77,
+                "red": 72
+            },
+            "name": "Weakness",
+            "numericID": 18
+        },
+        "wither": {
+            "color": {
+                "blue": 39,
+                "green": 42,
+                "red": 53
+            },
+            "name": "Wither",
+            "numericID": 20
+        }
+    }
+}

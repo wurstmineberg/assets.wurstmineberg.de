@@ -117,17 +117,12 @@
             "name": "Activator Rail"
         },
         "air": {
-            "blast_resistance": -1,
             "blockID": 0,
+            "creativeMenu": false,
             "image": "air.png",
-            "luminance": false,
             "name": "Air",
-            "renewable": false,
             "solid": false,
-            "stackable": null,
-            "texture": null,
-            "tool": null,
-            "transparent": true
+            "texture": null
         },
         "anvil": {
             "blockID": 145,
@@ -186,66 +181,610 @@
             "damageValues": {
                 "0": {
                     "image": "blackbanner.png",
-                    "name": "Black Banner"
+                    "name": "Black Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "1": {
-                    "name": "Red Banner"
+                    "name": "Red Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "10": {
                     "image": "limebanner.png",
-                    "name": "Lime Banner"
+                    "name": "Lime Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "11": {
                     "image": "yellowbanner.png",
-                    "name": "Yellow Banner"
+                    "name": "Yellow Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "12": {
                     "image": "lightbluebanner.png",
-                    "name": "Light Blue Banner"
+                    "name": "Light Blue Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "13": {
                     "image": "magentabanner.png",
-                    "name": "Magenta Banner"
+                    "name": "Magenta Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "14": {
                     "image": "orangebanner.png",
-                    "name": "Orange Banner"
+                    "name": "Orange Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "15": {
                     "image": "whitebanner.png",
-                    "name": "White Banner"
+                    "name": "White Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "greenbanner.png",
-                    "name": "Green Banner"
+                    "name": "Green Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "brownbanner.png",
-                    "name": "Brown Banner"
+                    "name": "Brown Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "4": {
                     "image": "bluebanner.png",
-                    "name": "Blue Banner"
+                    "name": "Blue Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "purplebanner.png",
-                    "name": "Purple Banner"
+                    "name": "Purple Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "6": {
                     "image": "cyanbanner.png",
-                    "name": "Cyan Banner"
+                    "name": "Cyan Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "7": {
                     "image": "lightgraybanner.png",
-                    "name": "Light Gray Banner"
+                    "name": "Light Gray Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "8": {
                     "image": "graybanner.png",
-                    "name": "Gray Banner"
+                    "name": "Gray Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "9": {
                     "image": "pinkbanner.png",
-                    "name": "Pink Banner"
+                    "name": "Pink Banner",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                "minecraft:stick",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 }
             },
             "image": "redbanner.png",
@@ -263,7 +802,29 @@
             "blockID": 138,
             "image": "beacon.png",
             "itemID": 138,
-            "name": "Beacon"
+            "name": "Beacon",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:glass",
+                        "minecraft:glass",
+                        "minecraft:glass",
+                        "minecraft:glass",
+                        "minecraft:nether_star",
+                        "minecraft:glass",
+                        "minecraft:obsidian",
+                        "minecraft:obsidian",
+                        "minecraft:obsidian"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amount": 1,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "bed": {
             "FIXME": "Beds are complicated stuff",
@@ -288,16 +849,117 @@
         },
         "bedrock": {
             "blockID": 7,
+            "dropsSelf": [],
             "image": "bedrock.png",
             "itemID": 7,
             "name": "Bedrock",
-            "solid": true,
+            "obtaining": [
+                {
+                    "description": "12 blocks of bedrock generate as part of each End gateway. Two linked End gateways generate each time an <a href=\"http://minecraft.gamepedia.com/Ender_Dragon\">Ender dragon</a> is killed. Up to 20 pairs of gateways can be generated.",
+                    "renewability": "finite",
+                    "type": "special"
+                },
+                {
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "dimension": "nether",
+                    "type": "natural"
+                },
+                {
+                    "amount": 41,
+                    "structure": "endExitPortal",
+                    "type": "structure"
+                },
+                {
+                    "amount": 1,
+                    "structure": "endCrystalPillar",
+                    "type": "structure"
+                }
+            ],
             "texture": "bedrock"
         },
         "beef": {
             "image": "rawbeef.png",
             "itemID": 363,
             "name": "Raw Beef"
+        },
+        "beetroot": {
+            "image": "beetroot.png",
+            "itemID": 434,
+            "name": "Beetroot",
+            "obtaining": [
+                {
+                    "block": "minecraft:beetroots",
+                    "type": "mining"
+                }
+            ]
+        },
+        "beetroot_seeds": {
+            "image": "beetrootseeds.png",
+            "itemID": 435,
+            "name": "Beetroot Seeds",
+            "obtaining": [
+                {
+                    "amountMax": 10,
+                    "stacksMax": 6,
+                    "stacksMin": 2,
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 10,
+                    "chestsMax": 2,
+                    "chestsMin": 2,
+                    "stacksMax": 6,
+                    "stacksMin": 2,
+                    "structure": "endShip",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "amountMin": 0,
+                    "block": "minecraft:beetroots",
+                    "type": "mining"
+                }
+            ],
+            "whenPlaced": "minecraft:beetroots"
+        },
+        "beetroot_soup": {
+            "image": "beetrootstew.png",
+            "itemID": 436,
+            "name": "Beetroot Soup",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:beetroot",
+                        "minecraft:beetroot",
+                        "minecraft:beetroot",
+                        "minecraft:beetroot",
+                        "minecraft:beetroot",
+                        "minecraft:beetroot",
+                        null,
+                        "minecraft:bowl",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
+            "stackable": false
+        },
+        "beetroots": {
+            "blockID": 207,
+            "image": "beetrootseeds.png",
+            "name": "Beetroot Crops",
+            "obtaining": [
+                {
+                    "structure": "village",
+                    "type": "structure"
+                }
+            ],
+            "renderType": "square",
+            "solid": false
         },
         "birch_door": {
             "blockID": 194,
@@ -466,7 +1128,29 @@
             "blockID": 117,
             "image": "brewingstand.png",
             "itemID": 379,
-            "name": "Brewing Stand"
+            "name": "Brewing Stand",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        "minecraft:blaze_rod",
+                        null,
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amount": 1,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "brick": {
             "image": "brick.png",
@@ -648,6 +1332,66 @@
             "image": "chest.png",
             "itemID": 54,
             "name": "Chest",
+            "obtaining": [
+                {
+                    "entity": "MinecartChest",
+                    "type": "entityDeath"
+                },
+                {
+                    "recipe": [
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        null,
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:planks"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "description": "One chest generates near the spawn of any world that has the <a href=\"http://minecraft.gamepedia.com/Bonus_chest\">bonus chest</a> option enabled.",
+                    "renewability": "finite",
+                    "type": "special"
+                },
+                {
+                    "structure": "dungeon",
+                    "type": "structure"
+                },
+                {
+                    "structure": "stronghold",
+                    "type": "structure"
+                },
+                {
+                    "amount": 2,
+                    "structure": "jungleTemple",
+                    "type": "structure"
+                },
+                {
+                    "amount": 4,
+                    "structure": "desertTemple",
+                    "type": "structure"
+                },
+                {
+                    "structure": "netherFortress",
+                    "type": "structure"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "structure"
+                },
+                {
+                    "amount": 2,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ],
             "solid": false,
             "subtype": "chest"
         },
@@ -661,6 +1405,64 @@
             "image": "rawchicken.png",
             "itemID": 365,
             "name": "Raw Chicken"
+        },
+        "chorus_flower": {
+            "blockID": 200,
+            "image": "chorusflower.png",
+            "itemID": 200,
+            "name": "Chorus Flower",
+            "obtaining": [
+                {
+                    "dimension": "end",
+                    "type": "natural"
+                },
+                {
+                    "plant": {
+                        "amountMax": 4,
+                        "consumed": "minecraft:chorus_plant",
+                        "id": "minecraft:chorus_flower"
+                    },
+                    "type": "plantGrowth"
+                }
+            ],
+            "solid": false
+        },
+        "chorus_fruit": {
+            "image": "chorus.png",
+            "itemID": 432,
+            "name": "Chorus Fruit",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "block": "minecraft:chorus_plant",
+                    "type": "mining"
+                }
+            ]
+        },
+        "chorus_fruit_popped": {
+            "image": "poppedchorus.png",
+            "itemID": 433,
+            "name": "Popped Chorus Fruit",
+            "obtaining": [
+                {
+                    "input": "minecraft:chorus_fruit",
+                    "type": "smelting"
+                }
+            ]
+        },
+        "chorus_plant": {
+            "blockID": 199,
+            "dropsSelf": [],
+            "image": "chorusplant.png",
+            "itemID": 199,
+            "name": "Chorus Plant",
+            "obtaining": [
+                {
+                    "dimension": "end",
+                    "type": "natural"
+                }
+            ],
+            "solid": false
         },
         "clay": {
             "blockID": 82,
@@ -1321,6 +2123,53 @@
             "itemID": 116,
             "name": "Enchantment Table"
         },
+        "end_bricks": {
+            "blockID": 206,
+            "dropsSelf": [
+                "pickaxe"
+            ],
+            "image": "endstonebricks.png",
+            "itemID": 206,
+            "name": "End Stone Bricks",
+            "obtaining": [
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:end_stone",
+                        "minecraft:end_stone",
+                        null,
+                        "minecraft:end_stone",
+                        "minecraft:end_stone",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "structure"
+                },
+                {
+                    "amount": 36,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ]
+        },
+        "end_gateway": {
+            "blockID": 209,
+            "name": "End Gateway",
+            "obtaining": [
+                {
+                    "description": "Two linked End gateways generate each time an <a href=\"http://minecraft.gamepedia.com/Ender_Dragon\">Ender dragon</a> is killed. Up to 20 gateways can be generated.",
+                    "renewability": "finite",
+                    "type": "special"
+                }
+            ],
+            "solid": false
+        },
         "end_portal": {
             "blockID": 119,
             "image": "endportal.png",
@@ -1332,6 +2181,24 @@
             "itemID": 120,
             "name": "End Portal Frame"
         },
+        "end_rod": {
+            "blockID": 198,
+            "image": "endrod.png",
+            "itemID": 198,
+            "name": "End Rod",
+            "obtaining": [
+                {
+                    "structure": "endCity",
+                    "type": "structure"
+                },
+                {
+                    "amount": 6,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
+        },
         "end_stone": {
             "blockID": 121,
             "image": "endstone.png",
@@ -1340,9 +2207,34 @@
         },
         "ender_chest": {
             "blockID": 130,
+            "dropsSelf": {
+                "silkTouch": true,
+                "tools": "pickaxe"
+            },
             "image": "enderchest.png",
             "itemID": 130,
-            "name": "Ender Chest"
+            "name": "Ender Chest",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:obsidian",
+                        "minecraft:obsidian",
+                        "minecraft:obsidian",
+                        "minecraft:obsidian",
+                        "minecraft:ender_eye",
+                        "minecraft:obsidian",
+                        "minecraft:obsidian",
+                        "minecraft:obsidian",
+                        "minecraft:obsidian"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "ender_eye": {
             "image": "eyeofender.png",
@@ -1662,7 +2554,6 @@
                         },
                         {
                             "chestsMax": 2,
-                            "chestsMin": 1,
                             "stacksMax": 8,
                             "structure": "dungeon",
                             "type": "chest"
@@ -1797,6 +2688,25 @@
             "texture_top_uncolored": "grass_top",
             "texture_uncolored": "grass_side_overlay"
         },
+        "grass_path": {
+            "blockID": 208,
+            "creativeMenu": false,
+            "dropsSelf": [],
+            "image": "grasspath.png",
+            "itemID": 208,
+            "name": "Grass Path",
+            "obtaining": [
+                {
+                    "block": "minecraft:grass",
+                    "tools": [
+                        "shovel"
+                    ],
+                    "type": "modifyBlock"
+                }
+            ],
+            "pickBlock": true,
+            "solid": false
+        },
         "gravel": {
             "blockID": 13,
             "image": "gravel.png",
@@ -1861,9 +2771,35 @@
         },
         "iron_block": {
             "blockID": 42,
+            "dropsSelf": [
+                "minecraft:stone_pickaxe",
+                "minecraft:iron_pickaxe",
+                "minecraft:diamond_pickaxe"
+            ],
             "image": "ironblock.png",
             "itemID": 42,
             "name": "Block of Iron",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amount": 9,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ],
             "solid": true,
             "texture": "iron_block"
         },
@@ -2099,7 +3035,37 @@
             "blockID": 65,
             "image": "ladder.png",
             "itemID": 65,
-            "name": "Ladder"
+            "name": "Ladder",
+            "obtaining": [
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "structure": "stronghold",
+                    "type": "structure"
+                },
+                {
+                    "amount": 14,
+                    "structure": "endShip",
+                    "type": "structure"
+                },
+                {
+                    "outputAmount": 3,
+                    "recipe": [
+                        "minecraft:stick",
+                        null,
+                        "minecraft:stick",
+                        "minecraft:stick",
+                        "minecraft:stick",
+                        "minecraft:stick",
+                        "minecraft:stick",
+                        null,
+                        "minecraft:stick"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "lapis_block": {
             "blockID": 22,
@@ -2487,9 +3453,49 @@
         },
         "obsidian": {
             "blockID": 49,
+            "dropsSelf": "minecraft:diamond_pickaxe",
             "image": "obsidian.png",
             "itemID": 49,
             "name": "Obsidian",
+            "obtaining": [
+                {
+                    "amount": 20,
+                    "structure": "endShip",
+                    "type": "structure"
+                },
+                {
+                    "liquid1": "minecraft:water",
+                    "liquid2": "minecraft:lava",
+                    "relation": "flowIntoSource",
+                    "type": "liquids"
+                },
+                {
+                    "description": "14 blocks of obsidian generate as part of a <a href=\"http://minecraft.gamepedia.com/Nether_portal\">Nether portal</a> when an unlinked portal is used.",
+                    "renewability": "manual",
+                    "type": "special"
+                },
+                {
+                    "description": "25 blocks of obsidian generate as part of the End spawn platform each time an entity enters the End. This allows for automatic farming as shown in <a href=\"https://www.youtube.com/watch?v=KYba7FqY4LQ\">this video</a>.",
+                    "renewability": "fullyAuto",
+                    "type": "special"
+                },
+                {
+                    "amountMax": 7,
+                    "amountMin": 3,
+                    "stacksMax": 8,
+                    "stacksMin": 0,
+                    "structure": "village",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 4,
+                    "amountMin": 2,
+                    "stacksMax": 5,
+                    "stacksMin": 0,
+                    "structure": "netherFortress",
+                    "type": "chest"
+                }
+            ],
             "solid": true,
             "texture": "obsidian"
         },
@@ -2601,420 +3607,618 @@
             "name": "Potato Crops"
         },
         "potion": {
-            "damageValues": {
-                "0": {
-                    "name": "Water Bottle"
-                },
-                "16": {
-                    "alwaysGlow": true,
-                    "name": "Awkward Potion"
-                },
-                "16384": {
-                    "alwaysGlow": true,
-                    "image": "splashpotion.png",
-                    "name": "Splash Mundane Potion"
-                },
-                "16385": {
-                    "alwaysGlow": true,
-                    "image": "splashregenpotion.png",
-                    "name": "Splash Potion of Regeneration"
-                },
-                "16386": {
-                    "alwaysGlow": true,
-                    "image": "splashspeedpotion.png",
-                    "name": "Splash Potion of Swiftness"
-                },
-                "16387": {
-                    "alwaysGlow": true,
-                    "image": "splashfireresistancepotion.png",
-                    "name": "Splash Potion of Fire Resistance"
-                },
-                "16388": {
-                    "alwaysGlow": true,
-                    "image": "splashpoisonpotion.png",
-                    "name": "Splash Potion of Poison"
-                },
-                "16389": {
-                    "alwaysGlow": true,
-                    "image": "splashhealthpotion.png",
-                    "name": "Splash Potion of Healing"
-                },
-                "16390": {
-                    "alwaysGlow": true,
-                    "image": "splashnightvisionpotion.png",
-                    "name": "Splash Potion of Night Vision"
-                },
-                "16392": {
-                    "alwaysGlow": true,
-                    "image": "splashweaknesspotion.png",
-                    "name": "Splash Potion of Weakness"
-                },
-                "16393": {
-                    "alwaysGlow": true,
-                    "image": "splashstrengthpotion.png",
-                    "name": "Splash Potion of Strength"
-                },
-                "16394": {
-                    "alwaysGlow": true,
-                    "image": "splashslownesspotion.png",
-                    "name": "Splash Potion of Slowness"
-                },
-                "16395": {
-                    "alwaysGlow": true,
-                    "image": "splashjumppotion.png",
-                    "name": "Splash Potion of Leaping"
-                },
-                "16396": {
-                    "alwaysGlow": true,
-                    "image": "splashdamagepotion.png",
-                    "name": "Splash Potion of Harming"
-                },
-                "16397": {
-                    "alwaysGlow": true,
-                    "image": "splashwaterbreathingpotion.png",
-                    "name": "Splash Potion of Water Breathing"
-                },
-                "16398": {
-                    "alwaysGlow": true,
-                    "image": "splashinvisibilitypotion.png",
-                    "name": "Splash Potion of Invisibility"
-                },
-                "16417": {
-                    "alwaysGlow": true,
-                    "image": "splashregenpotion.png",
-                    "name": "Splash Potion of Regeneration \u2161"
-                },
-                "16418": {
-                    "alwaysGlow": true,
-                    "image": "splashspeedpotion.png",
-                    "name": "Splash Potion of Swiftness \u2161"
-                },
-                "16419": {
-                    "alwaysGlow": true,
-                    "image": "splashfireresistancepotion.png",
-                    "name": "Splash Potion of Fire Resistance"
-                },
-                "16420": {
-                    "alwaysGlow": true,
-                    "image": "splashpoisonpotion.png",
-                    "name": "Splash Potion of Poison \u2161"
-                },
-                "16421": {
-                    "alwaysGlow": true,
-                    "image": "splashhealthpotion.png",
-                    "name": "Splash Potion of Healing \u2161"
-                },
-                "16422": {
-                    "alwaysGlow": true,
-                    "image": "splashnightvisionpotion.png",
-                    "name": "Splash Potion of Night Vision"
-                },
-                "16424": {
-                    "alwaysGlow": true,
-                    "image": "splashweaknesspotion.png",
-                    "name": "Splash Potion of Weakness"
-                },
-                "16425": {
-                    "alwaysGlow": true,
-                    "image": "splashstrengthpotion.png",
-                    "name": "Splash Potion of Strength \u2161"
-                },
-                "16426": {
-                    "alwaysGlow": true,
-                    "image": "splashslownesspotion.png",
-                    "name": "Splash Potion of Slowness"
-                },
-                "16427": {
-                    "alwaysGlow": true,
-                    "image": "splashjumppotion.png",
-                    "name": "Splash Potion of Leaping \u2161"
-                },
-                "16428": {
-                    "alwaysGlow": true,
-                    "image": "splashdamagepotion.png",
-                    "name": "Splash Potion of Harming \u2161"
-                },
-                "16429": {
-                    "alwaysGlow": true,
-                    "image": "splashwaterbreathingpotion.png",
-                    "name": "Splash Potion of Water Breathing"
-                },
-                "16430": {
-                    "alwaysGlow": true,
-                    "image": "splashinvisibilitypotion.png",
-                    "name": "Splash Potion of Invisibility"
-                },
-                "16449": {
-                    "alwaysGlow": true,
-                    "image": "splashregenpotion.png",
-                    "name": "Splash Potion of Regeneration, extended"
-                },
-                "16450": {
-                    "alwaysGlow": true,
-                    "image": "splashspeedpotion.png",
-                    "name": "Splash Potion of Swiftness, extended"
-                },
-                "16451": {
-                    "alwaysGlow": true,
-                    "image": "splashfireresistancepotion.png",
-                    "name": "Splash Potion of Fire Resistance, extended"
-                },
-                "16452": {
-                    "alwaysGlow": true,
-                    "image": "splashpoisonpotion.png",
-                    "name": "Splash Potion of Poison, extended"
-                },
-                "16453": {
-                    "alwaysGlow": true,
-                    "image": "splashhealthpotion.png",
-                    "name": "Splash Potion of Healing"
-                },
-                "16454": {
-                    "alwaysGlow": true,
-                    "image": "splashnightvisionpotion.png",
-                    "name": "Splash Potion of Night Vision, extended"
-                },
-                "16456": {
-                    "alwaysGlow": true,
-                    "image": "splashweaknesspotion.png",
-                    "name": "Splash Potion of Weakness, extended"
-                },
-                "16457": {
-                    "alwaysGlow": true,
-                    "image": "splashstrengthpotion.png",
-                    "name": "Splash Potion of Strength, extended"
-                },
-                "16458": {
-                    "alwaysGlow": true,
-                    "image": "splashslownesspotion.png",
-                    "name": "Splash Potion of Slowness, extended"
-                },
-                "16459": {
-                    "alwaysGlow": true,
-                    "image": "splashjumppotion.png",
-                    "name": "Splash Potion of Leaping, extended"
-                },
-                "16460": {
-                    "alwaysGlow": true,
-                    "image": "splashdamagepotion.png",
-                    "name": "Splash Potion of Harming"
-                },
-                "16461": {
-                    "alwaysGlow": true,
-                    "image": "splashwaterbreathingpotion.png",
-                    "name": "Splash Potion of Water Breathing, extended"
-                },
-                "16462": {
-                    "alwaysGlow": true,
-                    "image": "splashinvisibilitypotion.png",
-                    "name": "Splash Potion of Invisibility, extended"
-                },
-                "32": {
-                    "alwaysGlow": true,
-                    "name": "Thick Potion"
-                },
-                "64": {
-                    "alwaysGlow": true,
-                    "name": "Mundane Potion, extended"
-                },
-                "8192": {
-                    "alwaysGlow": true,
-                    "name": "Mundane Potion"
-                },
-                "8193": {
-                    "alwaysGlow": true,
-                    "image": "regenpotion.png",
-                    "name": "Potion of Regeneration"
-                },
-                "8194": {
-                    "alwaysGlow": true,
-                    "image": "speedpotion.png",
-                    "name": "Potion of Swiftness"
-                },
-                "8195": {
-                    "alwaysGlow": true,
-                    "image": "fireresistancepotion.png",
-                    "name": "Potion of Fire Resistance"
-                },
-                "8196": {
-                    "alwaysGlow": true,
-                    "image": "poisonpotion.png",
-                    "name": "Potion of Poison"
-                },
-                "8197": {
-                    "alwaysGlow": true,
-                    "image": "healthpotion.png",
-                    "name": "Potion of Healing"
-                },
-                "8198": {
-                    "alwaysGlow": true,
-                    "image": "nightvisionpotion.png",
-                    "name": "Potion of Night Vision"
-                },
-                "8200": {
-                    "alwaysGlow": true,
-                    "image": "weaknesspotion.png",
-                    "name": "Potion of Weakness"
-                },
-                "8201": {
-                    "alwaysGlow": true,
-                    "image": "strengthpotion.png",
-                    "name": "Potion of Strength"
-                },
-                "8202": {
-                    "alwaysGlow": true,
-                    "image": "slownesspotion.png",
-                    "name": "Potion of Slowness"
-                },
-                "8203": {
-                    "alwaysGlow": true,
-                    "image": "jumppotion.png",
-                    "name": "Potion of Leaping"
-                },
-                "8204": {
-                    "alwaysGlow": true,
-                    "image": "damagepotion.png",
-                    "name": "Potion of Harming"
-                },
-                "8205": {
-                    "alwaysGlow": true,
-                    "image": "waterbreathingpotion.png",
-                    "name": "Potion of Water Breathing"
-                },
-                "8206": {
-                    "alwaysGlow": true,
-                    "image": "invisibilitypotion.png",
-                    "name": "Potion of Invisibility"
-                },
-                "8225": {
-                    "alwaysGlow": true,
-                    "image": "regenpotion.png",
-                    "name": "Potion of Regeneration \u2161"
-                },
-                "8226": {
-                    "alwaysGlow": true,
-                    "image": "speedpotion.png",
-                    "name": "Potion of Swiftness \u2161"
-                },
-                "8227": {
-                    "alwaysGlow": true,
-                    "image": "fireresistancepotion.png",
-                    "name": "Potion of Fire Resistance"
-                },
-                "8228": {
-                    "alwaysGlow": true,
-                    "image": "poisonpotion.png",
-                    "name": "Potion of Poison \u2161"
-                },
-                "8229": {
-                    "alwaysGlow": true,
-                    "image": "healthpotion.png",
-                    "name": "Potion of Healing \u2161"
-                },
-                "8230": {
-                    "alwaysGlow": true,
-                    "image": "nightvisionpotion.png",
-                    "name": "Potion of Night Vision"
-                },
-                "8232": {
-                    "alwaysGlow": true,
-                    "image": "weaknesspotion.png",
-                    "name": "Potion of Weakness"
-                },
-                "8233": {
-                    "alwaysGlow": true,
-                    "image": "strengthpotion.png",
-                    "name": "Potion of Strength \u2161"
-                },
-                "8234": {
-                    "alwaysGlow": true,
-                    "image": "slownesspotion.png",
-                    "name": "Potion of Slowness"
-                },
-                "8235": {
-                    "alwaysGlow": true,
-                    "image": "jumppotion.png",
-                    "name": "Potion of Leaping \u2161"
-                },
-                "8236": {
-                    "alwaysGlow": true,
-                    "image": "damagepotion.png",
-                    "name": "Potion of Harming \u2161"
-                },
-                "8237": {
-                    "alwaysGlow": true,
-                    "image": "waterbreathingpotion.png",
-                    "name": "Potion of Water Breathing"
-                },
-                "8238": {
-                    "alwaysGlow": true,
-                    "image": "invisibilitypotion.png",
-                    "name": "Potion of Invisibility"
-                },
-                "8257": {
-                    "alwaysGlow": true,
-                    "image": "regenpotion.png",
-                    "name": "Potion of Regeneration, extended"
-                },
-                "8258": {
-                    "alwaysGlow": true,
-                    "image": "speedpotion.png",
-                    "name": "Potion of Swiftness, extended"
-                },
-                "8259": {
-                    "alwaysGlow": true,
-                    "image": "fireresistancepotion.png",
-                    "name": "Potion of Fire Resistance, extended"
-                },
-                "8260": {
-                    "alwaysGlow": true,
-                    "image": "poisonpotion.png",
-                    "name": "Potion of Poison, extended"
-                },
-                "8261": {
-                    "alwaysGlow": true,
-                    "image": "healthpotion.png",
-                    "name": "Potion of Healing"
-                },
-                "8262": {
-                    "alwaysGlow": true,
-                    "image": "nightvisionpotion.png",
-                    "name": "Potion of Night Vision, extended"
-                },
-                "8264": {
-                    "alwaysGlow": true,
-                    "image": "weaknesspotion.png",
-                    "name": "Potion of Weakness, extended"
-                },
-                "8265": {
-                    "alwaysGlow": true,
-                    "image": "strengthpotion.png",
-                    "name": "Potion of Strength, extended"
-                },
-                "8266": {
-                    "alwaysGlow": true,
-                    "image": "slownesspotion.png",
-                    "name": "Potion of Slowness, extended"
-                },
-                "8267": {
-                    "alwaysGlow": true,
-                    "image": "jumppotion.png",
-                    "name": "Potion of Leaping, extended"
-                },
-                "8268": {
-                    "alwaysGlow": true,
-                    "image": "damagepotion.png",
-                    "name": "Potion of Harming"
-                },
-                "8269": {
-                    "alwaysGlow": true,
-                    "image": "waterbreathingpotion.png",
-                    "name": "Potion of Water Breathing, extended"
-                },
-                "8270": {
-                    "alwaysGlow": true,
-                    "image": "invisibilitypotion.png",
-                    "name": "Potion of Invisibility, extended"
+            "effects": {
+                "minecraft": {
+                    "awkward": {
+                        "name": "Awkward Potion",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:nether_wart",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "fire_resistance": {
+                        "image": "fireresistancepotion.png",
+                        "name": "Potion of Fire Resistance",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:magma_cream",
+                                "type": "brewing"
+                            },
+                            {
+                                "entity": "Witch",
+                                "requires": "whileUsing",
+                                "type": "entityDeath"
+                            }
+                        ]
+                    },
+                    "harming": {
+                        "image": "damagepotion.png",
+                        "name": "Potion of Harming",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:healing",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:poison",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_poison",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "healing": {
+                        "image": "healthpotion.png",
+                        "name": "Potion of Healing",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:speckled_melon",
+                                "type": "brewing"
+                            },
+                            {
+                                "entity": "Witch",
+                                "requires": "whileUsing",
+                                "type": "entityDeath"
+                            }
+                        ]
+                    },
+                    "invisibility": {
+                        "image": "invisibilitypotion.png",
+                        "name": "Potion of Invisibility",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:night_vision",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "leaping": {
+                        "image": "jumppotion.png",
+                        "name": "Potion of Leaping",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:rabbit_foot",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_fire_resistance": {
+                        "image": "fireresistancepotion.png",
+                        "name": "Potion of Fire Resistance, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:fire_resistance",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_invisibility": {
+                        "image": "invisibilitypotion.png",
+                        "name": "Potion of Invisibility, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:invisibility",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_night_vision",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_leaping": {
+                        "image": "jumppotion.png",
+                        "name": "Potion of Leaping, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:leaping",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_night_vision": {
+                        "image": "nightvisionpotion.png",
+                        "name": "Potion of Night Vision, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:night_vision",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_poison": {
+                        "image": "poisonpotion.png",
+                        "name": "Potion of Poison, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:poison",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_regeneration": {
+                        "image": "regenpotion.png",
+                        "name": "Potion of Regeneration, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:regeneration",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_slowness": {
+                        "image": "slownesspotion.png",
+                        "name": "Potion of Slowness, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:slowness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_swiftness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_leaping",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_strength": {
+                        "image": "strengthpotion.png",
+                        "name": "Potion of Strength, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strength",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_swiftness": {
+                        "image": "speedpotion.png",
+                        "name": "Potion of Swiftness, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:swiftness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_water_breathing": {
+                        "image": "waterbreathingpotion.png",
+                        "name": "Potion of Water Breathing, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water_breathing",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_weakness": {
+                        "image": "weaknesspotion.png",
+                        "name": "Potion of Weakness, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:weakness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "mundane": {
+                        "name": "Mundane Potion",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": [
+                                    "minecraft:speckled_melon",
+                                    "minecraft:ghast_tear",
+                                    "minecraft:rabbit_foot",
+                                    "minecraft:blaze_powder",
+                                    "minecraft:spider_eye",
+                                    "minecraft:sugar",
+                                    "minecraft:magma_cream"
+                                ],
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "night_vision": {
+                        "image": "nightvisionpotion.png",
+                        "name": "Potion of Night Vision",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:golden_carrot",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "poison": {
+                        "image": "poisonpotion.png",
+                        "name": "Potion of Poison",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:spider_eye",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "regeneration": {
+                        "image": "regenpotion.png",
+                        "name": "Potion of Regeneration",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:ghast_tear",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "slowness": {
+                        "image": "slownesspotion.png",
+                        "name": "Potion of Slowness",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:swiftness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:leaping",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strength": {
+                        "image": "strengthpotion.png",
+                        "name": "Potion of Strength",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:blaze_powder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_harming": {
+                        "image": "damagepotion.png",
+                        "name": "Potion of Harming \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:harming",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_healing",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_poison",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_healing": {
+                        "image": "healthpotion.png",
+                        "name": "Potion of Healing \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:healing",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "chestsMax": 1,
+                                "chestsMin": 1,
+                                "inventoryType": "minecraft:brewing_stand",
+                                "stacksMax": 2,
+                                "stacksMin": 2,
+                                "structure": "endShip",
+                                "type": "chest"
+                            }
+                        ]
+                    },
+                    "strong_leaping": {
+                        "image": "jumppotion.png",
+                        "name": "Potion of Leaping \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:leaping",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_poison": {
+                        "image": "poisonpotion.png",
+                        "name": "Potion of Poison \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:poison",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_regeneration": {
+                        "image": "regenpotion.png",
+                        "name": "Potion of Regeneration \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:regeneration",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_strength": {
+                        "image": "strengthpotion.png",
+                        "name": "Potion of Strength \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strength",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_swiftness": {
+                        "image": "speedpotion.png",
+                        "name": "Potion of Swiftness \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:swiftness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "swiftness": {
+                        "image": "speedpotion.png",
+                        "name": "Potion of Swiftness",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:sugar",
+                                "type": "brewing"
+                            },
+                            {
+                                "entity": "Witch",
+                                "requires": "whileUsing",
+                                "type": "entityDeath"
+                            }
+                        ]
+                    },
+                    "thick": {
+                        "name": "Thick Potion",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "water": {
+                        "name": "Water Bottle",
+                        "obtaining": [
+                            {
+                                "item": "minecraft:glass_bottle",
+                                "onBlock": {
+                                    "consumed": true,
+                                    "id": "minecraft:water"
+                                },
+                                "type": "useItem"
+                            },
+                            {
+                                "item": "minecraft:glass_bottle",
+                                "onBlock": {
+                                    "id": "minecraft:cauldron"
+                                },
+                                "type": "useItem"
+                            },
+                            {
+                                "category": "junk",
+                                "type": "fishing",
+                                "weight": 0.12048192771084337
+                            }
+                        ]
+                    },
+                    "water_breathing": {
+                        "image": "waterbreathingpotion.png",
+                        "name": "Potion of Water Breathing",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": {
+                                    "damage": 3,
+                                    "id": "minecraft:fish"
+                                },
+                                "type": "brewing"
+                            },
+                            {
+                                "entity": "Witch",
+                                "requires": "whileUsing",
+                                "type": "entityDeath"
+                            }
+                        ]
+                    },
+                    "weakness": {
+                        "image": "weaknesspotion.png",
+                        "name": "Potion of Weakness",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            }
+                        ]
+                    }
                 }
             },
             "image": "waterbottle.png",
@@ -3078,6 +4282,175 @@
             "blockID": 104,
             "image": "pumpkinseeds.png",
             "name": "Pumpkin Stem"
+        },
+        "purpur_block": {
+            "blockID": 201,
+            "dropsSelf": [
+                "pickaxe"
+            ],
+            "image": "purpurblock.png",
+            "itemID": 201,
+            "name": "Purpur Block",
+            "obtaining": [
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:chorus_fruit_popped",
+                        "minecraft:chorus_fruit_popped",
+                        null,
+                        "minecraft:chorus_fruit_popped",
+                        "minecraft:chorus_fruit_popped",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "structure"
+                },
+                {
+                    "amount": 557,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ]
+        },
+        "purpur_double_slab": {
+            "blockID": 204,
+            "image": "purpurslab.png",
+            "name": "Double Purpur Slab",
+            "obtaining": [
+                {
+                    "block": "minecraft:purpur_slab",
+                    "tools": [
+                        {
+                            "consumed": true,
+                            "id": "minecraft:purpur_slab"
+                        }
+                    ],
+                    "type": "modifyBlock"
+                }
+            ]
+        },
+        "purpur_pillar": {
+            "blockID": 202,
+            "dropsSelf": [
+                "pickaxe"
+            ],
+            "image": "purpurpillar.png",
+            "itemID": 202,
+            "name": "Purpur Pillar",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        "minecraft:purpur_slab",
+                        null,
+                        null,
+                        "minecraft:purpur_slab",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "structure"
+                },
+                {
+                    "amount": 94,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ]
+        },
+        "purpur_slab": {
+            "blockID": 205,
+            "dropsSelf": [
+                "pickaxe"
+            ],
+            "image": "purpurslab.png",
+            "itemID": 205,
+            "name": "Purpur Slab",
+            "obtaining": [
+                {
+                    "outputAmount": 6,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:purpur_block",
+                        "minecraft:purpur_block",
+                        "minecraft:purpur_block",
+                        null,
+                        null,
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "structure"
+                },
+                {
+                    "amount": 7,
+                    "structure": "endShip",
+                    "type": "structure"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMin": 2,
+                    "block": "minecraft:double_purpur_slab",
+                    "tools": [
+                        "pickaxe"
+                    ],
+                    "type": "mining"
+                }
+            ],
+            "solid": false,
+            "subtype": "slab"
+        },
+        "purpur_stairs": {
+            "blockID": 203,
+            "dropsSelf": [
+                "pickaxe"
+            ],
+            "image": "purpurstairs.png",
+            "itemID": 203,
+            "name": "Purpur Stairs",
+            "obtaining": [
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        "minecraft:purpur_block",
+                        null,
+                        null,
+                        "minecraft:purpur_block",
+                        "minecraft:purpur_block",
+                        null,
+                        "minecraft:purpur_block",
+                        "minecraft:purpur_block",
+                        "minecraft:purpur_block"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "structure"
+                },
+                {
+                    "amount": 175,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ],
+            "solid": false,
+            "subtype": "stairs"
         },
         "quartz": {
             "image": "netherquartz.png",
@@ -3582,14 +4955,44 @@
             "damageValues": {
                 "0": {
                     "image": "skeletonskull.png",
-                    "name": "Skeleton Skull"
+                    "name": "Skeleton Skull",
+                    "obtaining": [
+                        {
+                            "entity": "Skeleton",
+                            "requires": "chargedCreeper",
+                            "subtype": "regular",
+                            "type": "entityDeath"
+                        }
+                    ]
                 },
                 "1": {
-                    "name": "Wither Skeleton Skull"
+                    "name": "Wither Skeleton Skull",
+                    "obtaining": [
+                        {
+                            "entity": "Skeleton",
+                            "requires": "chargedCreeper",
+                            "subtype": "wither",
+                            "type": "entityDeath"
+                        },
+                        {
+                            "amountMin": 0,
+                            "entity": "Skeleton",
+                            "requires": "player",
+                            "subtype": "wither",
+                            "type": "entityDeath"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "zombiehead.png",
-                    "name": "Zombie Head"
+                    "name": "Zombie Head",
+                    "obtaining": [
+                        {
+                            "entity": "Zombie",
+                            "requires": "chargedCreeper",
+                            "type": "entityDeath"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "playerhead.png",
@@ -3598,11 +5001,16 @@
                 "4": {
                     "image": "creeperhead.png",
                     "name": "Creeper Head"
+                },
+                "5": {
+                    "image": "dragonhead.png",
+                    "name": "Dragon Head"
                 }
             },
             "image": "witherskeletonskull.png",
             "itemID": 397,
-            "name": "Mob Head"
+            "name": "Mob Head",
+            "solid": false
         },
         "slime": {
             "blockID": 165,
@@ -3716,6 +5124,10 @@
                     "image": "spawnguardian.png",
                     "name": "Spawn Guardian"
                 },
+                "69": {
+                    "image": "spawnshulker.png",
+                    "name": "Spawn Shulker"
+                },
                 "90": {
                     "image": "spawnpig.png",
                     "name": "Spawn Pig"
@@ -3758,10 +5170,883 @@
             "itemID": 382,
             "name": "Glistering Melon"
         },
+        "spectral_arrow": {
+            "image": "spectralarrow.png",
+            "itemID": 439,
+            "name": "Spectral Arrow",
+            "obtaining": [
+                {
+                    "outputAmount": 2,
+                    "recipe": [
+                        null,
+                        "minecraft:glowstone_dust",
+                        null,
+                        "minecraft:glowstone_dust",
+                        "minecraft:arrow",
+                        "minecraft:glowstone_dust",
+                        null,
+                        "minecraft:glowstone_dust",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
+        },
         "spider_eye": {
             "image": "spidereye.png",
             "itemID": 375,
             "name": "Spider Eye"
+        },
+        "splash_potion": {
+            "effects": {
+                "minecraft": {
+                    "awkward": {
+                        "name": "Splash Awkward Potion",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:nether_wart",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "fire_resistance": {
+                        "image": "splashfireresistancepotion.png",
+                        "name": "Splash Potion of Fire Resistance",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:magma_cream",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:fire_resistance",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "harming": {
+                        "image": "splashdamagepotion.png",
+                        "name": "Splash Potion of Harming",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:healing",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:poison",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_poison",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:harming",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "healing": {
+                        "image": "splashhealthpotion.png",
+                        "name": "Splash Potion of Healing",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:speckled_melon",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:healing",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "invisibility": {
+                        "image": "splashinvisibilitypotion.png",
+                        "name": "Splash Potion of Invisibility",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:night_vision",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:invisibility",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "leaping": {
+                        "image": "splashjumppotion.png",
+                        "name": "Splash Potion of Leaping",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:rabbit_foot",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:leaping",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_fire_resistance": {
+                        "image": "splashfireresistancepotion.png",
+                        "name": "Splash Potion of Fire Resistance, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:fire_resistance",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_fire_resistance",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_invisibility": {
+                        "image": "splashinvisibilitypotion.png",
+                        "name": "Splash Potion of Invisibility, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:invisibility",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_night_vision",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_invisibility",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_leaping": {
+                        "image": "splashjumppotion.png",
+                        "name": "Splash Potion of Leaping, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:leaping",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_leaping",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_night_vision": {
+                        "image": "splashnightvisionpotion.png",
+                        "name": "Splash Potion of Night Vision, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:night_vision",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_night_vision",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_poison": {
+                        "image": "splashpoisonpotion.png",
+                        "name": "Splash Potion of Poison, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:poison",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_poison",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_regeneration": {
+                        "image": "splashregenpotion.png",
+                        "name": "Splash Potion of Regeneration, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:regeneration",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_regeneration",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_slowness": {
+                        "image": "splashslownesspotion.png",
+                        "name": "Splash Potion of Slowness, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:slowness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_swiftness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_leaping",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_slowness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_strength": {
+                        "image": "splashstrengthpotion.png",
+                        "name": "Splash Potion of Strength, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strength",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_strength",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_swiftness": {
+                        "image": "splashspeedpotion.png",
+                        "name": "Splash Potion of Swiftness, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:swiftness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_swiftness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_water_breathing": {
+                        "image": "splashwaterbreathingpotion.png",
+                        "name": "Splash Potion of Water Breathing, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water_breathing",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_water_breathing",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_weakness": {
+                        "image": "splashweaknesspotion.png",
+                        "name": "Splash Potion of Weakness, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:weakness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:redstone",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:long_weakness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "mundane": {
+                        "name": "Splash Mundane Potion",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": [
+                                    "minecraft:speckled_melon",
+                                    "minecraft:ghast_tear",
+                                    "minecraft:rabbit_foot",
+                                    "minecraft:blaze_powder",
+                                    "minecraft:spider_eye",
+                                    "minecraft:sugar",
+                                    "minecraft:magma_cream"
+                                ],
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:mundane",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "night_vision": {
+                        "image": "splashnightvisionpotion.png",
+                        "name": "Splash Potion of Night Vision",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:golden_carrot",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:night_vision",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "poison": {
+                        "image": "splashpoisonpotion.png",
+                        "name": "Splash Potion of Poison",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:poison",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "regeneration": {
+                        "image": "splashregenpotion.png",
+                        "name": "Splash Potion of Regeneration",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:ghast_tear",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:regeneration",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "slowness": {
+                        "image": "splashslownesspotion.png",
+                        "name": "Splash Potion of Slowness",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:swiftness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:leaping",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:slowness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strength": {
+                        "image": "splashstrengthpotion.png",
+                        "name": "Splash Potion of Strength",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:blaze_powder",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strength",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_harming": {
+                        "image": "splashdamagepotion.png",
+                        "name": "Splash Potion of Harming \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:harming",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_healing",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_poison",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_harming",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_healing": {
+                        "image": "splashhealthpotion.png",
+                        "name": "Splash Potion of Healing \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:healing",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_healing",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_leaping": {
+                        "image": "splashjumppotion.png",
+                        "name": "Splash Potion of Leaping \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:leaping",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_leaping",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_poison": {
+                        "image": "splashpoisonpotion.png",
+                        "name": "Splash Potion of Poison \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:poison",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_poison",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_regeneration": {
+                        "image": "splashregenpotion.png",
+                        "name": "Splash Potion of Regeneration \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:regeneration",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_regeneration",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_strength": {
+                        "image": "splashstrengthpotion.png",
+                        "name": "Splash Potion of Strength \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strength",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_strength",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_swiftness": {
+                        "image": "splashspeedpotion.png",
+                        "name": "Splash Potion of Swiftness \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:swiftness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:strong_swiftness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "swiftness": {
+                        "image": "splashspeedpotion.png",
+                        "name": "Splash Potion of Swiftness",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:sugar",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:swiftness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "thick": {
+                        "name": "Splash Thick Potion",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:glowstone_dust",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:thick",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "water": {
+                        "name": "Splash Water Bottle",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "water_breathing": {
+                        "image": "splashwaterbreathingpotion.png",
+                        "name": "Splash Potion of Water Breathing",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": {
+                                    "damage": 3,
+                                    "id": "minecraft:fish"
+                                },
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water_breathing",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "weakness": {
+                        "image": "splashweaknesspotion.png",
+                        "name": "Splash Potion of Weakness",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:water",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:fermented_spider_eye",
+                                "type": "brewing"
+                            },
+                            {
+                                "basePotion": {
+                                    "effect": "minecraft:weakness",
+                                    "id": "minecraft:potion"
+                                },
+                                "ingredient": "minecraft:gunpowder",
+                                "type": "brewing"
+                            }
+                        ]
+                    }
+                }
+            },
+            "image": "splashpotion.png",
+            "itemID": 438,
+            "name": "Splash Potion",
+            "stackable": false
         },
         "sponge": {
             "blockID": 19,
@@ -3892,71 +6177,404 @@
             "damageValues": {
                 "0": {
                     "image": "whitestainedglass.png",
-                    "name": "White Stained Glass"
+                    "name": "White Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "1": {
                     "image": "orangestainedglass.png",
-                    "name": "Orange Stained Glass"
+                    "name": "Orange Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "10": {
                     "image": "purplestainedglass.png",
-                    "name": "Purple Stained Glass"
+                    "name": "Purple Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "11": {
                     "image": "bluestainedglass.png",
-                    "name": "Blue Stained Glass"
+                    "name": "Blue Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "12": {
                     "image": "brownstainedglass.png",
-                    "name": "Brown Stained Glass"
+                    "name": "Brown Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "13": {
                     "image": "greenstainedglass.png",
-                    "name": "Green Stained Glass"
+                    "name": "Green Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "14": {
                     "image": "redstainedglass.png",
-                    "name": "Red Stained Glass"
+                    "name": "Red Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "15": {
                     "image": "blackstainedglass.png",
-                    "name": "Black Stained Glass"
+                    "name": "Black Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "magentastainedglass.png",
-                    "name": "Magenta Stained Glass"
+                    "name": "Magenta Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "structure": "endCity",
+                            "type": "structure"
+                        },
+                        {
+                            "amount": 7,
+                            "structure": "endShip",
+                            "type": "structure"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "lightbluestainedglass.png",
-                    "name": "Light Blue Stained Glass"
+                    "name": "Light Blue Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "4": {
-                    "name": "Yellow Stained Glass"
+                    "name": "Yellow Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "limestainedglass.png",
-                    "name": "Lime Stained Glass"
+                    "name": "Lime Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "6": {
                     "image": "pinkstainedglass.png",
-                    "name": "Pink Stained Glass"
+                    "name": "Pink Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "7": {
                     "image": "graystainedglass.png",
-                    "name": "Gray Stained Glass"
+                    "name": "Gray Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "8": {
                     "image": "lightgraystainedglass.png",
-                    "name": "Light Gray Stained Glass"
+                    "name": "Light Gray Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "9": {
                     "image": "cyanstainedglass.png",
-                    "name": "Cyan Stained Glass"
+                    "name": "Cyan Stained Glass",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass",
+                                "minecraft:glass"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 }
+            },
+            "dropsSelf": {
+                "silkTouch": true
             },
             "image": "yellowstainedglass.png",
             "itemID": 95,
-            "name": "Stained Glass"
+            "name": "Stained Glass",
+            "solid": false
         },
         "stained_glass_pane": {
             "blockID": 160,
@@ -4116,7 +6734,59 @@
         "stick": {
             "image": "stick.png",
             "itemID": 280,
-            "name": "Stick"
+            "name": "Stick",
+            "obtaining": [
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        "minecraft:planks",
+                        null,
+                        null,
+                        "minecraft:planks",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMax": 3,
+                    "stacksMax": 10,
+                    "stacksMin": 10,
+                    "type": "bonusChest",
+                    "weight": 0.15625
+                },
+                {
+                    "category": "junk",
+                    "type": "fishing",
+                    "weight": 0.060240963855421686
+                },
+                {
+                    "amountMax": 6,
+                    "amountMin": 0,
+                    "entity": "Witch",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMin": 2,
+                    "entity": "Boat",
+                    "requires": "noCrash",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMin": 0,
+                    "block": "minecraft:deadbush",
+                    "excludeTools": true,
+                    "tools": [
+                        "minecraft:shears"
+                    ],
+                    "type": "mining"
+                }
+            ]
         },
         "sticky_piston": {
             "FIXME": "orientation",
@@ -4130,7 +6800,6 @@
             "texture_south": "piston_bottom"
         },
         "stone": {
-            "blast_resistance": 30,
             "blockID": 1,
             "damageValues": {
                 "1": {
@@ -4158,16 +6827,16 @@
                     "name": "Polished Andesite"
                 }
             },
+            "dropsSelf": [
+                {
+                    "silkTouch": true,
+                    "tools": "pickaxe"
+                }
+            ],
             "image": "stone.png",
             "itemID": 1,
-            "luminance": false,
             "name": "Stone",
-            "renewable": true,
-            "solid": true,
-            "stackable": 64,
-            "texture": "stone",
-            "tool": "pick",
-            "transparent": false
+            "texture": "stone"
         },
         "stone_axe": {
             "durability": 131,
@@ -4383,6 +7052,10 @@
             "itemID": 287,
             "name": "String"
         },
+        "structure_block": {
+            "blockID": 255,
+            "name": "Structure Block"
+        },
         "sugar": {
             "image": "sugar.png",
             "itemID": 353,
@@ -4414,6 +7087,70 @@
             "name": "Tall Grass",
             "render_type": "cross",
             "solid": false
+        },
+        "tipped_arrow": {
+            "effects": {
+                "minecraft": {
+                    "fire_resistance": {
+                        "image": "fireresistancearrow.png",
+                        "name": "Arrow of Fire Resistance"
+                    },
+                    "harming": {
+                        "image": "damagearrow.png",
+                        "name": "Arrow of Harming"
+                    },
+                    "healing": {
+                        "image": "healtharrow.png",
+                        "name": "Arrow of Healing"
+                    },
+                    "invisibility": {
+                        "image": "invisibilityarrow.png",
+                        "name": "Arrow of Invisibility"
+                    },
+                    "leaping": {
+                        "image": "jumparrow.png",
+                        "name": "Arrow of Leaping"
+                    },
+                    "night_vision": {
+                        "image": "nightvisionarrow.png",
+                        "name": "Arrow of Night Vision"
+                    },
+                    "poison": {
+                        "image": "poisonarrow.png",
+                        "name": "Arrow of Poison"
+                    },
+                    "regeneration": {
+                        "image": "regenarrow.png",
+                        "name": "Arrow of Regeneration"
+                    },
+                    "slowness": {
+                        "image": "slownessarrow.png",
+                        "name": "Arrow of Slowness"
+                    },
+                    "strength": {
+                        "image": "strengtharrow.png",
+                        "name": "Arrow of Strength"
+                    },
+                    "swiftness": {
+                        "image": "speedarrow.png",
+                        "name": "Arrow of Swiftness"
+                    },
+                    "water": {
+                        "name": "Arrow of Splashing"
+                    },
+                    "waterbreathing": {
+                        "image": "waterbreathingarrow.png",
+                        "name": "Arrow of Water Breathing"
+                    },
+                    "weakness": {
+                        "image": "weaknessarrow.png",
+                        "name": "Arrow of Weakness"
+                    }
+                }
+            },
+            "image": "waterarrow.png",
+            "itemID": 440,
+            "name": "Tipped Arrow"
         },
         "tnt": {
             "blockID": 46,
@@ -4487,7 +7224,13 @@
         "wall_banner": {
             "blockID": 177,
             "image": "yellowbanner.png",
-            "name": "Wall Banner"
+            "name": "Wall Banner",
+            "obtaining": [
+                {
+                    "structure": "endCity",
+                    "type": "structure"
+                }
+            ]
         },
         "wall_sign": {
             "blockID": 68,

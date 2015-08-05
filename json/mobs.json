@@ -23,7 +23,13 @@
         },
         "Creeper": {
             "attitude": "hostile",
-            "dimension": "overworld"
+            "dimension": "overworld",
+            "subtypes": {
+                "charged": {
+                    "name": "Charged Creeper"
+                },
+                "regular": {}
+            }
         },
         "Enderman": {
             "attitude": "hostile",
@@ -36,7 +42,16 @@
         "EntityHorse": {
             "attitude": "friendly",
             "dimension": "overworld",
-            "name": "Horse"
+            "name": "Horse",
+            "subtypes": {
+                "donkey": {
+                    "name": "Donkey"
+                },
+                "horse": {},
+                "mule": {
+                    "name": "Mule"
+                }
+            }
         },
         "Ghast": {
             "attitude": "hostile",
@@ -44,12 +59,29 @@
         },
         "Guardian": {
             "attitude": "hostile",
-            "dimension": "overworld"
+            "dimension": "overworld",
+            "subtypes": {
+                "elder": {
+                    "name": "Elder Guardian"
+                },
+                "regular": {}
+            }
         },
         "LavaSlime": {
             "attitude": "hostile",
             "dimension": "nether",
-            "name": "Magma Cube"
+            "name": "Magma Cube",
+            "subtypes": {
+                "big": {
+                    "name": "Big Magma Cube"
+                },
+                "small": {
+                    "name": "Small Magma Cube"
+                },
+                "tiny": {
+                    "name": "Tiny Magma Cube"
+                }
+            }
         },
         "MushroomCow": {
             "attitude": "friendly",
@@ -59,7 +91,15 @@
         "Ozelot": {
             "attitude": "friendly",
             "dimension": "overworld",
-            "name": "Cat or Ocelot"
+            "name": "Cat or Ocelot",
+            "subtypes": {
+                "tame": {
+                    "name": "Cat"
+                },
+                "wild": {
+                    "name": "Ocelot"
+                }
+            }
         },
         "Pig": {
             "attitude": "friendly",
@@ -74,17 +114,38 @@
             "attitude": "friendly",
             "dimension": "overworld"
         },
+        "Shulker": {
+            "attitude": "hostile",
+            "dimension": "end"
+        },
         "Silverfish": {
             "attitude": "hostile",
             "dimension": "overworld"
         },
         "Skeleton": {
             "attitude": "hostile",
-            "dimension": "overworld"
+            "dimension": "overworld",
+            "subtypes": {
+                "regular": {},
+                "wither": {
+                    "name": "Wither Skeleton"
+                }
+            }
         },
         "Slime": {
             "attitude": "hostile",
-            "dimension": "overworld"
+            "dimension": "overworld",
+            "subtypes": {
+                "big": {
+                    "name": "Big Slime"
+                },
+                "small": {
+                    "name": "Small Slime"
+                },
+                "tiny": {
+                    "name": "Tiny Slime"
+                }
+            }
         },
         "Spider": {
             "attitude": "hostile",
@@ -99,7 +160,7 @@
             "dimension": "overworld"
         },
         "Witch": {
-            "attitude": "friendly",
+            "attitude": "hostile",
             "dimension": "overworld"
         },
         "Wolf": {
@@ -108,7 +169,13 @@
         },
         "Zombie": {
             "attitude": "hostile",
-            "dimension": "overworld"
+            "dimension": "overworld",
+            "subtypes": {
+                "regular": {},
+                "villager": {
+                    "name": "Villager Zombie"
+                }
+            }
         }
     }
 }
