@@ -1,4 +1,5 @@
-var isDev = location.hostname === 'dev.wurstmineberg.de';
+var isDev = /^([0-9a-z]+\.)?dev\.([0-9a-z]+\.)?wurstmineberg\.de$/.test(location.hostname);
+var host = isDev ? 'dev.wurstmineberg.de' : 'wurstmineberg.de';
 
 function dateObjectFromUTC(s) { // modified from http://stackoverflow.com/a/15518848/667338
     if (typeof s !== 'string') {
@@ -79,7 +80,7 @@ function Person(person_data) {
     this.invitedBy = person_data['invitedBy'];
     this.irc = person_data['irc'];
     this.joinDate = dateObjectFromUTC(person_data['join_date']);
-    this.latestDeath = API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/server/deaths/latest.json').then(function(latestDeaths) {
+    this.latestDeath = API.ajaxJSONDeferred('http://api.' + host + '/server/deaths/latest.json').then(function(latestDeaths) {
         if (_this.id in latestDeaths.deaths) {
             return {
                 'cause': latestDeaths.deaths[_this.id].cause,
@@ -180,7 +181,7 @@ function People(people_data) {
     }();
 
     this.achievementWinners = function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/minigame/achievements/winners.json').then(function(winners) {
+        return API.ajaxJSONDeferred('http://api.' + host + '/minigame/achievements/winners.json').then(function(winners) {
             return _.map(winners, function(winnerID) {
                 return _this.personById(winnerID);
             });
@@ -294,9 +295,9 @@ function Item(stringID, itemInfo) {
             if (itemInfo.image.startsWith('http://') || itemInfo.image.startsWith('https://')) {
                 return '<img src="' + itemInfo.image + '" class="' + (classes || '') + '" />';
             } else if (typeof tint === 'undefined' || tint === null) {
-                return '<img src="' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid/' + itemInfo.image + '" class="' + (classes || '') + '" />';
+                return '<img src="http://assets.' + host + '/img/grid/' + itemInfo.image + '" class="' + (classes || '') + '" />';
             } else {
-                return '<img style="background: url(' + (isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/minecraft/items/render/dyed-by-id/' + stringID + '/' + zeroFill(tint.toString(16), 6) + '/png.png)" src="' + (isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/img/grid-overlay/' + itemInfo.image + '" class="' + (classes || '') + '" />';
+                return '<img style="background: url(http://api.' + host + '/minecraft/items/render/dyed-by-id/' + stringID + '/' + zeroFill(tint.toString(16), 6) + '/png.png)" src="http://assets.' + host + '/img/grid-overlay/' + itemInfo.image + '" class="' + (classes || '') + '" />';
             }
         } else {
             return '';
@@ -437,16 +438,16 @@ var API = {
         });
     },
     serverStatus: function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/server/status.json');
+        return API.ajaxJSONDeferred('http://api.' + host + '/server/status.json');
     },
     stringData: function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/strings.json');
+        return API.ajaxJSONDeferred('http://assets.' + host + '/json/strings.json');
     },
     mobData: function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/mobs.json');
+        return API.ajaxJSONDeferred('http://assets.' + host + '/json/mobs.json');
     },
     itemData: function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/items.json');
+        return API.ajaxJSONDeferred('http://assets.' + host + '/json/items.json');
     },
     items: function() {
         return API.itemData().then(function(itemData) {
@@ -454,7 +455,7 @@ var API = {
         });
     },
     achievementData: function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/achievements.json');
+        return API.ajaxJSONDeferred('http://assets.' + host + '/json/achievements.json');
     },
     achievement: function(achievementID) {
         return API.achievementData().then(function(achievementData) {
@@ -470,32 +471,32 @@ var API = {
         });
     },
     personById: function(playerID) {
-        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/player/' + playerID + '/info.json').then(function(personData) {
+        return API.ajaxJSONDeferred('http://api.' + host + '/player/' + playerID + '/info.json').then(function(personData) {
             return new Person(personData);
         }, function(deferred, error, description) {
             return undefined;
         });
     },
     statData: function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/server/playerstats/general.json');
+        return API.ajaxJSONDeferred('http://api.' + host + '/server/playerstats/general.json');
     },
     achievementStatData: function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/server/playerstats/achievement.json');
+        return API.ajaxJSONDeferred('http://api.' + host + '/server/playerstats/achievement.json');
     },
     person: function(player) {
         return API.personById(player.id)
     },
     playerData: function(person) {
-        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/player/' + person.id + '/playerdata.json');
+        return API.ajaxJSONDeferred('http://api.' + host + '/player/' + person.id + '/playerdata.json');
     },
     personStatData: function(person) {
-        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/player/' + person.id + '/stats.json');
+        return API.ajaxJSONDeferred('http://api.' + host + '/player/' + person.id + '/stats.json');
     },
     moneys: function() {
         return API.ajaxJSONDeferred('/assets/serverstatus/moneys.json');
     },
     biomeData: function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devassets.wurstmineberg.de' : 'http://assets.wurstmineberg.de') + '/json/biomes.json');
+        return API.ajaxJSONDeferred('http://assets.' + host + '/json/biomes.json');
     },
     biomes: function() {
         return API.biomeData().then(function(biome_data) {
@@ -503,10 +504,10 @@ var API = {
         });
     },
     deathGamesLog: function() {
-        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/deathgames/log.json');
+        return API.ajaxJSONDeferred('http://api.' + host + '/deathgames/log.json');
     },
     lastSeen: function(person) {
-        return API.ajaxJSONDeferred((isDev ? 'http://devapi.wurstmineberg.de' : 'http://api.wurstmineberg.de') + '/server/sessions/lastseen.json').then(function(lastSeenData) {
+        return API.ajaxJSONDeferred('http://api.' + host + '/server/sessions/lastseen.json').then(function(lastSeenData) {
             if (person.id in lastSeenData) {
                 return 'leaveTime' in lastSeenData[person.id] ? dateObjectFromUTC(lastSeenData[person.id].leaveTime) : 'currentlyOnline';
             } else {
@@ -549,7 +550,7 @@ function selectTabWithID(id) {
     $('#' + id).tab('show');
 }
 
-function url_domain(data) {
+function (data) {
     var a = document.createElement('a');
     a.href = data;
     return a.hostname;
@@ -565,7 +566,7 @@ function twitter_user_link(username) {
 
 function wiki_user_link(username) {
     username = username.replace(/ /g, '_');
-    return 'http://wiki.wurstmineberg.de/User:' + username;
+    return 'http://wiki.' + host + '/User:' + username;
 }
 
 function initialize_tooltips() {
