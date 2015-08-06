@@ -550,12 +550,6 @@ function selectTabWithID(id) {
     $('#' + id).tab('show');
 }
 
-function (data) {
-    var a = document.createElement('a');
-    a.href = data;
-    return a.hostname;
-}
-
 function reddit_user_link(username) {
     return 'http://www.reddit.com/user/' + username;
 }
