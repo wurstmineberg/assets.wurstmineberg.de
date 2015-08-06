@@ -91,7 +91,7 @@ function displayLeaderboardStatData(statData, stringData, people) {
         }
         var minValue = prettifyStatsValue(stat[1], data.minValue);
 
-        $row = $('<tr>', {'class': 'leaderboard-row'}).html($('<td>', {'class': 'stat'}).html('<a href="//i.wurstmineberg.de/wurstminestats/statspage/' + stat[1] + '.png">' + name + '</a>'));
+        $row = $('<tr>', {'class': 'leaderboard-row'}).html($('<td>', {'class': 'stat'}).html('<a href="//images.' + host + '/wurstminestats/statspage/' + stat[1] + '.png">' + name + '</a>'));
         $row.append($('<td>', {'class': 'leading-player'}).html(playerHTML));
         $row.append($('<td>', {'class': 'value'}).html(value));
         $row.append($('<td>', {'class': 'second-player'}).html(secondPlayerHTML));
@@ -416,12 +416,12 @@ function loadLeaderboardStatData() {
         displayLeaderboardStatData(stat_data, string_data, people)
     })
     .fail(function() {
-        $('#loading-stat-leaderboard-table').html('<td colspan="7">Error: Could not load api.wurstmineberg.de/server/playerstats/general.json</td>');
+        $('#loading-stat-leaderboard-table').html('<td colspan="7">Error: Could not load api.' + host + '/server/playerstats/general.json</td>');
     });
 }
 
 function loadMobStatData() {
-    $.when(API.people(), API.ajaxJSONDeferred('http://api.wurstmineberg.de/server/playerstats/entity.json'), API.mobData()).done(function(people, entityStats, mobData) {
+    $.when(API.people(), API.ajaxJSONDeferred('http://api.' + host + '/server/playerstats/entity.json'), API.mobData()).done(function(people, entityStats, mobData) {
         displayMobsStatData(people, entityStats, mobData);
     });
 }

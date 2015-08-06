@@ -29,7 +29,7 @@ function displayServerStatus() {
                 getOnlineData(data.list);
             });
         } else {
-            $('#serverinfo').html('The server is <strong>offline</strong> right now. For more information, consult the <a href="http://twitter.com/wurstmineberg">Twitter account</a>.');
+            $('#serverinfo').html('The server is <strong>offline</strong> right now. For more information, consult the <a href="https://twitter.com/wurstmineberg">Twitter account</a>.');
         }
     }).fail(function(data) {
         $('serverinfo').html('An error occurred while checking the server status. For more information, consult the <a href="https://twitter.com/wurstmineberg">Twitter account</a>.');

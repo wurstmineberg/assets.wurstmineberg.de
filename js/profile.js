@@ -13,10 +13,10 @@ function getUserName() {
 
 function displayUserData(person) {
     $('.panel-loading').removeClass('loading');
-    
+
     var name = person.interfaceName;
     var head;
-    
+
     $('#avatar').replaceWith(person.html_ava(32));
     $('#username').text(name);
     $('#username').removeClass('hidden');
@@ -32,16 +32,16 @@ function displayUserData(person) {
             $('#username').append($('<span>', {'class': 'muted'}).text('(Minecraft: ' + person.minecraft + ')'));
         }
     }
-    
+
     if (person.description) {
         var description = sanitized(person.description, ['A', 'EM', 'S', 'SPAN']);
     } else {
-        var description = 'You can update your description using the command <code>!<a href="//wiki.wurstmineberg.de/Commands#People">People</a> ' + person.id + ' description &lt;value&gt;...</code>.';
+        var description = 'You can update your description using the command <code>!<a href="//wiki.' + host + '/Commands#People">People</a> ' + person.id + ' description &lt;value&gt;...</code>.';
         $('#user-description').addClass('muted');
     }
-    
+
     $('#user-description').html(description);
-    
+
     var social_links = $('#social-links');
     if (person.reddit) {
         social_links.removeClass('hidden');
@@ -57,7 +57,7 @@ function displayUserData(person) {
         social_links.removeClass('hidden');
         social_links.append('<a class="social-link" href="' + person.website + '">Website</a>');
     }
-    
+
     if (person.wiki) {
         social_links.removeClass('hidden');
         social_links.append('<a class="social-link" href="' + wiki_user_link(person['wiki']) + '">Wiki</a>');
@@ -246,16 +246,16 @@ function displayProfileData(person, items, people, statData) {
     function statusDisplay(status) {
         if (status == 'postfreeze') {
             if (new Date() - person.joinDate < 1000 * 60 * 60 * 24 * 7) { // whitelisted less than a week ago
-                return 'new member (may still be <a href="http://wiki.wurstmineberg.de/Server_invitations#Hard_requirements">vetoed</a>)';
+                return 'new member (may still be <a href="http://wiki.' + host + '/Invitations#Hard_requirements">vetoed</a>)';
             }
-            return 'later member (post-<a href="http://wiki.wurstmineberg.de/Server_invitations#History">freeze</a>)';
+            return 'later member (post-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)';
         }
         var statuses = {
             'former': 'former member (unwhitelisted for inactivity)',
             'founding': 'founding member',
             'invited': 'invited but not whitelisted yet',
-            'later': 'later member (pre-<a href="http://wiki.wurstmineberg.de/Server_invitations#History">freeze</a>)',
-            'vetoed': 'former member (unwhitelisted by <a href="http://wiki.wurstmineberg.de/Server_invitations#Hard_requirements">veto</a>)'
+            'later': 'later member (pre-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)',
+            'vetoed': 'former member (unwhitelisted by <a href="http://wiki.' + host + '/Invitations#Hard_requirements">veto</a>)'
         };
         return status in statuses ? statuses[status] : status;
     }
@@ -268,17 +268,17 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
     var $loadingStatItem = $('#loading-stat-items-table');
     var $loadingStatMobs = $('#loading-stat-mobs-table');
     var $loadingStatAchievements = $('#loading-stat-achievements-table');
-    
+
     var general = [];
     var blocks = {};
     var items = {};
     var mobs = [];
     var achievements = [];
-    
+
     $.each(statData, function(key, value) {
         stat = key.split('.');
         var name;
-        
+
         if (stat[0] === 'stat') {
             if (stat[1] === 'craftItem' || stat[1] === 'useItem' || stat[1] === 'breakItem' || stat[1] === 'mineBlock') {
                 var item = itemData.itemByDamage(stat.slice(2).join(':'));
@@ -296,12 +296,12 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
                 var id = stat[2];
                 var actionIndex = stat[1];
                 var count = value;
-                
+
                 var name = id;
                 if ('mobs' in mobData && stat[2] in mobData.mobs && 'name' in mobData.mobs[stat[2]]) {
                     name = mobData.mobs[stat[2]].name;
                 };
-                
+
                 var found = false;
                 $.each(mobs, function(key, value) {
                     if (value['id'] === id) {
@@ -310,7 +310,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
                         return;
                     }
                 });
-                
+
                 if (!found) {
                     newEntry = {
                         id: id,
@@ -380,19 +380,19 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             });
         };
     });
-    
+
     general.sort(function(a, b) {
         nameA = a.name;
         nameB = b.name;
         return nameA.localeCompare(nameB);
     });
-    
+
     mobs.sort(function(a, b) {
         nameA = a.name;
         nameB = b.name;
         return nameA.localeCompare(nameB);
     });
-    
+
     achievements.sort(function(a, b) {
         if (a.achievement.root.id < b.achievement.root.id) {
             return 1;
@@ -402,7 +402,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             return a.achievement.sortIndex() - b.achievement.sortIndex();
         }
     });
-    
+
     $.each(general, function(index, dict) {
         var name = dict.name;
         var value = dict.value;
@@ -412,7 +412,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
         ]);
         $loadingStatGeneral.before($row);
     });
-    
+
     $.each(mobs, function(index, mobDict) {
         var name = mobDict.name;
         var id = mobDict.id;
@@ -430,7 +430,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             $row.children('.killed-by').text(mobDict.entityKilledBy);
         }
     });
-    
+
     _.each(_.sortBy(_.pairs(items), function(pair) {
         return pair[0];
     }), function(pair) {
@@ -458,7 +458,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             $row.children('.depleted').text(itemDict.breakItem);
         }
     });
-    
+
     _.each(_.sortBy(_.pairs(blocks), function(pair) {
         return pair[0];
     }), function(pair) {
@@ -486,7 +486,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             $row.children('.mined').text(blockDict.mineBlock);
         }
     });
-    
+
     _.each(achievements, function(dict) {
         value = dict.value;
         if (value === 'Yes') {
@@ -508,7 +508,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
         ]);
         $loadingStatAchievements.before($row);
     });
-    
+
     $('.loading-stat').remove();
     initialize_tooltips();
 }
@@ -655,7 +655,7 @@ function loadStatData(person, string_data, achievement_data, biomes, items, mobD
             $('.inventory-table .loading td').html('Error: Could not load ' + person.minecraft + '.dat');
         });
     } else if (person.option_is_default('show_inventory')) {
-        $('.panel').before('<div class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>Want to show you inventory?</strong> Since you have not set a preference for this, your inventory and Ender chest will be displayed on this page once we get everything working. You can activate this feature now using the command <code>!<a href="//wiki.wurstmineberg.de/Commands#Option">Option</a> show_inventory on</code>, or permanently deactivate it with <code>!<a href="//wiki.wurstmineberg.de/Commands#Option">Option</a> show_inventory off</code>.</div>');
+        $('.panel').before('<div class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>Want to show you inventory?</strong> Since you have not set a preference for this, your inventory and Ender chest will be displayed on this page once we get everything working. You can activate this feature now using the command <code>!<a href="//wiki.' + host + '/Commands#Option">Option</a> show_inventory on</code>, or permanently deactivate it with <code>!<a href="//wiki.' + host + '/Commands#Option">Option</a> show_inventory off</code>.</div>');
     }
     $.when(API.personStatData(person)).done(function(stat_data) {
         displayStatData(stat_data, string_data, items, achievement_data, biomes, mobData);

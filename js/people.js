@@ -24,7 +24,7 @@ function displayPeopleData(people) {
             if (person.description) {
                 $description = $('<td>', {'class': 'description'}).html(sanitized(person['description'], ['A', 'EM', 'S', 'SPAN']));
             } else {
-                $description = $('<td>', {'class': 'description small muted'}).html('You can update your description using the command <code>!<a href="//wiki.wurstmineberg.de/Commands#People">People</a> ' + person.id + ' description &lt;value&gt;...</code>.');
+                $description = $('<td>', {'class': 'description small muted'}).html('You can update your description using the command <code>!<a href="//wiki.' + host + '/Commands#People">People</a> ' + person.id + ' description &lt;value&gt;...</code>.');
             }
             var $tr = $('<tr>', {'id': person.id}).html($('<td>', {'class': 'people-avatar'}).html(person.html_ava(32)));
             $tr.append($name);
