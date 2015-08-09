@@ -1,0 +1,14 @@
+Structure of cloud.json:
+
+* The file is an array of objects.
+* Each object represents a floor. For example, the 1st floor is represented by .[1]
+* Each floor object contains one or more corridor arrays. For example, the 2nd corridor on the right on the 4th floor is represented by .[1]["-2"]
+* Each corridor array contains one or more chest objects. They contain the following keys:
+
+* damage: the stored item's damage value, present iff the item contains a damageValues field.
+* effect: the stored item's status effect, present iff the item contains an effects field.
+* exists: a boolean specifying whether or not the access chest has been built. Defaults to true.
+* hasOverflow: a boolean specifying whether or not the sorter has an overflow. Defaults to the value of exists.
+* hasSmartChest: a boolean specifying whether or not the chest is a SmartChest. Defaults to true; meaningless if exists is false.
+* hasSorter: a boolean specifying whether or not the chest has a sorter. Defaults to the value of exists; meaningless if the item is unstackable.
+* id: the stored item's new-style item ID.
