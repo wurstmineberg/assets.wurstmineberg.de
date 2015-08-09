@@ -1477,7 +1477,7 @@
             },
             {
                 "exists": false,
-                "id": "minecraft:chorus_friut"
+                "id": "minecraft:chorus_fruit"
             },
             {
                 "exists": false,
@@ -3211,7 +3211,7 @@
             },
             {
                 "exists": false,
-                "id": "minecraft:chorus_friut"
+                "id": "minecraft:chorus_flower"
             },
             {
                 "exists": false,
@@ -3232,10 +3232,6 @@
             {
                 "exists": false,
                 "id": "minecraft:purpur_stairs"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:chorus_flower"
             }
         ]
     },
