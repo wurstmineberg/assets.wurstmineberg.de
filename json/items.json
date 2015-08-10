@@ -7178,6 +7178,7 @@
                         "name": "Arrow of Swiftness"
                     },
                     "water": {
+                        "creativeMenu": false,
                         "name": "Arrow of Splashing"
                     },
                     "waterbreathing": {
