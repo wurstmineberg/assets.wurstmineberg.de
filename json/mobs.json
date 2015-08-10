@@ -125,8 +125,11 @@
         "Skeleton": {
             "attitude": "hostile",
             "dimension": "overworld",
+            "name": "Skeleton or Wither Skeleton",
             "subtypes": {
-                "regular": {},
+                "regular": {
+                    "name": "Skeleton"
+                },
                 "wither": {
                     "name": "Wither Skeleton"
                 }

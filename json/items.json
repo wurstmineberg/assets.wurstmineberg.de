@@ -817,11 +817,6 @@
                         "minecraft:obsidian"
                     ],
                     "type": "craftingShaped"
-                },
-                {
-                    "amount": 1,
-                    "structure": "endShip",
-                    "type": "structure"
                 }
             ],
             "solid": false
@@ -4266,7 +4261,46 @@
             "blockID": 86,
             "image": "pumpkin.png",
             "itemID": 86,
-            "name": "Pumpkin"
+            "name": "Pumpkin",
+            "obtaining": [
+                {
+                    "amount": 1,
+                    "structure": "endShip",
+                    "type": "structure"
+                },
+                {
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "plant": "minecraft:pumpkin_stem",
+                    "type": "plantGrowth"
+                },
+                {
+                    "amountMax": 0,
+                    "amountMaxLooting": 1,
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "halloween",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 0,
+                    "amountMaxLooting": 1,
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "halloween",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 0,
+                    "amountMaxLooting": 1,
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "halloween",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "pumpkin_pie": {
             "image": "pumpkinpie.png",
@@ -5004,7 +5038,14 @@
                 },
                 "5": {
                     "image": "dragonhead.png",
-                    "name": "Dragon Head"
+                    "name": "Dragon Head",
+                    "obtaining": [
+                        {
+                            "amount": 1,
+                            "structure": "endShip",
+                            "type": "structure"
+                        }
+                    ]
                 }
             },
             "image": "witherskeletonskull.png",
@@ -6765,6 +6806,7 @@
                 },
                 {
                     "amountMax": 6,
+                    "amountMaxLooting": 15,
                     "amountMin": 0,
                     "entity": "Witch",
                     "type": "entityDeath"

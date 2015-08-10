@@ -59,14 +59,18 @@ The fields for the damage values, status effects, and block info implicitly inhe
         * input: an item stub specifying the smelting ingredient.
     * entityDeath: the item is dropped by an entity upon death.
         * entity: the entity's savegame ID.
-        * amountMin: the minimum number of items dropped by a single entity. Defaults to 1.
-        * amountMax: the maximum number of items dropped by a single entity. Defaults to 1.
+        * amountMin: the minimum number of items dropped by a single entity when killed without the Looting enchantment. Defaults to 1.
+        * amountMax: the maximum number of items dropped by a single entity when killed without the Looting enchantment. Defaults to 1.
+        * amountMinLooting: the minimum number of items dropped by a single entity when killed with Looting III. Defaults to the same value as amountMin.
+        * amountMaxLooting: the maximum number of items dropped by a single entity when killed with Looting III. Defaults to the same value as amountMax.
         * requires: if given, the item is only dropped under specific circumstances:
             * player: the entity must be killed by a player or tamed wolf.
             * chargedCreeper: the entity must be killed by a charged Creeper explosion. A single charged Creeper explosion will only ever produce one such item, no matter how many entities it kills.
             * whileUsing: the entity must be using (e.g. drinking) the item when it dies in order to drop it.
             * crash: the entity must die from collision damage.
             * noCrash: the entity must not die from collision damage.
+            * whileWearing: the entity must have spawned wearing or holding the item. The presence of this obtaining method indicates that this can occur naturally. The item has a chance of 8.5% plus the level of looting used to kill the entity (11.5% with Looting III) to drop.
+            * halloween: the entity must have spawned wearing or holding the item. The presence of this obtaining method indicates that this can occur naturally on Halloween. The item has a chance equivalent to the level of looting used to kill the entity (3% with Looting III) to drop.
         * subtype: the mob's subtype, as listed in mobs.json.
     * mining: the item is dropped when a block is mined.
         * block: an item stub specifying the block that drops the item.
@@ -117,7 +121,7 @@ The fields for the damage values, status effects, and block info implicitly inhe
         * dimension: the dimension where the block generates: "overworld", "nether", or "end".
         * infinite: whether an infinite amount of the block will generate, limited only by the world size. Defaults to true.
     * plantGrowth: the block generates from a growing plant.
-        * plant: an item stub specifying the required plant block. The item stub's "consumed" field specifies whether the original plant block is consumed by the growth event.
+        * plant: an item stub specifying the required plant block. The item stub's "consumed" field specifies whether the original plant block is consumed by the growth event, and defaults to false instead.
         * amountMin: the minimum number of blocks that grow from one plant block in one growth event. Defaults to 1.
         * amountMax: the maximum number of blocks that grow from one plant block in one growth event. Defaults to the value of amountMin.
     * modifyBlock: the block can be created by using (default: right click) an item on another block.

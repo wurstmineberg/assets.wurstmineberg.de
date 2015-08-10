@@ -1553,131 +1553,71 @@
         ],
         "-2": [
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": false,
                 "id": "minecraft:milk_bucket"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:bowl"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:string"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:bone"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:rabbit_foot"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:rabbit_hide"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:leather"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:feather"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:slime_ball"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:egg"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:gunpowder"
             },
             {
-                "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:nether_star"
             },
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:skull"
             },
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:skull"
             },
             {
                 "damage": 2,
-                "hasOverflow": true,
-                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:skull"
             },
             {
                 "damage": 4,
-                "hasOverflow": true,
-                "hasSmartChest": true,
                 "hasSorter": false,
                 "id": "minecraft:skull"
             },
             {
-                "damage": 0,
+                "damage": 5,
                 "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "id": "minecraft:skull"
+            },
+            {
+                "exists": false,
                 "id": "minecraft:slime"
             },
             {
-                "damage": 0,
                 "exists": false,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:web"
             }
         ],
