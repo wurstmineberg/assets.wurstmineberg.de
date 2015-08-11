@@ -2691,6 +2691,7 @@
                 "id": "minecraft:end_rod"
             },
             {
+                "exists": false,
                 "id": "minecraft:dragon_egg"
             },
             {
