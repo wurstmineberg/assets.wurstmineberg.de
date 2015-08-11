@@ -127,6 +127,7 @@
         "anvil": {
             "blockID": 145,
             "damageValues": {
+                "0": {},
                 "4": {
                     "image": "slightlydamagedanvil.png",
                     "name": "Slightly Damaged Anvil"
@@ -1477,6 +1478,7 @@
         },
         "coal": {
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "charcoal.png",
                     "name": "Charcoal"
@@ -1511,6 +1513,7 @@
         "cobblestone_wall": {
             "blockID": 139,
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "mossycobblewall.png",
                     "name": "Mossy Cobblestone Wall"
@@ -1559,6 +1562,7 @@
         },
         "cooked_fish": {
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "cookedsalmon.png",
                     "name": "Cooked Salmon"
@@ -1730,16 +1734,10 @@
         },
         "detector_rail": {
             "blockID": 28,
-            "damageValues": {
-                "1": {
-                    "texture_top": "rail_detector_powered"
-                }
-            },
             "image": "detectorrail.png",
             "itemID": 28,
             "name": "Detector Rail",
-            "solid": false,
-            "texture_top": "rail_detector"
+            "solid": false
         },
         "diamond": {
             "image": "diamond.png",
@@ -1834,6 +1832,7 @@
         "dirt": {
             "blockID": 3,
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "coarsedirt.png",
                     "name": "Coarse Dirt"
@@ -1847,37 +1846,13 @@
             },
             "image": "dirt.png",
             "itemID": 3,
-            "name": "Dirt",
-            "solid": true,
-            "texture": "dirt"
+            "name": "Dirt"
         },
         "dispenser": {
             "blockID": 23,
-            "damageValues": {
-                "0": {
-                    "texture_bottom": "furnace_front_vertical"
-                },
-                "1": {
-                    "texture_top": "furnace_front_vertical"
-                },
-                "2": {
-                    "texture_north": "furnace_front_horizontal"
-                },
-                "3": {
-                    "texture_south": "furnace_front_horizontal"
-                },
-                "4": {
-                    "texture_west": "furnace_front_horizontal"
-                },
-                "5": {
-                    "texture_east": "furnace_front_horizontal"
-                }
-            },
             "image": "dispenser.png",
             "itemID": 23,
-            "name": "Dispenser",
-            "solid": true,
-            "texture": "furnace_side"
+            "name": "Dispenser"
         },
         "double_plant": {
             "blockID": 175,
@@ -2380,6 +2355,7 @@
         },
         "fish": {
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "rawsalmon.png",
                     "name": "Raw Salmon"
@@ -2440,27 +2416,10 @@
         },
         "furnace": {
             "blockID": 61,
-            "damageValues": {
-                "2": {
-                    "texture_north": "furnace_front_on"
-                },
-                "3": {
-                    "texture_south": "furnace_front_on"
-                },
-                "4": {
-                    "texture_west": "furnace_front_on"
-                },
-                "5": {
-                    "texture_east": "furnace_front_on"
-                }
-            },
             "image": "furnace.png",
             "itemID": 61,
             "name": "Furnace",
-            "solid": true,
-            "texture_bottom": "furnace_top",
-            "texture_side": "furnace_side",
-            "texture_top": "furnace_top"
+            "solid": true
         },
         "furnace_minecart": {
             "image": "minecartwithfurnace.png",
@@ -2644,16 +2603,10 @@
         },
         "golden_rail": {
             "blockID": 27,
-            "damageValues": {
-                "1": {
-                    "texture_top": "rail_golden_powered"
-                }
-            },
             "image": "poweredrail.png",
             "itemID": 27,
             "name": "Powered Rail",
-            "solid": false,
-            "texture_top": "rail_golden"
+            "solid": false
         },
         "golden_shovel": {
             "durability": 32,
@@ -3511,23 +3464,10 @@
             "name": "Paper"
         },
         "piston": {
-            "FIXME": "All rotational values",
             "blockID": 33,
-            "damageValues": {
-                "1": {
-                    "texture_bottom": "piston_bottom",
-                    "texture_top": "piston_top_normal"
-                },
-                "2": {
-                    "texture_side": "piston_bottom@2"
-                }
-            },
             "image": "piston.png",
             "itemID": 33,
-            "name": "Piston",
-            "texture_bottom": "piston_top_normal",
-            "texture_side": "piston_side",
-            "texture_top": "piston_bottom"
+            "name": "Piston"
         },
         "piston_extension": {
             "blockID": 36,
@@ -4234,6 +4174,7 @@
         "prismarine": {
             "blockID": 168,
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "prismarinebricks.png",
                     "name": "Prismarine Bricks"
@@ -4494,6 +4435,7 @@
         "quartz_block": {
             "blockID": 155,
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "chiseledquartzblock.png",
                     "name": "Chiseled Quartz Block"
@@ -4885,6 +4827,7 @@
         "sand": {
             "blockID": 12,
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "redsand.png",
                     "name": "Red Sand",
@@ -4894,12 +4837,12 @@
             "image": "sand.png",
             "itemID": 12,
             "name": "Sand",
-            "solid": true,
-            "texture": "sand"
+            "solid": true
         },
         "sandstone": {
             "blockID": 24,
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "chiseledsandstone.png",
                     "name": "Chiseled Sandstone",
@@ -4914,10 +4857,7 @@
             "image": "sandstone.png",
             "itemID": 24,
             "name": "Sandstone",
-            "solid": true,
-            "texture": "sandstone_normal",
-            "texture_bottom": "sandstone_bottom",
-            "texture_top": "sandstone_top"
+            "solid": true
         },
         "sandstone_stairs": {
             "blockID": 128,
@@ -6092,6 +6032,7 @@
         "sponge": {
             "blockID": 19,
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "wetsponge.png",
                     "name": "Wet Sponge"
@@ -6844,6 +6785,7 @@
         "stone": {
             "blockID": 1,
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "granite.png",
                     "name": "Granite"
@@ -6877,8 +6819,7 @@
             ],
             "image": "stone.png",
             "itemID": 1,
-            "name": "Stone",
-            "texture": "stone"
+            "name": "Stone"
         },
         "stone_axe": {
             "durability": 131,
@@ -7072,6 +7013,7 @@
         "stonebrick": {
             "blockID": 98,
             "damageValues": {
+                "0": {},
                 "1": {
                     "image": "mossystonebricks.png",
                     "name": "Mossy Stone Brick"

@@ -5,39 +5,8 @@ Items are entered by their name IDs. All items from a plugin are in one object, 
 The fields for the damage values, status effects, and block info implicitly inherit the values of the parent.
 
 * name: display name of the item.
-* subtype: specific rendering subtype like "sapling" or something if needed
-    * slab: will take the top half of the block and render it at the bottom
-    * slabTop: will only render the top half
-    * stairs: renders stairs
-    * stairs@[rotation]: renders stairs rotated by
 * solid: true if the block is solid and nontransparent, defaults to true
 * image: the filename of a prerendered image of the item or block, relative to the img/grid directory in this repository.
-* texture: The default texture for all sides.
-        * The value can be appended with @[0-10] (like "dirt@3") which specifies the flip and rotation that should be applied to the block prior to rendering it.
-            * 0: no rotation (default)
-            * 1: rotate 90° right
-            * 2: rotate 180° right
-            * 3: rotate 270° right
-            * 4: flip horizontally
-            * 5: flip horizontally and rotate 90° right
-            * 6: flip horizontally and rotate 180° right (vertical flip)
-            * 7: flip horizontally and rotate 270° right
-        * The texture files are applied top = top for the sides and north for top and bottom
-    * textureSnow: the default texture if the top is covered by snow (currently only used by grass)
-    * textureTop: the texture for the top
-    * textureBottom: the texture for the bottom
-    * textureSide: the texture used for the sides (nswe) of the block
-        * textureNorth: the texture for the north
-        * textureSouth: the texture for the south
-        * textureWest: the texture for the west
-        * textureEast: the texture for the east
-    * textureNeedsColorisation: true if at least part of the textures need colorisation
-    * texture*Uncolored: uncolored textures have the …Uncolored suffix
-* colorMap: the color map for colorisation
-* renderType: Can be either of:
-    * solid (default): Will render the block with the textures to the side of the block.
-    * cross: Will render the block with the texture forming a cross meeting in the middle.
-    * square: Will render the block as a square crossing at the four corners, like wheat.
 * blockID: The numeric block id.
 * itemID: The numeric item id. Same as the block id for blocks that can also be items. If this field is missing or null, the item cannot be obtained even with cheats.
 * damageValues: damage values of the item, with the fields that differ from the default.
