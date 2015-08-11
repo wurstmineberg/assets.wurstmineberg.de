@@ -1,0 +1,4 @@
+notifications:
+  email: false
+  slack:
+    secure: ZVtvd117VvwT8UxgAGB5UiCUzJJmdtI1QA1SCo62iz3yW2siDl7auU76Jqk4M8zHkX4NnNcWwBBUM9UwALhyr8sdLUcmN6tMlDbBPdWaI3eenTzbYuIh98wekADngSoIwtg3cOqj/OUOA/8ar5Yz8Cv7cIEjE6gURxIjFTS5Odo=
