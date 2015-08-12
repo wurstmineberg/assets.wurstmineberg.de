@@ -1,6 +1,14 @@
 {
     "abandonedMineShaft": {
         "dimension": "overworld",
+        "inventories": {
+            "abandonedMineShaft": {
+                "inventoryIsEntity": true,
+                "inventoryType": "MinecartChest",
+                "stacksMax": 6,
+                "stacksMin": 3
+            }
+        },
         "name": {
             "default": "abandoned mine shaft",
             "plural": "abandoned mine shafts"
@@ -12,6 +20,12 @@
             "Desert"
         ],
         "dimension": "overworld",
+        "inventories": {
+            "desertTemple": {
+                "stacksMax": 6,
+                "stacksMin": 2
+            }
+        },
         "name": {
             "default": "desert temple",
             "plural": "desert temples"
@@ -28,6 +42,13 @@
     },
     "dungeon": {
         "dimension": "overworld",
+        "inventories": {
+            "dungeon": {
+                "chestsMax": 2,
+                "stacksMax": 8,
+                "stacksMin": 8
+            }
+        },
         "name": {
             "default": "dungeon",
             "plural": "dungeons"
@@ -36,6 +57,12 @@
     },
     "endCity": {
         "dimension": "end",
+        "inventories": {
+            "endCity": {
+                "stacksMax": 6,
+                "stacksMin": 2
+            }
+        },
         "name": {
             "default": "End city",
             "plural": "End cities"
@@ -62,6 +89,21 @@
     },
     "endShip": {
         "dimension": "end",
+        "inventories": {
+            "endCity": {
+                "chestsMax": 2,
+                "chestsMin": 2,
+                "stacksMax": 6,
+                "stacksMin": 2
+            },
+            "endShipBrewingStand": {
+                "chestsMax": 1,
+                "chestsMin": 1,
+                "inventoryType": "minecraft:brewing_stand",
+                "stacksMax": 2,
+                "stacksMin": 2
+            }
+        },
         "name": {
             "default": "End ship",
             "plural": "End ships"
@@ -73,6 +115,14 @@
             "Jungle"
         ],
         "dimension": "overworld",
+        "inventories": {
+            "jungleTemplePuzzle": {
+                "chestsMax": 1,
+                "chestsMin": 1,
+                "stacksMax": 6,
+                "stacksMin": 2
+            }
+        },
         "name": {
             "default": "jungle temple",
             "plural": "jungle temples"
@@ -80,6 +130,12 @@
     },
     "netherFortress": {
         "dimension": "nether",
+        "inventories": {
+            "netherFortress": {
+                "stacksMax": 5,
+                "stacksMin": 2
+            }
+        },
         "name": {
             "default": "Nether fortress",
             "plural": "Nether fortresses"
@@ -88,6 +144,17 @@
     "stronghold": {
         "dimension": "overworld",
         "infinite": false,
+        "inventories": {
+            "strongholdAltar": {
+                "chestsMax": 4,
+                "stacksMax": 3,
+                "stacksMin": 2
+            },
+            "strongholdStoreRoom": {
+                "chestsMax": 6,
+                "stacksMax": 4
+            }
+        },
         "name": {
             "default": "stronghold",
             "plural": "strongholds"
@@ -101,6 +168,12 @@
             "Savanna"
         ],
         "dimension": "overworld",
+        "inventories": {
+            "blacksmith": {
+                "stacksMax": 8,
+                "stacksMin": 3
+            }
+        },
         "name": {
             "default": "village",
             "plural": "villages"

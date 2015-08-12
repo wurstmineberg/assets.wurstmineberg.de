@@ -851,6 +851,7 @@
             "name": "Bedrock",
             "obtaining": [
                 {
+                    "block": true,
                     "description": "12 blocks of bedrock generate as part of each End gateway. Two linked End gateways generate each time an <a href=\"http://minecraft.gamepedia.com/Ender_Dragon\">Ender dragon</a> is killed. Up to 20 pairs of gateways can be generated.",
                     "renewability": "finite",
                     "type": "special"
@@ -899,18 +900,7 @@
             "obtaining": [
                 {
                     "amountMax": 10,
-                    "stacksMax": 6,
-                    "stacksMin": 2,
                     "structure": "endCity",
-                    "type": "chest"
-                },
-                {
-                    "amountMax": 10,
-                    "chestsMax": 2,
-                    "chestsMin": 2,
-                    "stacksMax": 6,
-                    "stacksMin": 2,
-                    "structure": "endShip",
                     "type": "chest"
                 },
                 {
@@ -1113,7 +1103,41 @@
         "bowl": {
             "image": "bowl.png",
             "itemID": 281,
-            "name": "Bowl"
+            "name": "Bowl",
+            "obtaining": [
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:planks",
+                        null,
+                        "minecraft:planks",
+                        null,
+                        "minecraft:planks",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "category": "junk",
+                    "type": "fishing",
+                    "weight": 0.12048192771084337
+                },
+                {
+                    "item": "minecraft:mushroom_stew",
+                    "type": "useItem"
+                },
+                {
+                    "item": "minecraft:rabbit_stew",
+                    "type": "useItem"
+                },
+                {
+                    "item": "minecraft:beetroot_soup",
+                    "type": "useItem"
+                }
+            ]
         },
         "bread": {
             "image": "bread.png",
@@ -1348,6 +1372,7 @@
                     "type": "craftingShaped"
                 },
                 {
+                    "block": true,
                     "description": "One chest generates near the spawn of any world that has the <a href=\"http://minecraft.gamepedia.com/Bonus_chest\">bonus chest</a> option enabled.",
                     "renewability": "finite",
                     "type": "special"
@@ -1742,7 +1767,66 @@
         "diamond": {
             "image": "diamond.png",
             "itemID": 264,
-            "name": "Diamond"
+            "name": "Diamond",
+            "obtaining": [
+                {
+                    "amountMax": 3,
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "netherFortress",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 2,
+                    "structure": "abandonedMineShaft",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 7,
+                    "amountMin": 2,
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "amountMaxFortune": 4,
+                    "block": "minecraft:diamond_ore",
+                    "silkTouch": false,
+                    "tools": [
+                        "minecraft:iron_pickaxe",
+                        "minecraft:diamond_pickaxe"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "outputAmount": 9,
+                    "recipe": [
+                        "minecraft:diamond_block"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "input": "minecraft:diamond_ore",
+                    "type": "smelting"
+                }
+            ]
         },
         "diamond_axe": {
             "durability": 1561,
@@ -1764,6 +1848,45 @@
             "image": "diamondboots.png",
             "itemID": 313,
             "name": "Diamond Boots",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:diamond",
+                        null,
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        null,
+                        "minecraft:diamond"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "diamond_chestplate": {
@@ -1771,6 +1894,53 @@
             "image": "diamondchestplate.png",
             "itemID": 311,
             "name": "Diamond Chestplate",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:diamond",
+                        null,
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "career": 1,
+                    "price": 19,
+                    "priceMin": 16,
+                    "profession": 3,
+                    "tier": 2,
+                    "type": "trading"
+                }
+            ],
             "stackable": false
         },
         "diamond_helmet": {
@@ -1778,6 +1948,45 @@
             "image": "diamondhelmet.png",
             "itemID": 310,
             "name": "Diamond Helmet",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        null,
+                        "minecraft:diamond"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "diamond_hoe": {
@@ -1791,6 +2000,36 @@
             "image": "diamondhorsearmor.png",
             "itemID": 419,
             "name": "Diamond Horse Armor",
+            "obtaining": [
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "netherFortress",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "diamond_leggings": {
@@ -1798,6 +2037,45 @@
             "image": "diamondleggings.png",
             "itemID": 312,
             "name": "Diamond Leggings",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        null,
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        null,
+                        "minecraft:diamond"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "diamond_ore": {
@@ -1813,6 +2091,34 @@
             "image": "diamondpickaxe.png",
             "itemID": 278,
             "name": "Diamond Pickaxe",
+            "obtaining": [
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "career": 3,
+                    "price": 15,
+                    "priceMin": 12,
+                    "profession": 3,
+                    "tier": 2,
+                    "type": "trading"
+                },
+                {
+                    "recipe": [
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        "minecraft:diamond",
+                        null,
+                        "minecraft:stick",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
             "stackable": false
         },
         "diamond_shovel": {
@@ -1820,6 +2126,26 @@
             "image": "diamondshovel.png",
             "itemID": 277,
             "name": "Diamond Shovel",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        "minecraft:diamond",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "diamond_sword": {
@@ -1827,15 +2153,132 @@
             "image": "diamondsword.png",
             "itemID": 276,
             "name": "Diamond Sword",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        "minecraft:diamond",
+                        null,
+                        null,
+                        "minecraft:diamond",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "career": 2,
+                    "price": 15,
+                    "priceMin": 12,
+                    "profession": 3,
+                    "tier": 2,
+                    "type": "trading"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "dirt": {
             "blockID": 3,
             "damageValues": {
-                "0": {},
+                "0": {
+                    "obtaining": [
+                        {
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "structure": "village",
+                            "type": "structure"
+                        },
+                        {
+                            "block": "minecraft:grass",
+                            "silkTouch": false,
+                            "type": "mining"
+                        },
+                        {
+                            "block": "minecraft:mycelium",
+                            "silkTouch": false,
+                            "type": "mining"
+                        },
+                        {
+                            "block": {
+                                "damage": 2,
+                                "id": "minecraft:dirt"
+                            },
+                            "silkTouch": false,
+                            "type": "mining"
+                        },
+                        {
+                            "block": "minecraft:farmland",
+                            "type": "mining"
+                        },
+                        {
+                            "block": "minecraft:grass_path",
+                            "type": "mining"
+                        },
+                        {
+                            "block": true,
+                            "description": "<a href=\"/block/minecraft/farmland\">Farmland</a> will turn into dirt if either a mob jumps on it, or if nothing is planted on it and it is not within four blocks of water.",
+                            "renewability": "infinite",
+                            "type": "special"
+                        },
+                        {
+                            "block": true,
+                            "description": "<a href=\"/block/minecraft/grass\">Grass</a>, <a href=\"/block/minecraft/mycelium\">mycelium</a>, <a href=\"/block/minecraft/dirt/2\">podzol</a>, <a href=\"/block/minecraft/farmland\">farmland</a>, and <a href=\"/block/minecraft/grass_path\">grass paths</a> turn into dirt over time when a solid block is located directly above them.",
+                            "renewability": "infinite",
+                            "type": "special"
+                        },
+                        {
+                            "block": {
+                                "damage": 1,
+                                "id": "minecraft:dirt"
+                            },
+                            "tools": "hoe",
+                            "type": "modifyBlock"
+                        }
+                    ]
+                },
                 "1": {
                     "image": "coarsedirt.png",
-                    "name": "Coarse Dirt"
+                    "name": "Coarse Dirt",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Mega Taiga",
+                                "Savanna",
+                                "Mesa"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "outputAmount": 4,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:dirt"
+                                },
+                                "minecraft:gravel",
+                                null,
+                                "minecraft:gravel",
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:dirt"
+                                },
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "podzol.png",
@@ -1995,7 +2438,43 @@
                 },
                 "1": {
                     "image": "rosered.png",
-                    "name": "Rose Red"
+                    "name": "Rose Red",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:red_flower"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:red_flower"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:double_plant"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "recipe": [
+                                "minecraft:beetroot"
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "10": {
                     "image": "limedye.png",
@@ -2067,7 +2546,416 @@
         "emerald": {
             "image": "emerald.png",
             "itemID": 388,
-            "name": "Emerald"
+            "name": "Emerald",
+            "obtaining": [
+                {
+                    "amountMaxFortune": 4,
+                    "block": "minecraft:emerald_ore",
+                    "silkTouch": false,
+                    "tools": [
+                        "minecraft:iron_pickaxe",
+                        "minecraft:diamond_pickaxe"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "outputAmount": 9,
+                    "recipe": [
+                        "minecraft:emerald_block"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "input": "minecraft:emerald_ore",
+                    "type": "smelting"
+                },
+                {
+                    "amountMax": 6,
+                    "amountMin": 2,
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 22,
+                        "id": "minecraft:wheat"
+                    },
+                    "priceMin": {
+                        "amount": 18,
+                        "id": "minecraft:wheat"
+                    },
+                    "profession": 0,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 19,
+                        "id": "minecraft:potato"
+                    },
+                    "priceMin": {
+                        "amount": 15,
+                        "id": "minecraft:potato"
+                    },
+                    "profession": 0,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 19,
+                        "id": "minecraft:carrot"
+                    },
+                    "priceMin": {
+                        "amount": 15,
+                        "id": "minecraft:carrot"
+                    },
+                    "profession": 0,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 13,
+                        "id": "minecraft:pumpkin"
+                    },
+                    "priceMin": {
+                        "amount": 8,
+                        "id": "minecraft:pumpkin"
+                    },
+                    "profession": 0,
+                    "tier": 1,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 12,
+                        "id": "minecraft:melon_block"
+                    },
+                    "priceMin": {
+                        "amount": 7,
+                        "id": "minecraft:melon_block"
+                    },
+                    "profession": 0,
+                    "tier": 2,
+                    "type": "trading"
+                },
+                {
+                    "career": 2,
+                    "price": {
+                        "amount": 20,
+                        "id": "minecraft:string"
+                    },
+                    "priceMin": {
+                        "amount": 15,
+                        "id": "minecraft:string"
+                    },
+                    "profession": 0,
+                    "type": "trading"
+                },
+                {
+                    "career": 2,
+                    "price": {
+                        "amount": 24,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "priceMin": {
+                        "amount": 16,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "profession": 0,
+                    "type": "trading"
+                },
+                {
+                    "career": 3,
+                    "price": {
+                        "amount": 22,
+                        "damage": 0,
+                        "id": "minecraft:wool"
+                    },
+                    "priceMin": {
+                        "amount": 16,
+                        "damage": 0,
+                        "id": "minecraft:wool"
+                    },
+                    "profession": 0,
+                    "type": "trading"
+                },
+                {
+                    "career": 4,
+                    "price": {
+                        "amount": 20,
+                        "id": "minecraft:string"
+                    },
+                    "priceMin": {
+                        "amount": 15,
+                        "id": "minecraft:string"
+                    },
+                    "profession": 0,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 36,
+                        "id": "minecraft:paper"
+                    },
+                    "priceMin": {
+                        "amount": 24,
+                        "id": "minecraft:paper"
+                    },
+                    "profession": 1,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 10,
+                        "id": "minecraft:book"
+                    },
+                    "priceMin": {
+                        "amount": 8,
+                        "id": "minecraft:book"
+                    },
+                    "profession": 1,
+                    "tier": 1,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 2,
+                        "id": "minecraft:written_book"
+                    },
+                    "profession": 1,
+                    "tier": 2,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 40,
+                        "id": "minecraft:rotten_flesh"
+                    },
+                    "priceMin": {
+                        "amount": 36,
+                        "id": "minecraft:rotten_flesh"
+                    },
+                    "profession": 2,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 10,
+                        "id": "minecraft:gold_ingot"
+                    },
+                    "priceMin": {
+                        "amount": 8,
+                        "id": "minecraft:gold_ingot"
+                    },
+                    "profession": 2,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 24,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "priceMin": {
+                        "amount": 16,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "profession": 3,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 9,
+                        "id": "minecraft:iron_ingot"
+                    },
+                    "priceMin": {
+                        "amount": 7,
+                        "id": "minecraft:iron_ingot"
+                    },
+                    "profession": 3,
+                    "tier": 1,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 4,
+                        "id": "minecraft:diamond"
+                    },
+                    "priceMin": {
+                        "amount": 3,
+                        "id": "minecraft:diamond"
+                    },
+                    "profession": 3,
+                    "tier": 2,
+                    "type": "trading"
+                },
+                {
+                    "career": 2,
+                    "price": {
+                        "amount": 24,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "priceMin": {
+                        "amount": 16,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "profession": 3,
+                    "type": "trading"
+                },
+                {
+                    "career": 2,
+                    "price": {
+                        "amount": 9,
+                        "id": "minecraft:iron_ingot"
+                    },
+                    "priceMin": {
+                        "amount": 7,
+                        "id": "minecraft:iron_ingot"
+                    },
+                    "profession": 3,
+                    "tier": 1,
+                    "type": "trading"
+                },
+                {
+                    "career": 2,
+                    "price": {
+                        "amount": 4,
+                        "id": "minecraft:diamond"
+                    },
+                    "priceMin": {
+                        "amount": 3,
+                        "id": "minecraft:diamond"
+                    },
+                    "profession": 3,
+                    "tier": 2,
+                    "type": "trading"
+                },
+                {
+                    "career": 3,
+                    "price": {
+                        "amount": 24,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "priceMin": {
+                        "amount": 16,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "profession": 3,
+                    "type": "trading"
+                },
+                {
+                    "career": 3,
+                    "price": {
+                        "amount": 9,
+                        "id": "minecraft:iron_ingot"
+                    },
+                    "priceMin": {
+                        "amount": 7,
+                        "id": "minecraft:iron_ingot"
+                    },
+                    "profession": 3,
+                    "tier": 1,
+                    "type": "trading"
+                },
+                {
+                    "career": 3,
+                    "price": {
+                        "amount": 4,
+                        "id": "minecraft:diamond"
+                    },
+                    "priceMin": {
+                        "amount": 3,
+                        "id": "minecraft:diamond"
+                    },
+                    "profession": 3,
+                    "tier": 2,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 18,
+                        "id": "minecraft:raw_porkchop"
+                    },
+                    "priceMin": {
+                        "amount": 14,
+                        "id": "minecraft:raw_porkchop"
+                    },
+                    "profession": 4,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 18,
+                        "id": "minecraft:raw_chicken"
+                    },
+                    "priceMin": {
+                        "amount": 14,
+                        "id": "minecraft:raw_chicken"
+                    },
+                    "profession": 4,
+                    "type": "trading"
+                },
+                {
+                    "career": 1,
+                    "price": {
+                        "amount": 24,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "priceMin": {
+                        "amount": 16,
+                        "damage": 0,
+                        "id": "minecraft:coal"
+                    },
+                    "profession": 4,
+                    "tier": 1,
+                    "type": "trading"
+                },
+                {
+                    "career": 2,
+                    "price": {
+                        "amount": 12,
+                        "id": "minecraft:leather"
+                    },
+                    "priceMin": {
+                        "amount": 9,
+                        "id": "minecraft:leather"
+                    },
+                    "profession": 4,
+                    "type": "trading"
+                }
+            ]
         },
         "emerald_block": {
             "blockID": 133,
@@ -2133,6 +3021,7 @@
             "name": "End Gateway",
             "obtaining": [
                 {
+                    "block": true,
                     "description": "Two linked End gateways generate each time an <a href=\"http://minecraft.gamepedia.com/Ender_Dragon\">Ender dragon</a> is killed. Up to 20 gateways can be generated.",
                     "renewability": "finite",
                     "type": "special"
@@ -2473,7 +3362,84 @@
         "gold_ingot": {
             "image": "goldingot.png",
             "itemID": 266,
-            "name": "Gold Ingot"
+            "name": "Gold Ingot",
+            "obtaining": [
+                {
+                    "outputAmount": 9,
+                    "recipe": [
+                        "minecraft:gold_block"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "input": "minecraft:gold_ore",
+                    "type": "smelting"
+                },
+                {
+                    "amountMax": 1,
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "player",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "strongholdStoreRoom",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "netherFortress",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "abandonedMineShaft",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 7,
+                    "amountMin": 2,
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 7,
+                    "amountMin": 2,
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 7,
+                    "amountMin": 2,
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                }
+            ]
         },
         "gold_nugget": {
             "image": "goldnugget.png",
@@ -2507,15 +3473,11 @@
                             "type": "craftingShaped"
                         },
                         {
-                            "chestsMax": 2,
-                            "stacksMax": 8,
                             "structure": "dungeon",
                             "type": "chest"
                         },
                         {
-                            "stacksMax": 3,
-                            "stacksMin": 2,
-                            "structure": "stronghold",
+                            "structure": "strongholdAltar",
                             "type": "chest"
                         }
                     ]
@@ -2586,6 +3548,36 @@
             "image": "goldenhorsearmor.png",
             "itemID": 418,
             "name": "Golden Horse Armor",
+            "obtaining": [
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "netherFortress",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "golden_leggings": {
@@ -2756,6 +3748,53 @@
             "image": "ironboots.png",
             "itemID": 309,
             "name": "Iron Boots",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "iron_chestplate": {
@@ -2763,6 +3802,61 @@
             "image": "ironchestplate.png",
             "itemID": 307,
             "name": "Iron Chestplate",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "career": 1,
+                    "price": 14,
+                    "priceMin": 10,
+                    "profession": 3,
+                    "tier": 1,
+                    "type": "trading"
+                }
+            ],
             "stackable": false
         },
         "iron_door": {
@@ -2797,6 +3891,60 @@
             "image": "ironhelmet.png",
             "itemID": 306,
             "name": "Iron Helmet",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "career": 1,
+                    "price": 6,
+                    "priceMin": 4,
+                    "profession": 3,
+                    "type": "trading"
+                }
+            ],
             "stackable": false
         },
         "iron_hoe": {
@@ -2810,18 +3958,170 @@
             "image": "ironhorsearmor.png",
             "itemID": 417,
             "name": "Iron Horse Armor",
+            "obtaining": [
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "netherFortress",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "structure": "abandonedMineShaft",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "iron_ingot": {
             "image": "ironingot.png",
             "itemID": 265,
-            "name": "Iron Ingot"
+            "name": "Iron Ingot",
+            "obtaining": [
+                {
+                    "outputAmount": 9,
+                    "recipe": [
+                        "minecraft:iron_block"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "input": "minecraft:iron_ore",
+                    "type": "smelting"
+                },
+                {
+                    "amountMax": 4,
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 5,
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 5,
+                    "structure": "strongholdStoreRoom",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 5,
+                    "structure": "netherFortress",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 5,
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 5,
+                    "structure": "abandonedMineShaft",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 5,
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 5,
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 8,
+                    "amountMin": 4,
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 5,
+                    "amountMin": 3,
+                    "entity": "VillagerGolem",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "player",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "iron_leggings": {
             "durability": 225,
             "image": "ironleggings.png",
             "itemID": 308,
             "name": "Iron Leggings",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "iron_ore": {
@@ -2837,6 +4137,50 @@
             "image": "ironpickaxe.png",
             "itemID": 257,
             "name": "Iron Pickaxe",
+            "obtaining": [
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "abandonedMineShaft",
+                    "type": "chest"
+                },
+                {
+                    "structure": "strongholdStoreRoom",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "career": 3,
+                    "price": 11,
+                    "priceMin": 9,
+                    "profession": 3,
+                    "tier": 1,
+                    "type": "trading"
+                },
+                {
+                    "recipe": [
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:stick",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
             "stackable": false
         },
         "iron_shovel": {
@@ -2844,6 +4188,39 @@
             "image": "ironshovel.png",
             "itemID": 256,
             "name": "Iron Shovel",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "career": 3,
+                    "price": 7,
+                    "priceMin": 5,
+                    "profession": 3,
+                    "type": "trading"
+                },
+                {
+                    "recipe": [
+                        null,
+                        "minecraft:iron_ingot",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "iron_sword": {
@@ -2851,6 +4228,48 @@
             "image": "ironsword.png",
             "itemID": 267,
             "name": "Iron Sword",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        "minecraft:iron_ingot",
+                        null,
+                        null,
+                        "minecraft:iron_ingot",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "career": 2,
+                    "price": 10,
+                    "priceMin": 9,
+                    "profession": 3,
+                    "tier": 1,
+                    "type": "trading"
+                },
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "iron_trapdoor": {
@@ -3418,11 +4837,13 @@
                     "type": "liquids"
                 },
                 {
+                    "block": true,
                     "description": "14 blocks of obsidian generate as part of a <a href=\"http://minecraft.gamepedia.com/Nether_portal\">Nether portal</a> when an unlinked portal is used.",
                     "renewability": "manual",
                     "type": "special"
                 },
                 {
+                    "block": true,
                     "description": "25 blocks of obsidian generate as part of the End spawn platform each time an entity enters the End. This allows for automatic farming as shown in <a href=\"https://www.youtube.com/watch?v=KYba7FqY4LQ\">this video</a>.",
                     "renewability": "fullyAuto",
                     "type": "special"
@@ -3430,16 +4851,12 @@
                 {
                     "amountMax": 7,
                     "amountMin": 3,
-                    "stacksMax": 8,
-                    "stacksMin": 0,
-                    "structure": "village",
+                    "structure": "blacksmith",
                     "type": "chest"
                 },
                 {
                     "amountMax": 4,
                     "amountMin": 2,
-                    "stacksMax": 5,
-                    "stacksMin": 0,
                     "structure": "netherFortress",
                     "type": "chest"
                 }
@@ -3973,11 +5390,6 @@
                                 "type": "brewing"
                             },
                             {
-                                "chestsMax": 1,
-                                "chestsMin": 1,
-                                "inventoryType": "minecraft:brewing_stand",
-                                "stacksMax": 2,
-                                "stacksMin": 2,
                                 "structure": "endShip",
                                 "type": "chest"
                             }
@@ -4822,6 +6234,53 @@
             "image": "saddle.png",
             "itemID": 329,
             "name": "Saddle",
+            "obtaining": [
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "structure": "netherFortress",
+                    "type": "chest"
+                },
+                {
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "structure": "abandonedMineShaft",
+                    "type": "chest"
+                },
+                {
+                    "structure": "endCity",
+                    "type": "chest"
+                },
+                {
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                },
+                {
+                    "category": "treasure",
+                    "type": "fishing",
+                    "weight": 0.16666666666666666
+                },
+                {
+                    "career": 2,
+                    "price": 10,
+                    "priceMin": 8,
+                    "profession": 4,
+                    "tier": 2,
+                    "type": "trading"
+                }
+            ],
             "stackable": false
         },
         "sand": {
@@ -7158,6 +8617,41 @@
             "image": "torch.png",
             "itemID": 50,
             "name": "Torch",
+            "obtaining": [
+                {
+                    "block": true,
+                    "description": "Up to 4 torches generate around the <a href=\"http://minecraft.gamepedia.com/Bonus_chest\">bonus chest</a> if the corresponding option is enabled.",
+                    "renewability": "finite",
+                    "type": "special"
+                },
+                {
+                    "structure": "abandonedMineShaft",
+                    "type": "structure"
+                },
+                {
+                    "structure": "stronghold",
+                    "type": "structure"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        "minecraft:coal",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
             "solid": false,
             "subtype": "torch",
             "texture": "torch_on"

@@ -1,5 +1,12 @@
 * biomes: an array of biome IDs (corresponding to the "id" field in biomes.json) where the structure can generate. By default, it can generate in all biomes.
 * dimension: the dimension in which the structure generates: "overworld", "nether", or "end".
 * infinite: whether an “infinite” (limited only by the world size) number of these structures generate. Defaults to true.
+* inventories: An object with the names specifying the IDs of inventories occuring in this structure, and the values being objects of the following structure:
+    * chestsMin: the minimum number of chests that will generate in a single structure. Defaults to 0.
+    * chestsMax: the maximum number of chests that will generate in a single structure. If not given, it varies.
+    * stacksMin: the minimum number of total stacks generated in the chest. Defaults to 1.
+    * stacksMax: the maximum number of total stacks generated in the chest. Defaults to 1.
+    * inventoryIsEntity: if true, the inventory is an entity. If false (the default), it is a block.
+    * inventoryType: the block ID (or entity savegame ID) for the type of inventory. Defaults to "minecraft:chest".
 * name: human-readable structure name, in singular and plural form.
 * requiresOption: whether the structure requires the Generate Structures world option to be generated. Defaults to true.

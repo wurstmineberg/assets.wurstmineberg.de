@@ -38,15 +38,18 @@ The fields for the damage values, status effects, and block info implicitly inhe
             * whileUsing: the entity must be using (e.g. drinking) the item when it dies in order to drop it.
             * crash: the entity must die from collision damage.
             * noCrash: the entity must not die from collision damage.
-            * whileWearing: the entity must have spawned wearing or holding the item. The presence of this obtaining method indicates that this can occur naturally. The item has a chance of 8.5% plus the level of looting used to kill the entity (11.5% with Looting III) to drop.
-            * halloween: the entity must have spawned wearing or holding the item. The presence of this obtaining method indicates that this can occur naturally on Halloween. The item has a chance equivalent to the level of looting used to kill the entity (3% with Looting III) to drop.
+            * whileWearing: the entity must have spawned wearing or holding the item, and must be killed by a player or tamed wolf. The presence of this obtaining method indicates that this can occur naturally. The item has a chance of 8.5% plus the level of looting used to kill the entity (11.5% with Looting III) to drop.
+            * halloween: the entity must have spawned wearing or holding the item, and must be killed by a player or tamed wolf. The presence of this obtaining method indicates that this can occur naturally on Halloween. The item has a chance equivalent to the level of looting used to kill the entity (3% with Looting III) to drop.
         * subtype: the mob's subtype, as listed in mobs.json.
     * mining: the item is dropped when a block is mined.
         * block: an item stub specifying the block that drops the item.
-        * amountMin: the minimum number of items dropped from a single block. Defaults to 1.
-        * amountMax: the maximum number of items dropped from a single block. Defaults to 1.
+        * amountMin: the minimum number of items dropped from a single block when mined without the Fortune enchantment. Defaults to 1.
+        * amountMax: the maximum number of items dropped from a single block when mined without the Fortune enchantment. Defaults to 1.
+        * amountMinFortune: the minimum number of items dropped from a single block when mined with Fortune III. Defaults to the same value as amountMin.
+        * amountMaxFortune: the maximum number of items dropped from a single block when mined with Fortune III. Defaults to the same value as amountMax.
         * tools: an array of tool stubs describing the tools with which this method of obtaining works. A tool stub can be an item stub, or one of the special values below. Defaults to all tools.
             * null: without a tool, i.e. bare handed or with a non-tool block or item.
+            * "hoe": any hoe.
             * "pickaxe": any pickaxe.
             * "shovel": any shovel.
         * excludeTools: if true, this method of obtaining works with tools other than those in the tools array. Defaults to false.
@@ -62,7 +65,8 @@ The fields for the damage values, status effects, and block info implicitly inhe
         * priceMin: an item stub specifying the minimum amount of items that must be sold, or a number if the price is in emeralds. Defaults to the same as the maximum price.
         * additionalPrice: an item stub specifying the maximum amount of items that must be sold in the second stack. Defaults to null, meaning no items.
         * additionalPriceMin: an item stub specifying the minimum amount of items that must be sold in the second stack. Defaults to the same as the maximum additional price.
-        * outputAmount: the number of items obtained by trading once. Defaults to 1.
+        * outputAmount: the maximum number of items obtained by trading once. Defaults to 1.
+        * outputAmountMin: the minimum number of items obtained by trading once. Defaults to the same value as outputAmount.
     * fishing: the item can be caught by fishing.
         * category: one of "fish", "treasure", or "junk".
         * weight: the chance that an item in this category will be this item, if known.
@@ -79,12 +83,7 @@ The fields for the damage values, status effects, and block info implicitly inhe
     * chest: the item may appear in chests or other inventories generated naturally with structures in the world.
         * amountMin: the minimum number of items in a single generated stack. Defaults to 1.
         * amountMax: the maximum number of items in a single generated stack. Defaults to 1.
-        * chestsMin: the minimum number of chests that will generate in a single structure. Defaults to 0.
-        * chestsMax: the maximum number of chests that will generate in a single structure. If not given, it varies.
-        * stacksMin: the minimum number of total stacks generated in the chest. Defaults to 1.
-        * stacksMax: the maximum number of total stacks generated in the chest. Defaults to 1.
-        * structure: the structure ID as used in structres.json
-        * inventoryType: the block ID for the type of inventory. Defaults to "minecraft:chest".
+        * structure: the structure inventory name as specified in structres.json
     * natural: the block generates naturally as part of the world.
         * biomes: an array of biome IDs (corresponding to the "id" field in biomes.json) where the block can generate. By default, it can generate in all biomes.
         * dimension: the dimension where the block generates: "overworld", "nether", or "end".
@@ -108,6 +107,7 @@ The fields for the damage values, status effects, and block info implicitly inhe
             * flowIntoSource: created when the first liquid attempts to flow into a source block of the second, regardless of direction. The second liquid's source block is replaced by the new block.
     * special: a method of obtaining not described above.
         * description: a HTML description for All The Items.
+        * block: if true, the method creates a block placed in the world. If false (the default), the method creates an item as a dropped item entity or within an inventory.
         * renewability: One of "finite", "infinite", "manual", "fullyAuto", describing the method's renewability as defined on http://wiki.wurstmineberg.de/Renewability
 * dropsSelf: an array, or single entry. Each entry is either an object structured like “method of obtaining: mining” objects, except without the “block” key, or simply a tool stub. This is used to specify how the block must be mined so that it drops itself. The default is true, implying that the block always drops itself.
 * whenPlaced: an item stub specifying the block this item turns into when placed.
