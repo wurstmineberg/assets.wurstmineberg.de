@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 
+import PIL.Image
 import json
 import pathlib
 import sys
@@ -9,6 +10,13 @@ tests = set()
 def test(f):
     tests.add(f)
     return f
+
+@test
+def test_grid_image_sizes():
+    for image_path in pathlib.Path('img/grid').iterdir():
+        if image_path.suffix == '.png':
+            img = PIL.Image.open(str(image_path))
+            assert img.size == (32, 32)
 
 @test
 def validate_cloud_json():
