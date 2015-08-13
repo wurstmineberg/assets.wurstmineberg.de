@@ -3030,6 +3030,7 @@
         },
         "end_gateway": {
             "blockID": 209,
+            "image": "endgateway.png",
             "name": "End Gateway",
             "obtaining": [
                 {
@@ -3043,7 +3044,7 @@
         },
         "end_portal": {
             "blockID": 119,
-            "image": "endportal.png",
+            "image": "endgateway.png",
             "name": "End Portal"
         },
         "end_portal_frame": {
