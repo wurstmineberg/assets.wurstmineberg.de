@@ -2419,6 +2419,18 @@
             "image": "oakwoodslab.png",
             "name": "Double Wooden Slab"
         },
+        "dragon_breath": {
+            "image": "dragonbreath.png",
+            "itemID": 437,
+            "name": "Dragon's Breath",
+            "obtaining": [
+                {
+                    "description": "<a href=\"/item/minecraft/glass_bottle\">Glass bottles</a> can be converted to dragon's breath by using them on areas affected by the <a href=\"http://minecraft.gamepedia.com/Ender_dragon\">Ender dragon</a>'s breath attack.",
+                    "renewability": "manual",
+                    "type": "special"
+                }
+            ]
+        },
         "dragon_egg": {
             "blockID": 122,
             "image": "dragonegg.png",
@@ -4558,6 +4570,501 @@
             "image": "weightedpressureplate(Light).png",
             "itemID": 147,
             "name": "Weighted Pressure Plate (Light)"
+        },
+        "lingering_potion": {
+            "effects": {
+                "minecraft": {
+                    "awkward": {
+                        "name": "Lingering Awkward Potion",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "awkward",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "fire_resistance": {
+                        "image": "lingeringfireresistancepotion.png",
+                        "name": "Lingering Potion of Fire Resistance",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "fire_resistance",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "harming": {
+                        "image": "lingeringdamagepotion.png",
+                        "name": "Lingering Potion of Harming",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "harming",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "healing": {
+                        "image": "lingeringhealthpotion.png",
+                        "name": "Lingering Potion of Healing",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "healing",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "invisibility": {
+                        "image": "lingeringinvisibilitypotion.png",
+                        "name": "Lingering Potion of Invisibility",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "invisibility",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "leaping": {
+                        "image": "lingeringjumppotion.png",
+                        "name": "Lingering Potion of Leaping",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "leaping",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_fire_resistance": {
+                        "image": "lingeringfireresistancepotion.png",
+                        "name": "Lingering Potion of Fire Resistance, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_fire_resistance",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_invisibility": {
+                        "image": "lingeringinvisibilitypotion.png",
+                        "name": "Lingering Potion of Invisibility, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_invisibility",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_leaping": {
+                        "image": "lingeringjumppotion.png",
+                        "name": "Lingering Potion of Leaping, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_leaping",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_night_vision": {
+                        "image": "lingeringnightvisionpotion.png",
+                        "name": "Lingering Potion of Night Vision, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_night_vision",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_poison": {
+                        "image": "lingeringpoisonpotion.png",
+                        "name": "Lingering Potion of Poison, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_poison",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_regeneration": {
+                        "image": "lingeringregenpotion.png",
+                        "name": "Lingering Potion of Regeneration, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_regeneration",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_slowness": {
+                        "image": "lingeringslownesspotion.png",
+                        "name": "Lingering Potion of Slowness, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_slowness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_strength": {
+                        "image": "lingeringstrengthpotion.png",
+                        "name": "Lingering Potion of Strength, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_strength",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_swiftness": {
+                        "image": "lingeringspeedpotion.png",
+                        "name": "Lingering Potion of Swiftness, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_swiftness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_water_breathing": {
+                        "image": "lingeringwaterbreathingpotion.png",
+                        "name": "Lingering Potion of Water Breathing, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_water_breathing",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "long_weakness": {
+                        "image": "lingeringweaknesspotion.png",
+                        "name": "Lingering Potion of Weakness, extended",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "long_weakness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "mundane": {
+                        "name": "Lingering Mundane Potion",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "mundane",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "night_vision": {
+                        "image": "lingeringnightvisionpotion.png",
+                        "name": "Lingering Potion of Night Vision",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "night_vision",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "poison": {
+                        "image": "lingeringpoisonpotion.png",
+                        "name": "Lingering Potion of Poison",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "poison",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "regeneration": {
+                        "image": "lingeringregenpotion.png",
+                        "name": "Lingering Potion of Regeneration",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "regeneration",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "slowness": {
+                        "image": "lingeringslownesspotion.png",
+                        "name": "Lingering Potion of Slowness",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "slowness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strength": {
+                        "image": "lingeringstrengthpotion.png",
+                        "name": "Lingering Potion of Strength",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "strength",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_harming": {
+                        "image": "lingeringdamagepotion.png",
+                        "name": "Lingering Potion of Harming \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "strong_harming",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_healing": {
+                        "image": "lingeringhealthpotion.png",
+                        "name": "Lingering Potion of Healing \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "strong_healing",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_leaping": {
+                        "image": "lingeringjumppotion.png",
+                        "name": "Lingering Potion of Leaping \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "strong_leaping",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_poison": {
+                        "image": "lingeringpoisonpotion.png",
+                        "name": "Lingering Potion of Poison \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "strong_poison",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_regeneration": {
+                        "image": "lingeringregenpotion.png",
+                        "name": "Lingering Potion of Regeneration \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "strong_regeneration",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_strength": {
+                        "image": "lingeringstrengthpotion.png",
+                        "name": "Lingering Potion of Strength \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "strong_strength",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "strong_swiftness": {
+                        "image": "lingeringspeedpotion.png",
+                        "name": "Lingering Potion of Swiftness \u2161",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "strong_swiftness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "swiftness": {
+                        "image": "lingeringspeedpotion.png",
+                        "name": "Lingering Potion of Swiftness",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "swiftness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "thick": {
+                        "name": "Lingering Thick Potion",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "thick",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "water": {
+                        "name": "Lingering Water Bottle",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "water",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "water_breathing": {
+                        "image": "lingeringwaterbreathingpotion.png",
+                        "name": "Lingering Potion of Water Breathing",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "water_breathing",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    },
+                    "weakness": {
+                        "image": "lingeringweaknesspotion.png",
+                        "name": "Lingering Potion of Weakness",
+                        "obtaining": [
+                            {
+                                "basePotion": {
+                                    "effect": "weakness",
+                                    "id": "minecraft:splash_potion"
+                                },
+                                "ingredient": "minecraft:dragon_breath",
+                                "type": "brewing"
+                            }
+                        ]
+                    }
+                }
+            },
+            "image": "lingeringpotion.png",
+            "itemID": 441,
+            "name": "Lingering Potion"
         },
         "lit_furnace": {
             "blockID": 62,
