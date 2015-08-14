@@ -2106,7 +2106,7 @@
             },
             {
                 "exists": false,
-                "id": "minecraft:experience_bottle"
+                "id": "minecraft:dragon_breath"
             },
             {
                 "exists": false,
@@ -2161,6 +2161,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:water",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:awkward",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:awkward",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2181,6 +2191,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:mundane",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:thick",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:thick",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2189,6 +2209,10 @@
                 "effect": "minecraft:thick",
                 "exists": false,
                 "id": "minecraft:splash_potion"
+            },
+            {
+                "exists": false,
+                "id": "minecraft:experience_bottle"
             }
         ],
         "-2": [
@@ -2203,6 +2227,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:swiftness",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:long_swiftness",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:long_swiftness",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2221,6 +2255,16 @@
                 "effect": "minecraft:strong_swiftness",
                 "exists": false,
                 "id": "minecraft:splash_potion"
+            },
+            {
+                "effect": "minecraft:strong_swiftness",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:strength",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strength",
@@ -2243,6 +2287,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:long_strength",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:strong_strength",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:strong_strength",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2261,6 +2315,16 @@
                 "effect": "minecraft:healing",
                 "exists": false,
                 "id": "minecraft:splash_potion"
+            },
+            {
+                "effect": "minecraft:healing",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:strong_healing",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_healing",
@@ -2283,6 +2347,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:leaping",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:long_leaping",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:long_leaping",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2301,6 +2375,16 @@
                 "effect": "minecraft:strong_leaping",
                 "exists": false,
                 "id": "minecraft:splash_potion"
+            },
+            {
+                "effect": "minecraft:strong_leaping",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:regeneration",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:regeneration",
@@ -2323,6 +2407,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:long_regeneration",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:strong_regeneration",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:strong_regeneration",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2341,6 +2435,16 @@
                 "effect": "minecraft:fire_resistance",
                 "exists": false,
                 "id": "minecraft:splash_potion"
+            },
+            {
+                "effect": "minecraft:fire_resistance",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:long_fire_resistance",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_fire_resistance",
@@ -2363,6 +2467,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:water_breathing",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:long_water_breathing",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:long_water_breathing",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2383,6 +2497,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:invisibility",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:long_invisibility",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:long_invisibility",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2401,6 +2525,16 @@
                 "effect": "minecraft:night_vision",
                 "exists": false,
                 "id": "minecraft:splash_potion"
+            },
+            {
+                "effect": "minecraft:night_vision",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:long_night_vision",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_night_vision",
@@ -2425,6 +2559,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:slowness",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:long_slowness",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:long_slowness",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2443,6 +2587,16 @@
                 "effect": "minecraft:harming",
                 "exists": false,
                 "id": "minecraft:splash_potion"
+            },
+            {
+                "effect": "minecraft:harming",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:strong_harming",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_harming",
@@ -2465,6 +2619,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:weakness",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:long_weakness",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:long_weakness",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2485,6 +2649,16 @@
                 "id": "minecraft:splash_potion"
             },
             {
+                "effect": "minecraft:poison",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
+                "effect": "minecraft:long_poison",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
+            },
+            {
                 "effect": "minecraft:long_poison",
                 "exists": false,
                 "id": "minecraft:potion"
@@ -2503,6 +2677,11 @@
                 "effect": "minecraft:strong_poison",
                 "exists": false,
                 "id": "minecraft:splash_potion"
+            },
+            {
+                "effect": "minecraft:strong_poison",
+                "exists": false,
+                "id": "minecraft:lingering_potion"
             }
         ],
         "0": [
