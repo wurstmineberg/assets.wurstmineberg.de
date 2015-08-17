@@ -621,6 +621,7 @@ function minecraftTicksToRealMinutes(minecraftTicks) {
 
 function prettifyStatsValue(key, value) {
     if (key.endsWith('OneCm')) {
+        // unit: meters
         if (value > 100000) {
             return (value / 100000).toFixed(2) + 'km';
         } else if (value > 100) {
@@ -629,6 +630,7 @@ function prettifyStatsValue(key, value) {
             return value + 'cm';
         }
     } else if (key == 'playOneMinute' || key == 'timeSinceDeath' || key == 'sneakTime') {
+        // unit: seconds
         var minutes = minecraftTicksToRealMinutes(value);
         var hours = 0;
         var days = 0;
@@ -662,8 +664,10 @@ function prettifyStatsValue(key, value) {
         }
         return finalValue;
     } else if (key.startsWith('damage')) {
+        // unit: hearts
         return (Math.floor(value / 10) / 2) + ' hearts';
     } else if (key == 'talkedToVillager' || key == 'tradedWithVillager') {
+        // unit: times
         if (value == 0) {
             return 'never';
         } else if (value == 1) {
@@ -674,8 +678,14 @@ function prettifyStatsValue(key, value) {
             return value + ' times';
         }
     } else if (key == 'cauldronUsed') {
+        // unit: bottles
         return value + ' bottle' + (value == 1 ? '' : 's');
     } else {
+        // no unit
+        value = value.toString();
+        if (value.length > 3) {
+            value = value.replace(/\B(?=(?:\d{3})+(?!\d))/g, '&#8239;'); // add thin non-breaking spaces as thousands separators
+        }
         return value;
     }
 }
