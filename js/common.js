@@ -636,7 +636,7 @@ function prettifyStatsValue(key, value) {
             hours = Math.floor(minutes / 60);
             minutes = minutes % 60;
         } else if (minutes >= 1) {
-            return Math.floor(minutes) + 'min ' + Math.floor(value / 20) + 'sec';
+            return Math.floor(minutes) + 'min ' + Math.floor(value / 20) % 60 + 'sec';
         } else {
             return Math.floor(value / 20) + 'sec';
         }
