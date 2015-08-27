@@ -823,25 +823,12 @@
             "solid": false
         },
         "bed": {
-            "FIXME": "Beds are complicated stuff",
             "blockID": 26,
-            "blockInfo": {
-                "damageValues": {
-                    "0": {
-                        "texture_east": "bed_feet_side",
-                        "texture_south": null,
-                        "texture_top": "bed_feet_top",
-                        "texture_west": "bed_feet_side"
-                    }
-                }
-            },
             "image": "bed.png",
             "itemID": 355,
             "name": "Bed",
             "solid": false,
-            "stackable": false,
-            "subtype": "bed",
-            "texture": "bed_feet_top"
+            "stackable": false
         },
         "bedrock": {
             "blockID": 7,
@@ -1319,6 +1306,14 @@
             "itemID": 380,
             "name": "Cauldron"
         },
+        "chain_command_block": {
+            "blockID": 211,
+            "creativeMenu": false,
+            "dropsSelf": false,
+            "image": "chaincommandblock.png",
+            "itemID": 211,
+            "name": "Chain Command Block"
+        },
         "chainmail_boots": {
             "durability": 195,
             "image": "chainboots.png",
@@ -1555,6 +1550,8 @@
         },
         "command_block": {
             "blockID": 137,
+            "creativeMenu": false,
+            "dropsSelf": false,
             "image": "commandblock.png",
             "itemID": 137,
             "name": "Command Block"
@@ -3693,9 +3690,36 @@
         },
         "hopper": {
             "blockID": 154,
+            "dropsSelf": "pickaxe",
             "image": "hopper.png",
             "itemID": 154,
-            "name": "Hopper"
+            "name": "Hopper",
+            "obtaining": [
+                {
+                    "entity": "MinecartHopper",
+                    "type": "entityDeath"
+                },
+                {
+                    "recipe": [
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:chest",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amount": 1,
+                    "structure": "endShip",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "hopper_minecart": {
             "image": "minecartwithhopper.png",
@@ -3720,7 +3744,15 @@
             "blockID": 101,
             "image": "ironbars.png",
             "itemID": 101,
-            "name": "Iron Bars"
+            "name": "Iron Bars",
+            "obtaining": [
+                {
+                    "block": true,
+                    "description": "The iron bars around some of the Ender crystals regenerate every time an Ender dragon is spawned.",
+                    "renewability": "infinite",
+                    "type": "special"
+                }
+            ]
         },
         "iron_block": {
             "blockID": 42,
@@ -3748,7 +3780,7 @@
                     "type": "craftingShaped"
                 },
                 {
-                    "amount": 9,
+                    "amount": 8,
                     "structure": "endShip",
                     "type": "structure"
                 }
@@ -4583,7 +4615,10 @@
                                     "effect": "awkward",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4597,7 +4632,10 @@
                                     "effect": "fire_resistance",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4611,7 +4649,10 @@
                                     "effect": "harming",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4625,7 +4666,10 @@
                                     "effect": "healing",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4639,7 +4683,10 @@
                                     "effect": "invisibility",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4653,7 +4700,10 @@
                                     "effect": "leaping",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4667,7 +4717,10 @@
                                     "effect": "long_fire_resistance",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4681,7 +4734,10 @@
                                     "effect": "long_invisibility",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4695,7 +4751,10 @@
                                     "effect": "long_leaping",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4709,7 +4768,10 @@
                                     "effect": "long_night_vision",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4723,7 +4785,10 @@
                                     "effect": "long_poison",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4737,7 +4802,10 @@
                                     "effect": "long_regeneration",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4751,7 +4819,10 @@
                                     "effect": "long_slowness",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4765,7 +4836,10 @@
                                     "effect": "long_strength",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4779,7 +4853,10 @@
                                     "effect": "long_swiftness",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4793,7 +4870,10 @@
                                     "effect": "long_water_breathing",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4807,7 +4887,10 @@
                                     "effect": "long_weakness",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4820,7 +4903,10 @@
                                     "effect": "mundane",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4834,7 +4920,10 @@
                                     "effect": "night_vision",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4848,7 +4937,10 @@
                                     "effect": "poison",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4862,7 +4954,10 @@
                                     "effect": "regeneration",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4876,7 +4971,10 @@
                                     "effect": "slowness",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4890,7 +4988,10 @@
                                     "effect": "strength",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4904,7 +5005,10 @@
                                     "effect": "strong_harming",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4918,7 +5022,10 @@
                                     "effect": "strong_healing",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4932,7 +5039,10 @@
                                     "effect": "strong_leaping",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4946,7 +5056,10 @@
                                     "effect": "strong_poison",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4960,7 +5073,10 @@
                                     "effect": "strong_regeneration",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4974,7 +5090,10 @@
                                     "effect": "strong_strength",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -4988,7 +5107,10 @@
                                     "effect": "strong_swiftness",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -5002,7 +5124,10 @@
                                     "effect": "swiftness",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -5015,7 +5140,10 @@
                                     "effect": "thick",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -5028,7 +5156,10 @@
                                     "effect": "water",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -5042,7 +5173,10 @@
                                     "effect": "water_breathing",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -5056,7 +5190,10 @@
                                     "effect": "weakness",
                                     "id": "minecraft:splash_potion"
                                 },
-                                "ingredient": "minecraft:dragon_breath",
+                                "ingredient": {
+                                    "consumed": "minecraft:glass_bottle",
+                                    "id": "minecraft:dragon_breath"
+                                },
                                 "type": "brewing"
                             }
                         ]
@@ -5367,6 +5504,12 @@
                     "amountMin": 2,
                     "structure": "netherFortress",
                     "type": "chest"
+                },
+                {
+                    "block": true,
+                    "description": "The obsidian pillars in the End regenerate every time an Ender dragon is spawned.",
+                    "renewability": "infinite",
+                    "type": "special"
                 }
             ],
             "solid": true,
@@ -6125,11 +6268,6 @@
             "name": "Pumpkin",
             "obtaining": [
                 {
-                    "amount": 1,
-                    "structure": "endShip",
-                    "type": "structure"
-                },
-                {
                     "dimension": "overworld",
                     "type": "natural"
                 },
@@ -6733,6 +6871,14 @@
             "itemID": 356,
             "name": "Repeater"
         },
+        "repeating_command_block": {
+            "blockID": 210,
+            "creativeMenu": false,
+            "dropsSelf": false,
+            "image": "repeatcommandblock.png",
+            "itemID": 210,
+            "name": "Repeating Command Block"
+        },
         "rotten_flesh": {
             "image": "rottenflesh.png",
             "itemID": 367,
@@ -6884,6 +7030,27 @@
             "itemID": 359,
             "name": "Shears",
             "stackable": false
+        },
+        "shield": {
+            "durability": 180,
+            "itemID": 442,
+            "name": "Shield",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:wool",
+                        "minecraft:planks",
+                        null,
+                        "minecraft:wool",
+                        "minecraft:planks",
+                        "minecraft:iron_ingot",
+                        "minecraft:wool",
+                        "minecraft:planks",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "sign": {
             "image": "sign.png",
@@ -9254,40 +9421,9 @@
         },
         "wheat": {
             "blockID": 59,
-            "blockInfo": {
-                "damageValues": {
-                    "0": {
-                        "texture_side": "wheat_stage_0"
-                    },
-                    "1": {
-                        "texture_side": "wheat_stage_1"
-                    },
-                    "2": {
-                        "texture_side": "wheat_stage_2"
-                    },
-                    "3": {
-                        "texture_side": "wheat_stage_3"
-                    },
-                    "4": {
-                        "texture_side": "wheat_stage_4"
-                    },
-                    "5": {
-                        "texture_side": "wheat_stage_5"
-                    },
-                    "6": {
-                        "texture_side": "wheat_stage_6"
-                    },
-                    "7": {
-                        "image": "wheat.png",
-                        "texture_side": "wheat_stage_7"
-                    }
-                },
-                "image": "wheatseeds.png"
-            },
             "image": "wheat.png",
             "itemID": 296,
             "name": "Wheat",
-            "render_type": "square",
             "solid": false
         },
         "wheat_seeds": {
@@ -9512,6 +9648,12 @@
             "image": "writtenbook.png",
             "itemID": 387,
             "name": "Written Book",
+            "obtaining": [
+                {
+                    "structure": "endShipTempHopper",
+                    "type": "chest"
+                }
+            ],
             "stackable": 16
         },
         "yellow_flower": {
