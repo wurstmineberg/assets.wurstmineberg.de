@@ -102,6 +102,11 @@
                 "inventoryType": "minecraft:brewing_stand",
                 "stacksMax": 2,
                 "stacksMin": 2
+            },
+            "endShipTempHopper": {
+                "chestsMax": 1,
+                "chestsMin": 1,
+                "inventoryType": "minecraft:hopper"
             }
         },
         "name": {
