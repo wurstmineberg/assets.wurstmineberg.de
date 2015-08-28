@@ -114,3 +114,4 @@ The fields for the damage values, status effects, and block info implicitly inhe
 * pickBlock: whether the item can be obtained using the Pick Block key in Creative mode. Defaults to the same value as creativeMenu.
 * durability: the durability of the tool, as displayed in-game.
 * stackable: how many of this item, given that they are identical, may be stacked together. May be true or omitted for stackable (64), false for unstackable (1), or another positive integer for a custom value.
+* alwaysGlow: whether the item always has a glowing effect, regardless of enchantments. Defaults to false.
