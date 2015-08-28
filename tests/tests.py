@@ -447,13 +447,20 @@ def validate_items_json():
         item = items[plugin][item_id]
         if 'damage' in item_stub:
             assert 'effect' not in item_stub
+            assert 'tagValue' not in item_stub
             assert str(item_stub['damage']) in item['damageValues']
         if 'effect' in item_stub:
+            assert 'damage' not in item_stub
+            assert 'tagValue' not in item_stub
             try:
                 effect_plugin, effect_id = item_stub['effect'].split(':')
             except ValueError as e:
                 raise ValueError('Could not parse effect ID {!r}'.format(item_stub['effect'])) from e
             assert effect_id in item['effects'][effect_plugin]
+        if 'tagValue' in item_stub:
+            assert 'damage' not in item_stub
+            assert 'effect' not in item_stub
+            assert str(item_stub['tagValue']) in item['tagVariants']
         if 'consumed' in item_stub:
             if not isinstance(item_stub['consumed'], bool):
                 item_stubs.append((item_stub['consumed'], must_be_block, must_be_item))

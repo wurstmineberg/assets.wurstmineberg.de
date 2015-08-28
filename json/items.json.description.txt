@@ -2,7 +2,7 @@ Fields in items.json:
 
 Items are entered by their name IDs. All items from a plugin are in one object, for example minecraft:coal is at the key path .minecraft.coal
 
-The fields for the damage values, status effects, and block info implicitly inherit the values of the parent.
+The fields for the damage values, status effects, and tag variants implicitly inherit the values of the parent.
 
 * name: display name of the item.
 * solid: true if the block is solid and nontransparent, defaults to true
@@ -19,6 +19,7 @@ The fields for the damage values, status effects, and block info implicitly inhe
             * id: the new-style item ID.
             * damage: the damage value, or an array of allowed damage values. Defaults to all damage values.
             * effect: the new-style status effect ID, or an array of allowed effect IDs. Defaults to any or no effect.
+            * tagValue: the value of the required NBT tag (as specified by tagPath in the item info), if any. Defaults to any or no value.
             * consumed: whether or not the item is consumed during the crafting process. Defaults to true. May also be an item stub specifying which item it turns into after crafting.
             * amount: the amount of items required, used for the "trading" method type.
         * outputAmount: the number of items created by crafting once. Defaults to 1.
