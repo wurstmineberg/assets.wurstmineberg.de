@@ -118,11 +118,9 @@
         },
         "air": {
             "blockID": 0,
-            "creativeMenu": false,
             "image": "air.png",
             "name": "Air",
-            "solid": false,
-            "texture": null
+            "solid": false
         },
         "anvil": {
             "blockID": 145,
@@ -861,8 +859,7 @@
                     "structure": "endCrystalPillar",
                     "type": "structure"
                 }
-            ],
-            "texture": "bedrock"
+            ]
         },
         "beef": {
             "image": "rawbeef.png",
@@ -931,7 +928,6 @@
                     "type": "structure"
                 }
             ],
-            "renderType": "square",
             "solid": false
         },
         "birch_door": {
@@ -1074,11 +1070,7 @@
             "blockID": 47,
             "image": "bookshelf.png",
             "itemID": 47,
-            "name": "Bookshelf",
-            "solid": true,
-            "texture": "bookshelf",
-            "texture_bottom": "planks_oak",
-            "texture_top": "planks_oak"
+            "name": "Bookshelf"
         },
         "bow": {
             "durability": 384,
@@ -1168,9 +1160,7 @@
             "blockID": 45,
             "image": "bricks.png",
             "itemID": 45,
-            "name": "Brick",
-            "solid": true,
-            "texture": "brick"
+            "name": "Brick"
         },
         "brick_stairs": {
             "blockID": 108,
@@ -1183,9 +1173,7 @@
             "image": "brownmushroom.png",
             "itemID": 39,
             "name": "Brown Mushroom",
-            "render_type": "cross",
-            "solid": false,
-            "texture": "mushroom_brown"
+            "solid": false
         },
         "brown_mushroom_block": {
             "blockID": 99,
@@ -1408,8 +1396,7 @@
                     "type": "structure"
                 }
             ],
-            "solid": false,
-            "subtype": "chest"
+            "solid": false
         },
         "chest_minecart": {
             "image": "minecartwithchest.png",
@@ -1518,17 +1505,13 @@
             "blockID": 16,
             "image": "coalore.png",
             "itemID": 16,
-            "name": "Coal Ore",
-            "solid": true,
-            "texture": "coal_ore"
+            "name": "Coal Ore"
         },
         "cobblestone": {
             "blockID": 4,
             "image": "cobble.png",
             "itemID": 4,
-            "name": "Cobblestone",
-            "solid": true,
-            "texture": "cobblestone"
+            "name": "Cobblestone"
         },
         "cobblestone_wall": {
             "blockID": 139,
@@ -1618,14 +1601,7 @@
             "blockID": 58,
             "image": "craftingtable.png",
             "itemID": 58,
-            "name": "Crafting Table",
-            "solid": true,
-            "texture_bottom": "planks_oak",
-            "texture_east": "crafting_table_side",
-            "texture_north": "crafting_table_front",
-            "texture_south": "crafting_table_side",
-            "texture_top": "crafting_table_top",
-            "texture_west": "crafting_table_front"
+            "name": "Crafting Table"
         },
         "dark_oak_door": {
             "image": "darkoakdoor.png",
@@ -1751,8 +1727,7 @@
             "blockID": 32,
             "image": "deadbush.png",
             "itemID": 32,
-            "name": "Dead Bush",
-            "texture": "deadbush"
+            "name": "Dead Bush"
         },
         "detector_rail": {
             "blockID": 28,
@@ -1836,9 +1811,7 @@
             "blockID": 57,
             "image": "diamondblock.png",
             "itemID": 57,
-            "name": "Block of Diamond",
-            "solid": true,
-            "texture": "diamond_block"
+            "name": "Block of Diamond"
         },
         "diamond_boots": {
             "durability": 429,
@@ -2079,9 +2052,7 @@
             "blockID": 56,
             "image": "diamondore.png",
             "itemID": 56,
-            "name": "Diamond Ore",
-            "solid": true,
-            "texture": "diamond_ore"
+            "name": "Diamond Ore"
         },
         "diamond_pickaxe": {
             "durability": 1561,
@@ -2236,7 +2207,9 @@
                                 "damage": 1,
                                 "id": "minecraft:dirt"
                             },
-                            "tools": "hoe",
+                            "tools": [
+                                "hoe"
+                            ],
                             "type": "modifyBlock"
                         }
                     ]
@@ -2279,9 +2252,7 @@
                 },
                 "2": {
                     "image": "podzol.png",
-                    "name": "Podzol",
-                    "texture_side": "dirt_podzol_side",
-                    "texture_top": "dirt_podzol_top"
+                    "name": "Podzol"
                 }
             },
             "image": "dirt.png",
@@ -2329,52 +2300,39 @@
             "blockID": 43,
             "damageValues": {
                 "0": {
-                    "name": "Double Stone Slab",
-                    "texture": "stone_slab_side"
+                    "name": "Double Stone Slab"
                 },
                 "1": {
                     "image": "sandstoneslab.png",
-                    "name": "Double Sandstone Slab",
-                    "texture": "sandstone_normal",
-                    "texture_bottom": "sandstone_bottom",
-                    "texture_top": "sandstone_top"
+                    "name": "Double Sandstone Slab"
                 },
                 "2": {
                     "image": "oakwoodslab.png",
-                    "name": "Double Fake Wood Slab",
-                    "texture": "planks_oak"
+                    "name": "Double Fake Wood Slab"
                 },
                 "3": {
                     "image": "cobblestoneslab.png",
-                    "name": "Double Cobblestone Slab",
-                    "texture": "cobblestone"
+                    "name": "Double Cobblestone Slab"
                 },
                 "4": {
                     "image": "brickslab.png",
-                    "name": "Double Brick Slab",
-                    "texture": "brick"
+                    "name": "Double Brick Slab"
                 },
                 "5": {
                     "image": "stonebricksslab.png",
-                    "name": "Double Stone Brick Slab",
-                    "texture": "stonebrick"
+                    "name": "Double Stone Brick Slab"
                 },
                 "6": {
                     "image": "netherbrickslab.png",
-                    "name": "Double Nether Brick Slab",
-                    "texture": "nether_brick"
+                    "name": "Double Nether Brick Slab"
                 },
                 "7": {
                     "image": "quartzslab.png",
-                    "name": "Double Quartz Slab",
-                    "texture": "quartz_block_side",
-                    "texture_bottom": "quartz_block_bottom",
-                    "texture_top": "quartz_block_top"
+                    "name": "Double Quartz Slab"
                 }
             },
             "image": "stoneslab.png",
-            "name": "Double Slab",
-            "solid": true
+            "name": "Double Slab"
         },
         "double_stone_slab2": {
             "blockID": 181,
@@ -2913,11 +2871,11 @@
                     "career": 1,
                     "price": {
                         "amount": 18,
-                        "id": "minecraft:raw_porkchop"
+                        "id": "minecraft:porkchop"
                     },
                     "priceMin": {
                         "amount": 14,
-                        "id": "minecraft:raw_porkchop"
+                        "id": "minecraft:porkchop"
                     },
                     "profession": 4,
                     "type": "trading"
@@ -2926,11 +2884,11 @@
                     "career": 1,
                     "price": {
                         "amount": 18,
-                        "id": "minecraft:raw_chicken"
+                        "id": "minecraft:chicken"
                     },
                     "priceMin": {
                         "amount": 14,
-                        "id": "minecraft:raw_chicken"
+                        "id": "minecraft:chicken"
                     },
                     "profession": 4,
                     "type": "trading"
@@ -3078,7 +3036,9 @@
             "blockID": 130,
             "dropsSelf": {
                 "silkTouch": true,
-                "tools": "pickaxe"
+                "tools": [
+                    "pickaxe"
+                ]
             },
             "image": "enderchest.png",
             "itemID": 130,
@@ -3123,18 +3083,10 @@
         },
         "farmland": {
             "blockID": 60,
-            "damageValues": {
-                "0": {
-                    "texture_top": "farmland_dry"
-                }
-            },
             "image": "farmland.png",
             "itemID": 60,
             "name": "Farmland",
-            "solid": false,
-            "subtype": "farmland",
-            "texture": "dirt",
-            "texture_top": "farmland_wet"
+            "solid": false
         },
         "feather": {
             "image": "feather.png",
@@ -3231,11 +3183,7 @@
             "blockID": 51,
             "image": "fire.gif",
             "name": "Fire",
-            "solid": false,
-            "subtype": "fire",
-            "texture_bottom": "fire_layer_0",
-            "texture_side": "fire_layer_1",
-            "texture_top": "fire_layer_0"
+            "solid": false
         },
         "fire_charge": {
             "image": "firecharge.png",
@@ -3301,24 +3249,19 @@
             "blockID": 10,
             "image": "lava.png",
             "name": "Flowing Lava",
-            "solid": false,
-            "subtype": "lava.flow",
-            "texture": "lava_flow"
+            "solid": false
         },
         "flowing_water": {
             "blockID": 8,
             "image": "water.png",
             "name": "Flowing Water",
-            "solid": false,
-            "subtype": "water.flow",
-            "texture": "water_flow"
+            "solid": false
         },
         "furnace": {
             "blockID": 61,
             "image": "furnace.png",
             "itemID": 61,
-            "name": "Furnace",
-            "solid": true
+            "name": "Furnace"
         },
         "furnace_minecart": {
             "image": "minecartwithfurnace.png",
@@ -3336,8 +3279,7 @@
             "image": "glass.png",
             "itemID": 20,
             "name": "Glass",
-            "solid": false,
-            "texture": "glass"
+            "solid": false
         },
         "glass_bottle": {
             "image": "bottle.png",
@@ -3365,9 +3307,7 @@
             "blockID": 41,
             "image": "goldblock.png",
             "itemID": 41,
-            "name": "Block of Gold",
-            "solid": true,
-            "texture": "gold_block"
+            "name": "Block of Gold"
         },
         "gold_ingot": {
             "image": "goldingot.png",
@@ -3400,7 +3340,6 @@
                     "type": "smelting"
                 },
                 {
-                    "amountMax": 1,
                     "amountMin": 0,
                     "entity": "PigZombie",
                     "requires": "player",
@@ -3460,9 +3399,7 @@
             "blockID": 14,
             "image": "goldore.png",
             "itemID": 14,
-            "name": "Gold Ore",
-            "solid": true,
-            "texture": "gold_ore"
+            "name": "Gold Ore"
         },
         "golden_apple": {
             "damageValues": {
@@ -3626,17 +3563,9 @@
         },
         "grass": {
             "blockID": 2,
-            "color_map": "grass",
             "image": "grassblock.png",
             "itemID": 2,
-            "name": "Grass Block",
-            "solid": true,
-            "texture": "grass_side",
-            "texture_bottom": "dirt",
-            "texture_needs_colorisation": true,
-            "texture_snow": "grass_side_snowed",
-            "texture_top_uncolored": "grass_top",
-            "texture_uncolored": "grass_side_overlay"
+            "name": "Grass Block"
         },
         "grass_path": {
             "blockID": 208,
@@ -3661,9 +3590,7 @@
             "blockID": 13,
             "image": "gravel.png",
             "itemID": 13,
-            "name": "Gravel",
-            "solid": true,
-            "texture": "gravel"
+            "name": "Gravel"
         },
         "gunpowder": {
             "image": "gunpowder.png",
@@ -3784,9 +3711,7 @@
                     "structure": "endShip",
                     "type": "structure"
                 }
-            ],
-            "solid": true,
-            "texture": "iron_block"
+            ]
         },
         "iron_boots": {
             "durability": 195,
@@ -4173,9 +4098,7 @@
             "blockID": 15,
             "image": "ironore.png",
             "itemID": 15,
-            "name": "Iron Ore",
-            "solid": true,
-            "texture": "iron_ore"
+            "name": "Iron Ore"
         },
         "iron_pickaxe": {
             "durability": 250,
@@ -4483,25 +4406,19 @@
             "blockID": 22,
             "image": "lapislazuliblock.png",
             "itemID": 22,
-            "name": "Lapis Lazuli Block",
-            "solid": true,
-            "texture": "lapis_block"
+            "name": "Lapis Lazuli Block"
         },
         "lapis_ore": {
             "blockID": 21,
             "image": "lapislazuliore.png",
             "itemID": 21,
-            "name": "Lapis Lazuli Ore",
-            "solid": true,
-            "texture": "lapis_ore"
+            "name": "Lapis Lazuli Ore"
         },
         "lava": {
             "blockID": 11,
             "image": "lava.png",
             "name": "Still Lava",
-            "solid": false,
-            "subtype": "lava.still",
-            "texture": "lava_still"
+            "solid": false
         },
         "lava_bucket": {
             "image": "lavabucket.png",
@@ -4549,33 +4466,27 @@
         },
         "leaves": {
             "blockID": 18,
-            "color_map": "foliage",
             "damageValues": {
                 "0": {
-                    "name": "Oak Leaves",
-                    "texture_uncolored": "leaves_oak_opaque"
+                    "name": "Oak Leaves"
                 },
                 "1": {
                     "image": "spruceleaves.png",
-                    "name": "Spruce Leaves",
-                    "texture_uncolored": "leaves_spruce_opaque"
+                    "name": "Spruce Leaves"
                 },
                 "2": {
                     "image": "birchleaves.png",
-                    "name": "Birch Leaves",
-                    "texture_uncolored": "leaves_birch_opaque"
+                    "name": "Birch Leaves"
                 },
                 "3": {
                     "image": "jungleleaves.png",
-                    "name": "Jungle Leaves",
-                    "texture_uncolored": "leaves_jungle_opaque"
+                    "name": "Jungle Leaves"
                 }
             },
             "image": "oakleaves.png",
             "itemID": 18,
             "name": "Leaves",
-            "solid": true,
-            "texture_needs_colorisation": true
+            "solid": false
         },
         "leaves2": {
             "blockID": 161,
@@ -4612,7 +4523,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "awkward",
+                                    "effect": "minecraft:awkward",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4629,7 +4540,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "fire_resistance",
+                                    "effect": "minecraft:fire_resistance",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4646,7 +4557,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "harming",
+                                    "effect": "minecraft:harming",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4663,7 +4574,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "healing",
+                                    "effect": "minecraft:healing",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4680,7 +4591,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "invisibility",
+                                    "effect": "minecraft:invisibility",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4697,7 +4608,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "leaping",
+                                    "effect": "minecraft:leaping",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4714,7 +4625,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_fire_resistance",
+                                    "effect": "minecraft:long_fire_resistance",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4731,7 +4642,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_invisibility",
+                                    "effect": "minecraft:long_invisibility",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4748,7 +4659,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_leaping",
+                                    "effect": "minecraft:long_leaping",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4765,7 +4676,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_night_vision",
+                                    "effect": "minecraft:long_night_vision",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4782,7 +4693,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_poison",
+                                    "effect": "minecraft:long_poison",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4799,7 +4710,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_regeneration",
+                                    "effect": "minecraft:long_regeneration",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4816,7 +4727,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_slowness",
+                                    "effect": "minecraft:long_slowness",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4833,7 +4744,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_strength",
+                                    "effect": "minecraft:long_strength",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4850,7 +4761,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_swiftness",
+                                    "effect": "minecraft:long_swiftness",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4867,7 +4778,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_water_breathing",
+                                    "effect": "minecraft:long_water_breathing",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4884,7 +4795,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "long_weakness",
+                                    "effect": "minecraft:long_weakness",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4900,7 +4811,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "mundane",
+                                    "effect": "minecraft:mundane",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4917,7 +4828,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "night_vision",
+                                    "effect": "minecraft:night_vision",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4934,7 +4845,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "poison",
+                                    "effect": "minecraft:poison",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4951,7 +4862,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "regeneration",
+                                    "effect": "minecraft:regeneration",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4968,7 +4879,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "slowness",
+                                    "effect": "minecraft:slowness",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -4985,7 +4896,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "strength",
+                                    "effect": "minecraft:strength",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5002,7 +4913,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "strong_harming",
+                                    "effect": "minecraft:strong_harming",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5019,7 +4930,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "strong_healing",
+                                    "effect": "minecraft:strong_healing",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5036,7 +4947,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "strong_leaping",
+                                    "effect": "minecraft:strong_leaping",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5053,7 +4964,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "strong_poison",
+                                    "effect": "minecraft:strong_poison",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5070,7 +4981,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "strong_regeneration",
+                                    "effect": "minecraft:strong_regeneration",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5087,7 +4998,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "strong_strength",
+                                    "effect": "minecraft:strong_strength",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5104,7 +5015,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "strong_swiftness",
+                                    "effect": "minecraft:strong_swiftness",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5121,7 +5032,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "swiftness",
+                                    "effect": "minecraft:swiftness",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5137,7 +5048,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "thick",
+                                    "effect": "minecraft:thick",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5153,7 +5064,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "water",
+                                    "effect": "minecraft:water",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5170,7 +5081,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "water_breathing",
+                                    "effect": "minecraft:water_breathing",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5187,7 +5098,7 @@
                         "obtaining": [
                             {
                                 "basePotion": {
-                                    "effect": "weakness",
+                                    "effect": "minecraft:weakness",
                                     "id": "minecraft:splash_potion"
                                 },
                                 "ingredient": {
@@ -5208,11 +5119,7 @@
             "blockID": 62,
             "image": "furnace.png",
             "itemID": 62,
-            "name": "Burning Furnace",
-            "solid": true,
-            "texture_bottom": "furnace_top",
-            "texture_side": "furnace_side",
-            "texture_top": "furnace_top"
+            "name": "Burning Furnace"
         },
         "lit_pumpkin": {
             "blockID": 91,
@@ -5238,29 +5145,20 @@
                 },
                 "1": {
                     "image": "sprucewood.png",
-                    "name": "Spruce Wood",
-                    "texture": "log_spruce",
-                    "texture_top": "log_spruce_top"
+                    "name": "Spruce Wood"
                 },
                 "2": {
                     "image": "birchwood.png",
-                    "name": "Birch Wood",
-                    "texture": "log_birch",
-                    "texture_top": "log_birch_top"
+                    "name": "Birch Wood"
                 },
                 "3": {
                     "image": "junglewood.png",
-                    "name": "Jungle Wood",
-                    "texture": "log_jungle",
-                    "texture_top": "log_jungle_top"
+                    "name": "Jungle Wood"
                 }
             },
             "image": "oakwood.png",
             "itemID": 17,
-            "name": "Wood",
-            "solid": true,
-            "texture": "log_oak",
-            "texture_top": "log_oak_top"
+            "name": "Wood"
         },
         "log2": {
             "blockID": 162,
@@ -5341,9 +5239,7 @@
             "image": "monsterspawner.png",
             "itemID": 52,
             "name": "Spawner",
-            "solid": false,
-            "subtype": "mobspawner",
-            "texture": "mob_spawner"
+            "solid": false
         },
         "monster_egg": {
             "blockID": 97,
@@ -5380,9 +5276,7 @@
             "blockID": 48,
             "image": "mossstone.png",
             "itemID": 48,
-            "name": "Moss Stone",
-            "solid": true,
-            "texture": "cobblestone_mossy"
+            "name": "Moss Stone"
         },
         "mushroom_stew": {
             "image": "mushroomstew.png",
@@ -5451,17 +5345,14 @@
             "blockID": 25,
             "image": "noteblock.png",
             "itemID": 25,
-            "name": "Note Block",
-            "solid": "true",
-            "texture": "noteblock"
+            "name": "Note Block"
         },
         "oak_stairs": {
             "blockID": 53,
             "image": "oakwoodstairs.png",
             "itemID": 53,
             "name": "Oak Wood Stairs",
-            "solid": false,
-            "subtype": "stairs"
+            "solid": false
         },
         "obsidian": {
             "blockID": 49,
@@ -5511,9 +5402,7 @@
                     "renewability": "infinite",
                     "type": "special"
                 }
-            ],
-            "solid": true,
-            "texture": "obsidian"
+            ]
         },
         "packed_ice": {
             "blockID": 174,
@@ -5550,39 +5439,32 @@
             "blockID": 5,
             "damageValues": {
                 "0": {
-                    "name": "Oak Wood Planks",
-                    "texture": "planks_oak"
+                    "name": "Oak Wood Planks"
                 },
                 "1": {
                     "image": "sprucewoodplanks.png",
-                    "name": "Spruce Wood Planks",
-                    "texture": "planks_spruce"
+                    "name": "Spruce Wood Planks"
                 },
                 "2": {
                     "image": "birchwoodplanks.png",
-                    "name": "Birch Wood Planks",
-                    "texture": "planks_birch"
+                    "name": "Birch Wood Planks"
                 },
                 "3": {
                     "image": "junglewoodplanks.png",
-                    "name": "Jungle Wood Planks",
-                    "texture": "planks_jungle"
+                    "name": "Jungle Wood Planks"
                 },
                 "4": {
                     "image": "acaciawoodplanks.png",
-                    "name": "Acacia Wood Planks",
-                    "texture": "planks_acacia"
+                    "name": "Acacia Wood Planks"
                 },
                 "5": {
                     "image": "darkoakwoodplanks.png",
-                    "name": "Dark Oak Wood Planks",
-                    "texture": "planks_big_oak"
+                    "name": "Dark Oak Wood Planks"
                 }
             },
             "image": "oakwoodplanks.png",
             "itemID": 5,
-            "name": "Wooden Planks",
-            "solid": true
+            "name": "Wooden Planks"
         },
         "poisonous_potato": {
             "image": "poisonouspotato.png",
@@ -6041,7 +5923,7 @@
                                 "type": "brewing"
                             },
                             {
-                                "structure": "endShip",
+                                "structure": "endShipBrewingStand",
                                 "type": "chest"
                             }
                         ]
@@ -6438,15 +6320,14 @@
                 {
                     "amountMax": 2,
                     "amountMin": 2,
-                    "block": "minecraft:double_purpur_slab",
+                    "block": "minecraft:purpur_double_slab",
                     "tools": [
                         "pickaxe"
                     ],
                     "type": "mining"
                 }
             ],
-            "solid": false,
-            "subtype": "slab"
+            "solid": false
         },
         "purpur_stairs": {
             "blockID": 203,
@@ -6482,8 +6363,7 @@
                     "type": "structure"
                 }
             ],
-            "solid": false,
-            "subtype": "stairs"
+            "solid": false
         },
         "quartz": {
             "image": "netherquartz.png",
@@ -6635,60 +6515,48 @@
                 },
                 "1": {
                     "image": "blueorchid.png",
-                    "name": "Blue Orchid",
-                    "texture": "flower_blue_orchid"
+                    "name": "Blue Orchid"
                 },
                 "2": {
                     "image": "allium.png",
-                    "name": "Allium",
-                    "texture": "flower_allium"
+                    "name": "Allium"
                 },
                 "3": {
                     "image": "azurebluet.png",
-                    "name": "Azure Bluet",
-                    "texture": "flower_houstonia"
+                    "name": "Azure Bluet"
                 },
                 "4": {
                     "image": "redtulip.png",
-                    "name": "Red Tulip",
-                    "texture": "flower_tulip_red"
+                    "name": "Red Tulip"
                 },
                 "5": {
                     "image": "orangetulip.png",
-                    "name": "Orange Tulip",
-                    "texture": "flower_tulip_orange"
+                    "name": "Orange Tulip"
                 },
                 "6": {
                     "image": "whitetulip.png",
-                    "name": "White Tulip",
-                    "texture": "flower_tulip_white"
+                    "name": "White Tulip"
                 },
                 "7": {
                     "image": "pinktulip.png",
-                    "name": "Pink Tulip",
-                    "texture": "flower_tulip_pink"
+                    "name": "Pink Tulip"
                 },
                 "8": {
                     "image": "oxeyedaisy.png",
-                    "name": "Oxeye Daisy",
-                    "texture": "flower_oxeye_daisy"
+                    "name": "Oxeye Daisy"
                 }
             },
             "image": "rose.png",
             "itemID": 38,
             "name": "Flower",
-            "render_type": "cross",
-            "solid": false,
-            "texture": "flower_rose"
+            "solid": false
         },
         "red_mushroom": {
             "blockID": 40,
             "image": "redmushroom.png",
             "itemID": 40,
             "name": "Red Mushroom",
-            "render_type": "cross",
-            "solid": false,
-            "texture": "mushroom_red"
+            "solid": false
         },
         "red_mushroom_block": {
             "blockID": 100,
@@ -6855,10 +6723,7 @@
         "redstone_wire": {
             "blockID": 55,
             "image": "redstonedust.png",
-            "name": "Redstone Wire",
-            "subtype": "redstone.wire",
-            "texture": "redstone_dust_cross",
-            "texture_redstone_wire_line": "redstone_dust_line"
+            "name": "Redstone Wire"
         },
         "reeds": {
             "blockID": 83,
@@ -6943,14 +6808,12 @@
                 "0": {},
                 "1": {
                     "image": "redsand.png",
-                    "name": "Red Sand",
-                    "texture": "red_sand"
+                    "name": "Red Sand"
                 }
             },
             "image": "sand.png",
             "itemID": 12,
-            "name": "Sand",
-            "solid": true
+            "name": "Sand"
         },
         "sandstone": {
             "blockID": 24,
@@ -6958,19 +6821,16 @@
                 "0": {},
                 "1": {
                     "image": "chiseledsandstone.png",
-                    "name": "Chiseled Sandstone",
-                    "texture": "sandstone_carved"
+                    "name": "Chiseled Sandstone"
                 },
                 "2": {
                     "image": "smoothsandstone.png",
-                    "name": "Smooth Sandstone",
-                    "texture": "sandstone_smooth"
+                    "name": "Smooth Sandstone"
                 }
             },
             "image": "sandstone.png",
             "itemID": 24,
-            "name": "Sandstone",
-            "solid": true
+            "name": "Sandstone"
         },
         "sandstone_stairs": {
             "blockID": 128,
@@ -6982,41 +6842,33 @@
             "blockID": 6,
             "damageValues": {
                 "0": {
-                    "name": "Oak Sapling",
-                    "texture": "sapling_birch"
+                    "name": "Oak Sapling"
                 },
                 "1": {
                     "image": "sprucesapling.png",
-                    "name": "Spruce Sapling",
-                    "texture": "sapling_spruce"
+                    "name": "Spruce Sapling"
                 },
                 "2": {
                     "image": "birchsapling.png",
-                    "name": "Birch Sapling",
-                    "texture": "sapling_birch"
+                    "name": "Birch Sapling"
                 },
                 "3": {
                     "image": "junglesapling.png",
-                    "name": "Jungle Sapling",
-                    "texture": "sapling_jungle"
+                    "name": "Jungle Sapling"
                 },
                 "4": {
                     "image": "acaciasapling.png",
-                    "name": "Acacia Sapling",
-                    "texture": "sapling_acacia"
+                    "name": "Acacia Sapling"
                 },
                 "5": {
                     "image": "darkoaksapling.png",
-                    "name": "Dark Oak Sapling",
-                    "texture": "sapling_oak"
+                    "name": "Dark Oak Sapling"
                 }
             },
             "image": "oaksapling.png",
             "itemID": 6,
             "name": "Sapling",
-            "render_type": "cross",
-            "solid": false,
-            "subtype": "sapling"
+            "solid": false
         },
         "sea_lantern": {
             "blockID": 169,
@@ -8174,9 +8026,7 @@
             },
             "image": "sponge.png",
             "itemID": 19,
-            "name": "Sponge",
-            "solid": true,
-            "texture": "sponge"
+            "name": "Sponge"
         },
         "spruce_door": {
             "blockID": 193,
@@ -8843,9 +8693,7 @@
             "blockID": 63,
             "image": "sign.png",
             "name": "Sign",
-            "solid": false,
-            "subtype": "sign",
-            "texture_sign": "planks_oak"
+            "solid": false
         },
         "stick": {
             "image": "stick.png",
@@ -8906,15 +8754,11 @@
             ]
         },
         "sticky_piston": {
-            "FIXME": "orientation",
             "blockID": 29,
             "image": "stickypiston.png",
             "itemID": 29,
             "name": "Sticky Piston",
-            "solid": false,
-            "texture": "piston_side",
-            "texture_north": "piston_top_normal",
-            "texture_south": "piston_bottom"
+            "solid": false
         },
         "stone": {
             "blockID": 1,
@@ -8948,7 +8792,9 @@
             "dropsSelf": [
                 {
                     "silkTouch": true,
-                    "tools": "pickaxe"
+                    "tools": [
+                        "pickaxe"
+                    ]
                 }
             ],
             "image": "stone.png",
@@ -9039,8 +8885,7 @@
                             "structure": "stronghold",
                             "type": "structure"
                         }
-                    ],
-                    "texture": "stone_slab_side"
+                    ]
                 },
                 "1": {
                     "image": "sandstoneslab.png",
@@ -9060,10 +8905,7 @@
                             "structure": "desertTemple",
                             "type": "structure"
                         }
-                    ],
-                    "texture": "sandstone_normal",
-                    "texture_bottom": "sandstone_bottom",
-                    "texture_top": "sandstone_top"
+                    ]
                 },
                 "2": {
                     "image": "oakwoodslab.png",
@@ -9071,37 +8913,29 @@
                 },
                 "3": {
                     "image": "cobblestoneslab.png",
-                    "name": "Cobblestone Slab",
-                    "texture": "cobblestone"
+                    "name": "Cobblestone Slab"
                 },
                 "4": {
                     "image": "brickslab.png",
-                    "name": "Brick Slab",
-                    "texture": "brick"
+                    "name": "Brick Slab"
                 },
                 "5": {
                     "image": "stonebricksslab.png",
-                    "name": "Stone Brick Slab",
-                    "texture": "stonebrick"
+                    "name": "Stone Brick Slab"
                 },
                 "6": {
                     "image": "netherbrickslab.png",
-                    "name": "Nether Brick Slab",
-                    "texture": "nether_brick"
+                    "name": "Nether Brick Slab"
                 },
                 "7": {
                     "image": "quartzslab.png",
-                    "name": "Quartz Slab",
-                    "texture": "quartz_block_side",
-                    "texture_bottom": "quartz_block_bottom",
-                    "texture_top": "quartz_block_top"
+                    "name": "Quartz Slab"
                 }
             },
             "image": "stoneslab.png",
             "itemID": 44,
             "name": "Slab",
-            "solid": false,
-            "subtype": "slab"
+            "solid": false
         },
         "stone_slab2": {
             "blockID": 182,
@@ -9184,26 +9018,17 @@
             "damageValues": {
                 "0": {
                     "image": "deadbush.png",
-                    "name": "Shrub",
-                    "texture": "deadbush"
+                    "name": "Shrub"
                 },
-                "1": {
-                    "color_map": "foliage",
-                    "texture_needs_colorisation": true,
-                    "texture_uncolored": "tallgrass"
-                },
+                "1": {},
                 "2": {
-                    "color_map": "foliage",
                     "image": "fern.png",
-                    "name": "Fern",
-                    "texture_needs_colorisation": true,
-                    "texture_uncolored": "fern"
+                    "name": "Fern"
                 }
             },
             "image": "tallgrass.png",
             "itemID": 31,
             "name": "Tall Grass",
-            "render_type": "cross",
             "solid": false
         },
         "tipped_arrow": {
@@ -9275,11 +9100,7 @@
             "blockID": 46,
             "image": "tnt.png",
             "itemID": 46,
-            "name": "TNT",
-            "solid": true,
-            "texture": "tnt",
-            "texture_bottom": "tnt_bottom",
-            "texture_top": "tnt_top"
+            "name": "TNT"
         },
         "tnt_minecart": {
             "image": "minecartwithtnt.png",
@@ -9327,9 +9148,7 @@
                     "type": "craftingShaped"
                 }
             ],
-            "solid": false,
-            "subtype": "torch",
-            "texture": "torch_on"
+            "solid": false
         },
         "trapdoor": {
             "blockID": 96,
@@ -9395,9 +9214,7 @@
             "blockID": 9,
             "image": "water.png",
             "name": "Still Water",
-            "solid": false,
-            "subtype": "water.still",
-            "texture": "water_still"
+            "solid": false
         },
         "water_bucket": {
             "image": "waterbucket.png",
@@ -9416,7 +9233,6 @@
             "image": "cobweb.png",
             "itemID": 30,
             "name": "Cobweb",
-            "render_type": "cross",
             "solid": false
         },
         "wheat": {
@@ -9558,85 +9374,68 @@
                 },
                 "1": {
                     "image": "orangewool.png",
-                    "name": "Orange Wool",
-                    "texture": "wool_colored_orange"
+                    "name": "Orange Wool"
                 },
                 "10": {
                     "image": "purplewool.png",
-                    "name": "Purple Wool",
-                    "texture": "wool_colored_purple"
+                    "name": "Purple Wool"
                 },
                 "11": {
                     "image": "bluewool.png",
-                    "name": "Blue Wool",
-                    "texture": "wool_colored_blue"
+                    "name": "Blue Wool"
                 },
                 "12": {
                     "image": "brownwool.png",
-                    "name": "Brown Wool",
-                    "texture": "wool_colored_brown"
+                    "name": "Brown Wool"
                 },
                 "13": {
                     "image": "greenwool.png",
-                    "name": "Green Wool",
-                    "texture": "wool_colored_green"
+                    "name": "Green Wool"
                 },
                 "14": {
                     "image": "redwool.png",
-                    "name": "Red Wool",
-                    "texture": "wool_colored_red"
+                    "name": "Red Wool"
                 },
                 "15": {
                     "image": "blackwool.png",
-                    "name": "Black Wool",
-                    "texture": "wool_colored_black"
+                    "name": "Black Wool"
                 },
                 "2": {
                     "image": "magentawool.png",
-                    "name": "Magenta Wool",
-                    "texture": "wool_colored_magenta"
+                    "name": "Magenta Wool"
                 },
                 "3": {
                     "image": "lightbluewool.png",
-                    "name": "Light Blue Wool",
-                    "texture": "wool_colored_light_blue"
+                    "name": "Light Blue Wool"
                 },
                 "4": {
                     "image": "yellowwool.png",
-                    "name": "Yellow Wool",
-                    "texture": "wool_colored_yellow"
+                    "name": "Yellow Wool"
                 },
                 "5": {
                     "image": "limewool.png",
-                    "name": "Lime Wool",
-                    "texture": "wool_colored_lime"
+                    "name": "Lime Wool"
                 },
                 "6": {
                     "image": "pinkwool.png",
-                    "name": "Pink Wool",
-                    "texture": "wool_colored_pink"
+                    "name": "Pink Wool"
                 },
                 "7": {
                     "image": "graywool.png",
-                    "name": "Gray Wool",
-                    "texture": "wool_colored_gray"
+                    "name": "Gray Wool"
                 },
                 "8": {
                     "image": "lightgraywool.png",
-                    "name": "Light Gray Wool",
-                    "texture": "wool_colored_silver"
+                    "name": "Light Gray Wool"
                 },
                 "9": {
                     "image": "cyanwool.png",
-                    "name": "Cyan Wool",
-                    "texture": "wool_colored_cyan"
+                    "name": "Cyan Wool"
                 }
             },
             "image": "whitewool.png",
             "itemID": 35,
-            "name": "Wool",
-            "solid": true,
-            "texture": "wool_colored_white"
+            "name": "Wool"
         },
         "writable_book": {
             "image": "bookandquill.png",
@@ -9660,9 +9459,7 @@
             "blockID": 37,
             "image": "dandelion.png",
             "itemID": 37,
-            "name": "Dandelion",
-            "render_type": "cross",
-            "texture": "flower_dandelion"
+            "name": "Dandelion"
         }
     }
 }
