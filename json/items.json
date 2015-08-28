@@ -6885,24 +6885,478 @@
         },
         "shield": {
             "durability": 180,
+            "image": "blackshield.png",
             "itemID": 442,
             "name": "Shield",
-            "obtaining": [
-                {
-                    "recipe": [
-                        "minecraft:wool",
-                        "minecraft:planks",
-                        null,
-                        "minecraft:wool",
-                        "minecraft:planks",
-                        "minecraft:iron_ingot",
-                        "minecraft:wool",
-                        "minecraft:planks",
-                        null
-                    ],
-                    "type": "craftingShaped"
+            "tagPath": [
+                "BlockEntityTag",
+                "Base"
+            ],
+            "tagVariants": {
+                "0": {
+                    "name": "Black Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "1": {
+                    "image": "redshield.png",
+                    "name": "Red Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "10": {
+                    "image": "limeshield.png",
+                    "name": "Lime Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "11": {
+                    "image": "yellowshield.png",
+                    "name": "Yellow Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "12": {
+                    "image": "lightblueshield.png",
+                    "name": "Light Blue Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "13": {
+                    "image": "magentashield.png",
+                    "name": "Magenta Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "14": {
+                    "image": "orangeshield.png",
+                    "name": "Orange Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "15": {
+                    "image": "whiteshield.png",
+                    "name": "White Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "2": {
+                    "image": "greenshield.png",
+                    "name": "Green Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "3": {
+                    "image": "brownshield.png",
+                    "name": "Brown Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "4": {
+                    "image": "blueshield.png",
+                    "name": "Blue Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "5": {
+                    "image": "purpleshield.png",
+                    "name": "Purple Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "6": {
+                    "image": "cyanshield.png",
+                    "name": "Cyan Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "7": {
+                    "image": "lightgrayshield.png",
+                    "name": "Light Gray Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "8": {
+                    "image": "grayshield.png",
+                    "name": "Gray Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "9": {
+                    "image": "pinkshield.png",
+                    "name": "Pink Shield",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null,
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 }
-            ]
+            }
         },
         "sign": {
             "image": "sign.png",
@@ -7015,122 +7469,126 @@
             "name": "Soul Sand"
         },
         "spawn_egg": {
-            "damageValues": {
-                "100": {
-                    "image": "spawnhorse.png",
-                    "name": "Spawn Horse"
-                },
-                "101": {
-                    "image": "spawnrabbit.png",
-                    "name": "Spawn Rabbit"
-                },
-                "120": {
-                    "image": "spawnvillager.png",
-                    "name": "Spawn Villager"
-                },
-                "50": {
-                    "name": "Spawn Creeper"
-                },
-                "51": {
-                    "image": "spawnskeleton.png",
-                    "name": "Spawn Skeleton"
-                },
-                "52": {
-                    "image": "spawnspider.png",
-                    "name": "Spawn Spider"
-                },
-                "54": {
-                    "image": "spawnzombie.png",
-                    "name": "Spawn Zombie"
-                },
-                "55": {
-                    "image": "spawnslime.png",
-                    "name": "Spawn Slime"
-                },
-                "56": {
-                    "image": "spawnghast.png",
-                    "name": "Spawn Ghast"
-                },
-                "57": {
-                    "image": "spawnpigzombie.png",
-                    "name": "Spawn Zombie Pigman"
-                },
-                "58": {
-                    "image": "spawnenderman.png",
-                    "name": "Spawn Enderman"
-                },
-                "59": {
-                    "image": "spawncavespider.png",
-                    "name": "Spawn Cave Spider"
-                },
-                "60": {
-                    "image": "spawnsilverfish.png",
-                    "name": "Spawn Silverfish"
-                },
-                "61": {
-                    "image": "spawnblaze.png",
-                    "name": "Spawn Blaze"
-                },
-                "62": {
-                    "image": "spawnmagmacube.png",
-                    "name": "Spawn Magma Cube"
-                },
-                "65": {
+            "image": "spawncreeper.png",
+            "itemID": 383,
+            "name": "Spawn Egg",
+            "tagPath": [
+                "EntityTag",
+                "id"
+            ],
+            "tagVariants": {
+                "Bat": {
                     "image": "spawnbat.png",
                     "name": "Spawn Bat"
                 },
-                "66": {
-                    "image": "spawnwitch.png",
-                    "name": "Spawn Witch"
+                "Blaze": {
+                    "image": "spawnblaze.png",
+                    "name": "Spawn Blaze"
                 },
-                "67": {
-                    "image": "spawnendermite.png",
-                    "name": "Spawn Endermite"
+                "CaveSpider": {
+                    "image": "spawncavespider.png",
+                    "name": "Spawn Cave Spider"
                 },
-                "68": {
-                    "image": "spawnguardian.png",
-                    "name": "Spawn Guardian"
-                },
-                "69": {
-                    "image": "spawnshulker.png",
-                    "name": "Spawn Shulker"
-                },
-                "90": {
-                    "image": "spawnpig.png",
-                    "name": "Spawn Pig"
-                },
-                "91": {
-                    "image": "spawnsheep.png",
-                    "name": "Spawn Sheep"
-                },
-                "92": {
-                    "image": "spawncow.png",
-                    "name": "Spawn Cow"
-                },
-                "93": {
+                "Chicken": {
                     "image": "spawnchicken.png",
                     "name": "Spawn Chicken"
                 },
-                "94": {
-                    "image": "spawnsquid.png",
-                    "name": "Spawn Squid"
+                "Cow": {
+                    "image": "spawncow.png",
+                    "name": "Spawn Cow"
                 },
-                "95": {
-                    "image": "spawnwolf.png",
-                    "name": "Spawn Wolf"
+                "Creeper": {
+                    "name": "Spawn Creeper"
                 },
-                "96": {
+                "Enderman": {
+                    "image": "spawnenderman.png",
+                    "name": "Spawn Enderman"
+                },
+                "Endermite": {
+                    "image": "spawnendermite.png",
+                    "name": "Spawn Endermite"
+                },
+                "EntityHorse": {
+                    "image": "spawnhorse.png",
+                    "name": "Spawn Horse"
+                },
+                "Ghast": {
+                    "image": "spawnghast.png",
+                    "name": "Spawn Ghast"
+                },
+                "Guardian": {
+                    "image": "spawnguardian.png",
+                    "name": "Spawn Guardian"
+                },
+                "LavaSlime": {
+                    "image": "spawnmagmacube.png",
+                    "name": "Spawn Magma Cube"
+                },
+                "MushroomCow": {
                     "image": "spawnmooshroom.png",
                     "name": "Spawn Mooshroom"
                 },
-                "98": {
+                "Ozelot": {
                     "image": "spawnocelot.png",
                     "name": "Spawn Ocelot"
+                },
+                "Pig": {
+                    "image": "spawnpig.png",
+                    "name": "Spawn Pig"
+                },
+                "PigZombie": {
+                    "image": "spawnpigzombie.png",
+                    "name": "Spawn Zombie Pigman"
+                },
+                "Rabbit": {
+                    "image": "spawnrabbit.png",
+                    "name": "Spawn Rabbit"
+                },
+                "Sheep": {
+                    "image": "spawnsheep.png",
+                    "name": "Spawn Sheep"
+                },
+                "Shulker": {
+                    "image": "spawnshulker.png",
+                    "name": "Spawn Shulker"
+                },
+                "Silverfish": {
+                    "image": "spawnsilverfish.png",
+                    "name": "Spawn Silverfish"
+                },
+                "Skeleton": {
+                    "image": "spawnskeleton.png",
+                    "name": "Spawn Skeleton"
+                },
+                "Slime": {
+                    "image": "spawnslime.png",
+                    "name": "Spawn Slime"
+                },
+                "Spider": {
+                    "image": "spawnspider.png",
+                    "name": "Spawn Spider"
+                },
+                "Squid": {
+                    "image": "spawnsquid.png",
+                    "name": "Spawn Squid"
+                },
+                "Villager": {
+                    "image": "spawnvillager.png",
+                    "name": "Spawn Villager"
+                },
+                "Witch": {
+                    "image": "spawnwitch.png",
+                    "name": "Spawn Witch"
+                },
+                "Wolf": {
+                    "image": "spawnwolf.png",
+                    "name": "Spawn Wolf"
+                },
+                "Zombie": {
+                    "image": "spawnzombie.png",
+                    "name": "Spawn Zombie"
                 }
-            },
-            "image": "spawncreeper.png",
-            "itemID": 383,
-            "name": "Spawn Egg"
+            }
         },
         "speckled_melon": {
             "image": "goldmelon.png",

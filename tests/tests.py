@@ -35,7 +35,7 @@ def validate_items_json():
     tool_stubs = []
     item_stubs = []
 
-    def validate_item(item_id, item, *, damage=None, effect_plugin=None, effect_id=None):
+    def validate_item(item_id, item, *, damage=None, effect_plugin=None, effect_id=None, tag_path=None, tag_value=None):
         item_fields = {
             'name',
             'solid',
@@ -44,6 +44,8 @@ def validate_items_json():
             'itemID',
             'damageValues',
             'effects',
+            'tagPath',
+            'tagVariants',
             'obtaining',
             'dropsSelf',
             'whenPlaced',
@@ -53,8 +55,19 @@ def validate_items_json():
             'stackable',
             'alwaysGlow'
         }
-        assert damage is None or (effect_plugin is None and effect_id is None)
-        is_override = damage is not None or (effect_plugin is not None and effect_id is not None)
+        override_count = 0
+        if damage is not None:
+            override_count += 1
+        if effect_plugin is not None or effect_id is not None:
+            assert effect_plugin is not None
+            assert effect_id is not None
+            override_count += 1
+        if tag_path is not None or tag_value is not None:
+            assert tag_path is not None
+            assert tag_value is not None
+            override_count += 1
+        assert override_count < 2
+        is_override = override_count > 0
         for key in item:
             if key not in item_fields:
                 raise ValueError('Unknown field in item info: {!r}'.format(key))
@@ -76,6 +89,8 @@ def validate_items_json():
         if 'damageValues' in item:
             assert not is_override
             assert 'effects' not in item
+            assert 'tagName' not in item
+            assert 'tagVariants' not in item
             for damage, damaged_item in item['damageValues'].items():
                 item_copy = item.copy()
                 item_copy.update(damaged_item)
@@ -83,12 +98,31 @@ def validate_items_json():
                 validate_item(item_id, item_copy, damage=int(damage))
         if 'effects' in item:
             assert not is_override
+            assert 'damageValues' not in item
+            assert 'tagName' not in item
+            assert 'tagVariants' not in item
             for effect_plugin, effects in item['effects'].items():
                 for effect_id, effect in effects.items():
                     item_copy = item.copy()
                     item_copy.update(effect)
                     del item_copy['effects']
                     validate_item(item_id, item_copy, effect_plugin=effect_plugin, effect_id=effect_id)
+        if 'tagPath' in item:
+            assert 'tagVariants' in item
+        if 'tagVariants' in item:
+            assert 'tagPath' in item
+            assert isinstance(item['tagPath'], list)
+            for tag_path_elt in item['tagPath']:
+                assert isinstance(tag_path_elt, str)
+            assert not is_override
+            assert 'damageValues' not in item
+            assert 'effects' not in item
+            for tag_value, variant in item['tagVariants'].items():
+                item_copy = item.copy()
+                item_copy.update(variant)
+                del item_copy['tagPath']
+                del item_copy['tagVariants']
+                validate_item(item_id, item_copy, tag_path=item['tagPath'], tag_value=tag_value)
         if 'obtaining' in item:
             assert isinstance(item['obtaining'], list)
             for method in item['obtaining']:

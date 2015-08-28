@@ -11,6 +11,8 @@ The fields for the damage values, status effects, and block info implicitly inhe
 * itemID: The numeric item id. Same as the block id for blocks that can also be items. If this field is missing or null, the item cannot be obtained even with cheats.
 * damageValues: damage values of the item, with the fields that differ from the default.
 * effects: variations of the item with status effects, with the fields that differ from the default.
+* tagPath: an array describing a key path from the item's "tag" tag to the NBT tag name for which the tagVariants field defines item variants.
+* tagVariants: an object mapping possible values (converted to strings) of the NBT tag specified by the tagPath field to variants of the item, with the fields that differ from the default.
 * obtaining: an array of “method of obtaining” objects. These contain information on obtaining items and blocks. Methods of obtaining common to all blocks or items, such as placing a block or throwing an item on the ground and picking it back up, are not included. A method of obtaining has a type, which is a required field, and other fields depending on the type. The following types are defined:
     * craftingShaped: the item can be crafted with a shaped recipe.
         * recipe: an array of 9 item stubs, listed in ltr rows from top to bottom. An item stub may be a string containing the new-style item ID, null for an empty crafting square, or an object with the following keys:
