@@ -114,7 +114,25 @@
             "blockID": 157,
             "image": "activatorrail.png",
             "itemID": 157,
-            "name": "Activator Rail"
+            "name": "Activator Rail",
+            "obtaining": [
+                {
+                    "outputAmount": 6,
+                    "recipe": [
+                        "minecraft:iron_ingot",
+                        "minecraft:stick",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:redstone_torch",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:stick",
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
+            "solid": false
         },
         "air": {
             "blockID": 0,
@@ -1734,6 +1752,23 @@
             "image": "detectorrail.png",
             "itemID": 28,
             "name": "Detector Rail",
+            "obtaining": [
+                {
+                    "outputAmount": 6,
+                    "recipe": [
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:stone_pressure_plate",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:redstone",
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
             "solid": false
         },
         "diamond": {
@@ -3545,6 +3580,23 @@
             "image": "poweredrail.png",
             "itemID": 27,
             "name": "Powered Rail",
+            "obtaining": [
+                {
+                    "outputAmount": 6,
+                    "recipe": [
+                        "minecraft:gold_ingot",
+                        null,
+                        "minecraft:gold_ingot",
+                        "minecraft:gold_ingot",
+                        "minecraft:stick",
+                        "minecraft:gold_ingot",
+                        "minecraft:gold_ingot",
+                        "minecraft:redstone",
+                        "minecraft:gold_ingot"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
             "solid": false
         },
         "golden_shovel": {
@@ -3669,6 +3721,7 @@
         },
         "iron_bars": {
             "blockID": 101,
+            "dropsSelf": "pickaxe",
             "image": "ironbars.png",
             "itemID": 101,
             "name": "Iron Bars",
@@ -3678,8 +3731,32 @@
                     "description": "The iron bars around some of the Ender crystals regenerate every time an Ender dragon is spawned.",
                     "renewability": "infinite",
                     "type": "special"
+                },
+                {
+                    "structure": "stronghold",
+                    "type": "structure"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "outputAmount": 16,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
                 }
-            ]
+            ],
+            "solid": false
         },
         "iron_block": {
             "blockID": 42,
@@ -9902,6 +9979,8 @@
             "stackable": false
         },
         "written_book": {
+            "alwaysGlow": true,
+            "creativeMenu": false,
             "image": "writtenbook.png",
             "itemID": 387,
             "name": "Written Book",
@@ -9909,6 +9988,10 @@
                 {
                     "structure": "endShipTempHopper",
                     "type": "chest"
+                },
+                {
+                    "item": "minecraft:writable_book",
+                    "type": "useItem"
                 }
             ],
             "stackable": 16

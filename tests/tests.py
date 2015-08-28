@@ -73,6 +73,7 @@ def validate_items_json():
                 raise ValueError('Unknown field in item info: {!r}'.format(key))
         assert 'name' in item
         if 'solid' in item:
+            assert 'blockID' in item # is_block
             assert item['solid'] is False
         pass # image
         if 'blockID' in item:
