@@ -1438,8 +1438,8 @@
                     "type": "natural"
                 },
                 {
+                    "amountMax": 4,
                     "plant": {
-                        "amountMax": 4,
                         "consumed": "minecraft:chorus_plant",
                         "id": "minecraft:chorus_flower"
                     },

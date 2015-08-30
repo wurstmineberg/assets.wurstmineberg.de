@@ -7,6 +7,56 @@ import sys
 
 tests = []
 
+def validate_item_stub(item_stub, must_be_block=False, must_be_item=False, *, items=None, additional_fields=set()):
+    fields = {
+        'id',
+        'damage',
+        'effect',
+        'tagValue',
+        'consumed',
+        'amount'
+    } | additional_fields
+    if item_stub is None:
+        return
+    if items is None:
+        with open('json/items.json') as items_f:
+            items = json.load(items_f)
+    if isinstance(item_stub, str):
+        item_stub = {'id': item_stub}
+    for key in item_stub:
+        if key not in fields:
+            raise ValueError('Unknown field in item stub: {!r}'.format(key))
+    try:
+        plugin, item_id = item_stub['id'].split(':')
+    except ValueError as e:
+        raise ValueError('Could not parse item ID {!r}'.format(item_stub['id'])) from e
+    item = items[plugin][item_id]
+    if 'damage' in item_stub:
+        assert 'effect' not in item_stub
+        assert 'tagValue' not in item_stub
+        assert str(item_stub['damage']) in item['damageValues']
+    if 'effect' in item_stub:
+        assert 'damage' not in item_stub
+        assert 'tagValue' not in item_stub
+        try:
+            effect_plugin, effect_id = item_stub['effect'].split(':')
+        except ValueError as e:
+            raise ValueError('Could not parse effect ID {!r}'.format(item_stub['effect'])) from e
+        assert effect_id in item['effects'][effect_plugin]
+    if 'tagValue' in item_stub:
+        assert 'damage' not in item_stub
+        assert 'effect' not in item_stub
+        assert str(item_stub['tagValue']) in item['tagVariants']
+    if 'consumed' in item_stub:
+        if not isinstance(item_stub['consumed'], bool):
+            validate_item_stub(item_stub['consumed'], must_be_block, must_be_item, items=items)
+    if 'amount' in item_stub:
+        assert isinstance(item_stub['amount'], int)
+    if must_be_block:
+        assert 'blockID' in item
+    if must_be_item:
+        assert 'itemID' in item
+
 def test(f):
     tests.append(f)
     return f
@@ -436,40 +486,7 @@ def validate_items_json():
             continue
         item_stubs.append((tool_stub, False, True))
     for item_stub, must_be_block, must_be_item in item_stubs:
-        if item_stub is None:
-            continue
-        if isinstance(item_stub, str):
-            item_stub = {'id': item_stub}
-        try:
-            plugin, item_id = item_stub['id'].split(':')
-        except ValueError as e:
-            raise ValueError('Could not parse item ID {!r}'.format(item_stub['id'])) from e
-        item = items[plugin][item_id]
-        if 'damage' in item_stub:
-            assert 'effect' not in item_stub
-            assert 'tagValue' not in item_stub
-            assert str(item_stub['damage']) in item['damageValues']
-        if 'effect' in item_stub:
-            assert 'damage' not in item_stub
-            assert 'tagValue' not in item_stub
-            try:
-                effect_plugin, effect_id = item_stub['effect'].split(':')
-            except ValueError as e:
-                raise ValueError('Could not parse effect ID {!r}'.format(item_stub['effect'])) from e
-            assert effect_id in item['effects'][effect_plugin]
-        if 'tagValue' in item_stub:
-            assert 'damage' not in item_stub
-            assert 'effect' not in item_stub
-            assert str(item_stub['tagValue']) in item['tagVariants']
-        if 'consumed' in item_stub:
-            if not isinstance(item_stub['consumed'], bool):
-                item_stubs.append((item_stub['consumed'], must_be_block, must_be_item))
-        if 'amount' in item_stub:
-            assert isinstance(item_stub['amount'], int)
-        if must_be_block:
-            assert 'blockID' in item
-        if must_be_item:
-            assert 'itemID' in item
+        validate_item_stub(item_stub, must_be_block, must_be_item, items=items)
 
 @test
 def validate_cloud_json():
@@ -481,18 +498,14 @@ def validate_cloud_json():
         for x, corridor in floor.items():
             x = int(x)
             for z, chest in enumerate(corridor):
-                plugin, item_id = chest['id'].split(':', 1)
                 try:
-                    if 'damage' in chest:
-                        assert 'effect' not in chest
-                        assert str(chest['damage']) in items[plugin][item_id]['damageValues']
-                    else:
-                        assert 'damageValues' not in items[plugin][item_id]
-                    if 'effect' in chest:
-                        effect_plugin, effect_id = chest['effect'].split(':', 1)
-                        assert effect_id in items[plugin][item_id]['effects'][effect_plugin]
-                    else:
-                        assert 'effects' not in items[plugin][item_id]
+                    validate_item_stub(chest, False, True, items=items, additional_fields={
+                        'exists',
+                        'hasOverflow',
+                        'hasSmartChest',
+                        'hasSorter'
+                    })
+                    pass #TODO validate additional fields
                 except:
                     print('Error location: floor {} corridor {} chest {}: {}'.format(y, x, z, chest['id']), file=sys.stderr)
                     raise
