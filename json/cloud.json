@@ -133,141 +133,101 @@
                 "id": "minecraft:brick"
             },
             {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:brick_block"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:brick_stairs"
-            },
-            {
-                "damage": 4,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:stone_slab"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:hardened_clay"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 3,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 4,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 5,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 6,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 7,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 8,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 9,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 10,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 11,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 12,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 13,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 14,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 15,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
+                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
+            },
+            {
+                "exists": false,
+                "id": "minecraft:brick_block"
+            },
+            {
+                "exists": false,
+                "id": "minecraft:brick_stairs"
+            },
+            {
+                "damage": 4,
+                "exists": false,
+                "id": "minecraft:stone_slab"
             }
         ],
         "-2": [
