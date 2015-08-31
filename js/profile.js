@@ -292,7 +292,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
         var name;
 
         if (stat[0] === 'stat') {
-            if (stat[1] === 'craftItem' || stat[1] === 'useItem' || stat[1] === 'breakItem' || stat[1] === 'mineBlock') {
+            if (stat[1] === 'craftItem' || stat[1] === 'useItem' || stat[1] === 'breakItem' || stat[1] === 'mineBlock' || stat[1] === 'pickup' || stat[1] === 'drop') {
                 var item = itemData.itemById(stat.slice(2).join(':'));
                 var name = item.name || stat.slice(2).join(':');
                 var actionIndex = stat[1];
@@ -454,7 +454,9 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             $('<td>', {class: 'name'}).text(itemDict.name),
             $('<td>', {class: 'crafted'}).html($('<span>', {class: 'muted'}).text('0')),
             $('<td>', {class: 'used'}).html($('<span>', {class: 'muted'}).text('0')),
-            $('<td>', {class: 'depleted'}).html($('<span>', {class: 'muted'}).text('0'))
+            $('<td>', {class: 'depleted'}).html($('<span>', {class: 'muted'}).text('0')),
+            $('<td>', {class: 'dropped'}).html($('<span>', {class: 'muted'}).text('0')),
+            $('<td>', {class: 'picked-up'}).html($('<span>', {class: 'muted'}).text('0'))
         ]);
         $loadingStatItem.before($row);
         if ('itemInfo' in itemDict) {
@@ -469,6 +471,12 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
         if ('breakItem' in itemDict) {
             $row.children('.depleted').text(itemDict.breakItem);
         }
+        if ('drop' in itemDict) {
+            $row.children('.dropped').text(itemDict.dropped);
+        }
+        if ('pickup' in itemDict) {
+            $row.children('.picked-up').text(itemDict.pickup);
+        }
     });
 
     _.each(_.sortBy(_.pairs(blocks), function(pair) {
@@ -482,7 +490,9 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             $('<td>', {class: 'name'}).text(blockDict.name),
             $('<td>', {class: 'crafted'}).html($('<span>', {class: 'muted'}).text('0')),
             $('<td>', {class: 'used'}).html($('<span>', {class: 'muted'}).text('0')),
-            $('<td>', {class: 'mined'}).html($('<span>', {class: 'muted'}).text('0'))
+            $('<td>', {class: 'mined'}).html($('<span>', {class: 'muted'}).text('0')),
+            $('<td>', {class: 'dropped'}).html($('<span>', {class: 'muted'}).text('0')),
+            $('<td>', {class: 'picked-up'}).html($('<span>', {class: 'muted'}).text('0'))
         ]);
         $loadingStatBlock.before($row);
         if ('itemInfo' in blockDict) {
@@ -496,6 +506,12 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
         }
         if ('mineBlock' in blockDict) {
             $row.children('.mined').text(blockDict.mineBlock);
+        }
+        if ('drop' in blockDict) {
+            $row.children('.dropped').text(blockDict.drop);
+        }
+        if ('pickup' in blockDict) {
+            $row.children('.picked-up').text(blockDict.pickup);
         }
     });
 
