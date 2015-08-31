@@ -1,4 +1,4 @@
-@media (max-width: 1140px) {
+@media (max-width: 1200px) {
     .navbar-right .funding-month {
         display: none;
     }
@@ -8,13 +8,13 @@
     }
 }
 
-@media (max-width: 1039px) {
+@media (max-width: 1110px) {
     .navbar-right .funding-text {
         display: none;
     }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 992px) {
     .funding-progress-container {
         display: none;
     }
