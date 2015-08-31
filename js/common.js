@@ -118,7 +118,6 @@ function Person(person_data) {
     this.twitter = person_data['twitter'];
     this.website = person_data['website'];
     this.wiki = person_data['wiki'];
-    this.ava = '/assets/img/ava/' + this.minecraft + '.png';
     this.option = function(opt) {
         var default_true_options = ['activity_tweets', 'chatsync_highlight', 'inactivity_tweets']; // These options are on by default. All other options are off by default.
         if ('options' in person_data && opt in person_data['options']) {
@@ -141,8 +140,8 @@ function Person(person_data) {
     }();
     this.html_ava = function(size) {
         // custom avatar, saved in /assets
-        var imageURLs = [(isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/ava/' + size + '/' + this.id + '.png'];
-        var hiDPIURLs = [(isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/ava/' + (size * 2) + '/' + this.id + '.png'];
+        var imageURLs = [];
+        var hiDPIURLs = [];
         // gravatar
         if ('gravatar' in person_data && size <= 2048) {
             imageURLs.push('http://www.gravatar.com/avatar/' + md5(person_data['gravatar']) + '?d=404&s=' + size);
@@ -153,9 +152,6 @@ function Person(person_data) {
         // player head
         imageURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + size + '/' + this.id + '.png');
         hiDPIURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + (size * 2) + '/' + this.id + '.png');
-        // Steve head
-        imageURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + size + '/Player.png');
-        hiDPIURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + (size * 2) + '/Player.png');
         //TODO do something with the hiDPI images
         return imageStack(imageURLs, {
             'class': 'avatar',
