@@ -265,7 +265,7 @@ abbr.nounderline {
 }
 
 .achievement-image {
-    background: url('/assets/img/achievement-plain.png');
+    background: url('/img/achievement-plain.png');
     box-sizing: border-box;
     height: 52px;
     padding: 10px;
@@ -273,7 +273,7 @@ abbr.nounderline {
 }
 
 .achievement-image.fancy {
-    background: url('/assets/img/achievement-fancy.png');
+    background: url('/img/achievement-fancy.png');
 }
 
 h1, h2, h3, h4, h5, h6 {
