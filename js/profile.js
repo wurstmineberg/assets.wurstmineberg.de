@@ -74,7 +74,16 @@ function initializeInventory(tbody, rows, cols) {
 }
 
 function displaySlot(cell, stack, items, stringData) {
-    var item = items.itemByDamage(stack.id, stack.Damage);
+    var baseItem = items.itemById(stack.id);
+    var item = baseItem;
+    if ('damageValues' in baseItem) {
+        item = items.itemByDamage(stack.id, stack.Damage);
+    } else if ('effects' in baseItem) {
+        item = items.itemByEffect(stack.id, stack.tag.Potion);
+    } else if ('tagPath' in baseItem) {
+        var tag = _.reduce(baseItem.tagPath, function(memo, pathElt) { return memo[pathElt]; }, stack.tag);
+        item = items.itemByTag(stack.id, tag);
+    }
     cell.children('div').children('.inv-cell-image').append(item.htmlImage('', 'tag' in stack && 'display' in stack.tag && 'color' in stack.tag.display ? stack.tag.display.color : null));
     // base name
     var name = item.name || stack.id.toString();
@@ -96,7 +105,7 @@ function displaySlot(cell, stack, items, stringData) {
         }
     }
     // enchantments / patterns
-    if ('tag' in stack ) {
+    if ('tag' in stack) {
         var enchantments = [];
         if ('ench' in stack.tag) {
             enchantments = stack.tag.ench;
@@ -143,7 +152,7 @@ function displaySlot(cell, stack, items, stringData) {
     }
 }
 
-function display_inventory(player_data, items, string_data) {
+function displayInventory(player_data, items, string_data) {
     $('tr.loading').remove();
     $('.inventory-opt-out').removeClass('inventory-opt-out').addClass('inventory-opt-in');
     initializeInventory($('#main-inventory > tbody'), 3, 9);
@@ -653,7 +662,7 @@ function displayMinigameData(people, person, deathGamesLog) {
 function loadStatData(person, string_data, achievement_data, biomes, items, mobData) {
     if (person.option('show_inventory')) {
         $.when(API.playerData(person)).done(function(player_data) {
-            display_inventory(player_data, items, string_data);
+            displayInventory(player_data, items, string_data);
         }).fail(function() {
             $('.inventory-table .loading td').html('Error: Could not load ' + person.minecraft + '.dat');
         });

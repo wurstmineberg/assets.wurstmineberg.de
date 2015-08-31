@@ -308,10 +308,11 @@ function Item(stringID, itemInfo) {
     this.name = itemInfo.name;
     this.durability = 'durability' in itemInfo ? itemInfo.durability : 0;
     this.isBlock = 'blockID' in itemInfo;
+    this.isItem = 'itemID' in itemInfo;
 }
 
 function ItemData(itemData) {
-    this.itemByDamage = function(id, damage) {
+    this.itemById = function(id) {
         if (_.isString(id) && /^[0-9]+$/.test(id)) {
             id = parseInt(id);
         }
@@ -332,17 +333,44 @@ function ItemData(itemData) {
                 });
             });
         }
-        if ('blockInfo' in item) {
-            if (typeof numericID !== 'undefined' && numericID < 256) {
-                item = _.extend({}, item, item.blockInfo);
-            }
-            item = _.omit(item, 'blockInfo');
-        }
+        return new Item(id, item);
+    }
+    this.itemByDamage = function(id, damage) {
+        item = this.itemById(id);
         if ('damageValues' in item) {
             if (typeof damage !== 'undefined' && damage.toString() in item.damageValues) {
                 item = _.extend({}, item, item.damageValues[damage.toString()]);
             }
             item = _.omit(item, 'damageValues');
+        } else {
+            return undefined;
+        }
+        return new Item(id, item);
+    };
+    this.itemByEffect = function(id, effect) {
+        item = this.itemById(id);
+        if ('effects' in item) {
+            if (_.isString(effect)) {
+                var effectParts = effect.split(':');
+                var effectPlugin = effectParts[0];
+                var effectName = effectParts[1];
+                item = item.effects[effectPlugin][effectName];
+            }
+            item = _.omit(item, 'effects');
+        } else {
+            return undefined;
+        }
+        return new Item(id, item);
+    };
+    this.itemByTag = function(id, tagValue) {
+        item = this.itemById(id);
+        if ('tagPath' in item) {
+            if (typeof tagValue !== 'undefined' && tagValue.toString() in item.tagVariants) {
+                item = _.extend({}, item, item.tagVariants[damage.toString()]);
+            }
+            item = _.omit(item, 'tagVariants');
+        } else {
+            return undefined;
         }
         return new Item(id, item);
     };
