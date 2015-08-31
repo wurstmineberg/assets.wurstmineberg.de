@@ -293,7 +293,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
 
         if (stat[0] === 'stat') {
             if (stat[1] === 'craftItem' || stat[1] === 'useItem' || stat[1] === 'breakItem' || stat[1] === 'mineBlock') {
-                var item = itemData.itemByDamage(stat.slice(2).join(':'));
+                var item = itemData.itemById(stat.slice(2).join(':'));
                 var name = item.name || stat.slice(2).join(':');
                 var actionIndex = stat[1];
                 var collection = item.isBlock ? blocks : items;
