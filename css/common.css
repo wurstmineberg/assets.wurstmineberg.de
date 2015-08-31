@@ -1,7 +1,7 @@
 /* Fix some Font smoothing issue in safari https://github.com/twbs/bootstrap/issues/11333 */
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
