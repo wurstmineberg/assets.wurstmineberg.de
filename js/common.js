@@ -370,7 +370,7 @@ function ItemData(itemData) {
         }
         return new Item(id, item);
     };
-    this.itemFromStub(itemStub) {
+    this.itemFromStub = function(itemStub) {
         if (typeof itemStub === 'string') {
             return this.itemById(itemStub);
         }
