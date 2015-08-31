@@ -361,8 +361,9 @@ function ItemData(itemData) {
         item = this.itemById(id);
         if ('tagPath' in item) {
             if (typeof tagValue !== 'undefined' && tagValue.toString() in item.tagVariants) {
-                item = _.extend({}, item, item.tagVariants[damage.toString()]);
+                item = _.extend({}, item, item.tagVariants[tagValue.toString()]);
             }
+            item = _.omit(item, 'tagPath');
             item = _.omit(item, 'tagVariants');
         } else {
             return undefined;
