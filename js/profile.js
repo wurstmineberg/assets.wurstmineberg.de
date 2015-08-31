@@ -292,7 +292,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
         var name;
 
         if (stat[0] === 'stat') {
-            if (stat[1] === 'craftItem' || stat[1] === 'useItem' || stat[1] === 'breakItem' || stat[1] === 'mineBlock' || stat[1] === 'pickup' || stat[1] === 'drop') {
+            if (stat.length > 2 && (stat[1] === 'craftItem' || stat[1] === 'useItem' || stat[1] === 'breakItem' || stat[1] === 'mineBlock' || stat[1] === 'pickup' || stat[1] === 'drop')) {
                 var item = itemData.itemById(stat.slice(2).join(':'));
                 var name = item.name || stat.slice(2).join(':');
                 var actionIndex = stat[1];
