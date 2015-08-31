@@ -726,7 +726,7 @@ function prettifyStatsValue(key, value) {
         // no unit
         value = value.toString();
         if (value.length > 3) {
-            value = value.replace(/\B(?=(?:\d{3})+(?!\d))/g, '&#8239;'); // add thin non-breaking spaces as thousands separators
+            value = value.replace(/\B(?=(?:\d{3})+(?!\d))/g, '\u202f'); // add thin non-breaking spaces as thousands separators
         }
         return value;
     }
