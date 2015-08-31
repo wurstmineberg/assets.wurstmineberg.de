@@ -349,7 +349,7 @@ function ItemData(itemData) {
                 var effectParts = effect.split(':');
                 var effectPlugin = effectParts[0];
                 var effectName = effectParts[1];
-                item = item.effects[effectPlugin][effectName];
+                item = _.extend({}, item, item.effects[effectPlugin][effectName]);
             }
             item = _.omit(item, 'effects');
         } else {
