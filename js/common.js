@@ -286,6 +286,7 @@ function is_block(id) {
 }
 
 function Item(stringID, itemInfo) {
+    _.extend(this, itemInfo);
     this.htmlImage = function(classes, tint) {
         if ('image' in itemInfo) {
             if (itemInfo.image.startsWith('http://') || itemInfo.image.startsWith('https://')) {
@@ -300,8 +301,6 @@ function Item(stringID, itemInfo) {
         }
     };
     this.id = stringID;
-    this.image = itemInfo.image;
-    this.name = itemInfo.name;
     this.durability = 'durability' in itemInfo ? itemInfo.durability : 0;
     this.isBlock = 'blockID' in itemInfo;
     this.isItem = 'itemID' in itemInfo;
