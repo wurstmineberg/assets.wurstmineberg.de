@@ -370,11 +370,29 @@ function ItemData(itemData) {
         }
         return new Item(id, item);
     };
+    this.itemFromStub(itemStub) {
+        if (typeof itemStub === 'string') {
+            return this.itemById(itemStub);
+        }
+        if ('damage' in itemStub) {
+            return this.itemByDamage(itemStub.id, itemStub.damage);
+        } else if ('effect' in itemStub) {
+            return this.itemByEffect(itemStub.id, itemStub.effect);
+        } else if ('tagValue' in itemStub) {
+            return this.itemByTag(itemStub.id, itemStub.tagValue);
+        } else {
+            return this.itemById(itemStub.id);
+        }
+    }
     this.favItem = function(person) {
         if (!person.fav_item || !('id' in person.fav_item)) {
             return null;
         }
-        return this.itemByDamage(person.fav_item.id, person.fav_item.Damage);
+        if ('Damage' in person.fav_item) {
+            return this.itemByDamage(person.fav_item.id, person.fav_item.Damage);
+        } else {
+            return this.itemById(person.fav_item.id);
+        }
     };
 }
 
@@ -407,7 +425,7 @@ function Achievement(achievementData, achievementID) {
         return this.item(items).htmlImage(this.fancy ? 'achievement-image fancy' : 'achievement-image');
     };
     this.item = function(items) {
-        return items.itemByDamage(achievementData[achievementID].icon, achievementData[achievementID].iconDamage);
+        return items.itemFromStub(achievementData[achievementID].icon);
     };
     this.requires = achievementData[achievementID].requires ? new Achievement(achievementData, achievementData[achievementID].requires) : null;
     this.root = (this.requires === null) ? this : this.requires.root;

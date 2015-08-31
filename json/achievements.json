@@ -73,7 +73,10 @@
     "cookFish": {
         "description": "Catch and cook a fish!",
         "displayname": "Delicious Fish",
-        "icon": "minecraft:cooked_fish",
+        "icon": {
+            "damage": 0,
+            "id": "minecraft:cooked_fish"
+        },
         "requires": "buildFurnace"
     },
     "diamonds": {
@@ -153,7 +156,10 @@
     "mineWood": {
         "description": "Attack a tree until a block of wood pops out",
         "displayname": "Getting Wood",
-        "icon": "minecraft:log",
+        "icon": {
+            "damage": 0,
+            "id": "minecraft:log"
+        },
         "requires": "openInventory",
         "track": "main"
     },
@@ -182,9 +188,10 @@
         "description": "Build a Notch apple",
         "displayname": "Overpowered",
         "fancy": true,
-        "icon": "minecraft:golden_apple",
-        "iconDamage": 1,
-        "iconName": "minecraft:golden_apple",
+        "icon": {
+            "damage": 1,
+            "id": "minecraft:golden_apple"
+        },
         "requires": "buildBetterPickaxe"
     },
     "portal": {
@@ -197,21 +204,26 @@
     "potion": {
         "description": "Brew a potion",
         "displayname": "Local Brewery",
-        "icon": "minecraft:potion",
+        "icon": {
+            "effect": "minecraft:water",
+            "id": "minecraft:potion"
+        },
         "requires": "blazeRod"
     },
     "snipeSkeleton": {
         "description": "Kill a skeleton or wither skeleton with an arrow from more than 50 meters",
         "displayname": "Sniper Duel",
-        "fancy": "minecraft:bow",
-        "icon": 261,
+        "fancy": true,
+        "icon": "minecraft:bow",
         "requires": "killEnemy"
     },
     "spawnWither": {
         "description": "Spawn the Wither",
         "displayname": "The Beginning?",
-        "icon": "minecraft:skull",
-        "iconDamage": 1,
+        "icon": {
+            "damage": 1,
+            "id": "minecraft:skull"
+        },
         "requires": "theEnd2",
         "track": "main"
     },
