@@ -2646,19 +2646,19 @@
         ],
         "0": [
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:wheat_seeds"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:wheat"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:melon_seeds"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:melon_block"
             },
             {
@@ -2666,15 +2666,15 @@
                 "id": "minecraft:pumpkin_seeds"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:pumpkin"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:beetroot_seeds"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:lit_pumpkin"
             },
             {
@@ -2793,23 +2793,23 @@
                 "id": "minecraft:waterlily"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:hay_block"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:diamond_hoe"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:iron_hoe"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:stone_hoe"
             },
             {
-                "exists": false,
+                "hasSmartChest": false,
                 "id": "minecraft:wooden_hoe"
             },
             {
