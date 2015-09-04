@@ -4,6 +4,14 @@
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.navbar-right:last-child {
+    margin-right: 0px;
+}
+
+.navbar li > a > span {
+    margin-right: 0.2778em;
+}
+
 body {
     padding-top: 70px;
 }
@@ -19,6 +27,20 @@ h2 {
 .people-avatar > img {
     margin-right: 5px;
     min-width: 32px;
+}
+
+.navbar-personaltools {
+    border-left: 1px solid #646464;
+}
+
+.navbar-personaltools > li:first-child:last-child > a,
+.navbar-personaltools li.open:first-child:last-child > a {
+    padding: 25px 10px;
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    line-height: 0px;
+    top: 0px;
 }
 
 .funding-progress-container {
