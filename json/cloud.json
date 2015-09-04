@@ -2664,6 +2664,7 @@
                 "id": "minecraft:pumpkin"
             },
             {
+                "hasSorter": false,
                 "id": "minecraft:beetroot_seeds"
             },
             {
