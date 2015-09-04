@@ -2646,170 +2646,132 @@
         ],
         "0": [
             {
-                "hasSmartChest": false,
                 "id": "minecraft:wheat_seeds"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:wheat"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:melon_seeds"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:melon_block"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:pumpkin_seeds"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:pumpkin"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:beetroot_seeds"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:lit_pumpkin"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:reeds"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:cactus"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:brown_mushroom"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:red_mushroom"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:brown_mushroom_block"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:red_mushroom_block"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:yellow_flower"
             },
             {
                 "damage": 0,
-                "hasSmartChest": false,
                 "id": "minecraft:red_flower"
             },
             {
                 "damage": 1,
-                "hasSmartChest": false,
                 "id": "minecraft:red_flower"
             },
             {
                 "damage": 2,
-                "hasSmartChest": false,
                 "id": "minecraft:red_flower"
             },
             {
                 "damage": 3,
-                "hasSmartChest": false,
                 "id": "minecraft:red_flower"
             },
             {
                 "damage": 4,
-                "hasSmartChest": false,
                 "id": "minecraft:red_flower"
             },
             {
                 "damage": 5,
-                "hasSmartChest": false,
                 "id": "minecraft:red_flower"
             },
             {
                 "damage": 6,
-                "hasSmartChest": false,
                 "id": "minecraft:red_flower"
             },
             {
                 "damage": 7,
-                "hasSmartChest": false,
                 "id": "minecraft:red_flower"
             },
             {
                 "damage": 8,
-                "hasSmartChest": false,
                 "id": "minecraft:red_flower"
             },
             {
                 "damage": 0,
-                "hasSmartChest": false,
                 "id": "minecraft:double_plant"
             },
             {
                 "damage": 1,
-                "hasSmartChest": false,
                 "id": "minecraft:double_plant"
             },
             {
                 "damage": 4,
-                "hasSmartChest": false,
                 "id": "minecraft:double_plant"
             },
             {
                 "damage": 5,
-                "hasSmartChest": false,
                 "id": "minecraft:double_plant"
             },
             {
                 "damage": 1,
-                "hasSmartChest": false,
                 "id": "minecraft:tallgrass"
             },
             {
                 "damage": 2,
-                "hasSmartChest": false,
                 "id": "minecraft:tallgrass"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:deadbush"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:vine"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:waterlily"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:hay_block"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:diamond_hoe"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:iron_hoe"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:stone_hoe"
             },
             {
-                "hasSmartChest": false,
                 "id": "minecraft:wooden_hoe"
             },
             {
