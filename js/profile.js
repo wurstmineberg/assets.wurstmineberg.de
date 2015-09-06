@@ -1,9 +1,6 @@
 function getUserName() {
     var user;
     var url = $(location).attr('pathname');
-    if (url == '/people/') {
-        window.location.replace('/people');
-    }
     if (url.endsWith('/')) {
         url = url.substring(0, url.length - 1);
     }
@@ -12,56 +9,7 @@ function getUserName() {
 }
 
 function displayUserData(person) {
-    $('.panel-loading').removeClass('loading');
-
-    var name = person.interfaceName;
-    var head;
-
     $('#avatar').replaceWith(person.html_ava(32));
-    $('#username').text(name);
-    $('#username').removeClass('hidden');
-
-    if (person.minecraft) {
-        $('#head').attr('src', '/assets/img/head/180/' + person.id + '.png');
-        $('#head').attr('srcset', '/assets/img/head/180/' + person.id + '.png 1x, /assets/img/head/360/' + person.id + '.png 2x');
-        $('#head').attr('title', person.minecraft);
-        $('#head').removeClass('hidden');
-
-        if (person.minecraft.toLowerCase() !== name.toLowerCase()) {
-            $('#username').append(' ');
-            $('#username').append($('<span>', {'class': 'muted'}).text('(Minecraft: ' + person.minecraft + ')'));
-        }
-    }
-
-    if (person.description) {
-        var description = sanitized(person.description, ['A', 'EM', 'S', 'SPAN']);
-    } else {
-        var description = 'You can update your description using the command <code>!<a href="//wiki.' + host + '/Commands#People">People</a> ' + person.id + ' description &lt;value&gt;...</code>.';
-        $('#user-description').addClass('muted');
-    }
-
-    $('#user-description').html(description);
-
-    var social_links = $('#social-links');
-    if (person.reddit) {
-        social_links.removeClass('hidden');
-        social_links.append('<a class="social-link" href="' + reddit_user_link(person.reddit) + '">Reddit</a>');
-    }
-
-    if (person.twitter) {
-        social_links.removeClass('hidden');
-        social_links.append('<a class="social-link" href="' + twitter_user_link(person.twitter) + '">Twitter</a>');
-    }
-
-    if (person.website) {
-        social_links.removeClass('hidden');
-        social_links.append('<a class="social-link" href="' + person.website + '">Website</a>');
-    }
-
-    if (person.wiki) {
-        social_links.removeClass('hidden');
-        social_links.append('<a class="social-link" href="' + wiki_user_link(person['wiki']) + '">Wiki</a>');
-    }
 }
 
 function initializeInventory(tbody, rows, cols) {

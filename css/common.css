@@ -88,8 +88,14 @@ h2 {
     height: 32px !important;
 }
 
+.people-table td.people-avatar {
+    width: 49px;
+    box-sizing: content-box;
+    vertical-align: middle;
+}
+
 .people-table td.username {
-    width: 120px;
+    width: 12em;
 }
 
 .people-table td.text-info {
@@ -98,6 +104,11 @@ h2 {
 
 #stats-achievements-table td.name {
     min-width: 160px;
+}
+
+img.heading-icon {
+    vertical-align: top;
+    padding-top: 1px;
 }
 
 .loading > td {
@@ -204,6 +215,10 @@ a {
     float: left;
     margin-right: 1em;
     display: inline-block;
+}
+
+.inventory-container {
+    clear: left;
 }
 
 .inventory-opt-out {
