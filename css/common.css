@@ -323,6 +323,23 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+a.slack-login-button {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+a.slack-login-button .logo {
+    height: 1em;
+    width: auto;
+    padding-left: 0.2em;
+    margin-top: -1px
+}
+
+#preferences-profile #description {
+    height: 200px;
+}
+
 .preferences-profile-lead {
     padding-left: 0;
     padding-top: 15px;
