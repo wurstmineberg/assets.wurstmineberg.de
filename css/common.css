@@ -33,14 +33,24 @@ h2 {
     border-left: 1px solid #646464;
 }
 
+.navbar-personaltools img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border-radius: 4px;
+}
+
+.navbar-personaltools-tools > a {
+    height: 50px;
+}
+
 .navbar-personaltools > li:first-child:last-child > a,
 .navbar-personaltools li.open:first-child:last-child > a {
-    padding: 25px 10px;
+    /* padding: 25px 10px;*/
+    padding: 8px 8px;
     vertical-align: middle;
     position: relative;
     display: block;
     line-height: 0px;
-    top: 0px;
 }
 
 .funding-progress-container {
@@ -386,7 +396,7 @@ a.slack-login-button .logo {
     border-color: #ddd;
 }
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
-    color: #777;   
+    color: #777;
 }
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
