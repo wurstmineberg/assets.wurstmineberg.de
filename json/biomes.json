@@ -14,6 +14,7 @@
         },
         "10": {
             "adventuringTime": false,
+            "description": "An ice-covered version of the Ocean biome. No longer generates naturally.",
             "id": "FrozenOcean",
             "name": "Frozen Ocean",
             "type": "frozen"
@@ -30,6 +31,18 @@
             "description": "Very flat biome with tons of snow",
             "id": "Ice Plains",
             "type": "frozen"
+        },
+        "127": {
+            "adventuringTime": false,
+            "description": "An empty biome. Only generates in Superflat worlds.",
+            "id": "The Void",
+            "type": "warm"
+        },
+        "128": {
+            "adventuringTime": false,
+            "description": "A slightly less flat variant of the Plains biome with the occasional lake",
+            "id": "Plains M",
+            "type": "medium"
         },
         "129": {
             "adventuringTime": false,
@@ -101,7 +114,7 @@
         },
         "151": {
             "adventuringTime": false,
-            "description": "Border of the Mountain Jungle",
+            "description": "Border of the Mountain Jungle. Very rare, but does actually generate.",
             "id": "JungleEdge M",
             "name": "Jungle Edge M",
             "type": "medium"
@@ -145,7 +158,7 @@
         "161": {
             "adventuringTime": false,
             "description": "The hill variant of the Mega Spruce Taiga",
-            "id": "Mega Spruce Taiga Hills",
+            "id": "Redwood Taiga Hills M",
             "type": "cold"
         },
         "162": {
@@ -157,7 +170,7 @@
         },
         "163": {
             "adventuringTime": false,
-            "description": "Savanna with dirt paths and giant mountains",
+            "description": "Savanna with dirt patches and giant mountains",
             "id": "Savanna M",
             "type": "warm"
         },
@@ -214,6 +227,7 @@
         },
         "20": {
             "adventuringTime": false,
+            "description": "Used to generate at the edge of Extreme Hills biomes before Minecraft 1.7",
             "id": "Extreme Hills Edge",
             "type": "cold"
         },
@@ -374,7 +388,7 @@
         "9": {
             "adventuringTime": false,
             "description": "Many endermen. Floating island in the Sky. If you fall down, you die!",
-            "id": "Sky",
+            "id": "The End",
             "name": "The End",
             "type": "cold"
         }
