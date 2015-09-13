@@ -6962,7 +6962,7 @@
         },
         "shield": {
             "durability": 180,
-            "image": "blackshield.png",
+            "image": "shield.png",
             "itemID": 442,
             "name": "Shield",
             "tagPath": [
@@ -6970,31 +6970,40 @@
                 "Base"
             ],
             "tagVariants": {
+                "": {
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                "minecraft:planks",
+                                "minecraft:iron_ingot",
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                null,
+                                "minecraft:planks",
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
                 "0": {
+                    "image": "blackshield.png",
                     "name": "Black Shield",
                     "obtaining": [
                         {
                             "recipe": [
                                 {
-                                    "damage": 15,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 15,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 15,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 0,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7005,25 +7014,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 14,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 14,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 14,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 1,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7034,25 +7033,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 5,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 5,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 5,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 10,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7063,25 +7052,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 4,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 4,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 4,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 11,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7092,25 +7071,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 3,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 3,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 3,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 12,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7121,25 +7090,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 2,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 2,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 2,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 13,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7150,25 +7109,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 1,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 1,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 1,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 14,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7179,25 +7128,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 0,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 0,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 0,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 15,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7208,25 +7147,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 13,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 13,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 13,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 2,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7237,25 +7166,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 12,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 12,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 12,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 3,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7266,25 +7185,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 11,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 11,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 11,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 4,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7295,25 +7204,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 10,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 10,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 10,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 5,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7324,25 +7223,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 9,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 9,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 9,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 6,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7353,25 +7242,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 8,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 8,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 8,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 7,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7382,25 +7261,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 7,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 7,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 7,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 8,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -7411,25 +7280,15 @@
                         {
                             "recipe": [
                                 {
-                                    "damage": 6,
-                                    "id": "minecraft:wool"
+                                    "id": "minecraft:shield",
+                                    "tagValue": null
                                 },
-                                "minecraft:planks",
-                                null,
                                 {
-                                    "damage": 6,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                "minecraft:iron_ingot",
-                                {
-                                    "damage": 6,
-                                    "id": "minecraft:wool"
-                                },
-                                "minecraft:planks",
-                                null
+                                    "damage": 9,
+                                    "id": "minecraft:banner"
+                                }
                             ],
-                            "type": "craftingShaped"
+                            "type": "craftingShapeless"
                         }
                     ]
                 }
