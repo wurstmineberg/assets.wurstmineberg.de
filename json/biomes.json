@@ -389,7 +389,6 @@
             "adventuringTime": false,
             "description": "Many endermen. Floating island in the Sky. If you fall down, you die!",
             "id": "The End",
-            "name": "The End",
             "type": "cold"
         }
     },
