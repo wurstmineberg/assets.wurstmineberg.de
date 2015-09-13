@@ -486,7 +486,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
     });
 
     $('.loading-stat').remove();
-    initialize_tooltips();
+    initializeTooltips();
 }
 
 function displayMinigameData(people, person, deathGamesLog) {

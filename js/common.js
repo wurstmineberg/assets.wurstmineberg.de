@@ -71,15 +71,42 @@ function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/1189
     return div.innerHTML;
 }
 
-function Person(person_data) {
+function Person(wurstminebergID, personData) {
     var _this = this;
-    this.id = person_data['id'];
-    this.description = person_data['description'];
-    this.favColor = person_data['favColor'];
-    this.fav_item = person_data['fav_item'];
-    this.invitedBy = person_data['invitedBy'];
-    this.irc = person_data['irc'];
-    this.joinDate = dateObjectFromUTC(person_data['join_date']);
+    this.id = wurstminebergID;
+    this.description = personData.description;
+    this.favColor = personData.favColor;
+    if ('base' in personData) {
+        this.favItem = personData.base.tunnelItem;
+    }
+    this.invitedBy = function() {
+        var ret = null;
+        if ('statusHistory' in personData) {
+            personData.statusHistory.forEach(function(statusChange) {
+                if (ret !== null) {
+                    return;
+                }
+                if ((statusChange.status === 'invited' || statusChange.status === 'later') && 'by' in statusChange) {
+                    ret = statusChange.by;
+                }
+            });
+        }
+        return ret;
+    }();
+    this.joinDate = function() { // date of whitelisting, not invitation date
+        var ret = null;
+        if ('statusHistory' in personData) {
+            personData.statusHistory.forEach(function(statusChange) {
+                if (ret !== null) {
+                    return;
+                }
+                if ((statusChange.status === 'later') && 'date' in statusChange) {
+                    ret = dateObjectFromUTC(statusChange.date);
+                }
+            });
+        }
+        return ret;
+    }();
     this.latestDeath = API.ajaxJSONDeferred('http://api.' + host + '/server/deaths/latest.json').then(function(latestDeaths) {
         if (_this.id in latestDeaths.deaths) {
             return {
@@ -90,7 +117,7 @@ function Person(person_data) {
             return null;
         }
     }); // use with when/done/fail
-    this.minecraft = person_data['minecraft'];
+    this.minecraft = personData.minecraft.nicks[personData.minecraft.length - 1];
     this.mobDeaths = function(entityStats) {
         var ret = {};
         if (_this.minecraft in entityStats) {
@@ -114,79 +141,81 @@ function Person(person_data) {
         return ret;
     };
     this.reddit = person_data['reddit'];
-    this.status = 'status' in person_data ? person_data['status'] : 'later';
-    this.twitter = person_data['twitter'];
-    this.website = person_data['website'];
-    this.wiki = person_data['wiki'];
+    if ('statusHistory' in personData) {
+        this.status = personData.statusHistory[personData.statusHistory.length - 1].status;
+    }
+    this.statusHistory = personData.statusHistory;
+    if ('twitter' in personData) {
+        this.twitter = personData.twitter.username;
+    }
+    this.website = personData.website;
+    this.wiki = personData.wiki;
     this.option = function(opt) {
-        var default_true_options = ['activity_tweets', 'chatsync_highlight', 'inactivity_tweets']; // These options are on by default. All other options are off by default.
-        if ('options' in person_data && opt in person_data['options']) {
-            return person_data['options'][opt];
+        var defaultTrueOptions = ['activity_tweets', 'chatsync_highlight', 'inactivity_tweets']; // These options are on by default. All other options are off by default.
+        if ('options' in personData && opt in personData['options']) {
+            return personData.options[opt];
         } else {
-            return opt in default_true_options;
+            return opt in defaultTrueOptions;
         }
     };
-    this.option_is_default = function(opt) {
-        return !('options' in person_data && opt in person_data['options']);
+    this.optionIsDefault = function(opt) {
+        return !('options' in personData && opt in personData.options);
     }
     this.interfaceName = function() {
-        if ('name' in person_data) {
-            return person_data['name'];
-        } else if ('id' in person_data) {
-            return person_data['id'];
-        } else if ('minecraft' in person_data) {
-            return person_data['minecraft'];
+        if ('name' in personData) {
+            return personData.name;
+        } else {
+            return wurstminebergID;
         }
     }();
-    this.html_ava = function(size) {
-        // custom avatar, saved in /assets
-        var imageURLs = [];
-        var hiDPIURLs = [];
-        // gravatar
-        if ('gravatar' in person_data && size <= 2048) {
-            imageURLs.push('http://www.gravatar.com/avatar/' + md5(person_data['gravatar']) + '?d=404&s=' + size);
-            if (size <= 1024) {
-                hiDPIURLs.push('http://www.gravatar.com/avatar/' + md5(person_data['gravatar']) + '?d=404&s=' + (size * 2));
-            }
-        }
-        // player head
-        imageURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + size + '/' + this.id + '.png');
-        hiDPIURLs.push((isDev ? '' : 'http://wurstmineberg.de') + '/assets/img/head/' + (size * 2) + '/' + this.id + '.png');
-        //TODO do something with the hiDPI images
-        return imageStack(imageURLs, {
-            'class': 'avatar',
-            'style': 'width: ' + size + 'px; height: ' + size + 'px;'
-        });
-    };
     this.wikiArticle = function(fallback) {
         if (this.wiki) {
-            return wiki_user_link(this.wiki);
+            return wikiUserLink(this.wiki);
         } else {
             return fallback;
         }
     }
 }
 
-function People(people_data) {
+function People(peopleData) {
     var _this = this;
 
     this.list = function() {
-        return _.map(people_data, function(value) {
-            return new Person(value);
+        return _.map(_.sortBy(_.pairs(peopleData), function(keyValuePair) {
+            var wurstminebergID = keyValuePair[0];
+            var personData = keyValuePair[1];
+            var date = '9999-99-99 99:99:99';
+            if ('statusHistory' in personData) {
+                personData.statusHistory.forEach(function(statusChange) {
+                    if (date !== '9999-99-99 99:99:99') {
+                        return
+                    }
+                    if ('date' in statusChange) {
+                        date = statusChange.date;
+                    }
+                });
+            }
+            return date + wurstminebergID;
+        }), function(keyValuePair) {
+            var wurstminebergID = keyValuePair[0];
+            var personData = keyValuePair[1];
+            return new Person(wurstminebergID, personData);
         });
     }();
 
-    this.achievementWinners = function() {
-        return API.ajaxJSONDeferred('http://api.' + host + '/minigame/achievements/winners.json').then(function(winners) {
-            return _.map(winners, function(winnerID) {
-                return _this.personById(winnerID);
+    this.achievementWinners = function(world) {
+        return mainWorldFallback(world).then(function(world) {
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/minigame/achievements/' + world + '/winners.json')).then(function(winners) {
+                return _.map(winners, function(winnerID) {
+                    return _this.personById(winnerID);
+                });
             });
         });
     };
 
     this.activePeople = function() {
         return _this.list.filter(function(person) {
-            return (person.status != 'former');
+            return (person.status === 'founding' || person.status === 'later');
         });
     }();
 
@@ -194,13 +223,13 @@ function People(people_data) {
 
     this.personById = function(id) {
         return _.find(this.list, function(person) {
-            return 'id' in person && person['id'] === id;
+            return 'id' in person && person.id === id;
         });
     };
 
     this.personByMinecraft = function(id) {
         return _.find(this.list, function(person) {
-            return 'minecraft' in person && person['minecraft'] === id;
+            return 'minecraft' in person && person.minecraft === id;
         });
     };
 
@@ -222,44 +251,46 @@ function People(people_data) {
     };
 }
 
-function Biome(biome_data) {
-    this.id = biome_data['id'];
+function Biome(biomeData) {
+    this.id = biomeData.id;
+
     this.description = function() {
         if ('description' in biome_data) {
-            return biome_data['description']
+            return biome_data.description;
         } else {
             return '';
         }
     }();
-    this.type = biome_data['type'];
+
+    this.type = biomeData.type;
     this.name = function() {
-        if ('name' in biome_data) {
-            return biome_data['name'];
+        if ('name' in biomeData) {
+            return biomeData.name;
         } else {
-            return biome_data['id'];
+            return biomeData.id;
         }
     }();
 
     this.adventuringTime = function() {
-        if ('adventuringTime' in biome_data) {
-            return biome_data['adventuringTime'];
+        if ('adventuringTime' in biomeData) {
+            return biome_data.adventuringTime;
         } else {
             return true;
         }
     }();
 }
 
-function BiomeInfo(biome_info) {
+function BiomeInfo(biomeInfo) {
     this.biomes = function() {
-        var biomes_list = _.map(biome_info['biomes'], function(biome_data) {
-            return new Biome(biome_data);
+        var biomesList = _.map(biomeInfo.biomes, function(biomeData) {
+            return new Biome(biomeData);
         });
 
-        biomes_list.sort(function(a, b) {
+        biomesList.sort(function(a, b) {
             return a.id.localeCompare(b.id);
         });
 
-        return biomes_list;
+        return biomesList;
     }();
 
     this.biomeById = function(id) {
@@ -279,10 +310,6 @@ function BiomeInfo(biome_info) {
             return biome.name;
         });
     };
-}
-
-function is_block(id) {
-    return id <= 255;
 }
 
 function Item(stringID, itemInfo) {
@@ -385,14 +412,10 @@ function ItemData(itemData) {
         }
     }
     this.favItem = function(person) {
-        if (!person.fav_item || !('id' in person.fav_item)) {
+        if (!person.favItem) {
             return null;
         }
-        if ('Damage' in person.fav_item) {
-            return this.itemByDamage(person.fav_item.id, person.fav_item.Damage);
-        } else {
-            return this.itemById(person.fav_item.id);
-        }
+        return this.itemFromStub(person.favItem);
     };
 }
 
@@ -479,8 +502,17 @@ var API = {
             return ajaxData;
         });
     },
-    serverStatus: function() {
-        return API.ajaxJSONDeferred('http://api.' + host + '/server/status.json');
+    sjaxJSON: function(url) {
+        return $.parseJSON($.ajax({
+            url: url,
+            dataType: 'json',
+            async: false
+        }).responseText);
+    }
+    serverStatus: function(world) {
+        return mainWorldFallback(world).then(function(world) {
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/status.json');
+        });
     },
     stringData: function() {
         return API.ajaxJSONDeferred('http://assets.' + host + '/json/strings.json');
@@ -505,57 +537,84 @@ var API = {
         });
     },
     peopleData: function() {
-        return API.ajaxJSONDeferred('/assets/serverstatus/people.json');
+        return API.ajaxJSONDeferred('http://api.' + host + '/v2/people.json');
     },
     people: function() {
-        return API.peopleData().then(function(people_data) {
-            return new People('people' in people_data ? people_data['people'] : people_data);
+        return API.peopleData().then(function(peopleData) {
+            return new People(peopleData.people);
         });
     },
-    personById: function(playerID) {
-        return API.ajaxJSONDeferred('http://api.' + host + '/player/' + playerID + '/info.json').then(function(personData) {
-            return new Person(personData);
+    personById: function(wurstminebergID) {
+        return API.ajaxJSONDeferred('http://api.' + host + '/v2/player/' + playerID + '/info.json').then(function(personData) {
+            return new Person(wurstminebergID, personData);
         }, function(deferred, error, description) {
             return undefined;
         });
     },
-    statData: function() {
-        return API.ajaxJSONDeferred('http://api.' + host + '/server/playerstats/general.json');
+    statData: function(world) {
+        return mainWorldFallback(world).then(function(world) {
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/playerstats/general.json');
+        });
     },
-    achievementStatData: function() {
-        return API.ajaxJSONDeferred('http://api.' + host + '/server/playerstats/achievement.json');
+    achievementStatData: function(world) {
+        return mainWorldFallback(world).then(function(world) {
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/playerstats/achievement.json');
+        });
     },
-    person: function(player) {
-        return API.personById(player.id)
+    playerData: function(person, world) {
+        return mainWorldFallback(world).then(function(world) {
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/player/' + person.id + '/playerdata.json');
+        });
     },
-    playerData: function(person) {
-        return API.ajaxJSONDeferred('http://api.' + host + '/player/' + person.id + '/playerdata.json');
-    },
-    personStatData: function(person) {
-        return API.ajaxJSONDeferred('http://api.' + host + '/player/' + person.id + '/stats.json');
+    personStatData: function(person, world) {
+        return mainWorldFallback(world).then(function(world) {
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/player/' + person.id + '/stats.json');
+        });
     },
     moneys: function() {
-        return API.ajaxJSONDeferred('/assets/serverstatus/moneys.json');
+        return API.ajaxJSONDeferred('http://api.' + host + '/v2/meta/moneys.json');
     },
     biomeData: function() {
         return API.ajaxJSONDeferred('http://assets.' + host + '/json/biomes.json');
     },
     biomes: function() {
-        return API.biomeData().then(function(biome_data) {
-            return new BiomeInfo(biome_data);
+        return API.biomeData().then(function(biomeData) {
+            return new BiomeInfo(biomeData);
         });
     },
     deathGamesLog: function() {
-        return API.ajaxJSONDeferred('http://api.' + host + '/deathgames/log.json');
+        return API.ajaxJSONDeferred('http://api.' + host + '/v2/minigame/deathgames/log.json');
     },
     lastSeen: function(person) {
-        return API.ajaxJSONDeferred('http://api.' + host + '/server/sessions/lastseen.json').then(function(lastSeenData) {
+        return API.ajaxJSONDeferred('http://api.' + host + '/v2/server/sessions/lastseen.json').then(function(lastSeenData) {
             if (person.id in lastSeenData) {
                 return 'leaveTime' in lastSeenData[person.id] ? dateObjectFromUTC(lastSeenData[person.id].leaveTime) : 'currentlyOnline';
             } else {
                 return null;
             }
         });
+    },
+    worldData: function() {
+        return API.ajaxJSONDeferred('http://api.' + host + '/v2/server/worlds.json');
+    },
+    mainWorld: function() {
+        return API.worldData().then(function(worldData) {
+            var ret = undefined;
+            $.each(worldData, function(worldName, worldInfo) {
+                if (worldInfo.main) {
+                    ret = worldName;
+                }
+            });
+            return ret;
+        });
+    }
+}
+
+function mainWorldFallback(world) {
+    if (typeof world === 'undefined') {
+        return API.mainWorld();
+    } else {
+        return $.when(world);
     }
 }
 
@@ -571,9 +630,9 @@ function bindTabEvents() {
         $('.section').each(function(index, element) {
             var table = $(element);
             if (table.attr('id') == selected.attr('id')) {
-                table.removeClass("hidden");
+                table.removeClass('hidden');
             } else {
-                table.addClass("hidden");
+                table.addClass('hidden');
             }
         });
     });
@@ -592,22 +651,15 @@ function selectTabWithID(id) {
     $('#' + id).tab('show');
 }
 
-function reddit_user_link(username) {
-    return 'http://www.reddit.com/user/' + username;
-}
-
-function twitter_user_link(username) {
-    return 'https://twitter.com/' + username;
-}
-
-function wiki_user_link(username) {
+function wikiUserLink(username) {
     username = username.replace(/ /g, '_');
-    return 'http://wiki.' + host + '/User:' + username;
+    return 'http://wiki.' + host + '/' + username;
 }
 
-function initialize_tooltips() {
+function initializeTooltips() {
     $(function () {
         $("[rel='tooltip']").tooltip();
+        $(".use-tooltip").tooltip();
         $("abbr").tooltip();
     });
 }
@@ -621,11 +673,11 @@ String.prototype.endsWith = function(suffix) {
     return this.indexOf(suffix, this.length - suffix.length) !== -1;
 };
 
-function linkify_headers() {
+function linkifyHeaders() {
     // Do the stuff to the headers to linkify them
 
     $.each($('h2'), function() {
-        $(this).addClass("anchor");
+        $(this).addClass('anchor');
         $(this).append('&nbsp;<a class="tag" href="#' + $(this).attr('id') + '">¶</a>');
     });
     $('h2').hover(function() {
@@ -635,8 +687,8 @@ function linkify_headers() {
     });
 }
 
-function configure_navigation() {
-    var navigation_items = $("#navbar-list > li");
+function configureNavigation() {
+    var navigation_items = $('#navbar-list > li');
     var windowpath = window.location.pathname;
 
     // Iterate over the list items and change the container of the active nav item to active
@@ -649,12 +701,12 @@ function configure_navigation() {
     });
 }
 
-function set_anchor_height() {
-    var navigation_height = $(".navbar").css("height");
-    var anchor = $(".anchor");
+function setAnchorHeight() {
+    var navigation_height = $('.navbar').css('height');
+    var anchor = $('.anchor');
 
-    anchor.css("padding-top", "+=" + navigation_height);
-    anchor.css("margin-top", "-=" + navigation_height);
+    anchor.css('padding-top', '+=' + navigation_height);
+    anchor.css('margin-top', '-=' + navigation_height);
 }
 
 function minecraftTicksToRealMinutes(minecraftTicks) {
