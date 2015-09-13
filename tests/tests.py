@@ -46,7 +46,10 @@ def validate_item_stub(item_stub, must_be_block=False, must_be_item=False, *, it
     if 'tagValue' in item_stub:
         assert 'damage' not in item_stub
         assert 'effect' not in item_stub
-        assert str(item_stub['tagValue']) in item['tagVariants']
+        if item_stub['tagValue'] is None:
+            assert '' in item['tagVariants']
+        else:
+            assert str(item_stub['tagValue']) in item['tagVariants']
     if 'consumed' in item_stub:
         if not isinstance(item_stub['consumed'], bool):
             validate_item_stub(item_stub['consumed'], must_be_block, must_be_item, items=items)

@@ -12,14 +12,14 @@ The fields for the damage values, status effects, and tag variants implicitly in
 * damageValues: damage values of the item, with the fields that differ from the default.
 * effects: variations of the item with status effects, with the fields that differ from the default.
 * tagPath: an array describing a key path from the item's "tag" tag to the NBT tag name for which the tagVariants field defines item variants.
-* tagVariants: an object mapping possible values (converted to strings) of the NBT tag specified by the tagPath field to variants of the item, with the fields that differ from the default.
+* tagVariants: an object mapping possible values (converted to strings) of the NBT tag specified by the tagPath field to variants of the item, with the fields that differ from the default. A variant without the tag is represented using the empty string as its key.
 * obtaining: an array of “method of obtaining” objects. These contain information on obtaining items and blocks. Methods of obtaining common to all blocks or items, such as placing a block or throwing an item on the ground and picking it back up, are not included. A method of obtaining has a type, which is a required field, and other fields depending on the type. The following types are defined:
     * craftingShaped: the item can be crafted with a shaped recipe.
         * recipe: an array of 9 item stubs, listed in ltr rows from top to bottom. An item stub may be a string containing the new-style item ID, null for an empty crafting square, or an object with the following keys:
             * id: the new-style item ID.
             * damage: the damage value, or an array of allowed damage values. Defaults to all damage values.
             * effect: the new-style status effect ID, or an array of allowed effect IDs. Defaults to any or no effect.
-            * tagValue: the value of the required NBT tag (as specified by tagPath in the item info), if any. Defaults to any or no value.
+            * tagValue: the value of the required NBT tag (as specified by tagPath in the item info), or null for no value. Defaults to any or no value.
             * consumed: whether or not the item is consumed during the crafting process. Defaults to true. May also be an item stub specifying which item it turns into after crafting.
             * amount: the amount of items required, used for the "trading" method type.
         * outputAmount: the number of items created by crafting once. Defaults to 1.
