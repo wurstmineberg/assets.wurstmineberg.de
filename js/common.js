@@ -502,13 +502,6 @@ var API = {
             return ajaxData;
         });
     },
-    sjaxJSON: function(url) {
-        return $.parseJSON($.ajax({
-            url: url,
-            dataType: 'json',
-            async: false
-        }).responseText);
-    }
     serverStatus: function(world) {
         return mainWorldFallback(world).then(function(world) {
             return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/status.json');
