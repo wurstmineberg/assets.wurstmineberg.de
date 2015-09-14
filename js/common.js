@@ -12,22 +12,6 @@ function dateObjectFromUTC(s) { // modified from http://stackoverflow.com/a/1551
     return new Date(Date.UTC(+s[0], --s[1], +s[2], +s[3], +s[4], +s[5], 0));
 }
 
-function imageStack(images, attributes) {
-    attributes = typeof attributes === 'undefined' ? {} : attributes;
-    attributes['src'] = images[0];
-    function errorHandler(imgs, attrs, index) {
-        return function() {
-            if (index >= imgs.length) {
-                return;
-            }
-            attrs['src'] = imgs[index + 1];
-            $(this).replaceWith($('<img>', attrs).on('error', errorHandler(imgs, attrs, index + 1)));
-        };
-    }
-
-    return $('<img>', attributes).on('error', errorHandler(images, attributes, 0));
-}
-
 function zeroFill(n, l, r) { //FROM http://stackoverflow.com/a/21541030/667338
     a = String(n).match(/(^-?)([0-9A-Za-z]*)\.?([0-9A-Za-z]*)/);
     return a ? a[1] + (Array(l).join(0) + a[2]).slice(-Math.max(l, a[2].length)) + ('undefined' !== typeof r ? (0 < r ? '.' : '') + (a[3] + Array(r + 1).join(0)).slice(0, r) : a[3] ? '.' + a[3] : '') : 0;
@@ -816,7 +800,7 @@ function username_to_minecraft_nick(username, people) {
     return minecraftname;
 }
 
-function html_player_list(people, avas, text, urls, useWikiArticles) {
+function html_player_list(people, avas, text, urls, useWikiArticles) { //TODO fix for new avatar system (use only player heads)
     avas = typeof avas === 'undefined' ? true : avas;
     useWikiArticles = typeof useWikiArticles === 'undefined' ? false : useWikiArticles;
     var $list = $('<span>');
