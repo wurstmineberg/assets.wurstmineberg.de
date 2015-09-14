@@ -3058,88 +3058,11 @@
             },
             {
                 "id": "minecraft:spectral_arrow"
-            }
-        ],
-        "2": [
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 15
             },
             {
                 "exists": false,
                 "id": "minecraft:shield",
-                "tagValue": 14
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 13
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 12
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 11
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 10
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 9
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 8
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 7
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 6
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 5
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 4
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 3
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 2
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 1
-            },
-            {
-                "exists": false,
-                "id": "minecraft:shield",
-                "tagValue": 0
+                "tagValue": null
             }
         ]
     },
