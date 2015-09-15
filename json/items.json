@@ -6965,6 +6965,7 @@
             "image": "shield.png",
             "itemID": 442,
             "name": "Shield",
+            "stackable": false,
             "tagPath": [
                 "BlockEntityTag",
                 "Base"
