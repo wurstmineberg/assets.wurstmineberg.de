@@ -26,7 +26,8 @@ h2 {
 
 .people-avatar > img {
     margin-right: 5px;
-    min-width: 32px;
+    width: 32px;
+    height: 32px;
 }
 
 .navbar-personaltools {
