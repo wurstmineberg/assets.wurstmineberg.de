@@ -219,15 +219,7 @@ function People(peopleData) {
             }));
         } else if (/^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$/.test(id)) {
             // Minecraft UUID
-            return API.ajaxJSONDeferred('https://api.mojang.com/user/profiles/' + id + '/names').then(function(names) {
-                return new Person(id, {
-                    minecraft: {
-                        uuid: id,
-                        nicks: _.map(names, function(nameInfo) { return nameInfo.name; })
-                    }
-                });
-            });
-            return $.when(new Person(id, {})); //TODO fill data as possible
+            return API.personById(id);
         } else {
             return undefined;
         }
@@ -552,21 +544,11 @@ var API = {
         });
     },
     personById: function(playerID) {
-        if (/^[a-z][0-9a-z]{1,15}$/.test(id)) {
-            // Wurstmineberg ID
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/player/' + playerID + '/info.json').then(function(personData) {
-                return new Person(wurstminebergID, personData);
-            }, function(deferred, error, description) {
-                return undefined;
-            });
-        } else if (/^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$/.test(id)) {
-            // Minecraft UUID
-            return API.people().then(function(people) {
-                return people.personById(playerID);
-            });
-        } else {
+        return API.ajaxJSONDeferred('http://api.' + host + '/v2/player/' + playerID + '/info.json').then(function(personData) {
+            return new Person(wurstminebergID, personData);
+        }, function(deferred, error, description) {
             return undefined;
-        }
+        });
     },
     statData: function(world) {
         return mainWorldFallback(world).then(function(world) {
