@@ -737,7 +737,7 @@ function prettifyStatsValue(key, value) {
     } else if (key.startsWith('damage')) {
         // unit: hearts
         return (Math.floor(value / 10) / 2) + ' hearts';
-    } else if (key == 'talkedToVillager' || key == 'tradedWithVillager') {
+    } else if (key == 'talkedToVillager' || key == 'tradedWithVillager' || key == 'sleepInBed') {
         // unit: times
         if (value == 0) {
             return 'never';
