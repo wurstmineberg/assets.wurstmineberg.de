@@ -238,8 +238,8 @@ function Biome(biomeData) {
     this.id = biomeData.id;
 
     this.description = function() {
-        if ('description' in biome_data) {
-            return biome_data.description;
+        if ('description' in biomeData) {
+            return biomeData.description;
         } else {
             return '';
         }
@@ -256,7 +256,7 @@ function Biome(biomeData) {
 
     this.adventuringTime = function() {
         if ('adventuringTime' in biomeData) {
-            return biome_data.adventuringTime;
+            return biomeData.adventuringTime;
         } else {
             return true;
         }
