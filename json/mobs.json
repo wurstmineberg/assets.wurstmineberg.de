@@ -50,6 +50,12 @@
                 "horse": {},
                 "mule": {
                     "name": "Mule"
+                },
+                "skeleton": {
+                    "name": "Skeleton Horse"
+                },
+                "zombie": {
+                    "name": "Zombie Horse"
                 }
             }
         },

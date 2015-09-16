@@ -1077,7 +1077,41 @@
         "bone": {
             "image": "bone.png",
             "itemID": 352,
-            "name": "Bone"
+            "name": "Bone",
+            "obtaining": [
+                {
+                    "amountMax": 6,
+                    "amountMin": 4,
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 6,
+                    "amountMin": 4,
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "EntityHorse",
+                    "subtype": "skeleton",
+                    "type": "entityDeath"
+                },
+                {
+                    "category": "junk",
+                    "type": "fishing",
+                    "weight": 0.12048192771084337
+                }
+            ]
         },
         "book": {
             "image": "book.png",
@@ -6824,7 +6858,47 @@
         "rotten_flesh": {
             "image": "rottenflesh.png",
             "itemID": 367,
-            "name": "Rotten Flesh"
+            "name": "Rotten Flesh",
+            "obtaining": [
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMaxLooting": 4,
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "EntityHorse",
+                    "subtype": "zombie",
+                    "type": "entityDeath"
+                },
+                {
+                    "category": "junk",
+                    "type": "fishing",
+                    "weight": 0.12048192771084337
+                },
+                {
+                    "amountMax": 7,
+                    "amountMin": 3,
+                    "structure": "desertTemple",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 7,
+                    "amountMin": 3,
+                    "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                }
+            ]
         },
         "saddle": {
             "image": "saddle.png",
