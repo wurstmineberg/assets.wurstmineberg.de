@@ -288,53 +288,55 @@ function displayBiomesStatData(achievement_stat_data, biome_data, people) {
     $('#loading-achievements-table-biome-track').remove();
 }
 
-function display_deathgames_log(death_games_log, people) {
-    death_games_log['log'].forEach(function(logEntry) {
-        $tr = $('<tr>').html('<td>' + logEntry['date'] + '</td>');
-        $tr.append($('<td>').html(html_player_list([people.personById(logEntry['attacker'])])));
-        $tr.append($('<td>').html(html_player_list([people.personById(logEntry['target'])])));
-        $tr.append($('<td>').html(logEntry['success'] ? '<span class="fa fa-check fa-fw text-success"></span>' : '<span class="fa fa-times fa-fw text-danger"></span>'));
-        $('#loading-deathgames-log').after($tr);
+function displayDeathGamesLog(deathGamesLog, people) {
+    deathGamesLog.log.forEach(function(logEntry) {
+        $.when(people.personById(logEntry.attacker), people.personById(logEntry.target)).done(function(attacker, target) {
+            $tr = $('<tr>').html('<td>' + logEntry.date + '</td>');
+            $tr.append($('<td>').html(html_player_list([attacker])));
+            $tr.append($('<td>').html(html_player_list([target])));
+            $tr.append($('<td>').html(logEntry.success ? '<span class="fa fa-check fa-fw text-success"></span>' : '<span class="fa fa-times fa-fw text-danger"></span>'));
+            $('#loading-deathgames-log').after($tr);
+        });
     });
     $('#loading-deathgames-log').remove();
 }
 
-function display_deathgames_stat_data(death_games_log, people) {
-    var log = death_games_log['log'];
+function displayDeathGamesStatData(deathGamesLog, people) {
+    var log = deathGamesLog.log;
     var participating = people.activePeople;
-    if ('participating' in death_games_log) {
-        participating = people.sorted(death_games_log['participating']);
+    if ('participating' in deathGamesLog) {
+        participating = people.sorted(deathGamesLog.participating);
     }
     var stats = {
-        'kills': function(person) {
+        kills: function(person) {
             return log.filter(function(logEntry) {
-                if (logEntry['success']) {
-                    return (logEntry['attacker'] == person.id);
+                if (logEntry.success) {
+                    return (logEntry.attacker == person.id);
                 } else {
-                    return (logEntry['target'] == person.id);
+                    return (logEntry.target == person.id);
                 }
             }).length;
         },
-        'deaths': function(person) {
+        deaths: function(person) {
             return log.filter(function(logEntry) {
-                if (logEntry['success']) {
-                    return (logEntry['target'] == person.id);
+                if (logEntry.success) {
+                    return (logEntry.target == person.id);
                 } else {
-                    return (logEntry['attacker'] == person.id);
+                    return (logEntry.attacker == person.id);
                 }
             }).length;
         },
-        'diamonds': function(person) {
+        diamonds: function(person) {
             ret = 0;
             log.forEach(function(logEntry) {
-                if (logEntry['attacker'] == person.id) {
-                    if (logEntry['success']) {
+                if (logEntry.attacker == person.id) {
+                    if (logEntry.success) {
                         ret++;
                     } else {
                         ret--;
                     }
-                } else if (logEntry['target'] == person.id) {
-                    if (logEntry['success']) {
+                } else if (logEntry.target == person.id) {
+                    if (logEntry.success) {
                         ret--;
                     } else {
                         ret++;
@@ -343,34 +345,34 @@ function display_deathgames_stat_data(death_games_log, people) {
             });
             return ret;
         },
-        'attacks': function(person) {
+        attacks: function(person) {
             return log.filter(function(logEntry) {
-                return (logEntry['attacker'] == person.id);
+                return (logEntry.attacker == person.id);
             }).length;
         },
         'attacks-success': function(person) {
             return log.filter(function(logEntry) {
-                return (logEntry['attacker'] == person.id && logEntry['success']);
+                return (logEntry.attacker == person.id && logEntry.success);
             }).length;
         },
         'attacks-fail': function(person) {
             return log.filter(function(logEntry) {
-                return (logEntry['attacker'] == person.id && !logEntry['success']);
+                return (logEntry.attacker == person.id && !logEntry.success);
             }).length;
         },
-        'defense': function(person) {
+        defense: function(person) {
             return log.filter(function(logEntry) {
-                return (logEntry['target'] == person.id);
+                return (logEntry.target == person.id);
             }).length;
         },
         'defense-success': function(person) {
             return log.filter(function(logEntry) {
-                return (logEntry['target'] == person.id && !logEntry['success']);
+                return (logEntry.target == person.id && !logEntry.success);
             }).length;
         },
         'defense-fail': function(person) {
             return log.filter(function(logEntry) {
-                return (logEntry['target'] == person.id && logEntry['success']);
+                return (logEntry.target == person.id && logEntry.success);
             }).length;
         }
     }
@@ -438,9 +440,9 @@ function loadAchievementsStatData() {
 }
 
 function loadDeathgamesStatData() {
-    $.when(API.deathGamesLog(), API.people()).done(function(death_games_log, people) {
-        display_deathgames_log(death_games_log, people);
-        display_deathgames_stat_data(death_games_log, people);
+    $.when(API.deathGamesLog(), API.people()).done(function(deathGamesLog, people) {
+        displayDeathGamesLog(deathGamesLog, people);
+        displayDeathGamesStatData(deathGamesLog, people);
     }).fail(function() {
         $('#loading-deathgames-log').html('<td colspan="4">Error: Could not load Death Games log</td>');
     });

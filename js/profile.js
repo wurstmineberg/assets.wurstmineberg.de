@@ -160,7 +160,7 @@ function displayProfileData(person, items, people, statData) {
     // Invited By
     if (person.invitedBy) {
         $('#profile-stat-row-invited-by').children('.value').html($('<a>', {'href': '/people/' + person.invitedBy}).text(person.invitedBy));
-        $.when(API.personById(person.invitedBy)).done(function(invitedBy) {
+        $.when(people.personById(person.invitedBy)).done(function(invitedBy) {
             $('#profile-stat-row-invited-by').children('.value').html(html_player_list([invitedBy]));
         }).fail(function() {
             //

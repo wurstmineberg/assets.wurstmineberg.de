@@ -11,10 +11,10 @@ function getOnlineData(list) {
             }
         }
         $('#whitelistCount').html(people.activePeople.length);
-        onlinePeople = list.map(function(wurstminebergID) {
-            return people.personById(wurstminebergID);
+        onlinePeople = people.peopleByID(list);
+        $.when(onlinePeople).done(function(onlinePeople) {
+            $('#peopleList').html(html_player_list(people.sorted(onlinePeople)));
         });
-        $('#peopleList').html(html_player_list(people.sorted(onlinePeople)));
     }).fail(function() {
         $('#peopleCount').text('(error)');
         $('#whitelistCount').text('(error)');

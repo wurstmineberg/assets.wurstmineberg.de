@@ -55,13 +55,19 @@ function sanitized(string, allowedTags) { //FROM http://stackoverflow.com/a/1189
     return div.innerHTML;
 }
 
-function Person(wurstminebergID, personData) {
+function Person(personID, personData) {
     var _this = this;
-    this.id = wurstminebergID;
+    this.id = personID;
+    if (/^[a-z][0-9a-z]{1,15}$/.test(this.id)) {
+        this.wurstminebergID = this.id;
+        this.minecraftUUID = personData.minecraft.uuid;
+    } else {
+        this.minecraftUUID = this.id;
+    }
     this.description = personData.description;
     this.favColor = personData.favColor;
     if ('base' in personData) {
-        this.favItem = personData.base.tunnelItem;
+        this.favItem = personData.base[0].tunnelItem;
     }
     this.gravatar = personData.gravatar;
     this.invitedBy = function() {
@@ -149,7 +155,7 @@ function Person(wurstminebergID, personData) {
         if ('name' in personData) {
             return personData.name;
         } else {
-            return wurstminebergID;
+            return this.id;
         }
     }();
     this.wikiArticle = function(fallback) {
@@ -206,10 +212,34 @@ function People(peopleData) {
     this.count = this.list.length;
 
     this.personById = function(id) {
-        return _.find(this.list, function(person) {
-            return 'id' in person && person.id === id;
-        });
+        if (/^[a-z][0-9a-z]{1,15}$/.test(id)) {
+            // Wurstmineberg ID
+            return $.when(_.find(this.list, function(person) {
+                return 'id' in person && person.id === id;
+            }));
+        } else if (/^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$/.test(id)) {
+            // Minecraft UUID
+            return API.ajaxJSONDeferred('https://api.mojang.com/user/profiles/' + id + '/names').then(function(names) {
+                return new Person(id, {
+                    minecraft: {
+                        uuid: id,
+                        nicks: _.map(names, function(nameInfo) { return nameInfo.name; })
+                    }
+                });
+            });
+            return $.when(new Person(id, {})); //TODO fill data as possible
+        } else {
+            return undefined;
+        }
     };
+
+    this.peopleByID = function(list) {
+        return _.reduce(list, function(future, playerID) {
+            return $.when(future, _this.personById(playerID)).then(function(list, player) {
+                return list.concat([player]);
+            });
+        }, $.when([]));
+    }
 
     this.personByMinecraft = function(id) {
         return _.find(this.list, function(person) {
@@ -521,12 +551,22 @@ var API = {
             return new People(peopleData.people);
         });
     },
-    personById: function(wurstminebergID) {
-        return API.ajaxJSONDeferred('http://api.' + host + '/v2/player/' + playerID + '/info.json').then(function(personData) {
-            return new Person(wurstminebergID, personData);
-        }, function(deferred, error, description) {
+    personById: function(playerID) {
+        if (/^[a-z][0-9a-z]{1,15}$/.test(id)) {
+            // Wurstmineberg ID
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/player/' + playerID + '/info.json').then(function(personData) {
+                return new Person(wurstminebergID, personData);
+            }, function(deferred, error, description) {
+                return undefined;
+            });
+        } else if (/^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$/.test(id)) {
+            // Minecraft UUID
+            return API.people().then(function(people) {
+                return people.personById(playerID);
+            });
+        } else {
             return undefined;
-        });
+        }
     },
     statData: function(world) {
         return mainWorldFallback(world).then(function(world) {
@@ -761,46 +801,7 @@ function prettifyStatsValue(key, value) {
     }
 }
 
-function minecraft_nick_to_username(minecraft, people) {
-    var playername;
-    $.each(people, function(index, values) {
-        if (['minecraft'] in values) {
-            if (minecraft === values['minecraft']) {
-                if ('name' in values) {
-                    playername = values['name'];
-                } else {
-                    playername = values['id'];
-                }
-                return;
-            }
-        }
-    });
-    return playername;
-}
-
-function username_for_player_values(values) {
-    if ('name' in values) {
-        return values['name'];
-    }
-    return values['id'];
-}
-
-function username_to_minecraft_nick(username, people) {
-    var minecraftname;
-
-    $.each(people, function(index, values) {
-        var name = username_for_player_values(values)
-        if (name === username) {
-            if ('minecraft' in values) {
-                minecraftname = values['minecraft'];
-            }
-        }
-    });
-
-    return minecraftname;
-}
-
-function html_player_list(people, avas, text, urls, useWikiArticles) { //TODO fix for new avatar system (use only player heads)
+function html_player_list(people, avas, text, urls, useWikiArticles) {
     avas = typeof avas === 'undefined' ? true : avas;
     useWikiArticles = typeof useWikiArticles === 'undefined' ? false : useWikiArticles;
     var $list = $('<span>');
