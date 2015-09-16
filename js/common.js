@@ -63,6 +63,7 @@ function Person(wurstminebergID, personData) {
     if ('base' in personData) {
         this.favItem = personData.base.tunnelItem;
     }
+    this.gravatar = personData.gravatar;
     this.invitedBy = function() {
         var ret = null;
         if ('statusHistory' in personData) {
@@ -810,7 +811,23 @@ function html_player_list(people, avas, text, urls, useWikiArticles) { //TODO fi
         var personText = typeof text === 'undefined' ? person.interfaceName : text[index];
         var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle((isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : (isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : urls[index])}).text(personText);
         if (avas) {
-            $a.prepend(person.html_ava(16));
+            if (person.gravatar) {
+                $a.prepend($('<img>', {
+                    class: 'avatar',
+                    id: 'avatar-' + person.id,
+                    src: person.gravatar + '?d=404&s=16',
+                    srcset: person.gravatar + '?d=404&s=16 1x, ' + person.gravatar + '?d=404&s=32 2x',
+                    style: 'width: 16px; height: 16px;'
+                }));
+            } else {
+                $a.prepend($('<img>', {
+                    class: 'avatar nearest-neighbor',
+                    id: 'avatar-' + person.id,
+                    src: 'http://api.' + host + '/v2/player/' + person.id + '/skin/render/head/16.png',
+                    srcset: 'http://api.' + host + '/v2/player/' + person.id + '/skin/render/head/16.png 1x, http://api.' + host + '/v2/player/' + person.id + '/skin/render/head/32.png 2x',
+                    style: 'width: 16px; height: 16px;'
+                }));
+            }
         }
         $list.append($('<span>', {'class': 'player-avatar-name'}).html($a));
     });
