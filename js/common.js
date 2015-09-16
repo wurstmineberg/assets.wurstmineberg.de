@@ -545,7 +545,7 @@ var API = {
     },
     personById: function(playerID) {
         return API.ajaxJSONDeferred('http://api.' + host + '/v2/player/' + playerID + '/info.json').then(function(personData) {
-            return new Person(wurstminebergID, personData);
+            return new Person(playerID, personData);
         }, function(deferred, error, description) {
             return undefined;
         });
