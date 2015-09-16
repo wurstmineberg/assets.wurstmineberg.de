@@ -124,7 +124,6 @@ function Person(wurstminebergID, personData) {
         }
         return ret;
     };
-    this.reddit = person_data['reddit'];
     if ('statusHistory' in personData) {
         this.status = personData.statusHistory[personData.statusHistory.length - 1].status;
     }
