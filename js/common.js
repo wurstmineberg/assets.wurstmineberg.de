@@ -155,12 +155,12 @@ function Person(personID, personData) {
         if ('name' in personData) {
             return personData.name;
         } else {
-            return this.id;
+            return _this.id;
         }
     }();
     this.wikiArticle = function(fallback) {
-        if (this.wiki) {
-            return wikiUserLink(this.wiki);
+        if (_this.wiki) {
+            return wikiUserLink(_this.wiki);
         } else {
             return fallback;
         }
