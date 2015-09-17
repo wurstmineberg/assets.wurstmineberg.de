@@ -237,11 +237,32 @@ function People(peopleData) {
         }, $.when([]));
     }
 
+    this.mapObject = function(object) {
+        return _.reduce(_.pairs(object), function(future, keyValuePair) {
+            return $.when(future, _this.personById(keyValuePair[0])).then(function(list, player) {
+                return _.sortBy(list.concat({
+                    player: player,
+                    value: keyValuePair[1]
+                }), function(playerValuePair) {
+                    return _this.sortKey(playerValuePair.player);
+                });
+            });
+        }, $.when([]));
+    }
+
     this.personByMinecraft = function(id) {
         return _.find(this.list, function(person) {
             return 'minecraft' in person && person.minecraft === id;
         });
     };
+
+    this.sortKey = function(person) {
+        if (typeof person.wurstminebergID === 'undefined') {
+            return _this.list.length; // unknown person, sort after known people
+        } else {
+            return _.findIndex(_this.list, function(iterPerson) { return iterPerson.wurstminebergID === person.wurstminebergID; });
+        }
+    }
 
     this.sorted = function(peopleList) {
         if (typeof peopleList === 'undefined') {
@@ -253,13 +274,7 @@ function People(peopleData) {
             } else {
                 return person;
             }
-        }), function(person) {
-            if (typeof person.wurstminebergID === 'undefined') {
-                return _this.list.length; // unknown person, sort after known people
-            } else {
-                return _.findIndex(_this.list, function(iterPerson) { return iterPerson.wurstminebergID === person.wurstminebergID; });
-            }
-        });
+        }), _this.sortKey);
     };
 }
 

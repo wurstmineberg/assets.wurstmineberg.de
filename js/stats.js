@@ -1,105 +1,108 @@
 function displayLeaderboardStatData(statData, stringData, people) {
-    var stats = [];
-    var loadingLeaderboards = $('#loading-stat-leaderboard-table');
+    $.when(people.mapObject(statData)).done(function(statData) {
+        var stats = [];
+        var loadingLeaderboards = $('#loading-stat-leaderboard-table');
 
-    $.each(statData, function(minecraftName, playerStats) {
-        player = people.personByMinecraft(minecraftName);
-        if (player == undefined) {
-            return;
-        }
-        $.each(playerStats, function(key, value) {
-            stat = key.split('.');
-            var override = false;
-            var addName = false;
-            var found = false;
-            var matchedIndex;
-            var statToOverride;
-
-            var name = stat[1];
-            if ('stats' in stringData) {
-                if ('general' in stringData.stats) {
-                    if (stat[1] in stringData.stats.general) {
-                        name = stringData.stats.general[stat[1]];
-                    };
-                };
+        statData.forEach(function(playerStatsPair) {
+            var player = playerStatsPair.player;
+            var playerStats = playerStatsPair.value;
+            if (player == undefined) {
+                return;
             }
+            $.each(playerStats, function(key, value) {
+                stat = key.split('.');
+                var override = false;
+                var addName = false;
+                var found = false;
+                var matchedIndex;
+                var statToOverride;
 
-            $.each(stats, function(index, playerStat) {
-                if (found) {
-                    return;
+                var name = stat[1];
+                if ('stats' in stringData) {
+                    if ('general' in stringData.stats) {
+                        if (stat[1] in stringData.stats.general) {
+                            name = stringData.stats.general[stat[1]];
+                        };
+                    };
                 }
-                if (playerStat.id === key) {
-                    found = true;
-                    if (value > playerStat.value) {
-                        stats[index].secondPlayers = stats[index].players;
-                        stats[index].secondValue = stats[index].value;
-                        stats[index].players = [player];
-                        stats[index].value = value;
-                    } else if (value == playerStat.value) {
-                        stats[index].players.push(player);
-                    } else if (value > playerStat.secondValue) {
-                        stats[index].secondPlayers = [player];
-                        stats[index].secondValue = value;
-                    } else if (value == playerStat.secondValue) {
-                        stats[index].secondPlayers.push(player);
-                    }
-                    if (value < playerStat.minValue) {
-                        stats[index].minPlayers = [player];
-                        stats[index].minValue = value;
-                    } else if (value == playerStat.minValue) {
-                        stats[index].minPlayers.push(player);
-                    }
-                }
-            });
 
-            if (!found) {
-                stats.push({
-                    id: key,
-                    name: name,
-                    players: [player],
-                    value: value,
-                    secondPlayers: [],
-                    secondValue: 0,
-                    minPlayers: [player],
-                    minValue: value
+                $.each(stats, function(index, playerStat) {
+                    if (found) {
+                        return;
+                    }
+                    if (playerStat.id === key) {
+                        found = true;
+                        if (value > playerStat.value) {
+                            stats[index].secondPlayers = stats[index].players;
+                            stats[index].secondValue = stats[index].value;
+                            stats[index].players = [player];
+                            stats[index].value = value;
+                        } else if (value == playerStat.value) {
+                            stats[index].players.push(player);
+                        } else if (value > playerStat.secondValue) {
+                            stats[index].secondPlayers = [player];
+                            stats[index].secondValue = value;
+                        } else if (value == playerStat.secondValue) {
+                            stats[index].secondPlayers.push(player);
+                        }
+                        if (value < playerStat.minValue) {
+                            stats[index].minPlayers = [player];
+                            stats[index].minValue = value;
+                        } else if (value == playerStat.minValue) {
+                            stats[index].minPlayers.push(player);
+                        }
+                    }
                 });
-            };
+
+                if (!found) {
+                    stats.push({
+                        id: key,
+                        name: name,
+                        players: [player],
+                        value: value,
+                        secondPlayers: [],
+                        secondValue: 0,
+                        minPlayers: [player],
+                        minValue: value
+                    });
+                };
+            });
         });
+
+        stats.sort(function(a, b) {
+            nameA = a.name;
+            nameB = b.name;
+            return nameA.localeCompare(nameB);
+        });
+
+        $.each(stats, function(index, data) {
+            var key = data.id;
+            var stat = key.split('.');
+            var name = data.name;
+
+            var players = data.players;
+            var playerHTML = html_player_list(people.sorted(players));
+            var secondPlayers = data.secondPlayers;
+            var secondPlayerHTML = secondPlayers.length ? html_player_list(people.sorted(secondPlayers)) : $('<span>', {class: 'muted'}).text('everyone else');
+            var minPlayers = data.minPlayers;
+            var minPlayerHTML = html_player_list(people.sorted(minPlayers));
+            var value = prettifyStatsValue(stat[1], data.value);
+            var secondValue = prettifyStatsValue(stat[1], data.secondValue);
+            if (data.secondPlayers.length == 0) {
+                secondValue = $('<span>', {class: 'muted'}).text(secondValue);
+            }
+            var minValue = prettifyStatsValue(stat[1], data.minValue);
+
+            $row = $('<tr>', {class: 'leaderboard-row'}).html($('<td>', {'class': 'stat'}).html('<a href="//images.' + host + '/wurstminestats/statspage/' + stat[1] + '.png">' + name + '</a>'));
+            $row.append($('<td>', {class: 'leading-player'}).html(playerHTML));
+            $row.append($('<td>', {class: 'value'}).html(value));
+            $row.append($('<td>', {class: 'second-player'}).html(secondPlayerHTML));
+            $row.append($('<td>', {class: 'secondvalue'}).html(secondValue));
+            loadingLeaderboards.before($row);
+        });
+
+        $('#loading-stat-leaderboard-table').remove();
     });
-
-    stats.sort(function(a, b) {
-        nameA = a.name;
-        nameB = b.name;
-        return nameA.localeCompare(nameB);
-    });
-
-    $.each(stats, function(index, data) {
-        var key = data.id;
-        var stat = key.split('.');
-        var name = data.name;
-
-        var players = data.players;
-        var playerHTML = html_player_list(people.sorted(players));
-        var secondPlayers = data.secondPlayers;
-        var secondPlayerHTML = secondPlayers.length ? html_player_list(people.sorted(secondPlayers)) : $('<span>', {'class': 'muted'}).text('everyone else');
-        var minPlayers = data.minPlayers;
-        var minPlayerHTML = html_player_list(people.sorted(minPlayers));
-        var value = prettifyStatsValue(stat[1], data.value);
-        var secondValue = prettifyStatsValue(stat[1], data.secondValue);
-        if (data.secondPlayers.length == 0) {
-            secondValue = $('<span>', {'class': 'muted'}).text(secondValue);
-        }
-        var minValue = prettifyStatsValue(stat[1], data.minValue);
-
-        $row = $('<tr>', {'class': 'leaderboard-row'}).html($('<td>', {'class': 'stat'}).html('<a href="//images.' + host + '/wurstminestats/statspage/' + stat[1] + '.png">' + name + '</a>'));
-        $row.append($('<td>', {'class': 'leading-player'}).html(playerHTML));
-        $row.append($('<td>', {'class': 'value'}).html(value));
-        $row.append($('<td>', {'class': 'second-player'}).html(secondPlayerHTML));
-        $row.append($('<td>', {'class': 'secondvalue'}).html(secondValue));
-        loadingLeaderboards.before($row);
-    });
-
-    $('#loading-stat-leaderboard-table').remove();
 }
 
 function displayMobsStatData(people, entityStats, mobData) {
@@ -414,8 +417,8 @@ function displayDeathGamesStatData(deathGamesLog, people) {
 }
 
 function loadLeaderboardStatData() {
-    $.when(API.statData(), API.stringData(), API.people()).done(function(stat_data, string_data, people) {
-        displayLeaderboardStatData(stat_data, string_data, people)
+    $.when(API.statData(), API.stringData(), API.people()).done(function(statData, stringData, people) {
+        displayLeaderboardStatData(statData, stringData, people)
     })
     .fail(function() {
         $('#loading-stat-leaderboard-table').html('<td colspan="7">Error: Could not load api.' + host + '/server/playerstats/general.json</td>');
