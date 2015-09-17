@@ -423,8 +423,10 @@ function loadLeaderboardStatData() {
 }
 
 function loadMobStatData() {
-    $.when(API.people(), API.ajaxJSONDeferred('http://api.' + host + '/server/playerstats/entity.json'), API.mobData()).done(function(people, entityStats, mobData) {
-        displayMobsStatData(people, entityStats, mobData);
+    $.when(API.mainWorld()).done(function(mainWorld) {
+        $.when(API.people(), API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + mainWorld + '/playerstats/entity.json'), API.mobData()).done(function(people, entityStats, mobData) {
+            displayMobsStatData(people, entityStats, mobData);
+        });
     });
 }
 
