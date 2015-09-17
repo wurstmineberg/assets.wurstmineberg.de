@@ -108,7 +108,7 @@ function Person(personID, personData) {
             return null;
         }
     }); // use with when/done/fail
-    this.minecraft = personData.minecraft.nicks[personData.minecraft.length - 1];
+    this.minecraft = personData.minecraft.nicks[personData.minecraft.nicks.length - 1];
     this.mobDeaths = function(entityStats) {
         var ret = {};
         if (_this.minecraft in entityStats) {
