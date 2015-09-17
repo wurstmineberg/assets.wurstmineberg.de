@@ -240,20 +240,22 @@ function People(peopleData) {
     };
 
     this.sorted = function(peopleList) {
-        peopleList = typeof peopleList === 'undefined' ? this.list : peopleList;
-        var ret = [];
-        this.list.forEach(function(person) {
-            if (_.contains(peopleList, person.id)) {
-                ret.push(person);
+        if (typeof peopleList === 'undefined') {
+            return _this.list;
+        }
+        return _.sortBy(_.map(peopleList, function(person) {
+            if (typeof person === 'string') {
+                return _this.personById(person);
             } else {
-                peopleList.forEach(function(otherPerson) {
-                    if (person.id == otherPerson.id) {
-                        ret.push(person);
-                    }
-                });
+                return person;
+            }
+        }), function(person) {
+            if (typeof person.wurstminebergID === 'undefined') {
+                return _this.list.length; // unknown person, sort after known people
+            } else {
+                return _findIndex(_this.list, function(iterPerson) { return iterPerson.wurstminebergID === person.wurstminebergID; });
             }
         });
-        return ret;
     };
 }
 
