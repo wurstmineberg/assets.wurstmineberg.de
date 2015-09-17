@@ -257,7 +257,7 @@ function People(peopleData) {
             if (typeof person.wurstminebergID === 'undefined') {
                 return _this.list.length; // unknown person, sort after known people
             } else {
-                return _findIndex(_this.list, function(iterPerson) { return iterPerson.wurstminebergID === person.wurstminebergID; });
+                return _.findIndex(_this.list, function(iterPerson) { return iterPerson.wurstminebergID === person.wurstminebergID; });
             }
         });
     };
