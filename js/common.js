@@ -154,8 +154,12 @@ function Person(personID, personData) {
     this.interfaceName = function() {
         if ('name' in personData) {
             return personData.name;
+        } else if (typeof _this.wurstminebergID !== 'undefined') {
+            return _this.wurstminebergID;
+        } else if (typeof _this.minecraft !== 'undefined') {
+            return _this.minecraft;
         } else {
-            return _this.id;
+            return _this.minecraftUUID;
         }
     }();
     this.wikiArticle = function(fallback) {
@@ -794,7 +798,10 @@ function html_player_list(people, avas, text, urls, useWikiArticles) {
             $list.append(', ');
         }
         var personText = typeof text === 'undefined' ? person.interfaceName : text[index];
-        var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle((isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : (isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : urls[index])}).text(personText);
+        var $a = $('<span>').text(personText);
+        if (typeof person.wurstminebergID !== 'undefined') {
+            var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle((isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : (isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : urls[index])}).text(personText);
+        }
         if (avas) {
             if (person.gravatar) {
                 $a.prepend($('<img>', {
