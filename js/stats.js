@@ -10,18 +10,16 @@ function displayLeaderboardStatData(statData, stringData, people) {
                 return;
             }
             $.each(playerStats, function(key, value) {
-                stat = key.split('.');
                 var override = false;
                 var addName = false;
                 var found = false;
                 var matchedIndex;
                 var statToOverride;
 
-                var name = stat[1];
                 if ('stats' in stringData) {
                     if ('general' in stringData.stats) {
-                        if (stat[1] in stringData.stats.general) {
-                            name = stringData.stats.general[stat[1]];
+                        if (key in stringData.stats.general) {
+                            name = stringData.stats.general[key];
                         };
                     };
                 }
@@ -76,8 +74,7 @@ function displayLeaderboardStatData(statData, stringData, people) {
         });
 
         $.each(stats, function(index, data) {
-            var key = data.id;
-            var stat = key.split('.');
+            var stat = data.id;
             var name = data.name;
 
             var players = data.players;
@@ -86,14 +83,14 @@ function displayLeaderboardStatData(statData, stringData, people) {
             var secondPlayerHTML = secondPlayers.length ? html_player_list(people.sorted(secondPlayers)) : $('<span>', {class: 'muted'}).text('everyone else');
             var minPlayers = data.minPlayers;
             var minPlayerHTML = html_player_list(people.sorted(minPlayers));
-            var value = prettifyStatsValue(stat[1], data.value);
-            var secondValue = prettifyStatsValue(stat[1], data.secondValue);
+            var value = prettifyStatsValue(stat, data.value);
+            var secondValue = prettifyStatsValue(stat, data.secondValue);
             if (data.secondPlayers.length == 0) {
                 secondValue = $('<span>', {class: 'muted'}).text(secondValue);
             }
-            var minValue = prettifyStatsValue(stat[1], data.minValue);
+            var minValue = prettifyStatsValue(stat, data.minValue);
 
-            $row = $('<tr>', {class: 'leaderboard-row'}).html($('<td>', {'class': 'stat'}).html('<a href="//images.' + host + '/wurstminestats/statspage/' + stat[1] + '.png">' + name + '</a>'));
+            $row = $('<tr>', {class: 'leaderboard-row'}).html($('<td>', {class: 'stat'}).html('<a href="//images.' + host + '/wurstminestats/statspage/' + stat + '.png">' + name + '</a>'));
             $row.append($('<td>', {class: 'leading-player'}).html(playerHTML));
             $row.append($('<td>', {class: 'value'}).html(value));
             $row.append($('<td>', {class: 'second-player'}).html(secondPlayerHTML));
