@@ -109,28 +109,6 @@ function Person(personID, personData) {
         }
     }); // use with when/done/fail
     this.minecraft = personData.minecraft.nicks[personData.minecraft.nicks.length - 1];
-    this.mobDeaths = function(entityStats) {
-        var ret = {};
-        if (_this.minecraft in entityStats) {
-            $.each(entityStats[_this.minecraft], function(key, stat) {
-                if (key.startsWith('stat.entityKilledBy.')) {
-                    ret[key.substr('stat.entityKilledBy.'.length)] = stat;
-                }
-            });
-        }
-        return ret;
-    };
-    this.mobKills = function(entityStats) {
-        var ret = {};
-        if (_this.minecraft in entityStats) {
-            $.each(entityStats[_this.minecraft], function(key, stat) {
-                if (key.startsWith('stat.killEntity.')) {
-                    ret[key.substr('stat.killEntity.'.length)] = stat;
-                }
-            });
-        }
-        return ret;
-    };
     if ('statusHistory' in personData) {
         this.status = personData.statusHistory[personData.statusHistory.length - 1].status;
     }

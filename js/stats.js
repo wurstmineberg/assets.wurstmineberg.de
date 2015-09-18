@@ -106,82 +106,86 @@ function displayLeaderboardStatData(statData, stringData, people) {
 }
 
 function displayMobsStatData(people, entityStats, mobData) {
-    // By Mob
-    var byMob = {};
-    people.activePeople.forEach(function(person) {
-        $.each(person.mobDeaths(entityStats), function(mob, deaths) {
-            if (mob in byMob) {
-                if ('kills' in byMob[mob]) {
-                    if (deaths > byMob[mob].kills) {
+    $.when(people.mapObject(entityStats)).done(function(statData) {
+        var byMob = {};
+        statData.forEach(function(playerStatsPair) {
+            var person = playerStatsPair.player;
+            var playerStats = playerStatsPair.value;
+            if (person == undefined) {
+                return;
+            }
+            $.each(playerStats.entityKilledBy, function(mob, deaths) {
+                if (mob in byMob) {
+                    if ('kills' in byMob[mob]) {
+                        if (deaths > byMob[mob].kills) {
+                            byMob[mob].kills = deaths;
+                            byMob[mob].mostKilledPlayers = [person];
+                        } else if (deaths == byMob[mob].kills) {
+                            byMob[mob].mostKilledPlayers.push(person);
+                        }
+                    } else {
                         byMob[mob].kills = deaths;
                         byMob[mob].mostKilledPlayers = [person];
-                    } else if (deaths == byMob[mob].kills) {
-                        byMob[mob].mostKilledPlayers.push(person);
                     }
                 } else {
-                    byMob[mob].kills = deaths;
-                    byMob[mob].mostKilledPlayers = [person];
+                    byMob[mob] = {
+                        kills: deaths,
+                        mostKilledPlayers: [person]
+                    };
                 }
-            } else {
-                byMob[mob] = {
-                    'kills': deaths,
-                    'mostKilledPlayers': [person]
-                };
-            }
-        });
-        $.each(person.mobKills(entityStats), function(mob, kills) {
-            if (mob in byMob) {
-                if ('deaths' in byMob[mob]) {
-                    if (kills > byMob[mob].deaths) {
+            });
+            $.each(playerStats.killEntity, function(mob, kills) {
+                if (mob in byMob) {
+                    if ('deaths' in byMob[mob]) {
+                        if (kills > byMob[mob].deaths) {
+                            byMob[mob].deaths = kills;
+                            byMob[mob].mostKilledBy = [person];
+                        } else if (kills == byMob[mob].deaths) {
+                            byMob[mob].mostKilledBy.push(person);
+                        }
+                    } else {
                         byMob[mob].deaths = kills;
                         byMob[mob].mostKilledBy = [person];
-                    } else if (kills == byMob[mob].deaths) {
-                        byMob[mob].mostKilledBy.push(person);
                     }
                 } else {
-                    byMob[mob].deaths = kills;
-                    byMob[mob].mostKilledBy = [person];
+                    byMob[mob] = {
+                        deaths: kills,
+                        mostKilledBy: [person]
+                    }
                 }
-            } else {
-                byMob[mob] = {
-                    'deaths': kills,
-                    'mostKilledBy': [person]
-                }
-            }
+            });
         });
+        byMob = _.map(_.pairs(byMob), function(mobPair) {
+            var ret = mobPair[1];
+            ret.mob = mobPair[0];
+            if ('mobs' in mobData && mobPair[0] in mobData.mobs && 'name' in mobData.mobs[mobPair[0]]) {
+                ret.mob = mobData.mobs[mobPair[0]].name;
+            };
+            return ret;
+        });
+        byMob.sort(function(a, b) {
+            return a.mob.localeCompare(b.mob);
+        });
+        byMob.forEach(function(data) {
+            var $row = $('<tr>').html($('<td>').text(data.mob));
+            if ('mostKilledPlayers' in data && data.mostKilledPlayers.length) {
+                $row.append($('<td>').html(html_player_list(people.sorted(data.mostKilledPlayers))));
+                $row.append($('<td>').text(data.kills));
+            } else {
+                $row.append($('<td>').html($('<span>', {class: 'muted'}).text('no one')));
+                $row.append($('<td>').html($('<span>', {class: 'muted'}).text('0')));
+            }
+            if ('mostKilledBy' in data && data.mostKilledBy.length) {
+                $row.append($('<td>').html(html_player_list(people.sorted(data.mostKilledBy))));
+                $row.append($('<td>').text(data.deaths));
+            } else {
+                $row.append($('<td>').html($('<span>', {class: 'muted'}).text('no one')));
+                $row.append($('<td>').html($('<span>', {class: 'muted'}).text('0')));
+            }
+            $('#loading-mobs-bymob').before($row);
+        });
+        $('#loading-mobs-bymob').remove();
     });
-    byMob = _.map(_.pairs(byMob), function(mobPair) {
-        var ret = mobPair[1];
-        ret['mob'] = mobPair[0];
-        if ('mobs' in mobData && mobPair[0] in mobData.mobs && 'name' in mobData.mobs[mobPair[0]]) {
-            ret['mob'] = mobData.mobs[mobPair[0]].name;
-        };
-        return ret;
-    });
-    byMob.sort(function(a, b) {
-        return a.mob.localeCompare(b.mob);
-    });
-    byMob.forEach(function(data) {
-        var $row = $('<tr>').html($('<td>').text(data.mob));
-        if ('mostKilledPlayers' in data && data.mostKilledPlayers.length) {
-            $row.append($('<td>').html(html_player_list(people.sorted(data.mostKilledPlayers))));
-            $row.append($('<td>').text(data.kills));
-        } else {
-            $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('no one')));
-            $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('0')));
-        }
-        if ('mostKilledBy' in data && data.mostKilledBy.length) {
-            $row.append($('<td>').html(html_player_list(people.sorted(data.mostKilledBy))));
-            $row.append($('<td>').text(data.deaths));
-        } else {
-            $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('no one')));
-            $row.append($('<td>').html($('<span>', {'class': 'muted'}).text('0')));
-        }
-        $('#loading-mobs-bymob').before($row);
-    });
-    $('#loading-mobs-bymob').remove();
-    // By Player
-    //TODO
 }
 
 function prepareAchievements(achievementData, items) {
