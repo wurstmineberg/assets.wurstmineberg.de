@@ -431,7 +431,7 @@ function loadLeaderboardStatData() {
         displayLeaderboardStatData(statData, stringData, people)
     })
     .fail(function() {
-        $('#loading-stat-leaderboard-table').html('<td colspan="7">Error: Could not load api.' + host + '/server/playerstats/general.json</td>');
+        $('#loading-stat-leaderboard-table').html('<td colspan="7">Error: Could not load leaderboard stats from API</td>');
     });
 }
 
