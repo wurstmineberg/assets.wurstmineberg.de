@@ -244,10 +244,6 @@ a {
     display: inline-block;
 }
 
-.inventory-container {
-    clear: left;
-}
-
 .inventory-opt-out {
     display: none;
 }
