@@ -8,10 +8,6 @@ function getUserName() {
     return username;
 }
 
-function displayUserData(person) {
-    $('#avatar').replaceWith(person.html_ava(32));
-}
-
 function initializeInventory(tbody, rows, cols) {
     for (var row = 0; row < rows; row++) {
         tbody.append('<tr class="inv-row inv-row-' + row + '"></tr>');
@@ -647,7 +643,6 @@ function loadUserData() {
         $.when(API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people(), API.mobData()).done(function(stringData, achievementData, biomes, items, people, mobData) {
             document.title = person.interfaceName + ' on Wurstmineberg';
             loadStatData(person, stringData, achievementData, biomes, items, mobData);
-            displayUserData(person);
             $.when(API.personStatData(person)).done(function(statData) {
                 displayProfileData(person, items, people, statData);
             }).fail(function() {
