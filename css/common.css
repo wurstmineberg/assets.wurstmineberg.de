@@ -234,6 +234,14 @@ a {
     font-size: normal;
 }
 
+.profile-panel {
+    overflow: hidden;
+}
+
+.profile-panel > .panel-body {
+    background-color: #c6c6c6;
+}
+
 .panel-heading {
     display: block;
 }
