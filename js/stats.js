@@ -200,103 +200,108 @@ function prepareAchievements(achievementData, items) {
     $('#achievement-row-loading').remove();
 }
 
-function display_achievements_stat_data(achievementData, achievementStatData, people) {
-    var mainTrack = Achievement.track(achievementData, 'main');
-    var noTrack = Achievement.track(achievementData, null);
-    var mainTrackPlayers = {
-        none: [],
-        noadventuringtime: [],
-        all: []
-    };
-    mainTrack.forEach(function(achievement) {
-        mainTrackPlayers[achievement.id] = [];
-    });
-    $.each(achievementStatData, function(minecraft_nick, achievement_stats) {
-        var taken_main_track = [];
-        var missing_no_track = noTrack.slice(0); // copy of noTrack
-        var has_adventuring_time = false;
-        $.each(achievement_stats, function(full_achievement_id, value) {
-            var achievement_id = full_achievement_id.split('.')[1];
-            var achievement = new Achievement(achievementData, achievement_id);
-            if (achievement.track == 'main') {
-                if (value > 0) {
-                    taken_main_track.push(achievement_id);
-                }
-            } else if (achievement.track == 'biome') {
-                if (value['value'] > 0) {
-                    has_adventuring_time = true;
-                }
-            } else {
-                if (value > 0) {
-                    missing_no_track.splice(missing_no_track.indexOf(achievement_id), 1);
-                }
-            }
-        });
-        var main_track_progress = 'none';
-        // move player down
+function displayAchievementsStatData(achievementData, achievementStatData, people) {
+    $.when(people.mapObject(achievementStatData)).done(function(statData) {
+        var mainTrack = Achievement.track(achievementData, 'main');
+        var noTrack = Achievement.track(achievementData, null);
+        var mainTrackPlayers = {
+            none: [],
+            noadventuringtime: [],
+            all: []
+        };
         mainTrack.forEach(function(achievement) {
-            if (taken_main_track.indexOf(achievement.id) > -1) {
-                main_track_progress = achievement.id;
-            }
+            mainTrackPlayers[achievement.id] = [];
         });
-        if (main_track_progress == mainTrack.slice(-1)[0].id && missing_no_track.length == 0) {
-            if (has_adventuring_time) {
-                main_track_progress = 'all';
-            } else {
-                main_track_progress = 'noadventuringtime';
+        statData.forEach(function(playerStatsPair) {
+            var person = playerStatsPair.player;
+            var achievementStats = playerStatsPair.value;
+            if (person == undefined) {
+                return;
             }
-        }
-        var person = people.personByMinecraft(minecraft_nick);
-        if (person == undefined) {
-            return;
-        }
-        mainTrackPlayers[main_track_progress].push(person);
-    });
-    $.each(mainTrackPlayers, function(achievement_id, people_list) {
-        $('#achievement-row-' + achievement_id).children('.achievement-players').html(html_player_list(people.sorted(people_list)));
+            var takenMainTrack = [];
+            var missingNoTrack = noTrack.slice(0); // copy of noTrack
+            var hasAdventuringTime = false;
+            $.each(achievementStats, function(achievementID, value) {
+                var achievement = new Achievement(achievementData, achievementID);
+                if (achievement.track == 'main') {
+                    if (value > 0) {
+                        takenMainTrack.push(achievementID);
+                    }
+                } else if (achievement.track == 'biome') {
+                    if (value['value'] > 0) {
+                        hasAdventuringTime = true;
+                    }
+                } else {
+                    if (value > 0) {
+                        missingNoTrack.splice(missingNoTrack.indexOf(achievementID), 1);
+                    }
+                }
+            });
+            var mainTrackProgress = 'none';
+            // move player down
+            mainTrack.forEach(function(achievement) {
+                if (takenMainTrack.indexOf(achievement.id) > -1) {
+                    mainTrackProgress = achievement.id;
+                }
+            });
+            if (mainTrackProgress == mainTrack.slice(-1)[0].id && missingNoTrack.length == 0) {
+                if (hasAdventuringTime) {
+                    mainTrackProgress = 'all';
+                } else {
+                    mainTrackProgress = 'noadventuringtime';
+                }
+            }
+            mainTrackPlayers[mainTrackProgress].push(person);
+        });
+        $.each(mainTrackPlayers, function(achievementID, peopleList) {
+            $('#achievement-row-' + achievementID).children('.achievement-players').html(html_player_list(people.sorted(peopleList)));
+        });
     });
 }
 
-function displayBiomesStatData(achievement_stat_data, biome_data, people) {
-    var adventuringTimeBiomes = [];
-    $.each(biome_data['biomes'], function(biomeNumberString, biomeInfo) {
-        if ('adventuringTime' in biomeInfo && biomeInfo['adventuringTime'] == false) {
-            return;
-        }
-        adventuringTimeBiomes.push(biomeInfo['id']);
-    });
-    var biomeStats = {};
-    biomeStats[adventuringTimeBiomes.length.toString()] = [];
-    $.each(achievement_stat_data, function(minecraft_nick, achievement_stats) {
-        var numBiomes = 0;
-        if ('achievement.exploreAllBiomes' in achievement_stats) {
-            if ('value' in achievement_stats['achievement.exploreAllBiomes'] && achievement_stats['achievement.exploreAllBiomes']['value'] > 0) {
-                numBiomes = achievement_stats['achievement.exploreAllBiomes']['progress'].length;
-            } else if ('progress' in achievement_stats['achievement.exploreAllBiomes']) {
-                achievement_stats['achievement.exploreAllBiomes']['progress'].forEach(function(biome_id) {
-                    if ($.inArray(biome_id, adventuringTimeBiomes) != -1) {
-                        numBiomes++;
-                    }
-                });
+function displayBiomesStatData(achievementStatData, biomeData, people) {
+    $.when(people.mapObject(achievementStatData)).done(function(statData) {
+        var adventuringTimeBiomes = [];
+        $.each(biomeData.biomes, function(biomeNumberString, biomeInfo) {
+            if ('adventuringTime' in biomeInfo && biomeInfo.adventuringTime == false) {
+                return;
             }
-        }
-        if (!(numBiomes.toString() in biomeStats)) {
-            biomeStats[numBiomes.toString()] = [];
-        }
-        var person = people.personByMinecraft(minecraft_nick);
-        if (person == undefined) {
-            return;
-        }
-        biomeStats[numBiomes.toString()].push(person);
+            adventuringTimeBiomes.push(biomeInfo.id);
+        });
+        var biomeStats = {};
+        biomeStats[adventuringTimeBiomes.length.toString()] = [];
+        statData.forEach(function(playerStatsPair) {
+            var person = playerStatsPair.player;
+            var achievementStats = playerStatsPair.value;
+            if (person == undefined) {
+                return;
+            }
+            var numBiomes = 0;
+            if ('exploreAllBiomes' in achievementStats) {
+                if ('value' in achievementStats.exploreAllBiomes && achievementStats.exploreAllBiomes.value > 0) {
+                    numBiomes = achievementStats.exploreAllBiomes.progress.length;
+                } else if ('progress' in achievementStats.exploreAllBiomes) {
+                    achievementStats.exploreAllBiomes.progress.forEach(function(biomeID) {
+                        if ($.inArray(biomeID, adventuringTimeBiomes) != -1) {
+                            numBiomes++;
+                        }
+                    });
+                }
+            }
+            if (!(numBiomes.toString() in biomeStats)) {
+                biomeStats[numBiomes.toString()] = [];
+            }
+            biomeStats[numBiomes.toString()].push(person);
+        });
+        $.each(biomeStats, function(numBiomes, peopleList) {
+            $tr = $('<tr>').html($('<td>').html(numBiomes));
+            $tr.append($('<td>').html(html_player_list(people.sorted(peopleList))));
+            if (peopleList.length || numBiomes == adventuringTimeBiomes.length) {
+                $('#stats-achievements-table-biome-track tbody tr:last').after(peopleList.length ? $tr : $('<tr>').html($('<td>', {class: 'muted', colspan: '2'}).text(numBiomes + ' biomes required for Adventuring Time')));
+            };
+        });
+        $('#loading-achievements-table-biome-track').remove();
     });
-    $.each(biomeStats, function(numBiomes, people_list) {
-        $tr = $('<tr>').html($('<td>').html(numBiomes));
-        $tr.append($('<td>').html(html_player_list(people.sorted(people_list))));
-        if (people_list.length || numBiomes == adventuringTimeBiomes.length) {
-            $('#stats-achievements-table-biome-track tbody tr:last').after(people_list.length ? $tr : $('<tr>').html($('<td>', {'class': 'muted', 'colspan': '2'}).text(numBiomes + ' biomes required for Adventuring Time')));
-        };
-    });
-    $('#loading-achievements-table-biome-track').remove();
 }
 
 function displayDeathGamesLog(deathGamesLog, people) {
@@ -444,7 +449,7 @@ function loadMobStatData() {
 function loadAchievementsStatData() {
     $.when(API.biomes(), API.items(), API.achievementData(), API.achievementStatData(), API.people()).done(function(biome_data, items, achievement_data, achievement_stat_data, people) {
         prepareAchievements(achievement_data, items);
-        display_achievements_stat_data(achievement_data, achievement_stat_data, people);
+        displayAchievementsStatData(achievement_data, achievement_stat_data, people);
         displayBiomesStatData(achievement_stat_data, biome_data, people);
     }).fail(function() {
         $('#achievement-row-loading').html('<td colspan="3">Error: Could not load achievements</td>');
