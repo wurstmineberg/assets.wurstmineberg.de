@@ -225,7 +225,7 @@ a {
   -ms-interpolation-mode: nearest-neighbor;   /* IE8+           */
 }
 
-#head {
+#profile-skin {
     float: left;
     margin: 0 1em 1em 0;
 }
