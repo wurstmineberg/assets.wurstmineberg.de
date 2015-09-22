@@ -134,46 +134,46 @@ function displayProfileData(person, items, people, statData) {
     if (person.joinDate) {
         $('#profile-stat-row-dow').children('.value').text(formatDate(person.joinDate));
     } else {
-        $('#profile-stat-row-dow').children('.value').html($('<span>', {'class': 'muted'}).text('not yet'));
+        $('#profile-stat-row-dow').children('.value').html($('<span>', {class: 'muted'}).text('not yet'));
     }
     // Favorite Color
     if (person.favColor) {
         var favColorCSS = 'rgb(' + person.favColor.red + ', ' + person.favColor.green + ', ' + person.favColor.blue + ')';
         var favColorName = '#' + zeroFill(person.favColor.red.toString(16), 2) + zeroFill(person.favColor.green.toString(16), 2) + zeroFill(person.favColor.blue.toString(16), 2) + ' (' + person.favColor.red + ' ' + person.favColor.green + ' ' + person.favColor.blue + ')';
-        var $colorDisplay = $('<span>', {'class': 'color-display'}).html($('<span>', {'class': 'color-field'}).css('background-color', favColorCSS));
+        var $colorDisplay = $('<span>', {class: 'color-display'}).html($('<span>', {class: 'color-field'}).css('background-color', favColorCSS));
         $colorDisplay.append(favColorName);
         $('#profile-stat-row-fav-color').children('.value').html($colorDisplay);
     } else {
-        $('#profile-stat-row-fav-color').children('.value').html($('<span>', {'class': 'muted'}).text('none'));
+        $('#profile-stat-row-fav-color').children('.value').html($('<span>', {class: 'muted'}).text('none'));
     }
     // Favorite Item
     var fav_item = items.favItem(person);
     if (fav_item) {
         $('#profile-stat-row-fav-item').children('.value').html(fav_item.htmlImage() + fav_item.name);
     } else {
-        $('#profile-stat-row-fav-item').children('.value').html($('<span>', {'class': 'muted'}).text('none'));
+        $('#profile-stat-row-fav-item').children('.value').html($('<span>', {class: 'muted'}).text('none'));
     }
     // Invited By
     if (person.invitedBy) {
-        $('#profile-stat-row-invited-by').children('.value').html($('<a>', {'href': '/people/' + person.invitedBy}).text(person.invitedBy));
+        $('#profile-stat-row-invited-by').children('.value').html($('<a>', {href: '/people/' + person.invitedBy}).text(person.invitedBy));
         $.when(people.personById(person.invitedBy)).done(function(invitedBy) {
             $('#profile-stat-row-invited-by').children('.value').html(html_player_list([invitedBy]));
         }).fail(function() {
             //
         });
     } else if (person.status == 'founding') {
-        $('#profile-stat-row-invited-by').children('.value').html($('<span>', {'class': 'muted'}).text('no one (founding member)'));
+        $('#profile-stat-row-invited-by').children('.value').html($('<span>', {class: 'muted'}).text('no one (founding member)'));
     } else {
-        $('#profile-stat-row-invited-by').children('.value').html($('<span>', {'class': 'text-danger'}).text('unknown'));
+        $('#profile-stat-row-invited-by').children('.value').html($('<span>', {class: 'text-danger'}).text('unknown'));
     }
     // Last Death
     $.when(person.latestDeath).done(function(lastDeath) {
         if (lastDeath) {
             $('#profile-stat-row-last-death').children('.value').text(formatDate(lastDeath.timestamp, true) + ', ' + lastDeath.cause);
         } else if ('stat.deaths' in statData && statData['stat.deaths'] > 0) {
-            $('#profile-stat-row-last-death').children('.value').html($('<span>', {'class': 'muted'}).text('not recorded'));
+            $('#profile-stat-row-last-death').children('.value').html($('<span>', {class: 'muted'}).text('not recorded'));
         } else {
-            $('#profile-stat-row-last-death').children('.value').html($('<span>', {'class': 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
+            $('#profile-stat-row-last-death').children('.value').html($('<span>', {class: 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
         }
     });
     // Last Seen
@@ -183,39 +183,41 @@ function displayProfileData(person, items, people, statData) {
         } else if (lastSeen) {
             $('#profile-stat-row-last-seen').children('.value').text(formatDate(lastSeen, true));
         } else {
-            $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
+            $('#profile-stat-row-last-seen').children('.value').html($('<span>', {class: 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
         }
     }).fail(function() {
-        $('#profile-stat-row-last-seen').children('.value').html($('<span>', {'class': 'text-danger'}).text('error, try refreshing'));
+        $('#profile-stat-row-last-seen').children('.value').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
     });
     // People “Invited” (pre-freeze)
     var peopleInvited = people.list.filter(function(otherPerson) {
         return (otherPerson.invitedBy == person.id && otherPerson.joinDate < new Date('2013-11-02T17:33:45+0000'));
     });
-    $('#profile-stat-row-people-invited-prefreeze').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {'class': 'muted'}).text('no one'));
+    $('#profile-stat-row-people-invited-prefreeze').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {class: 'muted'}).text('no one'));
     // People Invited (post-freeze)
     var peopleInvited = people.list.filter(function(otherPerson) {
         return (otherPerson.invitedBy == person.id && otherPerson.joinDate >= new Date('2013-11-02T17:33:45+0000'));
     });
-    $('#profile-stat-row-people-invited').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {'class': 'muted'}).text('no one'));
+    $('#profile-stat-row-people-invited').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {class: 'muted'}).text('no one'));
     // Status
     function statusDisplay(status) {
-        if (status == 'postfreeze') {
+        if (status == 'later') {
             if (new Date() - person.joinDate < 1000 * 60 * 60 * 24 * 7) { // whitelisted less than a week ago
                 return 'new member (may still be <a href="http://wiki.' + host + '/Invitations#Hard_requirements">vetoed</a>)';
+            } else if (person.joinDate < new Date('2013-11-02T17:33:45+0000')) {
+                return 'later member (pre-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)';
+            } else {
+                return 'later member (post-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)';
             }
-            return 'later member (post-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)';
         }
         var statuses = {
-            'former': 'former member (unwhitelisted for inactivity)',
-            'founding': 'founding member',
-            'invited': 'invited but not whitelisted yet',
-            'later': 'later member (pre-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)',
-            'vetoed': 'former member (unwhitelisted by <a href="http://wiki.' + host + '/Invitations#Hard_requirements">veto</a>)'
+            former: 'former member (unwhitelisted for inactivity)',
+            founding: 'founding member',
+            invited: 'invited but not whitelisted yet',
+            vetoed: 'former member (unwhitelisted by <a href="http://wiki.' + host + '/Invitations#Hard_requirements">veto</a>)'
         };
         return status in statuses ? statuses[status] : status;
     }
-    $('#profile-stat-row-status').children('.value').html(statusDisplay(person.status || 'later'));
+    $('#profile-stat-row-status').children('.value').html(statusDisplay(person.status));
 }
 
 function displayStatData(statData, stringData, itemData, achievementData, biomes, mobData) {
@@ -231,107 +233,107 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
     var mobs = [];
     var achievements = [];
 
-    $.each(statData, function(key, value) {
-        stat = key.split('.');
-        var name;
+    $.each(statData, function(categoryName, category) {
+        if (categoryName === 'stat') {
+            $.each(category, function(statName, stat) {
+                if (statName === 'craftItem' || statName === 'useItem' || statName === 'breakItem' || statName === 'mineBlock' || statName === 'pickup' || statName === 'drop') {
+                    $.each(stat, function(pluginName, plugin) {
+                        $.each(plugin, function(itemName, value) {
+                            var item = itemData.itemById(pluginName + ':' + itemName);
+                            var name = item.name || item.id;
+                            var collection = item.isBlock ? blocks : items;
+                            if (!(item.id in collection)) {
+                                collection[item.id] = {name: name};
+                                if (item) {
+                                    collection[item.id].itemInfo = item;
+                                };
+                            }
+                            collection[item.id][statName] = value;
+                        });
+                    });
+                } else if (statName === 'killEntity' || statName === 'entityKilledBy') {
+                    $.each(stat, function(entityID, value) {
+                        var name = entityID;
+                        if ('mobs' in mobData && entityID in mobData.mobs && 'name' in mobData.mobs[entityID]) {
+                            name = mobData.mobs[entityID].name;
+                        };
 
-        if (stat[0] === 'stat') {
-            if (stat.length > 2 && (stat[1] === 'craftItem' || stat[1] === 'useItem' || stat[1] === 'breakItem' || stat[1] === 'mineBlock' || stat[1] === 'pickup' || stat[1] === 'drop')) {
-                var item = itemData.itemById(stat.slice(2).join(':'));
-                var name = item.name || stat.slice(2).join(':');
-                var actionIndex = stat[1];
-                var collection = item.isBlock ? blocks : items;
-                if (!(item.id in collection)) {
-                    collection[item.id] = {name: name};
-                    if (item) {
-                        collection[item.id].itemInfo = item;
-                    };
-                }
-                collection[item.id][actionIndex] = value;
-            } else if (stat[1] === 'killEntity' || stat[1] === 'entityKilledBy') {
-                var id = stat[2];
-                var actionIndex = stat[1];
-                var count = value;
+                        var found = false;
+                        mobs.forEach(function(entry) {
+                            if (entry.id === entityID) {
+                                entry[statName] = count;
+                                found = true;
+                            }
+                        });
 
-                var name = id;
-                if ('mobs' in mobData && stat[2] in mobData.mobs && 'name' in mobData.mobs[stat[2]]) {
-                    name = mobData.mobs[stat[2]].name;
-                };
-
-                var found = false;
-                $.each(mobs, function(key, value) {
-                    if (value['id'] === id) {
-                        value[actionIndex] = count;
-                        found = true;
-                        return;
+                        if (!found) {
+                            var newEntry = {
+                                id: entityID,
+                                name: name
+                            };
+                            newEntry[statName] = value;
+                            mobs.push(newEntry);
+                        };
+                    });
+                } else {
+                    var finalKey = statName;
+                    var finalValue = prettifyStatsValue(statName, stat);
+                    if ('stats' in stringData && 'general' in stringData.stats && statName in stringData.stats.general) {
+                        finalKey = stringData.stats.general[statName];
                     }
-                });
-
-                if (!found) {
-                    newEntry = {
-                        id: id,
-                        name: name
-                    };
-                    newEntry[actionIndex] = count;
-                    mobs.push(newEntry);
-                };
-            } else {
-                var finalKey = key;
-                var finalValue = prettifyStatsValue(stat[1], value);
-                if ('stats' in stringData && 'general' in stringData.stats && stat[1] in stringData.stats.general) {
-                    finalKey = stringData.stats.general[stat[1]];
+                    general.push({
+                        name: finalKey,
+                        value: finalValue
+                    });
                 }
-                general.push({
-                    name: finalKey,
+            });
+        } else if (categoryName === 'achievement') {
+            $.each(category, function(achievementID, value) {
+                var finalValue = value;
+                if (achievementID === 'exploreAllBiomes' && 'value' in value) {
+                    if (value.value > 0) {
+                        finalValue = 'Yes';
+                    } else {
+                        var visitedBiomes = value.progress.slice(0);
+                        finalValue = '<span class="achievement-list">';
+                        var adventuringBiomes = _.filter(biomes.biomes, function(biome) {
+                            return biome.adventuringTime;
+                        });
+                        _.map(adventuringBiomes, function(biome) {
+                            finalValue += '<span class="achievement-value">';
+                            if (_.find(visitedBiomes, function(biomeName) {
+                                return biomeName === biome.id;
+                            })) {
+                                finalValue += '<span class="fa fa-check fa-fw text-success"></span> ';
+                            } else {
+                                finalValue += '<span class="fa fa-times fa-fw text-danger"></span> ';
+                            };
+                            finalValue += '<abbr class="nounderline achievement-name" title="' + biome.description + '">' + biome.name + '</abbr></span> ';
+                        });
+                        finalValue += '</span>';
+                    }
+                } else {
+                    if (parseInt(value) >= 1) {
+                        finalValue = 'Yes';
+                    } else {
+                        finalValue = 'No';
+                    }
+                }
+                achievements.push({
+                    achievement: new Achievement(achievementData, achievementID),
                     value: finalValue
                 });
-            }
-        } else if (stat[0] === 'achievement') {
-            var id = stat[1];
-            var finalValue = value;
-            if (id === 'exploreAllBiomes' && 'value' in value) {
-                if (value.value > 0) {
-                    finalValue = 'Yes';
-                } else {
-                    var visitedBiomes = value.progress.slice(0);
-                    finalValue = '<span class="achievement-list">';
-                    var adventuringBiomes = _.filter(biomes.biomes, function(biome) {
-                        return biome.adventuringTime;
-                    });
-                    _.map(adventuringBiomes, function(biome) {
-                        finalValue += '<span class="achievement-value">';
-                        if (_.find(visitedBiomes, function(biomeName) {
-                            return biomeName === biome.id;
-                        })) {
-                            finalValue += '<span class="fa fa-check fa-fw text-success"></span> ';
-                        } else {
-                            finalValue += '<span class="fa fa-times fa-fw text-danger"></span> ';
-                        };
-                        finalValue += '<abbr class="nounderline achievement-name" title="' + biome.description + '">' + biome.name + '</abbr></span> ';
-                    });
-                    finalValue += '</span>';
-                }
-            } else {
-                if (parseInt(value) >= 1) {
-                    finalValue = 'Yes';
-                } else {
-                    finalValue = 'No';
-                }
-            }
-            achievements.push({
-                achievement: new Achievement(achievementData, id),
-                value: finalValue
             });
         }
     });
     // Add the missing achievements
-    _.keys(achievementData).forEach(function(id) {
+    _.keys(achievementData).forEach(function(achievementID) {
         var alreadyExisting = _.some(_.values(achievements), function(achievement) {
-            return (id === achievement.achievement.id);
+            return (achievementID === achievement.achievement.id);
         });
         if (!alreadyExisting) {
             achievements.push({
-                achievement: new Achievement(achievementData, id),
+                achievement: new Achievement(achievementData, achievementID),
                 value: 'No'
             });
         };
