@@ -228,6 +228,29 @@ a {
 #profile-skin {
     float: left;
     margin: 0 1em 1em 0;
+    position: relative;
+    width: 180px;
+    height: 360px;
+}
+
+#profile-skin img {
+    position: absolute;
+}
+
+#profile-skin img.foreground-image {
+    z-index: 1;
+}
+
+#profile-skin img.drop-shadow {
+    display: none;
+    filter: blur(10px) brightness(-100);
+    -webkit-filter: blur(10px) brightness(-100);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#profile-skin:hover img.drop-shadow {
+    display: inline;
 }
 
 #user-description {
