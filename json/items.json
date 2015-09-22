@@ -3524,13 +3524,14 @@
             "name": "Golden Apple"
         },
         "golden_axe": {
-            "durability": 33,
+            "durability": 32,
             "image": "goldaxe.png",
             "itemID": 286,
             "name": "Golden Axe",
             "stackable": false
         },
         "golden_boots": {
+            "durability": 91,
             "image": "goldboots.png",
             "itemID": 317,
             "name": "Golden Boots",
@@ -3542,12 +3543,14 @@
             "name": "Golden Carrot"
         },
         "golden_chestplate": {
+            "durability": 112,
             "image": "goldchestplate.png",
             "itemID": 315,
             "name": "Golden Chestplate",
             "stackable": false
         },
         "golden_helmet": {
+            "durability": 77,
             "image": "goldhelmet.png",
             "itemID": 314,
             "name": "Golden Helmet",
@@ -3597,6 +3600,7 @@
             "stackable": false
         },
         "golden_leggings": {
+            "durability": 105,
             "image": "goldleggings.png",
             "itemID": 316,
             "name": "Golden Leggings",
