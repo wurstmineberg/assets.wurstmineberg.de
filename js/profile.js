@@ -238,18 +238,20 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             $.each(category, function(statName, stat) {
                 if (statName === 'craftItem' || statName === 'useItem' || statName === 'breakItem' || statName === 'mineBlock' || statName === 'pickup' || statName === 'drop') {
                     $.each(stat, function(pluginName, plugin) {
-                        $.each(plugin, function(itemName, value) {
-                            var item = itemData.itemById(pluginName + ':' + itemName);
-                            var name = item.name || item.id;
-                            var collection = item.isBlock ? blocks : items;
-                            if (!(item.id in collection)) {
-                                collection[item.id] = {name: name};
-                                if (item) {
-                                    collection[item.id].itemInfo = item;
-                                };
-                            }
-                            collection[item.id][statName] = value;
-                        });
+                        if (pluginName !== 'summary') {
+                            $.each(plugin, function(itemName, value) {
+                                var item = itemData.itemById(pluginName + ':' + itemName);
+                                var name = item.name || item.id;
+                                var collection = item.isBlock ? blocks : items;
+                                if (!(item.id in collection)) {
+                                    collection[item.id] = {name: name};
+                                    if (item) {
+                                        collection[item.id].itemInfo = item;
+                                    };
+                                }
+                                collection[item.id][statName] = value;
+                            });
+                        }
                     });
                 } else if (statName === 'killEntity' || statName === 'entityKilledBy') {
                     $.each(stat, function(entityID, value) {
