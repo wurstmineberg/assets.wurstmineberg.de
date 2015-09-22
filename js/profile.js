@@ -368,7 +368,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
         var value = dict.value;
         var $row = $('<tr>', {class: 'general-row'}).append([
             $('<td>', {class: 'name'}).text(name),
-            $('<td>', {class: 'info'}).text(value)
+            $('<td>').text(value)
         ]);
         $loadingStatGeneral.before($row);
     });
