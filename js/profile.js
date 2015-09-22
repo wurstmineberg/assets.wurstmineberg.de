@@ -263,7 +263,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
                         var found = false;
                         mobs.forEach(function(entry) {
                             if (entry.id === entityID) {
-                                entry[statName] = count;
+                                entry[statName] = value;
                                 found = true;
                             }
                         });
