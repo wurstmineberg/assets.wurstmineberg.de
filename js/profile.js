@@ -25,7 +25,15 @@ function displaySlot(cell, stack, items, stringData) {
     } else if ('effects' in baseItem) {
         item = items.itemByEffect(stack.id, stack.tag.Potion);
     } else if ('tagPath' in baseItem) {
-        var tag = _.reduce(baseItem.tagPath, function(memo, pathElt) { return memo[pathElt]; }, stack.tag);
+        var tag = _.reduce(baseItem.tagPath, function(memo, pathElt) {
+            if (typeof memo === 'undefined') {
+                return undefined;
+            }
+            return memo[pathElt];
+        }, stack.tag);
+        if (typeof tag === 'undefined') {
+            tag = null;
+        }
         item = items.itemByTag(stack.id, tag);
     }
     cell.children('div').children('.inv-cell-image').append(item.htmlImage('', 'tag' in stack && 'display' in stack.tag && 'color' in stack.tag.display ? stack.tag.display.color : null));
