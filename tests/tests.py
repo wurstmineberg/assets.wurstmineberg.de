@@ -392,7 +392,9 @@ def validate_items_json():
                     raise ValueError('Unknown method of obtaining: {!r}'.format(method['type']))
         if 'dropsSelf' in item:
             assert is_block and is_item
-            if not isinstance(item['dropsSelf'], bool):
+            if isinstance(item['dropsSelf'], int) or isinstance(item['dropsSelf'], float):
+                assert 0 <= item['dropsSelf'] < 1
+            else:
                 if isinstance(item['dropsSelf'], list):
                     drops_self = item['dropsSelf']
                 else:

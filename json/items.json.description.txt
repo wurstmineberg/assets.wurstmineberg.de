@@ -111,7 +111,11 @@ The fields for the damage values, status effects, and tag variants implicitly in
         * description: a HTML description for All The Items.
         * block: if true, the method creates a block placed in the world. If false (the default), the method creates an item as a dropped item entity or within an inventory.
         * renewability: One of "finite", "infinite", "manual", "fullyAuto", describing the method's renewability as defined on http://wiki.wurstmineberg.de/Renewability
-* dropsSelf: an array, or single entry. Each entry is either an object structured like “method of obtaining: mining” objects, except without the “block” key, or simply a tool stub. This is used to specify how the block must be mined so that it drops itself. The default is true, implying that the block always drops itself.
+* dropsSelf: used to specify how the block must be mined so that it drops itself. May be one of the following:
+    * an object structured like a “method of obtaining: mining” object, except without the “block” key.
+    * a tool stub.
+    * an array of mining-like objects and/or tool stubs.
+    * a number specifying the drop chances. The default is 1, implying that the block always drops itself.
 * whenPlaced: an item stub specifying the block this item turns into when placed.
 * creativeMenu: whether the item appears in the Creative mode inventory menu. Defaults to true.
 * pickBlock: whether the item can be obtained using the Pick Block key in Creative mode. Defaults to the same value as creativeMenu.

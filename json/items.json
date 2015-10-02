@@ -143,14 +143,47 @@
         "anvil": {
             "blockID": 145,
             "damageValues": {
-                "0": {},
+                "0": {
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                "minecraft:iron_block",
+                                "minecraft:iron_block",
+                                "minecraft:iron_block",
+                                null,
+                                "minecraft:iron_ingot",
+                                null,
+                                "minecraft:iron_ingot",
+                                "minecraft:iron_ingot",
+                                "minecraft:iron_ingot"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
                 "4": {
                     "image": "slightlydamagedanvil.png",
-                    "name": "Slightly Damaged Anvil"
+                    "name": "Slightly Damaged Anvil",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Using an <a href=\"/block/minecraft/anvil/0\">undamaged anvil</a> or dropping it has a chance of turning it into this.",
+                            "renewability": "manual",
+                            "type": "special"
+                        }
+                    ]
                 },
                 "8": {
                     "image": "verydamagedanvil.png",
-                    "name": "Very Damaged Anvil"
+                    "name": "Very Damaged Anvil",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Using an <a href=\"/block/minecraft/anvil/4\">slightly damaged anvil</a> or dropping it has a chance of turning it into this.",
+                            "renewability": "manual",
+                            "type": "special"
+                        }
+                    ]
                 }
             },
             "image": "anvil.png",
@@ -2459,7 +2492,15 @@
             "blockID": 122,
             "image": "dragonegg.png",
             "itemID": 122,
-            "name": "Dragon Egg"
+            "name": "Dragon Egg",
+            "obtaining": [
+                {
+                    "block": true,
+                    "description": "One dragon egg generates on top of the End exit portal when the first <a href=\"http://minecraft.gamepedia.com/Ender_Dragon\">Ender dragon</a> is killed.",
+                    "renewability": "finite",
+                    "type": "special"
+                }
+            ]
         },
         "dropper": {
             "blockID": 158,
@@ -3678,9 +3719,24 @@
         },
         "gravel": {
             "blockID": 13,
+            "dropsSelf": 0.9,
             "image": "gravel.png",
             "itemID": 13,
-            "name": "Gravel"
+            "name": "Gravel",
+            "obtaining": [
+                {
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "dimension": "nether",
+                    "type": "natural"
+                }
+            ]
         },
         "gunpowder": {
             "image": "gunpowder.png",
@@ -6960,10 +7016,31 @@
         "sand": {
             "blockID": 12,
             "damageValues": {
-                "0": {},
+                "0": {
+                    "obtaining": [
+                        {
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
+                },
                 "1": {
                     "image": "redsand.png",
-                    "name": "Red Sand"
+                    "name": "Red Sand",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Mesa",
+                                "Mesa (Bryce)",
+                                "Mesa Plateau",
+                                "Mesa Plateau M",
+                                "Mesa Plateau F",
+                                "Mesa Plateau F M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
                 }
             },
             "image": "sand.png",
