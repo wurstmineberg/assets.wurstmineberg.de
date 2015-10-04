@@ -9710,7 +9710,23 @@
             "blockID": 146,
             "image": "trappedchest.png",
             "itemID": 146,
-            "name": "Trapped Chest"
+            "name": "Trapped Chest",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:tripwire_hook",
+                        "minecraft:chest",
+                        null,
+                        null,
+                        null,
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "tripwire": {
             "blockID": 132,
