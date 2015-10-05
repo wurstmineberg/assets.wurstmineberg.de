@@ -537,7 +537,7 @@ function displayMinigameData(people, person, deathGamesLog) {
             $.when(people.achievementScores(), API.achievementData()).done(function(achievementScores, achievementData) {
                 achievementScores.forEach(function(scoreInfo) {
                     if (scoreInfo.player.id == person.id) {
-                        $('#minigames-stat-row-achievementrun-place').children('.value').text(scoreInfo.value + ' of ' + _.keys(achievementData).length + ' completed');
+                        $('#minigames-stat-row-achievementrun-place').children('.value').html($('<span>', {class: 'muted'}).text('not yet ranked ' + scoreInfo.value + ' of ' + _.keys(achievementData).length + ' completed'));
                     }
                 });
             });
