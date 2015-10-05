@@ -98,16 +98,20 @@ function Person(personID, personData) {
         }
         return ret;
     }();
-    this.latestDeath = API.ajaxJSONDeferred('http://api.' + host + '/server/deaths/latest.json').then(function(latestDeaths) {
-        if (_this.id in latestDeaths.deaths) {
-            return {
-                'cause': latestDeaths.deaths[_this.id].cause,
-                'timestamp': dateObjectFromUTC(latestDeaths.deaths[_this.id].timestamp)
-            };
-        } else {
-            return null;
-        }
-    }); // use with when/done/fail
+    this.latestDeath = function(world) {
+        return mainWorldFallback(world).then(function(world) {
+            return API.ajaxJSONDeferred('http://api.' + host + '/world/' + world + '/deaths/latest.json').then(function(latestDeaths) {
+                if (_this.id in latestDeaths.deaths) {
+                    return {
+                        'cause': latestDeaths.deaths[_this.id].cause,
+                        'timestamp': dateObjectFromUTC(latestDeaths.deaths[_this.id].timestamp)
+                    };
+                } else {
+                    return null;
+                }
+            });
+        });
+    }
     this.minecraft = personData.minecraft.nicks[personData.minecraft.nicks.length - 1];
     if ('statusHistory' in personData) {
         this.status = personData.statusHistory[personData.statusHistory.length - 1].status;

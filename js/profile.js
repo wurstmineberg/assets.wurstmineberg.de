@@ -175,7 +175,7 @@ function displayProfileData(person, items, people, statData) {
         $('#profile-stat-row-invited-by').children('.value').html($('<span>', {class: 'text-danger'}).text('unknown'));
     }
     // Last Death
-    $.when(person.latestDeath).done(function(lastDeath) {
+    $.when(person.latestDeath()).done(function(lastDeath) {
         if (lastDeath) {
             $('#profile-stat-row-last-death').children('.value').text(formatDate(lastDeath.timestamp, true) + ', ' + lastDeath.cause);
         } else if ('stat.deaths' in statData && statData['stat.deaths'] > 0) {
@@ -537,7 +537,7 @@ function displayMinigameData(people, person, deathGamesLog) {
             $.when(people.achievementScores(), API.achievementData()).done(function(achievementScores, achievementData) {
                 achievementScores.forEach(function(scoreInfo) {
                     if (scoreInfo.player.id == person.id) {
-                        $('#minigames-stat-row-achievementrun-place').children('.value').html($('<span>', {class: 'muted'}).text('not yet ranked ' + scoreInfo.value + ' of ' + _.keys(achievementData).length + ' completed'));
+                        $('#minigames-stat-row-achievementrun-place').children('.value').html($('<span>', {class: 'muted'}).text('not yet ranked (' + scoreInfo.value + ' of ' + _.keys(achievementData).length + ' completed)'));
                     }
                 });
             });
