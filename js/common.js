@@ -175,13 +175,15 @@ function People(peopleData) {
         });
     }();
 
+    this.achievementScores = function(world) {
+        return mainWorldFallback(world).then(function(world) {
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/minigame/achievements/' + world + '/scoreboard.json').then(_this.mapObject);
+        });
+    };
+
     this.achievementWinners = function(world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/minigame/achievements/' + world + '/winners.json').then(function(winners) {
-                return _.map(winners, function(winnerID) {
-                    return _this.personById(winnerID);
-                });
-            });
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/minigame/achievements/' + world + '/winners.json').then(_this.mapObject);
         });
     };
 

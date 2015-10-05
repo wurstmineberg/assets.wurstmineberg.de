@@ -500,15 +500,13 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
 function displayMinigameData(people, person, deathGamesLog) {
     // Achievement Run
     $.when(people.achievementWinners()).done(function(winners) {
+        winners = _.sortBy(winners, 'player');
         for (var index = 0; index < winners.length; index++) {
-            if (winners[index].id === person.id) {
+            if (winners[index].player.id === person.id) {
                 break;
             }
         }
-        if (index == winners.length) {
-            $('#minigames-stat-row-achievementrun-place').children('.value').text('not yet completed');
-            //TODO add current achievement progress
-        } else {
+        if (index < winners.length) {
             var suffix = 'th';
             if ((index + 1).toString().endsWith('1')) {
                 suffix = 'st';
@@ -517,24 +515,28 @@ function displayMinigameData(people, person, deathGamesLog) {
             } else if ((index + 1).toString().endsWith('3')) {
                 suffix = 'rd';
             }
-            $('#minigames-stat-row-achievementrun-place').children('.value').html((index + 1) + suffix);
+            $('#minigames-stat-row-achievementrun-place').children('.value').html((index + 1) + suffix + ' (completed on ' + winners[index].value);
             if (index > 0 || winners.length > index + 1) {
-                $('#minigames-stat-row-achievementrun-place').children('.value').append(' (');
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(', ');
             }
             if (index > 0) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append('after ');
-                $('#minigames-stat-row-achievementrun-place').children('.value').append(html_player_list([winners[index - 1]]));
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(html_player_list([winners[index - 1].player]));
             }
             if (index > 0 && winners.length > index + 1) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append(', ');
             }
             if (winners.length > index + 1) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append('before ');
-                $('#minigames-stat-row-achievementrun-place').children('.value').append(html_player_list([winners[index + 1]]));
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(html_player_list([winners[index + 1].player]));
             }
             if (index > 0 || winners.length > index + 1) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append(')');
             }
+        } else {
+            $.when(people.achievementProgress(), )
+            $('#minigames-stat-row-achievementrun-place').children('.value').text('not yet completed');
+            //TODO add current achievement progress
         }
     });
     // Death Games
