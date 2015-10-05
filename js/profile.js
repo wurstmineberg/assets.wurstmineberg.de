@@ -534,9 +534,13 @@ function displayMinigameData(people, person, deathGamesLog) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append(')');
             }
         } else {
-            $.when(people.achievementProgress(), )
-            $('#minigames-stat-row-achievementrun-place').children('.value').text('not yet completed');
-            //TODO add current achievement progress
+            $.when(people.achievementScores(), API.achievementData()).done(function(achievementScores, achievementData) {
+                achievementScores.forEach(function(scoreInfo) {
+                    if (scoreInfo.player.id == person.id) {
+                        $('#minigames-stat-row-achievementrun-place').children('.value').text(scoreInfo.value + ' of ' + _.keys(achievementData).length + ' completed');
+                    }
+                });
+            });
         }
     });
     // Death Games
