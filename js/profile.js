@@ -644,7 +644,7 @@ function loadStatData(person, string_data, achievement_data, biomes, items, mobD
         }).fail(function() {
             $('.inventory-table .loading td').html('Error: Could not load ' + person.minecraft + '.dat');
         });
-    } else if (person.option_is_default('show_inventory')) {
+    } else if (person.optionIsDefault('show_inventory')) {
         $('.panel').before('<div class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>Want to show you inventory?</strong> Since you have not set a preference for this, your inventory and Ender chest will be displayed on this page once we get everything working. You can activate this feature now using the command <code>!<a href="//wiki.' + host + '/Commands#Option">Option</a> show_inventory on</code>, or permanently deactivate it with <code>!<a href="//wiki.' + host + '/Commands#Option">Option</a> show_inventory off</code>.</div>');
     }
     $.when(API.personStatData(person)).done(function(stat_data) {
