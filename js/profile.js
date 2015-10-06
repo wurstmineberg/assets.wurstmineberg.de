@@ -188,7 +188,7 @@ function displayProfileData(person, items, people, statData) {
     });
     // Last Seen
     $.when(API.serverStatus(), API.lastSeen(person)).done(function(status, lastSeen) {
-        if (person.id in status.list)
+        if (person.id in status.list) {
             $('#profile-stat-row-last-seen').children('.value').text('currently online');
         } else if (lastSeen) {
             $('#profile-stat-row-last-seen').children('.value').text(formatDate(lastSeen, true));
