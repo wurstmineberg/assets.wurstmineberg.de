@@ -200,12 +200,12 @@ function displayProfileData(person, items, people, statData) {
     });
     // People “Invited” (pre-freeze)
     var peopleInvited = people.list.filter(function(otherPerson) {
-        return (otherPerson.invitedBy == person.id && otherPerson.joinDate < new Date('2013-11-02T17:33:45+0000'));
+        return (otherPerson.invitedBy == person.id && otherPerson.joinDate < dateObjectFromUTC('2013-11-02T17:33:45+0000'));
     });
     $('#profile-stat-row-people-invited-prefreeze').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {class: 'muted'}).text('no one'));
     // People Invited (post-freeze)
     var peopleInvited = people.list.filter(function(otherPerson) {
-        return (otherPerson.invitedBy == person.id && otherPerson.joinDate >= new Date('2013-11-02T17:33:45+0000'));
+        return (otherPerson.invitedBy == person.id && otherPerson.joinDate >= dateObjectFromUTC('2013-11-02T17:33:45+0000'));
     });
     $('#profile-stat-row-people-invited').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {class: 'muted'}).text('no one'));
     // Status
@@ -213,7 +213,7 @@ function displayProfileData(person, items, people, statData) {
         if (status == 'later') {
             if (new Date() - person.joinDate < 1000 * 60 * 60 * 24 * 7) { // whitelisted less than a week ago
                 return 'new member (may still be <a href="http://wiki.' + host + '/Invitations#Hard_requirements">vetoed</a>)';
-            } else if (person.joinDate < new Date('2013-11-02T17:33:45+0000')) {
+            } else if (person.joinDate < dateObjectFromUTC('2013-11-02T17:33:45+0000')) {
                 return 'later member (pre-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)';
             } else {
                 return 'later member (post-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)';
