@@ -443,17 +443,17 @@ function displayDeathGamesStatData(deathGamesLog, people) {
     });
 }
 
-function loadLeaderboardStatData() {
-    $.when(API.statData(), API.stringData(), API.people()).done(function(statData, stringData, people) {
-        displayLeaderboardStatData(statData, stringData, people)
+function loadLeaderboardStatData(people) {
+    $.when(API.statData(), API.stringData()).done(function(statData, stringData) {
+        displayLeaderboardStatData(statData, stringData, people);
     }).fail(function() {
-        $('#loading-stat-leaderboard-table').html('<td colspan="7">Error: Could not load leaderboard stats from API</td>');
+        $('#loading-stat-leaderboard-table').html('<td colspan="5">Error: Could not load leaderboard stats from API</td>');
     });
 }
 
-function loadMobStatData() {
+function loadMobStatData(people) {
     $.when(API.mainWorld()).done(function(mainWorld) {
-        $.when(API.people(), API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + mainWorld + '/playerstats/entity.json'), API.mobData()).done(function(people, entityStats, mobData) {
+        $.when(API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + mainWorld + '/playerstats/entity.json'), API.mobData()).done(function(entityStats, mobData) {
             displayMobsStatData(people, entityStats, mobData);
         }).fail(function() {
             $('#loading-mobs-bymob').children('td').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
@@ -463,29 +463,41 @@ function loadMobStatData() {
     });
 }
 
-function loadAchievementsStatData() {
-    $.when(API.biomes(), API.items(), API.achievementData(), API.achievementStatData(), API.people()).done(function(biome_data, items, achievement_data, achievement_stat_data, people) {
-        prepareAchievements(achievement_data, items);
-        displayAchievementsStatData(achievement_data, achievement_stat_data, people);
-        displayBiomesStatData(achievement_stat_data, biome_data, people);
+function loadAchievementsStatData(people) {
+    $.when(API.biomes(), API.items(), API.achievementData(), API.achievementStatData()).done(function(biomeData, items, achievementData, achievementStatData) {
+        prepareAchievements(achievementData, items);
+        displayAchievementsStatData(achievementData, achievementStatData, people);
+        displayBiomesStatData(achievementStatData, biomeData, people);
     }).fail(function() {
-        $('#achievement-row-loading').html('<td colspan="3">Error: Could not load achievements</td>');
-        $('#loading-achievements-table-biome-track').html('<td colspan="3">Error: Could not load biomes</td>');
+        $('#achievement-row-loading').html($('<td>', {colspan: 3, class: 'text-danger'}).text('Error: could not load achievements'));
+        $('#loading-achievements-table-biome-track').html($('<td>', {colspan: 3, class: 'text-danger'}).text('Error: could not load biomes'));
     });
 }
 
-function loadDeathgamesStatData() {
-    $.when(API.deathGamesLog(), API.people()).done(function(deathGamesLog, people) {
+function loadDeathgamesStatData(people) {
+    $.when(API.deathGamesLog()).done(function(deathGamesLog) {
         displayDeathGamesLog(deathGamesLog, people);
         displayDeathGamesStatData(deathGamesLog, people);
     }).fail(function() {
-        $('#loading-deathgames-log').html('<td colspan="4">Error: Could not load Death Games log</td>');
+        $('#loading-deathgames-log').html($('<td>', {colspan: 4, class: 'text-danger'}).text('Error: could not load Death Games log'));
+    });
+}
+
+function loadStatData() {
+    $.when(API.people()).done(function(people) {
+        loadLeaderboardStatData(people);
+        loadMobStatData(people);
+        loadAchievementsStatData(people);
+        loadDeathgamesStatData(people);
+    }).fail(function() {
+        $('#loading-stat-leaderboard-table').html($('<td>', {colspan: 5, class: 'text-danger'}).text('Error: could not load people data'));
+        $('#loading-mobs-bymob').children('td').html($('<span>', {class: 'text-danger'}).text('Error: could not load people data'));
+        $('#achievement-row-loading').html($('<td>', {colspan: 3, class: 'text-danger'}).text('Error: could not load people data'));
+        $('#loading-achievements-table-biome-track').html($('<td>', {colspan: 3, class: 'text-danger'}).text('Error: could not load people data'));
+        $('#loading-deathgames-log').html($('<td>', {colspan: 4, class: 'text-danger'}).text('Error: could not load people data'));
     });
 }
 
 selectTabWithID("tab-stats-leaderboard");
 bindTabEvents();
-loadLeaderboardStatData();
-loadMobStatData();
-loadAchievementsStatData();
-loadDeathgamesStatData();
+loadStatData();
