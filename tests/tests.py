@@ -34,7 +34,14 @@ def validate_item_stub(item_stub, must_be_block=False, must_be_item=False, *, it
     if 'damage' in item_stub:
         assert 'effect' not in item_stub
         assert 'tagValue' not in item_stub
-        assert str(item_stub['damage']) in item['damageValues']
+        if isinstance(item_stub['damage'], list):
+            for damage_value in item_stub['damage']:
+                assert isinstance(damage_value, int)
+                assert str(damage_value) in item['damageValues']
+        elif isinstance(item_stub['damage'], int):
+            assert str(item_stub['damage']) in item['damageValues']
+        else:
+            raise TypeError('Damage must be a number or array')
     if 'effect' in item_stub:
         assert 'damage' not in item_stub
         assert 'tagValue' not in item_stub
@@ -237,7 +244,9 @@ def validate_items_json():
                             'crash',
                             'noCrash',
                             'whileWearing',
-                            'halloween'
+                            'halloween',
+                            'onFire',
+                            'notOnFire'
                         }
                     #if 'subtype' in method:
                     #    assert method['subtype'] in mob['subtypes']
