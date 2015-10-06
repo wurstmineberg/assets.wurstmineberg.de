@@ -100,7 +100,7 @@ function Person(personID, personData) {
     }();
     this.latestDeath = function(world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/world/' + world + '/deaths/latest.json').then(function(latestDeaths) {
+            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/deaths/latest.json').then(function(latestDeaths) {
                 if (_this.id in latestDeaths.deaths) {
                     return {
                         'cause': latestDeaths.deaths[_this.id].cause,
