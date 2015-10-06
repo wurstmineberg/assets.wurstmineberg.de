@@ -98,7 +98,9 @@ function displayLeaderboardStatData(statData, stringData, people) {
             loadingLeaderboards.before($row);
         });
 
-        $('#loading-stat-leaderboard-table').remove();
+        loadingLeaderboards.remove();
+    }).fail(function() {
+        $('#loading-stat-leaderboard-table').children('td').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
     });
 }
 
@@ -186,6 +188,8 @@ function displayMobsStatData(people, entityStats, mobData) {
             $('#loading-mobs-bymob').before($row);
         });
         $('#loading-mobs-bymob').remove();
+    }).fail(function() {
+        $('#loading-mobs-bymob').children('td').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
     });
 }
 
@@ -253,6 +257,8 @@ function displayAchievementsStatData(achievementData, achievementStatData, peopl
         $.each(mainTrackPlayers, function(achievementID, peopleList) {
             $('#achievement-row-' + achievementID).children('.achievement-players').html(html_player_list(people.sorted(peopleList)));
         });
+    }).fail(function() {
+        $('#stats-achievements-table-main-track').children('tbody').html($('<tr>').html($('<td>', {class: 'text-danger', colspan: 3}).text('error, try refreshing')));
     });
 }
 
@@ -298,6 +304,8 @@ function displayBiomesStatData(achievementStatData, biomeData, people) {
             };
         });
         $('#loading-achievements-table-biome-track').remove();
+    }).fail(function() {
+        $('#achievement-row-loading').children('td').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
     });
 }
 
@@ -309,6 +317,8 @@ function displayDeathGamesLog(deathGamesLog, people) {
             $tr.append($('<td>').html(html_player_list([target])));
             $tr.append($('<td>').html(logEntry.success ? '<span class="fa fa-check fa-fw text-success"></span>' : '<span class="fa fa-times fa-fw text-danger"></span>'));
             $('#loading-deathgames-log').after($tr);
+        }).fail(function() {
+            $('#loading-deathgames-log').children('td').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
         });
     });
     $('#loading-deathgames-log').remove();
@@ -316,77 +326,77 @@ function displayDeathGamesLog(deathGamesLog, people) {
 
 function displayDeathGamesStatData(deathGamesLog, people) {
     var log = deathGamesLog.log;
+    var stats = {
+        kills: function(person) {
+            return log.filter(function(logEntry) {
+                if (logEntry.success) {
+                    return (logEntry.attacker == person.id);
+                } else {
+                    return (logEntry.target == person.id);
+                }
+            }).length;
+        },
+        deaths: function(person) {
+            return log.filter(function(logEntry) {
+                if (logEntry.success) {
+                    return (logEntry.target == person.id);
+                } else {
+                    return (logEntry.attacker == person.id);
+                }
+            }).length;
+        },
+        diamonds: function(person) {
+            ret = 0;
+            log.forEach(function(logEntry) {
+                if (logEntry.attacker == person.id) {
+                    if (logEntry.success) {
+                        ret++;
+                    } else {
+                        ret--;
+                    }
+                } else if (logEntry.target == person.id) {
+                    if (logEntry.success) {
+                        ret--;
+                    } else {
+                        ret++;
+                    }
+                }
+            });
+            return ret;
+        },
+        attacks: function(person) {
+            return log.filter(function(logEntry) {
+                return (logEntry.attacker == person.id);
+            }).length;
+        },
+        'attacks-success': function(person) {
+            return log.filter(function(logEntry) {
+                return (logEntry.attacker == person.id && logEntry.success);
+            }).length;
+        },
+        'attacks-fail': function(person) {
+            return log.filter(function(logEntry) {
+                return (logEntry.attacker == person.id && !logEntry.success);
+            }).length;
+        },
+        defense: function(person) {
+            return log.filter(function(logEntry) {
+                return (logEntry.target == person.id);
+            }).length;
+        },
+        'defense-success': function(person) {
+            return log.filter(function(logEntry) {
+                return (logEntry.target == person.id && !logEntry.success);
+            }).length;
+        },
+        'defense-fail': function(person) {
+            return log.filter(function(logEntry) {
+                return (logEntry.target == person.id && logEntry.success);
+            }).length;
+        }
+    };
     $.when('participating' in deathGamesLog ? people.peopleByID(deathGamesLog.participating) : people.activePeople).done(function(participating) {
         participating = people.sorted(participating);
-        var stats = {
-            kills: function(person) {
-                return log.filter(function(logEntry) {
-                    if (logEntry.success) {
-                        return (logEntry.attacker == person.id);
-                    } else {
-                        return (logEntry.target == person.id);
-                    }
-                }).length;
-            },
-            deaths: function(person) {
-                return log.filter(function(logEntry) {
-                    if (logEntry.success) {
-                        return (logEntry.target == person.id);
-                    } else {
-                        return (logEntry.attacker == person.id);
-                    }
-                }).length;
-            },
-            diamonds: function(person) {
-                ret = 0;
-                log.forEach(function(logEntry) {
-                    if (logEntry.attacker == person.id) {
-                        if (logEntry.success) {
-                            ret++;
-                        } else {
-                            ret--;
-                        }
-                    } else if (logEntry.target == person.id) {
-                        if (logEntry.success) {
-                            ret--;
-                        } else {
-                            ret++;
-                        }
-                    }
-                });
-                return ret;
-            },
-            attacks: function(person) {
-                return log.filter(function(logEntry) {
-                    return (logEntry.attacker == person.id);
-                }).length;
-            },
-            'attacks-success': function(person) {
-                return log.filter(function(logEntry) {
-                    return (logEntry.attacker == person.id && logEntry.success);
-                }).length;
-            },
-            'attacks-fail': function(person) {
-                return log.filter(function(logEntry) {
-                    return (logEntry.attacker == person.id && !logEntry.success);
-                }).length;
-            },
-            defense: function(person) {
-                return log.filter(function(logEntry) {
-                    return (logEntry.target == person.id);
-                }).length;
-            },
-            'defense-success': function(person) {
-                return log.filter(function(logEntry) {
-                    return (logEntry.target == person.id && !logEntry.success);
-                }).length;
-            },
-            'defense-fail': function(person) {
-                return log.filter(function(logEntry) {
-                    return (logEntry.target == person.id && logEntry.success);
-                }).length;
-            }
-        }
         $.each(stats, function(statName, statFunction) {
             var bestValue = null;
             var bestPlayers = [];
@@ -422,14 +432,21 @@ function displayDeathGamesStatData(deathGamesLog, people) {
                 statRow.children('.secondvalue').html(secondValue);
             }
         });
+    }).fail(function() {
+        $.each(stats, function(statName, statFunction) {
+            var statRow = $('#deathgames-stat-row-' + statName);
+            statRow.children('.leading-player').html($('<span>', {class: 'text-danger'}).text('(error)'));
+            statRow.children('.value').html($('<span>', {class: 'text-danger'}).text('(error)'));
+            statRow.children('.second-player').html($('<span>', {class: 'text-danger'}).text('(error)'));
+            statRow.children('.secondvalue').html($('<span>', {class: 'text-danger'}).text('(error)'));
+        });
     });
 }
 
 function loadLeaderboardStatData() {
     $.when(API.statData(), API.stringData(), API.people()).done(function(statData, stringData, people) {
         displayLeaderboardStatData(statData, stringData, people)
-    })
-    .fail(function() {
+    }).fail(function() {
         $('#loading-stat-leaderboard-table').html('<td colspan="7">Error: Could not load leaderboard stats from API</td>');
     });
 }
@@ -438,7 +455,11 @@ function loadMobStatData() {
     $.when(API.mainWorld()).done(function(mainWorld) {
         $.when(API.people(), API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + mainWorld + '/playerstats/entity.json'), API.mobData()).done(function(people, entityStats, mobData) {
             displayMobsStatData(people, entityStats, mobData);
+        }).fail(function() {
+            $('#loading-mobs-bymob').children('td').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
         });
+    }).fail(function() {
+        $('#loading-mobs-bymob').children('td').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
     });
 }
 

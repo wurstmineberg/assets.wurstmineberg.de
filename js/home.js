@@ -14,10 +14,12 @@ function getOnlineData(list) {
         onlinePeople = people.peopleByID(list);
         $.when(onlinePeople).done(function(onlinePeople) {
             $('#peopleList').html(html_player_list(people.sorted(onlinePeople)));
+        }).fail(function() {
+            $('#peopleList').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
         });
     }).fail(function() {
-        $('#peopleCount').text('(error)');
-        $('#whitelistCount').text('(error)');
+        $('#peopleCount').html($('<span>', {class: 'text-danger'}).text('(error)'));
+        $('#whitelistCount').html($('<span>', {class: 'text-danger'}).text('(error)'));
     });
 };
 

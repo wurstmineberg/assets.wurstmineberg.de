@@ -167,7 +167,7 @@ function displayProfileData(person, items, people, statData) {
         $.when(people.personById(person.invitedBy)).done(function(invitedBy) {
             $('#profile-stat-row-invited-by').children('.value').html(html_player_list([invitedBy]));
         }).fail(function() {
-            //
+            $('#profile-stat-row-invited-by').children('.value').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
         });
     } else if (person.status == 'founding') {
         $('#profile-stat-row-invited-by').children('.value').html($('<span>', {class: 'muted'}).text('no one (founding member)'));
@@ -183,6 +183,8 @@ function displayProfileData(person, items, people, statData) {
         } else {
             $('#profile-stat-row-last-death').children('.value').html($('<span>', {class: 'muted'}).text(person.status in ['founding', 'invited', 'later', 'postfreeze'] ? 'not yet' : 'never'));
         }
+    }).fail(function() {
+        $('#profile-stat-row-last-death').children('.value').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
     });
     // Last Seen
     $.when(API.lastSeen(person)).done(function(lastSeen) {
@@ -540,8 +542,12 @@ function displayMinigameData(people, person, deathGamesLog) {
                         $('#minigames-stat-row-achievementrun-place').children('.value').html($('<span>', {class: 'muted'}).text('not yet ranked (' + scoreInfo.value + ' of ' + _.keys(achievementData).length + ' completed)'));
                     }
                 });
+            }).fail(function() {
+                $('#minigames-stat-row-achievementrun-place').children('.value').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
             });
         }
+    }).fail(function() {
+        $('#minigames-stat-row-achievementrun-place').children('.value').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
     });
     // Death Games
     var log = deathGamesLog.log;
