@@ -594,7 +594,7 @@ var API = {
     lastSeen: function(person) {
         return API.ajaxJSONDeferred('http://api.' + host + '/v2/server/sessions/lastseen.json').then(function(lastSeenData) {
             if (person.id in lastSeenData) {
-                return dateObjectFromUTC(lastSeenData[person.id].leaveTime);
+                return dateObjectFromUTC(lastSeenData[person.id]);
             } else {
                 return null;
             }
