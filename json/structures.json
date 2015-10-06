@@ -155,6 +155,10 @@
                 "stacksMax": 3,
                 "stacksMin": 2
             },
+            "strongholdLibrary": {
+                "chestsMax": 4,
+                "stacksMax": 4
+            },
             "strongholdStoreRoom": {
                 "chestsMax": 6,
                 "stacksMax": 4

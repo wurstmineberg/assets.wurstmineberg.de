@@ -915,7 +915,23 @@
         "beef": {
             "image": "rawbeef.png",
             "itemID": 363,
-            "name": "Raw Beef"
+            "name": "Raw Beef",
+            "obtaining": [
+                {
+                    "amountMax": 3,
+                    "amountMaxLooting": 6,
+                    "entity": "Cow",
+                    "requires": "notOnFire",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 3,
+                    "amountMaxLooting": 6,
+                    "entity": "MushroomCow",
+                    "requires": "notOnFire",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "beetroot": {
             "image": "beetroot.png",
@@ -1149,13 +1165,68 @@
         "book": {
             "image": "book.png",
             "itemID": 340,
-            "name": "Book"
+            "name": "Book",
+            "obtaining": [
+                {
+                    "amountMax": 3,
+                    "amountMin": 3,
+                    "block": "minecraft:bookshelf",
+                    "silkTouch": false,
+                    "type": "mining"
+                },
+                {
+                    "recipe": [
+                        "minecraft:paper",
+                        "minecraft:paper",
+                        "minecraft:paper",
+                        "minecraft:leather"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "strongholdLibrary",
+                    "type": "chest"
+                }
+            ]
         },
         "bookshelf": {
             "blockID": 47,
             "image": "bookshelf.png",
             "itemID": 47,
-            "name": "Bookshelf"
+            "name": "Bookshelf",
+            "obtaining": [
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "structure": "stronghold",
+                    "type": "structure"
+                },
+                {
+                    "recipe": [
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:book",
+                        "minecraft:book",
+                        "minecraft:book",
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:planks"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "career": 1,
+                    "price": 4,
+                    "priceMin": 3,
+                    "profession": 1,
+                    "tier": 1,
+                    "type": "trading"
+                }
+            ]
         },
         "bow": {
             "durability": 384,
@@ -1270,6 +1341,38 @@
             "image": "bucket.png",
             "itemID": 325,
             "name": "Bucket",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "item": "minecraft:water_bucket",
+                    "type": "useItem"
+                },
+                {
+                    "item": "minecraft:lava_bucket",
+                    "type": "useItem"
+                },
+                {
+                    "item": "minecraft:milk_bucket",
+                    "type": "useItem"
+                }
+            ],
             "stackable": 16
         },
         "cactus": {
@@ -1283,6 +1386,38 @@
             "image": "cake.png",
             "itemID": 354,
             "name": "Cake",
+            "obtaining": [
+                {
+                    "recipe": [
+                        {
+                            "consumed": "minecraft:bucket",
+                            "id": "minecraft:milk_bucket"
+                        },
+                        {
+                            "consumed": "minecraft:bucket",
+                            "id": "minecraft:milk_bucket"
+                        },
+                        {
+                            "consumed": "minecraft:bucket",
+                            "id": "minecraft:milk_bucket"
+                        },
+                        "minecraft:sugar",
+                        "minecraft:egg",
+                        "minecraft:sugar",
+                        "minecraft:wheat",
+                        "minecraft:wheat",
+                        "minecraft:wheat"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "career": 1,
+                    "price": 1,
+                    "profession": 0,
+                    "tier": 3,
+                    "type": "trading"
+                }
+            ],
             "stackable": false
         },
         "carpet": {
@@ -1638,12 +1773,60 @@
         "compass": {
             "image": "compass.png",
             "itemID": 345,
-            "name": "Compass"
+            "name": "Compass",
+            "obtaining": [
+                {
+                    "structure": "strongholdLibrary",
+                    "type": "chest"
+                },
+                {
+                    "career": 1,
+                    "price": 12,
+                    "priceMin": 10,
+                    "profession": 1,
+                    "tier": 1,
+                    "type": "trading"
+                },
+                {
+                    "recipe": [
+                        null,
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:redstone",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "cooked_beef": {
             "image": "steak.png",
             "itemID": 364,
-            "name": "Steak"
+            "name": "Steak",
+            "obtaining": [
+                {
+                    "amountMax": 3,
+                    "amountMaxLooting": 6,
+                    "entity": "Cow",
+                    "requires": "onFire",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 3,
+                    "amountMaxLooting": 6,
+                    "entity": "MushroomCow",
+                    "requires": "onFire",
+                    "type": "entityDeath"
+                },
+                {
+                    "input": "minecraft:beef",
+                    "type": "smelting"
+                }
+            ]
         },
         "cooked_chicken": {
             "image": "cookedchicken.png",
@@ -2618,6 +2801,13 @@
             "image": "egg.png",
             "itemID": 344,
             "name": "Egg",
+            "obtaining": [
+                {
+                    "description": "A chicken will lay an egg once every 6\u201312 in-game hours (5\u201310 minutes).",
+                    "renewability": "fullyAuto",
+                    "type": "special"
+                }
+            ],
             "stackable": 16
         },
         "emerald": {
@@ -3287,7 +3477,13 @@
         "filled_map": {
             "image": "map.png",
             "itemID": 358,
-            "name": "Map"
+            "name": "Map",
+            "obtaining": [
+                {
+                    "item": "minecraft:map",
+                    "type": "useItem"
+                }
+            ]
         },
         "fire": {
             "blockID": 51,
@@ -3382,7 +3578,15 @@
         "ghast_tear": {
             "image": "ghasttear.png",
             "itemID": 370,
-            "name": "Ghast Tear"
+            "name": "Ghast Tear",
+            "obtaining": [
+                {
+                    "amountMaxLooting": 4,
+                    "amountMin": 0,
+                    "entity": "Ghast",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "glass": {
             "blockID": 20,
@@ -3741,7 +3945,35 @@
         "gunpowder": {
             "image": "gunpowder.png",
             "itemID": 289,
-            "name": "Gunpowder"
+            "name": "Gunpowder",
+            "obtaining": [
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "Ghast",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 6,
+                    "amountMaxLooting": 15,
+                    "amountMin": 0,
+                    "entity": "Witch",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 4,
+                    "structure": "dungeon",
+                    "type": "chest"
+                }
+            ]
         },
         "hardened_clay": {
             "blockID": 172,
@@ -3753,7 +3985,23 @@
             "blockID": 170,
             "image": "haybale.png",
             "itemID": 170,
-            "name": "Hay Bale"
+            "name": "Hay Bale",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:wheat",
+                        "minecraft:wheat",
+                        "minecraft:wheat",
+                        "minecraft:wheat",
+                        "minecraft:wheat",
+                        "minecraft:wheat",
+                        "minecraft:wheat",
+                        "minecraft:wheat",
+                        "minecraft:wheat"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "heavy_weighted_pressure_plate": {
             "blockID": 148,
@@ -4605,7 +4853,66 @@
         "leather": {
             "image": "leather.png",
             "itemID": 334,
-            "name": "Leather"
+            "name": "Leather",
+            "obtaining": [
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "Cow",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "EntityHorse",
+                    "subtype": "horse",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "EntityHorse",
+                    "subtype": "donkey",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "EntityHorse",
+                    "subtype": "mule",
+                    "type": "entityDeath"
+                },
+                {
+                    "category": "junk",
+                    "type": "fishing",
+                    "weight": 0.12048192771084337
+                },
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:rabbit_hide",
+                        "minecraft:rabbit_hide",
+                        null,
+                        "minecraft:rabbit_hide",
+                        "minecraft:rabbit_hide",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "MushroomCow",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "leather_boots": {
             "durability": 65,
@@ -5397,6 +5704,18 @@
             "image": "milkbucket.png",
             "itemID": 335,
             "name": "Milk",
+            "obtaining": [
+                {
+                    "item": "minecraft:bucket",
+                    "onEntity": "Cow",
+                    "type": "useItem"
+                },
+                {
+                    "item": "minecraft:bucket",
+                    "onEntity": "MushroomCow",
+                    "type": "useItem"
+                }
+            ],
             "stackable": false
         },
         "minecart": {
@@ -5589,7 +5908,30 @@
         "paper": {
             "image": "paper.png",
             "itemID": 339,
-            "name": "Paper"
+            "name": "Paper",
+            "obtaining": [
+                {
+                    "amountMax": 7,
+                    "amountMin": 2,
+                    "structure": "strongholdLibrary",
+                    "type": "chest"
+                },
+                {
+                    "outputAmount": 3,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:reeds",
+                        "minecraft:reeds",
+                        "minecraft:reeds",
+                        null,
+                        null,
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "piston": {
             "blockID": 33,
@@ -6591,7 +6933,15 @@
         "rabbit_hide": {
             "image": "rabbithide.png",
             "itemID": 415,
-            "name": "Rabbit Hide"
+            "name": "Rabbit Hide",
+            "obtaining": [
+                {
+                    "amountMaxLooting": 4,
+                    "amountMin": 0,
+                    "entity": "Rabbit",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "rabbit_stew": {
             "image": "rabbitstew.png",
@@ -6900,7 +7250,18 @@
             "blockID": 83,
             "image": "sugarcane.png",
             "itemID": 338,
-            "name": "Sugar Cane"
+            "name": "Sugar Cane",
+            "obtaining": [
+                {
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "plant": "minecraft:reeds",
+                    "type": "plantGrowth"
+                }
+            ],
+            "solid": false
         },
         "repeater": {
             "image": "repeater.png",
@@ -9561,7 +9922,22 @@
         "sugar": {
             "image": "sugar.png",
             "itemID": 353,
-            "name": "Sugar"
+            "name": "Sugar",
+            "obtaining": [
+                {
+                    "amountMax": 6,
+                    "amountMaxLooting": 15,
+                    "amountMin": 0,
+                    "entity": "Witch",
+                    "type": "entityDeath"
+                },
+                {
+                    "recipe": [
+                        "minecraft:reeds"
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ]
         },
         "tallgrass": {
             "blockID": 31,
@@ -9806,12 +10182,60 @@
             "image": "wheat.png",
             "itemID": 296,
             "name": "Wheat",
+            "obtaining": [
+                {
+                    "amountMax": 4,
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "outputAmount": 9,
+                    "recipe": [
+                        "minecraft:hay_block"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                }
+            ],
             "solid": false
         },
         "wheat_seeds": {
             "image": "wheatseeds.png",
             "itemID": 295,
-            "name": "Seeds"
+            "name": "Seeds",
+            "obtaining": [
+                {
+                    "block": "minecraft:tallgrass",
+                    "excludeTools": true,
+                    "tools": [
+                        "minecraft:shears"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "block": {
+                        "damage": [
+                            2,
+                            3
+                        ],
+                        "id": "minecraft:double_plant"
+                    },
+                    "excludeTools": true,
+                    "tools": [
+                        "minecraft:shears"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "amountMax": 3,
+                    "amountMin": 0,
+                    "block": "minecraft:wheat",
+                    "type": "mining"
+                }
+            ]
         },
         "wooden_axe": {
             "durability": 59,

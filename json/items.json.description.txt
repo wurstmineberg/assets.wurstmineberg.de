@@ -5,7 +5,7 @@ Items are entered by their name IDs. All items from a plugin are in one object, 
 The fields for the damage values, status effects, and tag variants implicitly inherit the values of the parent.
 
 * name: display name of the item.
-* solid: true if the block is solid and nontransparent, defaults to true
+* solid: true if the block is solid and nontransparent in all contexts, defaults to true.
 * image: the filename of a prerendered image of the item or block, relative to the img/grid directory in this repository.
 * blockID: The numeric block id.
 * itemID: The numeric item id. Same as the block id for blocks that can also be items. If this field is missing or null, the item cannot be obtained even with cheats.
@@ -42,6 +42,8 @@ The fields for the damage values, status effects, and tag variants implicitly in
             * noCrash: the entity must not die from collision damage.
             * whileWearing: the entity must have spawned wearing or holding the item, and must be killed by a player or tamed wolf. The presence of this obtaining method indicates that this can occur naturally. The item has a chance of 8.5% plus the level of looting used to kill the entity (11.5% with Looting III) to drop.
             * halloween: the entity must have spawned wearing or holding the item, and must be killed by a player or tamed wolf. The presence of this obtaining method indicates that this can occur naturally on Halloween. The item has a chance equivalent to the level of looting used to kill the entity (3% with Looting III) to drop.
+            * onFire: the entity must die while on fire.
+            * notOnFire: the entity must not be on fire at the time of death.
         * subtype: the mob's subtype, as listed in mobs.json.
     * mining: the item is dropped when a block is mined.
         * block: an item stub specifying the block that drops the item.
