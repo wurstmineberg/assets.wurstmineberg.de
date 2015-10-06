@@ -187,8 +187,8 @@ function displayProfileData(person, items, people, statData) {
         $('#profile-stat-row-last-death').children('.value').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
     });
     // Last Seen
-    $.when(API.lastSeen(person)).done(function(lastSeen) {
-        if (lastSeen == 'currentlyOnline') {
+    $.when(API.serverStatus(), API.lastSeen(person)).done(function(status, lastSeen) {
+        if (person.id in status.list)
             $('#profile-stat-row-last-seen').children('.value').text('currently online');
         } else if (lastSeen) {
             $('#profile-stat-row-last-seen').children('.value').text(formatDate(lastSeen, true));
