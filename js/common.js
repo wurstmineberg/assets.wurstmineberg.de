@@ -325,12 +325,20 @@ function BiomeInfo(biomeInfo) {
 
 function Item(stringID, itemInfo) {
     _.extend(this, itemInfo);
-    this.htmlImage = function(classes, tint) {
+    this.htmlImage = function(classes, tint, damage) {
         if ('image' in itemInfo) {
-            if (itemInfo.image.startsWith('http://') || itemInfo.image.startsWith('https://')) {
-                return '<img src="' + itemInfo.image + '" class="' + (classes || '') + '" />';
-            } else if (typeof tint === 'undefined' || tint === null) {
-                return '<img src="http://assets.' + host + '/img/grid/' + itemInfo.image + '" class="' + (classes || '') + '" />';
+            if (typeof tint === 'undefined' || tint === null) {
+                var damageFound = 0;
+                var result = '<img src="http://assets.' + host + '/img/grid/' + itemInfo.image + '" class="' + (classes || '') + '" />';
+                if ('damagedImages' in itemInfo && typeof damage !== 'undefined') {
+                    $.each(itemInfo.damagedImages, function(damageStr, damagedImage) {
+                        if (parseInt(damageStr) > damageFound && parseInt(damageStr) <= damage) {
+                            damageFound = parseInt(damageStr);
+                            result = '<img src="http://assets.' + host + '/img/grid/' + damagedImage + '" class="' + (classes || '') + '" />';
+                        }
+                    });
+                }
+                return result;
             } else {
                 return '<img style="background: url(http://api.' + host + '/minecraft/items/render/dyed-by-id/' + stringID + '/' + zeroFill(tint.toString(16), 6) + '/png.png)" src="http://assets.' + host + '/img/grid-overlay/' + itemInfo.image + '" class="' + (classes || '') + '" />';
             }
