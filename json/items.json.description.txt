@@ -53,7 +53,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
         * amountMinFortune: the minimum number of items dropped from a single block when mined with Fortune III. Defaults to the same value as amountMin.
         * amountMaxFortune: the maximum number of items dropped from a single block when mined with Fortune III. Defaults to the same value as amountMax.
         * tools: an array of tool stubs describing the tools with which this method of obtaining works. A tool stub can be an item stub, or one of the special values below. Defaults to all tools.
-            * null: without a tool, i.e. bare handed or with a non-tool block or item.
+            * null: without a tool, i.e. bare handed or with a non-tool item.
             * "hoe": any hoe.
             * "pickaxe": any pickaxe.
             * "shovel": any shovel.
@@ -96,8 +96,8 @@ The fields for the damage values, status effects, and tag variants implicitly in
         * infinite: whether an infinite amount of the block will generate, limited only by the world size. Defaults to true.
     * plantGrowth: the block generates from a growing plant.
         * plant: an item stub specifying the required plant block. The item stub's "consumed" field specifies whether the original plant block is consumed by the growth event, and defaults to false instead.
-        * amountMin: the minimum number of blocks that grow from one plant block in one growth event. Defaults to 1.
-        * amountMax: the maximum number of blocks that grow from one plant block in one growth event. Defaults to the value of amountMin.
+        * amountMin: the minimum number of blocks that grow from one plant block in one growth event, or null if unknown. Defaults to 1.
+        * amountMax: the maximum number of blocks that grow from one plant block in one growth event, or null if unknown. Defaults to the value of amountMin.
     * modifyBlock: the block can be created by using (default: right click) an item on another block.
         * block: an item stub describing the source block.
         * tools: an array of tool stubs describing the items which can be used for this. The "consumed" field defaults to false instead.

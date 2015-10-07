@@ -1,5 +1,19 @@
 {
     "minecraft": {
+        "acacia_boat": {
+            "image": "acaciaboat.png",
+            "itemID": 447,
+            "name": "Acacia Boat",
+            "obtaining": [
+                {
+                    "entity": "Boat",
+                    "requires": "noCrash",
+                    "subtype": "acacia",
+                    "type": "entityDeath"
+                }
+            ],
+            "stackable": false
+        },
         "acacia_door": {
             "blockID": 196,
             "image": "acaciadoor.png",
@@ -1076,6 +1090,20 @@
             ],
             "solid": false
         },
+        "birch_boat": {
+            "image": "birchboat.png",
+            "itemID": 445,
+            "name": "Birch Boat",
+            "obtaining": [
+                {
+                    "entity": "Boat",
+                    "requires": "noCrash",
+                    "subtype": "birch",
+                    "type": "entityDeath"
+                }
+            ],
+            "stackable": false
+        },
         "birch_door": {
             "blockID": 194,
             "image": "birchdoor.png",
@@ -1197,9 +1225,9 @@
             "name": "Blaze Rod"
         },
         "boat": {
-            "image": "boat.png",
+            "image": "oakboat.png",
             "itemID": 333,
-            "name": "Boat",
+            "name": "Oak Boat",
             "obtaining": [
                 {
                     "recipe": [
@@ -1207,7 +1235,7 @@
                         null,
                         null,
                         "minecraft:planks",
-                        null,
+                        "minecraft:wooden_shovel",
                         "minecraft:planks",
                         "minecraft:planks",
                         "minecraft:planks",
@@ -1218,6 +1246,7 @@
                 {
                     "entity": "Boat",
                     "requires": "noCrash",
+                    "subtype": "oak",
                     "type": "entityDeath"
                 }
             ],
@@ -2054,6 +2083,20 @@
             "image": "craftingtable.png",
             "itemID": 58,
             "name": "Crafting Table"
+        },
+        "dark_oak_boat": {
+            "image": "darkoakboat.png",
+            "itemID": 448,
+            "name": "Dark Oak Boat",
+            "obtaining": [
+                {
+                    "entity": "Boat",
+                    "requires": "noCrash",
+                    "subtype": "darkOak",
+                    "type": "entityDeath"
+                }
+            ],
+            "stackable": false
         },
         "dark_oak_door": {
             "image": "darkoakdoor.png",
@@ -3010,6 +3053,19 @@
             ],
             "stackable": 16
         },
+        "elytra": {
+            "durability": 432,
+            "image": "elytra.png",
+            "itemID": 443,
+            "name": "Elytra",
+            "obtaining": [
+                {
+                    "structure": "endShipElytraFrame",
+                    "type": "chest"
+                }
+            ],
+            "stackable": false
+        },
         "emerald": {
             "image": "emerald.png",
             "itemID": 388,
@@ -3752,11 +3808,6 @@
             "name": "Flower Pot",
             "obtaining": [
                 {
-                    "amount": 1,
-                    "structure": "witchHut",
-                    "type": "structure"
-                },
-                {
                     "recipe": [
                         null,
                         null,
@@ -4269,11 +4320,6 @@
                         null
                     ],
                     "type": "craftingShaped"
-                },
-                {
-                    "amount": 1,
-                    "structure": "endShip",
-                    "type": "structure"
                 }
             ],
             "solid": false
@@ -4360,11 +4406,6 @@
                         "minecraft:iron_ingot"
                     ],
                     "type": "craftingShaped"
-                },
-                {
-                    "amount": 8,
-                    "structure": "endShip",
-                    "type": "structure"
                 }
             ]
         },
@@ -4911,6 +4952,20 @@
             "image": "jukebox.png",
             "itemID": 84,
             "name": "Jukebox"
+        },
+        "jungle_boat": {
+            "image": "jungleboat.png",
+            "itemID": 446,
+            "name": "Jungle Boat",
+            "obtaining": [
+                {
+                    "entity": "Boat",
+                    "requires": "noCrash",
+                    "subtype": "jungle",
+                    "type": "entityDeath"
+                }
+            ],
+            "stackable": false
         },
         "jungle_door": {
             "blockID": 195,
@@ -5931,19 +5986,126 @@
             "blockID": 17,
             "damageValues": {
                 "0": {
-                    "name": "Oak Wood"
+                    "name": "Oak Wood",
+                    "obtaining": [
+                        {
+                            "structure": "village",
+                            "type": "structure"
+                        },
+                        {
+                            "amountMax": 3,
+                            "stacksMax": 10,
+                            "stacksMin": 10,
+                            "type": "bonusChest",
+                            "weight": 0.15625
+                        },
+                        {
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "amountMax": null,
+                            "amountMin": null,
+                            "plant": {
+                                "consumed": true,
+                                "damage": 0,
+                                "id": "minecraft:sapling"
+                            },
+                            "type": "plantGrowth"
+                        }
+                    ]
                 },
                 "1": {
                     "image": "sprucewood.png",
-                    "name": "Spruce Wood"
+                    "name": "Spruce Wood",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Taiga",
+                                "Cold Taiga",
+                                "Taiga M",
+                                "Cold Taiga M",
+                                "TaigaHills",
+                                "Cold Taiga Hills",
+                                "Mega Taiga",
+                                "Mega Spruce Taiga",
+                                "Mega Taiga Hills",
+                                "Redwood Taiga Hills M",
+                                "Extreme Hills",
+                                "Extreme Hills M",
+                                "Extreme Hills+",
+                                "Extreme Hills+ M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "amountMax": 31,
+                            "amountMin": 6,
+                            "plant": {
+                                "consumed": true,
+                                "damage": 1,
+                                "id": "minecraft:sapling"
+                            },
+                            "type": "plantGrowth"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "birchwood.png",
-                    "name": "Birch Wood"
+                    "name": "Birch Wood",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Forest",
+                                "ForestHills",
+                                "Flower Forest",
+                                "Birch Forest",
+                                "Birch Forest M",
+                                "Birch Forest Hills",
+                                "Birch Forest Hills M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "amountMax": 7,
+                            "amountMin": 5,
+                            "plant": {
+                                "consumed": true,
+                                "damage": 2,
+                                "id": "minecraft:sapling"
+                            },
+                            "type": "plantGrowth"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "junglewood.png",
-                    "name": "Jungle Wood"
+                    "name": "Jungle Wood",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Jungle",
+                                "JungleEdge",
+                                "Jungle M",
+                                "JungleEdge M",
+                                "JungleHills"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "amountMax": null,
+                            "amountMin": null,
+                            "plant": {
+                                "consumed": true,
+                                "damage": 3,
+                                "id": "minecraft:sapling"
+                            },
+                            "type": "plantGrowth"
+                        }
+                    ]
                 }
             },
             "image": "oakwood.png",
@@ -6222,7 +6384,7 @@
             "name": "Obsidian",
             "obtaining": [
                 {
-                    "amount": 20,
+                    "amount": 26,
                     "structure": "endShip",
                     "type": "structure"
                 },
@@ -7169,7 +7331,7 @@
                     "type": "structure"
                 },
                 {
-                    "amount": 94,
+                    "amount": 97,
                     "structure": "endShip",
                     "type": "structure"
                 }
@@ -7772,9 +7934,8 @@
                     "type": "useItem"
                 },
                 {
-                    "amount": 1,
-                    "structure": "witchHut",
-                    "type": "structure"
+                    "structure": "witchHutMushroomPot",
+                    "type": "chest"
                 }
             ],
             "solid": false
@@ -9726,6 +9887,20 @@
             "itemID": 19,
             "name": "Sponge"
         },
+        "spruce_boat": {
+            "image": "spruceboat.png",
+            "itemID": 444,
+            "name": "Spruce Boat",
+            "obtaining": [
+                {
+                    "entity": "Boat",
+                    "requires": "noCrash",
+                    "subtype": "spruce",
+                    "type": "entityDeath"
+                }
+            ],
+            "stackable": false
+        },
         "spruce_door": {
             "blockID": 193,
             "image": "sprucedoor.png",
@@ -11290,10 +11465,6 @@
             "itemID": 387,
             "name": "Written Book",
             "obtaining": [
-                {
-                    "structure": "endShipTempHopper",
-                    "type": "chest"
-                },
                 {
                     "item": "minecraft:writable_book",
                     "type": "useItem"

@@ -103,10 +103,11 @@
                 "stacksMax": 2,
                 "stacksMin": 2
             },
-            "endShipTempHopper": {
+            "endShipElytraFrame": {
                 "chestsMax": 1,
                 "chestsMin": 1,
-                "inventoryType": "minecraft:hopper"
+                "inventoryIsEntity": true,
+                "inventoryType": "ItemFrame"
             }
         },
         "name": {
@@ -194,6 +195,13 @@
             "Swampland"
         ],
         "dimension": "overworld",
+        "inventories": {
+            "witchHutMushroomPot": {
+                "chestsMax": 1,
+                "chestsMin": 1,
+                "inventoryType": "minecraft:flower_pot"
+            }
+        },
         "name": {
             "default": "witch hut",
             "plural": "witch huts"

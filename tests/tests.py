@@ -364,11 +364,13 @@ def validate_items_json():
                     assert is_block
                     item_stubs.append((method['plant'], True, False))
                     if 'amountMin' in method:
-                        assert isinstance(method['amountMin'], int)
-                        assert method['amountMin'] != 1
+                        if method['amountMin'] is not None:
+                            assert isinstance(method['amountMin'], int)
+                            assert method['amountMin'] != 1
                     if 'amountMax' in method:
-                        assert isinstance(method['amountMax'], int)
-                        assert method['amountMax'] > method.get('amountMin', 1)
+                        if method['amountMax'] is not None:
+                            assert isinstance(method['amountMax'], int)
+                            assert method['amountMax'] > method.get('amountMin', 1)
                 elif method['type'] == 'modifyBlock':
                     assert is_block
                     item_stubs.append((method['block'], True, False))
