@@ -100,6 +100,7 @@ def validate_items_json():
             'name',
             'solid',
             'image',
+            'damagedImages',
             'blockID',
             'itemID',
             'damageValues',
@@ -135,7 +136,15 @@ def validate_items_json():
         if 'solid' in item:
             assert 'blockID' in item # is_block
             assert item['solid'] is False
-        pass # image
+        if 'image' in item:
+            assert isinstance(item['image'], str)
+        if 'damagedImages' in item:
+            assert 'durability' in item
+            assert isinstance(item['damagedImages'], dict)
+            for min_damage, damaged_image in item['damagedImages'].items():
+                assert int(min_damage) <= item['durability']
+                assert isinstance(damaged_image, str)
+            pass # image
         if 'blockID' in item:
             is_block = True
             assert isinstance(item['blockID'], int) or (is_override and item['blockID'] is None)

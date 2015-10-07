@@ -7,6 +7,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
 * name: display name of the item.
 * solid: true if the block is solid and nontransparent in all contexts, defaults to true.
 * image: the filename of a prerendered image of the item or block, relative to the img/grid directory in this repository.
+* damagedImages: an object mapping minimum damage values to alternate image values. Only used for items with durability.
 * blockID: The numeric block id.
 * itemID: The numeric item id. Same as the block id for blocks that can also be items. If this field is missing or null, the item cannot be obtained even with cheats.
 * damageValues: damage values of the item, with the fields that differ from the default.

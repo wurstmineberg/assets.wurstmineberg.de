@@ -3054,6 +3054,9 @@
             "stackable": 16
         },
         "elytra": {
+            "damagedImages": {
+                "431": "brokenelytra.png"
+            },
             "durability": 432,
             "image": "elytra.png",
             "itemID": 443,
