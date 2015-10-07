@@ -37,6 +37,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
         * requires: if given, the item is only dropped under specific circumstances:
             * player: the entity must be killed by a player or tamed wolf.
             * chargedCreeper: the entity must be killed by a charged Creeper explosion. A single charged Creeper explosion will only ever produce one such item, no matter how many entities it kills.
+            * skeletonArrow: the entity must be shot by a skeleton or Wither skeleton.
             * whileUsing: the entity must be using (e.g. drinking) the item when it dies in order to drop it.
             * crash: the entity must die from collision damage.
             * noCrash: the entity must not die from collision damage.
@@ -56,6 +57,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
             * "hoe": any hoe.
             * "pickaxe": any pickaxe.
             * "shovel": any shovel.
+            * "sword": any sword.
         * excludeTools: if true, this method of obtaining works with tools other than those in the tools array. Defaults to false.
         * silkTouch: whether or not the Silk Touch enchantment should be used. The default, null, means that it works with or without Silk Touch.
     * structure: the block generates naturally as part of a structure.

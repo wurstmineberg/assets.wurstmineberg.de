@@ -240,6 +240,7 @@ def validate_items_json():
                         assert method['requires'] in {
                             'player',
                             'chargedCreeper',
+                            'skeletonArrow',
                             'whileUsing',
                             'crash',
                             'noCrash',
@@ -488,6 +489,7 @@ def validate_items_json():
                 assert isinstance(amount_max_fortune, int)
                 assert amount_max_fortune > amount_max
             if 'tools' in mining_info:
+                assert isinstance(mining_info['tools'], list)
                 for tool in mining_info['tools']:
                     tool_stubs.append(tool)
             if 'excludeTools' in mining_info:
@@ -496,7 +498,7 @@ def validate_items_json():
             if 'silkTouch' in mining_info:
                 assert isinstance(mining_info['silkTouch'], bool)
     for tool_stub in tool_stubs:
-        if tool_stub in (None, 'hoe', 'pickaxe', 'shovel'):
+        if tool_stub in (None, 'hoe', 'pickaxe', 'shovel', 'sword'):
             continue
         item_stubs.append((tool_stub, False, True))
     for item_stub, must_be_block, must_be_item in item_stubs:

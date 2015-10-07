@@ -138,6 +138,26 @@
             "blockID": 0,
             "image": "air.png",
             "name": "Air",
+            "obtaining": [
+                {
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "dimension": "nether",
+                    "type": "natural"
+                },
+                {
+                    "dimension": "end",
+                    "type": "natural"
+                },
+                {
+                    "block": true,
+                    "description": "Whenever a block is broken or otherwise disappears, a block of air replaces it.",
+                    "renewability": "fullyAuto",
+                    "type": "special"
+                }
+            ],
             "solid": false
         },
         "anvil": {
@@ -193,7 +213,66 @@
         "apple": {
             "image": "apple.png",
             "itemID": 260,
-            "name": "Apple"
+            "name": "Apple",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "block": {
+                        "damage": 0,
+                        "id": "minecraft:leaves"
+                    },
+                    "excludeTools": true,
+                    "silkTouch": false,
+                    "tools": [
+                        "minecraft:shears"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "amountMin": 0,
+                    "block": {
+                        "damage": 1,
+                        "id": "minecraft:leaves2"
+                    },
+                    "excludeTools": true,
+                    "silkTouch": false,
+                    "tools": [
+                        "minecraft:shears"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "blacksmith",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "strongholdStoreRoom",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 3,
+                    "amountMin": 2,
+                    "stacksMax": 10,
+                    "stacksMin": 10,
+                    "type": "bonusChest",
+                    "weight": 0.078125
+                },
+                {
+                    "career": 1,
+                    "outputAmount": 5,
+                    "price": 1,
+                    "profession": 0,
+                    "tier": 2,
+                    "type": "trading"
+                }
+            ]
         },
         "armor_stand": {
             "image": "armorstand.png",
@@ -1121,6 +1200,27 @@
             "image": "boat.png",
             "itemID": 333,
             "name": "Boat",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:planks",
+                        null,
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:planks"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "entity": "Boat",
+                    "requires": "noCrash",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "bone": {
@@ -1494,7 +1594,21 @@
         "carrot": {
             "image": "carrot.png",
             "itemID": 391,
-            "name": "Carrot"
+            "name": "Carrot",
+            "obtaining": [
+                {
+                    "amountMax": 4,
+                    "block": "minecraft:carrots",
+                    "type": "mining"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "player",
+                    "type": "entityDeath"
+                }
+            ],
+            "whenPlaced": "minecraft:carrots"
         },
         "carrot_on_a_stick": {
             "durability": 25,
@@ -1506,7 +1620,14 @@
         "carrots": {
             "blockID": 141,
             "image": "carrot.png",
-            "name": "Carrot Crops"
+            "name": "Carrot Crops",
+            "obtaining": [
+                {
+                    "structure": "village",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "cauldron": {
             "blockID": 118,
@@ -1627,7 +1748,14 @@
         "chicken": {
             "image": "rawchicken.png",
             "itemID": 365,
-            "name": "Raw Chicken"
+            "name": "Raw Chicken",
+            "obtaining": [
+                {
+                    "entity": "Chicken",
+                    "requires": "notOnFire",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "chorus_flower": {
             "blockID": 200,
@@ -1760,6 +1888,7 @@
             "name": "Command Block"
         },
         "command_block_minecart": {
+            "creativeMenu": false,
             "image": "minecartwithcommandblock.png",
             "itemID": 422,
             "name": "Minecart with Command Block",
@@ -1831,7 +1960,27 @@
         "cooked_chicken": {
             "image": "cookedchicken.png",
             "itemID": 366,
-            "name": "Cooked Chicken"
+            "name": "Cooked Chicken",
+            "obtaining": [
+                {
+                    "entity": "Chicken",
+                    "requires": "onFire",
+                    "type": "entityDeath"
+                },
+                {
+                    "input": "minecraft:chicken",
+                    "type": "smelting"
+                },
+                {
+                    "career": 1,
+                    "outputAmount": 8,
+                    "outputAmountMin": 6,
+                    "price": 1,
+                    "profession": 4,
+                    "tier": 1,
+                    "type": "trading"
+                }
+            ]
         },
         "cooked_fish": {
             "damageValues": {
@@ -1848,12 +1997,47 @@
         "cooked_mutton": {
             "image": "cookedmutton.png",
             "itemID": 424,
-            "name": "Cooked Mutton"
+            "name": "Cooked Mutton",
+            "obtaining": [
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "entity": "Sheep",
+                    "requires": "onFire",
+                    "type": "entityDeath"
+                },
+                {
+                    "input": "minecraft:mutton",
+                    "type": "smelting"
+                }
+            ]
         },
         "cooked_porkchop": {
             "image": "cookedporkchop.png",
             "itemID": 320,
-            "name": "Cooked Porkchop"
+            "name": "Cooked Porkchop",
+            "obtaining": [
+                {
+                    "amountMax": 3,
+                    "amountMaxLooting": 6,
+                    "entity": "Pig",
+                    "requires": "onFire",
+                    "type": "entityDeath"
+                },
+                {
+                    "input": "minecraft:porkchop",
+                    "type": "smelting"
+                },
+                {
+                    "career": 1,
+                    "outputAmount": 7,
+                    "outputAmountMin": 5,
+                    "price": 1,
+                    "profession": 4,
+                    "tier": 1,
+                    "type": "trading"
+                }
+            ]
         },
         "cooked_rabbit": {
             "image": "cookedrabbit.png",
@@ -2536,8 +2720,24 @@
                     ]
                 },
                 "2": {
+                    "dropsSelf": {
+                        "silkTouch": true,
+                        "tools": [
+                            "shovel"
+                        ]
+                    },
                     "image": "podzol.png",
-                    "name": "Podzol"
+                    "name": "Podzol",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Mega Taiga",
+                                "Mega Taiga Hills"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
                 }
             },
             "image": "dirt.png",
@@ -3549,7 +3749,28 @@
             "blockID": 140,
             "image": "flowerpot.png",
             "itemID": 390,
-            "name": "Flower Pot"
+            "name": "Flower Pot",
+            "obtaining": [
+                {
+                    "amount": 1,
+                    "structure": "witchHut",
+                    "type": "structure"
+                },
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:brick",
+                        null,
+                        "minecraft:brick",
+                        null,
+                        "minecraft:brick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "flowing_lava": {
             "blockID": 10,
@@ -3707,7 +3928,22 @@
         "gold_nugget": {
             "image": "goldnugget.png",
             "itemID": 371,
-            "name": "Gold Nugget"
+            "name": "Gold Nugget",
+            "obtaining": [
+                {
+                    "amountMaxLooting": 4,
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "type": "entityDeath"
+                },
+                {
+                    "outputAmount": 9,
+                    "recipe": [
+                        "minecraft:gold_ingot"
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ]
         },
         "gold_ore": {
             "blockID": 14,
@@ -4829,9 +5065,23 @@
         },
         "lapis_ore": {
             "blockID": 21,
+            "dropsSelf": {
+                "silkTouch": true,
+                "tools": [
+                    "minecraft:stone_pickaxe",
+                    "minecraft:iron_pickaxe",
+                    "minecraft:diamond_pickaxe"
+                ]
+            },
             "image": "lapislazuliore.png",
             "itemID": 21,
-            "name": "Lapis Lazuli Ore"
+            "name": "Lapis Lazuli Ore",
+            "obtaining": [
+                {
+                    "dimension": "overworld",
+                    "type": "natural"
+                }
+            ]
         },
         "lava": {
             "blockID": 11,
@@ -4919,6 +5169,46 @@
             "image": "leatherboots.png",
             "itemID": 301,
             "name": "Leather Boots",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:leather",
+                        null,
+                        "minecraft:leather",
+                        "minecraft:leather",
+                        null,
+                        "minecraft:leather"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "category": "junk",
+                    "type": "fishing",
+                    "weight": 0.12048192771084337
+                }
+            ],
             "stackable": false
         },
         "leather_chestplate": {
@@ -4985,7 +5275,29 @@
             "blockID": 69,
             "image": "lever.png",
             "itemID": 69,
-            "name": "Lever"
+            "name": "Lever",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null,
+                        null,
+                        "minecraft:cobblestone",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amount": 3,
+                    "structure": "jungleTemple",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "light_weighted_pressure_plate": {
             "blockID": 147,
@@ -5788,7 +6100,26 @@
         "name_tag": {
             "image": "nametag.png",
             "itemID": 421,
-            "name": "Name Tag"
+            "name": "Name Tag",
+            "obtaining": [
+                {
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "category": "treasure",
+                    "type": "fishing",
+                    "weight": 0.16666666666666666
+                },
+                {
+                    "career": 1,
+                    "price": 22,
+                    "priceMin": 20,
+                    "profession": 1,
+                    "tier": 5,
+                    "type": "trading"
+                }
+            ]
         },
         "nether_brick": {
             "blockID": 112,
@@ -5842,6 +6173,45 @@
             "image": "oakwoodstairs.png",
             "itemID": 53,
             "name": "Oak Wood Stairs",
+            "obtaining": [
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        },
+                        null,
+                        null,
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        },
+                        null,
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        }
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                }
+            ],
             "solid": false
         },
         "obsidian": {
@@ -6627,7 +6997,15 @@
         "powered_repeater": {
             "blockID": 94,
             "image": "repeater.png",
-            "name": "Powered Repeater"
+            "name": "Powered Repeater",
+            "obtaining": [
+                {
+                    "block": true,
+                    "description": "An <a href=\"/block/minecraft/unpowered_repeater\">unpowered repeater</a> will turn into this when it becomes powered by a redstone signal from its rear input.",
+                    "renewability": "manual",
+                    "type": "special"
+                }
+            ]
         },
         "prismarine": {
             "blockID": 168,
@@ -6947,6 +7325,22 @@
             "image": "rabbitstew.png",
             "itemID": 413,
             "name": "Rabbit Stew",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        "minecraft:cooked_rabbit",
+                        null,
+                        "minecraft:carrot",
+                        "minecraft:baked_potato",
+                        "minecraft:red_mushroom",
+                        null,
+                        "minecraft:bowl",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
             "stackable": false
         },
         "rail": {
@@ -6959,72 +7353,176 @@
             "image": "musicdisc11.png",
             "itemID": 2266,
             "name": "Music Disc: C418 \u2014 11",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_13": {
             "image": "musicdisc13.png",
             "itemID": 2256,
             "name": "Music Disc: C418 \u2014 13",
+            "obtaining": [
+                {
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_blocks": {
             "image": "musicdiscblocks.png",
             "itemID": 2258,
             "name": "Music Disc: C418 \u2014 blocks",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_cat": {
             "image": "musicdisccat.png",
             "itemID": 2257,
             "name": "Music Disc: C418 \u2014 cat",
+            "obtaining": [
+                {
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_chirp": {
             "image": "musicdiscchirp.png",
             "itemID": 2259,
             "name": "Music Disc: C418 \u2014 chirp",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_far": {
             "image": "musicdiscfar.png",
             "itemID": 2260,
             "name": "Music Disc: C418 \u2014 far",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_mall": {
             "image": "musicdiscmall.png",
             "itemID": 2261,
             "name": "Music Disc: C418 \u2014 mall",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_mellohi": {
             "image": "musicdiscmellohi.png",
             "itemID": 2262,
             "name": "Music Disc: C418 \u2014 mellohi",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_stal": {
             "image": "musicdiscstal.png",
             "itemID": 2263,
             "name": "Music Disc: C418 \u2014 stal",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_strad": {
             "image": "musicdiscstrad.png",
             "itemID": 2264,
             "name": "Music Disc: C418 \u2014 strad",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_wait": {
             "image": "musicdiscwait.png",
             "itemID": 2267,
             "name": "Music Disc: C418 \u2014 wait",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "record_ward": {
             "image": "musicdiscward.png",
             "itemID": 2265,
             "name": "Music Disc: C418 \u2014 ward",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Creeper",
+                    "requires": "skeletonArrow",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "red_flower": {
@@ -7032,39 +7530,214 @@
             "damageValues": {
                 "0": {
                     "image": "poppy.png",
-                    "name": "Poppy"
+                    "name": "Poppy",
+                    "obtaining": [
+                        {
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "item": {
+                                "damage": 15,
+                                "id": "minecraft:dye"
+                            },
+                            "onBlock": "minecraft:grass",
+                            "type": "useItem"
+                        },
+                        {
+                            "amountMax": 2,
+                            "amountMin": 0,
+                            "entity": "VillagerGolem",
+                            "type": "entityDeath"
+                        }
+                    ]
                 },
                 "1": {
                     "image": "blueorchid.png",
-                    "name": "Blue Orchid"
+                    "name": "Blue Orchid",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Swampland",
+                                "Swampland M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "item": {
+                                "damage": 15,
+                                "id": "minecraft:dye"
+                            },
+                            "onBlock": "minecraft:grass",
+                            "type": "useItem"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "allium.png",
-                    "name": "Allium"
+                    "name": "Allium",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Flower Forest"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "item": {
+                                "damage": 15,
+                                "id": "minecraft:dye"
+                            },
+                            "onBlock": "minecraft:grass",
+                            "type": "useItem"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "azurebluet.png",
-                    "name": "Azure Bluet"
+                    "name": "Azure Bluet",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Plains",
+                                "Plains M",
+                                "Sunflower Plains",
+                                "Flower Forest"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "item": {
+                                "damage": 15,
+                                "id": "minecraft:dye"
+                            },
+                            "onBlock": "minecraft:grass",
+                            "type": "useItem"
+                        }
+                    ]
                 },
                 "4": {
                     "image": "redtulip.png",
-                    "name": "Red Tulip"
+                    "name": "Red Tulip",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Plains",
+                                "Plains M",
+                                "Sunflower Plains",
+                                "Flower Forest"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "item": {
+                                "damage": 15,
+                                "id": "minecraft:dye"
+                            },
+                            "onBlock": "minecraft:grass",
+                            "type": "useItem"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "orangetulip.png",
-                    "name": "Orange Tulip"
+                    "name": "Orange Tulip",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Plains",
+                                "Plains M",
+                                "Sunflower Plains",
+                                "Flower Forest"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "item": {
+                                "damage": 15,
+                                "id": "minecraft:dye"
+                            },
+                            "onBlock": "minecraft:grass",
+                            "type": "useItem"
+                        }
+                    ]
                 },
                 "6": {
                     "image": "whitetulip.png",
-                    "name": "White Tulip"
+                    "name": "White Tulip",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Plains",
+                                "Plains M",
+                                "Sunflower Plains",
+                                "Flower Forest"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "item": {
+                                "damage": 15,
+                                "id": "minecraft:dye"
+                            },
+                            "onBlock": "minecraft:grass",
+                            "type": "useItem"
+                        }
+                    ]
                 },
                 "7": {
                     "image": "pinktulip.png",
-                    "name": "Pink Tulip"
+                    "name": "Pink Tulip",
+                    "obtaining": [
+                        {
+                            "biomes": [
+                                "Plains",
+                                "Plains M",
+                                "Sunflower Plains",
+                                "Flower Forest"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "item": {
+                                "damage": 15,
+                                "id": "minecraft:dye"
+                            },
+                            "onBlock": "minecraft:grass",
+                            "type": "useItem"
+                        }
+                    ]
                 },
                 "8": {
                     "image": "oxeyedaisy.png",
-                    "name": "Oxeye Daisy"
+                    "name": "Oxeye Daisy",
+                    "obtaining": [
+                        {
+                            "item": {
+                                "damage": 15,
+                                "id": "minecraft:dye"
+                            },
+                            "onBlock": "minecraft:grass",
+                            "type": "useItem"
+                        },
+                        {
+                            "biomes": [
+                                "Plains",
+                                "Plains M",
+                                "Sunflower Plains",
+                                "Flower Forest"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
                 }
             },
             "image": "rose.png",
@@ -7077,6 +7750,33 @@
             "image": "redmushroom.png",
             "itemID": 40,
             "name": "Red Mushroom",
+            "obtaining": [
+                {
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "dimension": "nether",
+                    "type": "natural"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMin": 0,
+                    "block": "minecraft:red_mushroom_block",
+                    "silkTouch": false,
+                    "type": "mining"
+                },
+                {
+                    "item": "minecraft:shears",
+                    "onEntity": "MushroomCow",
+                    "type": "useItem"
+                },
+                {
+                    "amount": 1,
+                    "structure": "witchHut",
+                    "type": "structure"
+                }
+            ],
             "solid": false
         },
         "red_mushroom_block": {
@@ -7231,9 +7931,22 @@
         },
         "redstone_ore": {
             "blockID": 73,
+            "dropsSelf": {
+                "silkTouch": true,
+                "tools": [
+                    "minecraft:iron_pickaxe",
+                    "minecraft:diamond_pickaxe"
+                ]
+            },
             "image": "redstoneore.png",
             "itemID": 73,
-            "name": "Redstone Ore"
+            "name": "Redstone Ore",
+            "obtaining": [
+                {
+                    "dimension": "overworld",
+                    "type": "natural"
+                }
+            ]
         },
         "redstone_torch": {
             "blockID": 76,
@@ -7899,9 +8612,38 @@
         },
         "snow": {
             "blockID": 80,
+            "dropsSelf": {
+                "silkTouch": true,
+                "tools": [
+                    "shovel"
+                ]
+            },
             "image": "snowblock.png",
             "itemID": 80,
-            "name": "Snow Block"
+            "name": "Snow Block",
+            "obtaining": [
+                {
+                    "biomes": [
+                        "Ice Plains Spikes"
+                    ],
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:snowball",
+                        "minecraft:snowball",
+                        null,
+                        "minecraft:snowball",
+                        "minecraft:snowball",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "snow_layer": {
             "blockID": 78,
@@ -7913,6 +8655,30 @@
             "image": "snowball.png",
             "itemID": 332,
             "name": "Snowball",
+            "obtaining": [
+                {
+                    "amountMax": 4,
+                    "amountMin": 4,
+                    "block": "minecraft:snow",
+                    "silkTouch": false,
+                    "tools": [
+                        "shovel"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "amountMax": 8,
+                    "block": "minecraft:snow_layer",
+                    "tools": [
+                        "shovel"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "entity": "SnowMan",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": 16
         },
         "soul_sand": {
@@ -8073,7 +8839,28 @@
         "spider_eye": {
             "image": "spidereye.png",
             "itemID": 375,
-            "name": "Spider Eye"
+            "name": "Spider Eye",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Spider",
+                    "requires": "player",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "CaveSpider",
+                    "requires": "player",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 6,
+                    "amountMaxLooting": 15,
+                    "amountMin": 0,
+                    "entity": "Witch",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "splash_potion": {
             "effects": {
@@ -9736,6 +10523,22 @@
             "image": "stonehoe.png",
             "itemID": 291,
             "name": "Stone Hoe",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
             "stackable": false
         },
         "stone_pickaxe": {
@@ -9913,7 +10716,45 @@
         "string": {
             "image": "string.png",
             "itemID": 287,
-            "name": "String"
+            "name": "String",
+            "obtaining": [
+                {
+                    "block": "minecraft:tripwire",
+                    "type": "mining"
+                },
+                {
+                    "block": "minecraft:web",
+                    "silkTouch": false,
+                    "tools": [
+                        "sword",
+                        "minecraft:shears"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMin": 0,
+                    "entity": "Spider",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMin": 0,
+                    "entity": "CaveSpider",
+                    "type": "entityDeath"
+                },
+                {
+                    "category": "junk",
+                    "type": "fishing",
+                    "weight": 0.060240963855421686
+                },
+                {
+                    "amountMax": 4,
+                    "structure": "dungeon",
+                    "type": "chest"
+                }
+            ],
+            "whenPlaced": "minecraft:tripwire"
         },
         "structure_block": {
             "blockID": 255,
@@ -10107,7 +10948,15 @@
         "tripwire": {
             "blockID": 132,
             "image": "string.png",
-            "name": "String"
+            "name": "String",
+            "obtaining": [
+                {
+                    "amount": 5,
+                    "structure": "jungleTemple",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "tripwire_hook": {
             "blockID": 131,
@@ -10134,7 +10983,8 @@
             "blockID": 106,
             "image": "vines.png",
             "itemID": 106,
-            "name": "Vines"
+            "name": "Vines",
+            "solid": false
         },
         "wall_banner": {
             "blockID": 177,
