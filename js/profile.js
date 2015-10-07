@@ -165,7 +165,7 @@ function displayProfileData(person, items, people, statData) {
     if (person.invitedBy) {
         $('#profile-stat-row-invited-by').children('.value').html($('<a>', {href: '/people/' + person.invitedBy}).text(person.invitedBy));
         $.when(people.personById(person.invitedBy)).done(function(invitedBy) {
-            $('#profile-stat-row-invited-by').children('.value').html(html_player_list([invitedBy]));
+            $('#profile-stat-row-invited-by').children('.value').html(htmlPlayerList([invitedBy]));
         }).fail(function() {
             $('#profile-stat-row-invited-by').children('.value').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
         });
@@ -202,12 +202,12 @@ function displayProfileData(person, items, people, statData) {
     var peopleInvited = people.list.filter(function(otherPerson) {
         return (otherPerson.invitedBy == person.id && otherPerson.joinDate < dateObjectFromUTC('2013-11-02T17:33:45+0000'));
     });
-    $('#profile-stat-row-people-invited-prefreeze').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {class: 'muted'}).text('no one'));
+    $('#profile-stat-row-people-invited-prefreeze').children('.value').html(peopleInvited.length ? htmlPlayerList(peopleInvited) : $('<span>', {class: 'muted'}).text('no one'));
     // People Invited (post-freeze)
     var peopleInvited = people.list.filter(function(otherPerson) {
         return (otherPerson.invitedBy == person.id && otherPerson.joinDate >= dateObjectFromUTC('2013-11-02T17:33:45+0000'));
     });
-    $('#profile-stat-row-people-invited').children('.value').html(peopleInvited.length ? html_player_list(peopleInvited) : $('<span>', {class: 'muted'}).text('no one'));
+    $('#profile-stat-row-people-invited').children('.value').html(peopleInvited.length ? htmlPlayerList(peopleInvited) : $('<span>', {class: 'muted'}).text('no one'));
     // Status
     function statusDisplay(status) {
         if (status == 'later') {
@@ -523,14 +523,14 @@ function displayMinigameData(people, person, deathGamesLog) {
             }
             if (index > 0) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append('after ');
-                $('#minigames-stat-row-achievementrun-place').children('.value').append(html_player_list([winners[index - 1].player]));
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(htmlPlayerList([winners[index - 1].player]));
             }
             if (index > 0 && winners.length > index + 1) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append(', ');
             }
             if (winners.length > index + 1) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append('before ');
-                $('#minigames-stat-row-achievementrun-place').children('.value').append(html_player_list([winners[index + 1].player]));
+                $('#minigames-stat-row-achievementrun-place').children('.value').append(htmlPlayerList([winners[index + 1].player]));
             }
             if (index > 0 || winners.length > index + 1) {
                 $('#minigames-stat-row-achievementrun-place').children('.value').append(')');
@@ -643,18 +643,18 @@ function displayMinigameData(people, person, deathGamesLog) {
     }
 }
 
-function loadStatData(person, string_data, achievement_data, biomes, items, mobData) {
+function loadStatData(person, stringData, achievementData, biomes, items, mobData) {
     if (person.option('show_inventory')) {
-        $.when(API.playerData(person)).done(function(player_data) {
-            displayInventory(player_data, items, string_data);
+        $.when(API.playerData(person)).done(function(playerData) {
+            displayInventory(playerData, items, stringData);
         }).fail(function() {
             $('.inventory-table .loading td').html('Error: Could not load ' + person.minecraft + '.dat');
         });
     } else if (person.optionIsDefault('show_inventory')) {
         $('.panel').before('<div class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>Want to show you inventory?</strong> Since you have not set a preference for this, your inventory and Ender chest will be displayed on this page once we get everything working. You can activate this feature now using the command <code>!<a href="//wiki.' + host + '/Commands#Option">Option</a> show_inventory on</code>, or permanently deactivate it with <code>!<a href="//wiki.' + host + '/Commands#Option">Option</a> show_inventory off</code>.</div>');
     }
-    $.when(API.personStatData(person)).done(function(stat_data) {
-        displayStatData(stat_data, string_data, items, achievement_data, biomes, mobData);
+    $.when(API.personStatData(person)).done(function(statData) {
+        displayStatData(statData, stringData, items, achievementData, biomes, mobData);
     }).fail(function() {
         $('.loading-stat').html('<td colspan="7">Error: Could not load ' + person.minecraft + '.json</td>');
     });

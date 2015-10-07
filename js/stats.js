@@ -78,11 +78,11 @@ function displayLeaderboardStatData(statData, stringData, people) {
             var name = data.name;
 
             var players = data.players;
-            var playerHTML = html_player_list(people.sorted(players));
+            var playerHTML = htmlPlayerList(people.sorted(players));
             var secondPlayers = data.secondPlayers;
-            var secondPlayerHTML = secondPlayers.length ? html_player_list(people.sorted(secondPlayers)) : $('<span>', {class: 'muted'}).text('everyone else');
+            var secondPlayerHTML = secondPlayers.length ? htmlPlayerList(people.sorted(secondPlayers)) : $('<span>', {class: 'muted'}).text('everyone else');
             var minPlayers = data.minPlayers;
-            var minPlayerHTML = html_player_list(people.sorted(minPlayers));
+            var minPlayerHTML = htmlPlayerList(people.sorted(minPlayers));
             var value = prettifyStatsValue(stat, data.value);
             var secondValue = prettifyStatsValue(stat, data.secondValue);
             if (data.secondPlayers.length == 0) {
@@ -172,14 +172,14 @@ function displayMobsStatData(people, entityStats, mobData) {
         byMob.forEach(function(data) {
             var $row = $('<tr>').html($('<td>').text(data.mob));
             if ('mostKilledPlayers' in data && data.mostKilledPlayers.length) {
-                $row.append($('<td>').html(html_player_list(people.sorted(data.mostKilledPlayers))));
+                $row.append($('<td>').html(htmlPlayerList(people.sorted(data.mostKilledPlayers))));
                 $row.append($('<td>').text(data.kills));
             } else {
                 $row.append($('<td>').html($('<span>', {class: 'muted'}).text('no one')));
                 $row.append($('<td>').html($('<span>', {class: 'muted'}).text('0')));
             }
             if ('mostKilledBy' in data && data.mostKilledBy.length) {
-                $row.append($('<td>').html(html_player_list(people.sorted(data.mostKilledBy))));
+                $row.append($('<td>').html(htmlPlayerList(people.sorted(data.mostKilledBy))));
                 $row.append($('<td>').text(data.deaths));
             } else {
                 $row.append($('<td>').html($('<span>', {class: 'muted'}).text('no one')));
@@ -255,7 +255,7 @@ function displayAchievementsStatData(achievementData, achievementStatData, peopl
             mainTrackPlayers[mainTrackProgress].push(person);
         });
         $.each(mainTrackPlayers, function(achievementID, peopleList) {
-            $('#achievement-row-' + achievementID).children('.achievement-players').html(html_player_list(people.sorted(peopleList)));
+            $('#achievement-row-' + achievementID).children('.achievement-players').html(htmlPlayerList(people.sorted(peopleList)));
         });
     }).fail(function() {
         $('#stats-achievements-table-main-track').children('tbody').html($('<tr>').html($('<td>', {class: 'text-danger', colspan: 3}).text('error, try refreshing')));
@@ -298,7 +298,7 @@ function displayBiomesStatData(achievementStatData, biomeData, people) {
         });
         $.each(biomeStats, function(numBiomes, peopleList) {
             $tr = $('<tr>').html($('<td>').html(numBiomes));
-            $tr.append($('<td>').html(html_player_list(people.sorted(peopleList))));
+            $tr.append($('<td>').html(htmlPlayerList(people.sorted(peopleList))));
             if (peopleList.length || numBiomes == adventuringTimeBiomes.length) {
                 $('#stats-achievements-table-biome-track tbody tr:last').after(peopleList.length ? $tr : $('<tr>').html($('<td>', {class: 'muted', colspan: '2'}).text(numBiomes + ' biomes required for Adventuring Time')));
             };
@@ -313,8 +313,8 @@ function displayDeathGamesLog(deathGamesLog, people) {
     deathGamesLog.log.forEach(function(logEntry) {
         $.when(people.personById(logEntry.attacker), people.personById(logEntry.target)).done(function(attacker, target) {
             $tr = $('<tr>').html('<td>' + logEntry.date + '</td>');
-            $tr.append($('<td>').html(html_player_list([attacker])));
-            $tr.append($('<td>').html(html_player_list([target])));
+            $tr.append($('<td>').html(htmlPlayerList([attacker])));
+            $tr.append($('<td>').html(htmlPlayerList([target])));
             $tr.append($('<td>').html(logEntry.success ? '<span class="fa fa-check fa-fw text-success"></span>' : '<span class="fa fa-times fa-fw text-danger"></span>'));
             $('#loading-deathgames-log').after($tr);
         }).fail(function() {
@@ -419,13 +419,13 @@ function displayDeathGamesStatData(deathGamesLog, people) {
                 }
             });
             var statRow = $('#deathgames-stat-row-' + statName);
-            statRow.children('.leading-player').html(html_player_list(bestPlayers));
+            statRow.children('.leading-player').html(htmlPlayerList(bestPlayers));
             if (bestValue === null) {
                 statRow.children('.value').html('');
             } else {
                 statRow.children('.value').html(bestValue);
             }
-            statRow.children('.second-player').html(html_player_list(secondPlayers));
+            statRow.children('.second-player').html(htmlPlayerList(secondPlayers));
             if (secondValue === null) {
                 statRow.children('.secondvalue').html('');
             } else {

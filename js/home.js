@@ -13,7 +13,7 @@ function getOnlineData(list) {
         $('#whitelistCount').html(people.activePeople.length);
         onlinePeople = people.peopleByID(list);
         $.when(onlinePeople).done(function(onlinePeople) {
-            $('#peopleList').html(html_player_list(people.sorted(onlinePeople)));
+            $('#peopleList').html(htmlPlayerList(people.sorted(onlinePeople)));
         }).fail(function() {
             $('#peopleList').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
         });

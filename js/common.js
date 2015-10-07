@@ -798,8 +798,8 @@ function prettifyStatsValue(key, value) {
     }
 }
 
-function html_player_list(people, avas, text, urls, useWikiArticles) {
-    avas = typeof avas === 'undefined' ? true : avas;
+function htmlPlayerList(people, showAvatars, text, urls, useWikiArticles) {
+    showAvatars = typeof showAvatars === 'undefined' ? true : showAvatars;
     useWikiArticles = typeof useWikiArticles === 'undefined' ? false : useWikiArticles;
     var $list = $('<span>');
     $.each(people, function(index, person) {
@@ -809,9 +809,9 @@ function html_player_list(people, avas, text, urls, useWikiArticles) {
         var personText = typeof text === 'undefined' ? person.interfaceName : text[index];
         var $a = $('<span>').text(personText);
         if (typeof person.wurstminebergID !== 'undefined') {
-            var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle((isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : (isDev ? '' : 'http://wurstmineberg.de') + '/people/' + person.id) : urls[index])}).text(personText);
+            var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle('http://' + host + '/people/' + person.id) : 'http://' + host + '/people/' + person.id) : urls[index])}).text(personText);
         }
-        if (avas) {
+        if (showAvatars) {
             if (person.gravatar) {
                 $a.prepend($('<img>', {
                     class: 'avatar',
