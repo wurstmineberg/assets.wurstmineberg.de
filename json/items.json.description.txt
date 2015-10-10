@@ -120,7 +120,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
     * an object structured like a “method of obtaining: mining” object, except without the “block” key.
     * a tool stub.
     * an array of mining-like objects and/or tool stubs.
-    * a number specifying the drop chances. The default is 1, implying that the block always drops itself.
+    * a number specifying the average drop chances. The default is 1, implying that the block always drops itself.
 * whenPlaced: an item stub specifying the block this item turns into when placed.
 * creativeMenu: whether the item appears in the Creative mode inventory menu. Defaults to true.
 * pickBlock: whether the item can be obtained using the Pick Block key in Creative mode. Defaults to the same value as creativeMenu.

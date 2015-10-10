@@ -2211,7 +2211,24 @@
             "blockID": 151,
             "image": "daylightsensor.png",
             "itemID": 151,
-            "name": "Daylight Sensor"
+            "name": "Daylight Sensor",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:glass",
+                        "minecraft:glass",
+                        "minecraft:glass",
+                        "minecraft:quartz",
+                        "minecraft:quartz",
+                        "minecraft:quartz",
+                        "minecraft:wooden_slab",
+                        "minecraft:wooden_slab",
+                        "minecraft:wooden_slab"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
+            "solid": false
         },
         "daylight_detector_inverted": {
             "blockID": 178,
@@ -2937,7 +2954,20 @@
         "dye": {
             "damageValues": {
                 "0": {
-                    "name": "Ink Sac"
+                    "name": "Ink Sac",
+                    "obtaining": [
+                        {
+                            "amountMax": 3,
+                            "entity": "Squid",
+                            "type": "entityDeath"
+                        },
+                        {
+                            "category": "junk",
+                            "stackSize": 10,
+                            "type": "fishing",
+                            "weight": 0.012048192771084338
+                        }
+                    ]
                 },
                 "1": {
                     "image": "rosered.png",
@@ -2981,59 +3011,412 @@
                 },
                 "10": {
                     "image": "limedye.png",
-                    "name": "Lime Dye"
+                    "name": "Lime Dye",
+                    "obtaining": [
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "11": {
                     "image": "dandelionyellow.png",
-                    "name": "Dandelion Yellow"
+                    "name": "Dandelion Yellow",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                "minecraft:yellow_flower"
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:double_plant"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "12": {
                     "image": "lightbluedye.png",
-                    "name": "Light Blue Dye"
+                    "name": "Light Blue Dye",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:red_flower"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "13": {
                     "image": "magentadye.png",
-                    "name": "Magenta Dye"
+                    "name": "Magenta Dye",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:red_flower"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:double_plant"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 4,
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "14": {
                     "image": "orangedye.png",
-                    "name": "Orange Dye"
+                    "name": "Orange Dye",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:red_flower"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "15": {
                     "image": "bonemeal.png",
-                    "name": "Bone Meal"
+                    "name": "Bone Meal",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                "minecraft:bone"
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "cactusgreen.png",
-                    "name": "Cactus Green"
+                    "name": "Cactus Green",
+                    "obtaining": [
+                        {
+                            "input": "minecraft:cactus",
+                            "type": "smelting"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "cocoabeans.png",
-                    "name": "Cocoa Beans"
+                    "name": "Cocoa Beans",
+                    "obtaining": [
+                        {
+                            "amountMax": 3,
+                            "block": "minecraft:cocoa",
+                            "type": "mining"
+                        }
+                    ],
+                    "whenPlaced": "minecraft:cocoa"
                 },
                 "4": {
                     "image": "lapislazuli.png",
-                    "name": "Lapis Lazuli"
+                    "name": "Lapis Lazuli",
+                    "obtaining": [
+                        {
+                            "amountMax": 8,
+                            "amountMaxFortune": 32,
+                            "amountMin": 4,
+                            "block": "minecraft:lapis_ore",
+                            "silkTouch": false,
+                            "tools": [
+                                "minecraft:stone_pickaxe",
+                                "minecraft:iron_pickaxe",
+                                "minecraft:diamond_pickaxe"
+                            ],
+                            "type": "mining"
+                        },
+                        {
+                            "outputAmount": 9,
+                            "recipe": [
+                                "minecraft:lapis_block"
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "input": "minecraft:lapis_ore",
+                            "type": "smelting"
+                        },
+                        {
+                            "career": 1,
+                            "outputAmount": 2,
+                            "outputAmountMin": 1,
+                            "price": 1,
+                            "profession": 2,
+                            "tier": 1,
+                            "type": "trading"
+                        },
+                        {
+                            "amountMax": 9,
+                            "amountMin": 4,
+                            "structure": "abandonedMineShaft",
+                            "type": "chest"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "purpledye.png",
-                    "name": "Purple Dye"
+                    "name": "Purple Dye",
+                    "obtaining": [
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "6": {
                     "image": "cyandye.png",
-                    "name": "Cyan Dye"
+                    "name": "Cyan Dye",
+                    "obtaining": [
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "7": {
                     "image": "lightgraydye.png",
-                    "name": "Light Gray Dye"
+                    "name": "Light Gray Dye",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": [
+                                        3,
+                                        6,
+                                        8
+                                    ],
+                                    "id": "minecraft:red_flower"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "8": {
                     "image": "graydye.png",
-                    "name": "Gray Dye"
+                    "name": "Gray Dye",
+                    "obtaining": [
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "9": {
                     "image": "pinkdye.png",
-                    "name": "Pink Dye"
+                    "name": "Pink Dye",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:red_flower"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:double_plant"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 2,
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:dye"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 }
             },
             "image": "inksac.png",
@@ -3587,9 +3970,16 @@
         },
         "end_stone": {
             "blockID": 121,
+            "dropsSelf": "pickaxe",
             "image": "endstone.png",
             "itemID": 121,
-            "name": "End Stone"
+            "name": "End Stone",
+            "obtaining": [
+                {
+                    "dimension": "end",
+                    "type": "natural"
+                }
+            ]
         },
         "ender_chest": {
             "blockID": 130,
@@ -3627,12 +4017,41 @@
         "ender_eye": {
             "image": "eyeofender.png",
             "itemID": 381,
-            "name": "Eye of Ender"
+            "name": "Eye of Ender",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:ender_pearl",
+                        "minecraft:blaze_powder"
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ]
         },
         "ender_pearl": {
             "image": "enderpearl.png",
             "itemID": 368,
             "name": "Ender Pearl",
+            "obtaining": [
+                {
+                    "amountMaxLooting": 4,
+                    "amountMin": 0,
+                    "entity": "Enderman",
+                    "type": "entityDeath"
+                },
+                {
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "career": 1,
+                    "price": 7,
+                    "priceMin": 4,
+                    "profession": 2,
+                    "tier": 2,
+                    "type": "trading"
+                }
+            ],
             "stackable": 16
         },
         "experience_bottle": {
@@ -3795,7 +4214,29 @@
         "flint": {
             "image": "flint.png",
             "itemID": 318,
-            "name": "Flint"
+            "name": "Flint",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "amountMinFortune": 1,
+                    "block": "minecraft:gravel",
+                    "silkTouch": false,
+                    "type": "mining"
+                },
+                {
+                    "additionalPrice": {
+                        "amount": 10,
+                        "id": "minecraft:gravel"
+                    },
+                    "career": 4,
+                    "outputAmount": 10,
+                    "outputAmountMin": 6,
+                    "price": 1,
+                    "profession": 0,
+                    "tier": 1,
+                    "type": "trading"
+                }
+            ]
         },
         "flint_and_steel": {
             "durability": 64,
@@ -4089,6 +4530,40 @@
             "image": "goldhelmet.png",
             "itemID": 314,
             "name": "Golden Helmet",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:gold_ingot",
+                        "minecraft:gold_ingot",
+                        "minecraft:gold_ingot",
+                        "minecraft:gold_ingot",
+                        null,
+                        "minecraft:gold_ingot"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "golden_hoe": {
@@ -5281,6 +5756,40 @@
             "image": "leatherhelmet.png",
             "itemID": 298,
             "name": "Leather Cap",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:leather",
+                        "minecraft:leather",
+                        "minecraft:leather",
+                        "minecraft:leather",
+                        null,
+                        "minecraft:leather"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "leather_leggings": {
@@ -6212,29 +6721,145 @@
             "blockID": 97,
             "damageValues": {
                 "0": {
-                    "name": "Stone Monster Egg"
+                    "name": "Stone Monster Egg",
+                    "obtaining": [
+                        {
+                            "block": {
+                                "damage": 0,
+                                "id": "minecraft:stone"
+                            },
+                            "tools": [
+                                {
+                                    "consumed": true,
+                                    "id": "minecraft:spawn_egg",
+                                    "tagValue": "Silverfish"
+                                }
+                            ],
+                            "type": "modifyBlock"
+                        },
+                        {
+                            "biomes": [
+                                "Extreme Hills M",
+                                "Extreme Hills+ M",
+                                "Extreme Hills",
+                                "Extreme Hills+"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
                 },
                 "1": {
                     "image": "cobble.png",
-                    "name": "Cobblestone Monster Egg"
+                    "name": "Cobblestone Monster Egg",
+                    "obtaining": [
+                        {
+                            "block": "minecraft:cobblestone",
+                            "tools": [
+                                {
+                                    "consumed": true,
+                                    "id": "minecraft:spawn_egg",
+                                    "tagValue": "Silverfish"
+                                }
+                            ],
+                            "type": "modifyBlock"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "stonebricks.png",
-                    "name": "Stone Brick Monster Egg"
+                    "name": "Stone Brick Monster Egg",
+                    "obtaining": [
+                        {
+                            "structure": "stronghold",
+                            "type": "structure"
+                        },
+                        {
+                            "block": {
+                                "damage": 0,
+                                "id": "minecraft:stonebrick"
+                            },
+                            "tools": [
+                                {
+                                    "consumed": true,
+                                    "id": "minecraft:spawn_egg",
+                                    "tagValue": "Silverfish"
+                                }
+                            ],
+                            "type": "modifyBlock"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "mossystonebricks.png",
-                    "name": "Mossy Stone Brick Monster Egg"
+                    "name": "Mossy Stone Brick Monster Egg",
+                    "obtaining": [
+                        {
+                            "structure": "stronghold",
+                            "type": "structure"
+                        },
+                        {
+                            "block": {
+                                "damage": 1,
+                                "id": "minecraft:stonebrick"
+                            },
+                            "tools": [
+                                {
+                                    "consumed": true,
+                                    "id": "minecraft:spawn_egg",
+                                    "tagValue": "Silverfish"
+                                }
+                            ],
+                            "type": "modifyBlock"
+                        }
+                    ]
                 },
                 "4": {
                     "image": "crackedstonebricks.png",
-                    "name": "Cracked Stone Brick Monster Egg"
+                    "name": "Cracked Stone Brick Monster Egg",
+                    "obtaining": [
+                        {
+                            "structure": "stronghold",
+                            "type": "structure"
+                        },
+                        {
+                            "block": {
+                                "damage": 2,
+                                "id": "minecraft:stonebrick"
+                            },
+                            "tools": [
+                                {
+                                    "consumed": true,
+                                    "id": "minecraft:spawn_egg",
+                                    "tagValue": "Silverfish"
+                                }
+                            ],
+                            "type": "modifyBlock"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "chiseledstonebricks.png",
-                    "name": "Chiseled Stone Brick Monster Egg"
+                    "name": "Chiseled Stone Brick Monster Egg",
+                    "obtaining": [
+                        {
+                            "block": {
+                                "damage": 2,
+                                "id": "minecraft:stonebrick"
+                            },
+                            "tools": [
+                                {
+                                    "consumed": true,
+                                    "id": "minecraft:spawn_egg",
+                                    "tagValue": "Silverfish"
+                                }
+                            ],
+                            "type": "modifyBlock"
+                        }
+                    ]
                 }
             },
+            "dropsSelf": false,
             "image": "stone.png",
             "itemID": 97,
             "name": "Monster Egg"
@@ -6312,9 +6937,23 @@
         },
         "nether_wart": {
             "blockID": 115,
+            "dropsSelf": 3,
             "image": "netherwart.png",
             "itemID": 372,
-            "name": "Nether Wart"
+            "name": "Nether Wart",
+            "obtaining": [
+                {
+                    "structure": "netherFortress",
+                    "type": "structure"
+                },
+                {
+                    "amountMax": 7,
+                    "amountMin": 3,
+                    "structure": "netherFortress",
+                    "type": "chest"
+                }
+            ],
+            "solid": false
         },
         "netherbrick": {
             "image": "netherbrick.png",
@@ -6481,7 +7120,16 @@
         },
         "piston_head": {
             "blockID": 34,
-            "name": "Piston Head"
+            "name": "Piston Head",
+            "obtaining": [
+                {
+                    "block": true,
+                    "description": "A <a href=\"/block/minecraft/piston\">piston</a> or <a href=\"/block/minecraft/sticky_piston\">sticky piston</a> will produce one of these when it becomes redstone-powered. The block goes away when the signal is removed.",
+                    "renewability": "manual",
+                    "type": "special"
+                }
+            ],
+            "solid": false
         },
         "planks": {
             "blockID": 5,
@@ -7170,7 +7818,8 @@
                     "renewability": "manual",
                     "type": "special"
                 }
-            ]
+            ],
+            "solid": false
         },
         "prismarine": {
             "blockID": 168,
@@ -8304,9 +8953,32 @@
         },
         "sandstone_stairs": {
             "blockID": 128,
+            "dropsSelf": "pickaxe",
             "image": "sandstonestairs.png",
             "itemID": 128,
-            "name": "Sandstone Stairs"
+            "name": "Sandstone Stairs",
+            "obtaining": [
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        "minecraft:sandstone",
+                        null,
+                        null,
+                        "minecraft:sandstone",
+                        "minecraft:sandstone",
+                        null,
+                        "minecraft:sandstone",
+                        "minecraft:sandstone",
+                        "minecraft:sandstone"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "sapling": {
             "blockID": 6,

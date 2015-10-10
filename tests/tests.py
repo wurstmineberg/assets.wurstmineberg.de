@@ -414,7 +414,7 @@ def validate_items_json():
         if 'dropsSelf' in item:
             assert is_block and is_item
             if isinstance(item['dropsSelf'], int) or isinstance(item['dropsSelf'], float):
-                assert 0 <= item['dropsSelf'] < 1
+                assert 0 <= item['dropsSelf']
             else:
                 if isinstance(item['dropsSelf'], list):
                     drops_self = item['dropsSelf']
