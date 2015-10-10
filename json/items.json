@@ -4770,7 +4770,7 @@
         },
         "heavy_weighted_pressure_plate": {
             "blockID": 148,
-            "image": "weightedpressureplate(Heavy).png",
+            "image": "heavyweightedpressureplate.png",
             "itemID": 148,
             "name": "Weighted Pressure Plate (Heavy)"
         },
@@ -5868,7 +5868,7 @@
         },
         "light_weighted_pressure_plate": {
             "blockID": 147,
-            "image": "weightedpressureplate(Light).png",
+            "image": "lightweightedpressureplate.png",
             "itemID": 147,
             "name": "Weighted Pressure Plate (Light)"
         },
