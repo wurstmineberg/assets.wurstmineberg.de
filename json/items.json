@@ -281,7 +281,6 @@
                 {
                     "career": 1,
                     "outputAmount": 5,
-                    "price": 1,
                     "profession": 0,
                     "tier": 2,
                     "type": "trading"
@@ -1541,7 +1540,6 @@
                 },
                 {
                     "career": 1,
-                    "price": 1,
                     "profession": 0,
                     "tier": 3,
                     "type": "trading"
@@ -1698,6 +1696,34 @@
             "image": "chainleggings.png",
             "itemID": 304,
             "name": "Chain Leggings",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Zombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "PigZombie",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "requires": "whileWearing",
+                    "type": "entityDeath"
+                },
+                {
+                    "career": 1,
+                    "price": 11,
+                    "priceMin": 9,
+                    "profession": 3,
+                    "tier": 4,
+                    "type": "trading"
+                }
+            ],
             "stackable": false
         },
         "chest": {
@@ -1886,9 +1912,45 @@
         },
         "cobblestone": {
             "blockID": 4,
+            "dropsSelf": "pickaxe",
             "image": "cobble.png",
             "itemID": 4,
-            "name": "Cobblestone"
+            "name": "Cobblestone",
+            "obtaining": [
+                {
+                    "block": {
+                        "damage": 0,
+                        "id": "minecraft:stone"
+                    },
+                    "silkTouch": false,
+                    "tools": [
+                        "pickaxe"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "structure": "dungeon",
+                    "type": "structure"
+                },
+                {
+                    "structure": "stronghold",
+                    "type": "structure"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "structure": "jungleTemple",
+                    "type": "structure"
+                },
+                {
+                    "liquid1": "minecraft:water",
+                    "liquid2": "minecraft:lava",
+                    "relation": "contactNonsourceSide",
+                    "type": "liquids"
+                }
+            ]
         },
         "cobblestone_wall": {
             "blockID": 139,
@@ -2004,7 +2066,6 @@
                     "career": 1,
                     "outputAmount": 8,
                     "outputAmountMin": 6,
-                    "price": 1,
                     "profession": 4,
                     "tier": 1,
                     "type": "trading"
@@ -2061,7 +2122,6 @@
                     "career": 1,
                     "outputAmount": 7,
                     "outputAmountMin": 5,
-                    "price": 1,
                     "profession": 4,
                     "tier": 1,
                     "type": "trading"
@@ -3255,7 +3315,6 @@
                             "career": 1,
                             "outputAmount": 2,
                             "outputAmountMin": 1,
-                            "price": 1,
                             "profession": 2,
                             "tier": 1,
                             "type": "trading"
@@ -3874,9 +3933,28 @@
         },
         "emerald_ore": {
             "blockID": 129,
+            "dropsSelf": {
+                "silkTouch": true,
+                "tools": [
+                    "minecraft:iron_pickaxe",
+                    "minecraft:diamond_pickaxe"
+                ]
+            },
             "image": "emeraldore.png",
             "itemID": 129,
-            "name": "Emerald Ore"
+            "name": "Emerald Ore",
+            "obtaining": [
+                {
+                    "biomes": [
+                        "Extreme Hills M",
+                        "Extreme Hills+ M",
+                        "Extreme Hills",
+                        "Extreme Hills+"
+                    ],
+                    "dimension": "overworld",
+                    "type": "natural"
+                }
+            ]
         },
         "enchanted_book": {
             "image": "enchantedbook.png",
@@ -4057,7 +4135,17 @@
         "experience_bottle": {
             "image": "xpbottle.png",
             "itemID": 384,
-            "name": "Bottle o'Enchanting"
+            "name": "Bottle o'Enchanting",
+            "obtaining": [
+                {
+                    "career": 1,
+                    "price": 11,
+                    "priceMin": 3,
+                    "profession": 2,
+                    "tier": 3,
+                    "type": "trading"
+                }
+            ]
         },
         "farmland": {
             "blockID": 60,
@@ -4150,7 +4238,17 @@
         "fermented_spider_eye": {
             "image": "fermentedspidereye.png",
             "itemID": 376,
-            "name": "Fermented Spider Eye"
+            "name": "Fermented Spider Eye",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:spider_eye",
+                        "minecraft:sugar",
+                        "minecraft:brown_mushroom"
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ]
         },
         "filled_map": {
             "image": "map.png",
@@ -4172,7 +4270,18 @@
         "fire_charge": {
             "image": "firecharge.png",
             "itemID": 385,
-            "name": "Fire Charge"
+            "name": "Fire Charge",
+            "obtaining": [
+                {
+                    "outputAmount": 3,
+                    "recipe": [
+                        "minecraft:blaze_powder",
+                        "minecraft:gunpowder",
+                        "minecraft:coal"
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ]
         },
         "firework_charge": {
             "image": "fireworkstar.png",
@@ -4182,7 +4291,24 @@
         "fireworks": {
             "image": "fireworkrocket.png",
             "itemID": 401,
-            "name": "Firework Rocket"
+            "name": "Firework Rocket",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:paper",
+                        "minecraft:gunpowder"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:firework_charge",
+                        "minecraft:paper",
+                        "minecraft:gunpowder"
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ]
         },
         "fish": {
             "damageValues": {
@@ -4231,7 +4357,6 @@
                     "career": 4,
                     "outputAmount": 10,
                     "outputAmountMin": 6,
-                    "price": 1,
                     "profession": 0,
                     "tier": 1,
                     "type": "trading"
@@ -4806,6 +4931,22 @@
             "image": "minecartwithhopper.png",
             "itemID": 408,
             "name": "Minecart with Hopper",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        "minecraft:hopper",
+                        null,
+                        null,
+                        "minecraft:minecart",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
             "stackable": false
         },
         "ice": {
@@ -5416,9 +5557,27 @@
         },
         "iron_trapdoor": {
             "blockID": 167,
+            "dropsSelf": "pickaxe",
             "image": "irontrapdoor.png",
             "itemID": 167,
-            "name": "Iron Trapdoor"
+            "name": "Iron Trapdoor",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
+            "solid": false
         },
         "item_frame": {
             "image": "itemframe.png",
@@ -6487,7 +6646,16 @@
         "lit_redstone_lamp": {
             "blockID": 124,
             "image": "redstonelamp.png",
-            "name": "Lit Redstone Lamp"
+            "name": "Lit Redstone Lamp",
+            "obtaining": [
+                {
+                    "block": true,
+                    "description": "An <a href=\"/block/minecraft/redstone_lamp\">unlit redstone lamp</a> will turn into this when redstone-powered.",
+                    "renewability": "manual",
+                    "type": "special"
+                }
+            ],
+            "solid": false
         },
         "lit_redstone_ore": {
             "blockID": 74,
@@ -6708,6 +6876,50 @@
             "image": "minecart.png",
             "itemID": 328,
             "name": "Minecart",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "entity": "MinecartRideable",
+                    "type": "entityDeath"
+                },
+                {
+                    "entity": "MinecartChest",
+                    "type": "entityDeath"
+                },
+                {
+                    "entity": "MinecartHopper",
+                    "type": "entityDeath"
+                },
+                {
+                    "entity": "MinecartFurnace",
+                    "type": "entityDeath"
+                },
+                {
+                    "entity": "MinecartTNT",
+                    "type": "entityDeath"
+                },
+                {
+                    "entity": "MinecartCommandBlock",
+                    "type": "entityDeath"
+                },
+                {
+                    "entity": "MinecartSpawner",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "mob_spawner": {
@@ -6879,7 +7091,16 @@
         "mutton": {
             "image": "rawmutton.png",
             "itemID": 423,
-            "name": "Raw Mutton"
+            "name": "Raw Mutton",
+            "obtaining": [
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "entity": "Sheep",
+                    "requires": "notOnFire",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "mycelium": {
             "blockID": 110,
@@ -7135,27 +7356,130 @@
             "blockID": 5,
             "damageValues": {
                 "0": {
-                    "name": "Oak Wood Planks"
+                    "name": "Oak Wood Planks",
+                    "obtaining": [
+                        {
+                            "outputAmount": 4,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:log"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "amountMax": 3,
+                            "amountMin": 3,
+                            "entity": "Boat",
+                            "requires": "crash",
+                            "type": "entityDeath"
+                        },
+                        {
+                            "structure": "abandonedMineShaft",
+                            "type": "structure"
+                        },
+                        {
+                            "structure": "village",
+                            "type": "structure"
+                        },
+                        {
+                            "structure": "stronghold",
+                            "type": "structure"
+                        },
+                        {
+                            "amountMax": 3,
+                            "stacksMax": 10,
+                            "stacksMin": 10,
+                            "type": "bonusChest",
+                            "weight": 0.15625
+                        }
+                    ]
                 },
                 "1": {
                     "image": "sprucewoodplanks.png",
-                    "name": "Spruce Wood Planks"
+                    "name": "Spruce Wood Planks",
+                    "obtaining": [
+                        {
+                            "outputAmount": 4,
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:log"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "amount": 84,
+                            "structure": "witchHut",
+                            "type": "structure"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "birchwoodplanks.png",
-                    "name": "Birch Wood Planks"
+                    "name": "Birch Wood Planks",
+                    "obtaining": [
+                        {
+                            "outputAmount": 4,
+                            "recipe": [
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:log"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "junglewoodplanks.png",
-                    "name": "Jungle Wood Planks"
+                    "name": "Jungle Wood Planks",
+                    "obtaining": [
+                        {
+                            "outputAmount": 4,
+                            "recipe": [
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:log"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "4": {
                     "image": "acaciawoodplanks.png",
-                    "name": "Acacia Wood Planks"
+                    "name": "Acacia Wood Planks",
+                    "obtaining": [
+                        {
+                            "outputAmount": 4,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:log2"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "darkoakwoodplanks.png",
-                    "name": "Dark Oak Wood Planks"
+                    "name": "Dark Oak Wood Planks",
+                    "obtaining": [
+                        {
+                            "outputAmount": 4,
+                            "recipe": [
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:log2"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 }
             },
             "image": "oakwoodplanks.png",
@@ -7891,17 +8215,37 @@
         "pumpkin_pie": {
             "image": "pumpkinpie.png",
             "itemID": 400,
-            "name": "Pumpkin Pie"
+            "name": "Pumpkin Pie",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:pumpkin",
+                        "minecraft:sugar",
+                        "minecraft:egg"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "career": 1,
+                    "outputAmount": 3,
+                    "outputAmountMin": 2,
+                    "profession": 0,
+                    "tier": 1,
+                    "type": "trading"
+                }
+            ]
         },
         "pumpkin_seeds": {
             "image": "pumpkinseeds.png",
             "itemID": 361,
-            "name": "Pumpkin Seeds"
+            "name": "Pumpkin Seeds",
+            "whenPlaced": "minecraft:pumpkin_stem"
         },
         "pumpkin_stem": {
             "blockID": 104,
             "image": "pumpkinseeds.png",
-            "name": "Pumpkin Stem"
+            "name": "Pumpkin Stem",
+            "solid": false
         },
         "purpur_block": {
             "blockID": 201,
@@ -8102,15 +8446,44 @@
         },
         "quartz_ore": {
             "blockID": 153,
+            "dropsSelf": {
+                "silkTouch": true,
+                "tools": "pickaxe"
+            },
             "image": "netherquartzore.png",
             "itemID": 153,
-            "name": "Nether Quartz Ore"
+            "name": "Nether Quartz Ore",
+            "obtaining": [
+                {
+                    "dimension": "nether",
+                    "type": "natural"
+                }
+            ]
         },
         "quartz_stairs": {
             "blockID": 156,
+            "dropsSelf": "pickaxe",
             "image": "quartzstairs.png",
             "itemID": 156,
-            "name": "Quartz Stairs"
+            "name": "Quartz Stairs",
+            "obtaining": [
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        "minecraft:quartz_block",
+                        null,
+                        null,
+                        "minecraft:quartz_block",
+                        "minecraft:quartz_block",
+                        null,
+                        "minecraft:quartz_block",
+                        "minecraft:quartz_block",
+                        "minecraft:quartz_block"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
+            "solid": false
         },
         "rabbit": {
             "image": "rawrabbit.png",
@@ -8728,13 +9101,95 @@
         "redstone": {
             "image": "redstonedust.png",
             "itemID": 331,
-            "name": "Redstone Dust"
+            "name": "Redstone Dust",
+            "obtaining": [
+                {
+                    "outputAmount": 9,
+                    "recipe": [
+                        "minecraft:redstone_block"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "amountMax": 6,
+                    "amountMaxLooting": 15,
+                    "amountMin": 0,
+                    "entity": "Witch",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 5,
+                    "amountMaxFortune": 8,
+                    "amountMin": 4,
+                    "block": "minecraft:redstone_ore",
+                    "silkTouch": false,
+                    "tools": [
+                        "minecraft:iron_pickaxe",
+                        "minecraft:diamond_pickaxe"
+                    ],
+                    "type": "mining"
+                },
+                {
+                    "amountMax": 4,
+                    "structure": "dungeon",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 9,
+                    "amountMin": 4,
+                    "structure": "strongholdAltar",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 9,
+                    "amountMin": 4,
+                    "structure": "abandonedMineShaft",
+                    "type": "chest"
+                },
+                {
+                    "amountMax": 9,
+                    "amountMin": 4,
+                    "structure": "strongholdStoreRoom",
+                    "type": "chest"
+                },
+                {
+                    "input": "minecraft:redstone_ore",
+                    "type": "smelting"
+                },
+                {
+                    "career": 1,
+                    "outputAmount": 4,
+                    "outputAmountMin": 1,
+                    "profession": 2,
+                    "tier": 1,
+                    "type": "trading"
+                }
+            ],
+            "whenPlaced": "minecraft:redstone_wire"
         },
         "redstone_block": {
             "blockID": 152,
+            "dropsSelf": "pickaxe",
             "image": "blockofredstone.png",
             "itemID": 152,
-            "name": "Block of Redstone"
+            "name": "Block of Redstone",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:redstone",
+                        "minecraft:redstone",
+                        "minecraft:redstone",
+                        "minecraft:redstone",
+                        "minecraft:redstone",
+                        "minecraft:redstone",
+                        "minecraft:redstone",
+                        "minecraft:redstone",
+                        "minecraft:redstone"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
+            "solid": false
         },
         "redstone_lamp": {
             "blockID": 123,
@@ -8770,7 +9225,15 @@
         "redstone_wire": {
             "blockID": 55,
             "image": "redstonedust.png",
-            "name": "Redstone Wire"
+            "name": "Redstone Wire",
+            "obtaining": [
+                {
+                    "amount": 15,
+                    "structure": "jungleTemple",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "reeds": {
             "blockID": 83,
@@ -9023,6 +9486,29 @@
             "image": "shears.png",
             "itemID": 359,
             "name": "Shears",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:iron_ingot",
+                        null,
+                        null,
+                        null,
+                        "minecraft:iron_ingot",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "career": 3,
+                    "price": 4,
+                    "priceMin": 3,
+                    "profession": 0,
+                    "type": "trading"
+                }
+            ],
             "stackable": false
         },
         "shield": {
@@ -9483,9 +9969,56 @@
         },
         "snow_layer": {
             "blockID": 78,
+            "dropsSelf": false,
             "image": "snow.png",
             "itemID": 78,
-            "name": "Snow"
+            "name": "Snow",
+            "obtaining": [
+                {
+                    "biomes": [
+                        "Extreme Hills M",
+                        "Extreme Hills+ M",
+                        "Extreme Hills",
+                        "Extreme Hills+",
+                        "Ice Plains",
+                        "Ice Mountains",
+                        "Ice Plains Spikes",
+                        "Cold Taiga",
+                        "Cold Taiga M",
+                        "Cold Taiga Hills"
+                    ],
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "block": true,
+                    "description": "During snowfall, a layer of snow can generate on top of solid blocks with a block light level 10 or less, with the exception of <a href=\"/block/minecraft/packed_ice\">packed ice</a>.",
+                    "renewability": "fullyAuto",
+                    "type": "special"
+                },
+                {
+                    "block": true,
+                    "description": "In some biomes, snow golems generate a trail of snow where they walk.",
+                    "renewability": "fullyAuto",
+                    "type": "special"
+                },
+                {
+                    "outputAmount": 6,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:snow",
+                        "minecraft:snow",
+                        "minecraft:snow",
+                        null,
+                        null,
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
+            "solid": false
         },
         "snowball": {
             "image": "snowball.png",
@@ -9503,7 +10036,8 @@
                     "type": "mining"
                 },
                 {
-                    "amountMax": 8,
+                    "amountMax": 9,
+                    "amountMin": 2,
                     "block": "minecraft:snow_layer",
                     "tools": [
                         "shovel"
@@ -11095,139 +11629,1106 @@
             "damageValues": {
                 "0": {
                     "image": "whitestainedglasspane.png",
-                    "name": "White Stained Glass Pane"
+                    "name": "White Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "1": {
                     "image": "orangestainedglasspane.png",
-                    "name": "Orange Stained Glass Pane"
+                    "name": "Orange Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "10": {
                     "image": "purplestainedglasspane.png",
-                    "name": "Purple Stained Glass Pane"
+                    "name": "Purple Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "11": {
                     "image": "bluestainedglasspane.png",
-                    "name": "Blue Stained Glass Pane"
+                    "name": "Blue Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "12": {
                     "image": "brownstainedglasspane.png",
-                    "name": "Brown Stained Glass Pane"
+                    "name": "Brown Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "13": {
                     "image": "greenstainedglasspane.png",
-                    "name": "Green Stained Glass Pane"
+                    "name": "Green Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "14": {
                     "image": "redstainedglasspane.png",
-                    "name": "Red Stained Glass Pane"
+                    "name": "Red Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "15": {
                     "image": "blackstainedglasspane.png",
-                    "name": "Black Stained Glass Pane"
+                    "name": "Black Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "magentastainedglasspane.png",
-                    "name": "Magenta Stained Glass Pane"
+                    "name": "Magenta Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "lightbluestainedglasspane.png",
-                    "name": "Light Blue Stained Glass Pane"
+                    "name": "Light Blue Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "4": {
-                    "name": "Yellow Stained Glass Pane"
+                    "name": "Yellow Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "limestainedglasspane.png",
-                    "name": "Lime Stained Glass Pane"
+                    "name": "Lime Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "6": {
                     "image": "pinkstainedglasspane.png",
-                    "name": "Pink Stained Glass Pane"
+                    "name": "Pink Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "7": {
                     "image": "graystainedglasspane.png",
-                    "name": "Gray Stained Glass Pane"
+                    "name": "Gray Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "8": {
                     "image": "lightgraystainedglasspane.png",
-                    "name": "Light Gray Stained Glass Pane"
+                    "name": "Light Gray Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "9": {
                     "image": "cyanstainedglasspane.png",
-                    "name": "Cyan Stained Glass Pane"
+                    "name": "Cyan Stained Glass Pane",
+                    "obtaining": [
+                        {
+                            "outputAmount": 16,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:stained_glass"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:stained_glass"
+                                }
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 }
+            },
+            "dropsSelf": {
+                "silkTouch": true
             },
             "image": "yellowstainedglasspane.png",
             "itemID": 160,
-            "name": "Stained Glass Pane"
+            "name": "Stained Glass Pane",
+            "solid": false
         },
         "stained_hardened_clay": {
             "blockID": 159,
             "damageValues": {
                 "0": {
-                    "name": "White Stained Clay"
+                    "name": "White Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "biomes": [
+                                "Mesa",
+                                "Mesa Plateau F",
+                                "Mesa Plateau",
+                                "Mesa (Bryce)",
+                                "Mesa Plateau F M",
+                                "Mesa Plateau M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
                 },
                 "1": {
                     "image": "orangestainedclay.png",
-                    "name": "Orange Stained Clay"
+                    "name": "Orange Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "biomes": [
+                                "Mesa",
+                                "Mesa Plateau F",
+                                "Mesa Plateau",
+                                "Mesa (Bryce)",
+                                "Mesa Plateau F M",
+                                "Mesa Plateau M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        },
+                        {
+                            "amount": 59,
+                            "structure": "desertTemple",
+                            "type": "structure"
+                        }
+                    ]
                 },
                 "10": {
                     "image": "purplestainedclay.png",
-                    "name": "Purple Stained Clay"
+                    "name": "Purple Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "11": {
                     "image": "bluestainedclay.png",
-                    "name": "Blue Stained Clay"
+                    "name": "Blue Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "amount": 1,
+                            "structure": "desertTemple",
+                            "type": "structure"
+                        }
+                    ]
                 },
                 "12": {
                     "image": "brownstainedclay.png",
-                    "name": "Brown Stained Clay"
+                    "name": "Brown Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "biomes": [
+                                "Mesa",
+                                "Mesa Plateau F",
+                                "Mesa Plateau",
+                                "Mesa (Bryce)",
+                                "Mesa Plateau F M",
+                                "Mesa Plateau M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
                 },
                 "13": {
                     "image": "greenstainedclay.png",
-                    "name": "Green Stained Clay"
+                    "name": "Green Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "14": {
                     "image": "redstainedclay.png",
-                    "name": "Red Stained Clay"
+                    "name": "Red Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "biomes": [
+                                "Mesa",
+                                "Mesa Plateau F",
+                                "Mesa Plateau",
+                                "Mesa (Bryce)",
+                                "Mesa Plateau F M",
+                                "Mesa Plateau M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
                 },
                 "15": {
                     "image": "blackstainedclay.png",
-                    "name": "Black Stained Clay"
+                    "name": "Black Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "magentastainedclay.png",
-                    "name": "Magenta Stained Clay"
+                    "name": "Magenta Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "lightbluestainedclay.png",
-                    "name": "Light Blue Stained Clay"
+                    "name": "Light Blue Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "4": {
                     "image": "yellowstainedclay.png",
-                    "name": "Yellow Stained Clay"
+                    "name": "Yellow Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "biomes": [
+                                "Mesa",
+                                "Mesa Plateau F",
+                                "Mesa Plateau",
+                                "Mesa (Bryce)",
+                                "Mesa Plateau F M",
+                                "Mesa Plateau M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "limestainedclay.png",
-                    "name": "Lime Stained Clay"
+                    "name": "Lime Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "6": {
                     "image": "pinkstainedclay.png",
-                    "name": "Pink Stained Clay"
+                    "name": "Pink Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "7": {
                     "image": "graystainedclay.png",
-                    "name": "Gray Stained Clay"
+                    "name": "Gray Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "8": {
                     "image": "lightgraystainedclay.png",
-                    "name": "Light Gray Stained Clay"
+                    "name": "Light Gray Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "biomes": [
+                                "Mesa",
+                                "Mesa Plateau F",
+                                "Mesa Plateau",
+                                "Mesa (Bryce)",
+                                "Mesa Plateau F M",
+                                "Mesa Plateau M"
+                            ],
+                            "dimension": "overworld",
+                            "type": "natural"
+                        }
+                    ]
                 },
                 "9": {
                     "image": "cyanstainedclay.png",
-                    "name": "Cyan Stained Clay"
+                    "name": "Cyan Stained Clay",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:dye"
+                                },
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay",
+                                "minecraft:hardened_clay"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 }
             },
+            "dropsSelf": "pickaxe",
             "image": "whitestainedclay.png",
             "itemID": 159,
             "name": "Stained Clay"
@@ -11872,9 +13373,26 @@
         },
         "web": {
             "blockID": 30,
+            "dropsSelf": {
+                "silkTouch": true,
+                "tools": [
+                    "minecraft:shears",
+                    "sword"
+                ]
+            },
             "image": "cobweb.png",
             "itemID": 30,
             "name": "Cobweb",
+            "obtaining": [
+                {
+                    "structure": "stronghold",
+                    "type": "structure"
+                },
+                {
+                    "structure": "abandonedMineShaft",
+                    "type": "structure"
+                }
+            ],
             "solid": false
         },
         "wheat": {

@@ -280,16 +280,18 @@ def validate_items_json():
                     if 'tier' in method:
                         assert isinstance(method['tier'], int)
                         assert method['tier'] > 0
-                    if isinstance(method['price'], int):
-                        assert method['price'] > 0
-                    else:
-                        item_stubs.append((method['price'], False, True))
+                    if 'price' in method:
+                        if isinstance(method['price'], int):
+                            assert method['price'] > 1
+                        else:
+                            item_stubs.append((method['price'], False, True))
                     if 'priceMin' in method:
+                        assert 'price' in method
                         if isinstance(method['priceMin'], int):
                             assert method['priceMin'] > 0
                             assert method['price'] > method['priceMin']
                         else:
-                            item_stubs.append((method['price'], False, True))
+                            item_stubs.append((method['priceMin'], False, True))
                     if 'additionalPrice' in method:
                         item_stubs.append((method['additionalPrice'], False, True))
                     if 'additionalPriceMin' in method:
@@ -400,7 +402,7 @@ def validate_items_json():
                     assert is_block
                     item_stubs.append((method['liquid1'], True, False))
                     item_stubs.append((method['liquid2'], True, False))
-                    assert method['relation'] in ('flowIntoSource',)
+                    assert method['relation'] in ('flowIntoSource', 'contactNonsourceSide')
                 elif method['type'] == 'special':
                     assert isinstance(method['description'], str)
                     if 'block' in method:

@@ -68,7 +68,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
         * profession: the villager type ID, determining their appearance. For example, 0 for farmers.
         * career: the villager subtype ID, determining their trades. For example, 2 for fishermen (profession 0) or weapon smiths (profession 3).
         * tier: the tier at which the trade is unlocked. Defaults to 0, meaning that the villager starts with this trade already unlocked.
-        * price: an item stub specifying the maximum amount of items that must be sold, or a number if the price is in emeralds.
+        * price: an item stub specifying the maximum amount of items that must be sold, or a number if the price is in emeralds. Defaults to one emerald.
         * priceMin: an item stub specifying the minimum amount of items that must be sold, or a number if the price is in emeralds. Defaults to the same as the maximum price.
         * additionalPrice: an item stub specifying the maximum amount of items that must be sold in the second stack. Defaults to null, meaning no items.
         * additionalPriceMin: an item stub specifying the minimum amount of items that must be sold in the second stack. Defaults to the same as the maximum additional price.
@@ -112,6 +112,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
         * liquid2: an item stub describing the second liquid block.
         * relation: how the liquid blocks must be arranged for the block creation. May be one of the following:
             * flowIntoSource: created when the first liquid attempts to flow into a source block of the second, regardless of direction. The second liquid's source block is replaced by the new block.
+            * contactNonsourceSide: created when any block of the first liquid (source or not) horizontally comes in contact with a non-source block of the second liquid. Which block is replaced depends on which block was attempting to spread first.
     * special: a method of obtaining not described above.
         * description: a HTML description for All The Items.
         * block: if true, the method creates a block placed in the world. If false (the default), the method creates an item as a dropped item entity or within an inventory.
