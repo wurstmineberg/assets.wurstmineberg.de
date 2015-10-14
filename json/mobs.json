@@ -120,6 +120,60 @@
             "attitude": "friendly",
             "dimension": "overworld"
         },
+        "Sheep": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "subtypes": {
+                "black": {
+                    "name": "Black Sheep"
+                },
+                "blue": {
+                    "name": "Blue Sheep"
+                },
+                "brown": {
+                    "name": "Brown Sheep"
+                },
+                "cyan": {
+                    "name": "Cyan Sheep"
+                },
+                "gray": {
+                    "name": "Gray Sheep"
+                },
+                "green": {
+                    "name": "Green Sheep"
+                },
+                "lightBlue": {
+                    "name": "Light Blue Sheep"
+                },
+                "lightGray": {
+                    "name": "Light Gray Sheep"
+                },
+                "lime": {
+                    "name": "Lime Sheep"
+                },
+                "magenta": {
+                    "name": "Magenta Sheep"
+                },
+                "orange": {
+                    "name": "Orange Sheep"
+                },
+                "pink": {
+                    "name": "Pink Sheep"
+                },
+                "purple": {
+                    "name": "Purple Sheep"
+                },
+                "red": {
+                    "name": "Red Sheep"
+                },
+                "white": {
+                    "name": "White Sheep"
+                },
+                "yellow": {
+                    "name": "Yellow Sheep"
+                }
+            }
+        },
         "Shulker": {
             "attitude": "hostile",
             "dimension": "end"
