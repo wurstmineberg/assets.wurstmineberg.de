@@ -391,18 +391,26 @@ def validate_items_json():
                         assert isinstance(method['damage'], int)
                         assert method['damage'] >= 0
                 elif method['type'] == 'useItem':
-                    assert is_item
+                    if 'createsBlock' in method:
+                        assert method['createsBlock'] is True
+                        assert is_block
+                    else:
+                        assert is_item
                     item_stubs.append((method['item'], False, True))
                     if 'onBlock' in method:
                         item_stubs.append((method['onBlock'], True, False))
                     if 'onEntity' in method:
                         assert 'onBlock' not in method
                         pass #TODO check if entity is in entities.json
+                        #if 'entitySubtype' in method:
+                        #    assert method['entitySubtype'] in mob['subtypes']
+                    else:
+                        assert 'entitySubtype' not in method
                 elif method['type'] == 'liquids':
                     assert is_block
                     item_stubs.append((method['liquid1'], True, False))
                     item_stubs.append((method['liquid2'], True, False))
-                    assert method['relation'] in ('flowIntoSource', 'contactNonsourceSide')
+                    assert method['relation'] in ('flowIntoSource', 'contactNonsourceSide', 'flowFromTop')
                 elif method['type'] == 'special':
                     assert isinstance(method['description'], str)
                     if 'block' in method:
@@ -434,10 +442,12 @@ def validate_items_json():
             assert is_item
             assert item['creativeMenu'] is False
         if 'pickBlock' in item:
-            assert is_block and is_item
-            creative_menu = item.get('creativeMenu', True)
-            assert isinstance(item['pickBlock'], bool)
-            assert item['pickBlock'] != creative_menu
+            assert is_block
+            if isinstance(item['pickBlock'], bool):
+                assert is_item
+                assert item['pickBlock'] != item.get('creativeMenu', True)
+            else:
+                item_stubs.append((item['pickBlock'], False, True))
         if 'durability' in item:
             assert is_item
             assert damage is None

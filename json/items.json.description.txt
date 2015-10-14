@@ -103,16 +103,19 @@ The fields for the damage values, status effects, and tag variants implicitly in
         * block: an item stub describing the source block.
         * tools: an array of tool stubs describing the items which can be used for this. The "consumed" field defaults to false instead.
         * damage: how much damage the tool takes in the process if it has a durability value. Defaults to 1.
-    * useItem: the item can be created by using (default: right click) another item.
+    * useItem: the block or item can be created by using (default: right click) another item.
         * item: an item stub describing the source item.
         * onBlock: an optional item stub. If given, the item must be used on this block. If the "consumed" field is true (defaults to false instead), the block is consumed and replaced with air.
         * onEntity: an optional entity savegame ID. If given, the item must be used on this entity.
+        * entitySubtype: the mob's subtype, as listed in mobs.json. If given, the item must be used on this entity.
+        * createsBlock: if true, this will create a block next to the block the item was used on, instead of dropping the item or replacing the item in the inventory. Defaults to false.
     * liquids: the block is generated when two liquid blocks are arranged in a specific fashion.
         * liquid1: an item stub describing the first liquid block.
         * liquid2: an item stub describing the second liquid block.
         * relation: how the liquid blocks must be arranged for the block creation. May be one of the following:
             * flowIntoSource: created when the first liquid attempts to flow into a source block of the second, regardless of direction. The second liquid's source block is replaced by the new block.
             * contactNonsourceSide: created when any block of the first liquid (source or not) horizontally comes in contact with a non-source block of the second liquid. Which block is replaced depends on which block was attempting to spread first.
+            * flowFromTop: created when any block of the first liquid (source or not) tries to flow into any block of the second liquid (source or not) from above. The second liquid's block is replaced by the new block.
     * special: a method of obtaining not described above.
         * description: a HTML description for All The Items.
         * block: if true, the method creates a block placed in the world. If false (the default), the method creates an item as a dropped item entity or within an inventory.
@@ -124,7 +127,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
     * a number specifying the average drop chances. The default is 1, implying that the block always drops itself.
 * whenPlaced: an item stub specifying the block this item turns into when placed.
 * creativeMenu: whether the item appears in the Creative mode inventory menu. Defaults to true.
-* pickBlock: whether the item can be obtained using the Pick Block key in Creative mode. Defaults to the same value as creativeMenu.
+* pickBlock: whether the item can be obtained using the Pick Block key in Creative mode, or the item that will be picked from the block. Defaults to the same value as creativeMenu.
 * durability: the durability of the tool, as displayed in-game.
 * stackable: how many of this item, given that they are identical, may be stacked together. May be true or omitted for stackable (64), false for unstackable (1), or another positive integer for a custom value.
 * alwaysGlow: whether the item always has a glowing effect, regardless of enchantments. Defaults to false.
