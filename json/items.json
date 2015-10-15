@@ -10,6 +10,35 @@
                     "requires": "noCrash",
                     "subtype": "acacia",
                     "type": "entityDeath"
+                },
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        {
+                            "damage": 4,
+                            "id": "minecraft:planks"
+                        },
+                        "minecraft:wooden_shovel",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 4,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 4,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 4,
+                            "id": "minecraft:planks"
+                        }
+                    ],
+                    "type": "craftingShaped"
                 }
             ],
             "stackable": false
@@ -1144,6 +1173,35 @@
                     "requires": "noCrash",
                     "subtype": "birch",
                     "type": "entityDeath"
+                },
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        },
+                        "minecraft:wooden_shovel",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        }
+                    ],
+                    "type": "craftingShaped"
                 }
             ],
             "stackable": false
@@ -1278,12 +1336,27 @@
                         null,
                         null,
                         null,
-                        "minecraft:planks",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        },
                         "minecraft:wooden_shovel",
-                        "minecraft:planks",
-                        "minecraft:planks",
-                        "minecraft:planks",
-                        "minecraft:planks"
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 0,
+                            "id": "minecraft:planks"
+                        }
                     ],
                     "type": "craftingShaped"
                 },
@@ -1571,8 +1644,8 @@
                     "type": "natural"
                 },
                 {
-                    "amountMin": 0,
                     "amountMax": 2,
+                    "amountMin": 0,
                     "block": "minecraft:brown_mushroom_block",
                     "silkTouch": false,
                     "type": "mining"
@@ -6497,6 +6570,35 @@
                     "requires": "noCrash",
                     "subtype": "jungle",
                     "type": "entityDeath"
+                },
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        {
+                            "damage": 3,
+                            "id": "minecraft:planks"
+                        },
+                        "minecraft:wooden_shovel",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 3,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 3,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 3,
+                            "id": "minecraft:planks"
+                        }
+                    ],
+                    "type": "craftingShaped"
                 }
             ],
             "stackable": false
@@ -12547,6 +12649,35 @@
                     "requires": "noCrash",
                     "subtype": "spruce",
                     "type": "entityDeath"
+                },
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        {
+                            "damage": 1,
+                            "id": "minecraft:planks"
+                        },
+                        "minecraft:wooden_shovel",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 1,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 1,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 1,
+                            "id": "minecraft:planks"
+                        }
+                    ],
+                    "type": "craftingShaped"
                 }
             ],
             "stackable": false
