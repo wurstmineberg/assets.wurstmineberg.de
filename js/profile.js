@@ -644,7 +644,7 @@ function displayMinigameData(people, person, deathGamesLog) {
 }
 
 function loadStatData(person, stringData, achievementData, biomes, items, mobData) {
-    if (person.option('show_inventory')) {
+    if (person.option('show_inventory') || person.id === currentUser) {
         $.when(API.playerData(person)).done(function(playerData) {
             displayInventory(playerData, items, stringData);
         }).fail(function() {
