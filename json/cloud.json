@@ -2914,6 +2914,10 @@
             {
                 "hasSorter": false,
                 "id": "minecraft:iron_horse_armor"
+            },
+            {
+                "exists": false,
+                "id": "minecraft:elytra"
             }
         ],
         "0": [
@@ -3056,12 +3060,13 @@
                 "id": "minecraft:snowball"
             },
             {
-                "id": "minecraft:spectral_arrow"
-            },
-            {
                 "exists": false,
                 "id": "minecraft:shield",
                 "tagValue": null
+            },
+            {
+                "exists": false,
+                "id": "minecraft:spectral_arrow"
             }
         ]
     },
