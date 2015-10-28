@@ -84,12 +84,14 @@ The fields for the damage values, status effects, and tag variants implicitly in
     * bonusChest: the item may generate in the bonus chest, depending on the world seed.
         * amountMin: the minimum number of items in a single generated stack. Defaults to 1.
         * amountMax: the maximum number of items in a single generated stack. Defaults to 1.
-        * stacksMin: the minimum number of total stacks generated in the bonus chest.
-        * stacksMax: the maximum number of total stacks generated in the bonus chest.
+        * stacksMin: the minimum number of stacks of this item generated in the chest, if different from the total.
+        * stacksMax: the maximum number of stacks of this item generated in the chest, if different from the total.
         * weight: the chance that a generated stack will have this item, if known.
     * chest: the item may appear in chests or other inventories generated naturally with structures in the world.
         * amountMin: the minimum number of items in a single generated stack. Defaults to 1.
         * amountMax: the maximum number of items in a single generated stack. Defaults to 1.
+        * stacksMin: the minimum number of stacks of this item generated in the chest, if different from the total.
+        * stacksMax: the maximum number of stacks of this item generated in the chest, if different from the total.
         * structure: the structure inventory name as specified in structres.json
     * natural: the block generates naturally as part of the world.
         * biomes: an array of biome IDs (corresponding to the "id" field in biomes.json) where the block can generate. By default, it can generate in all biomes.

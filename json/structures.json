@@ -116,12 +116,43 @@
         },
         "requiresOption": false
     },
+    "igloo": {
+        "biomes": [
+            "Ice Plains",
+            "Cold Taiga"
+        ],
+        "dimension": "overworld",
+        "inventories": {
+            "iglooBrewingStand": {
+                "chestsMax": 1,
+                "inventoryType": "minecraft:brewing_stand"
+            },
+            "iglooCactusPot": {
+                "chestsMax": 1,
+                "inventoryType": "minecraft:flower_pot"
+            },
+            "iglooLootChest": {
+                "chestsMax": 1,
+                "stacksMax": 9,
+                "stacksMin": 3
+            }
+        },
+        "name": {
+            "default": "igloo",
+            "plural": "igloos"
+        }
+    },
     "jungleTemple": {
         "biomes": [
             "Jungle"
         ],
         "dimension": "overworld",
         "inventories": {
+            "jungleTempleTrap": {
+                "chestsMax": 2,
+                "chestsMin": 2,
+                "inventoryType": "minecraft:dispenser"
+            },
             "jungleTemplePuzzle": {
                 "chestsMax": 1,
                 "chestsMin": 1,
@@ -145,6 +176,16 @@
         "name": {
             "default": "Nether fortress",
             "plural": "Nether fortresses"
+        }
+    },
+    "oceanMonument": {
+        "biomes": [
+            "Deep Ocean"
+        ],
+        "dimension": "overworld",
+        "name": {
+            "default": "ocean monument",
+            "plural": "ocean monuments"
         }
     },
     "stronghold": {

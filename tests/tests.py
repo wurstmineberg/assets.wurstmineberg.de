@@ -331,8 +331,12 @@ def validate_items_json():
                         assert isinstance(method['amountMax'], int)
                         assert method['amountMax'] != 1
                         assert method['amountMax'] >= method.get('amountMin', 1)
-                    assert isinstance(method['stacksMin'], int)
-                    assert isinstance(method['stacksMax'], int)
+                    if 'stacksMin' in method:
+                        assert isinstance(method['stacksMin'], int)
+                    if 'stacksMax' in method:
+                        assert isinstance(method['stacksMax'], int)
+                        if 'stacksMin' in method:
+                            assert method['stacksMin'] <= method['stacksMax']
                     if 'weight' in method:
                         assert isinstance(method['weight'], float)
                         assert method['weight'] < 1
@@ -349,6 +353,12 @@ def validate_items_json():
                         assert isinstance(method['amountMax'], int)
                         assert method['amountMax'] >= 0
                         assert method['amountMax'] != 1
+                    if 'stacksMin' in method:
+                        assert isinstance(method['stacksMin'], int)
+                    if 'stacksMax' in method:
+                        assert isinstance(method['stacksMax'], int)
+                        if 'stacksMin' in method:
+                            assert method['stacksMin'] <= method['stacksMax']
                     with open('json/structures.json') as structures_f:
                         structures = json.load(structures_f)
                     for structure in structures.values():

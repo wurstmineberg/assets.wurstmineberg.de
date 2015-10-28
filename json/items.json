@@ -338,8 +338,6 @@
                 {
                     "amountMax": 3,
                     "amountMin": 2,
-                    "stacksMax": 10,
-                    "stacksMin": 10,
                     "type": "bonusChest",
                     "weight": 0.078125
                 },
@@ -349,6 +347,11 @@
                     "profession": 0,
                     "tier": 2,
                     "type": "trading"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "iglooLootChest",
+                    "type": "chest"
                 }
             ]
         },
@@ -377,7 +380,45 @@
         "arrow": {
             "image": "arrow.png",
             "itemID": 262,
-            "name": "Arrow"
+            "name": "Arrow",
+            "obtaining": [
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "subtype": "regular",
+                    "type": "entityDeath"
+                },
+                {
+                    "career": 4,
+                    "outputAmount": 12,
+                    "outputAmountMin": 8,
+                    "profession": 0,
+                    "type": "trading"
+                },
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        null,
+                        "minecraft:flint",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null,
+                        null,
+                        "minecraft:feather",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amountMax": 14,
+                    "amountMin": 4,
+                    "structure": "jungleTempleTrap",
+                    "type": "chest"
+                }
+            ]
         },
         "baked_potato": {
             "image": "bakedpotato.png",
@@ -1042,6 +1083,27 @@
             "image": "bed.png",
             "itemID": 355,
             "name": "Bed",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:wool",
+                        "minecraft:wool",
+                        "minecraft:wool",
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        "minecraft:planks"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amount": 1,
+                    "structure": "igloo",
+                    "type": "structure"
+                }
+            ],
             "solid": false,
             "stackable": false
         },
@@ -1394,9 +1456,7 @@
                     "type": "entityDeath"
                 },
                 {
-                    "amountMax": 2,
-                    "amountMaxLooting": 5,
-                    "amountMin": 0,
+                    "amountMaxLooting": 4,
                     "entity": "EntityHorse",
                     "subtype": "skeleton",
                     "type": "entityDeath"
@@ -1585,6 +1645,10 @@
                     "amount": 1,
                     "structure": "endShip",
                     "type": "structure"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ],
             "solid": false
@@ -1721,6 +1785,10 @@
                 {
                     "plant": "minecraft:cactus",
                     "type": "plantGrowth"
+                },
+                {
+                    "structure": "iglooCactusPot",
+                    "type": "chest"
                 }
             ]
         },
@@ -1767,71 +1835,454 @@
             "damageValues": {
                 "0": {
                     "image": "whitecarpet.png",
-                    "name": "White Carpet"
+                    "name": "White Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "amount": 9,
+                            "structure": "igloo",
+                            "type": "structure"
+                        }
+                    ]
                 },
                 "1": {
                     "image": "orangecarpet.png",
-                    "name": "Orange Carpet"
+                    "name": "Orange Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "10": {
                     "image": "purplecarpet.png",
-                    "name": "Purple Carpet"
+                    "name": "Purple Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "11": {
                     "image": "bluecarpet.png",
-                    "name": "Blue Carpet"
+                    "name": "Blue Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "12": {
                     "image": "browncarpet.png",
-                    "name": "Brown Carpet"
+                    "name": "Brown Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "13": {
                     "image": "greencarpet.png",
-                    "name": "Green Carpet"
+                    "name": "Green Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "14": {
-                    "name": "Red Carpet"
+                    "name": "Red Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
+                        }
+                    ]
                 },
                 "15": {
                     "image": "blackcarpet.png",
-                    "name": "Black Carpet"
+                    "name": "Black Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "magentacarpet.png",
-                    "name": "Magenta Carpet"
+                    "name": "Magenta Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "lightbluecarpet.png",
-                    "name": "Light Blue Carpet"
+                    "name": "Light Blue Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "4": {
                     "image": "yellowcarpet.png",
-                    "name": "Yellow Carpet"
+                    "name": "Yellow Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "limecarpet.png",
-                    "name": "Lime Carpet"
+                    "name": "Lime Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "6": {
                     "image": "pinkcarpet.png",
-                    "name": "Pink Carpet"
+                    "name": "Pink Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "7": {
                     "image": "graycarpet.png",
-                    "name": "Gray Carpet"
+                    "name": "Gray Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 },
                 "8": {
                     "image": "lightgraycarpet.png",
-                    "name": "Light Gray Carpet"
+                    "name": "Light Gray Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "amount": 3,
+                            "structure": "igloo",
+                            "type": "structure"
+                        }
+                    ]
                 },
                 "9": {
                     "image": "cyancarpet.png",
-                    "name": "Cyan Carpet"
+                    "name": "Cyan Carpet",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 }
             },
             "image": "redcarpet.png",
             "itemID": 171,
-            "name": "Carpet"
+            "name": "Carpet",
+            "solid": false
         },
         "carrot": {
             "image": "carrot.png",
@@ -1889,9 +2340,31 @@
         },
         "cauldron": {
             "blockID": 118,
+            "dropsSelf": "pickaxe",
             "image": "cauldron.png",
             "itemID": 380,
-            "name": "Cauldron"
+            "name": "Cauldron",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "chain_command_block": {
             "blockID": 211,
@@ -2021,6 +2494,10 @@
                     "amount": 2,
                     "structure": "endShip",
                     "type": "structure"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ],
             "solid": false
@@ -2037,6 +2514,7 @@
             "name": "Raw Chicken",
             "obtaining": [
                 {
+                    "amountMaxLooting": 4,
                     "entity": "Chicken",
                     "requires": "notOnFire",
                     "type": "entityDeath"
@@ -2175,10 +2653,67 @@
         },
         "coal": {
             "damageValues": {
-                "0": {},
+                "0": {
+                    "obtaining": [
+                        {
+                            "amountMaxFortune": 4,
+                            "block": "minecraft:coal_ore",
+                            "silkTouch": false,
+                            "tools": [
+                                "pickaxe"
+                            ],
+                            "type": "mining"
+                        },
+                        {
+                            "outputAmount": 9,
+                            "recipe": [
+                                "minecraft:coal_block"
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "input": "minecraft:coal_ore",
+                            "type": "smelting"
+                        },
+                        {
+                            "amountMaxLooting": 4,
+                            "amountMin": 0,
+                            "entity": "Skeleton",
+                            "subtype": "wither",
+                            "type": "entityDeath"
+                        },
+                        {
+                            "amountMax": 4,
+                            "structure": "iglooLootChest",
+                            "type": "chest"
+                        },
+                        {
+                            "amountMax": 8,
+                            "amountMin": 3,
+                            "structure": "abandonedMineShaft",
+                            "type": "chest"
+                        },
+                        {
+                            "amountMax": 8,
+                            "amountMin": 3,
+                            "structure": "strongholdStoreRoom",
+                            "type": "chest"
+                        }
+                    ]
+                },
                 "1": {
                     "image": "charcoal.png",
-                    "name": "Charcoal"
+                    "name": "Charcoal",
+                    "obtaining": [
+                        {
+                            "input": "minecraft:log",
+                            "type": "smelting"
+                        },
+                        {
+                            "input": "minecraft:log2",
+                            "type": "smelting"
+                        }
+                    ]
                 }
             },
             "image": "coal.png",
@@ -2548,7 +3083,37 @@
             "blockID": 58,
             "image": "craftingtable.png",
             "itemID": 58,
-            "name": "Crafting Table"
+            "name": "Crafting Table",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        null,
+                        "minecraft:planks",
+                        "minecraft:planks",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "amount": 1,
+                    "structure": "witchHut",
+                    "type": "structure"
+                },
+                {
+                    "amount": 1,
+                    "structure": "igloo",
+                    "type": "structure"
+                }
+            ]
         },
         "dark_oak_boat": {
             "image": "darkoakboat.png",
@@ -3655,14 +4220,14 @@
                     "obtaining": [
                         {
                             "amountMax": 3,
+                            "amountMaxLooting": 6,
                             "entity": "Squid",
                             "type": "entityDeath"
                         },
                         {
                             "category": "junk",
-                            "stackSize": 10,
                             "type": "fishing",
-                            "weight": 0.012048192771084338
+                            "weight": 0.12048192771084337
                         }
                     ]
                 },
@@ -4559,6 +5124,10 @@
                     },
                     "profession": 4,
                     "type": "trading"
+                },
+                {
+                    "structure": "iglooLootChest",
+                    "type": "chest"
                 }
             ]
         },
@@ -5090,18 +5659,71 @@
         },
         "fish": {
             "damageValues": {
-                "0": {},
+                "0": {
+                    "obtaining": [
+                        {
+                            "category": "fish",
+                            "type": "fishing",
+                            "weight": 0.6
+                        },
+                        {
+                            "amountMaxLooting": 4,
+                            "amountMin": 0,
+                            "entity": "Guardian",
+                            "type": "entityDeath"
+                        }
+                    ]
+                },
                 "1": {
                     "image": "rawsalmon.png",
-                    "name": "Raw Salmon"
+                    "name": "Raw Salmon",
+                    "obtaining": [
+                        {
+                            "category": "fish",
+                            "type": "fishing",
+                            "weight": 0.25
+                        },
+                        {
+                            "amountMin": 0,
+                            "entity": "Guardian",
+                            "requires": "player",
+                            "type": "entityDeath"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "clownfish.png",
-                    "name": "Clownfish"
+                    "name": "Clownfish",
+                    "obtaining": [
+                        {
+                            "category": "fish",
+                            "type": "fishing",
+                            "weight": 0.02
+                        },
+                        {
+                            "amountMin": 0,
+                            "entity": "Guardian",
+                            "requires": "player",
+                            "type": "entityDeath"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "pufferfish.png",
-                    "name": "Pufferfish"
+                    "name": "Pufferfish",
+                    "obtaining": [
+                        {
+                            "category": "fish",
+                            "type": "fishing",
+                            "weight": 0.13
+                        },
+                        {
+                            "amountMin": 0,
+                            "entity": "Guardian",
+                            "requires": "player",
+                            "type": "entityDeath"
+                        }
+                    ]
                 }
             },
             "image": "rawfish.png",
@@ -5180,6 +5802,15 @@
                         null
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "amount": 1,
+                    "structure": "witchHut",
+                    "type": "structure"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ]
         },
@@ -5213,7 +5844,32 @@
             "dropsSelf": "pickaxe",
             "image": "furnace.png",
             "itemID": 61,
-            "name": "Furnace"
+            "name": "Furnace",
+            "obtaining": [
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "amount": 1,
+                    "structure": "igloo",
+                    "type": "structure"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        null,
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "furnace_minecart": {
             "image": "minecartwithfurnace.png",
@@ -5244,7 +5900,31 @@
         "glass_bottle": {
             "image": "bottle.png",
             "itemID": 374,
-            "name": "Glass Bottle"
+            "name": "Glass Bottle",
+            "obtaining": [
+                {
+                    "amountMax": 6,
+                    "amountMaxLooting": 15,
+                    "amountMin": 0,
+                    "entity": "Witch",
+                    "type": "entityDeath"
+                },
+                {
+                    "outputAmount": 3,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:glass",
+                        null,
+                        "minecraft:glass",
+                        null,
+                        "minecraft:glass",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "glass_pane": {
             "blockID": 102,
@@ -5423,6 +6103,11 @@
                         "minecraft:gold_ingot"
                     ],
                     "type": "craftingShapeless"
+                },
+                {
+                    "amountMax": 3,
+                    "structure": "iglooLootChest",
+                    "type": "chest"
                 }
             ]
         },
@@ -5469,6 +6154,12 @@
                         },
                         {
                             "structure": "strongholdAltar",
+                            "type": "chest"
+                        },
+                        {
+                            "stacksMax": 1,
+                            "stacksMin": 1,
+                            "structure": "iglooLootChest",
                             "type": "chest"
                         }
                     ]
@@ -5918,6 +6609,11 @@
                     "description": "In locations with cold enough temperatures and a light level of 11 or lower, <a href=\"/block/minecraft/water\">water</a> will freeze into ice.",
                     "renewability": "fullyAuto",
                     "type": "special"
+                },
+                {
+                    "amount": 2,
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ],
             "solid": false
@@ -5964,6 +6660,10 @@
                         "minecraft:iron_ingot"
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ],
             "solid": false
@@ -6758,6 +7458,10 @@
                         "minecraft:stick"
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ]
         },
@@ -6865,25 +7569,19 @@
                     "type": "entityDeath"
                 },
                 {
-                    "amountMax": 2,
-                    "amountMaxLooting": 5,
-                    "amountMin": 0,
+                    "amountMaxLooting": 4,
                     "entity": "EntityHorse",
                     "subtype": "horse",
                     "type": "entityDeath"
                 },
                 {
-                    "amountMax": 2,
-                    "amountMaxLooting": 5,
-                    "amountMin": 0,
+                    "amountMaxLooting": 4,
                     "entity": "EntityHorse",
                     "subtype": "donkey",
                     "type": "entityDeath"
                 },
                 {
-                    "amountMax": 2,
-                    "amountMaxLooting": 5,
-                    "amountMin": 0,
+                    "amountMaxLooting": 4,
                     "entity": "EntityHorse",
                     "subtype": "mule",
                     "type": "entityDeath"
@@ -7978,8 +8676,6 @@
                         },
                         {
                             "amountMax": 3,
-                            "stacksMax": 10,
-                            "stacksMin": 10,
                             "type": "bonusChest",
                             "weight": 0.15625
                         },
@@ -8032,6 +8728,11 @@
                                 "id": "minecraft:sapling"
                             },
                             "type": "plantGrowth"
+                        },
+                        {
+                            "amountMax": 3,
+                            "type": "bonusChest",
+                            "weight": 0.15625
                         }
                     ]
                 },
@@ -8061,6 +8762,11 @@
                                 "id": "minecraft:sapling"
                             },
                             "type": "plantGrowth"
+                        },
+                        {
+                            "amountMax": 3,
+                            "type": "bonusChest",
+                            "weight": 0.15625
                         }
                     ]
                 },
@@ -8088,6 +8794,11 @@
                                 "id": "minecraft:sapling"
                             },
                             "type": "plantGrowth"
+                        },
+                        {
+                            "amountMax": 3,
+                            "type": "bonusChest",
+                            "weight": 0.15625
                         }
                     ]
                 }
@@ -8104,8 +8815,6 @@
                     "obtaining": [
                         {
                             "amountMax": 3,
-                            "stacksMax": 10,
-                            "stacksMin": 10,
                             "type": "bonusChest",
                             "weight": 0.15625
                         },
@@ -8152,6 +8861,11 @@
                                 "id": "minecraft:sapling"
                             },
                             "type": "plantGrowth"
+                        },
+                        {
+                            "amountMax": 3,
+                            "type": "bonusChest",
+                            "weight": 0.15625
                         }
                     ]
                 }
@@ -8395,6 +9109,10 @@
                                 }
                             ],
                             "type": "modifyBlock"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
                         }
                     ]
                 },
@@ -8419,6 +9137,10 @@
                                 }
                             ],
                             "type": "modifyBlock"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
                         }
                     ]
                 },
@@ -8443,6 +9165,10 @@
                                 }
                             ],
                             "type": "modifyBlock"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
                         }
                     ]
                 },
@@ -8463,6 +9189,10 @@
                                 }
                             ],
                             "type": "modifyBlock"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
                         }
                     ]
                 }
@@ -8832,8 +9562,6 @@
                         },
                         {
                             "amountMax": 3,
-                            "stacksMax": 10,
-                            "stacksMin": 10,
                             "type": "bonusChest",
                             "weight": 0.15625
                         }
@@ -9618,7 +10346,23 @@
         "prismarine_crystals": {
             "image": "prismarinecrystal.png",
             "itemID": 410,
-            "name": "Prismarine Crystal"
+            "name": "Prismarine Crystal",
+            "obtaining": [
+                {
+                    "amountMaxLooting": 4,
+                    "amountMin": 0,
+                    "entity": "Guardian",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMax": 3,
+                    "amountMaxFortune": 5,
+                    "amountMin": 2,
+                    "block": "minecraft:sea_lantern",
+                    "silkTouch": false,
+                    "type": "mining"
+                }
+            ]
         },
         "prismarine_shard": {
             "image": "prismarineshard.png",
@@ -9986,12 +10730,28 @@
         "rabbit": {
             "image": "rawrabbit.png",
             "itemID": 411,
-            "name": "Raw Rabbit"
+            "name": "Raw Rabbit",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Rabbit",
+                    "requires": "notOnFire",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "rabbit_foot": {
             "image": "rabbitfoot.png",
             "itemID": 414,
-            "name": "Rabbit's Foot"
+            "name": "Rabbit's Foot",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "Rabbit",
+                    "requires": "player",
+                    "type": "entityDeath"
+                }
+            ]
         },
         "rabbit_hide": {
             "image": "rabbithide.png",
@@ -10750,7 +11510,29 @@
             "blockID": 76,
             "image": "redstonetorch.png",
             "itemID": 76,
-            "name": "Redstone Torch"
+            "name": "Redstone Torch",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        "minecraft:redstone",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "amount": 1,
+                    "structure": "igloo",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "redstone_wire": {
             "blockID": 55,
@@ -10839,9 +11621,7 @@
                     "type": "entityDeath"
                 },
                 {
-                    "amountMax": 2,
-                    "amountMaxLooting": 5,
-                    "amountMin": 0,
+                    "amountMaxLooting": 4,
                     "entity": "EntityHorse",
                     "subtype": "zombie",
                     "type": "entityDeath"
@@ -10861,6 +11641,10 @@
                     "amountMax": 7,
                     "amountMin": 3,
                     "structure": "jungleTemplePuzzle",
+                    "type": "chest"
+                },
+                {
+                    "structure": "iglooLootChest",
                     "type": "chest"
                 }
             ]
@@ -11520,6 +12304,10 @@
                         null
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ]
         },
@@ -11768,12 +12556,14 @@
             "name": "Spider Eye",
             "obtaining": [
                 {
+                    "amountMaxLooting": 4,
                     "amountMin": 0,
                     "entity": "Spider",
                     "requires": "player",
                     "type": "entityDeath"
                 },
                 {
+                    "amountMaxLooting": 4,
                     "amountMin": 0,
                     "entity": "CaveSpider",
                     "requires": "player",
@@ -12629,6 +13419,10 @@
                                 },
                                 "ingredient": "minecraft:gunpowder",
                                 "type": "brewing"
+                            },
+                            {
+                                "structure": "iglooBrewingStand",
+                                "type": "chest"
                             }
                         ]
                     }
@@ -12642,10 +13436,38 @@
         "sponge": {
             "blockID": 19,
             "damageValues": {
-                "0": {},
+                "0": {
+                    "obtaining": [
+                        {
+                            "entity": "Guardian",
+                            "requires": "player",
+                            "subtype": "elder",
+                            "type": "entityDeath"
+                        },
+                        {
+                            "input": {
+                                "damage": 1,
+                                "id": "minecraft:sponge"
+                            },
+                            "type": "smelting"
+                        }
+                    ]
+                },
                 "1": {
                     "image": "wetsponge.png",
-                    "name": "Wet Sponge"
+                    "name": "Wet Sponge",
+                    "obtaining": [
+                        {
+                            "structure": "oceanMonument",
+                            "type": "structure"
+                        },
+                        {
+                            "block": true,
+                            "description": "When <a href=\"/block/minecraft/water\">water</a> touches a <a href=\"/block/minecraft/sponge/0\">dry sponge</a>, it will turn into this and absorb the water.",
+                            "renewability": "infinite",
+                            "type": "special"
+                        }
+                    ]
                 }
             },
             "image": "sponge.png",
@@ -12841,6 +13663,10 @@
                 {
                     "amount": 26,
                     "structure": "witchHut",
+                    "type": "structure"
+                },
+                {
+                    "structure": "igloo",
                     "type": "structure"
                 }
             ],
@@ -14392,8 +15218,6 @@
                 },
                 {
                     "amountMax": 3,
-                    "stacksMax": 10,
-                    "stacksMin": 10,
                     "type": "bonusChest",
                     "weight": 0.15625
                 },
@@ -14659,6 +15483,26 @@
             "image": "stoneaxe.png",
             "itemID": 275,
             "name": "Stone Axe",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        null,
+                        "minecraft:cobblestone",
+                        "minecraft:stick",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "iglooLootChest",
+                    "type": "chest"
+                }
+            ],
             "stackable": false
         },
         "stone_brick_stairs": {
@@ -14703,8 +15547,6 @@
             "name": "Stone Pickaxe",
             "obtaining": [
                 {
-                    "stacksMax": 10,
-                    "stacksMin": 10,
                     "type": "bonusChest",
                     "weight": 0.046875
                 },
@@ -14888,20 +15730,127 @@
         "stonebrick": {
             "blockID": 98,
             "damageValues": {
-                "0": {},
+                "0": {
+                    "obtaining": [
+                        {
+                            "structure": "stronghold",
+                            "type": "structure"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
+                        },
+                        {
+                            "outputAmount": 4,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stone"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stone"
+                                },
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stone"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stone"
+                                },
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
                 "1": {
                     "image": "mossystonebricks.png",
-                    "name": "Mossy Stone Brick"
+                    "name": "Mossy Stone Brick",
+                    "obtaining": [
+                        {
+                            "structure": "stronghold",
+                            "type": "structure"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
+                        },
+                        {
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:stonebrick"
+                                },
+                                "minecraft:vine"
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "crackedstonebricks.png",
-                    "name": "Cracked Stone Brick"
+                    "name": "Cracked Stone Brick",
+                    "obtaining": [
+                        {
+                            "structure": "stronghold",
+                            "type": "structure"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
+                        },
+                        {
+                            "input": {
+                                "damage": 0,
+                                "id": "minecraft:stonebrick"
+                            },
+                            "type": "smelting"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "chiseledstonebricks.png",
-                    "name": "Chiseled Stone Brick"
+                    "name": "Chiseled Stone Brick",
+                    "obtaining": [
+                        {
+                            "amount": 3,
+                            "structure": "jungleTemple",
+                            "type": "structure"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
+                        },
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:stone_slab"
+                                },
+                                null,
+                                null,
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:stone_slab"
+                                },
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 }
             },
+            "dropsSelf": "pickaxe",
             "image": "stonebricks.png",
             "itemID": 98,
             "name": "Stone Brick"
@@ -15106,6 +16055,10 @@
                         null
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ],
             "solid": false
@@ -15130,6 +16083,10 @@
                         "minecraft:planks"
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ],
             "solid": false
@@ -15248,8 +16205,13 @@
                     "description": "This block is created when a <a href=\"/item/minecraft/sign\">sign</a> is placed against another block horizontally.",
                     "renewability": "manual",
                     "type": "special"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
-            ]
+            ],
+            "solid": false
         },
         "water": {
             "blockID": 9,
@@ -15295,6 +16257,10 @@
                 {
                     "structure": "abandonedMineShaft",
                     "type": "structure"
+                },
+                {
+                    "structure": "igloo",
+                    "type": "structure"
                 }
             ],
             "solid": false
@@ -15320,6 +16286,12 @@
                 {
                     "structure": "village",
                     "type": "structure"
+                },
+                {
+                    "amountMax": 3,
+                    "amountMin": 2,
+                    "structure": "iglooLootChest",
+                    "type": "chest"
                 }
             ],
             "solid": false
@@ -15380,8 +16352,6 @@
                     "type": "craftingShaped"
                 },
                 {
-                    "stacksMax": 10,
-                    "stacksMin": 10,
                     "type": "bonusChest",
                     "weight": 0.078125
                 }
@@ -15491,32 +16461,247 @@
             "blockID": 126,
             "damageValues": {
                 "0": {
-                    "name": "Oak Wood Slab"
+                    "name": "Oak Wood Slab",
+                    "obtaining": [
+                        {
+                            "outputAmount": 6,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:planks"
+                                },
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "amountMax": 2,
+                            "amountMin": 2,
+                            "block": {
+                                "damage": 0,
+                                "id": "minecraft:double_wooden_slab"
+                            },
+                            "type": "mining"
+                        }
+                    ]
                 },
                 "1": {
                     "image": "sprucewoodslab.png",
-                    "name": "Spruce Wood Slab"
+                    "name": "Spruce Wood Slab",
+                    "obtaining": [
+                        {
+                            "outputAmount": 6,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:planks"
+                                },
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "amountMax": 2,
+                            "amountMin": 2,
+                            "block": {
+                                "damage": 1,
+                                "id": "minecraft:double_wooden_slab"
+                            },
+                            "type": "mining"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
+                        }
+                    ]
                 },
                 "2": {
                     "image": "birchwoodslab.png",
-                    "name": "Birch Wood Slab"
+                    "name": "Birch Wood Slab",
+                    "obtaining": [
+                        {
+                            "outputAmount": 6,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:planks"
+                                },
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "amountMax": 2,
+                            "amountMin": 2,
+                            "block": {
+                                "damage": 2,
+                                "id": "minecraft:double_wooden_slab"
+                            },
+                            "type": "mining"
+                        }
+                    ]
                 },
                 "3": {
                     "image": "junglewoodslab.png",
-                    "name": "Jungle Wood Slab"
+                    "name": "Jungle Wood Slab",
+                    "obtaining": [
+                        {
+                            "outputAmount": 6,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:planks"
+                                },
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "amountMax": 2,
+                            "amountMin": 2,
+                            "block": {
+                                "damage": 3,
+                                "id": "minecraft:double_wooden_slab"
+                            },
+                            "type": "mining"
+                        }
+                    ]
                 },
                 "4": {
                     "image": "acaciawoodslab.png",
-                    "name": "Acacia Wood Slab"
+                    "name": "Acacia Wood Slab",
+                    "obtaining": [
+                        {
+                            "outputAmount": 6,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:planks"
+                                },
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "amountMax": 2,
+                            "amountMin": 2,
+                            "block": {
+                                "damage": 4,
+                                "id": "minecraft:double_wooden_slab"
+                            },
+                            "type": "mining"
+                        }
+                    ]
                 },
                 "5": {
                     "image": "darkoakwoodslab.png",
-                    "name": "Dark Oak Wood Slab"
+                    "name": "Dark Oak Wood Slab",
+                    "obtaining": [
+                        {
+                            "outputAmount": 6,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:planks"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:planks"
+                                },
+                                null,
+                                null,
+                                null
+                            ],
+                            "type": "craftingShaped"
+                        },
+                        {
+                            "amountMax": 2,
+                            "amountMin": 2,
+                            "block": {
+                                "damage": 5,
+                                "id": "minecraft:double_wooden_slab"
+                            },
+                            "type": "mining"
+                        }
+                    ]
                 }
             },
             "image": "oakwoodslab.png",
             "itemID": 126,
-            "name": "Wooden Slab"
+            "name": "Wooden Slab",
+            "solid": false
         },
         "wooden_sword": {
             "durability": 59,
