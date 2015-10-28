@@ -209,7 +209,7 @@ function People(peopleData) {
             // Minecraft UUID
             return API.personById(id);
         } else {
-            return undefined;
+            return $.Deferred().reject('invalid person ID format');
         }
     };
 
