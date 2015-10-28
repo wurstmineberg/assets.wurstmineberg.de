@@ -1189,14 +1189,14 @@
                 "id": "minecraft:anvil"
             },
             {
-                "damage": 4,
+                "damage": 1,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
                 "id": "minecraft:anvil"
             },
             {
-                "damage": 8,
+                "damage": 2,
                 "hasOverflow": false,
                 "hasSmartChest": false,
                 "hasSorter": false,
@@ -3060,7 +3060,6 @@
                 "id": "minecraft:snowball"
             },
             {
-                "exists": false,
                 "id": "minecraft:shield",
                 "tagValue": null
             },

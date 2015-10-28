@@ -260,8 +260,51 @@
                         }
                     ]
                 },
+                "1": {
+                    "blockID": null,
+                    "image": "slightlydamagedanvil.png",
+                    "name": "Slightly Damaged Anvil",
+                    "obtaining": [
+                        {
+                            "block": {
+                                "damage": 4,
+                                "id": "minecraft:anvil"
+                            },
+                            "tools": [
+                                "pickaxe"
+                            ],
+                            "type": "mining"
+                        }
+                    ],
+                    "whenPlaced": {
+                        "damage": 4,
+                        "id": "minecraft:anvil"
+                    }
+                },
+                "2": {
+                    "blockID": null,
+                    "image": "verydamagedanvil.png",
+                    "name": "Very Damaged Anvil",
+                    "obtaining": [
+                        {
+                            "block": {
+                                "damage": 8,
+                                "id": "minecraft:anvil"
+                            },
+                            "tools": [
+                                "pickaxe"
+                            ],
+                            "type": "mining"
+                        }
+                    ],
+                    "whenPlaced": {
+                        "damage": 8,
+                        "id": "minecraft:anvil"
+                    }
+                },
                 "4": {
                     "image": "slightlydamagedanvil.png",
+                    "itemID": null,
                     "name": "Slightly Damaged Anvil",
                     "obtaining": [
                         {
@@ -274,6 +317,7 @@
                 },
                 "8": {
                     "image": "verydamagedanvil.png",
+                    "itemID": null,
                     "name": "Very Damaged Anvil",
                     "obtaining": [
                         {
@@ -285,9 +329,11 @@
                     ]
                 }
             },
+            "dropsSelf": "pickaxe",
             "image": "anvil.png",
             "itemID": 145,
-            "name": "Anvil"
+            "name": "Anvil",
+            "solid": false
         },
         "apple": {
             "image": "apple.png",
