@@ -548,13 +548,7 @@ def validate_cloud_json():
             x = int(x)
             for z, chest in enumerate(corridor):
                 try:
-                    validate_item_stub(chest, False, True, items=items, additional_fields={
-                        'exists',
-                        'hasOverflow',
-                        'hasSmartChest',
-                        'hasSorter'
-                    })
-                    pass #TODO validate additional fields
+                    validate_item_stub(chest, False, True, items=items, additional_fields={'name'})
                 except:
                     print('Error location: floor {} corridor {} chest {}: {}'.format(y, x, z, chest['id']), file=sys.stderr)
                     raise

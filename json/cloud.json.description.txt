@@ -3,9 +3,6 @@ Structure of cloud.json:
 * The file is an array of objects.
 * Each object represents a floor. For example, the 1st floor is represented by .[1]
 * Each floor object contains one or more corridor arrays. For example, the 2nd corridor on the right on the 4th floor is represented by .[1]["-2"]
-* Each corridor array contains one or more chest objects. They are item stubs with the following additional keys:
+* Each corridor array contains one or more chest elements. They are item stubs with the following additional optional keys:
 
-* exists: a boolean specifying whether or not the access chest has been built. Defaults to true.
-* hasOverflow: a boolean specifying whether or not the sorter has an overflow. Defaults to the value of exists.
-* hasSmartChest: a boolean specifying whether or not the chest is a SmartChest. Defaults to true; meaningless if exists is false.
-* hasSorter: a boolean specifying whether or not the chest has a sorter. Defaults to the value of exists; meaningless if the item is unstackable.
+* name: a string specifying the name to be shown on the sign, if different from the item name.

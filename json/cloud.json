@@ -4,1501 +4,742 @@
         "-1": [
             {
                 "damage": 15,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 14,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 13,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 12,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 11,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 10,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 9,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 8,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 7,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 6,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 5,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 4,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 3,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:dye"
             },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:clay_ball"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:clay"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:brick"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:hardened_clay"
-            },
+            "minecraft:clay_ball",
+            "minecraft:clay",
+            "minecraft:brick",
+            "minecraft:hardened_clay",
             {
                 "damage": 0,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 1,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 2,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 3,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 4,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 5,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 6,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 7,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 8,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 9,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 10,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 11,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 12,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 13,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 14,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
             {
                 "damage": 15,
-                "exists": false,
                 "id": "minecraft:stained_hardened_clay"
             },
-            {
-                "exists": false,
-                "id": "minecraft:brick_block"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:brick_stairs"
-            },
+            "minecraft:brick_block",
+            "minecraft:brick_stairs",
             {
                 "damage": 4,
-                "exists": false,
                 "id": "minecraft:stone_slab"
             }
         ],
         "-2": [
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 3,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 4,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 5,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 6,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 7,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 8,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 9,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 10,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 11,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 12,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 13,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 14,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 15,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:wool"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 3,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 4,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 5,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 6,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 7,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 8,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 9,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 10,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 11,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 12,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 13,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 14,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 15,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:carpet"
             },
             {
                 "damage": 15,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 14,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 13,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 12,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 11,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 10,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 9,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 8,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 7,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 6,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 5,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 4,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 3,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 2,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             },
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:banner"
             }
         ],
         "-3": [
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:glass"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:glass_pane"
-            },
+            "minecraft:glass",
+            "minecraft:glass_pane",
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 3,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 3,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 4,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 4,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 5,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 5,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 6,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 6,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 7,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 7,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 8,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 8,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 9,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 9,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 10,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 10,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 11,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 11,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 12,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 12,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 13,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 13,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 14,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 14,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             },
             {
                 "damage": 15,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass"
             },
             {
                 "damage": 15,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stained_glass_pane"
             }
         ],
         "0": [
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:dirt"
             },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:cobblestone"
-            },
+            "minecraft:cobblestone",
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stonebrick"
             },
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:quartz_block"
             },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:iron_bars"
-            },
+            "minecraft:iron_bars",
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:sandstone"
             },
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:red_sandstone"
             },
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:sand"
             },
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:sand"
             },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:gravel"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:grass"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:mycelium"
-            },
+            "minecraft:gravel",
+            "minecraft:grass",
+            "minecraft:mycelium",
             {
                 "damage": 2,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:dirt"
             },
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:dirt"
             },
+            "minecraft:obsidian",
+            "minecraft:ice",
+            "minecraft:packed_ice",
+            "minecraft:snow",
             {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:obsidian"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:ice"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:packed_ice"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:snow"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:snow_layer"
+                "id": "minecraft:snow_layer",
+                "name": "Snow Layer"
             },
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 2,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 3,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 4,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 5,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone"
             },
             {
                 "damage": 6,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone"
             },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:sandstone_stairs"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:red_sandstone_stairs"
-            },
+            "minecraft:sandstone_stairs",
+            "minecraft:red_sandstone_stairs",
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone_slab"
             },
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone_slab2"
             },
             {
                 "damage": 2,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:sandstone"
             },
             {
                 "damage": 2,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:red_sandstone"
             },
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:sandstone"
             },
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:red_sandstone"
             },
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone_slab"
             },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:stone_stairs"
-            },
+            "minecraft:stone_stairs",
             {
                 "damage": 3,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone_slab"
             },
             {
                 "damage": 0,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:cobblestone_wall"
             },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:mossy_cobblestone"
-            },
+            "minecraft:mossy_cobblestone",
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:cobblestone_wall"
             },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:stone_brick_stairs"
-            },
+            "minecraft:stone_brick_stairs",
             {
                 "damage": 5,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone_slab"
             },
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stonebrick"
             },
             {
                 "damage": 2,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stonebrick"
             },
             {
                 "damage": 3,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stonebrick"
             },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:quartz_stairs"
-            },
+            "minecraft:quartz_stairs",
             {
                 "damage": 7,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:stone_slab"
             },
             {
                 "damage": 2,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:quartz_block"
             },
             {
                 "damage": 1,
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
                 "id": "minecraft:quartz_block"
             }
         ],
         "1": [
-            {
-                "id": "minecraft:ender_pearl"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:crafting_table"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:furnace"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:torch"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:chest"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:trapped_chest"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:ender_chest"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:enchanting_table"
-            },
+            "minecraft:ender_pearl",
+            "minecraft:crafting_table",
+            "minecraft:furnace",
+            "minecraft:torch",
+            "minecraft:chest",
+            "minecraft:trapped_chest",
+            "minecraft:ender_chest",
+            "minecraft:enchanting_table",
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:anvil"
+                "id": "minecraft:anvil",
+                "name": "Anvil (undamaged)"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:anvil"
             },
             {
                 "damage": 2,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:anvil"
             },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:sign"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:item_frame"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:bucket"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:water_bucket"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:lava_bucket"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:flint"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:bed"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:map"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:ender_eye"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:ladder"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:boat"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:saddle"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:lead"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:name_tag"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:painting"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:flower_pot"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:beacon"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:armor_stand"
-            }
+            "minecraft:sign",
+            "minecraft:item_frame",
+            "minecraft:bucket",
+            "minecraft:water_bucket",
+            "minecraft:lava_bucket",
+            "minecraft:flint",
+            "minecraft:bed",
+            "minecraft:map",
+            "minecraft:ender_eye",
+            "minecraft:ladder",
+            "minecraft:boat",
+            "minecraft:saddle",
+            "minecraft:lead",
+            "minecraft:name_tag",
+            "minecraft:painting",
+            "minecraft:flower_pot",
+            "minecraft:beacon",
+            "minecraft:armor_stand"
         ]
     },
     {
         "-1": [
-            {
-                "hasSorter": false,
-                "id": "minecraft:cake"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:rabbit_stew"
-            },
-            {
-                "id": "minecraft:cooked_porkchop"
-            },
-            {
-                "id": "minecraft:cooked_beef"
-            },
-            {
-                "id": "minecraft:pumpkin_pie"
-            },
-            {
-                "id": "minecraft:golden_carrot"
-            },
-            {
-                "id": "minecraft:cooked_mutton"
-            },
+            "minecraft:cake",
+            "minecraft:rabbit_stew",
+            "minecraft:cooked_porkchop",
+            "minecraft:cooked_beef",
+            "minecraft:pumpkin_pie",
+            "minecraft:golden_carrot",
+            "minecraft:cooked_mutton",
             {
                 "damage": 1,
                 "id": "minecraft:cooked_fish"
             },
-            {
-                "id": "minecraft:cooked_chicken"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:mushroom_stew"
-            },
-            {
-                "id": "minecraft:baked_potato"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:beetroot_soup"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:bread"
-            },
+            "minecraft:cooked_chicken",
+            "minecraft:mushroom_stew",
+            "minecraft:baked_potato",
+            "minecraft:beetroot_soup",
+            "minecraft:bread",
             {
                 "damage": 0,
-                "exists": false,
                 "id": "minecraft:cooked_fish"
             },
-            {
-                "exists": false,
-                "id": "minecraft:cooked_rabbit"
-            },
+            "minecraft:cooked_rabbit",
             {
                 "damage": 0,
-                "exists": false,
                 "id": "minecraft:golden_apple"
             },
             {
                 "damage": 1,
-                "exists": false,
                 "id": "minecraft:golden_apple"
             },
-            {
-                "id": "minecraft:apple"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:chorus_fruit"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:rotten_flesh"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:carrot"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:beef"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:porkchop"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:spider_eye"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:rabbit"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:melon"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:poisonous_potato"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:chicken"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:mutton"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:cookie"
-            },
+            "minecraft:apple",
+            "minecraft:chorus_fruit",
+            "minecraft:rotten_flesh",
+            "minecraft:carrot",
+            "minecraft:beef",
+            "minecraft:porkchop",
+            "minecraft:spider_eye",
+            "minecraft:rabbit",
+            "minecraft:melon",
+            "minecraft:poisonous_potato",
+            "minecraft:chicken",
+            "minecraft:mutton",
+            "minecraft:cookie",
             {
                 "damage": 0,
-                "exists": false,
                 "id": "minecraft:fish"
             },
             {
                 "damage": 1,
-                "exists": false,
                 "id": "minecraft:fish"
             },
-            {
-                "exists": false,
-                "id": "minecraft:beetroot"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:potato"
-            },
+            "minecraft:beetroot",
+            "minecraft:potato",
             {
                 "damage": 2,
-                "exists": false,
                 "id": "minecraft:fish"
             },
             {
                 "damage": 3,
-                "exists": false,
                 "id": "minecraft:fish"
             }
         ],
         "-2": [
-            {
-                "hasSorter": false,
-                "id": "minecraft:milk_bucket"
-            },
-            {
-                "id": "minecraft:bowl"
-            },
-            {
-                "id": "minecraft:string"
-            },
-            {
-                "id": "minecraft:bone"
-            },
-            {
-                "id": "minecraft:rabbit_foot"
-            },
-            {
-                "id": "minecraft:rabbit_hide"
-            },
-            {
-                "id": "minecraft:leather"
-            },
-            {
-                "id": "minecraft:feather"
-            },
-            {
-                "id": "minecraft:slime_ball"
-            },
-            {
-                "id": "minecraft:egg"
-            },
-            {
-                "id": "minecraft:gunpowder"
-            },
-            {
-                "id": "minecraft:nether_star"
-            },
+            "minecraft:milk_bucket",
+            "minecraft:bowl",
+            "minecraft:string",
+            "minecraft:bone",
+            "minecraft:rabbit_foot",
+            "minecraft:rabbit_hide",
+            "minecraft:leather",
+            "minecraft:feather",
+            "minecraft:slime_ball",
+            "minecraft:egg",
+            "minecraft:gunpowder",
+            "minecraft:nether_star",
             {
                 "damage": 0,
-                "hasSorter": false,
                 "id": "minecraft:skull"
             },
             {
@@ -1507,141 +748,57 @@
             },
             {
                 "damage": 2,
-                "hasSorter": false,
                 "id": "minecraft:skull"
             },
             {
                 "damage": 4,
-                "hasSorter": false,
                 "id": "minecraft:skull"
             },
             {
                 "damage": 5,
-                "exists": false,
                 "id": "minecraft:skull"
             },
-            {
-                "exists": false,
-                "id": "minecraft:slime"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:web"
-            }
+            "minecraft:slime",
+            "minecraft:web"
         ],
         "0": [
-            {
-                "id": "minecraft:redstone"
-            },
-            {
-                "id": "minecraft:redstone_block"
-            },
-            {
-                "id": "minecraft:redstone_torch"
-            },
-            {
-                "id": "minecraft:redstone_lamp"
-            },
-            {
-                "id": "minecraft:repeater"
-            },
-            {
-                "id": "minecraft:comparator"
-            },
-            {
-                "id": "minecraft:piston"
-            },
-            {
-                "id": "minecraft:sticky_piston"
-            },
-            {
-                "id": "minecraft:daylight_detector"
-            },
-            {
-                "id": "minecraft:lever"
-            },
-            {
-                "id": "minecraft:wooden_button"
-            },
-            {
-                "id": "minecraft:stone_button"
-            },
-            {
-                "id": "minecraft:tripwire_hook"
-            },
-            {
-                "id": "minecraft:hopper"
-            },
-            {
-                "id": "minecraft:dispenser"
-            },
-            {
-                "id": "minecraft:dropper"
-            },
-            {
-                "id": "minecraft:tnt"
-            },
-            {
-                "id": "minecraft:rail"
-            },
-            {
-                "id": "minecraft:golden_rail"
-            },
-            {
-                "id": "minecraft:detector_rail"
-            },
-            {
-                "id": "minecraft:activator_rail"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:minecart"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:chest_minecart"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:furnace_minecart"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:hopper_minecart"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:tnt_minecart"
-            },
-            {
-                "id": "minecraft:wooden_pressure_plate"
-            },
-            {
-                "id": "minecraft:stone_pressure_plate"
-            },
-            {
-                "id": "minecraft:light_weighted_pressure_plate"
-            },
-            {
-                "id": "minecraft:heavy_weighted_pressure_plate"
-            },
-            {
-                "id": "minecraft:iron_door"
-            },
-            {
-                "id": "minecraft:iron_trapdoor"
-            },
-            {
-                "id": "minecraft:noteblock"
-            }
+            "minecraft:redstone",
+            "minecraft:redstone_block",
+            "minecraft:redstone_torch",
+            "minecraft:redstone_lamp",
+            "minecraft:repeater",
+            "minecraft:comparator",
+            "minecraft:piston",
+            "minecraft:sticky_piston",
+            "minecraft:daylight_detector",
+            "minecraft:lever",
+            "minecraft:wooden_button",
+            "minecraft:stone_button",
+            "minecraft:tripwire_hook",
+            "minecraft:hopper",
+            "minecraft:dispenser",
+            "minecraft:dropper",
+            "minecraft:tnt",
+            "minecraft:rail",
+            "minecraft:golden_rail",
+            "minecraft:detector_rail",
+            "minecraft:activator_rail",
+            "minecraft:minecart",
+            "minecraft:chest_minecart",
+            "minecraft:furnace_minecart",
+            "minecraft:hopper_minecart",
+            "minecraft:tnt_minecart",
+            "minecraft:wooden_pressure_plate",
+            "minecraft:stone_pressure_plate",
+            "minecraft:light_weighted_pressure_plate",
+            "minecraft:heavy_weighted_pressure_plate",
+            "minecraft:iron_door",
+            "minecraft:iron_trapdoor",
+            "minecraft:noteblock"
         ],
         "1": [
-            {
-                "id": "minecraft:stick"
-            },
-            {
-                "id": "minecraft:trapdoor"
-            },
+            "minecraft:stick",
+            "minecraft:trapdoor",
             {
                 "damage": 0,
                 "id": "minecraft:sapling"
@@ -1714,24 +871,12 @@
                 "damage": 5,
                 "id": "minecraft:planks"
             },
-            {
-                "id": "minecraft:oak_stairs"
-            },
-            {
-                "id": "minecraft:spruce_stairs"
-            },
-            {
-                "id": "minecraft:birch_stairs"
-            },
-            {
-                "id": "minecraft:jungle_stairs"
-            },
-            {
-                "id": "minecraft:acacia_stairs"
-            },
-            {
-                "id": "minecraft:dark_oak_stairs"
-            },
+            "minecraft:oak_stairs",
+            "minecraft:spruce_stairs",
+            "minecraft:birch_stairs",
+            "minecraft:jungle_stairs",
+            "minecraft:acacia_stairs",
+            "minecraft:dark_oak_stairs",
             {
                 "damage": 0,
                 "id": "minecraft:wooden_slab"
@@ -1762,60 +907,24 @@
             }
         ],
         "2": [
-            {
-                "id": "minecraft:fence"
-            },
-            {
-                "id": "minecraft:fence_gate"
-            },
-            {
-                "id": "minecraft:spruce_fence"
-            },
-            {
-                "id": "minecraft:spruce_fence_gate"
-            },
-            {
-                "id": "minecraft:birch_fence"
-            },
-            {
-                "id": "minecraft:birch_fence_gate"
-            },
-            {
-                "id": "minecraft:jungle_fence"
-            },
-            {
-                "id": "minecraft:jungle_fence_gate"
-            },
-            {
-                "id": "minecraft:acacia_fence"
-            },
-            {
-                "id": "minecraft:acacia_fence_gate"
-            },
-            {
-                "id": "minecraft:dark_oak_fence"
-            },
-            {
-                "id": "minecraft:dark_oak_fence_gate"
-            },
-            {
-                "id": "minecraft:wooden_door"
-            },
-            {
-                "id": "minecraft:spruce_door"
-            },
-            {
-                "id": "minecraft:birch_door"
-            },
-            {
-                "id": "minecraft:jungle_door"
-            },
-            {
-                "id": "minecraft:acacia_door"
-            },
-            {
-                "id": "minecraft:dark_oak_door"
-            },
+            "minecraft:fence",
+            "minecraft:fence_gate",
+            "minecraft:spruce_fence",
+            "minecraft:spruce_fence_gate",
+            "minecraft:birch_fence",
+            "minecraft:birch_fence_gate",
+            "minecraft:jungle_fence",
+            "minecraft:jungle_fence_gate",
+            "minecraft:acacia_fence",
+            "minecraft:acacia_fence_gate",
+            "minecraft:dark_oak_fence",
+            "minecraft:dark_oak_fence_gate",
+            "minecraft:wooden_door",
+            "minecraft:spruce_door",
+            "minecraft:birch_door",
+            "minecraft:jungle_door",
+            "minecraft:acacia_door",
+            "minecraft:dark_oak_door",
             {
                 "damage": 0,
                 "id": "minecraft:leaves"
@@ -1852,9 +961,7 @@
                 "damage": 1,
                 "id": "minecraft:sponge"
             },
-            {
-                "id": "minecraft:sea_lantern"
-            },
+            "minecraft:sea_lantern",
             {
                 "damage": 0,
                 "id": "minecraft:prismarine"
@@ -1867,829 +974,510 @@
                 "damage": 2,
                 "id": "minecraft:prismarine"
             },
-            {
-                "id": "minecraft:prismarine_shard"
-            },
-            {
-                "id": "minecraft:prismarine_crystals"
-            }
+            "minecraft:prismarine_shard",
+            "minecraft:prismarine_crystals"
         ],
         "0": [
             {
                 "damage": 0,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:coal"
             },
             {
                 "damage": 1,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:coal"
             },
-            {
-                "id": "minecraft:iron_ingot"
-            },
-            {
-                "id": "minecraft:gold_nugget"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:gold_ingot"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:diamond"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:emerald"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:quartz"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:coal_block"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:iron_block"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:gold_block"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:lapis_block"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:diamond_block"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:emerald_block"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:coal_ore"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:iron_ore"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:gold_ore"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:lapis_ore"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:redstone_ore"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:diamond_ore"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:emerald_ore"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:quartz_ore"
-            }
+            "minecraft:iron_ingot",
+            "minecraft:gold_nugget",
+            "minecraft:gold_ingot",
+            "minecraft:diamond",
+            "minecraft:emerald",
+            "minecraft:quartz",
+            "minecraft:coal_block",
+            "minecraft:iron_block",
+            "minecraft:gold_block",
+            "minecraft:lapis_block",
+            "minecraft:diamond_block",
+            "minecraft:emerald_block",
+            "minecraft:coal_ore",
+            "minecraft:iron_ore",
+            "minecraft:gold_ore",
+            "minecraft:lapis_ore",
+            "minecraft:redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:emerald_ore",
+            "minecraft:quartz_ore"
         ],
         "1": [
-            {
-                "id": "minecraft:netherrack"
-            },
-            {
-                "id": "minecraft:soul_sand"
-            },
-            {
-                "id": "minecraft:glowstone_dust"
-            },
-            {
-                "id": "minecraft:glowstone"
-            },
-            {
-                "id": "minecraft:netherbrick"
-            },
-            {
-                "id": "minecraft:nether_brick"
-            },
+            "minecraft:netherrack",
+            "minecraft:soul_sand",
+            "minecraft:glowstone_dust",
+            "minecraft:glowstone",
+            "minecraft:netherbrick",
+            "minecraft:nether_brick",
             {
                 "damage": 6,
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
                 "id": "minecraft:stone_slab"
             },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:nether_brick_stairs"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:nether_brick_fence"
-            }
+            "minecraft:nether_brick_stairs",
+            "minecraft:nether_brick_fence"
         ]
     },
     {
         "-1": [
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:brewing_stand"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:cauldron"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:glass_bottle"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:dragon_breath"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:nether_wart"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:fermented_spider_eye"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:blaze_rod"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:blaze_powder"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:sugar"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:ghast_tear"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:speckled_melon"
-            },
-            {
-                "hasOverflow": false,
-                "hasSmartChest": false,
-                "hasSorter": false,
-                "id": "minecraft:magma_cream"
-            },
+            "minecraft:brewing_stand",
+            "minecraft:cauldron",
+            "minecraft:glass_bottle",
+            "minecraft:dragon_breath",
+            "minecraft:nether_wart",
+            "minecraft:fermented_spider_eye",
+            "minecraft:blaze_rod",
+            "minecraft:blaze_powder",
+            "minecraft:sugar",
+            "minecraft:ghast_tear",
+            "minecraft:speckled_melon",
+            "minecraft:magma_cream",
             {
                 "effect": "minecraft:water",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:water",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:water",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:awkward",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:awkward",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:awkward",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:mundane",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:mundane",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:mundane",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:thick",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:thick",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:thick",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
-            {
-                "exists": false,
-                "id": "minecraft:experience_bottle"
-            }
+            "minecraft:experience_bottle"
         ],
         "-2": [
             {
                 "effect": "minecraft:swiftness",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:swiftness",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:swiftness",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_swiftness",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_swiftness",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_swiftness",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:strong_swiftness",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:strong_swiftness",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:strong_swiftness",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strength",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strength",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:strength",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:long_strength",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_strength",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:long_strength",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_strength",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_strength",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:strong_strength",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:healing",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:healing",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:healing",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_healing",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_healing",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:strong_healing",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:leaping",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:leaping",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:leaping",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_leaping",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_leaping",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_leaping",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:strong_leaping",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:strong_leaping",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:strong_leaping",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:regeneration",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:regeneration",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:regeneration",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:long_regeneration",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_regeneration",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:long_regeneration",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_regeneration",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_regeneration",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:strong_regeneration",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:fire_resistance",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:fire_resistance",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:fire_resistance",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_fire_resistance",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_fire_resistance",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_fire_resistance",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:water_breathing",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:water_breathing",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:water_breathing",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_water_breathing",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_water_breathing",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_water_breathing",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:invisibility",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:invisibility",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:invisibility",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_invisibility",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_invisibility",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_invisibility",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:night_vision",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:night_vision",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:night_vision",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_night_vision",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_night_vision",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_night_vision",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             }
         ],
         "-3": [
             {
                 "effect": "minecraft:slowness",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:slowness",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:slowness",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_slowness",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_slowness",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_slowness",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:harming",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:harming",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:harming",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_harming",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:strong_harming",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:strong_harming",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:weakness",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:weakness",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:weakness",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_weakness",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_weakness",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_weakness",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:poison",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:poison",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:poison",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_poison",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             },
             {
                 "effect": "minecraft:long_poison",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:long_poison",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:strong_poison",
-                "exists": false,
                 "id": "minecraft:potion"
             },
             {
                 "effect": "minecraft:strong_poison",
-                "exists": false,
                 "id": "minecraft:splash_potion"
             },
             {
                 "effect": "minecraft:strong_poison",
-                "exists": false,
                 "id": "minecraft:lingering_potion"
             }
         ],
         "0": [
-            {
-                "id": "minecraft:wheat_seeds"
-            },
-            {
-                "id": "minecraft:wheat"
-            },
-            {
-                "id": "minecraft:melon_seeds"
-            },
-            {
-                "id": "minecraft:melon_block"
-            },
-            {
-                "id": "minecraft:pumpkin_seeds"
-            },
-            {
-                "id": "minecraft:pumpkin"
-            },
-            {
-                "id": "minecraft:beetroot_seeds"
-            },
-            {
-                "id": "minecraft:lit_pumpkin"
-            },
-            {
-                "id": "minecraft:reeds"
-            },
-            {
-                "id": "minecraft:cactus"
-            },
-            {
-                "id": "minecraft:brown_mushroom"
-            },
-            {
-                "id": "minecraft:red_mushroom"
-            },
-            {
-                "id": "minecraft:brown_mushroom_block"
-            },
-            {
-                "id": "minecraft:red_mushroom_block"
-            },
-            {
-                "id": "minecraft:yellow_flower"
-            },
+            "minecraft:wheat_seeds",
+            "minecraft:wheat",
+            "minecraft:melon_seeds",
+            "minecraft:melon_block",
+            "minecraft:pumpkin_seeds",
+            "minecraft:pumpkin",
+            "minecraft:beetroot_seeds",
+            "minecraft:lit_pumpkin",
+            "minecraft:reeds",
+            "minecraft:cactus",
+            "minecraft:brown_mushroom",
+            "minecraft:red_mushroom",
+            "minecraft:brown_mushroom_block",
+            "minecraft:red_mushroom_block",
+            "minecraft:yellow_flower",
             {
                 "damage": 0,
                 "id": "minecraft:red_flower"
@@ -2750,393 +1538,117 @@
                 "damage": 2,
                 "id": "minecraft:tallgrass"
             },
-            {
-                "id": "minecraft:deadbush"
-            },
-            {
-                "id": "minecraft:vine"
-            },
-            {
-                "id": "minecraft:waterlily"
-            },
-            {
-                "id": "minecraft:hay_block"
-            },
-            {
-                "id": "minecraft:diamond_hoe"
-            },
-            {
-                "id": "minecraft:iron_hoe"
-            },
-            {
-                "id": "minecraft:stone_hoe"
-            },
-            {
-                "id": "minecraft:wooden_hoe"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:golden_hoe"
-            }
+            "minecraft:deadbush",
+            "minecraft:vine",
+            "minecraft:waterlily",
+            "minecraft:hay_block",
+            "minecraft:diamond_hoe",
+            "minecraft:iron_hoe",
+            "minecraft:stone_hoe",
+            "minecraft:wooden_hoe",
+            "minecraft:golden_hoe"
         ],
         "1": [
-            {
-                "id": "minecraft:end_stone"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:end_bricks"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:end_rod"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:dragon_egg"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:chorus_flower"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:chorus_fruit_popped"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:purpur_block"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:purpur_pillar"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:purpur_slab"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:purpur_stairs"
-            }
+            "minecraft:end_stone",
+            "minecraft:end_bricks",
+            "minecraft:end_rod",
+            "minecraft:dragon_egg",
+            "minecraft:chorus_flower",
+            "minecraft:chorus_fruit_popped",
+            "minecraft:purpur_block",
+            "minecraft:purpur_pillar",
+            "minecraft:purpur_slab",
+            "minecraft:purpur_stairs"
         ]
     },
     {
         "-1": [
-            {
-                "hasSorter": false,
-                "id": "minecraft:diamond_helmet"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:diamond_chestplate"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:diamond_leggings"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:diamond_boots"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:iron_helmet"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:iron_chestplate"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:iron_leggings"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:iron_boots"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:chainmail_helmet"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:chainmail_chestplate"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:chainmail_leggings"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:chainmail_boots"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:golden_helmet"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:golden_chestplate"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:golden_leggings"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:golden_boots"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:leather_helmet"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:leather_chestplate"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:leather_leggings"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:leather_boots"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:diamond_horse_armor"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:golden_horse_armor"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:iron_horse_armor"
-            },
-            {
-                "exists": false,
-                "id": "minecraft:elytra"
-            }
+            "minecraft:diamond_helmet",
+            "minecraft:diamond_chestplate",
+            "minecraft:diamond_leggings",
+            "minecraft:diamond_boots",
+            "minecraft:iron_helmet",
+            "minecraft:iron_chestplate",
+            "minecraft:iron_leggings",
+            "minecraft:iron_boots",
+            "minecraft:chainmail_helmet",
+            "minecraft:chainmail_chestplate",
+            "minecraft:chainmail_leggings",
+            "minecraft:chainmail_boots",
+            "minecraft:golden_helmet",
+            "minecraft:golden_chestplate",
+            "minecraft:golden_leggings",
+            "minecraft:golden_boots",
+            "minecraft:leather_helmet",
+            "minecraft:leather_chestplate",
+            "minecraft:leather_leggings",
+            "minecraft:leather_boots",
+            "minecraft:diamond_horse_armor",
+            "minecraft:golden_horse_armor",
+            "minecraft:iron_horse_armor",
+            "minecraft:elytra"
         ],
         "0": [
-            {
-                "id": "minecraft:compass"
-            },
-            {
-                "id": "minecraft:clock"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:shears"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:fishing_rod"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:diamond_pickaxe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:diamond_shovel"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:diamond_axe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:iron_pickaxe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:iron_shovel"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:iron_axe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:flint_and_steel"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:stone_pickaxe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:stone_shovel"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:stone_axe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:wooden_pickaxe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:wooden_shovel"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:wooden_axe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:golden_pickaxe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:golden_shovel"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:golden_axe"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:carrot_on_a_stick"
-            }
+            "minecraft:compass",
+            "minecraft:clock",
+            "minecraft:shears",
+            "minecraft:fishing_rod",
+            "minecraft:diamond_pickaxe",
+            "minecraft:diamond_shovel",
+            "minecraft:diamond_axe",
+            "minecraft:iron_pickaxe",
+            "minecraft:iron_shovel",
+            "minecraft:iron_axe",
+            "minecraft:flint_and_steel",
+            "minecraft:stone_pickaxe",
+            "minecraft:stone_shovel",
+            "minecraft:stone_axe",
+            "minecraft:wooden_pickaxe",
+            "minecraft:wooden_shovel",
+            "minecraft:wooden_axe",
+            "minecraft:golden_pickaxe",
+            "minecraft:golden_shovel",
+            "minecraft:golden_axe",
+            "minecraft:carrot_on_a_stick"
         ],
         "1": [
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": false,
-                "id": "minecraft:bow"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:arrow"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": false,
-                "id": "minecraft:diamond_sword"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": false,
-                "id": "minecraft:iron_sword"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": false,
-                "id": "minecraft:stone_sword"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": false,
-                "id": "minecraft:wooden_sword"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": false,
-                "id": "minecraft:golden_sword"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:fire_charge"
-            },
-            {
-                "hasOverflow": true,
-                "hasSmartChest": true,
-                "hasSorter": true,
-                "id": "minecraft:snowball"
-            },
+            "minecraft:bow",
+            "minecraft:arrow",
+            "minecraft:diamond_sword",
+            "minecraft:iron_sword",
+            "minecraft:stone_sword",
+            "minecraft:wooden_sword",
+            "minecraft:golden_sword",
+            "minecraft:fire_charge",
+            "minecraft:snowball",
             {
                 "id": "minecraft:shield",
                 "tagValue": null
             },
-            {
-                "exists": false,
-                "id": "minecraft:spectral_arrow"
-            }
+            "minecraft:spectral_arrow"
         ]
     },
     {
         "0": [
-            {
-                "id": "minecraft:paper"
-            },
-            {
-                "id": "minecraft:book"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:writable_book"
-            },
-            {
-                "id": "minecraft:bookshelf"
-            }
+            "minecraft:paper",
+            "minecraft:book",
+            "minecraft:writable_book",
+            "minecraft:bookshelf"
         ],
         "1": [
-            {
-                "id": "minecraft:jukebox"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_13"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_cat"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_blocks"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_chirp"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_far"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_mall"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_mellohi"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_stal"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_strad"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_ward"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_11"
-            },
-            {
-                "hasSorter": false,
-                "id": "minecraft:record_wait"
-            }
+            "minecraft:jukebox",
+            "minecraft:record_13",
+            "minecraft:record_cat",
+            "minecraft:record_blocks",
+            "minecraft:record_chirp",
+            "minecraft:record_far",
+            "minecraft:record_mall",
+            "minecraft:record_mellohi",
+            "minecraft:record_stal",
+            "minecraft:record_strad",
+            "minecraft:record_ward",
+            "minecraft:record_11",
+            "minecraft:record_wait"
         ]
     }
 ]
