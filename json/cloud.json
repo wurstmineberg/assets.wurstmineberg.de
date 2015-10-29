@@ -652,14 +652,13 @@
             "minecraft:map",
             "minecraft:ender_eye",
             "minecraft:ladder",
-            "minecraft:boat",
+            "minecraft:name_tag",
             "minecraft:saddle",
             "minecraft:lead",
-            "minecraft:name_tag",
+            "minecraft:armor_stand",
             "minecraft:painting",
             "minecraft:flower_pot",
-            "minecraft:beacon",
-            "minecraft:armor_stand"
+            "minecraft:beacon"
         ]
     },
     {
@@ -948,7 +947,13 @@
             {
                 "damage": 1,
                 "id": "minecraft:leaves2"
-            }
+            },
+            "minecraft:boat",
+            "minecraft:spruce_boat",
+            "minecraft:birch_boat",
+            "minecraft:jungle_boat",
+            "minecraft:acacia_boat",
+            "minecraft:dark_oak_boat"
         ]
     },
     {
