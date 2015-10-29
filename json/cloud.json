@@ -68,7 +68,10 @@
             },
             "minecraft:clay_ball",
             "minecraft:clay",
-            "minecraft:brick",
+            {
+                "id": "minecraft:brick",
+                "name": "Brick (item)"
+            },
             "minecraft:hardened_clay",
             {
                 "damage": 0,
@@ -134,7 +137,10 @@
                 "damage": 15,
                 "id": "minecraft:stained_hardened_clay"
             },
-            "minecraft:brick_block",
+            {
+                "id": "minecraft:brick_block",
+                "name": "Brick Block"
+            },
             "minecraft:brick_stairs",
             {
                 "damage": 4,
@@ -483,7 +489,8 @@
             },
             {
                 "damage": 0,
-                "id": "minecraft:quartz_block"
+                "id": "minecraft:quartz_block",
+                "name": "Quartz Block"
             },
             "minecraft:iron_bars",
             {
@@ -700,7 +707,10 @@
             "minecraft:porkchop",
             "minecraft:spider_eye",
             "minecraft:rabbit",
-            "minecraft:melon",
+            {
+                "id": "minecraft:melon",
+                "name": "Melon Slice"
+            },
             "minecraft:poisonous_potato",
             "minecraft:chicken",
             "minecraft:mutton",
@@ -997,12 +1007,27 @@
             "minecraft:diamond",
             "minecraft:emerald",
             "minecraft:quartz",
-            "minecraft:coal_block",
-            "minecraft:iron_block",
-            "minecraft:gold_block",
+            {
+                "id": "minecraft:coal_block",
+                "name": "Coal Block"
+            },
+            {
+                "id": "minecraft:iron_block",
+                "name": "Iron Block"
+            },
+            {
+                "id": "minecraft:gold_block",
+                "name": "Gold Block"
+            },
             "minecraft:lapis_block",
-            "minecraft:diamond_block",
-            "minecraft:emerald_block",
+            {
+                "id": "minecraft:diamond_block",
+                "name": "Diamond Block"
+            },
+            {
+                "id": "minecraft:emerald_block",
+                "name": "Emerald Block"
+            },
             "minecraft:coal_ore",
             "minecraft:iron_ore",
             "minecraft:gold_ore",
@@ -1017,8 +1042,14 @@
             "minecraft:soul_sand",
             "minecraft:glowstone_dust",
             "minecraft:glowstone",
-            "minecraft:netherbrick",
-            "minecraft:nether_brick",
+            {
+                "id": "minecraft:netherbrick",
+                "name": "Nether Brick (item)"
+            },
+            {
+                "id": "minecraft:nether_brick",
+                "name": "Nether Brick Block"
+            },
             {
                 "damage": 6,
                 "id": "minecraft:stone_slab"
@@ -1471,7 +1502,10 @@
             "minecraft:wheat_seeds",
             "minecraft:wheat",
             "minecraft:melon_seeds",
-            "minecraft:melon_block",
+            {
+                "id": "minecraft:melon_block",
+                "name": "Melon Block"
+            },
             "minecraft:pumpkin_seeds",
             "minecraft:pumpkin",
             "minecraft:beetroot_seeds",
@@ -1642,18 +1676,54 @@
         ],
         "1": [
             "minecraft:jukebox",
-            "minecraft:record_13",
-            "minecraft:record_cat",
-            "minecraft:record_blocks",
-            "minecraft:record_chirp",
-            "minecraft:record_far",
-            "minecraft:record_mall",
-            "minecraft:record_mellohi",
-            "minecraft:record_stal",
-            "minecraft:record_strad",
-            "minecraft:record_ward",
-            "minecraft:record_11",
-            "minecraft:record_wait"
+            {
+                "id": "minecraft:record_13",
+                "name": "Music Disc: C418 - 13"
+            },
+            {
+                "id": "minecraft:record_cat",
+                "name": "Music Disc: C418 - cat"
+            },
+            {
+                "id": "minecraft:record_blocks",
+                "name": "Music Disc: C418 - blocks"
+            },
+            {
+                "id": "minecraft:record_chirp",
+                "name": "Music Disc: C418 - chirp"
+            },
+            {
+                "id": "minecraft:record_far",
+                "name": "Music Disc: C418 - far"
+            },
+            {
+                "id": "minecraft:record_mall",
+                "name": "Music Disc: C418 - mall"
+            },
+            {
+                "id": "minecraft:record_mellohi",
+                "name": "Music Disc: C418 - mellohi"
+            },
+            {
+                "id": "minecraft:record_stal",
+                "name": "Music Disc: C418 - stal"
+            },
+            {
+                "id": "minecraft:record_strad",
+                "name": "Music Disc: C418 - strad"
+            },
+            {
+                "id": "minecraft:record_ward",
+                "name": "Music Disc: C418 - ward"
+            },
+            {
+                "id": "minecraft:record_11",
+                "name": "Music Disc: C418 - 11"
+            },
+            {
+                "id": "minecraft:record_wait",
+                "name": "Music Disc: C418 - wait"
+            }
         ]
     }
 ]
