@@ -421,6 +421,11 @@ def validate_items_json():
                     item_stubs.append((method['liquid1'], True, False))
                     item_stubs.append((method['liquid2'], True, False))
                     assert method['relation'] in ('flowIntoSource', 'contactNonsourceSide', 'flowFromTop')
+                elif method['type'] == 'tipArrow':
+                    assert is_item
+                    item_stubs.append((method['potion'], False, True))
+                    if 'arrow' in method:
+                        item_stubs.append((method['arrow'], False, True))
                 elif method['type'] == 'special':
                     assert isinstance(method['description'], str)
                     if 'block' in method:

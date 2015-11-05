@@ -5318,6 +5318,27 @@
                 }
             ]
         },
+        "end_crystal": {
+            "image": "endcrystal.png",
+            "itemID": 426,
+            "name": "End Crystal",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:glass",
+                        "minecraft:glass",
+                        "minecraft:glass",
+                        "minecraft:glass",
+                        "minecraft:ender_eye",
+                        "minecraft:glass",
+                        "minecraft:glass",
+                        "minecraft:ghast_tear",
+                        "minecraft:glass"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
+        },
         "end_gateway": {
             "blockID": 209,
             "image": "endgateway.png",
@@ -5366,6 +5387,21 @@
                     "amount": 6,
                     "structure": "endShip",
                     "type": "structure"
+                },
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        "minecraft:blaze_rod",
+                        null,
+                        null,
+                        "minecraft:chorus_fruit_popped",
+                        null
+                    ],
+                    "type": "craftingShaped"
                 }
             ],
             "solid": false
@@ -5380,6 +5416,12 @@
                 {
                     "dimension": "end",
                     "type": "natural"
+                },
+                {
+                    "block": true,
+                    "description": "16 blocks of End stone generate directly under the edge of the End exit portal each time an Ender dragon is spawned or killed.",
+                    "renewability": "manual",
+                    "type": "special"
                 }
             ]
         },
@@ -6212,23 +6254,7 @@
                 },
                 "1": {
                     "alwaysGlow": true,
-                    "name": "Notch Apple",
-                    "obtaining": [
-                        {
-                            "recipe": [
-                                "minecraft:gold_block",
-                                "minecraft:gold_block",
-                                "minecraft:gold_block",
-                                "minecraft:gold_block",
-                                "minecraft:apple",
-                                "minecraft:gold_block",
-                                "minecraft:gold_block",
-                                "minecraft:gold_block",
-                                "minecraft:gold_block"
-                            ],
-                            "type": "craftingShaped"
-                        }
-                    ]
+                    "name": "Notch Apple"
                 }
             },
             "image": "goldapple.png",
@@ -7615,19 +7641,25 @@
                     "type": "entityDeath"
                 },
                 {
-                    "amountMaxLooting": 4,
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
                     "entity": "EntityHorse",
                     "subtype": "horse",
                     "type": "entityDeath"
                 },
                 {
-                    "amountMaxLooting": 4,
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
                     "entity": "EntityHorse",
                     "subtype": "donkey",
                     "type": "entityDeath"
                 },
                 {
-                    "amountMaxLooting": 4,
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
                     "entity": "EntityHorse",
                     "subtype": "mule",
                     "type": "entityDeath"
@@ -8057,6 +8089,9 @@
                             }
                         ]
                     },
+                    "empty": {
+                        "name": "Lingering Uncraftable Potion"
+                    },
                     "fire_resistance": {
                         "image": "lingeringfireresistancepotion.png",
                         "name": "Lingering Potion of Fire Resistance",
@@ -8328,6 +8363,10 @@
                                 "type": "brewing"
                             }
                         ]
+                    },
+                    "luck": {
+                        "image": "lingeringluckpotion.png",
+                        "name": "Lingering Potion of Luck"
                     },
                     "mundane": {
                         "name": "Lingering Mundane Potion",
@@ -9754,6 +9793,9 @@
                             }
                         ]
                     },
+                    "empty": {
+                        "name": "Uncraftable Potion"
+                    },
                     "fire_resistance": {
                         "image": "fireresistancepotion.png",
                         "name": "Potion of Fire Resistance",
@@ -10027,6 +10069,10 @@
                                 "type": "brewing"
                             }
                         ]
+                    },
+                    "luck": {
+                        "image": "luckpotion.png",
+                        "name": "Potion of Luck"
                     },
                     "mundane": {
                         "name": "Mundane Potion",
@@ -12648,6 +12694,9 @@
                             }
                         ]
                     },
+                    "empty": {
+                        "name": "Splash Uncraftable Potion"
+                    },
                     "fire_resistance": {
                         "image": "splashfireresistancepotion.png",
                         "name": "Splash Potion of Fire Resistance",
@@ -13039,6 +13088,10 @@
                                 "type": "brewing"
                             }
                         ]
+                    },
+                    "luck": {
+                        "image": "splashluckpotion.png",
+                        "name": "Splash Potion of Luck"
                     },
                     "mundane": {
                         "name": "Splash Mundane Potion",
@@ -15989,53 +16042,425 @@
         "tipped_arrow": {
             "effects": {
                 "minecraft": {
+                    "awkward": {},
+                    "empty": {
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:empty",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
                     "fire_resistance": {
                         "image": "fireresistancearrow.png",
-                        "name": "Arrow of Fire Resistance"
+                        "name": "Arrow of Fire Resistance",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:fire_resistance",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "harming": {
                         "image": "damagearrow.png",
-                        "name": "Arrow of Harming"
+                        "name": "Arrow of Harming",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:harming",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "healing": {
                         "image": "healtharrow.png",
-                        "name": "Arrow of Healing"
+                        "name": "Arrow of Healing",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:healing",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "invisibility": {
                         "image": "invisibilityarrow.png",
-                        "name": "Arrow of Invisibility"
+                        "name": "Arrow of Invisibility",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:invisibility",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "leaping": {
                         "image": "jumparrow.png",
-                        "name": "Arrow of Leaping"
+                        "name": "Arrow of Leaping",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:leaping",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
+                    "long_fire_resistance": {
+                        "image": "fireresistancearrow.png",
+                        "name": "Arrow of Fire Resistance, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_fire_resistance",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_invisibility": {
+                        "image": "invisibilityarrow.png",
+                        "name": "Arrow of Invisibility, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_invisibility",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_leaping": {
+                        "image": "jumparrow.png",
+                        "name": "Arrow of Leaping, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_leaping",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_night_vision": {
+                        "image": "nightvisionarrow.png",
+                        "name": "Arrow of Night Vision, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_night_vision",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_poison": {
+                        "image": "poisonarrow.png",
+                        "name": "Arrow of Poison, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_poison",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_regeneration": {
+                        "image": "regenarrow.png",
+                        "name": "Arrow of Regeneration, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_regeneration",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_slowness": {
+                        "image": "slownessarrow.png",
+                        "name": "Arrow of Slowness, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_slowness",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_strength": {
+                        "image": "strengtharrow.png",
+                        "name": "Arrow of Strength, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_strength",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_swiftness": {
+                        "image": "speedarrow.png",
+                        "name": "Arrow of Swiftness, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_swiftness",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_water_breathing": {
+                        "image": "waterbreathingarrow.png",
+                        "name": "Arrow of Water Breathing, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_water_breathing",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "long_weakness": {
+                        "image": "weaknessarrow.png",
+                        "name": "Arrow of Weakness, extended",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:long_weakness",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "luck": {
+                        "image": "luckarrow.png",
+                        "name": "Arrow of Luck",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:luck",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "mundane": {},
                     "night_vision": {
                         "image": "nightvisionarrow.png",
-                        "name": "Arrow of Night Vision"
+                        "name": "Arrow of Night Vision",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:night_vision",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "poison": {
                         "image": "poisonarrow.png",
-                        "name": "Arrow of Poison"
+                        "name": "Arrow of Poison",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:poison",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "regeneration": {
                         "image": "regenarrow.png",
-                        "name": "Arrow of Regeneration"
+                        "name": "Arrow of Regeneration",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:regeneration",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "slowness": {
                         "image": "slownessarrow.png",
-                        "name": "Arrow of Slowness"
+                        "name": "Arrow of Slowness",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:slowness",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "strength": {
                         "image": "strengtharrow.png",
-                        "name": "Arrow of Strength"
+                        "name": "Arrow of Strength",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:strength",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "strong_harming": {
+                        "image": "damagearrow.png",
+                        "name": "Arrow of Harming \u2161",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:strong_harming",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "strong_healing": {
+                        "image": "healtharrow.png",
+                        "name": "Arrow of Healing \u2161",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:strong_healing",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "strong_leaping": {
+                        "image": "jumparrow.png",
+                        "name": "Arrow of Leaping \u2161",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:strong_leaping",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "strong_poison": {
+                        "image": "poisonarrow.png",
+                        "name": "Arrow of Poison \u2161",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:strong_poison",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "strong_regeneration": {
+                        "image": "regenarrow.png",
+                        "name": "Arrow of Regeneration \u2161",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:strong_regeneration",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "strong_strength": {
+                        "image": "strengtharrow.png",
+                        "name": "Arrow of Strength \u2161",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:strong_strength",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
+                    },
+                    "strong_swiftness": {
+                        "image": "speedarrow.png",
+                        "name": "Arrow of Swiftness \u2161",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:strong_swiftness",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "swiftness": {
                         "image": "speedarrow.png",
-                        "name": "Arrow of Swiftness"
+                        "name": "Arrow of Swiftness",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:swiftness",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
+                    "thick": {},
                     "water": {
-                        "creativeMenu": false,
                         "name": "Arrow of Splashing"
+                    },
+                    "water_breathing": {
+                        "image": "waterbreathingarrow.png",
+                        "name": "Arrow of Water Breathing",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:water_breathing",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     },
                     "waterbreathing": {
                         "image": "waterbreathingarrow.png",
@@ -16043,7 +16468,16 @@
                     },
                     "weakness": {
                         "image": "weaknessarrow.png",
-                        "name": "Arrow of Weakness"
+                        "name": "Arrow of Weakness",
+                        "obtaining": [
+                            {
+                                "potion": {
+                                    "effect": "minecraft:weakness",
+                                    "id": "minecraft:lingering_potion"
+                                },
+                                "type": "tipArrow"
+                            }
+                        ]
                     }
                 }
             },
@@ -16275,6 +16709,21 @@
             "image": "waterbucket.png",
             "itemID": 326,
             "name": "Water Bucket",
+            "obtaining": [
+                {
+                    "item": "minecraft:bucket",
+                    "onBlock": {
+                        "consumed": true,
+                        "id": "minecraft:water"
+                    },
+                    "type": "useItem"
+                },
+                {
+                    "item": "minecraft:bucket",
+                    "onBlock": "minecraft:cauldron",
+                    "type": "useItem"
+                }
+            ],
             "stackable": false
         },
         "waterlily": {

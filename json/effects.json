@@ -21,6 +21,9 @@
             "name": "Blindness",
             "numericID": 15
         },
+        "empty": {
+            "dummy": true
+        },
         "fire_resistance": {
             "color": {
                 "blue": 58,
@@ -102,6 +105,10 @@
         "levitation": {
             "name": "Levitation",
             "numericID": 25
+        },
+        "luck": {
+            "name": "Luck",
+            "numericID": 26
         },
         "mining_fatigue": {
             "color": {
@@ -198,6 +205,10 @@
         },
         "thick": {
             "dummy": true
+        },
+        "unluck": {
+            "name": "Bad Luck",
+            "numericID": 27
         },
         "water": {
             "dummy": true

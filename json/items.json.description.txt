@@ -118,6 +118,9 @@ The fields for the damage values, status effects, and tag variants implicitly in
             * flowIntoSource: created when the first liquid attempts to flow into a source block of the second, regardless of direction. The second liquid's source block is replaced by the new block.
             * contactNonsourceSide: created when any block of the first liquid (source or not) horizontally comes in contact with a non-source block of the second liquid. Which block is replaced depends on which block was attempting to spread first.
             * flowFromTop: created when any block of the first liquid (source or not) tries to flow into any block of the second liquid (source or not) from above. The second liquid's block is replaced by the new block.
+    * tipArrow: shooting an arrow into the AreaEffectCloud entity produced by the given potion turns the arrow into a tipped arrow. The tipped arrow can then be obtained by picking it up.
+        * potion: an item stub describing the lingering potion that generates the AreaEffectCloud entity when thrown.
+        * arrow: an item stub describing the arrow that has to be shot into the AreaEffectCloud. Defaults to a regular arrow.
     * special: a method of obtaining not described above.
         * description: a HTML description for All The Items.
         * block: if true, the method creates a block placed in the world. If false (the default), the method creates an item as a dropped item entity or within an inventory.
