@@ -6584,7 +6584,7 @@
             "dropsSelf": "pickaxe",
             "image": "heavyweightedpressureplate.png",
             "itemID": 148,
-            "name": "Weighted Pressure Plate (Heavy)",
+            "name": "Iron Pressure Plate",
             "obtaining": [
                 {
                     "recipe": [
@@ -8051,7 +8051,7 @@
             "dropsSelf": "pickaxe",
             "image": "lightweightedpressureplate.png",
             "itemID": 147,
-            "name": "Weighted Pressure Plate (Light)",
+            "name": "Gold Pressure Plate",
             "obtaining": [
                 {
                     "recipe": [
@@ -16547,7 +16547,7 @@
             "blockID": 96,
             "image": "trapdoor.png",
             "itemID": 96,
-            "name": "Trapdoor",
+            "name": "Wooden Trapdoor",
             "obtaining": [
                 {
                     "outputAmount": 2,

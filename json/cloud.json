@@ -773,7 +773,10 @@
         ],
         "0": [
             "minecraft:redstone",
-            "minecraft:redstone_block",
+            {
+                "id": "minecraft:redstone_block",
+                "name": "Redstone Block"
+            },
             "minecraft:redstone_torch",
             "minecraft:redstone_lamp",
             "minecraft:repeater",
@@ -800,8 +803,14 @@
             "minecraft:tnt_minecart",
             "minecraft:wooden_pressure_plate",
             "minecraft:stone_pressure_plate",
-            "minecraft:light_weighted_pressure_plate",
-            "minecraft:heavy_weighted_pressure_plate",
+            {
+                "id": "minecraft:light_weighted_pressure_plate",
+                "name": "Gold Pressure Plate (weighted pressure plate, light)"
+            },
+            {
+                "id": "minecraft:heavy_weighted_pressure_plate",
+                "name": "Iron Pressure Plate (weighted pressure plate, heavy)"
+            },
             "minecraft:iron_door",
             "minecraft:iron_trapdoor",
             "minecraft:noteblock"
@@ -1042,7 +1051,10 @@
             "minecraft:netherrack",
             "minecraft:soul_sand",
             "minecraft:glowstone_dust",
-            "minecraft:glowstone",
+            {
+                "id": "minecraft:glowstone",
+                "name": "Glowstone Block"
+            },
             {
                 "id": "minecraft:netherbrick",
                 "name": "Nether Brick (item)"
