@@ -185,7 +185,7 @@
         "requires": "enchantments"
     },
     "overpowered": {
-        "description": "Build a Notch apple",
+        "description": "Eat a Notch apple",
         "displayname": "Overpowered",
         "fancy": true,
         "icon": {
