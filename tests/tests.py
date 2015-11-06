@@ -558,6 +558,23 @@ def validate_cloud_json():
                     print('Error location: floor {} corridor {} chest {}: {}'.format(y, x, z, chest['id']), file=sys.stderr)
                     raise
 
+@test
+def validate_enchantments_json():
+    with open('json/enchantments.json') as enchantments_f:
+        enchantments = json.load(enchantments_f)
+    seen_numeric_ids = set()
+    for plugin, plugin_enchantments in enchantments['enchantments'].items():
+        for ench_id, enchantment in plugin_enchantments.items():
+            assert len(enchantment) == 3
+            assert isinstance(enchantment['name'], str)
+            assert isinstance(enchantment['maxLevel'], int)
+            assert isinstance(enchantment['numericID'], int)
+            assert enchantment['maxLevel'] >= 1
+            if enchantment['numericID'] in seen_numeric_ids:
+                raise ValueError('{}: Duplicate numeric enchantment ID {}'.format(enchantment['numericID']))
+            else:
+                seen_numeric_ids.add(enchantment['numericID'])
+
 def run_tests():
     for test in tests:
         test()

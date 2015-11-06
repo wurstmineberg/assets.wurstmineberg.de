@@ -1,47 +1,4 @@
 {
-    "enchantments": {
-        "levels": {
-            "1": "I",
-            "10": "X",
-            "2": "II",
-            "3": "III",
-            "4": "IV",
-            "5": "V",
-            "6": "VI",
-            "7": "VII",
-            "8": "VIII",
-            "9": "IX"
-        },
-        "names": {
-            "0": "Protection",
-            "1": "Fire Protection",
-            "16": "Sharpness",
-            "17": "Smite",
-            "18": "Bane of Arthropods",
-            "19": "Knockback",
-            "2": "Feather Falling",
-            "20": "Fire Aspect",
-            "21": "Looting",
-            "3": "Blast Protection",
-            "32": "Efficiency",
-            "33": "Silk Touch",
-            "34": "Unbreaking",
-            "35": "Fortune",
-            "4": "Projectile Protection",
-            "48": "Power",
-            "49": "Punch",
-            "5": "Respiration",
-            "50": "Flame",
-            "51": "Infinity",
-            "6": "Aqua Affinity",
-            "61": "Luck of the Sea",
-            "62": "Lure",
-            "7": "Thorns",
-            "70": "Mending",
-            "8": "Depth Strider",
-            "9": "Frost Walker"
-        }
-    },
     "items": {
         "bannerPatterns": {
             "bl": "Base Dexter Canton",

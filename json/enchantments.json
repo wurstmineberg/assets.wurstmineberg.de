@@ -1,0 +1,153 @@
+{
+    "enchantments": {
+        "minecraft": {
+            "aqua_affinity": {
+                "maxLevel": 1,
+                "name": "Aqua Affinity",
+                "numericID": 6
+            },
+            "bane_of_arthropods": {
+                "maxLevel": 5,
+                "name": "Bane of Arthropods",
+                "numericID": 18
+            },
+            "blast_protection": {
+                "maxLevel": 4,
+                "name": "Blast Protection",
+                "numericID": 3
+            },
+            "depth_strider": {
+                "maxLevel": 3,
+                "name": "Depth Strider",
+                "numericID": 8
+            },
+            "efficiency": {
+                "maxLevel": 5,
+                "name": "Efficiency",
+                "numericID": 32
+            },
+            "feather_falling": {
+                "maxLevel": 4,
+                "name": "Feather Falling",
+                "numericID": 2
+            },
+            "fire_aspect": {
+                "maxLevel": 2,
+                "name": "Fire Aspect",
+                "numericID": 20
+            },
+            "fire_protection": {
+                "maxLevel": 4,
+                "name": "Fire Protection",
+                "numericID": 1
+            },
+            "flame": {
+                "maxLevel": 1,
+                "name": "Flame",
+                "numericID": 50
+            },
+            "fortune": {
+                "maxLevel": 3,
+                "name": "Fortune",
+                "numericID": 35
+            },
+            "frost_walker": {
+                "maxLevel": 2,
+                "name": "Frost Walker",
+                "numericID": 9
+            },
+            "infinity": {
+                "maxLevel": 1,
+                "name": "Infinity",
+                "numericID": 51
+            },
+            "knockback": {
+                "maxLevel": 2,
+                "name": "Knockback",
+                "numericID": 19
+            },
+            "looting": {
+                "maxLevel": 3,
+                "name": "Looting",
+                "numericID": 21
+            },
+            "luck_of_the_sea": {
+                "maxLevel": 3,
+                "name": "Luck of the Sea",
+                "numericID": 61
+            },
+            "lure": {
+                "maxLevel": 3,
+                "name": "Lure",
+                "numericID": 62
+            },
+            "mending": {
+                "maxLevel": 1,
+                "name": "Mending",
+                "numericID": 70
+            },
+            "power": {
+                "maxLevel": 5,
+                "name": "Power",
+                "numericID": 48
+            },
+            "projectile_protection": {
+                "maxLevel": 4,
+                "name": "Projectile Protection",
+                "numericID": 4
+            },
+            "protection": {
+                "maxLevel": 4,
+                "name": "Protection",
+                "numericID": 0
+            },
+            "punch": {
+                "maxLevel": 2,
+                "name": "Punch",
+                "numericID": 49
+            },
+            "respiration": {
+                "maxLevel": 3,
+                "name": "Respiration",
+                "numericID": 5
+            },
+            "sharpness": {
+                "maxLevel": 5,
+                "name": "Sharpness",
+                "numericID": 16
+            },
+            "silk_touch": {
+                "maxLevel": 1,
+                "name": "Silk Touch",
+                "numericID": 33
+            },
+            "smite": {
+                "maxLevel": 5,
+                "name": "Smite",
+                "numericID": 17
+            },
+            "thorns": {
+                "maxLevel": 3,
+                "name": "Thorns",
+                "numericID": 7
+            },
+            "unbreaking": {
+                "maxLevel": 3,
+                "name": "Unbreaking",
+                "numericID": 34
+            }
+        }
+    },
+    "levels": {
+        "1": "I",
+        "10": "X",
+        "2": "II",
+        "3": "III",
+        "4": "IV",
+        "5": "V",
+        "6": "VI",
+        "7": "VII",
+        "8": "VIII",
+        "9": "IX"
+    }
+}
