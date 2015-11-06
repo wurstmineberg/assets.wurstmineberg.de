@@ -17,7 +17,7 @@ function initializeInventory(tbody, rows, cols) {
     }
 }
 
-function displaySlot(cell, stack, items, stringData) {
+function displaySlot(cell, stack, items, stringData, enchData) {
     var baseItem = items.itemById(stack.id);
     var item = baseItem;
     if ('damageValues' in baseItem) {
@@ -73,7 +73,19 @@ function displaySlot(cell, stack, items, stringData) {
                 } else {
                     name += ', ';
                 }
-                name += (ench.id.toString() in stringData.enchantments.names ? stringData.enchantments.names[ench.id.toString()] : '<' + ench.id + '>') + ' ' + (ench.lvl.toString() in stringData.enchantments.levels ? stringData.enchantments.levels[ench.lvl.toString()] : ench.lvl.toString());
+                var found = false;
+                $.each(enchData.enchantments, function(enchID, enchInfo) {
+                    if (enchInfo.numericID == ench.id) {
+                        found = true;
+                        name += enchInfo.name;
+                        if (ench.lvl != 1 || enchInfo.maxLevel != 1) {
+                            name += ' ' + (ench.lvl.toString() in enchData.levels ? enchData.levels[ench.lvl.toString()] : ench.lvl.toString());
+                        }
+                    }
+                });
+                if (!found) {
+                    name += '<' + ench.id + '> ' + (ench.lvl.toString() in enchData.levels ? enchData.levels[ench.lvl.toString()] : ench.lvl.toString());
+                }
             });
             name += ')';
         } else if ('BlockEntityTag' in stack.tag && 'Patterns' in stack.tag.BlockEntityTag && stack.tag.BlockEntityTag.Patterns.length > 0) {
@@ -104,7 +116,7 @@ function displaySlot(cell, stack, items, stringData) {
     }
 }
 
-function displayInventory(player_data, items, string_data) {
+function displayInventory(playerData, items, stringData, enchData) {
     $('tr.loading').remove();
     $('.inventory-opt-out').removeClass('inventory-opt-out').addClass('inventory-opt-in');
     initializeInventory($('#main-inventory > tbody'), 3, 9);
@@ -112,7 +124,7 @@ function displayInventory(player_data, items, string_data) {
     initializeInventory($('#ender-chest-table > tbody'), 3, 9);
     initializeInventory($('#offhand-slot-table > tbody'), 1, 1);
     initializeInventory($('#armor-table > tbody'), 1, 4);
-    player_data['Inventory'].forEach(function(stack) {
+    playerData.Inventory.forEach(function(stack) {
         if ('Slot' in stack) {
             var cell = undefined;
             if (stack.Slot == -106) {
@@ -125,14 +137,14 @@ function displayInventory(player_data, items, string_data) {
                 cell = $('#armor-table .inv-row-0 .inv-cell-' + (103 - stack.Slot));
             }
             if (cell !== undefined) {
-                displaySlot(cell, stack, items, string_data);
+                displaySlot(cell, stack, items, stringData, enchData);
             }
         }
     });
-    player_data['EnderItems'].forEach(function(stack) {
+    playerData.EnderItems.forEach(function(stack) {
         if ('Slot' in stack && stack['Slot'] >= 0 && stack['Slot'] < 27) {
             var cell = $('#ender-chest-table .inv-row-' + Math.floor(stack['Slot'] / 9) + ' .inv-cell-' + (stack['Slot'] % 9));
-            displaySlot(cell, stack, items, string_data);
+            displaySlot(cell, stack, items, stringData, enchData);
         }
     });
 }
@@ -645,8 +657,8 @@ function displayMinigameData(people, person, deathGamesLog) {
 
 function loadStatData(person, stringData, achievementData, biomes, items, mobData) {
     if (person.option('show_inventory') || person.id === currentUser) {
-        $.when(API.playerData(person)).done(function(playerData) {
-            displayInventory(playerData, items, stringData);
+        $.when(API.playerData(person), API.enchantmentData()).done(function(playerData, enchData) {
+            displayInventory(playerData, items, stringData, enchData);
         }).fail(function() {
             $('.inventory-table .loading td').html('Error: Could not load ' + person.minecraft + '.dat');
         });

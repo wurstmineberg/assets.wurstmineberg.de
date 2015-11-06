@@ -621,6 +621,9 @@ var API = {
             });
             return ret;
         });
+    },
+    enchantmentData: function() {
+        return API.ajaxJSONDeferred('http://assets.' + host + '/json/enchantments.json');
     }
 }
 
