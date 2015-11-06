@@ -36,7 +36,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
         * amountMinLooting: the minimum number of items dropped by a single entity when killed with Looting III. Defaults to the same value as amountMin.
         * amountMaxLooting: the maximum number of items dropped by a single entity when killed with Looting III. Defaults to the same value as amountMax.
         * requires: if given, the item is only dropped under specific circumstances:
-            * player: the entity must be killed by a player or tamed wolf.
+            * player: the entity must be killed by a player.
             * chargedCreeper: the entity must be killed by a charged Creeper explosion. A single charged Creeper explosion will only ever produce one such item, no matter how many entities it kills.
             * skeletonArrow: the entity must be shot by a skeleton or Wither skeleton.
             * whileUsing: the entity must be using (e.g. drinking) the item when it dies in order to drop it.

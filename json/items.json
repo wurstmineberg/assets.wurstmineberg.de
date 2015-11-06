@@ -15568,6 +15568,10 @@
                                 null
                             ],
                             "type": "craftingShaped"
+                        },
+                        {
+                            "structure": "igloo",
+                            "type": "structure"
                         }
                     ]
                 }
