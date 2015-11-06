@@ -74,14 +74,22 @@ function displaySlot(cell, stack, items, stringData, enchData) {
                     name += ', ';
                 }
                 var found = false;
-                $.each(enchData.enchantments, function(enchID, enchInfo) {
-                    if (enchInfo.numericID == ench.id) {
-                        found = true;
-                        name += enchInfo.name;
-                        if (ench.lvl != 1 || enchInfo.maxLevel != 1) {
-                            name += ' ' + (ench.lvl.toString() in enchData.levels ? enchData.levels[ench.lvl.toString()] : ench.lvl.toString());
-                        }
+                $.each(enchData.enchantments, function(pluginID, pluginEnchantments) {
+                    if (found) {
+                        return;
                     }
+                    $.each(pluginEnchantments, function(enchID, enchInfo) {
+                        if (found) {
+                            return;
+                        }
+                        if (enchInfo.numericID == ench.id) {
+                            found = true;
+                            name += enchInfo.name;
+                            if (ench.lvl != 1 || enchInfo.maxLevel != 1) {
+                                name += ' ' + (ench.lvl.toString() in enchData.levels ? enchData.levels[ench.lvl.toString()] : ench.lvl.toString());
+                            }
+                        }
+                    });
                 });
                 if (!found) {
                     name += '<' + ench.id + '> ' + (ench.lvl.toString() in enchData.levels ? enchData.levels[ench.lvl.toString()] : ench.lvl.toString());
