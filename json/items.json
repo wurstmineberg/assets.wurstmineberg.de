@@ -16798,7 +16798,7 @@
         "wheat_seeds": {
             "image": "wheatseeds.png",
             "itemID": 295,
-            "name": "Seeds",
+            "name": "Wheat Seeds",
             "obtaining": [
                 {
                     "block": "minecraft:tallgrass",
