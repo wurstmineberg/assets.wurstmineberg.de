@@ -3171,6 +3171,35 @@
                     "requires": "noCrash",
                     "subtype": "darkOak",
                     "type": "entityDeath"
+                },
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        {
+                            "damage": 5,
+                            "id": "minecraft:planks"
+                        },
+                        "minecraft:wooden_shovel",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 5,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 5,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 5,
+                            "id": "minecraft:planks"
+                        }
+                    ],
+                    "type": "craftingShaped"
                 }
             ],
             "stackable": false
