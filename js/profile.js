@@ -232,18 +232,18 @@ function displayProfileData(person, items, people, statData) {
     function statusDisplay(status) {
         if (status == 'later') {
             if (new Date() - person.joinDate < 1000 * 60 * 60 * 24 * 7) { // whitelisted less than a week ago
-                return 'new member (may still be <a href="http://wiki.' + host + '/Invitations#Hard_requirements">vetoed</a>)';
+                return 'new member (may still be <a href="//wiki.' + host + '/Invitations#Hard_requirements">vetoed</a>)';
             } else if (person.joinDate < dateObjectFromUTC('2013-11-02T17:33:45+0000')) {
-                return 'later member (pre-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)';
+                return 'later member (pre-<a href="//wiki.' + host + '/Invitations#History">freeze</a>)';
             } else {
-                return 'later member (post-<a href="http://wiki.' + host + '/Invitations#History">freeze</a>)';
+                return 'later member (post-<a href="//wiki.' + host + '/Invitations#History">freeze</a>)';
             }
         }
         var statuses = {
             former: 'former member (unwhitelisted for inactivity)',
             founding: 'founding member',
             invited: 'invited but not whitelisted yet',
-            vetoed: 'former member (unwhitelisted by <a href="http://wiki.' + host + '/Invitations#Hard_requirements">veto</a>)'
+            vetoed: 'former member (unwhitelisted by <a href="//wiki.' + host + '/Invitations#Hard_requirements">veto</a>)'
         };
         return status in statuses ? statuses[status] : status;
     }

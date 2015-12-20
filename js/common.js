@@ -100,7 +100,7 @@ function Person(personID, personData) {
     }();
     this.latestDeath = function(world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/deaths/latest.json').then(function(latestDeaths) {
+            return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/deaths/latest.json').then(function(latestDeaths) {
                 if (_this.id in latestDeaths.deaths) {
                     return {
                         'cause': latestDeaths.deaths[_this.id].cause,
@@ -181,13 +181,13 @@ function People(peopleData) {
 
     this.achievementScores = function(world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/minigame/achievements/' + world + '/scoreboard.json').then(_this.mapObject);
+            return API.ajaxJSONDeferred('//api.' + host + '/v2/minigame/achievements/' + world + '/scoreboard.json').then(_this.mapObject);
         });
     };
 
     this.achievementWinners = function(world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/minigame/achievements/' + world + '/winners.json').then(_this.mapObject);
+            return API.ajaxJSONDeferred('//api.' + host + '/v2/minigame/achievements/' + world + '/winners.json').then(_this.mapObject);
         });
     };
 
@@ -329,18 +329,18 @@ function Item(stringID, itemInfo) {
         if ('image' in itemInfo) {
             if (typeof tint === 'undefined' || tint === null) {
                 var damageFound = 0;
-                var result = '<img src="http://assets.' + host + '/img/grid/' + itemInfo.image + '" class="' + (classes || '') + '" />';
+                var result = '<img src="//assets.' + host + '/img/grid/' + itemInfo.image + '" class="' + (classes || '') + '" />';
                 if ('damagedImages' in itemInfo && typeof damage !== 'undefined') {
                     $.each(itemInfo.damagedImages, function(damageStr, damagedImage) {
                         if (parseInt(damageStr) > damageFound && parseInt(damageStr) <= damage) {
                             damageFound = parseInt(damageStr);
-                            result = '<img src="http://assets.' + host + '/img/grid/' + damagedImage + '" class="' + (classes || '') + '" />';
+                            result = '<img src="//assets.' + host + '/img/grid/' + damagedImage + '" class="' + (classes || '') + '" />';
                         }
                     });
                 }
                 return result;
             } else {
-                return '<img style="background: url(http://api.' + host + '/minecraft/items/render/dyed-by-id/' + stringID + '/' + zeroFill(tint.toString(16), 6) + '/png.png)" src="http://assets.' + host + '/img/grid-overlay/' + itemInfo.image + '" class="' + (classes || '') + '" />';
+                return '<img style="background: url(//api.' + host + '/minecraft/items/render/dyed-by-id/' + stringID + '/' + zeroFill(tint.toString(16), 6) + '/png.png)" src="//assets.' + host + '/img/grid-overlay/' + itemInfo.image + '" class="' + (classes || '') + '" />';
             }
         } else {
             return '';
@@ -525,17 +525,17 @@ var API = {
     },
     serverStatus: function(world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/status.json');
+            return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/status.json');
         });
     },
     stringData: function() {
-        return API.ajaxJSONDeferred('http://assets.' + host + '/json/strings.json');
+        return API.ajaxJSONDeferred('//assets.' + host + '/json/strings.json');
     },
     mobData: function() {
-        return API.ajaxJSONDeferred('http://assets.' + host + '/json/mobs.json');
+        return API.ajaxJSONDeferred('//assets.' + host + '/json/mobs.json');
     },
     itemData: function() {
-        return API.ajaxJSONDeferred('http://assets.' + host + '/json/items.json');
+        return API.ajaxJSONDeferred('//assets.' + host + '/json/items.json');
     },
     items: function() {
         return API.itemData().then(function(itemData) {
@@ -543,7 +543,7 @@ var API = {
         });
     },
     achievementData: function() {
-        return API.ajaxJSONDeferred('http://assets.' + host + '/json/achievements.json');
+        return API.ajaxJSONDeferred('//assets.' + host + '/json/achievements.json');
     },
     achievement: function(achievementID) {
         return API.achievementData().then(function(achievementData) {
@@ -551,7 +551,7 @@ var API = {
         });
     },
     peopleData: function() {
-        return API.ajaxJSONDeferred('http://api.' + host + '/v2/people.json');
+        return API.ajaxJSONDeferred('//api.' + host + '/v2/people.json');
     },
     people: function() {
         return API.peopleData().then(function(peopleData) {
@@ -559,7 +559,7 @@ var API = {
         });
     },
     personById: function(playerID) {
-        return API.ajaxJSONDeferred('http://api.' + host + '/v2/player/' + playerID + '/info.json').then(function(personData) {
+        return API.ajaxJSONDeferred('//api.' + host + '/v2/player/' + playerID + '/info.json').then(function(personData) {
             return new Person(playerID, personData);
         }, function(deferred, error, description) {
             return undefined;
@@ -567,29 +567,29 @@ var API = {
     },
     statData: function(world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/playerstats/general.json');
+            return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/playerstats/general.json');
         });
     },
     achievementStatData: function(world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/playerstats/achievement.json');
+            return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/playerstats/achievement.json');
         });
     },
     playerData: function(person, world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/player/' + person.id + '/playerdata.json');
+            return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/player/' + person.id + '/playerdata.json');
         });
     },
     personStatData: function(person, world) {
         return mainWorldFallback(world).then(function(world) {
-            return API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + world + '/player/' + person.id + '/stats.json');
+            return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/player/' + person.id + '/stats.json');
         });
     },
     moneys: function() {
-        return API.ajaxJSONDeferred('http://api.' + host + '/v2/meta/moneys.json');
+        return API.ajaxJSONDeferred('//api.' + host + '/v2/meta/moneys.json');
     },
     biomeData: function() {
-        return API.ajaxJSONDeferred('http://assets.' + host + '/json/biomes.json');
+        return API.ajaxJSONDeferred('//assets.' + host + '/json/biomes.json');
     },
     biomes: function() {
         return API.biomeData().then(function(biomeData) {
@@ -597,10 +597,10 @@ var API = {
         });
     },
     deathGamesLog: function() {
-        return API.ajaxJSONDeferred('http://api.' + host + '/v2/minigame/deathgames/log.json');
+        return API.ajaxJSONDeferred('//api.' + host + '/v2/minigame/deathgames/log.json');
     },
     lastSeen: function(person) {
-        return API.ajaxJSONDeferred('http://api.' + host + '/v2/server/sessions/lastseen.json').then(function(lastSeenData) {
+        return API.ajaxJSONDeferred('//api.' + host + '/v2/server/sessions/lastseen.json').then(function(lastSeenData) {
             if (person.id in lastSeenData) {
                 return dateObjectFromUTC(lastSeenData[person.id].time);
             } else {
@@ -609,7 +609,7 @@ var API = {
         });
     },
     worldData: function() {
-        return API.ajaxJSONDeferred('http://api.' + host + '/v2/server/worlds.json');
+        return API.ajaxJSONDeferred('//api.' + host + '/v2/server/worlds.json');
     },
     mainWorld: function() {
         return API.worldData().then(function(worldData) {
@@ -623,7 +623,7 @@ var API = {
         });
     },
     enchantmentData: function() {
-        return API.ajaxJSONDeferred('http://assets.' + host + '/json/enchantments.json');
+        return API.ajaxJSONDeferred('//assets.' + host + '/json/enchantments.json');
     }
 }
 
@@ -670,7 +670,7 @@ function selectTabWithID(id) {
 
 function wikiUserLink(username) {
     username = username.replace(/ /g, '_');
-    return 'http://wiki.' + host + '/' + username;
+    return '//wiki.' + host + '/' + username;
 }
 
 function initializeTooltips() {
@@ -812,7 +812,7 @@ function htmlPlayerList(people, showAvatars, text, urls, useWikiArticles) {
         var personText = typeof text === 'undefined' ? person.interfaceName : text[index];
         var $a = $('<span>').text(personText);
         if (typeof person.wurstminebergID !== 'undefined') {
-            var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle('http://' + host + '/people/' + person.id) : 'http://' + host + '/people/' + person.id) : urls[index])}).text(personText);
+            var $a = $('<a>', {'href': (typeof urls === 'undefined' ? (useWikiArticles ? person.wikiArticle('//' + host + '/people/' + person.id) : '//' + host + '/people/' + person.id) : urls[index])}).text(personText);
         }
         if (showAvatars) {
             if (person.gravatar) {
@@ -827,8 +827,8 @@ function htmlPlayerList(people, showAvatars, text, urls, useWikiArticles) {
                 $a.prepend($('<img>', {
                     class: 'avatar nearest-neighbor',
                     id: 'avatar-' + person.id,
-                    src: 'http://api.' + host + '/v2/player/' + person.id + '/skin/render/head/16.png',
-                    srcset: 'http://api.' + host + '/v2/player/' + person.id + '/skin/render/head/16.png 1x, http://api.' + host + '/v2/player/' + person.id + '/skin/render/head/32.png 2x',
+                    src: '//api.' + host + '/v2/player/' + person.id + '/skin/render/head/16.png',
+                    srcset: '//api.' + host + '/v2/player/' + person.id + '/skin/render/head/16.png 1x, //api.' + host + '/v2/player/' + person.id + '/skin/render/head/32.png 2x',
                     style: 'width: 16px; height: 16px;'
                 }));
             }

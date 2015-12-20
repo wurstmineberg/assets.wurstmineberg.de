@@ -453,7 +453,7 @@ function loadLeaderboardStatData(people) {
 
 function loadMobStatData(people) {
     $.when(API.mainWorld()).done(function(mainWorld) {
-        $.when(API.ajaxJSONDeferred('http://api.' + host + '/v2/world/' + mainWorld + '/playerstats/entity.json'), API.mobData()).done(function(entityStats, mobData) {
+        $.when(API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + mainWorld + '/playerstats/entity.json'), API.mobData()).done(function(entityStats, mobData) {
             displayMobsStatData(people, entityStats, mobData);
         }).fail(function() {
             $('#loading-mobs-bymob').children('td').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
