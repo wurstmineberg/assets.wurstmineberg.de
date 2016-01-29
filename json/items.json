@@ -8704,7 +8704,8 @@
             },
             "image": "lingeringpotion.png",
             "itemID": 441,
-            "name": "Lingering Potion"
+            "name": "Lingering Potion",
+            "stackable": false
         },
         "lit_furnace": {
             "blockID": 62,
