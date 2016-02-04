@@ -9661,6 +9661,7 @@
                             "amountMin": 3,
                             "entity": "Boat",
                             "requires": "crash",
+                            "subtype": "oak",
                             "type": "entityDeath"
                         },
                         {
@@ -9700,6 +9701,14 @@
                             "amount": 84,
                             "structure": "witchHut",
                             "type": "structure"
+                        },
+                        {
+                            "amountMax": 3,
+                            "amountMin": 3,
+                            "entity": "Boat",
+                            "requires": "crash",
+                            "subtype": "spruce",
+                            "type": "entityDeath"
                         }
                     ]
                 },
@@ -9716,6 +9725,14 @@
                                 }
                             ],
                             "type": "craftingShapeless"
+                        },
+                        {
+                            "amountMax": 3,
+                            "amountMin": 3,
+                            "entity": "Boat",
+                            "requires": "crash",
+                            "subtype": "birch",
+                            "type": "entityDeath"
                         }
                     ]
                 },
@@ -9732,6 +9749,14 @@
                                 }
                             ],
                             "type": "craftingShapeless"
+                        },
+                        {
+                            "amountMax": 3,
+                            "amountMin": 3,
+                            "entity": "Boat",
+                            "requires": "crash",
+                            "subtype": "jungle",
+                            "type": "entityDeath"
                         }
                     ]
                 },
@@ -9748,6 +9773,14 @@
                                 }
                             ],
                             "type": "craftingShapeless"
+                        },
+                        {
+                            "amountMax": 3,
+                            "amountMin": 3,
+                            "entity": "Boat",
+                            "requires": "crash",
+                            "subtype": "acacia",
+                            "type": "entityDeath"
                         }
                     ]
                 },
@@ -9764,6 +9797,14 @@
                                 }
                             ],
                             "type": "craftingShapeless"
+                        },
+                        {
+                            "amountMax": 3,
+                            "amountMin": 3,
+                            "entity": "Boat",
+                            "requires": "crash",
+                            "subtype": "darkOak",
+                            "type": "entityDeath"
                         }
                     ]
                 }
