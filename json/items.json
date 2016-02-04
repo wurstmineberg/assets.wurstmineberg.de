@@ -20,7 +20,7 @@
                             "damage": 4,
                             "id": "minecraft:planks"
                         },
-                        "minecraft:wooden_shovel",
+                        null,
                         {
                             "damage": 4,
                             "id": "minecraft:planks"
@@ -1291,7 +1291,7 @@
                             "damage": 2,
                             "id": "minecraft:planks"
                         },
-                        "minecraft:wooden_shovel",
+                        null,
                         {
                             "damage": 2,
                             "id": "minecraft:planks"
@@ -1448,7 +1448,7 @@
                             "damage": 0,
                             "id": "minecraft:planks"
                         },
-                        "minecraft:wooden_shovel",
+                        null,
                         {
                             "damage": 0,
                             "id": "minecraft:planks"
@@ -3181,7 +3181,7 @@
                             "damage": 5,
                             "id": "minecraft:planks"
                         },
-                        "minecraft:wooden_shovel",
+                        null,
                         {
                             "damage": 5,
                             "id": "minecraft:planks"
@@ -7394,7 +7394,7 @@
                             "damage": 3,
                             "id": "minecraft:planks"
                         },
-                        "minecraft:wooden_shovel",
+                        null,
                         {
                             "damage": 3,
                             "id": "minecraft:planks"
@@ -13664,7 +13664,7 @@
                             "damage": 1,
                             "id": "minecraft:planks"
                         },
-                        "minecraft:wooden_shovel",
+                        null,
                         {
                             "damage": 1,
                             "id": "minecraft:planks"
@@ -16654,17 +16654,10 @@
             "obtaining": [
                 {
                     "recipe": [
-                        null,
-                        null,
-                        null,
                         "minecraft:tripwire_hook",
-                        "minecraft:chest",
-                        null,
-                        null,
-                        null,
-                        null
+                        "minecraft:chest"
                     ],
-                    "type": "craftingShaped"
+                    "type": "craftingShapeless"
                 }
             ]
         },
