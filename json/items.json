@@ -16121,11 +16121,22 @@
                     "empty": {
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:empty",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:empty",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16134,11 +16145,22 @@
                         "name": "Arrow of Fire Resistance",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:fire_resistance",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:fire_resistance",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16147,11 +16169,22 @@
                         "name": "Arrow of Harming",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:harming",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:harming",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16160,11 +16193,22 @@
                         "name": "Arrow of Healing",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:healing",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:healing",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16173,11 +16217,22 @@
                         "name": "Arrow of Invisibility",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:invisibility",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:invisibility",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16186,11 +16241,22 @@
                         "name": "Arrow of Leaping",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:leaping",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:leaping",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16199,11 +16265,22 @@
                         "name": "Arrow of Fire Resistance, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_fire_resistance",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_fire_resistance",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16212,11 +16289,22 @@
                         "name": "Arrow of Invisibility, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_invisibility",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_invisibility",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16225,11 +16313,22 @@
                         "name": "Arrow of Leaping, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_leaping",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_leaping",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16238,11 +16337,22 @@
                         "name": "Arrow of Night Vision, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_night_vision",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_night_vision",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16251,11 +16361,22 @@
                         "name": "Arrow of Poison, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_poison",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_poison",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16264,11 +16385,22 @@
                         "name": "Arrow of Regeneration, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_regeneration",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_regeneration",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16277,11 +16409,22 @@
                         "name": "Arrow of Slowness, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_slowness",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_slowness",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16290,11 +16433,22 @@
                         "name": "Arrow of Strength, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_strength",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_strength",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16303,11 +16457,22 @@
                         "name": "Arrow of Swiftness, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_swiftness",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_swiftness",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16316,11 +16481,22 @@
                         "name": "Arrow of Water Breathing, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_water_breathing",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_water_breathing",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16329,11 +16505,22 @@
                         "name": "Arrow of Weakness, extended",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:long_weakness",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:long_weakness",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16342,11 +16529,22 @@
                         "name": "Arrow of Luck",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:luck",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:luck",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16356,11 +16554,22 @@
                         "name": "Arrow of Night Vision",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:night_vision",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:night_vision",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16369,11 +16578,22 @@
                         "name": "Arrow of Poison",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:poison",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:poison",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16382,11 +16602,22 @@
                         "name": "Arrow of Regeneration",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:regeneration",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:regeneration",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16395,11 +16626,22 @@
                         "name": "Arrow of Slowness",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:slowness",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:slowness",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16408,11 +16650,22 @@
                         "name": "Arrow of Strength",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:strength",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:strength",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16421,11 +16674,22 @@
                         "name": "Arrow of Harming \u2161",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:strong_harming",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:strong_harming",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16434,11 +16698,22 @@
                         "name": "Arrow of Healing \u2161",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:strong_healing",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:strong_healing",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16447,11 +16722,22 @@
                         "name": "Arrow of Leaping \u2161",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:strong_leaping",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:strong_leaping",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16460,11 +16746,22 @@
                         "name": "Arrow of Poison \u2161",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:strong_poison",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:strong_poison",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16473,11 +16770,22 @@
                         "name": "Arrow of Regeneration \u2161",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:strong_regeneration",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:strong_regeneration",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16486,11 +16794,22 @@
                         "name": "Arrow of Strength \u2161",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:strong_strength",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:strong_strength",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16499,11 +16818,22 @@
                         "name": "Arrow of Swiftness \u2161",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:strong_swiftness",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:strong_swiftness",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16512,11 +16842,22 @@
                         "name": "Arrow of Swiftness",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:swiftness",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:swiftness",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16529,11 +16870,22 @@
                         "name": "Arrow of Water Breathing",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:water_breathing",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:water_breathing",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     },
@@ -16546,11 +16898,22 @@
                         "name": "Arrow of Weakness",
                         "obtaining": [
                             {
-                                "potion": {
-                                    "effect": "minecraft:weakness",
-                                    "id": "minecraft:lingering_potion"
-                                },
-                                "type": "tipArrow"
+                                "outputAmount": 8,
+                                "recipe": [
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    {
+                                        "effect": "minecraft:weakness",
+                                        "id": "minecraft:lingering_potion"
+                                    },
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow",
+                                    "minecraft:arrow"
+                                ],
+                                "type": "craftingShaped"
                             }
                         ]
                     }
