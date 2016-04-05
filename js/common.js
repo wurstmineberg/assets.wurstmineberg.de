@@ -60,7 +60,11 @@ function Person(personID, personData) {
     this.id = personID;
     if (/^[a-z][0-9a-z]{1,15}$/.test(this.id)) {
         this.wurstminebergID = this.id;
-        this.minecraftUUID = personData.minecraft.uuid;
+        if ('minecraft' in personData && 'uuid' in personData.minecraft) {
+            this.minecraftUUID = personData.minecraft.uuid;
+        } else {
+            this.minecraftUUID = null;
+        }
     } else {
         this.minecraftUUID = this.id;
     }
@@ -112,7 +116,9 @@ function Person(personID, personData) {
             });
         });
     }
-    this.minecraft = personData.minecraft.nicks[personData.minecraft.nicks.length - 1];
+    if ('minecraft' in personData) {
+        this.minecraft = personData.minecraft.nicks[personData.minecraft.nicks.length - 1];
+    }
     if ('statusHistory' in personData) {
         this.status = personData.statusHistory[personData.statusHistory.length - 1].status;
     }
