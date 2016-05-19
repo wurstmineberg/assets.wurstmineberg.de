@@ -769,7 +769,8 @@
                 "id": "minecraft:skull"
             },
             "minecraft:slime",
-            "minecraft:web"
+            "minecraft:web",
+            "minecraft:bone_block"
         ],
         "0": [
             "minecraft:redstone",
@@ -1063,6 +1064,9 @@
                 "id": "minecraft:nether_brick",
                 "name": "Nether Brick Block"
             },
+            "minecraft:magma",
+            "minecraft:nether_wart_block",
+            "minecraft:red_nether_brick",
             {
                 "damage": 6,
                 "id": "minecraft:stone_slab"
