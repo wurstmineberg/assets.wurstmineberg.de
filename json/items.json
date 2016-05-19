@@ -81,6 +81,10 @@
                         null
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
                 }
             ]
         },
@@ -463,6 +467,14 @@
                     "amountMin": 4,
                     "structure": "jungleTempleTrap",
                     "type": "chest"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "Skeleton",
+                    "subtype": "stray",
+                    "type": "entityDeath"
                 }
             ]
         },
@@ -1513,6 +1525,61 @@
                     "weight": 0.12048192771084337
                 }
             ]
+        },
+        "bone_block": {
+            "blockID": 216,
+            "dropsSelf": "pickaxe",
+            "image": "boneblock.png",
+            "itemID": 216,
+            "name": "Bone Block",
+            "obtaining": [
+                {
+                    "recipe": [
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        },
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        },
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        },
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        },
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        },
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        },
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        },
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        },
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "structure": "fossil",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "book": {
             "image": "book.png",
@@ -2818,9 +2885,25 @@
         },
         "coal_ore": {
             "blockID": 16,
+            "dropsSelf": {
+                "silkTouch": true,
+                "tools": [
+                    "pickaxe"
+                ]
+            },
             "image": "coalore.png",
             "itemID": 16,
-            "name": "Coal Ore"
+            "name": "Coal Ore",
+            "obtaining": [
+                {
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "structure": "fossil",
+                    "type": "structure"
+                }
+            ]
         },
         "cobblestone": {
             "blockID": 4,
@@ -3276,6 +3359,10 @@
                         }
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "abandonedMineShaft",
+                    "type": "structure"
                 }
             ]
         },
@@ -4535,6 +4622,13 @@
                                 "minecraft:bone"
                             ],
                             "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 9,
+                            "recipe": [
+                                "minecraft:bone_block"
+                            ],
+                            "type": "craftingShapeless"
                         }
                     ]
                 },
@@ -5322,21 +5416,6 @@
             "name": "End Stone Bricks",
             "obtaining": [
                 {
-                    "outputAmount": 4,
-                    "recipe": [
-                        null,
-                        null,
-                        null,
-                        "minecraft:end_stone",
-                        "minecraft:end_stone",
-                        null,
-                        "minecraft:end_stone",
-                        "minecraft:end_stone",
-                        null
-                    ],
-                    "type": "craftingShaped"
-                },
-                {
                     "structure": "endCity",
                     "type": "structure"
                 },
@@ -5758,6 +5837,7 @@
             "name": "Firework Rocket",
             "obtaining": [
                 {
+                    "outputAmount": 3,
                     "recipe": [
                         "minecraft:paper",
                         "minecraft:gunpowder"
@@ -5765,6 +5845,7 @@
                     "type": "craftingShapeless"
                 },
                 {
+                    "outputAmount": 3,
                     "recipe": [
                         "minecraft:firework_charge",
                         "minecraft:paper",
@@ -5788,6 +5869,11 @@
                             "amountMin": 0,
                             "entity": "Guardian",
                             "type": "entityDeath"
+                        },
+                        {
+                            "amountMin": 0,
+                            "entity": "PolarBear",
+                            "type": "entityDeath"
                         }
                     ]
                 },
@@ -5804,6 +5890,11 @@
                             "amountMin": 0,
                             "entity": "Guardian",
                             "requires": "player",
+                            "type": "entityDeath"
+                        },
+                        {
+                            "amountMin": 0,
+                            "entity": "PolarBear",
                             "type": "entityDeath"
                         }
                     ]
@@ -6521,6 +6612,10 @@
                         "shovel"
                     ],
                     "type": "modifyBlock"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
                 }
             ],
             "pickBlock": true,
@@ -6536,10 +6631,6 @@
                 {
                     "dimension": "overworld",
                     "type": "natural"
-                },
-                {
-                    "structure": "village",
-                    "type": "structure"
                 },
                 {
                     "dimension": "nether",
@@ -8848,6 +8939,10 @@
                             "amountMax": 3,
                             "type": "bonusChest",
                             "weight": 0.15625
+                        },
+                        {
+                            "structure": "village",
+                            "type": "structure"
                         }
                     ]
                 },
@@ -8952,6 +9047,10 @@
                                 "id": "minecraft:sapling"
                             },
                             "type": "plantGrowth"
+                        },
+                        {
+                            "structure": "village",
+                            "type": "structure"
                         }
                     ]
                 },
@@ -8988,6 +9087,32 @@
             "image": "acaciawood.png",
             "itemID": 162,
             "name": "Wood"
+        },
+        "magma": {
+            "blockID": 213,
+            "dropsSelf": "pickaxe",
+            "itemID": 213,
+            "name": "Magma Block",
+            "obtaining": [
+                {
+                    "dimension": "nether",
+                    "type": "natural"
+                },
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:magma_cream",
+                        "minecraft:magma_cream",
+                        null,
+                        "minecraft:magma_cream",
+                        "minecraft:magma_cream",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
         },
         "magma_cream": {
             "image": "magmacream.png",
@@ -9444,6 +9569,29 @@
             ],
             "solid": false
         },
+        "nether_wart_block": {
+            "blockID": 214,
+            "image": "netherwartblock.png",
+            "itemID": 214,
+            "name": "Nether Wart Block",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:nether_wart",
+                        "minecraft:nether_wart",
+                        "minecraft:nether_wart",
+                        "minecraft:nether_wart",
+                        "minecraft:nether_wart",
+                        "minecraft:nether_wart",
+                        "minecraft:nether_wart",
+                        "minecraft:nether_wart",
+                        "minecraft:nether_wart"
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false
+        },
         "netherbrick": {
             "image": "netherbrick.png",
             "itemID": 405,
@@ -9709,6 +9857,10 @@
                             "requires": "crash",
                             "subtype": "spruce",
                             "type": "entityDeath"
+                        },
+                        {
+                            "structure": "village",
+                            "type": "structure"
                         }
                     ]
                 },
@@ -9781,6 +9933,10 @@
                             "requires": "crash",
                             "subtype": "acacia",
                             "type": "entityDeath"
+                        },
+                        {
+                            "structure": "village",
+                            "type": "structure"
                         }
                     ]
                 },
@@ -9805,6 +9961,10 @@
                             "requires": "crash",
                             "subtype": "darkOak",
                             "type": "entityDeath"
+                        },
+                        {
+                            "structure": "abandonedMineShaft",
+                            "type": "structure"
                         }
                     ]
                 }
@@ -11424,6 +11584,29 @@
             ],
             "pickBlock": "minecraft:red_mushroom"
         },
+        "red_nether_brick": {
+            "blockID": 215,
+            "dropsSelf": "pickaxe",
+            "image": "rednetherbricks.png",
+            "itemID": 215,
+            "name": "Red Nether Brick",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        "minecraft:nether_wart",
+                        "minecraft:netherbrick",
+                        null,
+                        "minecraft:netherbrick",
+                        "minecraft:nether_wart",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ]
+        },
         "red_sandstone": {
             "blockID": 179,
             "damageValues": {
@@ -12581,6 +12764,10 @@
                     "image": "spawnblaze.png",
                     "name": "Spawn Blaze"
                 },
+                "Cat": {
+                    "image": "spawncat.png",
+                    "name": "Spawn Cat"
+                },
                 "CaveSpider": {
                     "image": "spawncavespider.png",
                     "name": "Spawn Cave Spider"
@@ -12595,6 +12782,14 @@
                 },
                 "Creeper": {
                     "name": "Spawn Creeper"
+                },
+                "Donkey": {
+                    "image": "spawndonkey.png",
+                    "name": "Spawn Donkey"
+                },
+                "ElderGuardian": {
+                    "image": "spawnelderguardian.png",
+                    "name": "Spawn Elder Guardian"
                 },
                 "Enderman": {
                     "image": "spawnenderman.png",
@@ -12616,9 +12811,17 @@
                     "image": "spawnguardian.png",
                     "name": "Spawn Guardian"
                 },
+                "Husk": {
+                    "image": "spawnhusk.png",
+                    "name": "Spawn Husk"
+                },
                 "LavaSlime": {
                     "image": "spawnmagmacube.png",
                     "name": "Spawn Magma Cube"
+                },
+                "Mule": {
+                    "image": "spawnmule.png",
+                    "name": "Spawn Mule"
                 },
                 "MushroomCow": {
                     "image": "spawnmooshroom.png",
@@ -12635,6 +12838,10 @@
                 "PigZombie": {
                     "image": "spawnpigzombie.png",
                     "name": "Spawn Zombie Pigman"
+                },
+                "PolarBear": {
+                    "image": "spawnpolarbear.png",
+                    "name": "Spawn Polar Bear"
                 },
                 "Rabbit": {
                     "image": "spawnrabbit.png",
@@ -12656,6 +12863,10 @@
                     "image": "spawnskeleton.png",
                     "name": "Spawn Skeleton"
                 },
+                "SkeletonHorse": {
+                    "image": "spawnskeletonhorse.png",
+                    "name": "Spawn Skeleton Horse"
+                },
                 "Slime": {
                     "image": "spawnslime.png",
                     "name": "Spawn Slime"
@@ -12668,6 +12879,10 @@
                     "image": "spawnsquid.png",
                     "name": "Spawn Squid"
                 },
+                "Stray": {
+                    "image": "spawnstray.png",
+                    "name": "Spawn Stray"
+                },
                 "Villager": {
                     "image": "spawnvillager.png",
                     "name": "Spawn Villager"
@@ -12676,6 +12891,10 @@
                     "image": "spawnwitch.png",
                     "name": "Spawn Witch"
                 },
+                "WitherSkeleton": {
+                    "image": "spawnwitherskeleton.png",
+                    "name": "Spawn Wither Skeleton"
+                },
                 "Wolf": {
                     "image": "spawnwolf.png",
                     "name": "Spawn Wolf"
@@ -12683,6 +12902,10 @@
                 "Zombie": {
                     "image": "spawnzombie.png",
                     "name": "Spawn Zombie"
+                },
+                "ZombieHorse": {
+                    "image": "spawnzombiehorse.png",
+                    "name": "Spawn Zombie Horse"
                 }
             }
         },
@@ -13725,6 +13948,10 @@
                         null
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
                 }
             ]
         },
@@ -16074,7 +16301,20 @@
         },
         "structure_block": {
             "blockID": 255,
-            "name": "Structure Block"
+            "creativeMenu": false,
+            "itemID": 255,
+            "name": "Structure Block",
+            "pickBlock": true
+        },
+        "structure_void": {
+            "blockID": 217,
+            "creativeMenu": false,
+            "dropsSelf": [],
+            "image": "structurevoid.png",
+            "itemID": 217,
+            "name": "Structure Void",
+            "pickBlock": true,
+            "solid": false
         },
         "sugar": {
             "image": "sugar.png",
@@ -16642,6 +16882,12 @@
                                     "minecraft:arrow"
                                 ],
                                 "type": "craftingShaped"
+                            },
+                            {
+                                "amountMin": 0,
+                                "entity": "Skeleton",
+                                "subtype": "stray",
+                                "type": "entityDeath"
                             }
                         ]
                     },
@@ -17337,6 +17583,14 @@
                         null
                     ],
                     "type": "craftingShaped"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
+                },
+                {
+                    "structure": "stronghold",
+                    "type": "structure"
                 }
             ]
         },

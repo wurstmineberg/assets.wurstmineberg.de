@@ -116,6 +116,11 @@
             "dimension": "nether",
             "name": "Zombie Pigman"
         },
+        "PolarBear": {
+            "attitude": "neutral",
+            "dimension": "overworld",
+            "name": "Polar Bear"
+        },
         "Rabbit": {
             "attitude": "friendly",
             "dimension": "overworld"
@@ -190,6 +195,9 @@
                 "regular": {
                     "name": "Skeleton"
                 },
+                "stray": {
+                    "name": "Stray"
+                },
                 "wither": {
                     "name": "Wither Skeleton"
                 }
@@ -234,6 +242,9 @@
             "attitude": "hostile",
             "dimension": "overworld",
             "subtypes": {
+                "husk": {
+                    "name": "Husk"
+                },
                 "regular": {},
                 "villager": {
                     "name": "Villager Zombie"

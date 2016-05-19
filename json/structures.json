@@ -116,6 +116,20 @@
         },
         "requiresOption": false
     },
+    "fossil": {
+        "biomes": [
+            "Desert",
+            "DesertHills",
+            "Desert M",
+            "Swampland",
+            "Swampland M"
+        ],
+        "dimension": "overworld",
+        "name": {
+            "default": "fossil",
+            "plural": "fossils"
+        }
+    },
     "igloo": {
         "biomes": [
             "Ice Plains",
