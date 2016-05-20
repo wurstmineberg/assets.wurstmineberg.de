@@ -1832,9 +1832,32 @@
         },
         "brown_mushroom_block": {
             "blockID": 99,
+            "creativeMenu": false,
             "image": "hugebrownmushroom.png",
             "itemID": 99,
-            "name": "Huge Brown Mushroom"
+            "name": "Huge Brown Mushroom",
+            "obtaining": [
+                {
+                    "biomes": [
+                        "MushroomIsland",
+                        "MushroomIslandShore",
+                        "Roofed Forest",
+                        "Roofed Forest M"
+                    ],
+                    "dimension": "overworld",
+                    "type": "natural"
+                },
+                {
+                    "amountMax": null,
+                    "amountMin": null,
+                    "plant": {
+                        "consumed": true,
+                        "id": "minecraft:brown_mushroom"
+                    },
+                    "type": "plantGrowth"
+                }
+            ],
+            "pickBlock": "minecraft:brown_mushroom"
         },
         "bucket": {
             "image": "bucket.png",
@@ -5871,6 +5894,7 @@
                             "type": "entityDeath"
                         },
                         {
+                            "amountMaxLooting": 4,
                             "amountMin": 0,
                             "entity": "PolarBear",
                             "type": "entityDeath"
@@ -5893,6 +5917,7 @@
                             "type": "entityDeath"
                         },
                         {
+                            "amountMaxLooting": 4,
                             "amountMin": 0,
                             "entity": "PolarBear",
                             "type": "entityDeath"
@@ -11573,7 +11598,7 @@
                     "type": "natural"
                 },
                 {
-                    "amountMax": 51,
+                    "amountMax": null,
                     "amountMin": 49,
                     "plant": {
                         "consumed": true,
