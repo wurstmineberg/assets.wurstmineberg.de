@@ -6660,6 +6660,10 @@
                 {
                     "dimension": "nether",
                     "type": "natural"
+                },
+                {
+                    "structure": "village",
+                    "type": "structure"
                 }
             ]
         },
