@@ -138,6 +138,8 @@ def validate_items_json():
             assert item['solid'] is False
         if 'image' in item:
             assert isinstance(item['image'], str)
+            image_path = pathlib.Path('img/grid') / item['image']
+            assert image_path.exists()
         if 'damagedImages' in item:
             assert 'durability' in item
             assert isinstance(item['damagedImages'], dict)
