@@ -9120,6 +9120,7 @@
         "magma": {
             "blockID": 213,
             "dropsSelf": "pickaxe",
+            "image": "magmablock.png",
             "itemID": 213,
             "name": "Magma Block",
             "obtaining": [
