@@ -2506,7 +2506,7 @@
             "blockID": 211,
             "creativeMenu": false,
             "dropsSelf": false,
-            "image": "chaincommandblock.png",
+            "image": "chaincommandblock.gif",
             "itemID": 211,
             "name": "Chain Command Block"
         },
@@ -3005,7 +3005,7 @@
             "blockID": 137,
             "creativeMenu": false,
             "dropsSelf": false,
-            "image": "commandblock.png",
+            "image": "commandblock.gif",
             "itemID": 137,
             "name": "Command Block"
         },
@@ -11974,7 +11974,7 @@
             "blockID": 210,
             "creativeMenu": false,
             "dropsSelf": false,
-            "image": "repeatcommandblock.png",
+            "image": "repeatcommandblock.gif",
             "itemID": 210,
             "name": "Repeating Command Block"
         },
