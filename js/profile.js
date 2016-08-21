@@ -450,7 +450,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             $row.children('.depleted').text(thousands(itemDict.breakItem));
         }
         if ('drop' in itemDict) {
-            $row.children('.dropped').text(thousands(itemDict.dropped));
+            $row.children('.dropped').text(thousands(itemDict.drop));
         }
         if ('pickup' in itemDict) {
             $row.children('.picked-up').text(thousands(itemDict.pickup));
