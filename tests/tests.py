@@ -7,6 +7,16 @@ import sys
 
 tests = []
 
+def validate_image(image_json):
+    if isinstance(image_json, str):
+        image_dict = {'prerendered': image_json}
+    elif isinstance(image_json, dict):
+        image_dict = image_json
+    else:
+        raise TypeError('Item image must be string or object, is {}'.format(type(item['image'])))
+    image_path = pathlib.Path('img/grid') / image_dict['prerendered']
+    assert image_path.exists()
+
 def validate_item_stub(item_stub, must_be_block=False, must_be_item=False, *, items=None, additional_fields=set()):
     fields = {
         'id',
@@ -137,16 +147,13 @@ def validate_items_json():
             assert 'blockID' in item # is_block
             assert item['solid'] is False
         if 'image' in item:
-            assert isinstance(item['image'], str)
-            image_path = pathlib.Path('img/grid') / item['image']
-            assert image_path.exists()
+            validate_image(item['image'])
         if 'damagedImages' in item:
             assert 'durability' in item
             assert isinstance(item['damagedImages'], dict)
             for min_damage, damaged_image in item['damagedImages'].items():
                 assert int(min_damage) <= item['durability']
-                assert isinstance(damaged_image, str)
-            pass # image
+                validate_image(damaged_image)
         if 'blockID' in item:
             is_block = True
             assert isinstance(item['blockID'], int) or (is_override and item['blockID'] is None)

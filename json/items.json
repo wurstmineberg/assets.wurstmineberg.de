@@ -1,7 +1,10 @@
 {
     "minecraft": {
         "acacia_boat": {
-            "image": "acaciaboat.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "acaciaboat.png"
+            },
             "itemID": 447,
             "name": "Acacia Boat",
             "obtaining": [
@@ -45,7 +48,10 @@
         },
         "acacia_door": {
             "blockID": 196,
-            "image": "acaciadoor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "acaciadoor.png"
+            },
             "itemID": 430,
             "name": "Acacia Door",
             "obtaining": [
@@ -195,7 +201,10 @@
         },
         "activator_rail": {
             "blockID": 157,
-            "image": "activatorrail.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "activatorrail.png"
+            },
             "itemID": 157,
             "name": "Activator Rail",
             "obtaining": [
@@ -340,7 +349,10 @@
             "solid": false
         },
         "apple": {
-            "image": "apple.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "apple.png"
+            },
             "itemID": 260,
             "name": "Apple",
             "obtaining": [
@@ -406,7 +418,10 @@
             ]
         },
         "armor_stand": {
-            "image": "armorstand.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "armorstand.png"
+            },
             "itemID": 416,
             "name": "Armor Stand",
             "obtaining": [
@@ -428,7 +443,10 @@
             "stackable": 16
         },
         "arrow": {
-            "image": "arrow.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "arrow.png"
+            },
             "itemID": 262,
             "name": "Arrow",
             "obtaining": [
@@ -479,7 +497,10 @@
             ]
         },
         "baked_potato": {
-            "image": "bakedpotato.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "bakedpotato.png"
+            },
             "itemID": 393,
             "name": "Baked Potato",
             "obtaining": [
@@ -1108,7 +1129,10 @@
             "blockID": 166,
             "creativeMenu": false,
             "dropsSelf": [],
-            "image": "barrier.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "barrier.png"
+            },
             "itemID": 166,
             "name": "Barrier",
             "pickBlock": true
@@ -1138,7 +1162,10 @@
         },
         "bed": {
             "blockID": 26,
-            "image": "bed.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "bed.png"
+            },
             "itemID": 355,
             "name": "Bed",
             "obtaining": [
@@ -1199,7 +1226,10 @@
             ]
         },
         "beef": {
-            "image": "rawbeef.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rawbeef.png"
+            },
             "itemID": 363,
             "name": "Raw Beef",
             "obtaining": [
@@ -1220,7 +1250,10 @@
             ]
         },
         "beetroot": {
-            "image": "beetroot.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "beetroot.png"
+            },
             "itemID": 434,
             "name": "Beetroot",
             "obtaining": [
@@ -1231,7 +1264,10 @@
             ]
         },
         "beetroot_seeds": {
-            "image": "beetrootseeds.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "beetrootseeds.png"
+            },
             "itemID": 435,
             "name": "Beetroot Seeds",
             "obtaining": [
@@ -1250,7 +1286,10 @@
             "whenPlaced": "minecraft:beetroots"
         },
         "beetroot_soup": {
-            "image": "beetrootstew.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "beetrootstew.png"
+            },
             "itemID": 436,
             "name": "Beetroot Soup",
             "obtaining": [
@@ -1273,7 +1312,10 @@
         },
         "beetroots": {
             "blockID": 207,
-            "image": "beetrootseeds.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "beetrootseeds.png"
+            },
             "name": "Beetroot Crops",
             "obtaining": [
                 {
@@ -1284,7 +1326,10 @@
             "solid": false
         },
         "birch_boat": {
-            "image": "birchboat.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "birchboat.png"
+            },
             "itemID": 445,
             "name": "Birch Boat",
             "obtaining": [
@@ -1328,7 +1373,10 @@
         },
         "birch_door": {
             "blockID": 194,
-            "image": "birchdoor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "birchdoor.png"
+            },
             "itemID": 428,
             "name": "Birch Door",
             "obtaining": [
@@ -1437,17 +1485,26 @@
             "name": "Birch Wood Stairs"
         },
         "blaze_powder": {
-            "image": "blazepowder.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "blazepowder.png"
+            },
             "itemID": 377,
             "name": "Blaze Powder"
         },
         "blaze_rod": {
-            "image": "blazerod.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "blazerod.png"
+            },
             "itemID": 369,
             "name": "Blaze Rod"
         },
         "boat": {
-            "image": "oakboat.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "oakboat.png"
+            },
             "itemID": 333,
             "name": "Oak Boat",
             "obtaining": [
@@ -1490,7 +1547,10 @@
             "stackable": false
         },
         "bone": {
-            "image": "bone.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "bone.png"
+            },
             "itemID": 352,
             "name": "Bone",
             "obtaining": [
@@ -1582,7 +1642,10 @@
             "solid": false
         },
         "book": {
-            "image": "book.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "book.png"
+            },
             "itemID": 340,
             "name": "Book",
             "obtaining": [
@@ -1649,7 +1712,10 @@
         },
         "bow": {
             "durability": 384,
-            "image": "bow.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "bow.png"
+            },
             "itemID": 261,
             "name": "Bow",
             "obtaining": [
@@ -1691,7 +1757,10 @@
             "stackable": false
         },
         "bowl": {
-            "image": "bowl.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "bowl.png"
+            },
             "itemID": 281,
             "name": "Bowl",
             "obtaining": [
@@ -1730,13 +1799,19 @@
             ]
         },
         "bread": {
-            "image": "bread.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "bread.png"
+            },
             "itemID": 297,
             "name": "Bread"
         },
         "brewing_stand": {
             "blockID": 117,
-            "image": "brewingstand.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "brewingstand.png"
+            },
             "itemID": 379,
             "name": "Brewing Stand",
             "obtaining": [
@@ -1767,7 +1842,10 @@
             "solid": false
         },
         "brick": {
-            "image": "brick.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "brick.png"
+            },
             "itemID": 336,
             "name": "Brick",
             "obtaining": [
@@ -1808,7 +1886,10 @@
         },
         "brown_mushroom": {
             "blockID": 39,
-            "image": "brownmushroom.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "brownmushroom.png"
+            },
             "itemID": 39,
             "name": "Brown Mushroom",
             "obtaining": [
@@ -1860,7 +1941,10 @@
             "pickBlock": "minecraft:brown_mushroom"
         },
         "bucket": {
-            "image": "bucket.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "bucket.png"
+            },
             "itemID": 325,
             "name": "Bucket",
             "obtaining": [
@@ -1930,7 +2014,10 @@
         },
         "cake": {
             "blockID": 92,
-            "image": "cake.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cake.png"
+            },
             "itemID": 354,
             "name": "Cake",
             "obtaining": [
@@ -2421,7 +2508,10 @@
             "solid": false
         },
         "carrot": {
-            "image": "carrot.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "carrot.png"
+            },
             "itemID": 391,
             "name": "Carrot",
             "obtaining": [
@@ -2441,7 +2531,10 @@
         },
         "carrot_on_a_stick": {
             "durability": 25,
-            "image": "carrotstick.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "carrotstick.png"
+            },
             "itemID": 398,
             "name": "Carrot on a Stick",
             "obtaining": [
@@ -2464,7 +2557,10 @@
         },
         "carrots": {
             "blockID": 141,
-            "image": "carrot.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "carrot.png"
+            },
             "name": "Carrot Crops",
             "obtaining": [
                 {
@@ -2477,7 +2573,10 @@
         "cauldron": {
             "blockID": 118,
             "dropsSelf": "pickaxe",
-            "image": "cauldron.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cauldron.png"
+            },
             "itemID": 380,
             "name": "Cauldron",
             "obtaining": [
@@ -2512,28 +2611,40 @@
         },
         "chainmail_boots": {
             "durability": 195,
-            "image": "chainboots.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "chainboots.png"
+            },
             "itemID": 305,
             "name": "Chain Boots",
             "stackable": false
         },
         "chainmail_chestplate": {
             "durability": 240,
-            "image": "chainchestplate.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "chainchestplate.png"
+            },
             "itemID": 303,
             "name": "Chain Chestplate",
             "stackable": false
         },
         "chainmail_helmet": {
             "durability": 165,
-            "image": "chainhelmet.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "chainhelmet.png"
+            },
             "itemID": 302,
             "name": "Chain Helmet",
             "stackable": false
         },
         "chainmail_leggings": {
             "durability": 225,
-            "image": "chainleggings.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "chainleggings.png"
+            },
             "itemID": 304,
             "name": "Chain Leggings",
             "obtaining": [
@@ -2639,13 +2750,19 @@
             "solid": false
         },
         "chest_minecart": {
-            "image": "minecartwithchest.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "minecartwithchest.png"
+            },
             "itemID": 342,
             "name": "Minecart with Chest",
             "stackable": false
         },
         "chicken": {
-            "image": "rawchicken.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rawchicken.png"
+            },
             "itemID": 365,
             "name": "Raw Chicken",
             "obtaining": [
@@ -2679,7 +2796,10 @@
             "solid": false
         },
         "chorus_fruit": {
-            "image": "chorus.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "chorus.png"
+            },
             "itemID": 432,
             "name": "Chorus Fruit",
             "obtaining": [
@@ -2691,7 +2811,10 @@
             ]
         },
         "chorus_fruit_popped": {
-            "image": "poppedchorus.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "poppedchorus.png"
+            },
             "itemID": 433,
             "name": "Popped Chorus Fruit",
             "obtaining": [
@@ -2745,7 +2868,10 @@
             ]
         },
         "clay_ball": {
-            "image": "clay.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "clay.png"
+            },
             "itemID": 337,
             "name": "Clay Ball",
             "obtaining": [
@@ -2838,7 +2964,10 @@
                     ]
                 },
                 "1": {
-                    "image": "charcoal.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "charcoal.png"
+                    },
                     "name": "Charcoal",
                     "obtaining": [
                         {
@@ -2852,7 +2981,10 @@
                     ]
                 }
             },
-            "image": "coal.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "coal.png"
+            },
             "itemID": 263,
             "name": "Coal"
         },
@@ -2985,7 +3117,10 @@
         },
         "cocoa": {
             "blockID": 127,
-            "image": "cocoabeans.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cocoabeans.png"
+            },
             "name": "Cocoa",
             "obtaining": [
                 {
@@ -3011,13 +3146,19 @@
         },
         "command_block_minecart": {
             "creativeMenu": false,
-            "image": "minecartwithcommandblock.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "minecartwithcommandblock.png"
+            },
             "itemID": 422,
             "name": "Minecart with Command Block",
             "stackable": false
         },
         "comparator": {
-            "image": "comparator.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "comparator.png"
+            },
             "itemID": 404,
             "name": "Comparator",
             "obtaining": [
@@ -3043,7 +3184,10 @@
             "whenPlaced": "minecraft:unpowered_comparator"
         },
         "compass": {
-            "image": "compass.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "compass.png"
+            },
             "itemID": 345,
             "name": "Compass",
             "obtaining": [
@@ -3076,7 +3220,10 @@
             ]
         },
         "cooked_beef": {
-            "image": "steak.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "steak.png"
+            },
             "itemID": 364,
             "name": "Steak",
             "obtaining": [
@@ -3101,7 +3248,10 @@
             ]
         },
         "cooked_chicken": {
-            "image": "cookedchicken.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cookedchicken.png"
+            },
             "itemID": 366,
             "name": "Cooked Chicken",
             "obtaining": [
@@ -3148,7 +3298,10 @@
                     ]
                 },
                 "1": {
-                    "image": "cookedsalmon.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "cookedsalmon.png"
+                    },
                     "name": "Cooked Salmon",
                     "obtaining": [
                         {
@@ -3161,12 +3314,18 @@
                     ]
                 }
             },
-            "image": "cookedfish.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cookedfish.png"
+            },
             "itemID": 350,
             "name": "Cooked Fish"
         },
         "cooked_mutton": {
-            "image": "cookedmutton.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cookedmutton.png"
+            },
             "itemID": 424,
             "name": "Cooked Mutton",
             "obtaining": [
@@ -3184,7 +3343,10 @@
             ]
         },
         "cooked_porkchop": {
-            "image": "cookedporkchop.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cookedporkchop.png"
+            },
             "itemID": 320,
             "name": "Cooked Porkchop",
             "obtaining": [
@@ -3210,7 +3372,10 @@
             ]
         },
         "cooked_rabbit": {
-            "image": "cookedrabbit.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cookedrabbit.png"
+            },
             "itemID": 412,
             "name": "Cooked Rabbit",
             "obtaining": [
@@ -3227,7 +3392,10 @@
             ]
         },
         "cookie": {
-            "image": "cookie.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cookie.png"
+            },
             "itemID": 357,
             "name": "Cookie"
         },
@@ -3268,7 +3436,10 @@
             ]
         },
         "dark_oak_boat": {
-            "image": "darkoakboat.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "darkoakboat.png"
+            },
             "itemID": 448,
             "name": "Dark Oak Boat",
             "obtaining": [
@@ -3311,7 +3482,10 @@
             "stackable": false
         },
         "dark_oak_door": {
-            "image": "darkoakdoor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "darkoakdoor.png"
+            },
             "itemID": 431,
             "name": "Dark Oak Door",
             "obtaining": [
@@ -3488,13 +3662,19 @@
         },
         "deadbush": {
             "blockID": 32,
-            "image": "deadbush.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "deadbush.png"
+            },
             "itemID": 32,
             "name": "Dead Bush"
         },
         "detector_rail": {
             "blockID": 28,
-            "image": "detectorrail.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "detectorrail.png"
+            },
             "itemID": 28,
             "name": "Detector Rail",
             "obtaining": [
@@ -3517,7 +3697,10 @@
             "solid": false
         },
         "diamond": {
-            "image": "diamond.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamond.png"
+            },
             "itemID": 264,
             "name": "Diamond",
             "obtaining": [
@@ -3582,7 +3765,10 @@
         },
         "diamond_axe": {
             "durability": 1561,
-            "image": "diamondaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondaxe.png"
+            },
             "itemID": 279,
             "name": "Diamond Axe",
             "obtaining": [
@@ -3639,7 +3825,10 @@
         },
         "diamond_boots": {
             "durability": 429,
-            "image": "diamondboots.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondboots.png"
+            },
             "itemID": 313,
             "name": "Diamond Boots",
             "obtaining": [
@@ -3685,7 +3874,10 @@
         },
         "diamond_chestplate": {
             "durability": 528,
-            "image": "diamondchestplate.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondchestplate.png"
+            },
             "itemID": 311,
             "name": "Diamond Chestplate",
             "obtaining": [
@@ -3739,7 +3931,10 @@
         },
         "diamond_helmet": {
             "durability": 363,
-            "image": "diamondhelmet.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondhelmet.png"
+            },
             "itemID": 310,
             "name": "Diamond Helmet",
             "obtaining": [
@@ -3785,13 +3980,19 @@
         },
         "diamond_hoe": {
             "durability": 1561,
-            "image": "diamondhoe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondhoe.png"
+            },
             "itemID": 293,
             "name": "Diamond Hoe",
             "stackable": false
         },
         "diamond_horse_armor": {
-            "image": "diamondhorsearmor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondhorsearmor.png"
+            },
             "itemID": 419,
             "name": "Diamond Horse Armor",
             "obtaining": [
@@ -3828,7 +4029,10 @@
         },
         "diamond_leggings": {
             "durability": 495,
-            "image": "diamondleggings.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondleggings.png"
+            },
             "itemID": 312,
             "name": "Diamond Leggings",
             "obtaining": [
@@ -3893,7 +4097,10 @@
         },
         "diamond_pickaxe": {
             "durability": 1561,
-            "image": "diamondpickaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondpickaxe.png"
+            },
             "itemID": 278,
             "name": "Diamond Pickaxe",
             "obtaining": [
@@ -3928,7 +4135,10 @@
         },
         "diamond_shovel": {
             "durability": 1561,
-            "image": "diamondshovel.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondshovel.png"
+            },
             "itemID": 277,
             "name": "Diamond Shovel",
             "obtaining": [
@@ -3955,7 +4165,10 @@
         },
         "diamond_sword": {
             "durability": 1561,
-            "image": "diamondsword.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "diamondsword.png"
+            },
             "itemID": 276,
             "name": "Diamond Sword",
             "obtaining": [
@@ -4122,7 +4335,10 @@
             "blockID": 175,
             "damageValues": {
                 "0": {
-                    "image": "sunflower.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "sunflower.png"
+                    },
                     "name": "Sunflower",
                     "obtaining": [
                         {
@@ -4171,7 +4387,10 @@
                 },
                 "2": {
                     "dropsSelf": [],
-                    "image": "doubletallgrass.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "doubletallgrass.png"
+                    },
                     "name": "Double Tallgrass",
                     "obtaining": [
                         {
@@ -4196,7 +4415,10 @@
                 },
                 "3": {
                     "dropsSelf": [],
-                    "image": "largefern.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "largefern.png"
+                    },
                     "name": "Large Fern",
                     "obtaining": [
                         {
@@ -4234,7 +4456,10 @@
                     ]
                 },
                 "4": {
-                    "image": "rosebush.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "rosebush.png"
+                    },
                     "name": "Rose Bush",
                     "obtaining": [
                         {
@@ -4259,7 +4484,10 @@
                     ]
                 },
                 "5": {
-                    "image": "peony.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "peony.png"
+                    },
                     "name": "Peony",
                     "obtaining": [
                         {
@@ -4284,7 +4512,10 @@
                     ]
                 }
             },
-            "image": "lilac.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "lilac.png"
+            },
             "itemID": 175,
             "name": "Large Flower"
         },
@@ -4367,7 +4598,10 @@
             "name": "Double Wooden Slab"
         },
         "dragon_breath": {
-            "image": "dragonbreath.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "dragonbreath.png"
+            },
             "itemID": 437,
             "name": "Dragon's Breath",
             "obtaining": [
@@ -4417,7 +4651,10 @@
                     ]
                 },
                 "1": {
-                    "image": "rosered.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "rosered.png"
+                    },
                     "name": "Rose Red",
                     "obtaining": [
                         {
@@ -4457,7 +4694,10 @@
                     ]
                 },
                 "10": {
-                    "image": "limedye.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "limedye.png"
+                    },
                     "name": "Lime Dye",
                     "obtaining": [
                         {
@@ -4477,7 +4717,10 @@
                     ]
                 },
                 "11": {
-                    "image": "dandelionyellow.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "dandelionyellow.png"
+                    },
                     "name": "Dandelion Yellow",
                     "obtaining": [
                         {
@@ -4499,7 +4742,10 @@
                     ]
                 },
                 "12": {
-                    "image": "lightbluedye.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "lightbluedye.png"
+                    },
                     "name": "Light Blue Dye",
                     "obtaining": [
                         {
@@ -4528,7 +4774,10 @@
                     ]
                 },
                 "13": {
-                    "image": "magentadye.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "magentadye.png"
+                    },
                     "name": "Magenta Dye",
                     "obtaining": [
                         {
@@ -4607,7 +4856,10 @@
                     ]
                 },
                 "14": {
-                    "image": "orangedye.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "orangedye.png"
+                    },
                     "name": "Orange Dye",
                     "obtaining": [
                         {
@@ -4636,7 +4888,10 @@
                     ]
                 },
                 "15": {
-                    "image": "bonemeal.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "bonemeal.png"
+                    },
                     "name": "Bone Meal",
                     "obtaining": [
                         {
@@ -4656,7 +4911,10 @@
                     ]
                 },
                 "2": {
-                    "image": "cactusgreen.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "cactusgreen.png"
+                    },
                     "name": "Cactus Green",
                     "obtaining": [
                         {
@@ -4666,7 +4924,10 @@
                     ]
                 },
                 "3": {
-                    "image": "cocoabeans.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "cocoabeans.png"
+                    },
                     "name": "Cocoa Beans",
                     "obtaining": [
                         {
@@ -4678,7 +4939,10 @@
                     "whenPlaced": "minecraft:cocoa"
                 },
                 "4": {
-                    "image": "lapislazuli.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "lapislazuli.png"
+                    },
                     "name": "Lapis Lazuli",
                     "obtaining": [
                         {
@@ -4722,7 +4986,10 @@
                     ]
                 },
                 "5": {
-                    "image": "purpledye.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "purpledye.png"
+                    },
                     "name": "Purple Dye",
                     "obtaining": [
                         {
@@ -4742,7 +5009,10 @@
                     ]
                 },
                 "6": {
-                    "image": "cyandye.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "cyandye.png"
+                    },
                     "name": "Cyan Dye",
                     "obtaining": [
                         {
@@ -4762,7 +5032,10 @@
                     ]
                 },
                 "7": {
-                    "image": "lightgraydye.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "lightgraydye.png"
+                    },
                     "name": "Light Gray Dye",
                     "obtaining": [
                         {
@@ -4813,7 +5086,10 @@
                     ]
                 },
                 "8": {
-                    "image": "graydye.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "graydye.png"
+                    },
                     "name": "Gray Dye",
                     "obtaining": [
                         {
@@ -4833,7 +5109,10 @@
                     ]
                 },
                 "9": {
-                    "image": "pinkdye.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "pinkdye.png"
+                    },
                     "name": "Pink Dye",
                     "obtaining": [
                         {
@@ -4872,12 +5151,18 @@
                     ]
                 }
             },
-            "image": "inksac.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "inksac.png"
+            },
             "itemID": 351,
             "name": "Dye"
         },
         "egg": {
-            "image": "egg.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "egg.png"
+            },
             "itemID": 344,
             "name": "Egg",
             "obtaining": [
@@ -4891,10 +5176,16 @@
         },
         "elytra": {
             "damagedImages": {
-                "431": "brokenelytra.png"
+                "431": {
+                    "nearestNeighbor": true,
+                    "prerendered": "brokenelytra.png"
+                }
             },
             "durability": 432,
-            "image": "elytra.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "elytra.png"
+            },
             "itemID": 443,
             "name": "Elytra",
             "obtaining": [
@@ -4906,7 +5197,10 @@
             "stackable": false
         },
         "emerald": {
-            "image": "emerald.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "emerald.png"
+            },
             "itemID": 388,
             "name": "Emerald",
             "obtaining": [
@@ -5355,7 +5649,10 @@
             ]
         },
         "enchanted_book": {
-            "image": "enchantedbook.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "enchantedbook.png"
+            },
             "itemID": 403,
             "name": "Enchanted Book",
             "obtaining": [
@@ -5450,7 +5747,10 @@
             ]
         },
         "end_crystal": {
-            "image": "endcrystal.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "endcrystal.png"
+            },
             "itemID": 426,
             "name": "End Crystal",
             "obtaining": [
@@ -5590,7 +5890,10 @@
             "solid": false
         },
         "ender_eye": {
-            "image": "eyeofender.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "eyeofender.png"
+            },
             "itemID": 381,
             "name": "Eye of Ender",
             "obtaining": [
@@ -5604,7 +5907,10 @@
             ]
         },
         "ender_pearl": {
-            "image": "enderpearl.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "enderpearl.png"
+            },
             "itemID": 368,
             "name": "Ender Pearl",
             "obtaining": [
@@ -5630,7 +5936,10 @@
             "stackable": 16
         },
         "experience_bottle": {
-            "image": "xpbottle.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "xpbottle.png"
+            },
             "itemID": 384,
             "name": "Bottle o'Enchanting",
             "obtaining": [
@@ -5652,7 +5961,10 @@
             "solid": false
         },
         "feather": {
-            "image": "feather.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "feather.png"
+            },
             "itemID": 288,
             "name": "Feather"
         },
@@ -5733,7 +6045,10 @@
             ]
         },
         "fermented_spider_eye": {
-            "image": "fermentedspidereye.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "fermentedspidereye.png"
+            },
             "itemID": 376,
             "name": "Fermented Spider Eye",
             "obtaining": [
@@ -5748,7 +6063,10 @@
             ]
         },
         "filled_map": {
-            "image": "map.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "map.png"
+            },
             "itemID": 358,
             "name": "Map",
             "obtaining": [
@@ -5760,7 +6078,10 @@
         },
         "fire": {
             "blockID": 51,
-            "image": "fire.gif",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "fire.gif"
+            },
             "name": "Fire",
             "obtaining": [
                 {
@@ -5777,7 +6098,10 @@
             "solid": false
         },
         "fire_charge": {
-            "image": "firecharge.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "firecharge.png"
+            },
             "itemID": 385,
             "name": "Fire Charge",
             "obtaining": [
@@ -5793,7 +6117,10 @@
             ]
         },
         "firework_charge": {
-            "image": "fireworkstar.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "fireworkstar.png"
+            },
             "itemID": 402,
             "name": "Firework Star",
             "obtaining": [
@@ -5855,7 +6182,10 @@
             ]
         },
         "fireworks": {
-            "image": "fireworkrocket.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "fireworkrocket.png"
+            },
             "itemID": 401,
             "name": "Firework Rocket",
             "obtaining": [
@@ -5902,7 +6232,10 @@
                     ]
                 },
                 "1": {
-                    "image": "rawsalmon.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "rawsalmon.png"
+                    },
                     "name": "Raw Salmon",
                     "obtaining": [
                         {
@@ -5925,7 +6258,10 @@
                     ]
                 },
                 "2": {
-                    "image": "clownfish.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "clownfish.png"
+                    },
                     "name": "Clownfish",
                     "obtaining": [
                         {
@@ -5942,7 +6278,10 @@
                     ]
                 },
                 "3": {
-                    "image": "pufferfish.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "pufferfish.png"
+                    },
                     "name": "Pufferfish",
                     "obtaining": [
                         {
@@ -5959,19 +6298,28 @@
                     ]
                 }
             },
-            "image": "rawfish.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rawfish.png"
+            },
             "itemID": 349,
             "name": "Raw Fish"
         },
         "fishing_rod": {
             "durability": 64,
-            "image": "fishingrod.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "fishingrod.png"
+            },
             "itemID": 346,
             "name": "Fishing Rod",
             "stackable": false
         },
         "flint": {
-            "image": "flint.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "flint.png"
+            },
             "itemID": 318,
             "name": "Flint",
             "obtaining": [
@@ -5998,7 +6346,10 @@
         },
         "flint_and_steel": {
             "durability": 64,
-            "image": "flintandsteel.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "flintandsteel.png"
+            },
             "itemID": 259,
             "name": "Flint and Steel",
             "obtaining": [
@@ -6018,7 +6369,10 @@
         },
         "flower_pot": {
             "blockID": 140,
-            "image": "flowerpot.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "flowerpot.png"
+            },
             "itemID": 390,
             "name": "Flower Pot",
             "obtaining": [
@@ -6049,13 +6403,19 @@
         },
         "flowing_lava": {
             "blockID": 10,
-            "image": "lava.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "lava.png"
+            },
             "name": "Flowing Lava",
             "solid": false
         },
         "flowing_water": {
             "blockID": 8,
-            "image": "water.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "water.png"
+            },
             "name": "Flowing Water",
             "solid": false
         },
@@ -6105,13 +6465,19 @@
             ]
         },
         "furnace_minecart": {
-            "image": "minecartwithfurnace.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "minecartwithfurnace.png"
+            },
             "itemID": 343,
             "name": "Minecart with Furnace",
             "stackable": false
         },
         "ghast_tear": {
-            "image": "ghasttear.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ghasttear.png"
+            },
             "itemID": 370,
             "name": "Ghast Tear",
             "obtaining": [
@@ -6131,7 +6497,10 @@
             "solid": false
         },
         "glass_bottle": {
-            "image": "bottle.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "bottle.png"
+            },
             "itemID": 374,
             "name": "Glass Bottle",
             "obtaining": [
@@ -6164,7 +6533,10 @@
             "dropsSelf": {
                 "silkTouch": true
             },
-            "image": "glasspane.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "glasspane.png"
+            },
             "itemID": 102,
             "name": "Glass Pane",
             "obtaining": [
@@ -6228,7 +6600,10 @@
             "solid": false
         },
         "glowstone_dust": {
-            "image": "glowstonedust.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "glowstonedust.png"
+            },
             "itemID": 348,
             "name": "Glowstone Dust"
         },
@@ -6239,7 +6614,10 @@
             "name": "Block of Gold"
         },
         "gold_ingot": {
-            "image": "goldingot.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldingot.png"
+            },
             "itemID": 266,
             "name": "Gold Ingot",
             "obtaining": [
@@ -6320,7 +6698,10 @@
             ]
         },
         "gold_nugget": {
-            "image": "goldnugget.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldnugget.png"
+            },
             "itemID": 371,
             "name": "Gold Nugget",
             "obtaining": [
@@ -6402,39 +6783,57 @@
                     "name": "Notch Apple"
                 }
             },
-            "image": "goldapple.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldapple.png"
+            },
             "itemID": 322,
             "name": "Golden Apple"
         },
         "golden_axe": {
             "durability": 32,
-            "image": "goldaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldaxe.png"
+            },
             "itemID": 286,
             "name": "Golden Axe",
             "stackable": false
         },
         "golden_boots": {
             "durability": 91,
-            "image": "goldboots.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldboots.png"
+            },
             "itemID": 317,
             "name": "Golden Boots",
             "stackable": false
         },
         "golden_carrot": {
-            "image": "goldencarrot.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldencarrot.png"
+            },
             "itemID": 396,
             "name": "Golden Carrot"
         },
         "golden_chestplate": {
             "durability": 112,
-            "image": "goldchestplate.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldchestplate.png"
+            },
             "itemID": 315,
             "name": "Golden Chestplate",
             "stackable": false
         },
         "golden_helmet": {
             "durability": 77,
-            "image": "goldhelmet.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldhelmet.png"
+            },
             "itemID": 314,
             "name": "Golden Helmet",
             "obtaining": [
@@ -6475,13 +6874,19 @@
         },
         "golden_hoe": {
             "durability": 32,
-            "image": "goldhoe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldhoe.png"
+            },
             "itemID": 294,
             "name": "Gold Hoe",
             "stackable": false
         },
         "golden_horse_armor": {
-            "image": "goldenhorsearmor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldenhorsearmor.png"
+            },
             "itemID": 418,
             "name": "Golden Horse Armor",
             "obtaining": [
@@ -6518,14 +6923,20 @@
         },
         "golden_leggings": {
             "durability": 105,
-            "image": "goldleggings.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldleggings.png"
+            },
             "itemID": 316,
             "name": "Golden Leggings",
             "stackable": false
         },
         "golden_pickaxe": {
             "durability": 32,
-            "image": "goldpickaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldpickaxe.png"
+            },
             "itemID": 285,
             "name": "Golden Pickaxe",
             "obtaining": [
@@ -6548,7 +6959,10 @@
         },
         "golden_rail": {
             "blockID": 27,
-            "image": "poweredrail.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "poweredrail.png"
+            },
             "itemID": 27,
             "name": "Powered Rail",
             "obtaining": [
@@ -6572,7 +6986,10 @@
         },
         "golden_shovel": {
             "durability": 32,
-            "image": "goldshovel.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldshovel.png"
+            },
             "itemID": 284,
             "name": "Golden Shovel",
             "obtaining": [
@@ -6595,7 +7012,10 @@
         },
         "golden_sword": {
             "durability": 32,
-            "image": "goldsword.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldsword.png"
+            },
             "itemID": 283,
             "name": "Golden Sword",
             "stackable": false
@@ -6668,7 +7088,10 @@
             ]
         },
         "gunpowder": {
-            "image": "gunpowder.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "gunpowder.png"
+            },
             "itemID": 289,
             "name": "Gunpowder",
             "obtaining": [
@@ -6755,7 +7178,10 @@
         "hopper": {
             "blockID": 154,
             "dropsSelf": "pickaxe",
-            "image": "hopper.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "hopper.png"
+            },
             "itemID": 154,
             "name": "Hopper",
             "obtaining": [
@@ -6781,7 +7207,10 @@
             "solid": false
         },
         "hopper_minecart": {
-            "image": "minecartwithhopper.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "minecartwithhopper.png"
+            },
             "itemID": 408,
             "name": "Minecart with Hopper",
             "obtaining": [
@@ -6841,7 +7270,10 @@
         },
         "iron_axe": {
             "durability": 250,
-            "image": "ironaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironaxe.png"
+            },
             "itemID": 258,
             "name": "Iron Axe",
             "stackable": false
@@ -6849,7 +7281,10 @@
         "iron_bars": {
             "blockID": 101,
             "dropsSelf": "pickaxe",
-            "image": "ironbars.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironbars.png"
+            },
             "itemID": 101,
             "name": "Iron Bars",
             "obtaining": [
@@ -6918,7 +7353,10 @@
         },
         "iron_boots": {
             "durability": 195,
-            "image": "ironboots.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironboots.png"
+            },
             "itemID": 309,
             "name": "Iron Boots",
             "obtaining": [
@@ -6972,7 +7410,10 @@
         },
         "iron_chestplate": {
             "durability": 240,
-            "image": "ironchestplate.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironchestplate.png"
+            },
             "itemID": 307,
             "name": "Iron Chestplate",
             "obtaining": [
@@ -7034,7 +7475,10 @@
         },
         "iron_door": {
             "blockID": 71,
-            "image": "irondoor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "irondoor.png"
+            },
             "itemID": 330,
             "name": "Iron Door",
             "obtaining": [
@@ -7061,7 +7505,10 @@
         },
         "iron_helmet": {
             "durability": 165,
-            "image": "ironhelmet.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironhelmet.png"
+            },
             "itemID": 306,
             "name": "Iron Helmet",
             "obtaining": [
@@ -7122,7 +7569,10 @@
         },
         "iron_hoe": {
             "durability": 250,
-            "image": "ironhoe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironhoe.png"
+            },
             "itemID": 292,
             "name": "Iron Hoe",
             "obtaining": [
@@ -7144,7 +7594,10 @@
             "stackable": false
         },
         "iron_horse_armor": {
-            "image": "ironhorsearmor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironhorsearmor.png"
+            },
             "itemID": 417,
             "name": "Iron Horse Armor",
             "obtaining": [
@@ -7184,7 +7637,10 @@
             "stackable": false
         },
         "iron_ingot": {
-            "image": "ironingot.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironingot.png"
+            },
             "itemID": 265,
             "name": "Iron Ingot",
             "obtaining": [
@@ -7261,7 +7717,10 @@
         },
         "iron_leggings": {
             "durability": 225,
-            "image": "ironleggings.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironleggings.png"
+            },
             "itemID": 308,
             "name": "Iron Leggings",
             "obtaining": [
@@ -7321,7 +7780,10 @@
         },
         "iron_pickaxe": {
             "durability": 250,
-            "image": "ironpickaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironpickaxe.png"
+            },
             "itemID": 257,
             "name": "Iron Pickaxe",
             "obtaining": [
@@ -7372,7 +7834,10 @@
         },
         "iron_shovel": {
             "durability": 250,
-            "image": "ironshovel.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironshovel.png"
+            },
             "itemID": 256,
             "name": "Iron Shovel",
             "obtaining": [
@@ -7412,7 +7877,10 @@
         },
         "iron_sword": {
             "durability": 250,
-            "image": "ironsword.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironsword.png"
+            },
             "itemID": 267,
             "name": "Iron Sword",
             "obtaining": [
@@ -7484,7 +7952,10 @@
             "solid": false
         },
         "item_frame": {
-            "image": "itemframe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "itemframe.png"
+            },
             "itemID": 389,
             "name": "Item Frame"
         },
@@ -7495,7 +7966,10 @@
             "name": "Jukebox"
         },
         "jungle_boat": {
-            "image": "jungleboat.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "jungleboat.png"
+            },
             "itemID": 446,
             "name": "Jungle Boat",
             "obtaining": [
@@ -7539,7 +8013,10 @@
         },
         "jungle_door": {
             "blockID": 195,
-            "image": "jungledoor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "jungledoor.png"
+            },
             "itemID": 429,
             "name": "Jungle Door",
             "obtaining": [
@@ -7648,7 +8125,10 @@
         },
         "ladder": {
             "blockID": 65,
-            "image": "ladder.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ladder.png"
+            },
             "itemID": 65,
             "name": "Ladder",
             "obtaining": [
@@ -7762,23 +8242,35 @@
         },
         "lava": {
             "blockID": 11,
-            "image": "lava.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "lava.png"
+            },
             "name": "Still Lava",
             "solid": false
         },
         "lava_bucket": {
-            "image": "lavabucket.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "lavabucket.png"
+            },
             "itemID": 327,
             "name": "Lava Bucket",
             "stackable": false
         },
         "lead": {
-            "image": "lead.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "lead.png"
+            },
             "itemID": 420,
             "name": "Lead"
         },
         "leather": {
-            "image": "leather.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "leather.png"
+            },
             "itemID": 334,
             "name": "Leather",
             "obtaining": [
@@ -7843,7 +8335,10 @@
         },
         "leather_boots": {
             "durability": 65,
-            "image": "leatherboots.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "leatherboots.png"
+            },
             "itemID": 301,
             "name": "Leather Boots",
             "obtaining": [
@@ -7890,14 +8385,20 @@
         },
         "leather_chestplate": {
             "durability": 80,
-            "image": "leatherchestplate.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "leatherchestplate.png"
+            },
             "itemID": 299,
             "name": "Leather Tunic",
             "stackable": false
         },
         "leather_helmet": {
             "durability": 55,
-            "image": "leatherhelmet.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "leatherhelmet.png"
+            },
             "itemID": 298,
             "name": "Leather Cap",
             "obtaining": [
@@ -7938,7 +8439,10 @@
         },
         "leather_leggings": {
             "durability": 75,
-            "image": "leatherleggings.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "leatherleggings.png"
+            },
             "itemID": 300,
             "name": "Leather Pants",
             "obtaining": [
@@ -8169,7 +8673,10 @@
         },
         "lever": {
             "blockID": 69,
-            "image": "lever.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "lever.png"
+            },
             "itemID": 69,
             "name": "Lever",
             "obtaining": [
@@ -8242,7 +8749,10 @@
                         "name": "Lingering Uncraftable Potion"
                     },
                     "fire_resistance": {
-                        "image": "lingeringfireresistancepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringfireresistancepotion.png"
+                        },
                         "name": "Lingering Potion of Fire Resistance",
                         "obtaining": [
                             {
@@ -8259,7 +8769,10 @@
                         ]
                     },
                     "harming": {
-                        "image": "lingeringdamagepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringdamagepotion.png"
+                        },
                         "name": "Lingering Potion of Harming",
                         "obtaining": [
                             {
@@ -8276,7 +8789,10 @@
                         ]
                     },
                     "healing": {
-                        "image": "lingeringhealthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringhealthpotion.png"
+                        },
                         "name": "Lingering Potion of Healing",
                         "obtaining": [
                             {
@@ -8293,7 +8809,10 @@
                         ]
                     },
                     "invisibility": {
-                        "image": "lingeringinvisibilitypotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringinvisibilitypotion.png"
+                        },
                         "name": "Lingering Potion of Invisibility",
                         "obtaining": [
                             {
@@ -8310,7 +8829,10 @@
                         ]
                     },
                     "leaping": {
-                        "image": "lingeringjumppotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringjumppotion.png"
+                        },
                         "name": "Lingering Potion of Leaping",
                         "obtaining": [
                             {
@@ -8327,7 +8849,10 @@
                         ]
                     },
                     "long_fire_resistance": {
-                        "image": "lingeringfireresistancepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringfireresistancepotion.png"
+                        },
                         "name": "Lingering Potion of Fire Resistance, extended",
                         "obtaining": [
                             {
@@ -8344,7 +8869,10 @@
                         ]
                     },
                     "long_invisibility": {
-                        "image": "lingeringinvisibilitypotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringinvisibilitypotion.png"
+                        },
                         "name": "Lingering Potion of Invisibility, extended",
                         "obtaining": [
                             {
@@ -8361,7 +8889,10 @@
                         ]
                     },
                     "long_leaping": {
-                        "image": "lingeringjumppotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringjumppotion.png"
+                        },
                         "name": "Lingering Potion of Leaping, extended",
                         "obtaining": [
                             {
@@ -8378,7 +8909,10 @@
                         ]
                     },
                     "long_night_vision": {
-                        "image": "lingeringnightvisionpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringnightvisionpotion.png"
+                        },
                         "name": "Lingering Potion of Night Vision, extended",
                         "obtaining": [
                             {
@@ -8395,7 +8929,10 @@
                         ]
                     },
                     "long_poison": {
-                        "image": "lingeringpoisonpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringpoisonpotion.png"
+                        },
                         "name": "Lingering Potion of Poison, extended",
                         "obtaining": [
                             {
@@ -8412,7 +8949,10 @@
                         ]
                     },
                     "long_regeneration": {
-                        "image": "lingeringregenpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringregenpotion.png"
+                        },
                         "name": "Lingering Potion of Regeneration, extended",
                         "obtaining": [
                             {
@@ -8429,7 +8969,10 @@
                         ]
                     },
                     "long_slowness": {
-                        "image": "lingeringslownesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringslownesspotion.png"
+                        },
                         "name": "Lingering Potion of Slowness, extended",
                         "obtaining": [
                             {
@@ -8446,7 +8989,10 @@
                         ]
                     },
                     "long_strength": {
-                        "image": "lingeringstrengthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringstrengthpotion.png"
+                        },
                         "name": "Lingering Potion of Strength, extended",
                         "obtaining": [
                             {
@@ -8463,7 +9009,10 @@
                         ]
                     },
                     "long_swiftness": {
-                        "image": "lingeringspeedpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringspeedpotion.png"
+                        },
                         "name": "Lingering Potion of Swiftness, extended",
                         "obtaining": [
                             {
@@ -8480,7 +9029,10 @@
                         ]
                     },
                     "long_water_breathing": {
-                        "image": "lingeringwaterbreathingpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringwaterbreathingpotion.png"
+                        },
                         "name": "Lingering Potion of Water Breathing, extended",
                         "obtaining": [
                             {
@@ -8497,7 +9049,10 @@
                         ]
                     },
                     "long_weakness": {
-                        "image": "lingeringweaknesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringweaknesspotion.png"
+                        },
                         "name": "Lingering Potion of Weakness, extended",
                         "obtaining": [
                             {
@@ -8514,7 +9069,10 @@
                         ]
                     },
                     "luck": {
-                        "image": "lingeringluckpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringluckpotion.png"
+                        },
                         "name": "Lingering Potion of Luck"
                     },
                     "mundane": {
@@ -8534,7 +9092,10 @@
                         ]
                     },
                     "night_vision": {
-                        "image": "lingeringnightvisionpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringnightvisionpotion.png"
+                        },
                         "name": "Lingering Potion of Night Vision",
                         "obtaining": [
                             {
@@ -8551,7 +9112,10 @@
                         ]
                     },
                     "poison": {
-                        "image": "lingeringpoisonpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringpoisonpotion.png"
+                        },
                         "name": "Lingering Potion of Poison",
                         "obtaining": [
                             {
@@ -8568,7 +9132,10 @@
                         ]
                     },
                     "regeneration": {
-                        "image": "lingeringregenpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringregenpotion.png"
+                        },
                         "name": "Lingering Potion of Regeneration",
                         "obtaining": [
                             {
@@ -8585,7 +9152,10 @@
                         ]
                     },
                     "slowness": {
-                        "image": "lingeringslownesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringslownesspotion.png"
+                        },
                         "name": "Lingering Potion of Slowness",
                         "obtaining": [
                             {
@@ -8602,7 +9172,10 @@
                         ]
                     },
                     "strength": {
-                        "image": "lingeringstrengthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringstrengthpotion.png"
+                        },
                         "name": "Lingering Potion of Strength",
                         "obtaining": [
                             {
@@ -8619,7 +9192,10 @@
                         ]
                     },
                     "strong_harming": {
-                        "image": "lingeringdamagepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringdamagepotion.png"
+                        },
                         "name": "Lingering Potion of Harming \u2161",
                         "obtaining": [
                             {
@@ -8636,7 +9212,10 @@
                         ]
                     },
                     "strong_healing": {
-                        "image": "lingeringhealthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringhealthpotion.png"
+                        },
                         "name": "Lingering Potion of Healing \u2161",
                         "obtaining": [
                             {
@@ -8653,7 +9232,10 @@
                         ]
                     },
                     "strong_leaping": {
-                        "image": "lingeringjumppotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringjumppotion.png"
+                        },
                         "name": "Lingering Potion of Leaping \u2161",
                         "obtaining": [
                             {
@@ -8670,7 +9252,10 @@
                         ]
                     },
                     "strong_poison": {
-                        "image": "lingeringpoisonpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringpoisonpotion.png"
+                        },
                         "name": "Lingering Potion of Poison \u2161",
                         "obtaining": [
                             {
@@ -8687,7 +9272,10 @@
                         ]
                     },
                     "strong_regeneration": {
-                        "image": "lingeringregenpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringregenpotion.png"
+                        },
                         "name": "Lingering Potion of Regeneration \u2161",
                         "obtaining": [
                             {
@@ -8704,7 +9292,10 @@
                         ]
                     },
                     "strong_strength": {
-                        "image": "lingeringstrengthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringstrengthpotion.png"
+                        },
                         "name": "Lingering Potion of Strength \u2161",
                         "obtaining": [
                             {
@@ -8721,7 +9312,10 @@
                         ]
                     },
                     "strong_swiftness": {
-                        "image": "lingeringspeedpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringspeedpotion.png"
+                        },
                         "name": "Lingering Potion of Swiftness \u2161",
                         "obtaining": [
                             {
@@ -8738,7 +9332,10 @@
                         ]
                     },
                     "swiftness": {
-                        "image": "lingeringspeedpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringspeedpotion.png"
+                        },
                         "name": "Lingering Potion of Swiftness",
                         "obtaining": [
                             {
@@ -8787,7 +9384,10 @@
                         ]
                     },
                     "water_breathing": {
-                        "image": "lingeringwaterbreathingpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringwaterbreathingpotion.png"
+                        },
                         "name": "Lingering Potion of Water Breathing",
                         "obtaining": [
                             {
@@ -8804,7 +9404,10 @@
                         ]
                     },
                     "weakness": {
-                        "image": "lingeringweaknesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "lingeringweaknesspotion.png"
+                        },
                         "name": "Lingering Potion of Weakness",
                         "obtaining": [
                             {
@@ -8822,7 +9425,10 @@
                     }
                 }
             },
-            "image": "lingeringpotion.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "lingeringpotion.png"
+            },
             "itemID": 441,
             "name": "Lingering Potion",
             "stackable": false
@@ -9145,7 +9751,10 @@
             ]
         },
         "magma_cream": {
-            "image": "magmacream.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "magmacream.png"
+            },
             "itemID": 378,
             "name": "Magma Cream",
             "obtaining": [
@@ -9173,7 +9782,10 @@
             ]
         },
         "map": {
-            "image": "emptymap.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "emptymap.png"
+            },
             "itemID": 395,
             "name": "Empty Map",
             "obtaining": [
@@ -9194,7 +9806,10 @@
             ]
         },
         "melon": {
-            "image": "melon.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "melon.png"
+            },
             "itemID": 360,
             "name": "Melon"
         },
@@ -9205,7 +9820,10 @@
             "name": "Melon"
         },
         "melon_seeds": {
-            "image": "melonseeds.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "melonseeds.png"
+            },
             "itemID": 362,
             "name": "Melon Seeds",
             "obtaining": [
@@ -9231,11 +9849,17 @@
         },
         "melon_stem": {
             "blockID": 105,
-            "image": "melonseeds.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "melonseeds.png"
+            },
             "name": "Melon Stem"
         },
         "milk_bucket": {
-            "image": "milkbucket.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "milkbucket.png"
+            },
             "itemID": 335,
             "name": "Milk",
             "obtaining": [
@@ -9253,7 +9877,10 @@
             "stackable": false
         },
         "minecart": {
-            "image": "minecart.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "minecart.png"
+            },
             "itemID": 328,
             "name": "Minecart",
             "obtaining": [
@@ -9479,13 +10106,19 @@
             "name": "Moss Stone"
         },
         "mushroom_stew": {
-            "image": "mushroomstew.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "mushroomstew.png"
+            },
             "itemID": 282,
             "name": "Mushroom Stew",
             "stackable": false
         },
         "mutton": {
-            "image": "rawmutton.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rawmutton.png"
+            },
             "itemID": 423,
             "name": "Raw Mutton",
             "obtaining": [
@@ -9505,7 +10138,10 @@
             "name": "Mycelium"
         },
         "name_tag": {
-            "image": "nametag.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "nametag.png"
+            },
             "itemID": 421,
             "name": "Name Tag",
             "obtaining": [
@@ -9569,7 +10205,10 @@
         },
         "nether_star": {
             "alwaysGlow": true,
-            "image": "netherstar.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "netherstar.png"
+            },
             "itemID": 399,
             "name": "Nether Star",
             "obtaining": [
@@ -9582,7 +10221,10 @@
         "nether_wart": {
             "blockID": 115,
             "dropsSelf": 3,
-            "image": "netherwart.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "netherwart.png"
+            },
             "itemID": 372,
             "name": "Nether Wart",
             "obtaining": [
@@ -9623,7 +10265,10 @@
             "solid": false
         },
         "netherbrick": {
-            "image": "netherbrick.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "netherbrick.png"
+            },
             "itemID": 405,
             "name": "Nether Brick"
         },
@@ -9742,7 +10387,10 @@
             "name": "Packed Ice"
         },
         "painting": {
-            "image": "painting.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "painting.png"
+            },
             "itemID": 321,
             "name": "Painting",
             "obtaining": [
@@ -9767,7 +10415,10 @@
             ]
         },
         "paper": {
-            "image": "paper.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "paper.png"
+            },
             "itemID": 339,
             "name": "Paper",
             "obtaining": [
@@ -9802,7 +10453,10 @@
         },
         "piston_extension": {
             "blockID": 36,
-            "image": "pistonextension.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "pistonextension.png"
+            },
             "name": "Extending Piston Head"
         },
         "piston_head": {
@@ -10004,12 +10658,18 @@
             "name": "Wooden Planks"
         },
         "poisonous_potato": {
-            "image": "poisonouspotato.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "poisonouspotato.png"
+            },
             "itemID": 394,
             "name": "Poisonous Potato"
         },
         "porkchop": {
-            "image": "rawporkchop.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rawporkchop.png"
+            },
             "itemID": 319,
             "name": "Raw Porkchop",
             "obtaining": [
@@ -10028,14 +10688,20 @@
             "name": "Nether Portal"
         },
         "potato": {
-            "image": "potato.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "potato.png"
+            },
             "itemID": 392,
             "name": "Potato",
             "whenPlaced": "minecraft:potatoes"
         },
         "potatoes": {
             "blockID": 142,
-            "image": "potato.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "potato.png"
+            },
             "name": "Potato Crops"
         },
         "potion": {
@@ -10058,7 +10724,10 @@
                         "name": "Uncraftable Potion"
                     },
                     "fire_resistance": {
-                        "image": "fireresistancepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "fireresistancepotion.png"
+                        },
                         "name": "Potion of Fire Resistance",
                         "obtaining": [
                             {
@@ -10077,7 +10746,10 @@
                         ]
                     },
                     "harming": {
-                        "image": "damagepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "damagepotion.png"
+                        },
                         "name": "Potion of Harming",
                         "obtaining": [
                             {
@@ -10107,7 +10779,10 @@
                         ]
                     },
                     "healing": {
-                        "image": "healthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "healthpotion.png"
+                        },
                         "name": "Potion of Healing",
                         "obtaining": [
                             {
@@ -10126,7 +10801,10 @@
                         ]
                     },
                     "invisibility": {
-                        "image": "invisibilitypotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "invisibilitypotion.png"
+                        },
                         "name": "Potion of Invisibility",
                         "obtaining": [
                             {
@@ -10140,7 +10818,10 @@
                         ]
                     },
                     "leaping": {
-                        "image": "jumppotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "jumppotion.png"
+                        },
                         "name": "Potion of Leaping",
                         "obtaining": [
                             {
@@ -10154,7 +10835,10 @@
                         ]
                     },
                     "long_fire_resistance": {
-                        "image": "fireresistancepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "fireresistancepotion.png"
+                        },
                         "name": "Potion of Fire Resistance, extended",
                         "obtaining": [
                             {
@@ -10168,7 +10852,10 @@
                         ]
                     },
                     "long_invisibility": {
-                        "image": "invisibilitypotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "invisibilitypotion.png"
+                        },
                         "name": "Potion of Invisibility, extended",
                         "obtaining": [
                             {
@@ -10190,7 +10877,10 @@
                         ]
                     },
                     "long_leaping": {
-                        "image": "jumppotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "jumppotion.png"
+                        },
                         "name": "Potion of Leaping, extended",
                         "obtaining": [
                             {
@@ -10204,7 +10894,10 @@
                         ]
                     },
                     "long_night_vision": {
-                        "image": "nightvisionpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "nightvisionpotion.png"
+                        },
                         "name": "Potion of Night Vision, extended",
                         "obtaining": [
                             {
@@ -10218,7 +10911,10 @@
                         ]
                     },
                     "long_poison": {
-                        "image": "poisonpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "poisonpotion.png"
+                        },
                         "name": "Potion of Poison, extended",
                         "obtaining": [
                             {
@@ -10232,7 +10928,10 @@
                         ]
                     },
                     "long_regeneration": {
-                        "image": "regenpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "regenpotion.png"
+                        },
                         "name": "Potion of Regeneration, extended",
                         "obtaining": [
                             {
@@ -10246,7 +10945,10 @@
                         ]
                     },
                     "long_slowness": {
-                        "image": "slownesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "slownesspotion.png"
+                        },
                         "name": "Potion of Slowness, extended",
                         "obtaining": [
                             {
@@ -10276,7 +10978,10 @@
                         ]
                     },
                     "long_strength": {
-                        "image": "strengthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "strengthpotion.png"
+                        },
                         "name": "Potion of Strength, extended",
                         "obtaining": [
                             {
@@ -10290,7 +10995,10 @@
                         ]
                     },
                     "long_swiftness": {
-                        "image": "speedpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "speedpotion.png"
+                        },
                         "name": "Potion of Swiftness, extended",
                         "obtaining": [
                             {
@@ -10304,7 +11012,10 @@
                         ]
                     },
                     "long_water_breathing": {
-                        "image": "waterbreathingpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "waterbreathingpotion.png"
+                        },
                         "name": "Potion of Water Breathing, extended",
                         "obtaining": [
                             {
@@ -10318,7 +11029,10 @@
                         ]
                     },
                     "long_weakness": {
-                        "image": "weaknesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "weaknesspotion.png"
+                        },
                         "name": "Potion of Weakness, extended",
                         "obtaining": [
                             {
@@ -10332,7 +11046,10 @@
                         ]
                     },
                     "luck": {
-                        "image": "luckpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "luckpotion.png"
+                        },
                         "name": "Potion of Luck"
                     },
                     "mundane": {
@@ -10357,7 +11074,10 @@
                         ]
                     },
                     "night_vision": {
-                        "image": "nightvisionpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "nightvisionpotion.png"
+                        },
                         "name": "Potion of Night Vision",
                         "obtaining": [
                             {
@@ -10371,7 +11091,10 @@
                         ]
                     },
                     "poison": {
-                        "image": "poisonpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "poisonpotion.png"
+                        },
                         "name": "Potion of Poison",
                         "obtaining": [
                             {
@@ -10385,7 +11108,10 @@
                         ]
                     },
                     "regeneration": {
-                        "image": "regenpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "regenpotion.png"
+                        },
                         "name": "Potion of Regeneration",
                         "obtaining": [
                             {
@@ -10399,7 +11125,10 @@
                         ]
                     },
                     "slowness": {
-                        "image": "slownesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "slownesspotion.png"
+                        },
                         "name": "Potion of Slowness",
                         "obtaining": [
                             {
@@ -10421,7 +11150,10 @@
                         ]
                     },
                     "strength": {
-                        "image": "strengthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "strengthpotion.png"
+                        },
                         "name": "Potion of Strength",
                         "obtaining": [
                             {
@@ -10435,7 +11167,10 @@
                         ]
                     },
                     "strong_harming": {
-                        "image": "damagepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "damagepotion.png"
+                        },
                         "name": "Potion of Harming \u2161",
                         "obtaining": [
                             {
@@ -10465,7 +11200,10 @@
                         ]
                     },
                     "strong_healing": {
-                        "image": "healthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "healthpotion.png"
+                        },
                         "name": "Potion of Healing \u2161",
                         "obtaining": [
                             {
@@ -10483,7 +11221,10 @@
                         ]
                     },
                     "strong_leaping": {
-                        "image": "jumppotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "jumppotion.png"
+                        },
                         "name": "Potion of Leaping \u2161",
                         "obtaining": [
                             {
@@ -10497,7 +11238,10 @@
                         ]
                     },
                     "strong_poison": {
-                        "image": "poisonpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "poisonpotion.png"
+                        },
                         "name": "Potion of Poison \u2161",
                         "obtaining": [
                             {
@@ -10511,7 +11255,10 @@
                         ]
                     },
                     "strong_regeneration": {
-                        "image": "regenpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "regenpotion.png"
+                        },
                         "name": "Potion of Regeneration \u2161",
                         "obtaining": [
                             {
@@ -10525,7 +11272,10 @@
                         ]
                     },
                     "strong_strength": {
-                        "image": "strengthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "strengthpotion.png"
+                        },
                         "name": "Potion of Strength \u2161",
                         "obtaining": [
                             {
@@ -10539,7 +11289,10 @@
                         ]
                     },
                     "strong_swiftness": {
-                        "image": "speedpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "speedpotion.png"
+                        },
                         "name": "Potion of Swiftness \u2161",
                         "obtaining": [
                             {
@@ -10553,7 +11306,10 @@
                         ]
                     },
                     "swiftness": {
-                        "image": "speedpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "speedpotion.png"
+                        },
                         "name": "Potion of Swiftness",
                         "obtaining": [
                             {
@@ -10610,7 +11366,10 @@
                         ]
                     },
                     "water_breathing": {
-                        "image": "waterbreathingpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "waterbreathingpotion.png"
+                        },
                         "name": "Potion of Water Breathing",
                         "obtaining": [
                             {
@@ -10632,7 +11391,10 @@
                         ]
                     },
                     "weakness": {
-                        "image": "weaknesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "weaknesspotion.png"
+                        },
                         "name": "Potion of Weakness",
                         "obtaining": [
                             {
@@ -10655,19 +11417,28 @@
                     }
                 }
             },
-            "image": "waterbottle.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "waterbottle.png"
+            },
             "itemID": 373,
             "name": "Potion",
             "stackable": false
         },
         "powered_comparator": {
             "blockID": 150,
-            "image": "comparator.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "comparator.png"
+            },
             "name": "Alternative Powered Comparator"
         },
         "powered_repeater": {
             "blockID": 94,
-            "image": "repeater.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "repeater.png"
+            },
             "name": "Powered Repeater",
             "obtaining": [
                 {
@@ -10697,7 +11468,10 @@
             "name": "Prismarine"
         },
         "prismarine_crystals": {
-            "image": "prismarinecrystal.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "prismarinecrystal.png"
+            },
             "itemID": 410,
             "name": "Prismarine Crystal",
             "obtaining": [
@@ -10718,7 +11492,10 @@
             ]
         },
         "prismarine_shard": {
-            "image": "prismarineshard.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "prismarineshard.png"
+            },
             "itemID": 409,
             "name": "Prismarine Shard",
             "obtaining": [
@@ -10772,7 +11549,10 @@
             ]
         },
         "pumpkin_pie": {
-            "image": "pumpkinpie.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "pumpkinpie.png"
+            },
             "itemID": 400,
             "name": "Pumpkin Pie",
             "obtaining": [
@@ -10795,7 +11575,10 @@
             ]
         },
         "pumpkin_seeds": {
-            "image": "pumpkinseeds.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "pumpkinseeds.png"
+            },
             "itemID": 361,
             "name": "Pumpkin Seeds",
             "obtaining": [
@@ -10823,7 +11606,10 @@
         },
         "pumpkin_stem": {
             "blockID": 104,
-            "image": "pumpkinseeds.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "pumpkinseeds.png"
+            },
             "name": "Pumpkin Stem",
             "solid": false
         },
@@ -10995,7 +11781,10 @@
             "solid": false
         },
         "quartz": {
-            "image": "netherquartz.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "netherquartz.png"
+            },
             "itemID": 406,
             "name": "Nether Quartz",
             "obtaining": [
@@ -11081,7 +11870,10 @@
             "solid": false
         },
         "rabbit": {
-            "image": "rawrabbit.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rawrabbit.png"
+            },
             "itemID": 411,
             "name": "Raw Rabbit",
             "obtaining": [
@@ -11094,7 +11886,10 @@
             ]
         },
         "rabbit_foot": {
-            "image": "rabbitfoot.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rabbitfoot.png"
+            },
             "itemID": 414,
             "name": "Rabbit's Foot",
             "obtaining": [
@@ -11107,7 +11902,10 @@
             ]
         },
         "rabbit_hide": {
-            "image": "rabbithide.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rabbithide.png"
+            },
             "itemID": 415,
             "name": "Rabbit Hide",
             "obtaining": [
@@ -11120,7 +11918,10 @@
             ]
         },
         "rabbit_stew": {
-            "image": "rabbitstew.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rabbitstew.png"
+            },
             "itemID": 413,
             "name": "Rabbit Stew",
             "obtaining": [
@@ -11143,12 +11944,18 @@
         },
         "rail": {
             "blockID": 66,
-            "image": "rail.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rail.png"
+            },
             "itemID": 66,
             "name": "Rail"
         },
         "record_11": {
-            "image": "musicdisc11.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdisc11.png"
+            },
             "itemID": 2266,
             "name": "Music Disc: C418 \u2014 11",
             "obtaining": [
@@ -11162,7 +11969,10 @@
             "stackable": false
         },
         "record_13": {
-            "image": "musicdisc13.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdisc13.png"
+            },
             "itemID": 2256,
             "name": "Music Disc: C418 \u2014 13",
             "obtaining": [
@@ -11180,7 +11990,10 @@
             "stackable": false
         },
         "record_blocks": {
-            "image": "musicdiscblocks.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdiscblocks.png"
+            },
             "itemID": 2258,
             "name": "Music Disc: C418 \u2014 blocks",
             "obtaining": [
@@ -11194,7 +12007,10 @@
             "stackable": false
         },
         "record_cat": {
-            "image": "musicdisccat.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdisccat.png"
+            },
             "itemID": 2257,
             "name": "Music Disc: C418 \u2014 cat",
             "obtaining": [
@@ -11212,7 +12028,10 @@
             "stackable": false
         },
         "record_chirp": {
-            "image": "musicdiscchirp.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdiscchirp.png"
+            },
             "itemID": 2259,
             "name": "Music Disc: C418 \u2014 chirp",
             "obtaining": [
@@ -11226,7 +12045,10 @@
             "stackable": false
         },
         "record_far": {
-            "image": "musicdiscfar.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdiscfar.png"
+            },
             "itemID": 2260,
             "name": "Music Disc: C418 \u2014 far",
             "obtaining": [
@@ -11240,7 +12062,10 @@
             "stackable": false
         },
         "record_mall": {
-            "image": "musicdiscmall.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdiscmall.png"
+            },
             "itemID": 2261,
             "name": "Music Disc: C418 \u2014 mall",
             "obtaining": [
@@ -11254,7 +12079,10 @@
             "stackable": false
         },
         "record_mellohi": {
-            "image": "musicdiscmellohi.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdiscmellohi.png"
+            },
             "itemID": 2262,
             "name": "Music Disc: C418 \u2014 mellohi",
             "obtaining": [
@@ -11268,7 +12096,10 @@
             "stackable": false
         },
         "record_stal": {
-            "image": "musicdiscstal.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdiscstal.png"
+            },
             "itemID": 2263,
             "name": "Music Disc: C418 \u2014 stal",
             "obtaining": [
@@ -11282,7 +12113,10 @@
             "stackable": false
         },
         "record_strad": {
-            "image": "musicdiscstrad.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdiscstrad.png"
+            },
             "itemID": 2264,
             "name": "Music Disc: C418 \u2014 strad",
             "obtaining": [
@@ -11296,7 +12130,10 @@
             "stackable": false
         },
         "record_wait": {
-            "image": "musicdiscwait.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdiscwait.png"
+            },
             "itemID": 2267,
             "name": "Music Disc: C418 \u2014 wait",
             "obtaining": [
@@ -11310,7 +12147,10 @@
             "stackable": false
         },
         "record_ward": {
-            "image": "musicdiscward.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "musicdiscward.png"
+            },
             "itemID": 2265,
             "name": "Music Disc: C418 \u2014 ward",
             "obtaining": [
@@ -11327,7 +12167,10 @@
             "blockID": 38,
             "damageValues": {
                 "0": {
-                    "image": "poppy.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "poppy.png"
+                    },
                     "name": "Poppy",
                     "obtaining": [
                         {
@@ -11352,7 +12195,10 @@
                     ]
                 },
                 "1": {
-                    "image": "blueorchid.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "blueorchid.png"
+                    },
                     "name": "Blue Orchid",
                     "obtaining": [
                         {
@@ -11375,7 +12221,10 @@
                     ]
                 },
                 "2": {
-                    "image": "allium.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "allium.png"
+                    },
                     "name": "Allium",
                     "obtaining": [
                         {
@@ -11397,7 +12246,10 @@
                     ]
                 },
                 "3": {
-                    "image": "azurebluet.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "azurebluet.png"
+                    },
                     "name": "Azure Bluet",
                     "obtaining": [
                         {
@@ -11422,7 +12274,10 @@
                     ]
                 },
                 "4": {
-                    "image": "redtulip.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "redtulip.png"
+                    },
                     "name": "Red Tulip",
                     "obtaining": [
                         {
@@ -11447,7 +12302,10 @@
                     ]
                 },
                 "5": {
-                    "image": "orangetulip.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "orangetulip.png"
+                    },
                     "name": "Orange Tulip",
                     "obtaining": [
                         {
@@ -11472,7 +12330,10 @@
                     ]
                 },
                 "6": {
-                    "image": "whitetulip.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "whitetulip.png"
+                    },
                     "name": "White Tulip",
                     "obtaining": [
                         {
@@ -11497,7 +12358,10 @@
                     ]
                 },
                 "7": {
-                    "image": "pinktulip.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "pinktulip.png"
+                    },
                     "name": "Pink Tulip",
                     "obtaining": [
                         {
@@ -11522,7 +12386,10 @@
                     ]
                 },
                 "8": {
-                    "image": "oxeyedaisy.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "oxeyedaisy.png"
+                    },
                     "name": "Oxeye Daisy",
                     "obtaining": [
                         {
@@ -11547,14 +12414,20 @@
                     ]
                 }
             },
-            "image": "rose.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rose.png"
+            },
             "itemID": 38,
             "name": "Flower",
             "solid": false
         },
         "red_mushroom": {
             "blockID": 40,
-            "image": "redmushroom.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "redmushroom.png"
+            },
             "itemID": 40,
             "name": "Red Mushroom",
             "obtaining": [
@@ -11765,7 +12638,10 @@
             ]
         },
         "redstone": {
-            "image": "redstonedust.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "redstonedust.png"
+            },
             "itemID": 331,
             "name": "Redstone Dust",
             "obtaining": [
@@ -11884,7 +12760,10 @@
         },
         "redstone_torch": {
             "blockID": 76,
-            "image": "redstonetorch.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "redstonetorch.png"
+            },
             "itemID": 76,
             "name": "Redstone Torch",
             "obtaining": [
@@ -11912,7 +12791,10 @@
         },
         "redstone_wire": {
             "blockID": 55,
-            "image": "redstonedust.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "redstonedust.png"
+            },
             "name": "Redstone Wire",
             "obtaining": [
                 {
@@ -11925,7 +12807,10 @@
         },
         "reeds": {
             "blockID": 83,
-            "image": "sugarcane.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "sugarcane.png"
+            },
             "itemID": 338,
             "name": "Sugar Cane",
             "obtaining": [
@@ -11941,7 +12826,10 @@
             "solid": false
         },
         "repeater": {
-            "image": "repeater.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "repeater.png"
+            },
             "itemID": 356,
             "name": "Repeater",
             "obtaining": [
@@ -11979,7 +12867,10 @@
             "name": "Repeating Command Block"
         },
         "rotten_flesh": {
-            "image": "rottenflesh.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "rottenflesh.png"
+            },
             "itemID": 367,
             "name": "Rotten Flesh",
             "obtaining": [
@@ -12026,7 +12917,10 @@
             ]
         },
         "saddle": {
-            "image": "saddle.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "saddle.png"
+            },
             "itemID": 329,
             "name": "Saddle",
             "obtaining": [
@@ -12165,27 +13059,45 @@
                     "name": "Oak Sapling"
                 },
                 "1": {
-                    "image": "sprucesapling.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "sprucesapling.png"
+                    },
                     "name": "Spruce Sapling"
                 },
                 "2": {
-                    "image": "birchsapling.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "birchsapling.png"
+                    },
                     "name": "Birch Sapling"
                 },
                 "3": {
-                    "image": "junglesapling.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "junglesapling.png"
+                    },
                     "name": "Jungle Sapling"
                 },
                 "4": {
-                    "image": "acaciasapling.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "acaciasapling.png"
+                    },
                     "name": "Acacia Sapling"
                 },
                 "5": {
-                    "image": "darkoaksapling.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "darkoaksapling.png"
+                    },
                     "name": "Dark Oak Sapling"
                 }
             },
-            "image": "oaksapling.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "oaksapling.png"
+            },
             "itemID": 6,
             "name": "Sapling",
             "solid": false
@@ -12198,7 +13110,10 @@
         },
         "shears": {
             "durability": 238,
-            "image": "shears.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "shears.png"
+            },
             "itemID": 359,
             "name": "Shears",
             "obtaining": [
@@ -12562,7 +13477,10 @@
             }
         },
         "sign": {
-            "image": "sign.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "sign.png"
+            },
             "itemID": 323,
             "name": "Sign",
             "stackable": 16,
@@ -12572,7 +13490,10 @@
             "blockID": 144,
             "damageValues": {
                 "0": {
-                    "image": "skeletonskull.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "skeletonskull.png"
+                    },
                     "name": "Skeleton Skull",
                     "obtaining": [
                         {
@@ -12602,7 +13523,10 @@
                     ]
                 },
                 "2": {
-                    "image": "zombiehead.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "zombiehead.png"
+                    },
                     "name": "Zombie Head",
                     "obtaining": [
                         {
@@ -12613,11 +13537,17 @@
                     ]
                 },
                 "3": {
-                    "image": "playerhead.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "playerhead.png"
+                    },
                     "name": "Head"
                 },
                 "4": {
-                    "image": "creeperhead.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "creeperhead.png"
+                    },
                     "name": "Creeper Head"
                 },
                 "5": {
@@ -12632,7 +13562,10 @@
                     ]
                 }
             },
-            "image": "witherskeletonskull.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "witherskeletonskull.png"
+            },
             "itemID": 397,
             "name": "Mob Head",
             "solid": false
@@ -12644,7 +13577,10 @@
             "name": "Slime Block"
         },
         "slime_ball": {
-            "image": "slimeball.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "slimeball.png"
+            },
             "itemID": 341,
             "name": "Slimeball"
         },
@@ -12741,7 +13677,10 @@
             "solid": false
         },
         "snowball": {
-            "image": "snowball.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "snowball.png"
+            },
             "itemID": 332,
             "name": "Snowball",
             "obtaining": [
@@ -12778,7 +13717,10 @@
             "name": "Soul Sand"
         },
         "spawn_egg": {
-            "image": "spawncreeper.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "spawncreeper.png"
+            },
             "itemID": 383,
             "name": "Spawn Egg",
             "tagPath": [
@@ -12787,165 +13729,282 @@
             ],
             "tagVariants": {
                 "Bat": {
-                    "image": "spawnbat.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnbat.png"
+                    },
                     "name": "Spawn Bat"
                 },
                 "Blaze": {
-                    "image": "spawnblaze.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnblaze.png"
+                    },
                     "name": "Spawn Blaze"
                 },
                 "Cat": {
-                    "image": "spawncat.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawncat.png"
+                    },
                     "name": "Spawn Cat"
                 },
                 "CaveSpider": {
-                    "image": "spawncavespider.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawncavespider.png"
+                    },
                     "name": "Spawn Cave Spider"
                 },
                 "Chicken": {
-                    "image": "spawnchicken.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnchicken.png"
+                    },
                     "name": "Spawn Chicken"
                 },
                 "Cow": {
-                    "image": "spawncow.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawncow.png"
+                    },
                     "name": "Spawn Cow"
                 },
                 "Creeper": {
                     "name": "Spawn Creeper"
                 },
                 "Donkey": {
-                    "image": "spawndonkey.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawndonkey.png"
+                    },
                     "name": "Spawn Donkey"
                 },
                 "ElderGuardian": {
-                    "image": "spawnelderguardian.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnelderguardian.png"
+                    },
                     "name": "Spawn Elder Guardian"
                 },
                 "Enderman": {
-                    "image": "spawnenderman.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnenderman.png"
+                    },
                     "name": "Spawn Enderman"
                 },
                 "Endermite": {
-                    "image": "spawnendermite.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnendermite.png"
+                    },
                     "name": "Spawn Endermite"
                 },
                 "EntityHorse": {
-                    "image": "spawnhorse.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnhorse.png"
+                    },
                     "name": "Spawn Horse"
                 },
                 "Ghast": {
-                    "image": "spawnghast.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnghast.png"
+                    },
                     "name": "Spawn Ghast"
                 },
                 "Guardian": {
-                    "image": "spawnguardian.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnguardian.png"
+                    },
                     "name": "Spawn Guardian"
                 },
                 "Husk": {
-                    "image": "spawnhusk.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnhusk.png"
+                    },
                     "name": "Spawn Husk"
                 },
                 "LavaSlime": {
-                    "image": "spawnmagmacube.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnmagmacube.png"
+                    },
                     "name": "Spawn Magma Cube"
                 },
                 "Mule": {
-                    "image": "spawnmule.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnmule.png"
+                    },
                     "name": "Spawn Mule"
                 },
                 "MushroomCow": {
-                    "image": "spawnmooshroom.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnmooshroom.png"
+                    },
                     "name": "Spawn Mooshroom"
                 },
                 "Ozelot": {
-                    "image": "spawnocelot.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnocelot.png"
+                    },
                     "name": "Spawn Ocelot"
                 },
                 "Pig": {
-                    "image": "spawnpig.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnpig.png"
+                    },
                     "name": "Spawn Pig"
                 },
                 "PigZombie": {
-                    "image": "spawnpigzombie.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnpigzombie.png"
+                    },
                     "name": "Spawn Zombie Pigman"
                 },
                 "PolarBear": {
-                    "image": "spawnpolarbear.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnpolarbear.png"
+                    },
                     "name": "Spawn Polar Bear"
                 },
                 "Rabbit": {
-                    "image": "spawnrabbit.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnrabbit.png"
+                    },
                     "name": "Spawn Rabbit"
                 },
                 "Sheep": {
-                    "image": "spawnsheep.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnsheep.png"
+                    },
                     "name": "Spawn Sheep"
                 },
                 "Shulker": {
-                    "image": "spawnshulker.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnshulker.png"
+                    },
                     "name": "Spawn Shulker"
                 },
                 "Silverfish": {
-                    "image": "spawnsilverfish.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnsilverfish.png"
+                    },
                     "name": "Spawn Silverfish"
                 },
                 "Skeleton": {
-                    "image": "spawnskeleton.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnskeleton.png"
+                    },
                     "name": "Spawn Skeleton"
                 },
                 "SkeletonHorse": {
-                    "image": "spawnskeletonhorse.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnskeletonhorse.png"
+                    },
                     "name": "Spawn Skeleton Horse"
                 },
                 "Slime": {
-                    "image": "spawnslime.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnslime.png"
+                    },
                     "name": "Spawn Slime"
                 },
                 "Spider": {
-                    "image": "spawnspider.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnspider.png"
+                    },
                     "name": "Spawn Spider"
                 },
                 "Squid": {
-                    "image": "spawnsquid.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnsquid.png"
+                    },
                     "name": "Spawn Squid"
                 },
                 "Stray": {
-                    "image": "spawnstray.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnstray.png"
+                    },
                     "name": "Spawn Stray"
                 },
                 "Villager": {
-                    "image": "spawnvillager.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnvillager.png"
+                    },
                     "name": "Spawn Villager"
                 },
                 "Witch": {
-                    "image": "spawnwitch.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnwitch.png"
+                    },
                     "name": "Spawn Witch"
                 },
                 "WitherSkeleton": {
-                    "image": "spawnwitherskeleton.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnwitherskeleton.png"
+                    },
                     "name": "Spawn Wither Skeleton"
                 },
                 "Wolf": {
-                    "image": "spawnwolf.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnwolf.png"
+                    },
                     "name": "Spawn Wolf"
                 },
                 "Zombie": {
-                    "image": "spawnzombie.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnzombie.png"
+                    },
                     "name": "Spawn Zombie"
                 },
                 "ZombieHorse": {
-                    "image": "spawnzombiehorse.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "spawnzombiehorse.png"
+                    },
                     "name": "Spawn Zombie Horse"
                 }
             }
         },
         "speckled_melon": {
-            "image": "goldmelon.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "goldmelon.png"
+            },
             "itemID": 382,
             "name": "Glistering Melon"
         },
         "spectral_arrow": {
-            "image": "spectralarrow.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "spectralarrow.png"
+            },
             "itemID": 439,
             "name": "Spectral Arrow",
             "obtaining": [
@@ -12967,7 +14026,10 @@
             ]
         },
         "spider_eye": {
-            "image": "spidereye.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "spidereye.png"
+            },
             "itemID": 375,
             "name": "Spider Eye",
             "obtaining": [
@@ -13022,7 +14084,10 @@
                         "name": "Splash Uncraftable Potion"
                     },
                     "fire_resistance": {
-                        "image": "splashfireresistancepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashfireresistancepotion.png"
+                        },
                         "name": "Splash Potion of Fire Resistance",
                         "obtaining": [
                             {
@@ -13044,7 +14109,10 @@
                         ]
                     },
                     "harming": {
-                        "image": "splashdamagepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashdamagepotion.png"
+                        },
                         "name": "Splash Potion of Harming",
                         "obtaining": [
                             {
@@ -13082,7 +14150,10 @@
                         ]
                     },
                     "healing": {
-                        "image": "splashhealthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashhealthpotion.png"
+                        },
                         "name": "Splash Potion of Healing",
                         "obtaining": [
                             {
@@ -13104,7 +14175,10 @@
                         ]
                     },
                     "invisibility": {
-                        "image": "splashinvisibilitypotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashinvisibilitypotion.png"
+                        },
                         "name": "Splash Potion of Invisibility",
                         "obtaining": [
                             {
@@ -13126,7 +14200,10 @@
                         ]
                     },
                     "leaping": {
-                        "image": "splashjumppotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashjumppotion.png"
+                        },
                         "name": "Splash Potion of Leaping",
                         "obtaining": [
                             {
@@ -13148,7 +14225,10 @@
                         ]
                     },
                     "long_fire_resistance": {
-                        "image": "splashfireresistancepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashfireresistancepotion.png"
+                        },
                         "name": "Splash Potion of Fire Resistance, extended",
                         "obtaining": [
                             {
@@ -13170,7 +14250,10 @@
                         ]
                     },
                     "long_invisibility": {
-                        "image": "splashinvisibilitypotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashinvisibilitypotion.png"
+                        },
                         "name": "Splash Potion of Invisibility, extended",
                         "obtaining": [
                             {
@@ -13200,7 +14283,10 @@
                         ]
                     },
                     "long_leaping": {
-                        "image": "splashjumppotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashjumppotion.png"
+                        },
                         "name": "Splash Potion of Leaping, extended",
                         "obtaining": [
                             {
@@ -13222,7 +14308,10 @@
                         ]
                     },
                     "long_night_vision": {
-                        "image": "splashnightvisionpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashnightvisionpotion.png"
+                        },
                         "name": "Splash Potion of Night Vision, extended",
                         "obtaining": [
                             {
@@ -13244,7 +14333,10 @@
                         ]
                     },
                     "long_poison": {
-                        "image": "splashpoisonpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashpoisonpotion.png"
+                        },
                         "name": "Splash Potion of Poison, extended",
                         "obtaining": [
                             {
@@ -13266,7 +14358,10 @@
                         ]
                     },
                     "long_regeneration": {
-                        "image": "splashregenpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashregenpotion.png"
+                        },
                         "name": "Splash Potion of Regeneration, extended",
                         "obtaining": [
                             {
@@ -13288,7 +14383,10 @@
                         ]
                     },
                     "long_slowness": {
-                        "image": "splashslownesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashslownesspotion.png"
+                        },
                         "name": "Splash Potion of Slowness, extended",
                         "obtaining": [
                             {
@@ -13326,7 +14424,10 @@
                         ]
                     },
                     "long_strength": {
-                        "image": "splashstrengthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashstrengthpotion.png"
+                        },
                         "name": "Splash Potion of Strength, extended",
                         "obtaining": [
                             {
@@ -13348,7 +14449,10 @@
                         ]
                     },
                     "long_swiftness": {
-                        "image": "splashspeedpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashspeedpotion.png"
+                        },
                         "name": "Splash Potion of Swiftness, extended",
                         "obtaining": [
                             {
@@ -13370,7 +14474,10 @@
                         ]
                     },
                     "long_water_breathing": {
-                        "image": "splashwaterbreathingpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashwaterbreathingpotion.png"
+                        },
                         "name": "Splash Potion of Water Breathing, extended",
                         "obtaining": [
                             {
@@ -13392,7 +14499,10 @@
                         ]
                     },
                     "long_weakness": {
-                        "image": "splashweaknesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashweaknesspotion.png"
+                        },
                         "name": "Splash Potion of Weakness, extended",
                         "obtaining": [
                             {
@@ -13414,7 +14524,10 @@
                         ]
                     },
                     "luck": {
-                        "image": "splashluckpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashluckpotion.png"
+                        },
                         "name": "Splash Potion of Luck"
                     },
                     "mundane": {
@@ -13447,7 +14560,10 @@
                         ]
                     },
                     "night_vision": {
-                        "image": "splashnightvisionpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashnightvisionpotion.png"
+                        },
                         "name": "Splash Potion of Night Vision",
                         "obtaining": [
                             {
@@ -13469,7 +14585,10 @@
                         ]
                     },
                     "poison": {
-                        "image": "splashpoisonpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashpoisonpotion.png"
+                        },
                         "name": "Splash Potion of Poison",
                         "obtaining": [
                             {
@@ -13491,7 +14610,10 @@
                         ]
                     },
                     "regeneration": {
-                        "image": "splashregenpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashregenpotion.png"
+                        },
                         "name": "Splash Potion of Regeneration",
                         "obtaining": [
                             {
@@ -13513,7 +14635,10 @@
                         ]
                     },
                     "slowness": {
-                        "image": "splashslownesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashslownesspotion.png"
+                        },
                         "name": "Splash Potion of Slowness",
                         "obtaining": [
                             {
@@ -13543,7 +14668,10 @@
                         ]
                     },
                     "strength": {
-                        "image": "splashstrengthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashstrengthpotion.png"
+                        },
                         "name": "Splash Potion of Strength",
                         "obtaining": [
                             {
@@ -13565,7 +14693,10 @@
                         ]
                     },
                     "strong_harming": {
-                        "image": "splashdamagepotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashdamagepotion.png"
+                        },
                         "name": "Splash Potion of Harming \u2161",
                         "obtaining": [
                             {
@@ -13603,7 +14734,10 @@
                         ]
                     },
                     "strong_healing": {
-                        "image": "splashhealthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashhealthpotion.png"
+                        },
                         "name": "Splash Potion of Healing \u2161",
                         "obtaining": [
                             {
@@ -13625,7 +14759,10 @@
                         ]
                     },
                     "strong_leaping": {
-                        "image": "splashjumppotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashjumppotion.png"
+                        },
                         "name": "Splash Potion of Leaping \u2161",
                         "obtaining": [
                             {
@@ -13647,7 +14784,10 @@
                         ]
                     },
                     "strong_poison": {
-                        "image": "splashpoisonpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashpoisonpotion.png"
+                        },
                         "name": "Splash Potion of Poison \u2161",
                         "obtaining": [
                             {
@@ -13669,7 +14809,10 @@
                         ]
                     },
                     "strong_regeneration": {
-                        "image": "splashregenpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashregenpotion.png"
+                        },
                         "name": "Splash Potion of Regeneration \u2161",
                         "obtaining": [
                             {
@@ -13691,7 +14834,10 @@
                         ]
                     },
                     "strong_strength": {
-                        "image": "splashstrengthpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashstrengthpotion.png"
+                        },
                         "name": "Splash Potion of Strength \u2161",
                         "obtaining": [
                             {
@@ -13713,7 +14859,10 @@
                         ]
                     },
                     "strong_swiftness": {
-                        "image": "splashspeedpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashspeedpotion.png"
+                        },
                         "name": "Splash Potion of Swiftness \u2161",
                         "obtaining": [
                             {
@@ -13735,7 +14884,10 @@
                         ]
                     },
                     "swiftness": {
-                        "image": "splashspeedpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashspeedpotion.png"
+                        },
                         "name": "Splash Potion of Swiftness",
                         "obtaining": [
                             {
@@ -13791,7 +14943,10 @@
                         ]
                     },
                     "water_breathing": {
-                        "image": "splashwaterbreathingpotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashwaterbreathingpotion.png"
+                        },
                         "name": "Splash Potion of Water Breathing",
                         "obtaining": [
                             {
@@ -13816,7 +14971,10 @@
                         ]
                     },
                     "weakness": {
-                        "image": "splashweaknesspotion.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "splashweaknesspotion.png"
+                        },
                         "name": "Splash Potion of Weakness",
                         "obtaining": [
                             {
@@ -13851,7 +15009,10 @@
                     }
                 }
             },
-            "image": "splashpotion.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "splashpotion.png"
+            },
             "itemID": 438,
             "name": "Splash Potion",
             "stackable": false
@@ -13898,7 +15059,10 @@
             "name": "Sponge"
         },
         "spruce_boat": {
-            "image": "spruceboat.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "spruceboat.png"
+            },
             "itemID": 444,
             "name": "Spruce Boat",
             "obtaining": [
@@ -13942,7 +15106,10 @@
         },
         "spruce_door": {
             "blockID": 193,
-            "image": "sprucedoor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "sprucedoor.png"
+            },
             "itemID": 427,
             "name": "Spruce Door",
             "obtaining": [
@@ -14507,7 +15674,10 @@
             "blockID": 160,
             "damageValues": {
                 "0": {
-                    "image": "whitestainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "whitestainedglasspane.png"
+                    },
                     "name": "White Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14546,7 +15716,10 @@
                     ]
                 },
                 "1": {
-                    "image": "orangestainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "orangestainedglasspane.png"
+                    },
                     "name": "Orange Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14585,7 +15758,10 @@
                     ]
                 },
                 "10": {
-                    "image": "purplestainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "purplestainedglasspane.png"
+                    },
                     "name": "Purple Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14624,7 +15800,10 @@
                     ]
                 },
                 "11": {
-                    "image": "bluestainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "bluestainedglasspane.png"
+                    },
                     "name": "Blue Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14663,7 +15842,10 @@
                     ]
                 },
                 "12": {
-                    "image": "brownstainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "brownstainedglasspane.png"
+                    },
                     "name": "Brown Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14702,7 +15884,10 @@
                     ]
                 },
                 "13": {
-                    "image": "greenstainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "greenstainedglasspane.png"
+                    },
                     "name": "Green Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14741,7 +15926,10 @@
                     ]
                 },
                 "14": {
-                    "image": "redstainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "redstainedglasspane.png"
+                    },
                     "name": "Red Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14780,7 +15968,10 @@
                     ]
                 },
                 "15": {
-                    "image": "blackstainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "blackstainedglasspane.png"
+                    },
                     "name": "Black Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14819,7 +16010,10 @@
                     ]
                 },
                 "2": {
-                    "image": "magentastainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "magentastainedglasspane.png"
+                    },
                     "name": "Magenta Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14858,7 +16052,10 @@
                     ]
                 },
                 "3": {
-                    "image": "lightbluestainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "lightbluestainedglasspane.png"
+                    },
                     "name": "Light Blue Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14935,7 +16132,10 @@
                     ]
                 },
                 "5": {
-                    "image": "limestainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "limestainedglasspane.png"
+                    },
                     "name": "Lime Stained Glass Pane",
                     "obtaining": [
                         {
@@ -14974,7 +16174,10 @@
                     ]
                 },
                 "6": {
-                    "image": "pinkstainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "pinkstainedglasspane.png"
+                    },
                     "name": "Pink Stained Glass Pane",
                     "obtaining": [
                         {
@@ -15013,7 +16216,10 @@
                     ]
                 },
                 "7": {
-                    "image": "graystainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "graystainedglasspane.png"
+                    },
                     "name": "Gray Stained Glass Pane",
                     "obtaining": [
                         {
@@ -15052,7 +16258,10 @@
                     ]
                 },
                 "8": {
-                    "image": "lightgraystainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "lightgraystainedglasspane.png"
+                    },
                     "name": "Light Gray Stained Glass Pane",
                     "obtaining": [
                         {
@@ -15091,7 +16300,10 @@
                     ]
                 },
                 "9": {
-                    "image": "cyanstainedglasspane.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "cyanstainedglasspane.png"
+                    },
                     "name": "Cyan Stained Glass Pane",
                     "obtaining": [
                         {
@@ -15133,7 +16345,10 @@
             "dropsSelf": {
                 "silkTouch": true
             },
-            "image": "yellowstainedglasspane.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "yellowstainedglasspane.png"
+            },
             "itemID": 160,
             "name": "Stained Glass Pane",
             "solid": false
@@ -15619,12 +16834,18 @@
         },
         "standing_sign": {
             "blockID": 63,
-            "image": "sign.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "sign.png"
+            },
             "name": "Sign",
             "solid": false
         },
         "stick": {
-            "image": "stick.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "stick.png"
+            },
             "itemID": 280,
             "name": "Stick",
             "obtaining": [
@@ -15911,7 +17132,10 @@
         },
         "stone_axe": {
             "durability": 131,
-            "image": "stoneaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "stoneaxe.png"
+            },
             "itemID": 275,
             "name": "Stone Axe",
             "obtaining": [
@@ -15950,7 +17174,10 @@
         },
         "stone_hoe": {
             "durability": 131,
-            "image": "stonehoe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "stonehoe.png"
+            },
             "itemID": 291,
             "name": "Stone Hoe",
             "obtaining": [
@@ -15973,7 +17200,10 @@
         },
         "stone_pickaxe": {
             "durability": 131,
-            "image": "stonepickaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "stonepickaxe.png"
+            },
             "itemID": 274,
             "name": "Stone Pickaxe",
             "obtaining": [
@@ -16006,7 +17236,10 @@
         },
         "stone_shovel": {
             "durability": 131,
-            "image": "stoneshovel.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "stoneshovel.png"
+            },
             "itemID": 273,
             "name": "Stone Shovel",
             "obtaining": [
@@ -16153,7 +17386,10 @@
         },
         "stone_sword": {
             "durability": 131,
-            "image": "stonesword.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "stonesword.png"
+            },
             "itemID": 272,
             "name": "Stone Sword",
             "stackable": false
@@ -16287,7 +17523,10 @@
             "name": "Stone Brick"
         },
         "string": {
-            "image": "string.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "string.png"
+            },
             "itemID": 287,
             "name": "String",
             "obtaining": [
@@ -16340,14 +17579,20 @@
             "blockID": 217,
             "creativeMenu": false,
             "dropsSelf": [],
-            "image": "structurevoid.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "structurevoid.png"
+            },
             "itemID": 217,
             "name": "Structure Void",
             "pickBlock": true,
             "solid": false
         },
         "sugar": {
-            "image": "sugar.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "sugar.png"
+            },
             "itemID": 353,
             "name": "Sugar",
             "obtaining": [
@@ -16370,16 +17615,25 @@
             "blockID": 31,
             "damageValues": {
                 "0": {
-                    "image": "deadbush.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "deadbush.png"
+                    },
                     "name": "Shrub"
                 },
                 "1": {},
                 "2": {
-                    "image": "fern.png",
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "fern.png"
+                    },
                     "name": "Fern"
                 }
             },
-            "image": "tallgrass.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "tallgrass.png"
+            },
             "itemID": 31,
             "name": "Tall Grass",
             "solid": false
@@ -16411,7 +17665,10 @@
                         ]
                     },
                     "fire_resistance": {
-                        "image": "fireresistancearrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "fireresistancearrow.png"
+                        },
                         "name": "Arrow of Fire Resistance",
                         "obtaining": [
                             {
@@ -16435,7 +17692,10 @@
                         ]
                     },
                     "harming": {
-                        "image": "damagearrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "damagearrow.png"
+                        },
                         "name": "Arrow of Harming",
                         "obtaining": [
                             {
@@ -16459,7 +17719,10 @@
                         ]
                     },
                     "healing": {
-                        "image": "healtharrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "healtharrow.png"
+                        },
                         "name": "Arrow of Healing",
                         "obtaining": [
                             {
@@ -16483,7 +17746,10 @@
                         ]
                     },
                     "invisibility": {
-                        "image": "invisibilityarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "invisibilityarrow.png"
+                        },
                         "name": "Arrow of Invisibility",
                         "obtaining": [
                             {
@@ -16507,7 +17773,10 @@
                         ]
                     },
                     "leaping": {
-                        "image": "jumparrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "jumparrow.png"
+                        },
                         "name": "Arrow of Leaping",
                         "obtaining": [
                             {
@@ -16531,7 +17800,10 @@
                         ]
                     },
                     "long_fire_resistance": {
-                        "image": "fireresistancearrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "fireresistancearrow.png"
+                        },
                         "name": "Arrow of Fire Resistance, extended",
                         "obtaining": [
                             {
@@ -16555,7 +17827,10 @@
                         ]
                     },
                     "long_invisibility": {
-                        "image": "invisibilityarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "invisibilityarrow.png"
+                        },
                         "name": "Arrow of Invisibility, extended",
                         "obtaining": [
                             {
@@ -16579,7 +17854,10 @@
                         ]
                     },
                     "long_leaping": {
-                        "image": "jumparrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "jumparrow.png"
+                        },
                         "name": "Arrow of Leaping, extended",
                         "obtaining": [
                             {
@@ -16603,7 +17881,10 @@
                         ]
                     },
                     "long_night_vision": {
-                        "image": "nightvisionarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "nightvisionarrow.png"
+                        },
                         "name": "Arrow of Night Vision, extended",
                         "obtaining": [
                             {
@@ -16627,7 +17908,10 @@
                         ]
                     },
                     "long_poison": {
-                        "image": "poisonarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "poisonarrow.png"
+                        },
                         "name": "Arrow of Poison, extended",
                         "obtaining": [
                             {
@@ -16651,7 +17935,10 @@
                         ]
                     },
                     "long_regeneration": {
-                        "image": "regenarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "regenarrow.png"
+                        },
                         "name": "Arrow of Regeneration, extended",
                         "obtaining": [
                             {
@@ -16675,7 +17962,10 @@
                         ]
                     },
                     "long_slowness": {
-                        "image": "slownessarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "slownessarrow.png"
+                        },
                         "name": "Arrow of Slowness, extended",
                         "obtaining": [
                             {
@@ -16699,7 +17989,10 @@
                         ]
                     },
                     "long_strength": {
-                        "image": "strengtharrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "strengtharrow.png"
+                        },
                         "name": "Arrow of Strength, extended",
                         "obtaining": [
                             {
@@ -16723,7 +18016,10 @@
                         ]
                     },
                     "long_swiftness": {
-                        "image": "speedarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "speedarrow.png"
+                        },
                         "name": "Arrow of Swiftness, extended",
                         "obtaining": [
                             {
@@ -16747,7 +18043,10 @@
                         ]
                     },
                     "long_water_breathing": {
-                        "image": "waterbreathingarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "waterbreathingarrow.png"
+                        },
                         "name": "Arrow of Water Breathing, extended",
                         "obtaining": [
                             {
@@ -16771,7 +18070,10 @@
                         ]
                     },
                     "long_weakness": {
-                        "image": "weaknessarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "weaknessarrow.png"
+                        },
                         "name": "Arrow of Weakness, extended",
                         "obtaining": [
                             {
@@ -16795,7 +18097,10 @@
                         ]
                     },
                     "luck": {
-                        "image": "luckarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "luckarrow.png"
+                        },
                         "name": "Arrow of Luck",
                         "obtaining": [
                             {
@@ -16820,7 +18125,10 @@
                     },
                     "mundane": {},
                     "night_vision": {
-                        "image": "nightvisionarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "nightvisionarrow.png"
+                        },
                         "name": "Arrow of Night Vision",
                         "obtaining": [
                             {
@@ -16844,7 +18152,10 @@
                         ]
                     },
                     "poison": {
-                        "image": "poisonarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "poisonarrow.png"
+                        },
                         "name": "Arrow of Poison",
                         "obtaining": [
                             {
@@ -16868,7 +18179,10 @@
                         ]
                     },
                     "regeneration": {
-                        "image": "regenarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "regenarrow.png"
+                        },
                         "name": "Arrow of Regeneration",
                         "obtaining": [
                             {
@@ -16892,7 +18206,10 @@
                         ]
                     },
                     "slowness": {
-                        "image": "slownessarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "slownessarrow.png"
+                        },
                         "name": "Arrow of Slowness",
                         "obtaining": [
                             {
@@ -16922,7 +18239,10 @@
                         ]
                     },
                     "strength": {
-                        "image": "strengtharrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "strengtharrow.png"
+                        },
                         "name": "Arrow of Strength",
                         "obtaining": [
                             {
@@ -16946,7 +18266,10 @@
                         ]
                     },
                     "strong_harming": {
-                        "image": "damagearrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "damagearrow.png"
+                        },
                         "name": "Arrow of Harming \u2161",
                         "obtaining": [
                             {
@@ -16970,7 +18293,10 @@
                         ]
                     },
                     "strong_healing": {
-                        "image": "healtharrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "healtharrow.png"
+                        },
                         "name": "Arrow of Healing \u2161",
                         "obtaining": [
                             {
@@ -16994,7 +18320,10 @@
                         ]
                     },
                     "strong_leaping": {
-                        "image": "jumparrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "jumparrow.png"
+                        },
                         "name": "Arrow of Leaping \u2161",
                         "obtaining": [
                             {
@@ -17018,7 +18347,10 @@
                         ]
                     },
                     "strong_poison": {
-                        "image": "poisonarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "poisonarrow.png"
+                        },
                         "name": "Arrow of Poison \u2161",
                         "obtaining": [
                             {
@@ -17042,7 +18374,10 @@
                         ]
                     },
                     "strong_regeneration": {
-                        "image": "regenarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "regenarrow.png"
+                        },
                         "name": "Arrow of Regeneration \u2161",
                         "obtaining": [
                             {
@@ -17066,7 +18401,10 @@
                         ]
                     },
                     "strong_strength": {
-                        "image": "strengtharrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "strengtharrow.png"
+                        },
                         "name": "Arrow of Strength \u2161",
                         "obtaining": [
                             {
@@ -17090,7 +18428,10 @@
                         ]
                     },
                     "strong_swiftness": {
-                        "image": "speedarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "speedarrow.png"
+                        },
                         "name": "Arrow of Swiftness \u2161",
                         "obtaining": [
                             {
@@ -17114,7 +18455,10 @@
                         ]
                     },
                     "swiftness": {
-                        "image": "speedarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "speedarrow.png"
+                        },
                         "name": "Arrow of Swiftness",
                         "obtaining": [
                             {
@@ -17142,7 +18486,10 @@
                         "name": "Arrow of Splashing"
                     },
                     "water_breathing": {
-                        "image": "waterbreathingarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "waterbreathingarrow.png"
+                        },
                         "name": "Arrow of Water Breathing",
                         "obtaining": [
                             {
@@ -17166,11 +18513,17 @@
                         ]
                     },
                     "waterbreathing": {
-                        "image": "waterbreathingarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "waterbreathingarrow.png"
+                        },
                         "name": "Arrow of Water Breathing"
                     },
                     "weakness": {
-                        "image": "weaknessarrow.png",
+                        "image": {
+                            "nearestNeighbor": true,
+                            "prerendered": "weaknessarrow.png"
+                        },
                         "name": "Arrow of Weakness",
                         "obtaining": [
                             {
@@ -17195,7 +18548,10 @@
                     }
                 }
             },
-            "image": "waterarrow.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "waterarrow.png"
+            },
             "itemID": 440,
             "name": "Tipped Arrow"
         },
@@ -17206,14 +18562,20 @@
             "name": "TNT"
         },
         "tnt_minecart": {
-            "image": "minecartwithtnt.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "minecartwithtnt.png"
+            },
             "itemID": 407,
             "name": "Minecart with TNT",
             "stackable": false
         },
         "torch": {
             "blockID": 50,
-            "image": "torch.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "torch.png"
+            },
             "itemID": 50,
             "name": "Torch",
             "obtaining": [
@@ -17302,7 +18664,10 @@
         },
         "tripwire": {
             "blockID": 132,
-            "image": "string.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "string.png"
+            },
             "name": "String",
             "obtaining": [
                 {
@@ -17315,7 +18680,10 @@
         },
         "tripwire_hook": {
             "blockID": 131,
-            "image": "tripwirehook.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "tripwirehook.png"
+            },
             "itemID": 131,
             "name": "Tripwire Hook",
             "obtaining": [
@@ -17349,24 +18717,36 @@
         },
         "unlit_redstone_torch": {
             "blockID": 75,
-            "image": "unlitredstonetorch.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "unlitredstonetorch.png"
+            },
             "name": "Redstone Torch"
         },
         "unpowered_comparator": {
             "blockID": 149,
-            "image": "comparator.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "comparator.png"
+            },
             "name": "Comparator",
             "pickBlock": "minecraft:comparator",
             "solid": false
         },
         "unpowered_repeater": {
             "blockID": 93,
-            "image": "repeater.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "repeater.png"
+            },
             "name": "Repeater"
         },
         "vine": {
             "blockID": 106,
-            "image": "vines.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "vines.png"
+            },
             "itemID": 106,
             "name": "Vines",
             "solid": false
@@ -17384,7 +18764,10 @@
         },
         "wall_sign": {
             "blockID": 68,
-            "image": "sign.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "sign.png"
+            },
             "name": "Sign",
             "obtaining": [
                 {
@@ -17402,7 +18785,10 @@
         },
         "water": {
             "blockID": 9,
-            "image": "water.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "water.png"
+            },
             "name": "Still Water",
             "obtaining": [
                 {
@@ -17413,7 +18799,10 @@
             "solid": false
         },
         "water_bucket": {
-            "image": "waterbucket.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "waterbucket.png"
+            },
             "itemID": 326,
             "name": "Water Bucket",
             "obtaining": [
@@ -17435,7 +18824,10 @@
         },
         "waterlily": {
             "blockID": 111,
-            "image": "lilypad.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "lilypad.png"
+            },
             "itemID": 111,
             "name": "Lily Pad"
         },
@@ -17448,7 +18840,10 @@
                     "sword"
                 ]
             },
-            "image": "cobweb.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "cobweb.png"
+            },
             "itemID": 30,
             "name": "Cobweb",
             "obtaining": [
@@ -17469,7 +18864,10 @@
         },
         "wheat": {
             "blockID": 59,
-            "image": "wheat.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "wheat.png"
+            },
             "itemID": 296,
             "name": "Wheat",
             "obtaining": [
@@ -17499,7 +18897,10 @@
             "solid": false
         },
         "wheat_seeds": {
-            "image": "wheatseeds.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "wheatseeds.png"
+            },
             "itemID": 295,
             "name": "Wheat Seeds",
             "obtaining": [
@@ -17535,7 +18936,10 @@
         },
         "wooden_axe": {
             "durability": 59,
-            "image": "woodaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "woodaxe.png"
+            },
             "itemID": 271,
             "name": "Wooden Axe",
             "obtaining": [
@@ -17577,7 +18981,10 @@
         },
         "wooden_door": {
             "blockID": 64,
-            "image": "oakdoor.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "oakdoor.png"
+            },
             "itemID": 324,
             "name": "Oak Door",
             "obtaining": [
@@ -17626,7 +19033,10 @@
         },
         "wooden_hoe": {
             "durability": 59,
-            "image": "woodhoe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "woodhoe.png"
+            },
             "itemID": 290,
             "name": "Wooden Hoe",
             "obtaining": [
@@ -17649,7 +19059,10 @@
         },
         "wooden_pickaxe": {
             "durability": 59,
-            "image": "woodpickaxe.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "woodpickaxe.png"
+            },
             "itemID": 270,
             "name": "Wooden Pickaxe",
             "stackable": false
@@ -17662,7 +19075,10 @@
         },
         "wooden_shovel": {
             "durability": 59,
-            "image": "woodshovel.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "woodshovel.png"
+            },
             "itemID": 269,
             "name": "Wooden Shovel",
             "stackable": false
@@ -17915,7 +19331,10 @@
         },
         "wooden_sword": {
             "durability": 59,
-            "image": "woodsword.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "woodsword.png"
+            },
             "itemID": 268,
             "name": "Wooden Sword",
             "stackable": false
@@ -18541,7 +19960,10 @@
             "name": "Wool"
         },
         "writable_book": {
-            "image": "bookandquill.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "bookandquill.png"
+            },
             "itemID": 386,
             "name": "Book and Quill",
             "obtaining": [
@@ -18562,7 +19984,10 @@
         "written_book": {
             "alwaysGlow": true,
             "creativeMenu": false,
-            "image": "writtenbook.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "writtenbook.png"
+            },
             "itemID": 387,
             "name": "Written Book",
             "obtaining": [
@@ -18575,7 +20000,10 @@
         },
         "yellow_flower": {
             "blockID": 37,
-            "image": "dandelion.png",
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "dandelion.png"
+            },
             "itemID": 37,
             "name": "Dandelion",
             "obtaining": [

@@ -6,7 +6,9 @@ The fields for the damage values, status effects, and tag variants implicitly in
 
 * name: display name of the item.
 * solid: true if the block is solid and nontransparent in all contexts, defaults to true.
-* image: the filename of a prerendered image of the item or block, relative to the img/grid directory in this repository.
+* image: an object with the following keys, or just a string which should be treated as the value of the "prerendered" key:
+    * prerendered: the filename of a prerendered image of the item or block, relative to the img/grid directory in this repository
+    * nearestNeighbor: if true, the image can be upscaled using the nearest-neighbor algorithm to reproduce Minecraft's rendering at a larger scale. Defaults to false.
 * damagedImages: an object mapping minimum damage values to alternate image values. Only used for items with durability.
 * blockID: The numeric block id. A value of null (the default) means that this does not occur as a block, only as an item.
 * itemID: The numeric item id. Same as the block id for blocks that can also be items. If this field is missing or null, the item cannot be obtained even with cheats.
