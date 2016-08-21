@@ -250,7 +250,7 @@ function displayProfileData(person, items, people, statData) {
     $('#profile-stat-row-status').children('.value').html(statusDisplay(person.status));
 }
 
-function displayStatData(statData, stringData, itemData, achievementData, biomes, mobData) {
+function displayStatData(statData, stringData, itemData, achievementData, biomes, entityData) {
     var $loadingStatGeneral = $('#loading-stat-general-table');
     var $loadingStatBlock = $('#loading-stat-blocks-table');
     var $loadingStatItem = $('#loading-stat-items-table');
@@ -284,10 +284,25 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
                         }
                     });
                 } else if (statName === 'killEntity' || statName === 'entityKilledBy') {
-                    $.each(stat, function(entityID, value) {
-                        var name = entityID;
-                        if ('mobs' in mobData && entityID in mobData.mobs && 'name' in mobData.mobs[entityID]) {
-                            name = mobData.mobs[entityID].name;
+                    $.each(stat, function(mob, value) {
+                        if (!/:/.test(mob)) {
+                            // old-style entity ID
+                            $.each(entityData, function(plugin, pluginData) {
+                                $.each(pluginData, function(entityID, entityInfo) {
+                                    if ('oldID' in entityInfo && entityInfo.oldID == mob) {
+                                        if ('wasSubtype' in entityInfo && entityInfo.wasSubtype) {
+                                            return;
+                                        }
+                                        mob = plugin + ':' + entityID;
+                                    }
+                                });
+                            });
+                        }
+                        var name = mob;
+                        var plugin = mob.split(':')[0];
+                        var shortID = mob.split(':')[1];
+                        if (plugin in entityData && shortID in entityData[plugin] && 'name' in entityData[plugin][shortID]) {
+                            name = entityData[plugin][shortID].name;
                         };
 
                         var found = false;
@@ -663,7 +678,7 @@ function displayMinigameData(people, person, deathGamesLog) {
     }
 }
 
-function loadStatData(person, stringData, achievementData, biomes, items, mobData) {
+function loadStatData(person, stringData, achievementData, biomes, items, entityData) {
     if (person.option('show_inventory') || person.id === currentUser) {
         $.when(API.playerData(person), API.enchantmentData()).done(function(playerData, enchData) {
             displayInventory(playerData, items, stringData, enchData);
@@ -674,7 +689,7 @@ function loadStatData(person, stringData, achievementData, biomes, items, mobDat
         $('.panel').before('<div class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>Want to show you inventory?</strong> Since you have not set a preference for this, your inventory and Ender chest will be displayed on this page once we get everything working. You can activate this feature now using the command <code>!<a href="//wiki.' + host + '/Commands#Option">Option</a> show_inventory on</code>, or permanently deactivate it with <code>!<a href="//wiki.' + host + '/Commands#Option">Option</a> show_inventory off</code>.</div>');
     }
     $.when(API.personStatData(person)).done(function(statData) {
-        displayStatData(statData, stringData, items, achievementData, biomes, mobData);
+        displayStatData(statData, stringData, items, achievementData, biomes, entityData);
     }).fail(function() {
         $('.loading-stat').html('<td colspan="7">Error: Could not load ' + person.minecraft + '.json</td>');
     });
@@ -684,9 +699,9 @@ function loadUserData() {
     var username = getUserName();
     document.title = username + ' on Wurstmineberg';
     $.when(API.personById(username)).done(function(person) {
-        $.when(API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people(), API.mobData()).done(function(stringData, achievementData, biomes, items, people, mobData) {
+        $.when(API.stringData(), API.achievementData(), API.biomes(), API.items(), API.people(), API.entityData()).done(function(stringData, achievementData, biomes, items, people, entityData) {
             document.title = person.interfaceName + ' on Wurstmineberg';
-            loadStatData(person, stringData, achievementData, biomes, items, mobData);
+            loadStatData(person, stringData, achievementData, biomes, items, entityData);
             $.when(API.personStatData(person)).done(function(statData) {
                 displayProfileData(person, items, people, statData);
             }).fail(function() {
