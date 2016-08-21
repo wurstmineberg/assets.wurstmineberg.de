@@ -115,7 +115,7 @@ function displayMobsStatData(people, entityStats, entityData) {
             }
             if ('entityKilledBy' in playerStats) {
                 $.each(playerStats.entityKilledBy, function(mob, deaths) {
-                    if (!(':' in mob)) {
+                    if (!/:/.test(mob)) {
                         // old-style entity ID
                         $.each(entityData, function(plugin, pluginData) {
                             $.each(pluginData, function(entityID, entityInfo) {
@@ -150,7 +150,7 @@ function displayMobsStatData(people, entityStats, entityData) {
             }
             if ('killEntity' in playerStats) {
                 $.each(playerStats.killEntity, function(mob, kills) {
-                    if (!(':' in mob)) {
+                    if (!/:/.test(mob)) {
                         // old-style entity ID
                         $.each(entityData, function(plugin, pluginData) {
                             $.each(pluginData, function(entityID, entityInfo) {
