@@ -12,7 +12,7 @@ function dateObjectFromUTC(s) { // modified from http://stackoverflow.com/a/1551
     return new Date(Date.UTC(+s[0], --s[1], +s[2], +s[3], +s[4], +s[5], 0));
 }
 
-functions thousands(value, sep) { // inserts thousands separators (default: narrow no-break spaces) into numbers
+function thousands(value, sep) { // inserts thousands separators (default: narrow no-break spaces) into numbers
     sep = typeof sep === 'undefined' ? '\u202f' : sep;
     var value = value.toString();
     if (value.length > 3) {
