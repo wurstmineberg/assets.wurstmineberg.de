@@ -558,7 +558,7 @@ var API = {
     },
     entityData: function() {
         return API.ajaxJSONDeferred('//assets.' + host + '/json/entities.json');
-    }
+    },
     mobData: function() {
         return API.entityData().then(function(entityData) {
             var result = {};
