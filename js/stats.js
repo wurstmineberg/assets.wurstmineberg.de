@@ -104,7 +104,7 @@ function displayLeaderboardStatData(statData, stringData, people) {
     });
 }
 
-function displayMobsStatData(people, entityStats, mobData) {
+function displayMobsStatData(people, entityStats, entityData) {
     $.when(people.mapObject(entityStats)).done(function(statData) {
         var byMob = {};
         statData.forEach(function(playerStatsPair) {
@@ -115,6 +115,19 @@ function displayMobsStatData(people, entityStats, mobData) {
             }
             if ('entityKilledBy' in playerStats) {
                 $.each(playerStats.entityKilledBy, function(mob, deaths) {
+                    if (!(':' in mob)) {
+                        // old-style entity ID
+                        $.each(entityData, function(plugin, pluginData) {
+                            $.each(pluginData, function(entityID, entityInfo) {
+                                if ('oldID' in entityInfo && entityInfo.oldID == mob) {
+                                    if ('wasSubtype' in entityInfo && entityInfo.wasSubtype) {
+                                        return;
+                                    }
+                                    mob = plugin + ':' + entityID;
+                                }
+                            });
+                        });
+                    }
                     if (mob in byMob) {
                         if ('kills' in byMob[mob]) {
                             if (deaths > byMob[mob].kills) {
@@ -137,6 +150,19 @@ function displayMobsStatData(people, entityStats, mobData) {
             }
             if ('killEntity' in playerStats) {
                 $.each(playerStats.killEntity, function(mob, kills) {
+                    if (!(':' in mob)) {
+                        // old-style entity ID
+                        $.each(entityData, function(plugin, pluginData) {
+                            $.each(pluginData, function(entityID, entityInfo) {
+                                if ('oldID' in entityInfo && entityInfo.oldID == mob) {
+                                    if ('wasSubtype' in entityInfo && entityInfo.wasSubtype) {
+                                        return;
+                                    }
+                                    mob = plugin + ':' + entityID;
+                                }
+                            });
+                        });
+                    }
                     if (mob in byMob) {
                         if ('deaths' in byMob[mob]) {
                             if (kills > byMob[mob].deaths) {
@@ -160,9 +186,10 @@ function displayMobsStatData(people, entityStats, mobData) {
         });
         byMob = _.map(_.pairs(byMob), function(mobPair) {
             var ret = mobPair[1];
-            ret.mob = mobPair[0];
-            if ('mobs' in mobData && mobPair[0] in mobData.mobs && 'name' in mobData.mobs[mobPair[0]]) {
-                ret.mob = mobData.mobs[mobPair[0]].name;
+            var plugin = mobPair[0].split(':')[0];
+            ret.mob = mobPair[0].split(':')[1];
+            if (plugin in entityData && ret.mob in entityData[plugin] && 'name' in entityData[plugin][ret.mob]) {
+                ret.mob = entityData[plugin][ret.mob].name;
             };
             return ret;
         });
@@ -453,8 +480,8 @@ function loadLeaderboardStatData(people) {
 
 function loadMobStatData(people) {
     $.when(API.mainWorld()).done(function(mainWorld) {
-        $.when(API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + mainWorld + '/playerstats/entity.json'), API.mobData()).done(function(entityStats, mobData) {
-            displayMobsStatData(people, entityStats, mobData);
+        $.when(API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + mainWorld + '/playerstats/entity.json'), API.entityData()).done(function(entityStats, entityData) {
+            displayMobsStatData(people, entityStats, entityData);
         }).fail(function() {
             $('#loading-mobs-bymob').children('td').html($('<span>', {class: 'text-danger'}).text('error, try refreshing'));
         });
