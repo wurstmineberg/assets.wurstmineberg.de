@@ -333,20 +333,30 @@ function Item(stringID, itemInfo) {
     _.extend(this, itemInfo);
     this.htmlImage = function(classes, tint, damage) {
         if ('image' in itemInfo) {
+            var imageInfo = typeof itemInfo.image === 'string' ? {prerendered: itemInfo.image} : itemInfo.image;
+            var baseClasses = classes || '';
+            if (imageInfo.nearestNeighbor) {
+                baseClasses += ' nearest-neighbor';
+            }
             if (typeof tint === 'undefined' || tint === null) {
                 var damageFound = 0;
-                var result = '<img src="//assets.' + host + '/img/grid/' + itemInfo.image + '" class="' + (classes || '') + '" />';
+                var result = '<img src="//assets.' + host + '/img/grid/' + imageInfo.prerendered + '" class="' + baseClasses + '" />';
                 if ('damagedImages' in itemInfo && typeof damage !== 'undefined') {
                     $.each(itemInfo.damagedImages, function(damageStr, damagedImage) {
                         if (parseInt(damageStr) > damageFound && parseInt(damageStr) <= damage) {
                             damageFound = parseInt(damageStr);
-                            result = '<img src="//assets.' + host + '/img/grid/' + damagedImage + '" class="' + (classes || '') + '" />';
+                            var imageInfo = typeof damagedImage === 'string' ? {prerendered: damagedImage} : damagedImage;
+                            var damagedClasses = classes || '';
+                            if (imageInfo.nearestNeighbor) {
+                                damagedClasses += ' nearest-neighbor';
+                            }
+                            result = '<img src="//assets.' + host + '/img/grid/' + imageInfo.prerendered + '" class="' + damagedClasses + '" />';
                         }
                     });
                 }
                 return result;
             } else {
-                return '<img style="background: url(//api.' + host + '/minecraft/items/render/dyed-by-id/' + stringID + '/' + zeroFill(tint.toString(16), 6) + '/png.png)" src="//assets.' + host + '/img/grid-overlay/' + itemInfo.image + '" class="' + (classes || '') + '" />';
+                return '<img style="background: url(//api.' + host + '/v2/minecraft/items/render/dyed-by-id/' + stringID.split(':')[0] + '/' + stringID.split(':')[1] + '/' + zeroFill(tint.toString(16), 6) + '.png)" src="//assets.' + host + '/img/grid-overlay/' + imageInfo.prerendered + '" class="' + baseClasses + '" />';
             }
         } else {
             return '';
