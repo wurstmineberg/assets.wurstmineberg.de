@@ -441,19 +441,19 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             $row.children('.image').html(itemDict.itemInfo.htmlImage('item-image'));
         }
         if ('craftItem' in itemDict) {
-            $row.children('.crafted').text(itemDict.craftItem);
+            $row.children('.crafted').text(thousands(itemDict.craftItem));
         }
         if ('useItem' in itemDict) {
-            $row.children('.used').text(itemDict.useItem);
+            $row.children('.used').text(thousands(itemDict.useItem));
         }
         if ('breakItem' in itemDict) {
-            $row.children('.depleted').text(itemDict.breakItem);
+            $row.children('.depleted').text(thousands(itemDict.breakItem));
         }
         if ('drop' in itemDict) {
-            $row.children('.dropped').text(itemDict.dropped);
+            $row.children('.dropped').text(thousands(itemDict.dropped));
         }
         if ('pickup' in itemDict) {
-            $row.children('.picked-up').text(itemDict.pickup);
+            $row.children('.picked-up').text(thousands(itemDict.pickup));
         }
     });
 
@@ -477,19 +477,19 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
             $row.children('.image').html(blockDict.itemInfo.htmlImage('item-image'));
         }
         if ('craftItem' in blockDict) {
-            $row.children('.crafted').text(blockDict.craftItem);
+            $row.children('.crafted').text(thousands(blockDict.craftItem));
         }
         if ('useItem' in blockDict) {
-            $row.children('.used').text(blockDict.useItem);
+            $row.children('.used').text(thousands(blockDict.useItem));
         }
         if ('mineBlock' in blockDict) {
-            $row.children('.mined').text(blockDict.mineBlock);
+            $row.children('.mined').text(thousands(blockDict.mineBlock));
         }
         if ('drop' in blockDict) {
-            $row.children('.dropped').text(blockDict.drop);
+            $row.children('.dropped').text(thousands(blockDict.drop));
         }
         if ('pickup' in blockDict) {
-            $row.children('.picked-up').text(blockDict.pickup);
+            $row.children('.picked-up').text(thousands(blockDict.pickup));
         }
     });
 

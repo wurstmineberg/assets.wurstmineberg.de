@@ -12,6 +12,15 @@ function dateObjectFromUTC(s) { // modified from http://stackoverflow.com/a/1551
     return new Date(Date.UTC(+s[0], --s[1], +s[2], +s[3], +s[4], +s[5], 0));
 }
 
+functions thousands(value, sep) { // inserts thousands separators (default: narrow no-break spaces) into numbers
+    sep = typeof sep === 'undefined' ? '\u202f' : sep;
+    var value = value.toString();
+    if (value.length > 3) {
+        value = value.replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+    }
+    return value;
+}
+
 function zeroFill(n, l, r) { //FROM http://stackoverflow.com/a/21541030/667338
     a = String(n).match(/(^-?)([0-9A-Za-z]*)\.?([0-9A-Za-z]*)/);
     return a ? a[1] + (Array(l).join(0) + a[2]).slice(-Math.max(l, a[2].length)) + ('undefined' !== typeof r ? (0 < r ? '.' : '') + (a[3] + Array(r + 1).join(0)).slice(0, r) : a[3] ? '.' + a[3] : '') : 0;
@@ -809,11 +818,7 @@ function prettifyStatsValue(key, value) {
         return value + ' bottle' + (value == 1 ? '' : 's');
     } else {
         // no unit
-        value = value.toString();
-        if (value.length > 3) {
-            value = value.replace(/\B(?=(?:\d{3})+(?!\d))/g, '\u202f'); // add thin non-breaking spaces as thousands separators
-        }
-        return value;
+        return thousands(value);
     }
 }
 
