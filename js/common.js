@@ -564,7 +564,7 @@ var API = {
             var result = {};
             $.each(entityData.minecraft, function(entityID, entityInfo) {
                 if ('wasSubtype' in entityInfo && entityInfo.wasSubtype) {
-                    continue;
+                    return;
                 }
                 if ('attitude' in entityInfo) {
                     result[entityInfo.oldID] = entityInfo;
