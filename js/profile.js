@@ -307,7 +307,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
 
                         var found = false;
                         mobs.forEach(function(entry) {
-                            if (entry.id === entityID) {
+                            if (entry.id === mob) {
                                 entry[statName] = value;
                                 found = true;
                             }
@@ -315,7 +315,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
 
                         if (!found) {
                             var newEntry = {
-                                id: entityID,
+                                id: mob,
                                 name: name
                             };
                             newEntry[statName] = value;
