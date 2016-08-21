@@ -556,8 +556,32 @@ var API = {
     stringData: function() {
         return API.ajaxJSONDeferred('//assets.' + host + '/json/strings.json');
     },
+    entityData: function() {
+        return API.ajaxJSONDeferred('//assets.' + host + '/json/entities.json');
+    }
     mobData: function() {
-        return API.ajaxJSONDeferred('//assets.' + host + '/json/mobs.json');
+        return API.entityData().then(function(entityData) {
+            var result = {};
+            $.each(entityData.minecraft, function(entityID, entityInfo) {
+                if ('wasSubtype' in entityInfo && entityInfo.wasSubtype) {
+                    continue;
+                }
+                if ('attitude' in entityInfo) {
+                    result[entityInfo.oldID] = entityInfo;
+                }
+            });
+            $.each(entityData.minecraft, function(entityID, entityInfo) {
+                if ('wasSubtype' in entityInfo && entityInfo.wasSubtype) {
+                    if ('attitude' in entityInfo) {
+                        if (!('subtypes' in result[entityInfo.oldID])) {
+                            result[entityInfo.oldID].subtypes = {}
+                        }
+                        result[entityInfo.oldID].subtypes[entityID] = entityInfo;
+                    }
+                }
+            });
+            return {mobs: result};
+        });
     },
     itemData: function() {
         return API.ajaxJSONDeferred('//assets.' + host + '/json/items.json');

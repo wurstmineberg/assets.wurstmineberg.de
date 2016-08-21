@@ -1,0 +1,12 @@
+Fields in entities.json:
+
+Entities are entered by their name IDs. All entities from a plugin are in one object, for example minecraft:horse is at the key path .minecraft.horse
+
+An entity is described by an object with the following keys:
+
+* attitude: one of "friendly", "hostile", or "neutral". Omitted for non-mobs.
+* dimension: the “native” dimension of the mob. One of "overworld", "nether", or "end". Mobs may also spawn in other dimensions.
+* name: the display name for the entity
+* oldID: the string ID used for the entity before Minecraft snapshot 16w32a, if any
+* subtypes: an object mapping subtype IDs (defined by entities.json) to objects describing subtype variants. The fields for the subtypes implicitly inherit the values of the parent.
+* wasSubtype: if true, this was a subtype before Minecraft smapshot 16w32a. Defaults to false.

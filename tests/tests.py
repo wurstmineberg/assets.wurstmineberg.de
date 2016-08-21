@@ -579,6 +579,53 @@ def validate_enchantments_json():
             else:
                 seen_numeric_ids.add(enchantment['numericID'])
 
+@test
+def validate_entities_json():
+    with open('json/entities.json') as entities_f:
+        entities = json.load(entities_f)
+    for plugin, plugin_entities in entities.items():
+        for entity_id, entity in plugin_entities.items():
+            entity_fields = {
+                'attitude',
+                'dimension',
+                'name',
+                'oldID',
+                'subtypes',
+                'wasSubtype'
+            }
+            for key in entity:
+                if key not in entity_fields:
+                    raise ValueError('Unknown field in entity info: {!r}'.format(key))
+            if 'attitude' in entity:
+                assert 'dimension' in entity
+                assert entity['attitude'] in ('friendly', 'hostile', 'neutral')
+            if 'dimension' in entity:
+                assert 'attitude' in entity
+                assert entity['dimension'] in ('overworld', 'nether', 'end')
+            assert isinstance(entity['name'], str)
+            if 'subtypes' in entity:
+                assert isinstance(entity['subtypes'], dict)
+                for subtype, subtype_info in entity['subtypes'].items():
+                    subtype_fields = {
+                        'attitude',
+                        'dimension',
+                        'name',
+                        'oldID'
+                    }
+                    for key in subtype_info:
+                        if key not in subtype_fields:
+                            raise ValueError('Unknown field in entity subtype info: {!r}'.format(key))
+                    if 'attitude' in subtype_info:
+                        assert 'attitude' in entity
+                        assert subtype_info['attitude'] in ('friendly', 'hostile', 'neutral')
+                    if 'dimension' in subtype_info:
+                        assert 'dimension' in entity
+                        assert subtype_info['dimension'] in ('overworld', 'nether', 'end')
+                    if 'name' in subtype_info:
+                        assert isinstance(subtype_info['name'], str)
+            if 'wasSubtype' in entity:
+                assert entity['wasSubtype'] is True
+
 def run_tests():
     for test in tests:
         test()

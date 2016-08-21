@@ -1,0 +1,464 @@
+{
+    "minecraft": {
+        "area_effect_cloud": {
+            "name": "Lingering Effect",
+            "oldID": "AreaEffectCloud"
+        },
+        "armor_stand": {
+            "name": "Armor Stand",
+            "oldID": "ArmorStand"
+        },
+        "arrow": {
+            "name": "Arrow",
+            "oldID": "Arrow"
+        },
+        "bat": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Bat",
+            "oldID": "Bat"
+        },
+        "blaze": {
+            "attitude": "hostile",
+            "dimension": "nether",
+            "name": "Blaze",
+            "oldID": "Blaze"
+        },
+        "cave_spider": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Cave Spider",
+            "oldID": "CaveSpider"
+        },
+        "chicken": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Chicken",
+            "oldID": "Chicken"
+        },
+        "commandblock_minecart": {
+            "name": "Minecart with Command Block",
+            "oldID": "MinecartCommandBlock"
+        },
+        "cow": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Cow",
+            "oldID": "Cow"
+        },
+        "creeper": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Creeper",
+            "oldID": "Creeper",
+            "subtypes": {
+                "charged": {
+                    "name": "Charged Creeper"
+                },
+                "regular": {}
+            }
+        },
+        "donkey": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Donkey",
+            "oldID": "EntityHorse",
+            "wasSubtype": true
+        },
+        "dragon_fireball": {
+            "name": "Dragon Fireball",
+            "oldID": "DragonFireball"
+        },
+        "egg": {
+            "name": "Egg",
+            "oldID": "ThrownEgg"
+        },
+        "elder_guardian": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Elder Guardian",
+            "oldID": "Guardian",
+            "wasSubtype": true
+        },
+        "ender_crystal": {
+            "name": "End Crystal",
+            "oldID": "EnderCrystal"
+        },
+        "ender_dragon": {
+            "attitude": "hostile",
+            "dimension": "end",
+            "name": "Ender Dragon",
+            "oldID": "EnderDragon"
+        },
+        "ender_pearl": {
+            "name": "Ender Pearl",
+            "oldID": "ThrownEnderPearl"
+        },
+        "enderman": {
+            "attitude": "hostile",
+            "dimension": "end",
+            "name": "Enderman",
+            "oldID": "Enderman"
+        },
+        "endermite": {
+            "attitude": "hostile",
+            "dimension": "end",
+            "name": "Endermite",
+            "oldID": "Endermite"
+        },
+        "eye_of_ender_signal": {
+            "name": "Eye of Ender",
+            "oldID": "EyeOfEnderSignal"
+        },
+        "falling_block": {
+            "name": "Falling Block",
+            "oldID": "FallingSand"
+        },
+        "fireworks_rocket": {
+            "name": "Firework Rocket",
+            "oldID": "FireworksRocketEntity"
+        },
+        "furnace_minecart": {
+            "name": "Minecart with Furnace",
+            "oldID": "MinecartFurnace"
+        },
+        "ghast": {
+            "attitude": "hostile",
+            "dimension": "nether",
+            "name": "Ghast",
+            "oldID": "Ghast"
+        },
+        "guardian": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Guardian",
+            "oldID": "Guardian"
+        },
+        "hopper_minecart": {
+            "name": "Minecart with Hopper",
+            "oldID": "MinecartHopper"
+        },
+        "horse": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Horse",
+            "oldID": "EntityHorse"
+        },
+        "husk": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Husk",
+            "oldID": "Zombie",
+            "wasSubtype": true
+        },
+        "item_frame": {
+            "name": "Item Frame",
+            "oldID": "ItemFrame"
+        },
+        "leash_knot": {
+            "name": "Lead Knot",
+            "oldID": "LeashKnot"
+        },
+        "lightning_bolt": {
+            "name": "Lightning Bolt",
+            "oldID": "LightningBolt"
+        },
+        "magma_cube": {
+            "attitude": "hostile",
+            "dimension": "nether",
+            "name": "Magma Cube",
+            "oldID": "LavaSlime",
+            "subtypes": {
+                "big": {
+                    "name": "Big Magma Cube"
+                },
+                "small": {
+                    "name": "Small Magma Cube"
+                },
+                "tiny": {
+                    "name": "Tiny Magma Cube"
+                }
+            }
+        },
+        "minecart": {
+            "name": "Minecart",
+            "oldID": "MinecartRideable"
+        },
+        "mooshroom": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Mooshroom",
+            "oldID": "MushroomCow"
+        },
+        "mule": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Mule",
+            "oldID": "EntityHorse",
+            "wasSubtype": true
+        },
+        "ocelot": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Cat or Ocelot",
+            "oldID": "Ozelot",
+            "subtypes": {
+                "tame": {
+                    "name": "Cat"
+                },
+                "wild": {
+                    "name": "Ocelot"
+                }
+            }
+        },
+        "pig": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Pig",
+            "oldID": "Pig"
+        },
+        "polar_bear": {
+            "attitude": "neutral",
+            "dimension": "overworld",
+            "name": "Polar Bear",
+            "oldID": "PolarBear"
+        },
+        "potion": {
+            "name": "Splash Potion",
+            "oldID": "ThrownPotion"
+        },
+        "rabbit": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Rabbit",
+            "oldID": "Rabbit",
+            "subtypes": {
+                "killer": {
+                    "attitude": "hostile",
+                    "name": "Killer Bunny"
+                },
+                "regular": {}
+            }
+        },
+        "sheep": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Sheep",
+            "oldID": "Sheep",
+            "subtypes": {
+                "black": {
+                    "name": "Black Sheep"
+                },
+                "blue": {
+                    "name": "Blue Sheep"
+                },
+                "brown": {
+                    "name": "Brown Sheep"
+                },
+                "cyan": {
+                    "name": "Cyan Sheep"
+                },
+                "gray": {
+                    "name": "Gray Sheep"
+                },
+                "green": {
+                    "name": "Green Sheep"
+                },
+                "lightBlue": {
+                    "name": "Light Blue Sheep"
+                },
+                "lightGray": {
+                    "name": "Light Gray Sheep"
+                },
+                "lime": {
+                    "name": "Lime Sheep"
+                },
+                "magenta": {
+                    "name": "Magenta Sheep"
+                },
+                "orange": {
+                    "name": "Orange Sheep"
+                },
+                "pink": {
+                    "name": "Pink Sheep"
+                },
+                "purple": {
+                    "name": "Purple Sheep"
+                },
+                "red": {
+                    "name": "Red Sheep"
+                },
+                "white": {
+                    "name": "White Sheep"
+                },
+                "yellow": {
+                    "name": "Yellow Sheep"
+                }
+            }
+        },
+        "shulker": {
+            "attitude": "hostile",
+            "dimension": "end",
+            "name": "Shulker",
+            "oldID": "Shulker"
+        },
+        "shulker_bullet": {
+            "name": "Shulker Bullet",
+            "oldID": "ShulkerBullet"
+        },
+        "silverfish": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Silverfish",
+            "oldID": "Silverfish"
+        },
+        "skeleton": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Skeleton",
+            "oldID": "Skeleton"
+        },
+        "skeleton_horse": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Skeleton Horse",
+            "oldID": "EntityHorse",
+            "wasSubtype": true
+        },
+        "slime": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Slime",
+            "oldID": "Slime",
+            "subtypes": {
+                "big": {
+                    "name": "Big Slime"
+                },
+                "small": {
+                    "name": "Small Slime"
+                },
+                "tiny": {
+                    "name": "Tiny Slime"
+                }
+            }
+        },
+        "small_fireball": {
+            "name": "Blaze Fireball",
+            "oldID": "SmallFireball"
+        },
+        "spawner_minecart": {
+            "name": "Minecart with Spawner",
+            "oldID": "MinecartSpawner"
+        },
+        "spectral_arrow": {
+            "name": "Spectral Arrow",
+            "oldID": "SpectralArrow"
+        },
+        "spider": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Spider",
+            "oldID": "Spider"
+        },
+        "squid": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Squid",
+            "oldID": "Squid"
+        },
+        "stray": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Stray",
+            "oldID": "Skeleton",
+            "wasSubtype": true
+        },
+        "tnt": {
+            "name": "TNT",
+            "oldID": "PrimedTnt"
+        },
+        "tnt_minecart": {
+            "name": "Minecart with TNT",
+            "oldID": "MinecartTNT"
+        },
+        "villager": {
+            "attitude": "friendly",
+            "dimension": "overworld",
+            "name": "Villager",
+            "oldID": "Villager"
+        },
+        "villager_golem": {
+            "attitude": "neutral",
+            "dimension": "overworld",
+            "name": "Iron Golem",
+            "oldID": "VillagerGolem"
+        },
+        "witch": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Witch",
+            "oldID": "Witch"
+        },
+        "wither": {
+            "attitude": "hostile",
+            "dimension": "nether",
+            "name": "Wither",
+            "oldID": "WitherBoss"
+        },
+        "wither_skeleton": {
+            "attitude": "hostile",
+            "dimension": "nether",
+            "name": "Wither Skeleton",
+            "oldID": "Skeleton",
+            "wasSubtype": true
+        },
+        "wither_skull": {
+            "name": "Wither Skull",
+            "oldID": "WitherSkull"
+        },
+        "wolf": {
+            "attitude": "neutral",
+            "dimension": "overworld",
+            "name": "Wolf",
+            "oldID": "Wolf",
+            "subtypes": {
+                "tame": {
+                    "name": "Tamed Wolf"
+                },
+                "wild": {
+                    "name": "Wild Wolf"
+                }
+            }
+        },
+        "xp_bottle": {
+            "name": "Bottle o'Enchanting",
+            "oldID": "ThrownExpBottle"
+        },
+        "zombie": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Zombie",
+            "oldID": "Zombie"
+        },
+        "zombie_horse": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Zombie Horse",
+            "oldID": "EntityHorse",
+            "wasSubtype": true
+        },
+        "zombie_pigman": {
+            "attitude": "neutral",
+            "dimension": "nether",
+            "name": "Zombie Pigman",
+            "oldID": "PigZombie"
+        },
+        "zombie_villager": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Villager Zombie",
+            "oldID": "Zombie",
+            "wasSubtype": true
+        }
+    }
+}
