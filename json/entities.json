@@ -24,11 +24,19 @@
             "name": "Blaze",
             "oldID": "Blaze"
         },
+        "boat": {
+            "name": "Boat",
+            "oldID": "Boat"
+        },
         "cave_spider": {
             "attitude": "hostile",
             "dimension": "overworld",
             "name": "Cave Spider",
             "oldID": "CaveSpider"
+        },
+        "chest_minecart": {
+            "name": "Minecart with Chest",
+            "oldID": "MinecartChest"
         },
         "chicken": {
             "attitude": "friendly",
@@ -151,6 +159,10 @@
             "oldID": "Zombie",
             "wasSubtype": true
         },
+        "item": {
+            "name": "Item",
+            "oldID": "Item"
+        },
         "item_frame": {
             "name": "Item Frame",
             "oldID": "ItemFrame"
@@ -210,6 +222,10 @@
                     "name": "Ocelot"
                 }
             }
+        },
+        "painting": {
+            "name": "Painting",
+            "oldID": "Painting"
         },
         "pig": {
             "attitude": "friendly",
@@ -343,8 +359,16 @@
             }
         },
         "small_fireball": {
-            "name": "Blaze Fireball",
+            "name": "Small Fireball",
             "oldID": "SmallFireball"
+        },
+        "snowball": {
+            "name": "Snowball",
+            "oldID": "Snowball"
+        },
+        "snowman": {
+            "name": "Snow Golem",
+            "oldID": "SnowMan"
         },
         "spawner_minecart": {
             "name": "Minecart with Spawner",
@@ -433,6 +457,10 @@
         "xp_bottle": {
             "name": "Bottle o'Enchanting",
             "oldID": "ThrownExpBottle"
+        },
+        "xp_orb": {
+            "name": "Experience",
+            "oldID": "XPOrb"
         },
         "zombie": {
             "attitude": "hostile",
