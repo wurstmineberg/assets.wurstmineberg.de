@@ -1809,8 +1809,10 @@
                 "tagValue": null
             },
             "minecraft:spectral_arrow"
-        ],
-        "2": [
+        ]
+    },
+    {
+        "-1": [
             "minecraft:white_shulker_box",
             "minecraft:orange_shulker_box",
             "minecraft:magenta_shulker_box",
@@ -1827,9 +1829,7 @@
             "minecraft:green_shulker_box",
             "minecraft:red_shulker_box",
             "minecraft:black_shulker_box"
-        ]
-    },
-    {
+        ],
         "0": [
             "minecraft:paper",
             "minecraft:book",
