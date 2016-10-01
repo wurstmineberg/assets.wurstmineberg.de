@@ -1222,6 +1222,12 @@
                     "amount": 1,
                     "structure": "endCrystalPillar",
                     "type": "structure"
+                },
+                {
+                    "block": true,
+                    "description": "End return portals which look like End gateways are randomly generated in the End. 12 blocks of bedrock generate as part of each.",
+                    "renewability": "infinite",
+                    "type": "special"
                 }
             ]
         },
@@ -1484,6 +1490,176 @@
             "itemID": 135,
             "name": "Birch Wood Stairs"
         },
+        "black_shulker_box": {
+            "blockID": 234,
+            "image": "blackshulkerbox.png",
+            "itemID": 234,
+            "name": "Black Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 0,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
+        },
         "blaze_powder": {
             "image": {
                 "nearestNeighbor": true,
@@ -1499,6 +1675,176 @@
             },
             "itemID": 369,
             "name": "Blaze Rod"
+        },
+        "blue_shulker_box": {
+            "blockID": 230,
+            "image": "blueshulkerbox.png",
+            "itemID": 230,
+            "name": "Blue Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 4,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
         },
         "boat": {
             "image": {
@@ -1939,6 +2285,176 @@
                 }
             ],
             "pickBlock": "minecraft:brown_mushroom"
+        },
+        "brown_shulker_box": {
+            "blockID": 231,
+            "image": "brownshulkerbox.png",
+            "itemID": 231,
+            "name": "Brown Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 3,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
         },
         "bucket": {
             "image": {
@@ -3434,6 +3950,176 @@
                     "type": "structure"
                 }
             ]
+        },
+        "cyan_shulker_box": {
+            "blockID": 228,
+            "image": "cyanshulkerbox.png",
+            "itemID": 228,
+            "name": "Cyan Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 6,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
         },
         "dark_oak_boat": {
             "image": {
@@ -5614,6 +6300,20 @@
                 {
                     "structure": "iglooLootChest",
                     "type": "chest"
+                },
+                {
+                    "amountMaxLooting": 4,
+                    "amountMin": 0,
+                    "entity": "evocation_illager",
+                    "requires": "player",
+                    "type": "entityDeath"
+                },
+                {
+                    "amountMaxLooting": 4,
+                    "amountMin": 0,
+                    "entity": "vindication_illager",
+                    "requires": "player",
+                    "type": "entityDeath"
                 }
             ]
         },
@@ -5779,6 +6479,12 @@
                     "block": true,
                     "description": "Two linked End gateways generate each time an <a href=\"http://minecraft.gamepedia.com/Ender_Dragon\">Ender dragon</a> is killed. Up to 20 gateways can be generated.",
                     "renewability": "finite",
+                    "type": "special"
+                },
+                {
+                    "block": true,
+                    "description": "End return portals which look like End gateways are randomly generated in the End.",
+                    "renewability": "infinite",
                     "type": "special"
                 }
             ],
@@ -7087,6 +7793,346 @@
                 }
             ]
         },
+        "gray_shulker_box": {
+            "blockID": 226,
+            "image": "grayshulkerbox.png",
+            "itemID": 226,
+            "name": "Gray Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 8,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
+        },
+        "green_shulker_box": {
+            "blockID": 232,
+            "image": "greenshulkerbox.png",
+            "itemID": 232,
+            "name": "Green Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 2,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
+        },
         "gunpowder": {
             "image": {
                 "nearestNeighbor": true,
@@ -7276,6 +8322,35 @@
             },
             "itemID": 258,
             "name": "Iron Axe",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:iron_ingot",
+                        "minecraft:iron_ingot",
+                        null,
+                        "minecraft:iron_ingot",
+                        "minecraft:stick",
+                        null,
+                        null,
+                        "minecraft:stick",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "career": 2,
+                    "price": 8,
+                    "priceMin": 6,
+                    "profession": 3,
+                    "type": "trading"
+                },
+                {
+                    "amountMin": 0,
+                    "entity": "vindication_illager",
+                    "requires": "player",
+                    "type": "entityDeath"
+                }
+            ],
             "stackable": false
         },
         "iron_bars": {
@@ -8330,6 +9405,13 @@
                     "amountMin": 0,
                     "entity": "MushroomCow",
                     "type": "entityDeath"
+                },
+                {
+                    "amountMax": 2,
+                    "amountMaxLooting": 5,
+                    "amountMin": 0,
+                    "entity": "llama",
+                    "type": "entityDeath"
                 }
             ]
         },
@@ -8702,6 +9784,176 @@
             ],
             "solid": false
         },
+        "light_blue_shulker_box": {
+            "blockID": 222,
+            "image": "lightblueshulkerbox.png",
+            "itemID": 222,
+            "name": "Light Blue Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 12,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
+        },
         "light_weighted_pressure_plate": {
             "blockID": 147,
             "dropsSelf": "pickaxe",
@@ -8725,6 +9977,176 @@
                 }
             ],
             "solid": false
+        },
+        "lime_shulker_box": {
+            "blockID": 224,
+            "image": "limeshulkerbox.png",
+            "itemID": 224,
+            "name": "Lime Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 10,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
         },
         "lingering_potion": {
             "effects": {
@@ -9723,6 +11145,176 @@
             "itemID": 162,
             "name": "Wood"
         },
+        "magenta_shulker_box": {
+            "blockID": 221,
+            "image": "magentashulkerbox.png",
+            "itemID": 221,
+            "name": "Magenta Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 13,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
+        },
         "magma": {
             "blockID": 213,
             "dropsSelf": "pickaxe",
@@ -10330,6 +11922,30 @@
             ],
             "solid": false
         },
+        "observer": {
+            "blockID": 218,
+            "dropsSelf": "pickaxe",
+            "image": "observer.png",
+            "itemID": 218,
+            "name": "Observer",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        "minecraft:redstone",
+                        "minecraft:redstone",
+                        "minecraft:quartz",
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone",
+                        "minecraft:cobblestone"
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
+            "solid": false
+        },
         "obsidian": {
             "blockID": 49,
             "dropsSelf": "minecraft:diamond_pickaxe",
@@ -10379,6 +11995,176 @@
                     "type": "special"
                 }
             ]
+        },
+        "orange_shulker_box": {
+            "blockID": 220,
+            "image": "orangeshulkerbox.png",
+            "itemID": 220,
+            "name": "Orange Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 14,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
         },
         "packed_ice": {
             "blockID": 174,
@@ -10444,6 +12230,176 @@
                     "type": "craftingShaped"
                 }
             ]
+        },
+        "pink_shulker_box": {
+            "blockID": 225,
+            "image": "pinkshulkerbox.png",
+            "itemID": 225,
+            "name": "Pink Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 9,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
         },
         "piston": {
             "blockID": 33,
@@ -11613,6 +13569,190 @@
             "name": "Pumpkin Stem",
             "solid": false
         },
+        "purple_shulker_box": {
+            "blockID": 229,
+            "image": "purpleshulkerbox.png",
+            "itemID": 229,
+            "name": "Purple Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 5,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        null,
+                        "minecraft:shulker_shell",
+                        null,
+                        null,
+                        "minecraft:chest",
+                        null,
+                        null,
+                        "minecraft:shulker_shell",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
+            "solid": false,
+            "stackable": false
+        },
         "purpur_block": {
             "blockID": 201,
             "dropsSelf": [
@@ -12637,6 +14777,176 @@
                 }
             ]
         },
+        "red_shulker_box": {
+            "blockID": 233,
+            "image": "redshulkerbox.png",
+            "itemID": 233,
+            "name": "Red Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 1,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
+        },
         "redstone": {
             "image": {
                 "nearestNeighbor": true,
@@ -13476,6 +15786,21 @@
                 }
             }
         },
+        "shulker_shell": {
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "shulkershell.png"
+            },
+            "itemID": 450,
+            "name": "Shulker Shell",
+            "obtaining": [
+                {
+                    "amountMin": 0,
+                    "entity": "shulker",
+                    "type": "entityDeath"
+                }
+            ]
+        },
         "sign": {
             "image": {
                 "nearestNeighbor": true,
@@ -13485,6 +15810,176 @@
             "name": "Sign",
             "stackable": 16,
             "whenPlaced": "minecraft:standing_sign"
+        },
+        "silver_shulker_box": {
+            "blockID": 227,
+            "image": "lightgrayshulkerbox.png",
+            "itemID": 227,
+            "name": "Light Gray Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 7,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
         },
         "skull": {
             "blockID": 144,
@@ -18619,6 +21114,21 @@
             ],
             "solid": false
         },
+        "totem": {
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "totem.png"
+            },
+            "itemID": 449,
+            "name": "Totem of Undying",
+            "obtaining": [
+                {
+                    "entity": "evocation_illager",
+                    "type": "entityDeath"
+                }
+            ],
+            "stackable": false
+        },
         "trapdoor": {
             "blockID": 96,
             "image": "trapdoor.png",
@@ -18933,6 +21443,176 @@
                     "type": "mining"
                 }
             ]
+        },
+        "white_shulker_box": {
+            "blockID": 219,
+            "image": "whiteshulkerbox.png",
+            "itemID": 219,
+            "name": "White Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 15,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
         },
         "wooden_axe": {
             "durability": 59,
@@ -20022,6 +22702,176 @@
                 }
             ],
             "solid": false
+        },
+        "yellow_shulker_box": {
+            "blockID": 223,
+            "image": "yellowshulkerbox.png",
+            "itemID": 223,
+            "name": "Yellow Shulker Box",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:white_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:orange_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:magenta_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:light_blue_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:yellow_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:lime_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:pink_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:gray_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:silver_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:cyan_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:purple_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:blue_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:brown_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:green_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:red_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "recipe": [
+                        "minecraft:black_shulker_box",
+                        {
+                            "damage": 11,
+                            "id": "minecraft:dye"
+                        }
+                    ],
+                    "type": "craftingShapeless"
+                }
+            ],
+            "solid": false,
+            "stackable": false
         }
     }
 }

@@ -123,7 +123,7 @@ The fields for the damage values, status effects, and tag variants implicitly in
     * special: a method of obtaining not described above.
         * description: a HTML description for All The Items.
         * block: if true, the method creates a block placed in the world. If false (the default), the method creates an item as a dropped item entity or within an inventory.
-        * renewability: One of "finite", "infinite", "manual", "fullyAuto", describing the method's renewability as defined on http://wiki.wurstmineberg.de/Renewability
+        * renewability: One of "finite", "infinite", "manual", "fullyAuto", describing the method's renewability as defined on https://wiki.wurstmineberg.de/Renewability
 * dropsSelf: used to specify how the block must be mined so that it drops itself. May be one of the following:
     * an object structured like a “method of obtaining: mining” object, except without the “block” key.
     * a tool stub.

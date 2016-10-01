@@ -11,6 +11,11 @@
                 "name": "Bane of Arthropods",
                 "numericID": 18
             },
+            "binding_curse": {
+                "maxLevel": 1,
+                "name": "Curse of Binding",
+                "numericID": 10
+            },
             "blast_protection": {
                 "maxLevel": 4,
                 "name": "Blast Protection",
@@ -135,6 +140,11 @@
                 "maxLevel": 3,
                 "name": "Unbreaking",
                 "numericID": 34
+            },
+            "vanishing_curse": {
+                "maxLevel": 1,
+                "name": "Curse of Vanishing",
+                "numericID": 71
             }
         }
     },

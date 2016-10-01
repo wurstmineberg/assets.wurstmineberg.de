@@ -114,6 +114,14 @@
             "name": "Endermite",
             "oldID": "Endermite"
         },
+        "evocation_fangs": {
+            "name": "Evocation Fangs"
+        },
+        "evocation_illager": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Evoker"
+        },
         "eye_of_ender_signal": {
             "name": "Eye of Ender",
             "oldID": "EyeOfEnderSignal"
@@ -174,6 +182,11 @@
         "lightning_bolt": {
             "name": "Lightning Bolt",
             "oldID": "LightningBolt"
+        },
+        "llama": {
+            "attitude": "neutral",
+            "dimension": "overworld",
+            "name": "Llama"
         },
         "magma_cube": {
             "attitude": "hostile",
@@ -405,6 +418,11 @@
             "name": "Minecart with TNT",
             "oldID": "MinecartTNT"
         },
+        "vex": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Vex"
+        },
         "villager": {
             "attitude": "friendly",
             "dimension": "overworld",
@@ -416,6 +434,11 @@
             "dimension": "overworld",
             "name": "Iron Golem",
             "oldID": "VillagerGolem"
+        },
+        "vindication_illager": {
+            "attitude": "hostile",
+            "dimension": "overworld",
+            "name": "Vindicator"
         },
         "witch": {
             "attitude": "hostile",
