@@ -770,7 +770,8 @@
             },
             "minecraft:slime",
             "minecraft:web",
-            "minecraft:bone_block"
+            "minecraft:bone_block",
+            "minecraft:totem"
         ],
         "0": [
             "minecraft:redstone",
@@ -814,7 +815,8 @@
             },
             "minecraft:iron_door",
             "minecraft:iron_trapdoor",
-            "minecraft:noteblock"
+            "minecraft:noteblock",
+            "minecraft:observer"
         ],
         "1": [
             "minecraft:stick",
@@ -1738,7 +1740,8 @@
             "minecraft:purpur_block",
             "minecraft:purpur_pillar",
             "minecraft:purpur_slab",
-            "minecraft:purpur_stairs"
+            "minecraft:purpur_stairs",
+            "minecraft:shulker_shell"
         ]
     },
     {
@@ -1806,6 +1809,24 @@
                 "tagValue": null
             },
             "minecraft:spectral_arrow"
+        ],
+        "2": [
+            "minecraft:white_shulker_box",
+            "minecraft:orange_shulker_box",
+            "minecraft:magenta_shulker_box",
+            "minecraft:light_blue_shulker_box",
+            "minecraft:yellow_shulker_box",
+            "minecraft:lime_shulker_box",
+            "minecraft:pink_shulker_box",
+            "minecraft:gray_shulker_box",
+            "minecraft:silver_shulker_box",
+            "minecraft:cyan_shulker_box",
+            "minecraft:purple_shulker_box",
+            "minecraft:blue_shulker_box",
+            "minecraft:brown_shulker_box",
+            "minecraft:green_shulker_box",
+            "minecraft:red_shulker_box",
+            "minecraft:black_shulker_box"
         ]
     },
     {
