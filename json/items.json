@@ -18852,7 +18852,7 @@
             "blockID": 159,
             "damageValues": {
                 "0": {
-                    "name": "White Stained Clay",
+                    "name": "White Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -18888,7 +18888,7 @@
                 },
                 "1": {
                     "image": "orangestainedclay.png",
-                    "name": "Orange Stained Clay",
+                    "name": "Orange Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -18929,7 +18929,7 @@
                 },
                 "10": {
                     "image": "purplestainedclay.png",
-                    "name": "Purple Stained Clay",
+                    "name": "Purple Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -18953,7 +18953,7 @@
                 },
                 "11": {
                     "image": "bluestainedclay.png",
-                    "name": "Blue Stained Clay",
+                    "name": "Blue Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -18982,7 +18982,7 @@
                 },
                 "12": {
                     "image": "brownstainedclay.png",
-                    "name": "Brown Stained Clay",
+                    "name": "Brown Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19018,7 +19018,7 @@
                 },
                 "13": {
                     "image": "greenstainedclay.png",
-                    "name": "Green Stained Clay",
+                    "name": "Green Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19042,7 +19042,7 @@
                 },
                 "14": {
                     "image": "redstainedclay.png",
-                    "name": "Red Stained Clay",
+                    "name": "Red Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19078,7 +19078,7 @@
                 },
                 "15": {
                     "image": "blackstainedclay.png",
-                    "name": "Black Stained Clay",
+                    "name": "Black Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19102,7 +19102,7 @@
                 },
                 "2": {
                     "image": "magentastainedclay.png",
-                    "name": "Magenta Stained Clay",
+                    "name": "Magenta Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19126,7 +19126,7 @@
                 },
                 "3": {
                     "image": "lightbluestainedclay.png",
-                    "name": "Light Blue Stained Clay",
+                    "name": "Light Blue Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19150,7 +19150,7 @@
                 },
                 "4": {
                     "image": "yellowstainedclay.png",
-                    "name": "Yellow Stained Clay",
+                    "name": "Yellow Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19186,7 +19186,7 @@
                 },
                 "5": {
                     "image": "limestainedclay.png",
-                    "name": "Lime Stained Clay",
+                    "name": "Lime Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19210,7 +19210,7 @@
                 },
                 "6": {
                     "image": "pinkstainedclay.png",
-                    "name": "Pink Stained Clay",
+                    "name": "Pink Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19234,7 +19234,7 @@
                 },
                 "7": {
                     "image": "graystainedclay.png",
-                    "name": "Gray Stained Clay",
+                    "name": "Gray Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19258,7 +19258,7 @@
                 },
                 "8": {
                     "image": "lightgraystainedclay.png",
-                    "name": "Light Gray Stained Clay",
+                    "name": "Light Gray Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19294,7 +19294,7 @@
                 },
                 "9": {
                     "image": "cyanstainedclay.png",
-                    "name": "Cyan Stained Clay",
+                    "name": "Cyan Hardened Clay",
                     "obtaining": [
                         {
                             "outputAmount": 8,
@@ -19320,7 +19320,7 @@
             "dropsSelf": "pickaxe",
             "image": "whitestainedclay.png",
             "itemID": 159,
-            "name": "Stained Clay"
+            "name": "Stained Hardened Clay"
         },
         "standing_banner": {
             "blockID": 176,
