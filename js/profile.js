@@ -112,10 +112,11 @@ function displaySlot(cell, stack, items, stringData, enchData) {
     }
     cell.children('div').attr('title', name);
     cell.children('div').tooltip();
+    // durability
     if (stack.Damage > 0 && item.durability > 0) {
         var durability = (item.durability - stack.Damage) / item.durability;
         cell.children('div').append($('<div>', {class: 'durability'}).html($('<div>').css({
-            'background-color': 'rgb(' + (255 - Math.floor(durability * 256)) + ', ' + Math.floor(durability * 256) + ', 0)',
+            'background-color': 'hsl(' + Math.floor(durability * 120) + ', 100%, 50%)',
             width: Math.floor(durability * 14) * 2 + 'px'
         })));
     }
