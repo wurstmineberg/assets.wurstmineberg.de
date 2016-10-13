@@ -3621,10 +3621,45 @@
         "cobblestone_wall": {
             "blockID": 139,
             "damageValues": {
-                "0": {},
+                "0": {
+                    "obtaining": [
+                        {
+                            "outputAmount": 6,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                "minecraft:cobblestone",
+                                "minecraft:cobblestone",
+                                "minecraft:cobblestone",
+                                "minecraft:cobblestone",
+                                "minecraft:cobblestone",
+                                "minecraft:cobblestone"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
                 "1": {
                     "image": "mossycobblewall.png",
-                    "name": "Mossy Cobblestone Wall"
+                    "name": "Mossy Cobblestone Wall",
+                    "obtaining": [
+                        {
+                            "outputAmount": 6,
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                "minecraft:mossy_cobblestone",
+                                "minecraft:mossy_cobblestone",
+                                "minecraft:mossy_cobblestone",
+                                "minecraft:mossy_cobblestone",
+                                "minecraft:mossy_cobblestone",
+                                "minecraft:mossy_cobblestone"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
                 }
             },
             "image": "cobblewall.png",
