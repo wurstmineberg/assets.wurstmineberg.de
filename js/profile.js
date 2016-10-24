@@ -56,7 +56,7 @@ function displaySlot(cell, stack, items, stringData, enchData) {
             }
         }
     }
-    // enchantments / patterns
+    // enchantments / patterns / contents
     if ('tag' in stack) {
         var enchantments = [];
         if ('ench' in stack.tag) {
@@ -108,6 +108,12 @@ function displaySlot(cell, stack, items, stringData, enchData) {
                 name += stringData.items.colors[pattern.Color] + ' ' + stringData.items.bannerPatterns[pattern.Pattern];
             });
             name += ')';
+        } else if ('BlockEntityTag' in stack.tag && 'Items' in stack.tag.BlockEntityTag) {
+            if (stack.tag.BlockEntityTag.Items.length == 1) {
+                name += ' (1 item stack)';
+            } else {
+                name += ' (' + stack.tag.BlockEntityTag.Items.length + ' item stacks)';
+            }
         }
     }
     cell.children('div').attr('title', name);
