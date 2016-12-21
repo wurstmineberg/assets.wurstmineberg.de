@@ -7463,6 +7463,46 @@
                     "amountMax": 3,
                     "structure": "iglooLootChest",
                     "type": "chest"
+                },
+                {
+                    "input": "minecraft:golden_horse_armor",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:golden_sword",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:golden_pickaxe",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:golden_shovel",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:golden_hoe",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:golden_axe",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:golden_helmet",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:golden_chestplate",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:golden_leggings",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:golden_boots",
+                    "type": "smelting"
                 }
             ]
         },
@@ -8822,6 +8862,20 @@
                     "entity": "Zombie",
                     "requires": "player",
                     "type": "entityDeath"
+                },
+                {
+                    "recipe": [
+                        "minecraft:iron_nugget",
+                        "minecraft:iron_nugget",
+                        "minecraft:iron_nugget",
+                        "minecraft:iron_nugget",
+                        "minecraft:iron_nugget",
+                        "minecraft:iron_nugget",
+                        "minecraft:iron_nugget",
+                        "minecraft:iron_nugget",
+                        "minecraft:iron_nugget"
+                    ],
+                    "type": "craftingShapeless"
                 }
             ]
         },
@@ -8881,6 +8935,79 @@
                 }
             ],
             "stackable": false
+        },
+        "iron_nugget": {
+            "image": {
+                "nearestNeighbor": true,
+                "prerendered": "ironnugget.png"
+            },
+            "itemID": 452,
+            "name": "Iron Nugget",
+            "obtaining": [
+                {
+                    "outputAmount": 9,
+                    "recipe": [
+                        "minecraft:iron_ingot"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "input": "minecraft:iron_horse_armor",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:iron_sword",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:iron_pickaxe",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:iron_shovel",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:iron_hoe",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:iron_axe",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:iron_helmet",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:iron_chestplate",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:iron_leggings",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:iron_boots",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:chainmail_helmet",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:chainmail_chestplate",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:chainmail_leggings",
+                    "type": "smelting"
+                },
+                {
+                    "input": "minecraft:chainmail_boots",
+                    "type": "smelting"
+                }
+            ]
         },
         "iron_ore": {
             "blockID": 15,
@@ -21149,7 +21276,7 @@
             ],
             "solid": false
         },
-        "totem": {
+        "totem_of_undying": {
             "image": {
                 "nearestNeighbor": true,
                 "prerendered": "totem.png"

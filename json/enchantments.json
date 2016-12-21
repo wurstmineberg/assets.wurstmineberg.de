@@ -131,6 +131,11 @@
                 "name": "Smite",
                 "numericID": 17
             },
+            "sweeping_edge": {
+                "maxLevel": 3,
+                "name": "Sweeping Edge",
+                "numericID": 22
+            },
             "thorns": {
                 "maxLevel": 3,
                 "name": "Thorns",
