@@ -6929,25 +6929,84 @@
             },
             "itemID": 401,
             "name": "Firework Rocket",
-            "obtaining": [
-                {
-                    "outputAmount": 3,
-                    "recipe": [
-                        "minecraft:paper",
-                        "minecraft:gunpowder"
-                    ],
-                    "type": "craftingShapeless"
+            "tagPath": [
+                "Fireworks",
+                "Flight"
+            ],
+            "tagVariants": {
+                "1": {
+                    "name": "Firework Rocket, flight duration 1",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                "minecraft:paper",
+                                "minecraft:gunpowder"
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                "minecraft:firework_charge",
+                                "minecraft:paper",
+                                "minecraft:gunpowder"
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 },
-                {
-                    "outputAmount": 3,
-                    "recipe": [
-                        "minecraft:firework_charge",
-                        "minecraft:paper",
-                        "minecraft:gunpowder"
-                    ],
-                    "type": "craftingShapeless"
+                "2": {
+                    "name": "Firework Rocket, flight duration 2",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                "minecraft:paper",
+                                "minecraft:gunpowder",
+                                "minecraft:gunpowder"
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                "minecraft:firework_charge",
+                                "minecraft:paper",
+                                "minecraft:gunpowder",
+                                "minecraft:gunpowder"
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "3": {
+                    "name": "Firework Rocket, flight duration 3",
+                    "obtaining": [
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                "minecraft:paper",
+                                "minecraft:gunpowder",
+                                "minecraft:gunpowder",
+                                "minecraft:gunpowder"
+                            ],
+                            "type": "craftingShapeless"
+                        },
+                        {
+                            "outputAmount": 3,
+                            "recipe": [
+                                "minecraft:firework_charge",
+                                "minecraft:paper",
+                                "minecraft:gunpowder",
+                                "minecraft:gunpowder",
+                                "minecraft:gunpowder"
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
                 }
-            ]
+            }
         },
         "fish": {
             "damageValues": {

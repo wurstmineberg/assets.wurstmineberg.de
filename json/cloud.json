@@ -1014,12 +1014,12 @@
                 "damage": 1,
                 "id": "minecraft:coal"
             },
+            "minecraft:iron_nugget",
             "minecraft:iron_ingot",
             "minecraft:gold_nugget",
             "minecraft:gold_ingot",
             "minecraft:diamond",
             "minecraft:emerald",
-            "minecraft:quartz",
             {
                 "id": "minecraft:coal_block",
                 "name": "Coal Block"
@@ -1074,7 +1074,8 @@
                 "id": "minecraft:stone_slab"
             },
             "minecraft:nether_brick_stairs",
-            "minecraft:nether_brick_fence"
+            "minecraft:nether_brick_fence",
+            "minecraft:quartz"
         ]
     },
     {
@@ -1834,7 +1835,19 @@
             "minecraft:paper",
             "minecraft:book",
             "minecraft:writable_book",
-            "minecraft:bookshelf"
+            "minecraft:bookshelf",
+            {
+                "id": "minecraft:fireworks",
+                "tagValue": 1
+            },
+            {
+                "id": "minecraft:fireworks",
+                "tagValue": 2
+            },
+            {
+                "id": "minecraft:fireworks",
+                "tagValue": 3
+            }
         ],
         "1": [
             "minecraft:jukebox",
