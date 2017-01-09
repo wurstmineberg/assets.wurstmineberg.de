@@ -262,5 +262,15 @@
             "plural": "witch huts"
         },
         "requiresOption": true
+    },
+    "woodlandMansion": {
+        "biomes": [
+            "Roofed Forest"
+        ],
+        "dimension": "overworld",
+        "name": {
+            "default": "woodland mansion",
+            "plural": "woodland mansions"
+        }
     }
 }

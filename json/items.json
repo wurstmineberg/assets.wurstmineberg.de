@@ -1488,7 +1488,47 @@
             "blockID": 135,
             "image": "birchwoodstairs.png",
             "itemID": 135,
-            "name": "Birch Wood Stairs"
+            "name": "Birch Wood Stairs",
+            "obtaining": [
+                {
+                    "outputAmount": 4,
+                    "recipe": [
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        },
+                        null,
+                        null,
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        },
+                        null,
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        },
+                        {
+                            "damage": 2,
+                            "id": "minecraft:planks"
+                        }
+                    ],
+                    "type": "craftingShaped"
+                },
+                {
+                    "structure": "woodlandMansion",
+                    "type": "structure"
+                }
+            ],
+            "solid": false
         },
         "black_shulker_box": {
             "blockID": 234,
@@ -7271,6 +7311,22 @@
             },
             "itemID": 343,
             "name": "Minecart with Furnace",
+            "obtaining": [
+                {
+                    "recipe": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        "minecraft:furnace",
+                        null,
+                        null,
+                        "minecraft:minecart",
+                        null
+                    ],
+                    "type": "craftingShaped"
+                }
+            ],
             "stackable": false
         },
         "ghast_tear": {
