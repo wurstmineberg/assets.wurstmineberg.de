@@ -11981,6 +11981,21 @@
             },
             "itemID": 282,
             "name": "Mushroom Stew",
+            "obtaining": [
+                {
+                    "recipe": [
+                        "minecraft:bowl",
+                        "minecraft:brown_mushroom",
+                        "minecraft:red_mushroom"
+                    ],
+                    "type": "craftingShapeless"
+                },
+                {
+                    "item": "minecraft:bowl",
+                    "onEntity": "MushroomCow",
+                    "type": "useItem"
+                }
+            ],
             "stackable": false
         },
         "mutton": {
