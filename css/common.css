@@ -298,7 +298,7 @@ a {
     padding: 0;
 }
 
-.inv-cell > div.inv-cell-style {
+.inv-cell div.inv-cell-style {
     border-color: #373737;
     border-style: solid none none solid;
     border-width: 2px;
@@ -307,7 +307,7 @@ a {
     position: relative;
 }
 
-.inv-cell > div.inv-cell-style > div.inv-cell-image {
+.inv-cell div.inv-cell-style > div.inv-cell-image {
     border-color: white;
     border-style: none solid solid none;
     border-width: 2px;
@@ -317,12 +317,12 @@ a {
     min-width: 32px;
 }
 
-.inv-cell > div.inv-cell-style > div.inv-cell-image > img {
+.inv-cell div.inv-cell-style > div.inv-cell-image > img {
     bottom: 1px;
     position: relative;
 }
 
-.inv-cell > div.inv-cell-style > span.count {
+.inv-cell div.inv-cell-style > span.count {
     bottom: 0;
     color: white;
     font-size: 16px;
