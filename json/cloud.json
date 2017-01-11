@@ -1777,7 +1777,10 @@
                 "id": "minecraft:compass",
                 "sorter": 10
             },
-            "minecraft:clock",
+            {
+                "id": "minecraft:clock",
+                "sorter": 15
+            },
             "minecraft:shears",
             "minecraft:fishing_rod",
             "minecraft:diamond_pickaxe",
@@ -1800,19 +1803,31 @@
         ],
         "1": [
             "minecraft:bow",
-            "minecraft:arrow",
+            {
+                "id": "minecraft:arrow",
+                "sorter": 11
+            },
             "minecraft:diamond_sword",
             "minecraft:iron_sword",
             "minecraft:stone_sword",
             "minecraft:wooden_sword",
             "minecraft:golden_sword",
-            "minecraft:fire_charge",
-            "minecraft:snowball",
+            {
+                "id": "minecraft:fire_charge",
+                "sorter": 12
+            },
+            {
+                "id": "minecraft:snowball",
+                "sorter": 13
+            },
             {
                 "id": "minecraft:shield",
                 "tagValue": null
             },
-            "minecraft:spectral_arrow"
+            {
+                "id": "minecraft:spectral_arrow",
+                "sorter": 14
+            }
         ]
     },
     {
@@ -1850,14 +1865,17 @@
             },
             {
                 "id": "minecraft:fireworks",
+                "sorter": 16,
                 "tagValue": 1
             },
             {
                 "id": "minecraft:fireworks",
+                "sorter": 17,
                 "tagValue": 2
             },
             {
                 "id": "minecraft:fireworks",
+                "sorter": 18,
                 "tagValue": 3
             }
         ],
