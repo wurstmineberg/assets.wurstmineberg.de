@@ -557,10 +557,12 @@ def validate_cloud_json():
             x = int(x)
             for z, chest in enumerate(corridor):
                 try:
-                    validate_item_stub(chest, False, True, items=items, additional_fields={'name'})
+                    validate_item_stub(chest, False, True, items=items, additional_fields={'name', 'sorter'})
                 except:
                     print('Error location: floor {} corridor {} chest {}: {}'.format(y, x, z, chest['id']), file=sys.stderr)
                     raise
+                if 'sorter' in chest:
+                    assert y > 4
 
 @test
 def validate_enchantments_json():

@@ -1773,7 +1773,10 @@
             "minecraft:elytra"
         ],
         "0": [
-            "minecraft:compass",
+            {
+                "id": "minecraft:compass",
+                "sorter": 10
+            },
             "minecraft:clock",
             "minecraft:shears",
             "minecraft:fishing_rod",
@@ -1832,10 +1835,19 @@
             "minecraft:black_shulker_box"
         ],
         "0": [
-            "minecraft:paper",
-            "minecraft:book",
+            {
+                "id": "minecraft:paper",
+                "sorter": 8
+            },
+            {
+                "id": "minecraft:book",
+                "sorter": 7
+            },
             "minecraft:writable_book",
-            "minecraft:bookshelf",
+            {
+                "id": "minecraft:bookshelf",
+                "sorter": 6
+            },
             {
                 "id": "minecraft:fireworks",
                 "tagValue": 1
@@ -1850,7 +1862,10 @@
             }
         ],
         "1": [
-            "minecraft:jukebox",
+            {
+                "id": "minecraft:jukebox",
+                "sorter": 9
+            },
             {
                 "id": "minecraft:record_13",
                 "name": "Music Disc: C418 - 13"

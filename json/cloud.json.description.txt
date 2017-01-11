@@ -6,3 +6,4 @@ Structure of cloud.json:
 * Each corridor array contains one or more chest elements. They are item stubs with the following additional optional keys:
 
 * name: a string specifying the name to be shown on the sign, if different from the item name.
+* sorter: a number representing the x coordinate of the pre-sorter, for stackable items on floors 5 and 6.
