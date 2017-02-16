@@ -137,6 +137,22 @@
                 "damage": 15,
                 "id": "minecraft:stained_hardened_clay"
             },
+            "minecraft:white_glazed_terracotta",
+            "minecraft:orange_glazed_terracotta",
+            "minecraft:magenta_glazed_terracotta",
+            "minecraft:light_blue_glazed_terracotta",
+            "minecraft:yellow_glazed_terracotta",
+            "minecraft:lime_glazed_terracotta",
+            "minecraft:pink_glazed_terracotta",
+            "minecraft:gray_glazed_terracotta",
+            "minecraft:silver_glazed_terracotta",
+            "minecraft:cyan_glazed_terracotta",
+            "minecraft:purple_glazed_terracotta",
+            "minecraft:blue_glazed_terracotta",
+            "minecraft:brown_glazed_terracotta",
+            "minecraft:green_glazed_terracotta",
+            "minecraft:red_glazed_terracotta",
+            "minecraft:black_glazed_terracotta",
             {
                 "id": "minecraft:brick_block",
                 "name": "Brick Block"
@@ -1004,6 +1020,136 @@
             },
             "minecraft:prismarine_shard",
             "minecraft:prismarine_crystals"
+        ],
+        "-2": [
+            {
+                "damage": 0,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 1,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 2,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 3,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 4,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 5,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 6,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 7,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 8,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 9,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 10,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 11,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 12,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 13,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 14,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 15,
+                "id": "minecraft:concrete"
+            },
+            {
+                "damage": 0,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 1,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 2,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 3,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 4,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 5,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 6,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 7,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 8,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 9,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 10,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 11,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 12,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 13,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 14,
+                "id": "minecraft:concrete_powder"
+            },
+            {
+                "damage": 15,
+                "id": "minecraft:concrete_powder"
+            }
         ],
         "0": [
             {

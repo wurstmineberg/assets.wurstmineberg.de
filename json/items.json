@@ -1530,6 +1530,22 @@
             ],
             "solid": false
         },
+        "black_glazed_terracotta": {
+            "blockID": 250,
+            "dropsSelf": "pickaxe",
+            "image": "blackterracotta.png",
+            "itemID": 250,
+            "name": "Black Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 15,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
+        },
         "black_shulker_box": {
             "blockID": 234,
             "image": "blackshulkerbox.png",
@@ -1715,6 +1731,22 @@
             },
             "itemID": 369,
             "name": "Blaze Rod"
+        },
+        "blue_glazed_terracotta": {
+            "blockID": 246,
+            "dropsSelf": "pickaxe",
+            "image": "blueterracotta.png",
+            "itemID": 246,
+            "name": "Blue Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 11,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
         },
         "blue_shulker_box": {
             "blockID": 230,
@@ -2269,6 +2301,22 @@
             "image": "brickstairs.png",
             "itemID": 108,
             "name": "Brick Stairs"
+        },
+        "brown_glazed_terracotta": {
+            "blockID": 247,
+            "dropsSelf": "pickaxe",
+            "image": "brownterracotta.png",
+            "itemID": 247,
+            "name": "Brown Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 12,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
         },
         "brown_mushroom": {
             "blockID": 39,
@@ -3810,6 +3858,789 @@
                 }
             ]
         },
+        "concrete": {
+            "blockID": 251,
+            "damageValues": {
+                "0": {
+                    "image": "whiteconcrete.png",
+                    "name": "White Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "White concrete powder solidifies into white concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "1": {
+                    "image": "orangeconcrete.png",
+                    "name": "Orange Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Orange concrete powder solidifies into orange concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "10": {
+                    "image": "purpleconcrete.png",
+                    "name": "Purple Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Purple concrete powder solidifies into purple concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "11": {
+                    "image": "blueconcrete.png",
+                    "name": "Blue Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Blue concrete powder solidifies into blue concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "12": {
+                    "image": "brownconcrete.png",
+                    "name": "Brown Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Brown concrete powder solidifies into brown concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "13": {
+                    "image": "greenconcrete.png",
+                    "name": "Green Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Green concrete powder solidifies into green concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "14": {
+                    "image": "redconcrete.png",
+                    "name": "Red Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Red concrete powder solidifies into red concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "15": {
+                    "image": "blackconcrete.png",
+                    "name": "Black Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Black concrete powder solidifies into black concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "2": {
+                    "image": "magentaconcrete.png",
+                    "name": "Magenta Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Magenta concrete powder solidifies into magenta concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "3": {
+                    "image": "lightblueconcrete.png",
+                    "name": "Light Blue Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Light blue concrete powder solidifies into light blue concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "4": {
+                    "image": "yellowconcrete.png",
+                    "name": "Yellow Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Yellow concrete powder solidifies into yellow concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "5": {
+                    "image": "limeconcrete.png",
+                    "name": "Lime Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Lime concrete powder solidifies into lime concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "6": {
+                    "image": "pinkconcrete.png",
+                    "name": "Pink Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Pink concrete powder solidifies into pink concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "7": {
+                    "image": "grayconcrete.png",
+                    "name": "Gray Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Gray concrete powder solidifies into gray concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "8": {
+                    "name": "Light Gray Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Light gray concrete powder solidifies into light gray concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                },
+                "9": {
+                    "image": "cyanconcrete.png",
+                    "name": "Cyan Concrete",
+                    "obtaining": [
+                        {
+                            "block": true,
+                            "description": "Cyan concrete powder solidifies into cyan concrete when next to water.",
+                            "renewability": "fullyAuto",
+                            "type": "special"
+                        }
+                    ]
+                }
+            },
+            "dropsSelf": "pickaxe",
+            "image": "lightgrayconcrete.png",
+            "itemID": 251,
+            "name": "Concrete"
+        },
+        "concrete_powder": {
+            "blockID": 252,
+            "damageValues": {
+                "0": {
+                    "image": "whiteconcretepowder.png",
+                    "name": "White Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "1": {
+                    "image": "orangeconcretepowder.png",
+                    "name": "Orange Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "10": {
+                    "image": "purpleconcretepowder.png",
+                    "name": "Purple Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "11": {
+                    "image": "blueconcretepowder.png",
+                    "name": "Blue Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "12": {
+                    "image": "brownconcretepowder.png",
+                    "name": "Brown Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "13": {
+                    "image": "greenconcretepowder.png",
+                    "name": "Green Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "14": {
+                    "image": "redconcretepowder.png",
+                    "name": "Red Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "15": {
+                    "image": "blackconcretepowder.png",
+                    "name": "Black Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "2": {
+                    "image": "magentaconcretepowder.png",
+                    "name": "Magenta Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "3": {
+                    "image": "lightblueconcretepowder.png",
+                    "name": "Light Blue Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "4": {
+                    "image": "yellowconcretepowder.png",
+                    "name": "Yellow Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "5": {
+                    "image": "limeconcretepowder.png",
+                    "name": "Lime Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "6": {
+                    "image": "pinkconcretepowder.png",
+                    "name": "Pink Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "7": {
+                    "image": "grayconcretepowder.png",
+                    "name": "Gray Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "8": {
+                    "name": "Light Gray Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                },
+                "9": {
+                    "image": "cyanconcretepowder.png",
+                    "name": "Cyan Concrete Powder",
+                    "obtaining": [
+                        {
+                            "outputAmount": 8,
+                            "recipe": [
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:sand"
+                                },
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                "minecraft:gravel",
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:dye"
+                                }
+                            ],
+                            "type": "craftingShapeless"
+                        }
+                    ]
+                }
+            },
+            "image": "lightgrayconcretepowder.png",
+            "itemID": 252,
+            "name": "Concrete Powder"
+        },
         "cooked_beef": {
             "image": {
                 "nearestNeighbor": true,
@@ -4023,6 +4854,22 @@
                     "amount": 1,
                     "structure": "igloo",
                     "type": "structure"
+                }
+            ]
+        },
+        "cyan_glazed_terracotta": {
+            "blockID": 244,
+            "dropsSelf": "pickaxe",
+            "image": "cyanterracotta.png",
+            "itemID": 244,
+            "name": "Cyan Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 9,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
                 }
             ]
         },
@@ -7983,6 +8830,22 @@
                 }
             ]
         },
+        "gray_glazed_terracotta": {
+            "blockID": 242,
+            "dropsSelf": "pickaxe",
+            "image": "grayterracotta.png",
+            "itemID": 242,
+            "name": "Gray Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 7,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
+        },
         "gray_shulker_box": {
             "blockID": 226,
             "image": "grayshulkerbox.png",
@@ -8152,6 +9015,22 @@
             ],
             "solid": false,
             "stackable": false
+        },
+        "green_glazed_terracotta": {
+            "blockID": 248,
+            "dropsSelf": "pickaxe",
+            "image": "greenterracotta.png",
+            "itemID": 248,
+            "name": "Green Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 13,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
         },
         "green_shulker_box": {
             "blockID": 232,
@@ -10061,6 +10940,22 @@
             ],
             "solid": false
         },
+        "light_blue_glazed_terracotta": {
+            "blockID": 238,
+            "dropsSelf": "pickaxe",
+            "image": "lightblueterracotta.png",
+            "itemID": 238,
+            "name": "Light Blue Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 3,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
+        },
         "light_blue_shulker_box": {
             "blockID": 222,
             "image": "lightblueshulkerbox.png",
@@ -10254,6 +11149,22 @@
                 }
             ],
             "solid": false
+        },
+        "lime_glazed_terracotta": {
+            "blockID": 240,
+            "dropsSelf": "pickaxe",
+            "image": "limeterracotta.png",
+            "itemID": 240,
+            "name": "Lime Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 5,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
         },
         "lime_shulker_box": {
             "blockID": 224,
@@ -11422,6 +12333,22 @@
             "itemID": 162,
             "name": "Wood"
         },
+        "magenta_glazed_terracotta": {
+            "blockID": 237,
+            "dropsSelf": "pickaxe",
+            "image": "magentaterracotta.png",
+            "itemID": 237,
+            "name": "Magenta Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 2,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
+        },
         "magenta_shulker_box": {
             "blockID": 221,
             "image": "magentashulkerbox.png",
@@ -12288,6 +13215,22 @@
                 }
             ]
         },
+        "orange_glazed_terracotta": {
+            "blockID": 236,
+            "dropsSelf": "pickaxe",
+            "image": "orangeterracotta.png",
+            "itemID": 236,
+            "name": "Orange Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 1,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
+        },
         "orange_shulker_box": {
             "blockID": 220,
             "image": "orangeshulkerbox.png",
@@ -12520,6 +13463,22 @@
                         null
                     ],
                     "type": "craftingShaped"
+                }
+            ]
+        },
+        "pink_glazed_terracotta": {
+            "blockID": 241,
+            "dropsSelf": "pickaxe",
+            "image": "pinkterracotta.png",
+            "itemID": 241,
+            "name": "Pink Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 6,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
                 }
             ]
         },
@@ -13861,6 +14820,22 @@
             "name": "Pumpkin Stem",
             "solid": false
         },
+        "purple_glazed_terracotta": {
+            "blockID": 245,
+            "dropsSelf": "pickaxe",
+            "image": "purpleterracotta.png",
+            "itemID": 245,
+            "name": "Purple Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 10,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
+        },
         "purple_shulker_box": {
             "blockID": 229,
             "image": "purpleshulkerbox.png",
@@ -14853,6 +15828,22 @@
             "itemID": 38,
             "name": "Flower",
             "solid": false
+        },
+        "red_glazed_terracotta": {
+            "blockID": 249,
+            "dropsSelf": "pickaxe",
+            "image": "redterracotta.png",
+            "itemID": 249,
+            "name": "Red Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 14,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
         },
         "red_mushroom": {
             "blockID": 40,
@@ -16102,6 +17093,22 @@
             "name": "Sign",
             "stackable": 16,
             "whenPlaced": "minecraft:standing_sign"
+        },
+        "silver_glazed_terracotta": {
+            "blockID": 243,
+            "dropsSelf": "pickaxe",
+            "image": "lightgrayterracotta.png",
+            "itemID": 243,
+            "name": "Light Gray Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 8,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
         },
         "silver_shulker_box": {
             "blockID": 227,
@@ -21736,6 +22743,22 @@
                 }
             ]
         },
+        "white_glazed_terracotta": {
+            "blockID": 235,
+            "dropsSelf": "pickaxe",
+            "image": "whiteterracotta.png",
+            "itemID": 235,
+            "name": "White Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 0,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
+        },
         "white_shulker_box": {
             "blockID": 219,
             "image": "whiteshulkerbox.png",
@@ -22994,6 +24017,22 @@
                 }
             ],
             "solid": false
+        },
+        "yellow_glazed_terracotta": {
+            "blockID": 239,
+            "dropsSelf": "pickaxe",
+            "image": "yellowterracotta.png",
+            "itemID": 239,
+            "name": "Yellow Glazed Terracotta",
+            "obtaining": [
+                {
+                    "input": {
+                        "damage": 4,
+                        "id": "minecraft:stained_hardened_clay"
+                    },
+                    "type": "smelting"
+                }
+            ]
         },
         "yellow_shulker_box": {
             "blockID": 223,
