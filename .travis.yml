@@ -1,7 +1,9 @@
 language: python
 python: "3.4"
 install: "pip install Pillow"
-script: build/tests.py
+script:
+- build/build.py
+- build/tests.py
 notifications:
   email: false
   slack:
