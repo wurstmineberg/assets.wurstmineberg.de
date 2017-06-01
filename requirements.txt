@@ -1,0 +1,2 @@
+Pillow>=4.0.0
+-e git://github.com/wurstmineberg/init-minecraft.git#egg=minecraft
