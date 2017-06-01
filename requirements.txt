@@ -1,2 +1,0 @@
-Pillow>=4.0.0
--e git://github.com/wurstmineberg/systemd-minecraft.git#egg=minecraft

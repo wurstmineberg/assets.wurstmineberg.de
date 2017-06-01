@@ -1,5 +1,6 @@
 language: python
 python: "3.4"
+install: build/install.sh
 script:
 - build/build.py
 - build/tests.py
