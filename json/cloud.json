@@ -355,6 +355,70 @@
             {
                 "damage": 0,
                 "id": "minecraft:banner"
+            },
+            {
+                "damage": 0,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 1,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 2,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 3,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 4,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 5,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 6,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 7,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 8,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 9,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 10,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 11,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 12,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 13,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 14,
+                "id": "minecraft:bed"
+            },
+            {
+                "damage": 15,
+                "id": "minecraft:bed"
             }
         ],
         "-3": [
@@ -671,7 +735,7 @@
             "minecraft:water_bucket",
             "minecraft:lava_bucket",
             "minecraft:flint",
-            "minecraft:bed",
+            "minecraft:flower_pot",
             "minecraft:map",
             "minecraft:ender_eye",
             "minecraft:ladder",
@@ -680,9 +744,8 @@
             "minecraft:lead",
             "minecraft:armor_stand",
             "minecraft:painting",
-            "minecraft:flower_pot",
-            "minecraft:beacon",
-            "minecraft:end_crystal"
+            "minecraft:end_crystal",
+            "minecraft:beacon"
         ]
     },
     {
