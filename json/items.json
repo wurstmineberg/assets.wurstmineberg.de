@@ -1162,6 +1162,516 @@
         },
         "bed": {
             "blockID": 26,
+            "damageValues": {
+                "0": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "whitebed.png"
+                    },
+                    "name": "White Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 0,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "1": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "orangebed.png"
+                    },
+                    "name": "Orange Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 1,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "10": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "purplebed.png"
+                    },
+                    "name": "Purple Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 10,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "11": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "bluebed.png"
+                    },
+                    "name": "Blue Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 11,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "12": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "brownbed.png"
+                    },
+                    "name": "Brown Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 12,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "13": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "greenbed.png"
+                    },
+                    "name": "Green Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 13,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "14": {
+                    "name": "Red Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 14,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "15": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "blackbed.png"
+                    },
+                    "name": "Black Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 15,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "2": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "magentabed.png"
+                    },
+                    "name": "Magenta Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 2,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "3": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "lightbluebed.png"
+                    },
+                    "name": "Light Blue Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 3,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "4": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "yellowbed.png"
+                    },
+                    "name": "Yellow Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 4,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "5": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "limebed.png"
+                    },
+                    "name": "Lime Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 5,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "6": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "pinkbed.png"
+                    },
+                    "name": "Pink Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 6,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "7": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "graybed.png"
+                    },
+                    "name": "Gray Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 7,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "8": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "lightgraybed.png"
+                    },
+                    "name": "Light Gray Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 8,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                },
+                "9": {
+                    "image": {
+                        "nearestNeighbor": true,
+                        "prerendered": "cyanbed.png"
+                    },
+                    "name": "Cyan Bed",
+                    "obtaining": [
+                        {
+                            "recipe": [
+                                null,
+                                null,
+                                null,
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                {
+                                    "damage": 9,
+                                    "id": "minecraft:wool"
+                                },
+                                "minecraft:planks",
+                                "minecraft:planks",
+                                "minecraft:planks"
+                            ],
+                            "type": "craftingShaped"
+                        }
+                    ]
+                }
+            },
             "image": {
                 "nearestNeighbor": true,
                 "prerendered": "bed.png"
@@ -1169,20 +1679,6 @@
             "itemID": 355,
             "name": "Bed",
             "obtaining": [
-                {
-                    "recipe": [
-                        null,
-                        null,
-                        null,
-                        "minecraft:wool",
-                        "minecraft:wool",
-                        "minecraft:wool",
-                        "minecraft:planks",
-                        "minecraft:planks",
-                        "minecraft:planks"
-                    ],
-                    "type": "craftingShaped"
-                },
                 {
                     "amount": 1,
                     "structure": "igloo",
