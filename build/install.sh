@@ -11,4 +11,4 @@ cd ..
 sudo mkdir -p /opt/wurstmineberg/home
 sudo useradd --home-dir=/opt/wurstmineberg/home wurstmineberg
 sudo chown -R wurstmineberg:wurstmineberg /opt/wurstmineberg
-sudo -u wurstmineberg systemd-minecraft/minecraft.py update
+sudo -u wurstmineberg python -m minecraft update
