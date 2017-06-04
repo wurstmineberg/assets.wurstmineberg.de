@@ -2,6 +2,7 @@
 
 set -e
 
+chown -R wurstmineberg ~travis/virtualenv
 . ~travis/virtualenv/python3.4/bin/activate
 
 pip install Pillow
