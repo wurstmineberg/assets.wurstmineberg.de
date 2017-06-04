@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
+set -ev
 
 chown -R wurstmineberg ~travis/virtualenv
 . ~travis/virtualenv/python3.4/bin/activate
