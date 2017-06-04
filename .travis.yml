@@ -4,6 +4,7 @@ install: |
   sudo mkdir -p /opt/wurstmineberg/home
   sudo useradd --home-dir=/opt/wurstmineberg/home wurstmineberg
   sudo chown -R wurstmineberg:wurstmineberg /opt/wurstmineberg
+  sudo chown -R wurstmineberg:wurstmineberg ~/virtualenv
   sudo chown -R wurstmineberg:wurstmineberg .
   sudo -u wurstmineberg build/install.sh
 script:
