@@ -2,6 +2,8 @@
 
 set -e
 
+. ~travis/virtualenv/python3.4/bin/activate
+
 pip install Pillow
 git clone https://github.com/wurstmineberg/systemd-minecraft.git
 cd systemd-minecraft
