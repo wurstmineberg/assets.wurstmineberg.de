@@ -1,6 +1,10 @@
 language: python
 python: "3.4"
-install: build/install.sh
+install: |
+  sudo mkdir -p /opt/wurstmineberg/home
+  sudo useradd --home-dir=/opt/wurstmineberg/home wurstmineberg
+  sudo chown -R wurstmineberg:wurstmineberg /opt/wurstmineberg
+  sudo -u wurstmineberg build/install.sh
 script:
 - build/build.py
 - build/tests.py
