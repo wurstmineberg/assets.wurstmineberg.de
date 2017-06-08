@@ -253,7 +253,7 @@ function displayAdvancementsStatData(advancementsStatData, people) {
             return -parseInt(numAdvancementsPair[0]);
         }), function(numAdvancementsPair) {
             var numAdvancements = numAdvancementsPair[0];
-            var peoleList = _.map(_.sortBy(numAdvancementsPair[1], function(personWithTimestamp) {
+            var peopleList = _.map(_.sortBy(numAdvancementsPair[1], function(personWithTimestamp) {
                 return personWithTimestamp.lastAdvancement;
             }), function(personWithTimestamp) {
                 return personWithTimestamp.player;
