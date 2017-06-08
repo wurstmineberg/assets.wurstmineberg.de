@@ -240,7 +240,7 @@ function displayAdvancementsStatData(advancementsStatData, people) {
             }
             leaderboard[numAdvancements.toString()].push(player);
         });
-        _.each(_.sort(_.pairs(leaderboard), function(numAdvancementsPair) {
+        _.each(_.sortBy(_.pairs(leaderboard), function(numAdvancementsPair) {
             return -parseInt(numAdvancementsPair[0]);
         }), function(numAdvancementsPair) {
             var numAdvancements = numAdvancementsPair[0];
