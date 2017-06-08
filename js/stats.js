@@ -220,6 +220,33 @@ function displayMobsStatData(people, entityStats, entityData) {
     });
 }
 
+function displayAdvancementsStatData(advancementsStatData, people) {
+    $.when(people.mapObject(advancementsStatData)).done(function(statData) {
+        var leaderboard = {};
+        statData.forEach(function(playerStatsPair) {
+            var player = playerStatsPair.player;
+            var advancements = playerStatsPair.value;
+            if (player == undefined) {
+                return;
+            }
+            var numAdvancements = 0;
+            $.each(playerStats, function(key, value) {
+                numAdvancements++;
+            });
+            if (!(numAdvancements.toString() in leaderboard)) {
+                leaderboard[numAdvancements.toString()] = [];
+            }
+            leaderboard[numAdvancements.toString()].push(player);
+        });
+        $.each(leaderboard, function(numAdvancements, peopleList) {
+            $tr = $('<tr>').html($('<td>').html(numAdvancements));
+            $tr.append($('<td>').html(htmlPlayerList(people.sorted(peopleList)))); //TODO sort by last advancement progress
+            $('#stats-advancements-table-leaderboard tbody tr:last').after($tr);
+        });
+        $('advancements-leaderboard-row-loading').remove();
+    });
+}
+
 function prepareAchievements(achievementData, items) {
     Achievement.track(achievementData, 'main').forEach(function(achievement) {
         var achievement_html = '<tr id="achievement-row-' + achievement.id + '"><td>' + achievement.image(items) + '</td><td>' + achievement.displayName + '</td><td class="achievement-players">&nbsp;</td>';
@@ -490,6 +517,14 @@ function loadMobStatData(people) {
     });
 }
 
+function loadAdvancementsStatData(people) {
+    $.when(API.advancementsStatData()).done(function(advancementsStatData) {
+        displayAdvancementsStatData(advancementsStatData, people);
+    }).fail(function() {
+        $('#advancements-leaderboard-row-loading').html($('<td>', {colspan: 2, class: 'text-danger'}).text('Error: could not load advancements'));
+    });
+}
+
 function loadAchievementsStatData(people) {
     $.when(API.biomes(), API.items(), API.achievementData(), API.achievementStatData()).done(function(biomeData, items, achievementData, achievementStatData) {
         prepareAchievements(achievementData, items);
@@ -514,11 +549,13 @@ function loadStatData() {
     $.when(API.people()).done(function(people) {
         loadLeaderboardStatData(people);
         loadMobStatData(people);
+        loadAdvancementsStatData(people);
         loadAchievementsStatData(people);
         loadDeathgamesStatData(people);
     }).fail(function() {
         $('#loading-stat-leaderboard-table').html($('<td>', {colspan: 5, class: 'text-danger'}).text('Error: could not load people data'));
         $('#loading-mobs-bymob').children('td').html($('<span>', {class: 'text-danger'}).text('Error: could not load people data'));
+        $('#advancements-leaderboard-row-loading').html($('<td>', {colspan: 2, class: 'text-danger'}).text('Error: could not load people data'));
         $('#achievement-row-loading').html($('<td>', {colspan: 3, class: 'text-danger'}).text('Error: could not load people data'));
         $('#loading-achievements-table-biome-track').html($('<td>', {colspan: 3, class: 'text-danger'}).text('Error: could not load people data'));
         $('#loading-deathgames-log').html($('<td>', {colspan: 4, class: 'text-danger'}).text('Error: could not load people data'));

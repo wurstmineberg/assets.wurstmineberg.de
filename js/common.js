@@ -595,6 +595,11 @@ var API = {
             return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/playerstats/general.json');
         });
     },
+    advancementsStatData: function(world) {
+        return mainWorldFallback(world).then(function(world) {
+            return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/advancements/all.json');
+        });
+    },
     achievementStatData: function(world) {
         return mainWorldFallback(world).then(function(world) {
             return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/playerstats/achievement.json');
