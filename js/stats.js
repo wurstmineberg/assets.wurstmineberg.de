@@ -230,7 +230,7 @@ function displayAdvancementsStatData(advancementsStatData, people) {
                 return;
             }
             var numAdvancements = 0;
-            $.each(playerStats, function(key, value) {
+            $.each(advancements, function(key, value) {
                 numAdvancements++;
             });
             if (!(numAdvancements.toString() in leaderboard)) {
