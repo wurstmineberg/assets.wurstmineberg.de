@@ -231,19 +231,25 @@ function displayAdvancementsStatData(advancementsStatData, people) {
             }
             var numAdvancements = 0;
             $.each(advancements, function(key, value) {
-                numAdvancements++;
+                if (value.done && !key.startsWith('minecraft:recipes/')) {
+                    numAdvancements++;
+                }
             });
             if (!(numAdvancements.toString() in leaderboard)) {
                 leaderboard[numAdvancements.toString()] = [];
             }
             leaderboard[numAdvancements.toString()].push(player);
         });
-        $.each(leaderboard, function(numAdvancements, peopleList) {
+        _.each(_.sort(_.pairs(leaderboard), function(numAdvancementsPair) {
+            return -parseInt(numAdvancementsPair[0]);
+        }), function(numAdvancementsPair) {
+            var numAdvancements = numAdvancementsPair[0];
+            var peopleList = numAdvancementsPair[1];
             $tr = $('<tr>').html($('<td>').html(numAdvancements));
             $tr.append($('<td>').html(htmlPlayerList(people.sorted(peopleList)))); //TODO sort by last advancement progress
             $('#stats-advancements-table-leaderboard tbody tr:last').after($tr);
         });
-        $('advancements-leaderboard-row-loading').remove();
+        $('#advancements-leaderboard-row-loading').remove();
     });
 }
 
