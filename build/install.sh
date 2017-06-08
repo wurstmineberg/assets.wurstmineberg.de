@@ -2,7 +2,7 @@
 
 set -ev
 
-. ~travis/virtualenv/python3.4/bin/activate
+export WURSTMINEBERG_CONFIG_DIR=build
 
 pip install Pillow
 git clone https://github.com/wurstmineberg/systemd-minecraft.git
