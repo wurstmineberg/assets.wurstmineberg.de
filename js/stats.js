@@ -230,23 +230,36 @@ function displayAdvancementsStatData(advancementsStatData, people) {
                 return;
             }
             var numAdvancements = 0;
+            var lastAdvancement = '';
             $.each(advancements, function(key, value) {
                 if (value.done && !key.startsWith('minecraft:recipes/')) {
                     numAdvancements++;
+                    $.each(value.criteria, function(criterionName, timestamp) {
+                        if (timestamp > lastAdvancement) {
+                            lastAdvancement = timestamp;
+                        }
+                    });
                 }
             });
             if (!(numAdvancements.toString() in leaderboard)) {
                 leaderboard[numAdvancements.toString()] = [];
             }
-            leaderboard[numAdvancements.toString()].push(player);
+            leaderboard[numAdvancements.toString()].push({
+                player: player,
+                lastAdvancement: lastAdvancement
+            });
         });
         _.each(_.sortBy(_.pairs(leaderboard), function(numAdvancementsPair) {
             return -parseInt(numAdvancementsPair[0]);
         }), function(numAdvancementsPair) {
             var numAdvancements = numAdvancementsPair[0];
-            var peopleList = numAdvancementsPair[1];
+            var peoleList = _.map(_.sortBy(numAdvancementsPair[1], function(personWithTimestamp) {
+                return personWithTimestamp.lastAdvancement;
+            }), function(personWithTimestamp) {
+                return personWithTimestamp.player;
+            });
             $tr = $('<tr>').html($('<td>').html(numAdvancements));
-            $tr.append($('<td>').html(htmlPlayerList(people.sorted(peopleList)))); //TODO sort by last advancement progress
+            $tr.append($('<td>').html(htmlPlayerList(peopleList)));
             $('#stats-advancements-table-leaderboard tbody tr:last').after($tr);
         });
         $('#advancements-leaderboard-row-loading').remove();
