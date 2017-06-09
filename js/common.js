@@ -619,7 +619,7 @@ var API = {
         return mainWorldFallback(world).then(function(world) {
             return API.ajaxJSONDeferred('//api.' + host + '/v2/world/' + world + '/player/' + person.id + '/advancements.json');
         });
-    }
+    },
     moneys: function() {
         return API.ajaxJSONDeferred('//api.' + host + '/v2/meta/moneys.json');
     },
