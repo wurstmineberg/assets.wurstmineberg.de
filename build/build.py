@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 
+import json
 import minecraft
 import pathlib
 import shutil
