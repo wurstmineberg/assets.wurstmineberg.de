@@ -516,6 +516,7 @@ function displayStatData(person, statData, stringData, itemData, achievementData
     });
 
     $.when(API.personAdvancementsData(person)).done(function(advancementsData) {
+        $('.loading-stat').remove();
         $('#tab-stats-achievements').text('Advancements');
         $('#stats-achievements').html($('<h2>').html('Coming <a href="//wiki.' + host + '/Soon™">soon™</a>'));
     }).fail(function() {
@@ -540,9 +541,9 @@ function displayStatData(person, statData, stringData, itemData, achievementData
             ]);
             $loadingStatAchievements.before($row);
         });
+        $('.loading-stat').remove();
     });
 
-    $('.loading-stat').remove();
     initializeTooltips();
 }
 
