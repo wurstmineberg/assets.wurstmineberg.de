@@ -17,8 +17,8 @@ if __name__ == '__main__':
         shutil.rmtree('json/advancements')
     shutil.copytree(str(client / 'assets' / 'minecraft' / 'advancements'), 'json/advancements')
     # copy lang
-    if pahlib.Path('json/lang.json').exists():
-        pahlib.Path('json/lang.json').unlink()
+    if pathlib.Path('json/lang.json').exists():
+        pathlib.Path('json/lang.json').unlink()
     lang = {}
     with (client / 'assets' / 'minecraft' / 'lang' / 'en_us.lang').open() as lang_f:
         for line in lang_f.read().splitlines():
