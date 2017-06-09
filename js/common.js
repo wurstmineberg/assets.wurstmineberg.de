@@ -539,6 +539,154 @@ Achievement.track = function(achievementData, trackName) {
     });
 }
 
+function advancementImage(advancementInfo, items, complete) {
+    if (typeof complete === 'undefined') {
+        complete = false;
+    }
+    var item;
+    if ('data' in advancementInfo.display.icon) {
+        item = items.itemByDamage(advancementInfo.display.icon.item, advancementInfo.display.data);
+    } else {
+        item = items.itemById(advancementInfo.display.icon.item);
+    }
+    var borderStyle;
+    if ('frame' in advancementInfo.display) {
+        borderStyle = advancementInfo.display.frame;
+    } else {
+        borderStyle = 'task';
+    }
+    return $('<div>', {class: 'advancement-image nearest-neighbor advancement-image-' + borderStyle + (complete ? ' advancement-image-complete' : '')}).html(item.htmlImage());
+}
+
+function renderTellraw(tellrawData, lang) {
+    // formats a Minecraft Chat component
+    // http://wiki.vg/Chat
+    function renderInner(tellrawData, style) {
+        if (typeof tellrawData === 'string') {
+            return $('<span>').text(tellrawData);
+        } else if (Array.isArray(tellrawData)) {
+            if (tellrawData.length > 0) {
+                var parent = tellrawData[0];
+                if (typeof parent === 'string') {
+                    parent = {
+                        text: parent
+                    };
+                } else {
+                    parent = JSON.parse(JSON.stringify(parent));
+                }
+                parent.extra = tellrawData.slice(1);
+                return renderInner(parent, style);
+            } else {
+                return $('<span>');
+            }
+        } else {
+            // update style
+            var style = JSON.parse(JSON.stringify(style));
+            if ('bold' in tellrawData) {
+                style.bold = tellrawData.bold;
+            }
+            if ('italic' in tellrawData) {
+                style.italic = tellrawData.italic;
+            }
+            if ('underlined' in tellrawData) {
+                style.underlined = tellrawData.underlined;
+            }
+            if ('strikethrough' in tellrawData) {
+                style.strikethrough = tellrawData.strikethrough;
+            }
+            if ('obfuscated' in tellrawData) {
+                style.obfuscated = tellrawData.obfuscated;
+            }
+            if ('color' in tellrawData) {
+                style.color = tellrawData.color;
+            }
+            // generate text
+            var text;
+            if ('text' in tellrawData) {
+                text = tellrawData.text;
+            } else if ('translate' in tellrawData) {
+                var with_array;
+                if ('with' in tellrawData) {
+                    with_array = tellrawData.with;
+                } else {
+                    with_array = [];
+                }
+                text = vsprintf(lang[tellrawData.translate], with_array);
+            } else if ('keybind' in tellrawData) {
+                var keys = {
+                    'key.attack': 'Left Click',
+                    'key.use': 'Right Click',
+                    'key.forward': 'W',
+                    'key.left': 'A',
+                    'key.back': 'S',
+                    'key.right': 'D',
+                    'key.jump': 'SPACE',
+                    'key.sneak': 'LSHIFT',
+                    'key.sprint': 'LCONTROL',
+                    'key.drop': 'Q',
+                    'key.inventory': 'E',
+                    'key.chat': 'T',
+                    'key.playerlist': 'TAB',
+                    'key.pickItem': 'Middle Click',
+                    'key.command': 'SLASH',
+                    'key.screenshot': 'F2',
+                    'key.togglePerspective': 'F5',
+                    'key.smoothCamera': 'NONE',
+                    'key.fullscreen': 'F11',
+                    'key.spectatorOutlines': 'NONE',
+                    'key.swapHands': 'F',
+                    'key.hotbar.1': '1',
+                    'key.hotbar.2': '2',
+                    'key.hotbar.3': '3',
+                    'key.hotbar.4': '4',
+                    'key.hotbar.5': '5',
+                    'key.hotbar.6': '6',
+                    'key.hotbar.7': '7',
+                    'key.hotbar.8': '8',
+                    'key.hotbar.9': '9'
+                };
+                text = keys[tellrawData.keybind];
+            } else if ('score' in tellrawData) {
+                //TODO
+            }
+            // render as HTML
+            var classes = [];
+            if (style.bold) {
+                classes.push('tellraw-bold');
+            }
+            if (style.italic) {
+                classes.push('tellraw-italic');
+            }
+            if (style.underlined) {
+                classes.push('tellraw-underlined');
+            }
+            if (style.strikethrough) {
+                classes.push('tellraw-strikethrough');
+            }
+            //TODO obfuscated
+            var attrs = {class: classes.join(' ')};
+            if (color !== null) {
+                //TODO color
+            }
+            var result = $('<span>', attrs).text(text);
+            if ('extra' in tellrawData) {
+                tellrawData.extra.forEach(function(extraPart) {
+                    result.append(renderInner(extraPart, style));
+                });
+            }
+            return result;
+        }
+    }
+    return renderInner(tellrawData, {
+        bold: false,
+        italic: false,
+        underlined: false,
+        strikethrough: false,
+        obfuscated: false,
+        color: null
+    });
+}
+
 var API = {
     ajaxJSONDeferred: function(url) {
         return $.ajax(url, {
@@ -567,13 +715,29 @@ var API = {
             return new ItemData(itemData);
         });
     },
+    lang: function() {
+        return API.ajaxJSONDeferred('//assets.' + host + '/json/lang.json');
+    },
     achievementData: function() {
         return API.ajaxJSONDeferred('//assets.' + host + '/json/achievements.json');
+    },
+    advancementsOverview: function() {
+        return API.ajaxJSONDeferred('//api.' + host + '/v2/minecraft/advancements/overview.json');
     },
     achievement: function(achievementID) {
         return API.achievementData().then(function(achievementData) {
             return new Achievement(achievementData, achievementID);
         });
+    },
+    advancement: function(advancementID) {
+        var idParts = advancementID.split(':');
+        var plugin = idParts[0];
+        var idPath = idParts[1];
+        if (plugin == 'minecraft') {
+            return API.ajaxJSONDeferred('//assets.' + host + '/json/advancements/' + idPath + '.json');
+        } else {
+            return $.Deferred().reject('custom advancements are not yet supported');
+        }
     },
     peopleData: function() {
         return API.ajaxJSONDeferred('//api.' + host + '/v2/people.json');

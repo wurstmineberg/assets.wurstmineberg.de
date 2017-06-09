@@ -370,16 +370,34 @@ abbr.nounderline {
     line-height: 14px;
 }
 
-.achievement-image {
-    background: url('/img/achievement-plain.png');
+.achievement-image,
+.advancement-image {
+    background: url('/img/advancement-task.png');
     box-sizing: border-box;
     height: 52px;
     padding: 10px;
     width: 52px;
 }
 
-.achievement-image.fancy {
-    background: url('/img/achievement-fancy.png');
+.advancement-image.advancement-image-complete {
+    background: : url('/img-advancement-task-complete.png'
+}
+
+.achievement-image.fancy,
+.advancement-image.advancement-image-challenge {
+    background: url('/img/advancement-challenge.png');
+}
+
+.advancement-image.advancement-image-challenge.advancement-image-complete {
+    background: url('/img/advancement-challenge-complete.png');
+}
+
+.advancement-image.advancement-image-goal {
+    background: url('/img/advancement-goal.png');
+}
+
+.advancement-image.advancement-image-goal.advancement-image-complete {
+    background: url('/img/advancement-goal-complete.png');
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -406,6 +424,23 @@ a.slack-login-button .logo {
 .preferences-profile-lead {
     padding-left: 0;
     padding-top: 15px;
+}
+
+/* for renderTellraw (common.js) */
+.tellraw-bold {
+    font-weight: bold;
+}
+
+.tellraw-italic {
+    font-style: italic;
+}
+
+.tellraw-underlined {
+    text-decoration: underline;
+}
+
+.tellraw-strikethrough {
+    text-decoration: line-through;
 }
 
 /* http://bootsnipp.com/snippets/featured/panels-with-nav-tabs */

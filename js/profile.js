@@ -515,16 +515,50 @@ function displayStatData(person, statData, stringData, itemData, achievementData
         }
     });
 
-    $.when(API.personAdvancementsData(person)).done(function(advancementsData) {
+    $.when(API.advancementsOverview(), API.personAdvancementsData(person)).done(function(advancementsOverview, advancementsData) {
         $('.loading-stat').remove();
         $('#tab-stats-achievements').text('Advancements');
-        $('#stats-achievements').html($('<h2>').html('Coming <a href="//wiki.' + host + '/Soon™">soon™</a>'));
+        $('#stats-achievements').html($('<table>', {id: 'stats-advancements-table', class: 'table table-responsive stats-table'}).append([
+            $('<thead>').html($('<tr>').append([
+                $('<th>').html('&nbsp;'),
+                $('<th>').text('Advancement'),
+                $('<th>').text('Value')
+            ])),
+            $('<tbody>').html($('<tr>', {id: 'loading-stat-advancements-table', class: 'loading-stat'}).html($('<td>', {colspan: '3'}).text('Loading advancements data…')))
+        ]));
+        $.each(advancementsOverview, function(tab, tabAdvancements) {
+            if (tab !== 'recipes') {
+                $.each(tabAdvancements, function(advancementName, advancementDefinitionFile) {
+                    var advancementPath = 'minecraft:' + tab + '/' + advancementName;
+                    var complete = false; //TODO read personAdvancementsData and adjust accordingly
+                    var valueHTML = $('<span>', {class: 'fa fa-times fa-fw text-danger'}); //TODO read personAdvancementsData and adjust accordingly
+                    var rowID = 'advancement-row-' + tab + '-' + advancementName;
+                    $('#loading-stat-advancements-table').before($('<tr>', {id: rowID, class: 'advancement-row'}).append([
+                        $('<td>', {class: 'image'}),
+                        $('<td>', {class: 'name'}).text(advancementPath),
+                        $('<td>', {class: 'value'}).html(valueHTML)
+                    ]));
+                    $.when(API.advancement(advancementPath), API.lang()).done(function(advancementInfo, lang) {
+                        $('#loading-stat-advancements-table').children('.image').html(advancementImage(advancementInfo, itemData, complete));
+                        $('#loading-stat-advancements-table').children('.name').html($('<a>', {
+                            href: '#',
+                            'data-toggle': 'tooltip',
+                            'data-placement': 'right',
+                            rel: 'tooltip',
+                            class: 'text-link',
+                            title: renderTellraw(advancementInfo.display.description, lang)
+                        }).html(renderTellraw(advancementInfo.display.title, lang)));
+                        initializeTooltips();
+                    });
+                });
+            }
+        });
     }).fail(function() {
         _.each(achievements, function(dict) {
             value = dict.value;
             if (value === 'Yes') {
                 value = $('<span>', {class: 'fa fa-check fa-fw text-success'});
-            } else if (value === "No") {
+            } else if (value === 'No') {
                 value = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
             }
             var $row = $('<tr>', {id: 'achievement-row-' + dict.achievement.id, class: 'achievement-row'}).append([
@@ -542,9 +576,8 @@ function displayStatData(person, statData, stringData, itemData, achievementData
             $loadingStatAchievements.before($row);
         });
         $('.loading-stat').remove();
+        initializeTooltips();
     });
-
-    initializeTooltips();
 }
 
 function displayMinigameData(people, person, deathGamesLog) {
