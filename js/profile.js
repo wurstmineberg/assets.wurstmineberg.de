@@ -517,7 +517,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
 
     $.when(API.personAdvancementsData).done(function(advancementsData) {
         $('#tab-stats-achievements').text('Advancements');
-        $('#stats-achievements').html($('<h2>').html('Coming Coming <a href="//wiki.' + host + '/Soon™">soon™</a>'));
+        $('#stats-achievements').html($('<h2>').html('Coming <a href="//wiki.' + host + '/Soon™">soon™</a>'));
     }).fail(function() {
         _.each(achievements, function(dict) {
             value = dict.value;
