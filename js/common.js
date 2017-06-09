@@ -665,7 +665,7 @@ function renderTellraw(tellrawData, lang) {
             }
             //TODO obfuscated
             var attrs = {class: classes.join(' ')};
-            if (color !== null) {
+            if (style.color !== null) {
                 //TODO color
             }
             var result = $('<span>', attrs).text(text);
