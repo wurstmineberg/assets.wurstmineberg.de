@@ -515,26 +515,31 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
         }
     });
 
-    _.each(achievements, function(dict) {
-        value = dict.value;
-        if (value === 'Yes') {
-            value = $('<span>', {class: 'fa fa-check fa-fw text-success'});
-        } else if (value === "No") {
-            value = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
-        }
-        var $row = $('<tr>', {id: 'achievement-row-' + dict.achievement.id, class: 'achievement-row'}).append([
-            $('<td>').html(dict.achievement.image(itemData)),
-            $('<td>', {class: 'name'}).html($('<a>', {
-                href: '#',
-                'data-toggle': 'tooltip',
-                'data-placement': 'right',
-                rel: 'tooltip',
-                class: 'text-link',
-                title: dict.achievement.description
-            }).html(dict.achievement.displayName)),
-            $('<td>', {class: 'value'}).html(value)
-        ]);
-        $loadingStatAchievements.before($row);
+    $.when(API.personAdvancementsData).done(function(advancementsData) {
+        $('#tab-stats-achievements').text('Advancements');
+        $('#stats-achievements').html($('<h2>').html('Coming Coming <a href="//wiki.' + host + '/Soon™">soon™</a>'));
+    }).fail(function() {
+        _.each(achievements, function(dict) {
+            value = dict.value;
+            if (value === 'Yes') {
+                value = $('<span>', {class: 'fa fa-check fa-fw text-success'});
+            } else if (value === "No") {
+                value = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
+            }
+            var $row = $('<tr>', {id: 'achievement-row-' + dict.achievement.id, class: 'achievement-row'}).append([
+                $('<td>').html(dict.achievement.image(itemData)),
+                $('<td>', {class: 'name'}).html($('<a>', {
+                    href: '#',
+                    'data-toggle': 'tooltip',
+                    'data-placement': 'right',
+                    rel: 'tooltip',
+                    class: 'text-link',
+                    title: dict.achievement.description
+                }).html(dict.achievement.displayName)),
+                $('<td>', {class: 'value'}).html(value)
+            ]);
+            $loadingStatAchievements.before($row);
+        });
     });
 
     $('.loading-stat').remove();
