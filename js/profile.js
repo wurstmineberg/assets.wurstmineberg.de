@@ -539,8 +539,8 @@ function displayStatData(person, statData, stringData, itemData, achievementData
                         $('<td>', {class: 'value'}).html(valueHTML)
                     ]));
                     $.when(API.advancement(advancementPath), API.lang()).done(function(advancementInfo, lang) {
-                        $('#loading-stat-advancements-table').children('.image').html(advancementImage(advancementInfo, itemData, complete));
-                        $('#loading-stat-advancements-table').children('.name').html($('<a>', {
+                        $('#' + rowID).children('.image').html(advancementImage(advancementInfo, itemData, complete));
+                        $('#' + rowID).children('.name').html($('<a>', {
                             href: '#',
                             'data-toggle': 'tooltip',
                             'data-placement': 'right',
