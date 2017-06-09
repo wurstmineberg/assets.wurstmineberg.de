@@ -515,7 +515,7 @@ function displayStatData(statData, stringData, itemData, achievementData, biomes
         }
     });
 
-    $.when(API.personAdvancementsData).done(function(advancementsData) {
+    $.when(API.personAdvancementsData()).done(function(advancementsData) {
         $('#tab-stats-achievements').text('Advancements');
         $('#stats-achievements').html($('<h2>').html('Coming <a href="//wiki.' + host + '/Soon™">soon™</a>'));
     }).fail(function() {
