@@ -530,8 +530,14 @@ function displayStatData(person, statData, stringData, itemData, achievementData
             if (tab !== 'recipes') {
                 $.each(tabAdvancements, function(advancementName, advancementDefinitionFile) {
                     var advancementPath = 'minecraft:' + tab + '/' + advancementName;
-                    var complete = false; //TODO read personAdvancementsData and adjust accordingly
-                    var valueHTML = $('<span>', {class: 'fa fa-times fa-fw text-danger'}); //TODO read personAdvancementsData and adjust accordingly
+                    var complete = false;
+                    var valueHTML = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
+                    if (advancementPath in advancementsData) {
+                        if (advancementsData[advancementPath].done) {
+                            complete = true;
+                            valueHTML = $('<span>', {class: 'fa fa-check fa-fw text-success'});
+                        }
+                    }
                     var rowID = 'advancement-row-' + tab + '-' + advancementName;
                     $('#loading-stat-advancements-table').before($('<tr>', {id: rowID, class: 'advancement-row'}).append([
                         $('<td>', {class: 'image'}),
