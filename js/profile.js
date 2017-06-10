@@ -567,9 +567,12 @@ function displayStatData(person, statData, stringData, itemData, achievementData
                                         } else {
                                             symbol = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
                                         }
-                                        return $('<span>', {class: 'achievement-value'}).html([
-                                            symbol,
-                                            $('<span>').text(criterion)
+                                        return $('<span>').html([
+                                            $('<span>', {class: 'achievement-value'}).html([
+                                                symbol,
+                                                $('<span>').text(criterion)
+                                            ]),
+                                            $('<span>').text(' ')
                                         ]);
                                     })));
                                 }
