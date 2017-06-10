@@ -551,6 +551,42 @@ function displayStatData(person, statData, stringData, itemData, achievementData
                             $('<br>'),
                             $('<span>', {class: 'muted'}).html(renderTellraw(advancementInfo.display.description, lang))
                         ]);
+                        if (!complete) {
+                            var requirements;
+                            if ('requirements' in advancementInfo) {
+                                requirements = advancementInfo.requirements;
+                            } else {
+                                requirements = [_.keys(advancementInfo.criteria)];
+                            }
+                            if (requirements.length == 1) {
+                                if (requirements[0].length > 1) {
+                                    var numCompleted = 0;
+                                    if (advancementPath in advancementsData) {
+                                        requirements[0].forEach(function(criterion) {
+                                            if (criterion in advancementsData[advancementPath].criteria) {
+                                                numCompleted++;
+                                            }
+                                        });
+                                    }
+                                    $('#' + rowID).children('.value').html([
+                                        valueHTML,
+                                        $('<div>', {class: 'progress'}).html($('<div>', {
+                                            class: 'progress-bar',
+                                            role: 'progressbar',
+                                            'aria-valuemin': 0,
+                                            'aria-valuemax': requirements[0].length,
+                                            'aria-valuenow': numCompleted,
+                                            style: 'width: ' + (100.0 * numCompleted / requirements[0].length) + '%;'
+                                        }).text('' + numCompleted + ' of ' + requirements[0].length))
+                                    ]);
+                                }
+                            } else {
+                                $('#' + rowID).children('.value').html([
+                                    valueHTML,
+                                    $('<span>').text('There are ' + requirements.length + ' ways to complete this advancement')
+                                ]);
+                            }
+                        }
                     });
                 });
             }
