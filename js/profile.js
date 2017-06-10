@@ -518,8 +518,8 @@ function displayStatData(person, statData, stringData, itemData, achievementData
     $.when(API.advancementsOverview(), API.personAdvancementsData(person)).done(function(advancementsOverview, advancementsData) {
         $('.loading-stat').remove();
         $('#tab-stats-achievements').text('Advancements');
-        $('#stats-achievements').html($('<table>', {id: 'stats-advancements-table', class: 'table table-responsive stats-table'}).append([
-            $('<thead>').html($('<tr>').append([
+        $('#stats-achievements').html($('<table>', {id: 'stats-advancements-table', class: 'table table-responsive stats-table'}).html([
+            $('<thead>').html($('<tr>').html([
                 $('<th>').html('&nbsp;'),
                 $('<th>').text('Advancement'),
                 $('<th>').text('Value')
@@ -539,14 +539,14 @@ function displayStatData(person, statData, stringData, itemData, achievementData
                         }
                     }
                     var rowID = 'advancement-row-' + tab + '-' + advancementName;
-                    $('#loading-stat-advancements-table').before($('<tr>', {id: rowID, class: 'advancement-row'}).append([
+                    $('#loading-stat-advancements-table').before($('<tr>', {id: rowID, class: 'advancement-row'}).html([
                         $('<td>', {class: 'image'}),
                         $('<td>', {class: 'name'}).text(advancementPath),
                         $('<td>', {class: 'value'}).html(valueHTML)
                     ]));
                     $.when(API.advancement(advancementPath), API.lang()).done(function(advancementInfo, lang) {
                         $('#' + rowID).children('.image').html(advancementImage(advancementInfo, itemData, complete));
-                        $('#' + rowID).children('.name').append([
+                        $('#' + rowID).children('.name').html([
                             renderTellraw(advancementInfo.display.title, lang),
                             $('<br>'),
                             $('<span>', {class: 'muted'}).html(renderTellraw(advancementInfo.display.description, lang))
@@ -564,7 +564,7 @@ function displayStatData(person, statData, stringData, itemData, achievementData
             } else if (value === 'No') {
                 value = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
             }
-            var $row = $('<tr>', {id: 'achievement-row-' + dict.achievement.id, class: 'achievement-row'}).append([
+            var $row = $('<tr>', {id: 'achievement-row-' + dict.achievement.id, class: 'achievement-row'}).html([
                 $('<td>').html(dict.achievement.image(itemData)),
                 $('<td>', {class: 'name'}).html($('<a>', {
                     href: '#',
