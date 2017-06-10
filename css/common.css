@@ -380,7 +380,7 @@ abbr.nounderline {
 }
 
 .advancement-image.advancement-image-complete {
-    background: : url('/img-advancement-task-complete.png'
+    background: url('/img/advancement-task-complete.png');
 }
 
 .achievement-image.fancy,
