@@ -375,7 +375,10 @@ abbr.nounderline {
     background: url('/img/advancement-task.png');
     box-sizing: border-box;
     height: 52px;
-    padding: 10px;
+    padding-top: 9px;
+    padding-right: 10px;
+    padding-bottom: 11px;
+    padding-left: 10px;
     width: 52px;
 }
 
