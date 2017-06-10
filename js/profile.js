@@ -556,31 +556,26 @@ function displayStatData(person, statData, stringData, itemData, achievementData
                             if ('requirements' in advancementInfo) {
                                 requirements = advancementInfo.requirements;
                             } else {
-                                requirements = [_.keys(advancementInfo.criteria)];
+                                requirements = _.map(_.keys(advancementInfo.criteria), function(criterion) {
+                                    return [criterion];
+                                });
                             }
-                            if (requirements.length == 1) {
-                                if (requirements[0].length > 1) {
-                                    $('#' + rowID).children('.value').html($('<span>', {class: 'achievement-list'}).html(_.map(requirements[0], function(criterion) {
-                                        var symbol;
-                                        if (advancementPath in advancementsData && criterion in advancementsData[advancementPath].criteria) {
-                                            symbol = $('<span>', {class: 'fa fa-check fa-fw text-success'});
-                                        } else {
-                                            symbol = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
-                                        }
-                                        return $('<span>').html([
-                                            $('<span>', {class: 'achievement-value'}).html([
-                                                symbol,
-                                                $('<span>').text(criterion)
-                                            ]),
-                                            $('<span>').text(' ')
-                                        ]);
-                                    })));
-                                }
-                            } else {
-                                $('#' + rowID).children('.value').html([
-                                    valueHTML,
-                                    $('<span>').text('There are ' + requirements.length + ' ways to complete this advancement')
-                                ]);
+                            if (requirements.length > 1) {
+                                $('#' + rowID).children('.value').html($('<span>', {class: 'achievement-list'}).html(_.map(requirements, function(requirement) {
+                                    var symbol;
+                                    if (advancementPath in advancementsData && _.any(requirement, function(criterion) { return (criterion in advancementsData[advancementPath].criteria); })) {
+                                        symbol = $('<span>', {class: 'fa fa-check fa-fw text-success'});
+                                    } else {
+                                        symbol = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
+                                    }
+                                    return $('<span>').html([
+                                        $('<span>', {class: 'achievement-value'}).html([
+                                            symbol,
+                                            $('<span>').text(requirement.join(' or '))
+                                        ]),
+                                        $('<span>').text(' ')
+                                    ]);
+                                })));
                             }
                         }
                     });
