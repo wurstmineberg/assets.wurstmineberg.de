@@ -546,17 +546,14 @@ function displayStatData(person, statData, stringData, itemData, achievementData
                     ]));
                     $.when(API.advancement(advancementPath), API.lang()).done(function(advancementInfo, lang) {
                         $('#' + rowID).children('.image').html(advancementImage(advancementInfo, itemData, complete));
-                        $('#' + rowID).children('.name').html($('<a>', {
-                            href: '#',
-                            'data-toggle': 'tooltip',
-                            'data-placement': 'right',
-                            rel: 'tooltip',
-                            class: 'text-link',
-                            title: renderTellraw(advancementInfo.display.description, lang)
-                        }).html(renderTellraw(advancementInfo.display.title, lang)));
-                        initializeTooltips();
+                        $('#' + rowID).children('.name').append([
+                            renderTellraw(advancementInfo.display.title, lang),
+                            $('<br>'),
+                            $('<span>', {class: 'muted'}).html(renderTellraw(advancementInfo.display.description, lang))
+                        ]);
                     });
                 });
+                $('#loading-stat-advancements-table').remove();
             }
         });
     }).fail(function() {
@@ -582,8 +579,8 @@ function displayStatData(person, statData, stringData, itemData, achievementData
             $loadingStatAchievements.before($row);
         });
         $('.loading-stat').remove();
-        initializeTooltips();
     });
+    initializeTooltips();
 }
 
 function displayMinigameData(people, person, deathGamesLog) {
