@@ -560,25 +560,18 @@ function displayStatData(person, statData, stringData, itemData, achievementData
                             }
                             if (requirements.length == 1) {
                                 if (requirements[0].length > 1) {
-                                    var numCompleted = 0;
-                                    if (advancementPath in advancementsData) {
-                                        requirements[0].forEach(function(criterion) {
-                                            if (criterion in advancementsData[advancementPath].criteria) {
-                                                numCompleted++;
-                                            }
-                                        });
-                                    }
-                                    $('#' + rowID).children('.value').html([
-                                        valueHTML,
-                                        $('<div>', {class: 'progress'}).html($('<div>', {
-                                            class: 'progress-bar',
-                                            role: 'progressbar',
-                                            'aria-valuemin': 0,
-                                            'aria-valuemax': requirements[0].length,
-                                            'aria-valuenow': numCompleted,
-                                            style: 'width: ' + (100.0 * numCompleted / requirements[0].length) + '%;'
-                                        }).text('' + numCompleted + ' of ' + requirements[0].length))
-                                    ]);
+                                    $('#' + rowID).children('.value').html($('<span>', {class: 'achievement-list'}).html(_.map(requirements[0], function(criterion) {
+                                        var symbol;
+                                        if (advancementPath in advancementsData && criterion in advancementsData[advancementPath].criteria) {
+                                            symbol = $('<span>', {class: 'fa fa-check fa-fw text-success'});
+                                        } else {
+                                            symbol = $('<span>', {class: 'fa fa-times fa-fw text-danger'});
+                                        }
+                                        return $('<span>', {class: 'achievement-value'}).html([
+                                            symbol,
+                                            $('<span>').text(criterion)
+                                        ]);
+                                    })));
                                 }
                             } else {
                                 $('#' + rowID).children('.value').html([
