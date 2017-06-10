@@ -553,9 +553,9 @@ function displayStatData(person, statData, stringData, itemData, achievementData
                         ]);
                     });
                 });
-                $('#loading-stat-advancements-table').remove();
             }
         });
+        $('#loading-stat-advancements-table').remove();
     }).fail(function() {
         _.each(achievements, function(dict) {
             value = dict.value;
