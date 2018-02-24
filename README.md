@@ -1,4 +1,1 @@
-assets.wurstmineberg.de
-=======================
-
-A website containing files used by multiple wurstmineberg.de websites
+This repository contains the files hosted at [assets.wurstmineberg.de](https://assets.wurstmineberg.de/). These files are used by the [wurstmineberg.de](https://wurstmineberg.de/) websites and/or other infrastructure.
