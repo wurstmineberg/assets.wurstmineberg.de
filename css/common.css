@@ -58,37 +58,6 @@ h2 {
     line-height: 0px;
 }
 
-.funding-progress-container {
-    height: 50px;
-}
-
-.funding-progress-container-about {
-    height: 30px;
-    display: inline-block;
-}
-
-.funding-progress-container-about .funding-text-container {
-    margin-right: 15px;
-    float: left;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.funding-progressbar {
-    margin-top: 15px;
-    width: 200px;
-}
-
-.funding-progress-container-about .funding-progressbar {
-    margin-top: 5px;
-    margin-bottom: 5px
-}
-
-.funding-month-small {
-    display: none;
-}
-
 .people-table td {
     vertical-align: middle;
 }
