@@ -163,9 +163,16 @@ a {
     color: gray;
 }
 
-.social-link {
-    display: inline-block;
-    margin-right: 1em;
+/* Markdown form fields */
+.flask-pagedown-input {
+    background: url("/img/markdown-mark.png") no-repeat calc(100% - 5px) 5px;
+    background-size: 28px;
+    padding-right: 40px;
+}
+
+#social-links .btn {
+    font-size: 21px;
+    font-weight: 300;
 }
 
 #username {
@@ -554,7 +561,7 @@ a.slack-login-button .logo {
 }
 
 .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a {
-    color: #3c763d;   
+    color: #3c763d;
 }
 
 .with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
