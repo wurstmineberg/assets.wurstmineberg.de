@@ -21450,11 +21450,41 @@
             ],
             "stackable": false
         },
+        "stone_bricks": {
+            "name": "Stone Bricks",
+            "dropsSelf": "pickaxe",
+            "image": "stonebricks.png"
+        },
+        "stone_brick_slab": {
+            "name": "Stone Brick Slab",
+            "dropsSelf": "pickaxe",
+            "image": "stonebrickslab.png",
+            "solid": false
+        },
         "stone_brick_stairs": {
             "blockID": 109,
             "image": "stonebrickstairs.png",
             "itemID": 109,
-            "name": "Stone Brick Stairs"
+            "name": "Stone Brick Stairs",
+            "dropsSelf": "pickaxe",
+            "solid": false
+        },
+        "mossy_stone_bricks": {
+            "name": "Stone Bricks",
+            "dropsSelf": "pickaxe",
+            "image": "mossystonebricks.png"
+        },
+        "mossy_stone_brick_slab": {
+            "name": "Mossy Stone Brick Slab",
+            "dropsSelf": "pickaxe",
+            "_image": "mossystonebrickslab.png",
+            "solid": false
+        },
+        "mossy_stone_brick_stairs": {
+            "_image": "mossystonebrickstairs.png",
+            "name": "Mossy Stone Brick Stairs",
+            "dropsSelf": "pickaxe",
+            "solid": false
         },
         "stone_button": {
             "blockID": 77,
