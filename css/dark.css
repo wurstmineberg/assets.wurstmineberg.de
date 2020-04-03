@@ -1,0 +1,121 @@
+@media (prefers-color-scheme: dark) {
+    body,
+    .form-control,
+    .panel-default {
+        background-color: #333;
+        color: #bbb;
+    }
+
+    .panel-default > .panel-heading,
+    .panel-default > .panel-footer {
+        background-color: #222;
+        color: #bbb;
+    }
+
+    a:focus,
+    a:hover,
+    code a {
+        color: #43a2f2;
+    }
+
+    blockquote {
+        border-left: 5px solid #444;
+    }
+
+    code {
+        color: #f9f2f4;
+        background-color: #c7254e;
+    }
+
+    .with-nav-tabs.panel-default .nav-tabs > li > a:focus,
+    .with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+    .nav-tabs > li > a:focus,
+    .nav-tabs > li > a:hover {
+        background-color: #444;
+        border-color: #444 #444 #ddd;
+    }
+
+    .with-nav-tabs.panel-default .nav-tabs > li.active > a,
+    .with-nav-tabs.panel-default .nav-tabs > li.active > a:focus,
+    .with-nav-tabs.panel-default .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover {
+        background-color: #333;
+        color: #bbb;
+    }
+
+    .profile-panel > .panel-body {
+        color: #333;
+    }
+
+    .profile-panel > .panel-body a:hover {
+        color: #23527c;
+    }
+
+    .alert-danger,
+    .table > tbody > tr > td.danger {
+        background-color: #a94442;
+    }
+
+    .alert-danger,
+    .text-danger {
+        color: #f2dede;
+    }
+
+    .alert-danger {
+        border-color: #b0564e;
+    }
+
+    .alert-info,
+    .table > tbody > tr > td.info {
+        background-color: #31708f;
+    }
+
+    .alert-info,
+    .text-info {
+        color: #d9edf7;
+    }
+
+    .alert-info {
+        border-color: #4e7495;
+    }
+
+    .alert-success,
+    .table > tbody > tr > td.success {
+        background-color: #3c763d;
+    }
+
+    .alert-success,
+    .text-success {
+        color: #dff0d8;
+    }
+
+    .alert-success {
+        border-color: #457d4f;
+    }
+
+    .alert-warning,
+    .table > tbody > tr > td.warning {
+        background-color: #8a6d3b;
+    }
+
+    .alert-warning,
+    .text-warning {
+        color: #fcf8e3;
+    }
+
+    .alert-warning {
+        border-color: #8c8352;
+    }
+
+    /* progress bars */
+    .progress-right {
+        color: #333;
+    }
+
+    /* Markdown form fields */
+    .flask-pagedown-input {
+        background: url("/img/markdown-mark-white.png") no-repeat calc(100% - 5px) 5px;
+    }
+}

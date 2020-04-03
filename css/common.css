@@ -163,6 +163,13 @@ a {
     color: gray;
 }
 
+/* progress bars */
+.progress-right {
+    min-width: 5em;
+    text-align: right;
+    padding-right: 0.5em;
+}
+
 /* Markdown form fields */
 .flask-pagedown-input {
     background: url("/img/markdown-mark.png") no-repeat calc(100% - 5px) 5px;
