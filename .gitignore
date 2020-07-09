@@ -1,5 +1,6 @@
 /_h5ai/
 __pycache__/
+/build/clientjar
 /json/advancements/
 /json/items.json
 /json/lang.json
