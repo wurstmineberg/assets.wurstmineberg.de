@@ -51,6 +51,8 @@ def build_items():
 
 def client_versions_path():
     if platform.node() == 'gharch':
+        import minecraft # https://github.com/wurstmineberg/systemd-minecraft
+
         return minecraft.CONFIG['paths']['clientVersions']
     else:
         return pathlib.Path('/opt/wurstmineberg/.minecraft/versions')
