@@ -892,11 +892,11 @@ String.prototype.endsWith = function(suffix) {
 function linkifyHeaders() {
     // Do the stuff to the headers to linkify them
 
-    $.each($('h2'), function() {
+    $('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]').each(function() {
         $(this).addClass('anchor');
         $(this).append('&nbsp;<a class="tag" href="#' + $(this).attr('id') + '">¶</a>');
     });
-    $('h2').hover(function() {
+    $('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]').hover(function() {
         $(this).children('.tag').css('display', 'inline');
     }, function() {
         $(this).children('.tag').css('display', 'none');
