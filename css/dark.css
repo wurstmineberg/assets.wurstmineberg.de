@@ -109,6 +109,13 @@
         border-color: #8c8352;
     }
 
+    /* spoiler tags */
+    .spoiler:not(:hover),
+    .spoiler:not(:hover) * {
+        background: #bbb;
+        color: #bbb;
+    }
+
     /* progress bars */
     .progress-right {
         color: #333;

@@ -163,6 +163,13 @@ a {
     color: gray;
 }
 
+/* spoiler tags */
+.spoiler:not(:hover),
+.spoiler:not(:hover) * {
+    background: #000;
+    color: #000;
+}
+
 /* progress bars */
 .progress-right {
     min-width: 5em;
@@ -383,7 +390,12 @@ abbr.nounderline {
     background: url('/img/advancement-goal-complete.png');
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
