@@ -165,12 +165,6 @@ function displayInventory(playerData, items, stringData, enchData) {
 }
 
 function displayProfileData(person, items, people, statData) {
-    // Date of Whitelisting
-    if (person.joinDate) {
-        $('#profile-stat-row-dow').children('.value').text(formatDate(person.joinDate));
-    } else {
-        $('#profile-stat-row-dow').children('.value').html($('<span>', {class: 'muted'}).text('not yet'));
-    }
     // Favorite Color
     if (person.favColor) {
         var favColorCSS = 'rgb(' + person.favColor.red + ', ' + person.favColor.green + ', ' + person.favColor.blue + ')';
