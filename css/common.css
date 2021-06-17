@@ -234,6 +234,8 @@ a {
 
 #profile-skin img {
     position: absolute;
+    width: 180px;
+    height: 360px;
 }
 
 #profile-skin img.foreground-image {
