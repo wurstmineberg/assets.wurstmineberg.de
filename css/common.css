@@ -423,6 +423,10 @@ a.slack-login-button .logo {
     padding-top: 15px;
 }
 
+a.redlink {
+    color: #a94442;
+}
+
 /* for renderTellraw (common.js) */
 .tellraw-bold {
     font-weight: bold;
