@@ -213,6 +213,7 @@ a {
     vertical-align: middle;
 }
 
+.leaflet-tile,
 .nearest-neighbor { /*FROM http://stackoverflow.com/a/8888964/667338 */
   image-rendering: optimizeSpeed;             /* Legal fallback */
   image-rendering: -moz-crisp-edges;          /* Firefox        */
