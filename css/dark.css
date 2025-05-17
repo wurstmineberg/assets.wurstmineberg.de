@@ -1,7 +1,8 @@
 @media (prefers-color-scheme: dark) {
     body,
     .form-control,
-    .panel-default {
+    .panel-default,
+    .coordbox {
         background-color: #333;
         color: #bbb;
     }
@@ -124,5 +125,11 @@
     /* Markdown form fields */
     .flask-pagedown-input {
         background: url("/img/markdown-mark-white.png") no-repeat calc(100% - 5px) 5px;
+    }
+
+    /* map */
+    .coordbox {
+        background-color: #222;
+        color: #9d9d9d;
     }
 }

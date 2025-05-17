@@ -184,6 +184,13 @@ a {
     padding-right: 40px;
 }
 
+/* map */
+.coordbox {
+    background-color: #fff;
+    color: #333;
+    padding: 2px 4px;
+}
+
 #social-links .btn {
     font-size: 21px;
     font-weight: 300;
