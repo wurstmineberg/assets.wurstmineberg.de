@@ -28,6 +28,11 @@
         background-color: #c7254e;
     }
 
+    kbd {
+        background-color: #bbb;
+        color: #333;
+    }
+
     .with-nav-tabs.panel-default .nav-tabs > li > a:focus,
     .with-nav-tabs.panel-default .nav-tabs > li > a:hover,
     .nav-tabs > li > a:focus,
